@@ -15,15 +15,16 @@ BISTracker/
 ├── tools/
 │   └── data/                          Separata script för granskad metadatahämtning
 ├── BISTracker.Domain/
-│   ├── Equipment/                     EquipmentSlot och Recommendation
+│   ├── Equipment/                     EquipmentSlot, Recommendation och ItemDetails
 │   ├── Game/                          GameContext
 │   └── Tracking/                      CharacterProgress och dess regler
 ├── BISTracker.Application/
 │   ├── Catalog/                       BisCatalog och IBisCatalog
 │   └── Tracking/                      TrackerService, tillstånd, snapshot och lagringskontrakt
 ├── BISTracker.Infrastructure/
-│   ├── Catalog/                       SampleBisCatalog; framtida verifierade datakällor
-│   └── Persistence/                   JsonProgressRepository
+│   ├── Catalog/                       ClassicPhaseOneBisCatalog och SampleBisCatalog för kontroller
+│   │   └── Data/                      Inbyggd, granskad produktkatalog
+│   └── Persistence/                   JsonProgressRepository och ProgressFilePaths
 ├── BISTracker.Presentation/
 │   ├── App.xaml + MainWindow.xaml     Start, composition root och appens skal
 │   ├── Common/                        Gemensam presentationsbas, ObservableObject
