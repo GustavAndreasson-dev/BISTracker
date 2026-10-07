@@ -25,12 +25,15 @@ Dokumenten skiljer mellan beslut, förslag och verifierad implementation.
 
 Första utkastet har en WinUI-vy med sökning, filter och tracking av erhållna
 och utrustade items. Domain, Application och Infrastructure är separata projekt
-med dokumenterade mappar. Framsteg sparas lokalt i JSON för en demoprofil.
+med dokumenterade mappar. Framsteg sparas lokalt i JSON för Holy Priest fas 1.
 
-Katalogen använder 17 fiktiva platshållare, inte verifierade WoW-items.
-Riktiga kandidater för alla 17 platser och ett wand-alternativ är källgranskade;
-metadata och ikonlänkar har hämtats för dessa 18 items. De är forskningsunderlag
-och ännu inte integrerade i appen. Fas och tillåtna källor är beslutade.
+Appen använder den granskade listans 17 riktiga huvudval, med itembilder,
+anskaffning, villkor och klickbara item-/guidelänkar. Of Healing ingår i de
+tre suffixmålens namn och identitet. Stormragers villkor beskriver båda
+fraktionsvägarna och dungeonalternativet Bonecreeper Stylus.
+Katalogen är inbyggd; ikonbilder hämtas vid visning och får en platsmarkering
+vid nätverks-/bildfel. Gamla demoframsteg bevaras i en separat fil och överförs
+inte till verkligt itemägande. Se [katalogintegrationen](docs/catalog-integration.md).
 Se verifieringsdokumentet för kontroller, startkommando och begränsningar.
 
 ## Förhandsbild av apputkastet

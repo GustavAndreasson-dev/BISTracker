@@ -9,7 +9,7 @@ Statusdatum: 2026-10-07. Plan för det beställda utkastet och fortsatt utveckli
 - Tracking omfattar både erhållna och utrustade items.
 - Utkastet byggs i befintlig WinUI/C#/.NET 8-app med Domain, Application och Infrastructure.
 - UI har utrustningslista, sökning, filter och sammanfattningar. Lokal JSON-lagring används för en demoprofil.
-- Katalogen innehåller tydligt fiktiva exempel; riktig BiS-lista är inte fastställd.
+- Appen använder 17 riktiga guidebaserade fas 1-val med bilder, anskaffning och källänkar. Demokatalogen finns kvar för kontroller.
 - Mappstruktur och kodspårning dokumenteras. Slutkontroller redovisas i verification.md.
 
 ## Genomförandeplan
@@ -19,7 +19,7 @@ Statusdatum: 2026-10-07. Plan för det beställda utkastet och fortsatt utveckli
 | 1. Gemensam grund | Krav, DDD-kontrakt, mappstruktur och tråduppdrag. | Ansvarsområden och gränssnitt är dokumenterade. | Klar. |
 | 2. Första utkast | WinUI-vy, domänregler och lokal tracking med exempeldata. | Bygg och relevanta kontroller passerar; faktisk UI-rendering granskas. | Klar: Release-build, 14 beteendekontroller och isolerad UI-kontroll godkända. |
 | 3. BiS-underlag | Källjämförelse och förslag på datametod. | Rapport med spårbara källor och kvarstående val finns. | Klar som research i data-research.md. |
-| 4. Verifierad katalog | Riktiga items och anskaffning för vald kontext. | Fas, tillåtna källor och rekommendationsgrund är dokumenterade; katalogen är integrerad och verifierad. | 17 huvudkandidater plus wand-alternativ granskade, metadata hämtad. Integration och variant-/questpresentation återstår. |
+| 4. Verifierad katalog | Riktiga items och anskaffning för vald kontext. | Fas, tillåtna källor och rekommendationsgrund är dokumenterade; katalogen är integrerad och verifierad. | Klar för det fasta 17-item-urvalet: katalog-/lagringskontroller och renderad UI-verifiering godkända. Full questrevision och alternativa trackingmål är senare fördjupning. |
 | 5. Förfinad produkt | Anpassat UI, beslutad karaktärshantering och komplett kravverifiering. | Överenskomna acceptanskriterier är uppfyllda med riktig data. | Planerad efter återkoppling på utkastet. |
 
 ## Öppna beslut
@@ -56,4 +56,5 @@ AGENTS.md. Koden och den dokumentation som berör ändringen uppdateras tillsamm
 - Datatråden har levererat phase1-items.md med kandidatlista, källor, fasetiketter, suffix- och questvillkor.
 - Huvudtråden har verifierat metadata och ikon-URL:er för 18 items, skapat tools/data/Get-ItemMetadata.ps1 och dokumenterat integrationsförslaget i data-import.md.
 - Tråden BISTracker – Domän och användningsfall slutförde sitt tillfälliga UI-uppdrag inom Presentation/: engelska texter utan ändrade trackingregler. Huvudtråden integrerade engelska katalog-/lagringstexter och verifierade den renderade vyn.
-- Nästa implementation är en riktig katalog bakom IBisCatalog, bilder/källor i UI och regler för variantidentitet samt övergång från demo-ID:n. Riktig data är ännu inte aktiverad.
+- Den riktiga katalogen är aktiverad bakom IBisCatalog, med bilder/källor i UI och variantidentitet. En separat framstegsfil bevarar gamla demo-ID:n utan överföring av ägande.
+- Nästa förfining kan omfatta fler alternativa trackingmål, karaktärshantering och fördjupad questkedjegranskning efter beslutat scope.

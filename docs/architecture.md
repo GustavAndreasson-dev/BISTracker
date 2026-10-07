@@ -60,3 +60,16 @@ som behövs nu; generalisera vid konkreta nya krav.
 Vid kodgranskning kontrolleras projektberoenden, placeringen av domänregler och
 att användningsfall kan verifieras utan WinUI. Kritiska invariants testas i
 domänen; lagringskontrakt verifieras mot den valda implementationen.
+
+## Riktig katalog och variantidentitet
+
+ClassicPhaseOneBisCatalog läser den granskade produktkatalogen som inbyggd
+resurs i Infrastructure. JSON och dess validering stannar där. ItemDetails
+i Domain beskriver Classic-ID, suffix, anskaffningstyp och referenslänkar.
+IBisCatalog och TrackerService används utan HTTP-beroenden.
+
+De tre of Healing-målen har variant i både namn och tracking-ID. Domain
+avvisar okända ID:n; ett basitem eller demo-ID kan inte räknas som den
+nödvändiga varianten. Presentation visar fakta och hämtar externa ikoner
+med fallback. Separata framstegsfiler skyddar övergången från fiktiva items.
+Se [integrationen](catalog-integration.md) för filansvar och begränsningar.

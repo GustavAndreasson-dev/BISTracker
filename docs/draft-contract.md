@@ -4,6 +4,11 @@ Datum: 2026-10-07. Chefen har beställt plan, separata Codex-trådar med
 instruktioner och ett första apputkast. Tracking omfattar både erhållna och
 utrustade items.
 
+Detta är kontraktet för det första utkastet och dess regressionstester.
+Normal app använder nu den riktiga katalogen enligt
+[catalog-integration.md](catalog-integration.md), med ItemDetails och en
+separat fas 1-framstegsfil. Exempelkatalogen nedan styr inte produktens UI.
+
 ## Utkastets omfattning
 
 Fortsätt i befintlig WinUI-app. Visa utrustningsplatser, sökning, sammanfattning

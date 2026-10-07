@@ -3,6 +3,9 @@
 Granskningsdatum: 2026-10-07. Forskningsunderlag för huvudtrådens katalogarbete;
 ingen kod eller katalogimport ingår i denna fil.
 
+De 17 huvudvalen är nu integrerade i appen. Denna fil bevarar researchen;
+aktuell kodkoppling och UI-verifiering beskrivs i [catalog-integration.md](catalog-integration.md).
+
 ## Beslutad kontext och urvalsmetod
 
 Chefen har valt vanliga WoW Classic (Vanilla), fas 1, Holy Priest och endast

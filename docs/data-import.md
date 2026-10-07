@@ -1,8 +1,8 @@
 # Hämtning av riktig itemdata
 
 Kontrolldatum: 2026-10-07. Scope: Holy Priest, Vanilla Classic, fas 1,
-endast dungeons och quests. Detta är ett genomfört importprov och ett förslag
-till integration; appen använder fortfarande sin fiktiva exempelkatalog.
+endast dungeons och quests. Detta är ett genomfört importprov och underlaget
+till den nu [integrerade produktkatalogen](catalog-integration.md).
 
 ## Resultat
 
@@ -36,7 +36,7 @@ inte från tooltip-API:t.
 | WarcraftDB | Alternativ tooltip med namn, kvalitet, ikon och HTML | Egen [API-dokumentation](https://classic.warcraftdb.com/tool/tooltip) och ett lyckat prov mot `/api/v1/tooltip/item/13102`. Inte inkopplat som fallback; ikonfältets format skiljer sig från Wowheads. |
 | Blizzard Game Data API | Officiella item- och mediaresurser | [Blizzards endpoint-annons](https://us.forums.blizzard.com/en/blizzard/t/world-of-warcraft-classic-api-endpoints/346/) listar item/media. Ingen autentiserad hämtning utförd; aktuell namespace och Era-täckning återstår att verifiera. Blizzards [OAuth-exempel](https://github.com/Blizzard/node-signature-generator) använder client ID/secret. Hemligheter ska hållas utanför desktopklienten om detta införs. |
 
-## Föreslagen integration i DDD-strukturen
+## Importförslag och genomförd integration i DDD-strukturen
 
 1. Behåll urvalet som en versionshanterad, källgranskad katalog. Registrera
    spelversion, fas, rekommendationskälla, item-ID, anskaffning och kontrolltid.
@@ -51,7 +51,11 @@ inte från tooltip-API:t.
 5. Byt från demokatalog först när tracking-ID, variantregler och framstegsfilens
    migration är hanterade. `demo-*` får inte tyst tolkas som riktiga items.
 
-Detta är ett integrationsförslag, inte implementerade produktfunktioner.
+Appen använder nu en separat inbyggd katalog med de 17 huvudvalen,
+villkor och bild-/källänkar. Infrastrukturimplementeringen, variantidentiteten
+och den separata framstegsfilen är införda enligt catalog-integration.md.
+Researchens 18-posters JSON läses inte direkt av appen. Ett generellt
+automatiserat flöde från guide till godkänd produktkatalog är fortfarande ett förslag.
 
 ## Viktiga katalogvillkor
 
@@ -61,8 +65,9 @@ Detta är ett integrationsförslag, inte implementerade produktfunktioner.
   Informationen ska visas; det är inte en femmannainstans.
 - Stormrager har olika questvägar per fraktion. Alliance-vägen är en
   Raid-quest utomhus. Bonecreeper Stylus från Scholomance finns som alternativ.
-- Unika ringar/trinkets och framtida tvåhandsval behöver riktiga
-  domänregler. Aktuell demomodell verifierar inte dessa itemegenskaper.
+- Unika ringar/trinkets och framtida tvåhandsval behöver utökade regler om
+  alternativa placeringar införs. Nuvarande fasta katalog innehåller varje
+  unikt item en gång och bara ett main-hand/off-hand-par.
 - Guideurvalet är inte en beräkning med egna statvikter. Fullständiga
   questförkrav och kontroll i en fas 1-spelklient återstår.
 

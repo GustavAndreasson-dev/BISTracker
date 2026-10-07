@@ -59,3 +59,11 @@ arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 - Status: beslutat av Chefen.
 - Beslut: arbetet med att göra appen på engelska ska startas.
 - Konsekvens: användarsynliga texter, tillgänglighetsnamn och status-/feltexter ska vara på engelska. Metadata ska hämtas med engelska itemnamn. Svenska projektdokument behöver inte översättas.
+
+## DEC-009 — Aktivera den riktiga listan
+
+- Datum: 2026-10-07.
+- Status: beställt av Chefen och implementerat.
+- Beslut: koppla in den granskade riktiga listan i appen.
+- Genomförande: 17 huvudval i en inbyggd katalog bakom IBisCatalog, med bilder, anskaffning, villkor och källänkar. Of Healing bevaras i namn och tracking-ID. Bonecreeper Stylus anges som alternativ i wand-raden.
+- Genomförandeval: använd en separat fas 1-framstegsfil och bevara demofilen. UBRS ingår som dungeon med tiomannavillkor; Stormragers Raid-quest för Alliance beskrivs uttryckligen. Se catalog-integration.md för verifiering och avgränsning.
