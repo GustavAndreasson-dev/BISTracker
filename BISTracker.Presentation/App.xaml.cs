@@ -1,20 +1,9 @@
 ﻿using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using Microsoft.UI.Xaml.Shapes;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using BISTracker.Application;
+using BISTracker.Infrastructure;
+using BISTracker.Presentation.Features.Tracking.ViewModels;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -24,7 +13,7 @@ namespace BISTracker.Presentation
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
-    public partial class App : Application
+    public partial class App : Microsoft.UI.Xaml.Application
     {
         private Window? _window;
 
@@ -43,7 +32,15 @@ namespace BISTracker.Presentation
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
-            _window = new MainWindow();
+            var progressPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "BISTracker", "draft-progress.json");
+            var service = new TrackerService(new SampleBisCatalog(), new JsonProgressRepository(progressPath));
+#if DRAFT_PREVIEW
+            if (Common.DraftPreview.IsRequested)
+                service = new TrackerService(new SampleBisCatalog(), new Common.PreviewProgressRepository());
+#endif
+            _window = new MainWindow(new TrackerViewModel(service));
             _window.Activate();
         }
     }

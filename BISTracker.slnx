@@ -4,6 +4,16 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/Core/">
+    <Project Path="BISTracker.Domain/BISTracker.Domain.csproj" />
+    <Project Path="BISTracker.Application/BISTracker.Application.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="BISTracker.Infrastructure/BISTracker.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Verification/">
+    <Project Path="BISTracker.Checks/BISTracker.Checks.csproj" />
+  </Folder>
   <Project Path="BISTracker.Presentation/BISTracker.Presentation.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />

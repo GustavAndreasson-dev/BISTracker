@@ -13,6 +13,14 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableDraftPreview)' == 'true'">
+    <DefineConstants>$(DefineConstants);DRAFT_PREVIEW</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BISTracker.Application\BISTracker.Application.csproj" />
+    <ProjectReference Include="..\BISTracker.Infrastructure\BISTracker.Infrastructure.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
