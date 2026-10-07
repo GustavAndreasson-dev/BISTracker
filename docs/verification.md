@@ -4,6 +4,9 @@ Datum: 2026-10-07.
 
 ## Genomförda kontroller
 
+- Gränssnitt, exempelmetadata, status och felmeddelanden är nu på engelska.
+  Den isolerade UI-kontrollen och PNG-renderingen har körts på den översatta vyn.
+
 - Hela solutionen byggd i Release för x64 utan varningar eller fel. WinUI-utkastet och isolerad verifieringsvariant är också byggda utan varningar eller fel.
 - Alla 14 konsolkontroller godkända: domäninvariants, separata trackingmarkeringar,
   byte i samma slot, okända ID:n, skrivfel, JSON-återläsning, saknad fil, korrupt
@@ -44,12 +47,14 @@ Felaktig framstegsfil rapporteras som fel och skrivs inte tyst över.
 ## Återskapa den isolerade UI-kontrollen
 
 ```powershell
-dotnet build BISTracker.Presentation/BISTracker.Presentation.csproj -p:Platform=x64 -p:RuntimeIdentifier=win-x64 -p:WindowsPackageType=None -p:EnableDraftPreview=true
-& ./BISTracker.Presentation/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/BISTracker.Presentation.exe --draft-preview "$PWD/docs/previews"
+dotnet build BISTracker.Presentation/BISTracker.Presentation.csproj -t:Rebuild -p:Platform=x64 -p:RuntimeIdentifier=win-x64 -p:WindowsPackageType=None -p:EnableDraftPreview=true -p:OutputPath=bin/verification/
+& ./BISTracker.Presentation/bin/verification/BISTracker.Presentation.exe --draft-preview "$PWD/docs/previews"
 ```
 
 Verifieringskod kompileras endast med EnableDraftPreview=true. Appen stänger
 verifieringsfönstret efter kontrollen. Normal build inkluderar inte den koden.
+Separat utdatakatalog undviker att en annan tråds MSIX-build ersätter
+verifieringsprogrammets filer före start.
 
 ## Praktiska begränsningar
 

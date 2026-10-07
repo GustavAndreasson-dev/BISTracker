@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BISTracker.Application;
@@ -17,7 +19,7 @@ public sealed class TrackerViewModel : ObservableObject
     private string _searchText = "";
     private int _filterIndex;
     private string _errorMessage = "";
-    private string _saveStatus = "Läser dina framsteg…";
+    private string _saveStatus = "Loading your progress…";
     public TrackerViewModel(TrackerService service) => _service = service;
     public ObservableCollection<TrackerItemViewModel> VisibleItems { get; } = new();
     public int TotalCount => _items.Count;
@@ -25,8 +27,8 @@ public sealed class TrackerViewModel : ObservableObject
     public int RemainingCount => TotalCount - OwnedCount;
     public string OwnedSummary => $"{OwnedCount} / {TotalCount}";
     public string EquippedSummary => $"{_items.Count(item => item.IsEquipped)} / {TotalCount}";
-    public string VisibleSummary => $"Visar {VisibleItems.Count} av {TotalCount} items";
-    public string EmptyMessage => _loaded && VisibleItems.Count == 0 ? "Inga items matchar din sökning eller ditt filter." : "";
+    public string VisibleSummary => $"Showing {VisibleItems.Count} of {TotalCount} items";
+    public string EmptyMessage => _loaded && VisibleItems.Count == 0 ? "No items match your search or filter." : "";
     public string EmptyStateVisibility => EmptyMessage.Length > 0 ? "Visible" : "Collapsed";
     public bool IsInteractive => _loaded && !_isBusy;
     public bool HasError => !string.IsNullOrEmpty(ErrorMessage);
@@ -43,7 +45,7 @@ public sealed class TrackerViewModel : ObservableObject
         _isBusy = true;
         Notify(nameof(IsInteractive));
         ErrorMessage = "";
-        SaveStatus = saves ? "Sparar framsteg…" : "Läser dina framsteg…";
+        SaveStatus = saves ? "Saving progress…" : "Loading your progress…";
         try
         {
             var snapshot = await operation();
@@ -58,12 +60,15 @@ public sealed class TrackerViewModel : ObservableObject
             }
             foreach (var property in new[] { nameof(TotalCount), nameof(OwnedCount), nameof(RemainingCount), nameof(OwnedSummary), nameof(EquippedSummary) }) Notify(property);
             ApplyFilter();
-            SaveStatus = saves ? $"Sparat lokalt · {DateTime.Now:HH:mm}" : "Dina framsteg sparas lokalt på den här datorn.";
+            SaveStatus = saves ? $"Saved locally · {DateTime.Now:HH:mm}" : "Your progress is saved locally on this computer.";
         }
         catch (Exception ex)
         {
-            ErrorMessage = $"{ex.Message} Dina tidigare framsteg har inte ersatts i vyn.";
-            SaveStatus = "Uppdateringen misslyckades. Kontrollera framstegsfilen och starta om appen vid läsfel.";
+            Debug.WriteLine(ex);
+            ErrorMessage = $"{DescribeError(ex, saves)} Your progress in this view has not changed.";
+            SaveStatus = saves
+                ? "Changes were not saved. Check the progress file and try again."
+                : "Could not load progress. Check the progress file and restart the app.";
         }
         finally
         {
@@ -72,6 +77,17 @@ public sealed class TrackerViewModel : ObservableObject
             Notify(nameof(IsInteractive));
         }
     }
+    private static string DescribeError(Exception exception, bool saves) => exception switch
+    {
+        InvalidDataException => "The progress file contains invalid data.",
+        UnauthorizedAccessException => "Access to the progress file was denied.",
+        IOException => saves
+            ? "The progress file could not be saved. Make sure it is accessible and is not in use by another app."
+            : "The progress file could not be read. Make sure it is accessible and is not in use by another app.",
+        ArgumentException => "The saved progress or item catalog contains invalid item data.",
+        OperationCanceledException => "The update was canceled.",
+        _ => saves ? "Your progress could not be saved." : "Your progress could not be loaded."
+    };
     private void ApplyFilter()
     {
         var term = SearchText.Trim();

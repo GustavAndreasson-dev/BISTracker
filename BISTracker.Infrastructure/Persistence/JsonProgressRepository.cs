@@ -39,7 +39,7 @@ public sealed class JsonProgressRepository : IProgressRepository
     {
         ArgumentNullException.ThrowIfNull(state);
         if (!HasValidShape(state))
-            throw new ArgumentException("Framsteg måste innehålla giltiga samlingar och item-ID:n.", nameof(state));
+            throw new ArgumentException("Progress must contain valid collections and item IDs.", nameof(state));
 
         await _gate.WaitAsync(cancellationToken);
         string? temporaryPath = null;
@@ -102,12 +102,12 @@ public sealed class JsonProgressRepository : IProgressRepository
             {
                 var state = await JsonSerializer.DeserializeAsync<ProgressState>(stream, JsonOptions, cancellationToken);
                 if (state is null || !HasValidShape(state))
-                    throw new JsonException("Framstegsfilen saknar giltiga samlingar eller item-ID:n.");
+                    throw new JsonException("The progress file is missing valid collections or item IDs.");
                 return state;
             }
             catch (JsonException exception)
             {
-                throw new InvalidDataException("Framstegsfilen innehåller ogiltig JSON. Befintlig fil har bevarats.", exception);
+                throw new InvalidDataException("The progress file contains invalid JSON. The existing file has been preserved.", exception);
             }
         }
     }

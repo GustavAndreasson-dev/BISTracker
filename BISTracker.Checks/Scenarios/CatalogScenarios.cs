@@ -17,7 +17,7 @@ internal static class CatalogScenarios
             var ids = new[] { "head", "neck", "shoulder", "back", "chest", "wrist", "hands", "waist", "legs",
                 "feet", "finger1", "finger2", "trinket1", "trinket2", "mainhand", "offhand", "ranged" };
             Assert(catalog.Items.Select(item => item.Id).SequenceEqual(ids.Select(id => $"demo-{id}")), "Fel exempel-ID:n.");
-            Assert(catalog.Items.All(item => item.Name.StartsWith("Exempel:") && item.Source.Contains("Fiktiv")),
+            Assert(catalog.Items.All(item => item.Name.StartsWith("Example:") && item.Source.Contains("Fictional")),
                 "Namnen och källan ska uttryckligen vara exempeldata.");
             Assert(catalog.Context.Version.Contains("Vanilla") && catalog.Context.Specialization == "Holy Priest",
                 "Fel spelkontext.");

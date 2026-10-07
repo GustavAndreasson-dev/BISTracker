@@ -41,8 +41,8 @@ internal static class DraftPreview
             model.FilterIndex = 1;
             Require(model.VisibleItems.Count == 11, "Missing filter");
             model.FilterIndex = 0;
-            model.SearchText = "HUVUD";
-            Require(model.VisibleItems.Count == 2, "Case-insensitive search");
+            model.SearchText = "mAiN HaNd";
+            Require(model.VisibleItems.Count == 1 && model.VisibleItems[0].Id == "demo-mainhand", "Case-insensitive search");
             model.SearchText = "no-matching-item";
             Require(model.VisibleItems.Count == 0 && model.EmptyMessage.Length > 0, "Empty state");
             model.SearchText = "";
