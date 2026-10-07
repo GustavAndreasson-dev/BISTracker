@@ -36,4 +36,28 @@ kan därför användas med den riktiga katalogen.
 alla slots och källreferenser, suffixidentitet med avvisade bas-/demo-ID:n,
 samt återläsning av riktiga framsteg utan ändring av demofilen.
 
-Koppling i App och presentation av bilder/källor görs i nästa integrationsdel.
+## Koppling och presentation
+
+App.xaml.cs använder ClassicPhaseOneBisCatalog som standard. Den isolerade
+UI-kontrollen använder samma riktiga katalog med minneslagring. SampleBisCatalog
+finns kvar för regressionstester och används inte av normal app.
+
+TrackerItemViewModel ger vyn namn, anskaffning, fullständiga villkor och
+item-/guidelänkar. Ikoner hämtas av WinUI när rader visas. ImageFailed lämnar
+en läsbar platsmarkering, utan att blockera katalog eller tracking. Sökning
+omfattar även anskaffning, till exempel ett dungeon- eller bossnamn.
+
+UI-kontrollen verifierar riktig katalog, tracking, filter, sökning, ikonhämtning,
+en avsiktligt saknad bild, korrekta ikoner efter radåteranvändning, suffixvillkor
+och Stormragers fraktionsvillkor. Renderade bilder finns under docs/previews.
+Källknapparnas NavigateUri är kontrollerade; externa webbläsare öppnas inte
+av den automatiska kontrollen.
+
+## Avgränsning
+
+17 huvudval trackas. Alternativet Bonecreeper Stylus är information i wand-raden,
+inte ett separat trackingmål. UBRS ingår med tiomannavillkor. Alliance-vägen
+till Stormrager är en Raid-quest utomhus och detta visas uttryckligen.
+Ingen automatisk inventoryimport, full questkedjekontroll eller ny statranking
+har införts. Unika items förekommer bara en gång i den fasta katalogen;
+regler för framtida omflyttbara ring-/trinketalternativ är ännu inte införda.

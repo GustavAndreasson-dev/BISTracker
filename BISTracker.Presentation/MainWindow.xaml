@@ -44,6 +44,7 @@
                     </Border>
                     <TextBlock Text="Vanilla Classic" FontSize="13" Margin="14,4,0,0" />
                     <TextBlock Text="Priest / Holy" FontSize="13" Margin="14,0,0,0" Foreground="{StaticResource MutedBrush}" />
+                    <TextBlock Text="{Binding CatalogContext}" TextWrapping="Wrap" FontSize="12" Margin="14,0,0,0" Foreground="{StaticResource AccentBrush}" />
                 </StackPanel>
                 <Border Grid.Row="3" Background="#1D2330" Padding="15" CornerRadius="10">
                     <StackPanel Spacing="8">
@@ -70,7 +71,7 @@
                     <TextBlock Text="Track what you own and what you wear." Foreground="{StaticResource MutedBrush}" />
                 </StackPanel>
                 <Border HorizontalAlignment="Right" VerticalAlignment="Top" CornerRadius="16" Background="#252B38" Padding="12,6">
-                    <TextBlock Text="FIRST DRAFT" FontSize="10" CharacterSpacing="80" Foreground="{StaticResource MutedBrush}" />
+                    <TextBlock Text="PHASE 1" FontSize="10" CharacterSpacing="80" Foreground="{StaticResource MutedBrush}" />
                 </Border>
             </Grid>
             <Grid Grid.Row="1" ColumnSpacing="14">
@@ -102,7 +103,8 @@
                 </Border>
             </Grid>
             <StackPanel Grid.Row="2" Spacing="8">
-                <InfoBar IsOpen="True" IsClosable="False" Severity="Informational" Title="Sample data" Message="This list uses fictional placeholders. Verified Phase 1 BiS data will be added after source review." />
+                <InfoBar IsOpen="True" IsClosable="False" Severity="Informational" Title="Dungeon &amp; quest BiS" Message="Phase 1, including UBRS (10 players). Random-suffix goals require of Healing. Sources and conditions are listed below." />
+                <InfoBar IsOpen="{Binding HasDraftProgress}" IsClosable="False" Severity="Informational" Title="Your draft progress is preserved" Message="The real list starts with a separate collection. Marks on fictional draft items have not been transferred." />
                 <InfoBar IsOpen="{Binding HasError}" IsClosable="False" Severity="Error" Title="Could not update progress" Message="{Binding ErrorMessage}" />
             </StackPanel>
             <Grid Grid.Row="3" ColumnSpacing="12">
@@ -110,7 +112,7 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="200" />
                 </Grid.ColumnDefinitions>
-                <TextBox PlaceholderText="Search items or equipment slots" Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsInteractive}" AutomationProperties.Name="Search gear" />
+                <TextBox PlaceholderText="Search items, slots or dungeons" Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsInteractive}" AutomationProperties.Name="Search gear" />
                 <ComboBox Grid.Column="1" HorizontalAlignment="Stretch" SelectedIndex="{Binding FilterIndex, Mode=TwoWay}" IsEnabled="{Binding IsInteractive}" AutomationProperties.Name="Filter progress">
                     <ComboBoxItem Content="All items" />
                     <ComboBoxItem Content="Missing from collection" />
@@ -127,10 +129,10 @@
                     </Grid.RowDefinitions>
                     <Grid Padding="20,13" Background="#1D2330" ColumnSpacing="12">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="110" />
+                            <ColumnDefinition Width="80" />
                             <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="100" />
-                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="75" />
+                            <ColumnDefinition Width="85" />
                         </Grid.ColumnDefinitions>
                         <TextBlock Text="SLOT" FontSize="10" CharacterSpacing="80" Foreground="{StaticResource MutedBrush}" />
                         <TextBlock Grid.Column="1" Text="RECOMMENDED ITEM" FontSize="10" CharacterSpacing="80" Foreground="{StaticResource MutedBrush}" />
@@ -150,16 +152,30 @@
                                 <Border BorderBrush="#262E3B" BorderThickness="0,0,0,1" Padding="20,10">
                                     <Grid ColumnSpacing="12">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="110" />
+                                            <ColumnDefinition Width="80" />
                                             <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="100" />
-                                            <ColumnDefinition Width="100" />
+                                            <ColumnDefinition Width="75" />
+                                            <ColumnDefinition Width="85" />
                                         </Grid.ColumnDefinitions>
                                         <TextBlock Text="{Binding SlotName}" VerticalAlignment="Center" Foreground="{StaticResource MutedBrush}" FontSize="13" />
-                                        <StackPanel Grid.Column="1" Spacing="4" VerticalAlignment="Center">
-                                            <TextBlock Text="{Binding Name}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" />
-                                            <TextBlock Text="{Binding Source}" Foreground="{StaticResource MutedBrush}" FontSize="11" TextTrimming="CharacterEllipsis" />
-                                        </StackPanel>
+                                        <Grid Grid.Column="1" ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="36" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Border Width="36" Height="36" VerticalAlignment="Top" Margin="0,4,0,0" Background="#252B38" BorderBrush="#5B4C2F" BorderThickness="1" CornerRadius="4">
+                                                <Grid>
+                                                    <TextBlock Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource MutedBrush}" Visibility="{Binding IconPlaceholderVisibility}" AutomationProperties.Name="Item icon unavailable" />
+                                                    <Image Source="{Binding IconUrl}" Stretch="Uniform" ImageOpened="ItemIconOpened" ImageFailed="ItemIconFailed" AutomationProperties.Name="{Binding Name}" />
+                                                </Grid>
+                                            </Border>
+                                            <StackPanel Grid.Column="1" Spacing="4">
+                                                <HyperlinkButton Content="{Binding Name}" NavigateUri="{Binding ItemUri}" HorizontalAlignment="Left" Padding="0" MinHeight="0" FontWeight="SemiBold" Foreground="{StaticResource AccentBrush}" ToolTipService.ToolTip="Open the Classic item on Wowhead. Check the required suffix in this list." />
+                                                <TextBlock Text="{Binding Source}" Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" />
+                                                <TextBlock Text="{Binding Note}" Visibility="{Binding NoteVisibility}" Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" />
+                                                <HyperlinkButton Content="Recommendation source ↗" NavigateUri="{Binding RecommendationUri}" HorizontalAlignment="Left" Padding="0" MinHeight="0" FontSize="10" ToolTipService.ToolTip="Open the guide used for this recommendation" />
+                                            </StackPanel>
+                                        </Grid>
                                         <CheckBox Grid.Column="2" MinWidth="0" Width="32" Padding="0" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding IsOwned, Mode=OneWay}" Click="OwnedClicked" AutomationProperties.Name="{Binding OwnedAccessibleName}" ToolTipService.ToolTip="Mark as owned" />
                                         <CheckBox Grid.Column="3" MinWidth="0" Width="32" Padding="0" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding IsEquipped, Mode=OneWay}" Click="EquippedClicked" AutomationProperties.Name="{Binding EquippedAccessibleName}" ToolTipService.ToolTip="Mark as equipped" />
                                     </Grid>

@@ -32,15 +32,20 @@ namespace BISTracker.Presentation
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
-            var progressPath = Path.Combine(
+            var progressDirectory = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "BISTracker", "draft-progress.json");
-            var service = new TrackerService(new SampleBisCatalog(), new JsonProgressRepository(progressPath));
+                "BISTracker");
+            var progressPath = ProgressFilePaths.ClassicPhaseOne(progressDirectory);
+            var hasDraftProgress = File.Exists(ProgressFilePaths.Draft(progressDirectory)) && !File.Exists(progressPath);
+            var service = new TrackerService(new ClassicPhaseOneBisCatalog(), new JsonProgressRepository(progressPath));
 #if DRAFT_PREVIEW
             if (Common.DraftPreview.IsRequested)
-                service = new TrackerService(new SampleBisCatalog(), new Common.PreviewProgressRepository());
+            {
+                service = new TrackerService(new ClassicPhaseOneBisCatalog(), new Common.PreviewProgressRepository());
+                hasDraftProgress = false;
+            }
 #endif
-            _window = new MainWindow(new TrackerViewModel(service));
+            _window = new MainWindow(new TrackerViewModel(service, hasDraftProgress));
             _window.Activate();
         }
     }

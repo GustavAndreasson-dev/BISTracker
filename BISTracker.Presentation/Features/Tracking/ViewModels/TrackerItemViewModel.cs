@@ -1,3 +1,4 @@
+using System;
 using BISTracker.Application;
 using BISTracker.Domain;
 using BISTracker.Presentation.Common;
@@ -8,17 +9,29 @@ public sealed class TrackerItemViewModel : ObservableObject
 {
     private bool _isOwned;
     private bool _isEquipped;
+    private bool _isIconLoaded;
     public TrackerItemViewModel(TrackerEntry entry)
     {
         Id = entry.Item.Id;
         Name = entry.Item.Name;
         Source = entry.Item.Source;
+        Note = entry.Item.Note;
+        IconUrl = entry.Item.Details?.IconUrl;
+        ItemUri = entry.Item.Details is null ? null : new Uri(entry.Item.Details.ItemUrl);
+        RecommendationUri = entry.Item.Details is null ? null : new Uri(entry.Item.Details.RecommendationUrl);
         SlotName = TranslateSlot(entry.Item.Slot);
         Update(entry);
     }
     public string Id { get; }
     public string Name { get; }
     public string Source { get; }
+    public string Note { get; }
+    public string NoteVisibility => string.IsNullOrEmpty(Note) ? "Collapsed" : "Visible";
+    public string? IconUrl { get; }
+    public Uri? ItemUri { get; }
+    public Uri? RecommendationUri { get; }
+    public bool IsIconLoaded => _isIconLoaded;
+    public string IconPlaceholderVisibility => _isIconLoaded ? "Collapsed" : "Visible";
     public string SlotName { get; }
     public string OwnedAccessibleName => $"{Name}, owned";
     public string EquippedAccessibleName => $"{Name}, equipped";
@@ -33,6 +46,14 @@ public sealed class TrackerItemViewModel : ObservableObject
     {
         Notify(nameof(IsOwned));
         Notify(nameof(IsEquipped));
+    }
+    public void SetIconLoaded(bool loaded)
+    {
+        if (Set(ref _isIconLoaded, loaded))
+        {
+            Notify(nameof(IsIconLoaded));
+            Notify(nameof(IconPlaceholderVisibility));
+        }
     }
     private static string TranslateSlot(EquipmentSlot slot) => slot switch
     {

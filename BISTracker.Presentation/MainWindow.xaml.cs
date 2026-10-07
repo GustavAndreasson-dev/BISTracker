@@ -45,5 +45,15 @@ namespace BISTracker.Presentation
                 await _viewModel.SetEquippedAsync(item.Id, checkBox.IsChecked == true);
             }
         }
+
+        private void ItemIconOpened(object sender, RoutedEventArgs e)
+        {
+            if (sender is Image { DataContext: TrackerItemViewModel item }) item.SetIconLoaded(true);
+        }
+
+        private void ItemIconFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+            if (sender is Image { DataContext: TrackerItemViewModel item }) item.SetIconLoaded(false);
+        }
     }
 }

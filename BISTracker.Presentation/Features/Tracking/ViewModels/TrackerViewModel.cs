@@ -20,7 +20,13 @@ public sealed class TrackerViewModel : ObservableObject
     private int _filterIndex;
     private string _errorMessage = "";
     private string _saveStatus = "Loading your progress…";
-    public TrackerViewModel(TrackerService service) => _service = service;
+    public TrackerViewModel(TrackerService service, bool hasDraftProgress = false)
+    {
+        _service = service;
+        HasDraftProgress = hasDraftProgress;
+    }
+    public bool HasDraftProgress { get; }
+    public string CatalogContext { get; private set; } = "";
     public ObservableCollection<TrackerItemViewModel> VisibleItems { get; } = new();
     public int TotalCount => _items.Count;
     public int OwnedCount => _items.Count(item => item.IsOwned);
@@ -52,6 +58,8 @@ public sealed class TrackerViewModel : ObservableObject
             if (!_loaded)
             {
                 _items.AddRange(snapshot.Entries.Select(entry => new TrackerItemViewModel(entry)));
+                CatalogContext = snapshot.Catalog.Context.Phase;
+                Notify(nameof(CatalogContext));
                 _loaded = true;
             }
             else
@@ -92,7 +100,8 @@ public sealed class TrackerViewModel : ObservableObject
     {
         var term = SearchText.Trim();
         var matches = _items.Where(item =>
-            (term.Length == 0 || item.Name.Contains(term, StringComparison.OrdinalIgnoreCase) || item.SlotName.Contains(term, StringComparison.OrdinalIgnoreCase)) &&
+            (term.Length == 0 || item.Name.Contains(term, StringComparison.OrdinalIgnoreCase) ||
+                item.SlotName.Contains(term, StringComparison.OrdinalIgnoreCase) || item.Source.Contains(term, StringComparison.OrdinalIgnoreCase)) &&
             (FilterIndex switch { 1 => !item.IsOwned, 2 => item.IsOwned, 3 => item.IsEquipped, _ => true })).ToArray();
         if (!VisibleItems.SequenceEqual(matches))
         {
