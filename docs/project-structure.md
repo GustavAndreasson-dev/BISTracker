@@ -10,6 +10,10 @@ BISTracker/
 ├── README.md
 ├── BISTracker.slnx
 ├── docs/                              Krav, plan, struktur och beslut
+│   ├── data/                          Kandidatmanifest och hämtad itemmetadata (forskningsdata)
+│   └── previews/                      Verifierad UI-bild och resultat
+├── tools/
+│   └── data/                          Separata script för granskad metadatahämtning
 ├── BISTracker.Domain/
 │   ├── Equipment/                     EquipmentSlot och Recommendation
 │   ├── Game/                          GameContext
@@ -41,6 +45,7 @@ BISTracker/
 - Presentation grupperas efter funktion; gemensam UI-infrastruktur ligger i Common.
 - Appens skal kan ligga i projektroten. Nya funktioners vyer ska placeras under respektive Features-område när de införs.
 - Scenarier grupperas efter det beteende de verifierar. Testverktyg ska inte bli produktkod.
+- Importverktyg ligger i tools/data och forskningsdata i docs/data. Dessa ska inte refereras av Domain eller läsas som en godkänd produktkatalog utan uttrycklig integration i Infrastructure/Catalog.
 - Mappar är inte i sig DDD: kodens ansvar, invariants och beroenden måste också vara korrekta.
 - Namespace kan behållas som lagrets publika namespace i utkastets kontrakt. Mappindelningen förändrar inte kontraktet mellan trådarna.
 
