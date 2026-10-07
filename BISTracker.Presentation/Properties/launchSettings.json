@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BISTracker.Presentation (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BISTracker.Presentation (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
