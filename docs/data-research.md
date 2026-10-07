@@ -6,6 +6,12 @@ tydligt märkt exempeldata enligt [draft-contract.md](draft-contract.md).
 
 ## Källbelagda observationer
 
+Denna första rapport bevaras som historiskt underlag. Chefen har därefter
+beslutat fas 1 och endast dungeons/quests. Aktuellt urval finns i
+[phase1-items.md](phase1-items.md) och metadataimporten i
+[data-import.md](data-import.md). Öppna scopefrågor nedan är den ursprungliga
+granskningens frågor, inte återkallade beslut.
+
 | Källa och direktlänk | Spel och tillgänglighetskontext | Användning och begränsning |
 | --- | --- | --- |
 | [Icy Veins: Priest Healer Pre-Raid Gear](https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear), Abide, uppdaterad 2024-11-18 | WoW Classic; uttryckligen Holy och Discipline. Separata tabeller för fas 1, fas 2–4 och fas 5–6. | Kandidatkälla för rekommendationer med fasindelning. Innehåller dungeonloot, crafting, BoE, quests samt PvP-rank och reputation. Inte enbart dungeonutrustning. |
@@ -51,7 +57,7 @@ tydligt märkt exempeldata enligt [draft-contract.md](draft-contract.md).
    och kombinationer av tvåhandsvapen respektive main-hand/off-hand. Dessa är
    kontrollpunkter för nästa datasteg, inte verifierade regler i denna rapport.
 
-## Kvarstående användarbeslut
+## Produktbeslut vid den första granskningen
 
 - Classic Era med sent Vanilla-innehåll, eller en bestämd historisk fas? Om
   historisk fas: vilken tidpunkt och vilka innehållsupplåsningar?

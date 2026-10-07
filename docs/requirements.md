@@ -1,14 +1,16 @@
 # Krav och koppling till kod
 
-Statusdatum: 2026-10-07. Beslutade krav kommer från användaren.
+Statusdatum: 2026-10-07. Beslutade krav kommer från Chefen.
 Acceptanskriterier och detaljer markerade som förslag behöver preciseras tillsammans.
 
 ## Beslutade produktkrav
 
 | ID | Krav | Implementation | Verifiering |
 | --- | --- | --- | --- |
-| REQ-001 | Visa pre-raid BiS för Holy Priest i vanliga WoW Classic (Vanilla). | [UI-utkast](../BISTracker.Presentation/MainWindow.xaml) och [exempelkatalog](../BISTracker.Infrastructure/Catalog/SampleBisCatalog.cs) finns. Riktig BiS-data saknas. | UI byggt och renderat; kravet är delvis implementerat. Fas, datakälla och urvalsmetod återstår. |
+| REQ-001 | Visa pre-raid BiS för Holy Priest i vanliga WoW Classic (Vanilla). | [UI-utkast](../BISTracker.Presentation/MainWindow.xaml) och [exempelkatalog](../BISTracker.Infrastructure/Catalog/SampleBisCatalog.cs) finns. Riktiga kandidater finns i [dataunderlaget](phase1-items.md), ännu inte i appen. | UI byggt och renderat; kravet är delvis implementerat. Katalogintegration återstår. |
 | REQ-002 | Tracka både erhållna och utrustade items mot pre-raid BiS. | [CharacterProgress](../BISTracker.Domain/Tracking/CharacterProgress.cs), [TrackerService](../BISTracker.Application/Tracking/TrackerService.cs), [JSON-lagring](../BISTracker.Infrastructure/Persistence/JsonProgressRepository.cs) och [ViewModel](../BISTracker.Presentation/Features/Tracking/ViewModels/TrackerViewModel.cs). | [Trackingkontroller](../BISTracker.Checks/Scenarios/TrackingScenarios.cs), [lagringskontroller](../BISTracker.Checks/Scenarios/PersistenceScenarios.cs) och isolerad UI-kontroll godkända. Verifierat för demoprofil och exempeldata; riktig katalog återstår. |
+| REQ-003 | Använd fas 1 och endast dungeons/quests för BiS-urvalet. | [17 huvudkandidater](phase1-items.md) och [metadataimport](data-import.md) finns; exempelkatalogen är fortfarande fiktiv. | Fas-/anskaffningskällor granskade; 18 itemnamn och ikon-URL:er kontrollerade. Variant-/questvillkor ska bevaras vid integration. |
+| REQ-004 | Ha appens gränssnitt på engelska. | [Presentation](../BISTracker.Presentation/MainWindow.xaml), ViewModels, exempelmetadata och egna lagringsfel översatta. | Release-build, textgranskning och isolerad engelsk UI-preview godkända. Manuella tillgänglighets-/DPI-kontroller återstår. |
 
 ## Beslutade tekniska krav och riktning
 
@@ -22,8 +24,8 @@ Acceptanskriterier och detaljer markerade som förslag behöver preciseras tills
 
 ## Föreslagna acceptanskriterier för första fungerande flödet
 
-- REQ-001: användaren kan se rekommenderad utrustning per utrustningsplats, med ursprungskälla för items och en förklarad rekommendationsgrund.
-- REQ-002: användaren kan markera ett rekommenderat item som erhållet eller utrustat och återställa markeringarna. Markeringarna finns kvar efter omstart. Utrustad innebär erhållen; att avmarkera erhållen tar också bort utrustningsmarkeringen.
+- REQ-001: spelaren kan se rekommenderad utrustning per utrustningsplats, med ursprungskälla för items och en förklarad rekommendationsgrund.
+- REQ-002: spelaren kan markera ett rekommenderat item som erhållet eller utrustat och återställa markeringarna. Markeringarna finns kvar efter omstart. Utrustad innebär erhållen; att avmarkera erhållen tar också bort utrustningsmarkeringen.
 - Kontexten för spelversion och tillgänglighet är synlig och entydig.
 
 Dessa detaljer är förslag, inte ytterligare beslutade produktkrav.

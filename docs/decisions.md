@@ -1,47 +1,61 @@
 # Beslutslogg
 
 Beslut ska ange datum, bakgrund och konsekvens. Förslag dokumenteras i plan eller
-arkitektur tills de är beslutade. Användarens senare instruktioner gäller framför
+arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 äldre dokumentation; uppdatera loggen när ett beslut ersätts.
 
 ## DEC-001 — Första produktomfånget
 
 - Datum: 2026-10-07.
-- Status: beslutat av användaren.
+- Status: beslutat av Chefen.
 - Beslut: första versionen visar och trackar pre-raid BiS för Holy Priest i vanliga WoW Classic (Vanilla).
-- Konsekvens: fler expansioner är framtida stöd. Fas, itemkällor och rankingmetod återstår att precisera.
+- Konsekvens: fler expansioner är framtida stöd. Fas och itemkällor preciserades senare i DEC-007. Guidebaserat kandidatunderlag finns i phase1-items.md.
 
 ## DEC-002 — Arkitektur och arbetsregler
 
 - Datum: 2026-10-07.
-- Status: beslutat av användaren.
+- Status: beslutat av Chefen.
 - Beslut: använd DDD-struktur och SOLID-principer, samt Markdown-filer som håller reda på regler och kan jämföras med koden.
-- Konsekvens: implementationen ska följas upp mot dokumenterade krav och arkitektur. Konkreta domängränser och projektindelningen är ännu förslag.
+- Konsekvens: implementationen ska följas upp mot dokumenterade krav och arkitektur. Utkastets införda domängränser och projektindelning beskrivs i architecture.md och project-structure.md.
 
 ## DEC-003 — Samordning
 
 - Datum: 2026-10-07.
-- Status: beslutat av användaren.
+- Status: beslutat av Chefen.
 - Beslut: huvudtråden har huvudansvaret och tar emot instruktioner om hur projektet ska byggas. Andra trådar kan bidra under samordning.
 - Konsekvens: huvudtråden håller den gemensamma planen och granskar hur bidrag passar ihop med krav och arkitektur.
 
 ## DEC-004 — Tracking och första utkast
 
 - Datum: 2026-10-07.
-- Status: beslutat av användaren.
+- Status: beslutat av Chefen.
 - Beslut: tracking ska hantera både erhållna och utrustade items. Huvudtråden ska lägga upp planen, skapa andra Codex-trådar med instruktioner och skapa ett första utkast.
 - Konsekvens: arbetet delas efter filansvar enligt draft-contract.md. Utkastet byggs i befintlig WinUI-app med tydligt markerad exempeldata och lokal lagring som genomförandeval.
 
 ## DEC-005 — Mappstruktur
 
 - Datum: 2026-10-07.
-- Status: beslutat av användaren.
+- Status: beslutat av Chefen.
 - Beslut: varje projekt ska ha en god mappstruktur som dokumenteras i Markdown.
 - Konsekvens: project-structure.md anger områden och ansvar inom lagren. Nya filer ska placeras enligt kartan och den faktiska strukturen granskas tillsammans med koden.
 
 ## DEC-006 — Regelbundna commits
 
 - Datum: 2026-10-07.
-- Status: beslutat av användaren.
+- Status: beslutat av Chefen.
 - Beslut: gör commits regelbundet efter avklarade delar, i lagom stora grupper som hänger ihop.
 - Konsekvens: huvudtråden granskar, verifierar och commitar färdiga delar löpande. Det första utkastets befintliga ändringar delas upp efter domän/användningsfall, lagring/kontroller, UI, källresearch och gemensam projektdokumentation.
+
+## DEC-007 — Fas och tillåtna anskaffningssätt
+
+- Datum: 2026-10-07.
+- Status: beslutat av Chefen.
+- Beslut: fas 1 gäller. BiS-listan ska endast omfatta dungeons och quests.
+- Konsekvens: crafting och köpta/world-drop BoE-items ska exkluderas. Guideval från dessa källor behöver ersättas med verifierade alternativ. Moderna Era-itemposter bevisar inte själva historisk fastillgänglighet.
+
+## DEC-008 — Engelskt gränssnitt
+
+- Datum: 2026-10-07.
+- Status: beslutat av Chefen.
+- Beslut: arbetet med att göra appen på engelska ska startas.
+- Konsekvens: användarsynliga texter, tillgänglighetsnamn och status-/feltexter ska vara på engelska. Metadata ska hämtas med engelska itemnamn. Svenska projektdokument behöver inte översättas.

@@ -1,6 +1,6 @@
 # Första utkastet — arbetsfördelning och kontrakt
 
-Datum: 2026-10-07. Användaren har beställt plan, separata Codex-trådar med
+Datum: 2026-10-07. Chefen har beställt plan, separata Codex-trådar med
 instruktioner och ett första apputkast. Tracking omfattar både erhållna och
 utrustade items.
 
@@ -9,7 +9,7 @@ utrustade items.
 Fortsätt i befintlig WinUI-app. Visa utrustningsplatser, sökning, sammanfattning
 och kontroller för erhållen/utrustad. Spara framsteg lokalt i JSON för en
 demokaraktär. Visa tydligt att katalogen är exempeldata, inte en verifierad
-BiS-lista. Dessa är genomförandeval för utkastet; fas och riktig data är öppna.
+BiS-lista. Fas 1 och endast dungeons/quests har därefter fastställts. Riktig data granskas separat.
 
 Arbetsregel för utkastet: utrustad innebär erhållen, en rekommendation per
 utrustningsplats kan vara utrustad, och avmarkering av erhållen tar bort dess
@@ -65,8 +65,8 @@ Persistensfel ska nå UI; en misslyckad sparning får inte rapporteras som lycka
   rekommendationer, en per slot, med ID demo-head, demo-neck, demo-shoulder,
   demo-back, demo-chest, demo-wrist, demo-hands, demo-waist, demo-legs, demo-feet,
   demo-finger1, demo-finger2, demo-trinket1, demo-trinket2, demo-mainhand,
-  demo-offhand och demo-ranged. Namn är tydligt fiktiva svenska platsnamn,
-  exempelvis "Exempel: huvud", inga påhittade WoW-fakta. IsSample = true.
+  demo-offhand och demo-ranged. Namn är tydligt fiktiva engelska platsnamn,
+  exempelvis "Example: head", inga påhittade WoW-fakta. IsSample = true.
 - JsonProgressRepository(string filePath) : IProgressRepository. Saknad fil ger
   tomt framsteg. Skriv via temporär fil och ersätt för att skydda föregående data.
   Ogiltig JSON ska rapporteras som läsfel och får inte tyst skrivas över.
@@ -74,4 +74,4 @@ Persistensfel ska nå UI; en misslyckad sparning får inte rapporteras som lycka
   kör betydelsefulla kontroller med exit code 1 vid fel, 0 vid framgång.
   Kontrollera ägande/utrustningsregler, byte i samma slot, okända IDs, återläsning
   från JSON, saknad fil och korrupt JSON. Använd isolerad temporär katalog och
-  använd inte användarens riktiga framstegsfil.
+  använd inte spelarens riktiga framstegsfil.

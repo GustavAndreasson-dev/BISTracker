@@ -2,11 +2,14 @@
 
 ## Ansvar och scope
 
-- Användaren beslutar om produktens riktning och krav. Huvudtråden samordnar planering, arkitektur, uppgifter och granskning.
-- Första versionen gäller Holy Priest i vanliga WoW Classic (Vanilla), endast pre-raid BiS.
+- Projektägaren ska benämnas Chefen eller Bossen, inte "Användaren". Använd "spelaren" när dokumentationen beskriver appens slutanvändare.
+
+- Chefen beslutar om produktens riktning och krav. Huvudtråden samordnar planering, arkitektur, uppgifter och granskning.
+- Första versionen gäller Holy Priest i vanliga WoW Classic (Vanilla), fas 1, endast pre-raid BiS från dungeons och quests. Crafting och köpta/world-drop BoE-items ingår inte i den valda listan.
+- Appens användarsynliga texter ska vara på engelska. Samtalet och projektdokumentationen kan vara på svenska.
 - Fler expansioner ska kunna stödjas senare. Implementera deras funktioner först när de ingår i ett beslutat scope.
 - Läs README.md och relevanta dokument i docs/ före arbete. Skilj beslutade krav från förslag och öppna frågor.
-- Skapa eller kontakta andra användarägda trådar endast på användarens uppdrag. Vid delegering ska uppgift, berörda filer, beroenden och acceptanskriterier vara tydliga.
+- Skapa eller kontakta andra användarägda trådar endast på Chefens uppdrag. Vid delegering ska uppgift, berörda filer, beroenden och acceptanskriterier vara tydliga.
 
 ## DDD och SOLID
 
@@ -29,11 +32,11 @@
 - Uppdatera berörda dokument tillsammans med förändringar i krav, arkitektur eller implementation.
 - Testa betydelsefulla domänregler, användningsfall och lagringsbeteenden. Kör relevanta kontroller för ändringen och redovisa begränsningar.
 - Markera en uppgift klar först när implementationen och dess acceptanskriterier har verifierats. Dokumenterat eller planerat betyder inte implementerat.
-- Bevara användarens befintliga ändringar och undvik orelaterade refaktoreringar.
+- Bevara Chefens befintliga ändringar och undvik orelaterade refaktoreringar.
 
 ## Git och commits
 
 - Gör commits regelbundet när en sammanhängande del är avklarad och relevant verifiering är godkänd. Samla inte flera färdiga delar till en stor slutcommit.
 - Varje commit ska ha ett tydligt syfte och ett beskrivande meddelande. Håll ihop kod, relevant dokumentation och kontroller för samma ändring.
-- Granska det som är staged före commit och inkludera endast avsedda filer. Byggutdata, IDE-filer och användarens framstegsdata ska inte versionshanteras.
+- Granska det som är staged före commit och inkludera endast avsedda filer. Byggutdata, IDE-filer och spelarens framstegsdata ska inte versionshanteras.
 - Huvudtråden samordnar commits i den delade projektmappen. Andra trådar följer sitt uppdrag och rapporterar färdiga delar för integration och commit.
