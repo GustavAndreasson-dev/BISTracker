@@ -1,0 +1,659 @@
+{
+  "catalogs": {
+    "mage-arcane.json": {
+      "status": "Partial",
+      "rows": 38,
+      "distinctItems": 33,
+      "byAcquisition": {
+        "Crafting": 4,
+        "Dungeon": 26,
+        "Quest": 8
+      },
+      "slotsWithAlternatives": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [],
+      "factionSets": {
+        "Alliance": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 12103,
+            "Shoulder": 11782,
+            "Back": 13386,
+            "Chest": 14152,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 11822,
+            "Ranged": 13938,
+            "Finger1": 12543,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        },
+        "Horde": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 12103,
+            "Shoulder": 11782,
+            "Back": 13386,
+            "Chest": 14152,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 11822,
+            "Ranged": 13938,
+            "Finger1": 12545,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        }
+      },
+      "errors": []
+    },
+    "mage-fire.json": {
+      "status": "Reviewed",
+      "rows": 36,
+      "distinctItems": 31,
+      "byAcquisition": {
+        "Crafting": 2,
+        "Dungeon": 26,
+        "Quest": 8
+      },
+      "slotsWithAlternatives": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [],
+      "factionSets": {
+        "Alliance": {
+          "complete": true,
+          "missingSlots": [],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 12103,
+            "Shoulder": 18681,
+            "Back": 13386,
+            "Chest": 14152,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 13369,
+            "Ranged": 13938,
+            "Finger1": 12543,
+            "Finger2": 12926,
+            "Trinket1": 12930,
+            "Trinket2": 13968,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        },
+        "Horde": {
+          "complete": true,
+          "missingSlots": [],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 12103,
+            "Shoulder": 18681,
+            "Back": 13386,
+            "Chest": 14152,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 13369,
+            "Ranged": 13938,
+            "Finger1": 12545,
+            "Finger2": 12926,
+            "Trinket1": 12930,
+            "Trinket2": 13968,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        }
+      },
+      "errors": []
+    },
+    "mage-frost.json": {
+      "status": "Partial",
+      "rows": 38,
+      "distinctItems": 33,
+      "byAcquisition": {
+        "Crafting": 4,
+        "Dungeon": 26,
+        "Quest": 8
+      },
+      "slotsWithAlternatives": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [],
+      "factionSets": {
+        "Alliance": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 12103,
+            "Shoulder": 11782,
+            "Back": 13386,
+            "Chest": 14152,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 11822,
+            "Ranged": 13938,
+            "Finger1": 12543,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        },
+        "Horde": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 12103,
+            "Shoulder": 11782,
+            "Back": 13386,
+            "Chest": 14152,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 11822,
+            "Ranged": 13938,
+            "Finger1": 12545,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        }
+      },
+      "errors": []
+    },
+    "priest-discipline.json": {
+      "status": "Partial",
+      "rows": 44,
+      "distinctItems": 37,
+      "byAcquisition": {
+        "Crafting": 3,
+        "Dungeon": 32,
+        "Quest": 9
+      },
+      "slotsWithAlternatives": [
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [
+        "Head"
+      ],
+      "factionSets": {
+        "Alliance": {
+          "complete": false,
+          "missingSlots": [
+            "Head"
+          ],
+          "exampleSet": {
+            "Neck": 18723,
+            "Shoulder": 18681,
+            "Back": 13386,
+            "Chest": 14154,
+            "Wrist": 11766,
+            "Hands": 10787,
+            "Waist": 14143,
+            "Legs": 11841,
+            "Feet": 11822,
+            "Ranged": 16997,
+            "Finger1": 12543,
+            "Finger2": 13178,
+            "Trinket1": 11819,
+            "Trinket2": 12930,
+            "MainHand": 11932,
+            "OffHand": "covered by two-hander"
+          }
+        },
+        "Horde": {
+          "complete": false,
+          "missingSlots": [
+            "Head"
+          ],
+          "exampleSet": {
+            "Neck": 18723,
+            "Shoulder": 18681,
+            "Back": 13386,
+            "Chest": 14154,
+            "Wrist": 11766,
+            "Hands": 10787,
+            "Waist": 14143,
+            "Legs": 11841,
+            "Feet": 11822,
+            "Ranged": 16997,
+            "Finger1": 12545,
+            "Finger2": 13178,
+            "Trinket1": 11819,
+            "Trinket2": 12930,
+            "MainHand": 11932,
+            "OffHand": "covered by two-hander"
+          }
+        }
+      },
+      "errors": []
+    },
+    "priest-shadow.json": {
+      "status": "Partial",
+      "rows": 37,
+      "distinctItems": 32,
+      "byAcquisition": {
+        "Crafting": 5,
+        "Dungeon": 26,
+        "Quest": 6
+      },
+      "slotsWithAlternatives": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [],
+      "factionSets": {
+        "Alliance": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14136,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12543,
+            "Trinket1": 11819,
+            "Trinket2": 11832,
+            "MainHand": 13349,
+            "OffHand": 10796
+          }
+        },
+        "Horde": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14136,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12545,
+            "Trinket1": 11819,
+            "Trinket2": 11832,
+            "MainHand": 13349,
+            "OffHand": 10796
+          }
+        }
+      },
+      "errors": []
+    },
+    "warlock-affliction.json": {
+      "status": "Partial",
+      "rows": 41,
+      "distinctItems": 36,
+      "byAcquisition": {
+        "Crafting": 6,
+        "Dungeon": 27,
+        "Quest": 8
+      },
+      "slotsWithAlternatives": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [],
+      "factionSets": {
+        "Alliance": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14153,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12543,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        },
+        "Horde": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14153,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12545,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        }
+      },
+      "errors": []
+    },
+    "warlock-demonology.json": {
+      "status": "Partial",
+      "rows": 41,
+      "distinctItems": 36,
+      "byAcquisition": {
+        "Crafting": 6,
+        "Dungeon": 27,
+        "Quest": 8
+      },
+      "slotsWithAlternatives": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [],
+      "factionSets": {
+        "Alliance": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14153,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12543,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        },
+        "Horde": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14153,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12545,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        }
+      },
+      "errors": []
+    },
+    "warlock-destruction.json": {
+      "status": "Partial",
+      "rows": 41,
+      "distinctItems": 36,
+      "byAcquisition": {
+        "Crafting": 6,
+        "Dungeon": 27,
+        "Quest": 8
+      },
+      "slotsWithAlternatives": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "slotsWithoutAlternatives": [],
+      "factionSets": {
+        "Alliance": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14153,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12543,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        },
+        "Horde": {
+          "complete": false,
+          "missingSlots": [
+            "Finger2"
+          ],
+          "exampleSet": {
+            "Head": 18727,
+            "Neck": 18691,
+            "Shoulder": 14112,
+            "Back": 13386,
+            "Chest": 14153,
+            "Wrist": 11766,
+            "Hands": 13253,
+            "Waist": 11662,
+            "Legs": 13170,
+            "Feet": 18735,
+            "Ranged": 13396,
+            "Finger1": 12545,
+            "Trinket1": 11832,
+            "Trinket2": 12930,
+            "MainHand": 13964,
+            "OffHand": 10796
+          }
+        }
+      },
+      "errors": []
+    }
+  },
+  "extraFiles": {
+    "priest-holy-additions.json": {
+      "rows": 27,
+      "errors": []
+    }
+  },
+  "errors": [],
+  "result": "PASS"
+}

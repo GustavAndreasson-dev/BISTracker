@@ -1,0 +1,1755 @@
+{
+ "note": "Guide-linked items not used in the caster catalogs or Holy proposal.",
+ "items": [
+  {
+   "itemId": 942,
+   "name": "Freezing Band",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 290 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 944,
+   "name": "Elemental Mage Staff",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 276 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 1980,
+   "name": "Underworld Band",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 196 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 10247,
+   "name": "Master's Boots",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 533 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 10248,
+   "name": "Master's Bracers",
+   "guides": [
+    "icyveins-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 533 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 10249,
+   "name": "Master's Cloak",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 747 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 10250,
+   "name": "Master's Hat",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 533 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 10255,
+   "name": "Master's Belt",
+   "guides": [
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 533 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 11649,
+   "name": "Lesser Arcanum of Voracity",
+   "guides": [
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": null,
+   "reason": "No equipment slot (consumable, enchant, recipe or quest item)."
+  },
+  {
+   "itemId": 12046,
+   "name": "Jungle Necklace",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 739 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 12546,
+   "name": "Aristocratic Cuffs",
+   "guides": [
+    "warcrafttavern-holy-disc-defcamp",
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Guides label it a BoE world drop (Defcamp, Seebus)."
+  },
+  {
+   "itemId": 13001,
+   "name": "Maiden's Circle",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-priest-dps",
+    "icyveins-warlock",
+    "warcrafttavern-holy-disc-defcamp",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 424 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 13007,
+   "name": "Mageflame Cloak",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 514 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 13013,
+   "name": "Elder Wizard's Mantle",
+   "guides": [
+    "warcrafttavern-holy-disc-defcamp",
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 508 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 13102,
+   "name": "Cassandra's Grace",
+   "guides": [
+    "icyveins-priest-healer",
+    "warcrafttavern-holy-disc-defcamp",
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 321 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 13107,
+   "name": "Magiskull Cuffs",
+   "guides": [
+    "warcrafttavern-holy-disc-defcamp",
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 271 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 14146,
+   "name": "Gloves of Spell Mastery",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Crafting recipe only drops from world bosses and raid bosses (ClassicDB pattern 14511); raid source not allowed."
+  },
+  {
+   "itemId": 14328,
+   "name": "Eternal Chestguard",
+   "guides": [
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 198 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 14332,
+   "name": "Eternal Crown",
+   "guides": [
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 198 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 14335,
+   "name": "Eternal Spaulders",
+   "guides": [
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 533 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 15247,
+   "name": "Bloodstrike Dagger",
+   "guides": [
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 198 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 15281,
+   "name": "Glowstar Rod",
+   "guides": [
+    "warcrafttavern-holy-disc-defcamp"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 706 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 15282,
+   "name": "Dragon Finger",
+   "guides": [
+    "warcrafttavern-holy-disc-defcamp"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 739 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 15283,
+   "name": "Lunar Wand",
+   "guides": [
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 198 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 15802,
+   "name": "Mooncloth Boots",
+   "guides": [
+    "warcrafttavern-holy-disc-defcamp"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Recipe comes from the Timbermaw quest Sacred Cloth (reputation-gated per Defcamp); recipe source not verified in collected data."
+  },
+  {
+   "itemId": 15989,
+   "name": "Eternal Rod",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "World drop (bind on equip, 198 droppers in ClassicDB)."
+  },
+  {
+   "itemId": 16415,
+   "name": "Lieutenant Commander's Silk Spaulders",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16437,
+   "name": "Marshal's Silk Footwraps",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16440,
+   "name": "Marshal's Silk Gloves",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16441,
+   "name": "Field Marshal's Coronet",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16442,
+   "name": "Marshal's Silk Leggings",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16443,
+   "name": "Field Marshal's Silk Vestments",
+   "guides": [
+    "zockify-mage",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16444,
+   "name": "Field Marshal's Silk Spaulders",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16533,
+   "name": "Warlord's Silk Cowl",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16534,
+   "name": "General's Silk Trousers",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16535,
+   "name": "Warlord's Silk Raiment",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16536,
+   "name": "Warlord's Silk Amice",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16539,
+   "name": "General's Silk Boots",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 16540,
+   "name": "General's Silk Handguards",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17578,
+   "name": "Field Marshal's Coronal",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17579,
+   "name": "Marshal's Dreadweave Leggings",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17580,
+   "name": "Field Marshal's Dreadweave Shoulders",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17583,
+   "name": "Marshal's Dreadweave Boots",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17584,
+   "name": "Marshal's Dreadweave Gloves",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17586,
+   "name": "General's Dreadweave Boots",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17588,
+   "name": "General's Dreadweave Gloves",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17590,
+   "name": "Warlord's Dreadweave Mantle",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17591,
+   "name": "Warlord's Dreadweave Hood",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17593,
+   "name": "General's Dreadweave Pants",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17602,
+   "name": "Field Marshal's Headdress",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17603,
+   "name": "Marshal's Satin Pants",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17604,
+   "name": "Field Marshal's Satin Mantle",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17605,
+   "name": "Field Marshal's Satin Vestments",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17607,
+   "name": "Marshal's Satin Sandals",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17608,
+   "name": "Marshal's Satin Gloves",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17613,
+   "name": "Champion's Satin Shoulderpads",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17618,
+   "name": "General's Satin Boots",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17620,
+   "name": "General's Satin Gloves",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17622,
+   "name": "Warlord's Satin Mantle",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17623,
+   "name": "Warlord's Satin Cowl",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17624,
+   "name": "Warlord's Satin Robes",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 17625,
+   "name": "General's Satin Leggings",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 18182,
+   "name": "Chromatic Mantle of the Dawn",
+   "guides": [
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": null,
+   "reason": "No equipment slot (consumable, enchant, recipe or quest item)."
+  },
+  {
+   "itemId": 18301,
+   "name": "Lethtendris's Wand",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18307,
+   "name": "Riptide Shoes",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18327,
+   "name": "Whipvine Cord",
+   "guides": [
+    "icyveins-priest-healer"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18350,
+   "name": "Amplifying Cloak",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18360,
+   "name": "Harnessing Shadows",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "No equipment slot (consumable, enchant, recipe or quest item)."
+  },
+  {
+   "itemId": 18371,
+   "name": "Mindtap Talisman",
+   "guides": [
+    "icyveins-priest-dps",
+    "icyveins-priest-healer"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18372,
+   "name": "Blade of the New Moon",
+   "guides": [
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18396,
+   "name": "Mind Carver",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18407,
+   "name": "Felcloth Gloves",
+   "guides": [
+    "icyveins-priest-dps",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Pattern drops in Dire Maul (phase 2)."
+  },
+  {
+   "itemId": 18408,
+   "name": "Inferno Gloves",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 18467,
+   "name": "Royal Seal of Eldre'Thalas",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Reward of the Dire Maul book quest Harnessing Shadows (phase 2)."
+  },
+  {
+   "itemId": 18497,
+   "name": "Sublime Wristguards",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18507,
+   "name": "Boots of the Full Moon",
+   "guides": [
+    "icyveins-priest-healer"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18510,
+   "name": "Hide of the Wild",
+   "guides": [
+    "icyveins-priest-healer",
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Pattern drops in Dire Maul (phase 2)."
+  },
+  {
+   "itemId": 18534,
+   "name": "Rod of the Ogre Magi",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Dire Maul source (phase 2)."
+  },
+  {
+   "itemId": 18720,
+   "name": "Shroud of the Nathrezim",
+   "guides": [
+    "warcrafttavern-holy-seebus"
+   ],
+   "classicdbPhase": 1,
+   "reason": "Drop source not verifiable: ClassicDB lists no dropper and Wowhead returned HTTP 403 during review."
+  },
+  {
+   "itemId": 18874,
+   "name": "High Warlord's War Staff",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 19085,
+   "name": "Frostwolf Advisor's Cloak",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19086,
+   "name": "Stormpike Sage's Cloak",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19090,
+   "name": "Frostwolf Cloth Belt",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19094,
+   "name": "Stormpike Cloth Girdle",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19108,
+   "name": "Wand of Biting Cold",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-holy-seebus",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19165,
+   "name": "Flarecore Leggings",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Recipe requires Thorium Brotherhood reputation and is a later phase per ClassicDB."
+  },
+  {
+   "itemId": 19309,
+   "name": "Tome of Shadow Force",
+   "guides": [
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19310,
+   "name": "Tome of the Ice Lord",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19311,
+   "name": "Tome of Fiery Arcana",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19312,
+   "name": "Lei of the Lifegiver",
+   "guides": [
+    "icyveins-priest-healer"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19315,
+   "name": "Therazane's Touch",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19426,
+   "name": "Orb of the Darkmoon",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19518,
+   "name": "Advisor's Ring",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19522,
+   "name": "Lorekeeper's Ring",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19595,
+   "name": "Dryad's Wrist Bindings",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19597,
+   "name": "Dryad's Wrist Bindings",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 3,
+   "reason": "Later content phase (ClassicDB phase 3)."
+  },
+  {
+   "itemId": 19682,
+   "name": "Bloodvine Vest",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 19683,
+   "name": "Bloodvine Leggings",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 19684,
+   "name": "Bloodvine Boots",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 19999,
+   "name": "Bloodvine Goggles",
+   "guides": [
+    "icyveins-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20037,
+   "name": "Arcane Crystal Pendant",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20047,
+   "name": "Highlander's Cloth Girdle",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20069,
+   "name": "Ironbark Staff",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20070,
+   "name": "Sageclaw",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20098,
+   "name": "Highlander's Cloth Girdle",
+   "guides": [
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20163,
+   "name": "Defiler's Cloth Girdle",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20214,
+   "name": "Mindfang",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20258,
+   "name": "Zulian Ceremonial Staff",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20536,
+   "name": "Soul Harvester",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20601,
+   "name": "Sack of Spoils",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": null,
+   "reason": "Silithus/Abyssal quest container (later phase)."
+  },
+  {
+   "itemId": 20654,
+   "name": "Amethyst War Staff",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20682,
+   "name": "Elemental Focus Band",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20686,
+   "name": "Abyssal Cloth Amice",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20697,
+   "name": "Crystalline Threaded Cape",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20716,
+   "name": "Sandworm Skin Gloves",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 20720,
+   "name": "Dark Whisper Blade",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 4,
+   "reason": "Later content phase (ClassicDB phase 4)."
+  },
+  {
+   "itemId": 21183,
+   "name": "Earthpower Vest",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 21186,
+   "name": "Rockfury Bracers",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 21190,
+   "name": "Wrath of Cenarius",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 21563,
+   "name": "Don Rodrigo's Band",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 21802,
+   "name": "The Lost Kris of Zedd",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22070,
+   "name": "Deathmist Belt",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22071,
+   "name": "Deathmist Bracers",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22074,
+   "name": "Deathmist Mask",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22077,
+   "name": "Deathmist Wraps",
+   "guides": [
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22231,
+   "name": "Kayser's Boots of Precision",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22253,
+   "name": "Tome of the Lost",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22267,
+   "name": "Spellweaver's Turban",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22268,
+   "name": "Draconic Infused Emblem",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-priest-healer",
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22329,
+   "name": "Scepter of Interminable Focus",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22335,
+   "name": "Lord Valthalak's Staff of Command",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22339,
+   "name": "Rune Band of Wizardry",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22342,
+   "name": "Leggings of Torment",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22383,
+   "name": "Sageblade",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22403,
+   "name": "Nacreous Shell Necklace",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22408,
+   "name": "Ritssyn's Wand of Bad Mojo",
+   "guides": [
+    "icyveins-mage",
+    "warcrafttavern-warlock-zephan"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22433,
+   "name": "Don Mauricio's Band of Domination",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock",
+    "warcrafttavern-warlock-zephan",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 5,
+   "reason": "Later content phase (ClassicDB phase 5)."
+  },
+  {
+   "itemId": 22678,
+   "name": "Talisman of Ascendance",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22688,
+   "name": "Verimonde's Last Resort",
+   "guides": [
+    "icyveins-mage",
+    "icyveins-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22747,
+   "name": "Outrider's Silk Leggings",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22752,
+   "name": "Sentinel's Silk Leggings",
+   "guides": [
+    "warcrafttavern-warlock-zephan",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22860,
+   "name": "Blood Guard's Silk Walkers",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22865,
+   "name": "Blood Guard's Dreadweave Handwraps",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22869,
+   "name": "Blood Guard's Satin Handwraps",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22870,
+   "name": "Blood Guard's Silk Handwraps",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22881,
+   "name": "Legionnaire's Dreadweave Legguards",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 2,
+   "reason": "Later content phase (ClassicDB phase 2)."
+  },
+  {
+   "itemId": 22882,
+   "name": "Legionnaire's Satin Legguards",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22883,
+   "name": "Legionnaire's Silk Legguards",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22884,
+   "name": "Legionnaire's Dreadweave Tunic",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22885,
+   "name": "Legionnaire's Satin Tunic",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 22886,
+   "name": "Legionnaire's Silk Tunic",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23255,
+   "name": "Champion's Dreadweave Cowl",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23256,
+   "name": "Champion's Dreadweave Spaulders",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23261,
+   "name": "Champion's Satin Hood",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23262,
+   "name": "Champion's Satin Mantle",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23263,
+   "name": "Champion's Silk Cowl",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23264,
+   "name": "Champion's Silk Mantle",
+   "guides": [
+    "icyveins-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23282,
+   "name": "Knight-Lieutenant's Dreadweave Handwraps",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23288,
+   "name": "Knight-Lieutenant's Satin Handwraps",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23290,
+   "name": "Knight-Lieutenant's Silk Handwraps",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23291,
+   "name": "Knight-Lieutenant's Silk Walkers",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23296,
+   "name": "Knight-Captain's Dreadweave Legguards",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23297,
+   "name": "Knight-Captain's Dreadweave Tunic",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23302,
+   "name": "Knight-Captain's Satin Legguards",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23303,
+   "name": "Knight-Captain's Satin Tunic",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23304,
+   "name": "Knight-Captain's Silk Legguards",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23305,
+   "name": "Knight-Captain's Silk Tunic",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23310,
+   "name": "Lieutenant Commander's Dreadweave Cowl",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23311,
+   "name": "Lieutenant Commander's Dreadweave Spaulders",
+   "guides": [
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23316,
+   "name": "Lieutenant Commander's Satin Hood",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23317,
+   "name": "Lieutenant Commander's Satin Mantle",
+   "guides": [
+    "zockify-shadow-priest"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23318,
+   "name": "Lieutenant Commander's Silk Cowl",
+   "guides": [
+    "zockify-mage"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23451,
+   "name": "Grand Marshal's Mageblade",
+   "guides": [
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23454,
+   "name": "Grand Marshal's Warhammer",
+   "guides": [
+    "icyveins-priest-healer"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  },
+  {
+   "itemId": 23466,
+   "name": "High Warlord's Spellblade",
+   "guides": [
+    "icyveins-mage",
+    "zockify-mage",
+    "zockify-shadow-priest",
+    "zockify-warlock"
+   ],
+   "classicdbPhase": 6,
+   "reason": "Later content phase (ClassicDB phase 6)."
+  }
+ ]
+}

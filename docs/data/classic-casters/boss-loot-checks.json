@@ -1,0 +1,33 @@
+{
+  "source": "https://classicdb.ch/?npc=<id> (drops tab)",
+  "results": [
+    {
+      "npcId": 10813,
+      "npcPage": "Balnazzar - NPC - Classic wow database",
+      "itemId": 12103,
+      "listedInLoot": false,
+      "percent": null
+    },
+    {
+      "npcId": 10813,
+      "npcPage": "Balnazzar - NPC - Classic wow database",
+      "itemId": 13369,
+      "listedInLoot": false,
+      "percent": null
+    },
+    {
+      "npcId": 10429,
+      "npcPage": "Warchief Rend Blackhand - NPC - Classic wow database",
+      "itemId": 18102,
+      "listedInLoot": false,
+      "percent": null
+    },
+    {
+      "npcId": 10429,
+      "npcPage": "Warchief Rend Blackhand - NPC - Classic wow database",
+      "itemId": 18103,
+      "listedInLoot": false,
+      "percent": null
+    }
+  ]
+}

@@ -1,0 +1,2026 @@
+{
+  "reviewedOn": "2026-10-08",
+  "items": {
+    "18727": {
+      "acquisitionType": "Dungeon",
+      "source": "Magistrate Barthilas, Stratholme (Undead)",
+      "note": ""
+    },
+    "10504": {
+      "acquisitionType": "Crafting",
+      "source": "Engineering (245)",
+      "note": "Recipe taught by an Engineering trainer. Requires Engineering (245) to equip. The crafted suffix is random."
+    },
+    "14111": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (290)",
+      "note": "Pattern: Felcloth Hood is a world drop."
+    },
+    "12103": {
+      "acquisitionType": "Dungeon",
+      "source": "Balnazzar, Stratholme (Live)",
+      "note": ""
+    },
+    "18691": {
+      "acquisitionType": "Dungeon",
+      "source": "Vectus, Scholomance",
+      "note": ""
+    },
+    "18723": {
+      "acquisitionType": "Dungeon",
+      "source": "Ramstein the Gorger, Stratholme (Undead)",
+      "note": ""
+    },
+    "13141": {
+      "acquisitionType": "Dungeon",
+      "source": "General Drakkisath, Upper Blackrock Spire",
+      "note": "UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "13960": {
+      "acquisitionType": "Dungeon",
+      "source": "Kirtonos the Herald, Scholomance",
+      "note": ""
+    },
+    "11782": {
+      "acquisitionType": "Dungeon",
+      "source": "Warder Stilgiss, Blackrock Depths",
+      "note": ""
+    },
+    "18681": {
+      "acquisitionType": "Dungeon",
+      "source": "Shared boss loot, Scholomance",
+      "note": "Several Scholomance bosses share this drop; Lord Alexei Barov is one verified source."
+    },
+    "14112": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (300)",
+      "note": "Pattern: Felcloth Shoulders is a world drop."
+    },
+    "11624": {
+      "acquisitionType": "Dungeon",
+      "source": "High Interrogator Gerstahn, Blackrock Depths",
+      "note": ""
+    },
+    "13185": {
+      "acquisitionType": "Dungeon",
+      "source": "Crystal Fang, Lower Blackrock Spire",
+      "note": "Rare spawn."
+    },
+    "16695": {
+      "acquisitionType": "Dungeon",
+      "source": "Solakar Flamewreath, Upper Blackrock Spire",
+      "note": "UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "13386": {
+      "acquisitionType": "Dungeon",
+      "source": "Archivist Galford, Stratholme (Live)",
+      "note": ""
+    },
+    "11623": {
+      "acquisitionType": "Dungeon",
+      "source": "Houndmaster Grebmar, Blackrock Depths",
+      "note": ""
+    },
+    "12110": {
+      "acquisitionType": "Quest",
+      "source": "The Rise of the Machines, Badlands",
+      "note": "Horde quest chain; reward quest minimum level 52.",
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    "14152": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (300)",
+      "note": "Requires Tailoring. Bind on pickup; Mage only. Pattern: Robe of the Archmage drops from Firebrand Pyromancers in Blackrock Spire."
+    },
+    "14340": {
+      "acquisitionType": "Dungeon",
+      "source": "Ras Frostwhisper, Scholomance",
+      "note": ""
+    },
+    "14136": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (285)",
+      "note": "Pattern: Robe of Winter Night (bind on pickup) drops from Cobalt Mageweavers in Winterspring."
+    },
+    "14153": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (300)",
+      "note": "Requires Tailoring. Bind on pickup; Warlock only. Pattern: Robe of the Void drops from Darkmaster Gandling, Scholomance."
+    },
+    "14106": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (300)",
+      "note": "Pattern: Felcloth Robe is a world drop."
+    },
+    "14154": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (300)",
+      "note": "Requires Tailoring. Bind on pickup; Priest only. Pattern: Truefaith Vestments drops from Balnazzar, Stratholme (Live)."
+    },
+    "13346": {
+      "acquisitionType": "Dungeon",
+      "source": "Baron Rivendare, Stratholme (Undead)",
+      "note": ""
+    },
+    "11766": {
+      "acquisitionType": "Dungeon",
+      "source": "Lord Incendius, Blackrock Depths",
+      "note": ""
+    },
+    "13409": {
+      "acquisitionType": "Dungeon",
+      "source": "The Unforgiven, Stratholme (Live)",
+      "note": ""
+    },
+    "16697": {
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet and Thuzadin casters, Stratholme",
+      "note": "Bind on equip trash drop inside Stratholme."
+    },
+    "16683": {
+      "acquisitionType": "Dungeon",
+      "source": "Spellcasters in Blackrock Spire",
+      "note": "Bind on equip trash drop inside Lower and Upper Blackrock Spire."
+    },
+    "13253": {
+      "acquisitionType": "Dungeon",
+      "source": "Quartermaster Zigris, Lower Blackrock Spire",
+      "note": ""
+    },
+    "21318": {
+      "acquisitionType": "Quest",
+      "source": "Winterfall Activity, Winterspring",
+      "note": "Quest minimum level 45.",
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    "13870": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (265)",
+      "note": "Pattern: Frostweave Gloves is a world drop."
+    },
+    "10787": {
+      "acquisitionType": "Dungeon",
+      "source": "Troll mini-bosses, Sunken Temple",
+      "note": ""
+    },
+    "12554": {
+      "acquisitionType": "Dungeon",
+      "source": "Princess Moira Bronzebeard, Blackrock Depths",
+      "note": ""
+    },
+    "11662": {
+      "acquisitionType": "Dungeon",
+      "source": "Ok'thor the Breaker, Blackrock Depths",
+      "note": ""
+    },
+    "13956": {
+      "acquisitionType": "Dungeon",
+      "source": "Kirtonos the Herald, Scholomance",
+      "note": ""
+    },
+    "18740": {
+      "acquisitionType": "Dungeon",
+      "source": "Nerub'enkan, Stratholme (Undead)",
+      "note": ""
+    },
+    "12589": {
+      "acquisitionType": "Dungeon",
+      "source": "Solakar Flamewreath, Upper Blackrock Spire",
+      "note": "UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "14143": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (265)",
+      "note": "Pattern: Ghostweave Belt drops from Lingering Highborne in Azshara."
+    },
+    "16696": {
+      "acquisitionType": "Dungeon",
+      "source": "Spellcasters in Blackrock Spire",
+      "note": "Bind on equip trash drop inside Lower and Upper Blackrock Spire."
+    },
+    "13170": {
+      "acquisitionType": "Dungeon",
+      "source": "Highlord Omokk, Lower Blackrock Spire",
+      "note": ""
+    },
+    "9484": {
+      "acquisitionType": "Dungeon",
+      "source": "Random drop, Zul'Farrak",
+      "note": "Rare bind on equip drop in Zul'Farrak."
+    },
+    "11841": {
+      "acquisitionType": "Dungeon",
+      "source": "Fineous Darkvire, Blackrock Depths",
+      "note": ""
+    },
+    "14144": {
+      "acquisitionType": "Crafting",
+      "source": "Tailoring (290)",
+      "note": "Pattern: Ghostweave Pants drops from Spectral Citizens in Stratholme."
+    },
+    "12965": {
+      "acquisitionType": "Dungeon",
+      "source": "The Beast, Upper Blackrock Spire",
+      "note": "UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "11822": {
+      "acquisitionType": "Dungeon",
+      "source": "Golem Lord Argelmach, Blackrock Depths",
+      "note": ""
+    },
+    "18102": {
+      "acquisitionType": "Dungeon",
+      "source": "Warchief Rend Blackhand, Upper Blackrock Spire",
+      "note": "UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "13369": {
+      "acquisitionType": "Dungeon",
+      "source": "Balnazzar, Stratholme (Live)",
+      "note": ""
+    },
+    "18735": {
+      "acquisitionType": "Dungeon",
+      "source": "Maleki the Pallid, Stratholme (Undead)",
+      "note": ""
+    },
+    "13282": {
+      "acquisitionType": "Dungeon",
+      "source": "Spirestone Lord Magus, Lower Blackrock Spire",
+      "note": "Rare spawn."
+    },
+    "13391": {
+      "acquisitionType": "Dungeon",
+      "source": "Postmaster Malown, Stratholme (Undead)",
+      "note": ""
+    },
+    "12543": {
+      "acquisitionType": "Quest",
+      "source": "The Princess's Surprise, Blackrock Depths",
+      "note": "Alliance reward; Horde gets Eye of Orgrimmar from The Princess Saved?.",
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    "12545": {
+      "acquisitionType": "Quest",
+      "source": "The Princess Saved?, Blackrock Depths",
+      "note": "Horde reward; Alliance gets Songstone of Ironforge from The Princess's Surprise.",
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    "12926": {
+      "acquisitionType": "Dungeon",
+      "source": "Pyroguard Emberseer, Upper Blackrock Spire",
+      "note": "UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "16058": {
+      "acquisitionType": "Quest",
+      "source": "In Dreams, Western Plaguelands",
+      "note": "Group quest at the end of the Tirion Fordring chain; minimum level 52.",
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    "18103": {
+      "acquisitionType": "Dungeon",
+      "source": "Warchief Rend Blackhand, Upper Blackrock Spire",
+      "note": "UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "13178": {
+      "acquisitionType": "Dungeon",
+      "source": "Urok Doomhowl, Lower Blackrock Spire",
+      "note": ""
+    },
+    "12930": {
+      "acquisitionType": "Dungeon",
+      "source": "Jed Runewatcher, Upper Blackrock Spire",
+      "note": "Rare spawn. UBRS uses a group of up to 10 players and requires the Seal of Ascension for access."
+    },
+    "13968": {
+      "acquisitionType": "Quest",
+      "source": "General Drakkisath's Demise / For The Horde!",
+      "note": "Alliance: General Drakkisath's Demise. Horde: For The Horde!. Minimum level 55.",
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    "11832": {
+      "acquisitionType": "Dungeon",
+      "source": "Ambassador Flamelash, Blackrock Depths",
+      "note": ""
+    },
+    "11819": {
+      "acquisitionType": "Dungeon",
+      "source": "Golem Lord Argelmach, Blackrock Depths",
+      "note": ""
+    },
+    "13964": {
+      "acquisitionType": "Dungeon",
+      "source": "Darkmaster Gandling, Scholomance",
+      "note": ""
+    },
+    "17780": {
+      "acquisitionType": "Dungeon",
+      "source": "Princess Theradras, Maraudon",
+      "note": ""
+    },
+    "17719": {
+      "acquisitionType": "Dungeon",
+      "source": "Tinkerer Gizlock, Maraudon",
+      "note": ""
+    },
+    "13349": {
+      "acquisitionType": "Dungeon",
+      "source": "Baron Rivendare, Stratholme (Undead)",
+      "note": ""
+    },
+    "10828": {
+      "acquisitionType": "Dungeon",
+      "source": "Shade of Eranikus, Sunken Temple",
+      "note": ""
+    },
+    "11923": {
+      "acquisitionType": "Dungeon",
+      "source": "Chest of The Seven, Blackrock Depths",
+      "note": "Loot from the Chest of The Seven after the Seven Dwarves encounter."
+    },
+    "11932": {
+      "acquisitionType": "Dungeon",
+      "source": "Emperor Dagran Thaurissan, Blackrock Depths",
+      "note": ""
+    },
+    "10796": {
+      "acquisitionType": "Dungeon",
+      "source": "Green dragon mini-bosses, Sunken Temple",
+      "note": ""
+    },
+    "11904": {
+      "acquisitionType": "Quest",
+      "source": "It's Dangerous to Go Alone, Un'Goro Crater",
+      "note": "End of the Linken quest chain; minimum level 47.",
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    "11928": {
+      "acquisitionType": "Dungeon",
+      "source": "Emperor Dagran Thaurissan, Blackrock Depths",
+      "note": ""
+    },
+    "13938": {
+      "acquisitionType": "Dungeon",
+      "source": "Darkmaster Gandling, Scholomance",
+      "note": ""
+    },
+    "11748": {
+      "acquisitionType": "Dungeon",
+      "source": "Pyromancer Loregrain, Blackrock Depths",
+      "note": ""
+    },
+    "13396": {
+      "acquisitionType": "Dungeon",
+      "source": "Skul, Stratholme (Live)",
+      "note": "Rare spawn."
+    },
+    "16997": {
+      "acquisitionType": "Quest",
+      "source": "Order Must Be Restored / The Scarlet Oracle, Demetria",
+      "note": "Alliance: Order Must Be Restored, an outdoor raid quest. Horde: The Scarlet Oracle, Demetria, an elite quest. Minimum level 56.",
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    }
+  },
+  "specs": {
+    "mage-arcane": {
+      "characterClass": "Mage",
+      "specializationId": "arcane",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+      "supplementarySourceUrls": [
+        "https://www.zockify.com/classic/mage/dps/"
+      ],
+      "status": "Partial",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Mage DPS pre-raid lists and the Zockify Classic Mage pre-BiS list. Items are kept only when available in Classic phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking. Neither guide publishes a separate Arcane list; this uses the class-wide phase 1 Mage DPS list (Frost-oriented per Icy Veins).",
+      "alternatives": [
+        {
+          "itemId": 18727,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10504,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 12103,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11782,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 11623,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14152,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14340,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14136,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 13409,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 13253,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 21318,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13870,
+          "recommendationUrl": "https://www.zockify.com/classic/mage/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11662,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13956,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18740,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 9484,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18102,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13968,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11832,
+          "recommendationUrl": "https://www.zockify.com/classic/mage/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13964,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 17780,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 17719,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10796,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        }
+      ]
+    },
+    "mage-fire": {
+      "characterClass": "Mage",
+      "specializationId": "fire",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+      "supplementarySourceUrls": [],
+      "status": "Reviewed",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Mage DPS pre-raid lists. Items are kept only when available in Classic phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking. Uses the Icy Veins phase 5-6 lists, which the guide states are Fire-oriented, filtered to items available in phase 1.",
+      "alternatives": [
+        {
+          "itemId": 18727,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10504,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Fiery Wrath"
+        },
+        {
+          "itemId": 12103,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Fiery Wrath"
+        },
+        {
+          "itemId": 11623,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14152,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Fiery Wrath"
+        },
+        {
+          "itemId": 13409,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Fiery Wrath"
+        },
+        {
+          "itemId": 13253,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 21318,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11662,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13956,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18740,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 9484,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13369,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18102,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12926,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13968,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13964,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 17780,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 17719,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10796,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Fiery Wrath"
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11748,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        }
+      ]
+    },
+    "mage-frost": {
+      "characterClass": "Mage",
+      "specializationId": "frost",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+      "supplementarySourceUrls": [
+        "https://www.zockify.com/classic/mage/dps/"
+      ],
+      "status": "Partial",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Mage DPS pre-raid lists and the Zockify Classic Mage pre-BiS list. Items are kept only when available in Classic phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking. Icy Veins states its phase 1-4 lists emphasize Frost damage because raids in those phases are played as Frost.",
+      "alternatives": [
+        {
+          "itemId": 18727,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10504,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 12103,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11782,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 11623,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14152,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14340,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14136,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 13409,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 13253,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 21318,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13870,
+          "recommendationUrl": "https://www.zockify.com/classic/mage/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11662,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13956,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18740,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 9484,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18102,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13968,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11832,
+          "recommendationUrl": "https://www.zockify.com/classic/mage/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13964,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 17780,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 17719,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10796,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": "of Frozen Wrath"
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/mage-dps-pre-raid-gear",
+          "requiredSuffix": null
+        }
+      ]
+    },
+    "priest-discipline": {
+      "characterClass": "Priest",
+      "specializationId": "discipline",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+      "supplementarySourceUrls": [
+        "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/"
+      ],
+      "status": "Partial",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Priest Healer pre-raid lists and the Warcraft Tavern Holy/Discipline phase 1 (pre Dire Maul) list by Defcamp. Kept only when available in phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking.",
+      "alternatives": [
+        {
+          "itemId": 18723,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13141,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11624,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13185,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 16695,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": "of Healing"
+        },
+        {
+          "itemId": 12110,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14154,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13346,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": "of Healing"
+        },
+        {
+          "itemId": 16697,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 16683,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10787,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": "of Healing"
+        },
+        {
+          "itemId": 12554,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14143,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12589,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 16696,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11841,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14144,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12965,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13282,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 16058,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18103,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13178,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11819,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11923,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11932,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11928,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 16997,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+          "requiredSuffix": null
+        }
+      ]
+    },
+    "priest-shadow": {
+      "characterClass": "Priest",
+      "specializationId": "shadow",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+      "supplementarySourceUrls": [
+        "https://www.zockify.com/classic/priest/shadow/"
+      ],
+      "status": "Partial",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Shadow Priest pre-raid lists and the Zockify Classic Shadow Priest pre-BiS list. Kept only when available in phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking.",
+      "alternatives": [
+        {
+          "itemId": 18727,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10504,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 14111,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18691,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14112,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11623,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14136,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14106,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13409,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13253,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 21318,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11662,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13956,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18740,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18735,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11819,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11832,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13349,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10828,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13964,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10796,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13396,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.zockify.com/classic/priest/shadow/",
+          "requiredSuffix": null
+        }
+      ]
+    },
+    "warlock-affliction": {
+      "characterClass": "Warlock",
+      "specializationId": "affliction",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+      "supplementarySourceUrls": [
+        "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+        "https://www.zockify.com/classic/warlock/dps/"
+      ],
+      "status": "Partial",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Warlock DPS pre-raid lists, the Warcraft Tavern Warlock pre-raid list by Zephan and the Zockify Classic Warlock pre-BiS list. These are class-wide Warlock lists without separate spec lists. Kept only when available in phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking.",
+      "alternatives": [
+        {
+          "itemId": 18727,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10504,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 14111,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18691,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12103,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14112,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11623,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14153,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14136,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14106,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13409,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13253,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10787,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 21318,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11662,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13956,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18740,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12589,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18735,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18102,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13968,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11832,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13964,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10828,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 10796,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13396,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        }
+      ]
+    },
+    "warlock-demonology": {
+      "characterClass": "Warlock",
+      "specializationId": "demonology",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+      "supplementarySourceUrls": [
+        "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+        "https://www.zockify.com/classic/warlock/dps/"
+      ],
+      "status": "Partial",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Warlock DPS pre-raid lists, the Warcraft Tavern Warlock pre-raid list by Zephan and the Zockify Classic Warlock pre-BiS list. These are class-wide Warlock lists without separate spec lists. Kept only when available in phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking.",
+      "alternatives": [
+        {
+          "itemId": 18727,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10504,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 14111,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18691,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12103,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14112,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11623,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14153,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14136,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14106,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13409,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13253,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10787,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 21318,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11662,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13956,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18740,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12589,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18735,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18102,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13968,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11832,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13964,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10828,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 10796,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13396,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        }
+      ]
+    },
+    "warlock-destruction": {
+      "characterClass": "Warlock",
+      "specializationId": "destruction",
+      "sourceUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+      "supplementarySourceUrls": [
+        "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+        "https://www.zockify.com/classic/warlock/dps/"
+      ],
+      "status": "Partial",
+      "selectionMethod": "Named alternatives from the Icy Veins Classic Warlock DPS pre-raid lists, the Warcraft Tavern Warlock pre-raid list by Zephan and the Zockify Classic Warlock pre-BiS list. These are class-wide Warlock lists without separate spec lists. Kept only when available in phase 1 from dungeons (not Dire Maul or raids), quests or crafting with a phase 1 recipe; world drops, vendor, PvP, reputation and later-phase items are excluded. Random-suffix rows require the suffix the guide names. No independent ranking.",
+      "alternatives": [
+        {
+          "itemId": 18727,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10504,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 14111,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18691,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12103,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14112,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18681,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13386,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11623,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14153,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14136,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 14106,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11766,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13409,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 13253,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10787,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 21318,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11662,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13956,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18740,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12589,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13170,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18735,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11822,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 18102,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12543,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12545,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 12930,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13968,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 11832,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13964,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 10828,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 10796,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": "of Shadow Wrath"
+        },
+        {
+          "itemId": 11904,
+          "recommendationUrl": "https://www.zockify.com/classic/warlock/dps/",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13396,
+          "recommendationUrl": "https://www.icy-veins.com/wow-classic/warlock-dps-pre-raid-gear",
+          "requiredSuffix": null
+        },
+        {
+          "itemId": 13938,
+          "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pve-warlock-pre-raid-best-in-slot/",
+          "requiredSuffix": null
+        }
+      ]
+    }
+  },
+  "gaps": {
+    "mage-arcane": [
+      "Finger2: only one phase 1 dungeon/quest ring per faction is named (Songstone of Ironforge / Eye of Orgrimmar); the other named rings are world drops or later phases."
+    ],
+    "mage-frost": [
+      "Finger2: only one phase 1 dungeon/quest ring per faction is named (Songstone of Ironforge / Eye of Orgrimmar); the other named rings are world drops or later phases."
+    ],
+    "priest-discipline": [
+      "Head: the only named phase 1 head (Cassandra's Grace) is a world drop."
+    ],
+    "priest-shadow": [
+      "Finger2: only one phase 1 dungeon/quest ring per faction is named (Songstone of Ironforge / Eye of Orgrimmar)."
+    ],
+    "warlock-affliction": [
+      "Finger2: only one phase 1 dungeon/quest ring per faction is named (Songstone of Ironforge / Eye of Orgrimmar); Maiden's Circle and Underworld Band are world drops."
+    ],
+    "warlock-demonology": [
+      "Finger2: only one phase 1 dungeon/quest ring per faction is named (Songstone of Ironforge / Eye of Orgrimmar); Maiden's Circle and Underworld Band are world drops."
+    ],
+    "warlock-destruction": [
+      "Finger2: only one phase 1 dungeon/quest ring per faction is named (Songstone of Ironforge / Eye of Orgrimmar); Maiden's Circle and Underworld Band are world drops."
+    ]
+  },
+  "holyAdditions": {
+    "purpose": "Proposed Holy Priest Classic phase 1 alternatives to merge into the existing catalog. The 17 existing 1.0.0 rows are not repeated and keep their row IDs. Row IDs here follow the new contract and may be changed by the main agent when merging.",
+    "sourceUrls": [
+      "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+      "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+      "https://www.warcrafttavern.com/wow-classic/guides/holy-priest/"
+    ],
+    "alternatives": [
+      {
+        "itemId": 13141,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13960,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/holy-priest/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 11624,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13185,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 16695,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 12110,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 14154,
+        "recommendationUrl": "https://www.icy-veins.com/wow-classic/priest-healer-pre-raid-gear",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 16697,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 16683,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 12554,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13253,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/holy-priest/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 14143,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 16696,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13170,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 14144,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 12965,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13282,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13391,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/holy-priest/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13178,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 12543,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 12545,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 11932,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 11904,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      },
+      {
+        "itemId": 13938,
+        "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/pre-raid-bis-for-holy-disc-priest-in-phase-1-pre-dm-patch-of-classic/",
+        "requiredSuffix": null
+      }
+    ]
+  }
+}
