@@ -1,0 +1,1641 @@
+{
+ "reviewedOn": "2026-10-08",
+ "weaponSetupNotes": {
+  "Rogue": "Rogues cannot use two-handed weapons; the guide lists sword and dagger pairs (OneHandAndOffHand).",
+  "Warrior DPS": "Flexible: the guide lists Main-Hand/Off-Hand and Two-Hand options; its talent page (https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents) describes both dual-wield and two-hander DPS builds without assigning them to Arms or Fury.",
+  "Warrior Protection": "OneHandAndOffHand: both tank guides list a one-hand weapon plus a shield.",
+  "Hunter": "Flexible: the only kept melee weapon is the two-handed Peacemaker."
+ },
+ "catalogs": [
+  {
+   "characterClass": "Rogue",
+   "specializationId": "assassination",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/rogue-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins Rogue DPS pre-raid list (one list for all Rogue specs). The Phase 1 table is primary; Phase 2-4 table items are kept only when obtainable in phase 1. Dungeon, quest and phase 1 crafting only. Unranked alternatives; no equivalent-value claim.",
+   "weaponSetup": "OneHandAndOffHand",
+   "weaponSetupSourceUrl": "https://www.icy-veins.com/wow-classic/rogue-dps-pre-raid-gear",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 16710,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 16712,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13252
+    },
+    {
+     "slot": "Waist",
+     "itemId": 16713,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16709,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12553
+    },
+    {
+     "slot": "Feet",
+     "itemId": 16711,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12940
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12939
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12783
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12783
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    }
+   ]
+  },
+  {
+   "characterClass": "Rogue",
+   "specializationId": "combat",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/rogue-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins Rogue DPS pre-raid list (one list for all Rogue specs). The Phase 1 table is primary; Phase 2-4 table items are kept only when obtainable in phase 1. Dungeon, quest and phase 1 crafting only. Unranked alternatives; no equivalent-value claim.",
+   "weaponSetup": "OneHandAndOffHand",
+   "weaponSetupSourceUrl": "https://www.icy-veins.com/wow-classic/rogue-dps-pre-raid-gear",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 16710,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 16712,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13252
+    },
+    {
+     "slot": "Waist",
+     "itemId": 16713,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16709,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12553
+    },
+    {
+     "slot": "Feet",
+     "itemId": 16711,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12940
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12939
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12783
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12783
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    }
+   ]
+  },
+  {
+   "characterClass": "Rogue",
+   "specializationId": "subtlety",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/rogue-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins Rogue DPS pre-raid list (one list for all Rogue specs). The Phase 1 table is primary; Phase 2-4 table items are kept only when obtainable in phase 1. Dungeon, quest and phase 1 crafting only. Unranked alternatives; no equivalent-value claim.",
+   "weaponSetup": "OneHandAndOffHand",
+   "weaponSetupSourceUrl": "https://www.icy-veins.com/wow-classic/rogue-dps-pre-raid-gear",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 16710,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 16712,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13252
+    },
+    {
+     "slot": "Waist",
+     "itemId": 16713,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16709,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12553
+    },
+    {
+     "slot": "Feet",
+     "itemId": 16711,
+     "note": "Shadowcraft set piece."
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12940
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12939
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12783
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12783
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    }
+   ]
+  },
+  {
+   "characterClass": "Hunter",
+   "specializationId": "beast-mastery",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/hunter-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins Hunter DPS pre-raid list (one list for all Hunter specs), filtered to phase 1 dungeons, quests and crafting. Dire Maul, Dungeon Set 2, world drops and reputation removed. Unranked alternatives; no equivalent-value claim.",
+   "weaponSetup": "Flexible",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Neck",
+     "itemId": 11933
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 15051
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Back",
+     "itemId": 13397
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11726
+    },
+    {
+     "slot": "Chest",
+     "itemId": 13944
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11926
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Chest",
+     "itemId": 15050,
+     "note": "Black Dragonscale set piece; recommended for the set bonus."
+    },
+    {
+     "slot": "Chest",
+     "itemId": 16674,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13211
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 16681,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 13255
+    },
+    {
+     "slot": "Waist",
+     "itemId": 16680,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Waist",
+     "itemId": 14636
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15052,
+     "note": "Black Dragonscale set piece; recommended for the set bonus."
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16678,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 13967
+    },
+    {
+     "slot": "Feet",
+     "itemId": 16675,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12553
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 18725
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18738
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18680
+    }
+   ]
+  },
+  {
+   "characterClass": "Hunter",
+   "specializationId": "marksmanship",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/hunter-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins Hunter DPS pre-raid list (one list for all Hunter specs), filtered to phase 1 dungeons, quests and crafting. Dire Maul, Dungeon Set 2, world drops and reputation removed. Unranked alternatives; no equivalent-value claim.",
+   "weaponSetup": "Flexible",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Neck",
+     "itemId": 11933
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 15051
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Back",
+     "itemId": 13397
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11726
+    },
+    {
+     "slot": "Chest",
+     "itemId": 13944
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11926
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Chest",
+     "itemId": 15050,
+     "note": "Black Dragonscale set piece; recommended for the set bonus."
+    },
+    {
+     "slot": "Chest",
+     "itemId": 16674,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13211
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 16681,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 13255
+    },
+    {
+     "slot": "Waist",
+     "itemId": 16680,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Waist",
+     "itemId": 14636
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15052,
+     "note": "Black Dragonscale set piece; recommended for the set bonus."
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16678,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 13967
+    },
+    {
+     "slot": "Feet",
+     "itemId": 16675,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12553
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 18725
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18738
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18680
+    }
+   ]
+  },
+  {
+   "characterClass": "Hunter",
+   "specializationId": "survival",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/hunter-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins Hunter DPS pre-raid list (one list for all Hunter specs), filtered to phase 1 dungeons, quests and crafting. Dire Maul, Dungeon Set 2, world drops and reputation removed. Unranked alternatives; no equivalent-value claim.",
+   "weaponSetup": "Flexible",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Neck",
+     "itemId": 11933
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 15051
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Back",
+     "itemId": 13397
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11726
+    },
+    {
+     "slot": "Chest",
+     "itemId": 13944
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11926
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Chest",
+     "itemId": 15050,
+     "note": "Black Dragonscale set piece; recommended for the set bonus."
+    },
+    {
+     "slot": "Chest",
+     "itemId": 16674,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13211
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 16681,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 13255
+    },
+    {
+     "slot": "Waist",
+     "itemId": 16680,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Waist",
+     "itemId": 14636
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15052,
+     "note": "Black Dragonscale set piece; recommended for the set bonus."
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16678,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 13967
+    },
+    {
+     "slot": "Feet",
+     "itemId": 16675,
+     "note": "Beaststalker set piece; the guide recommends it when you use four set pieces."
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12553
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 18725
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18738
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18680
+    }
+   ]
+  },
+  {
+   "characterClass": "Warrior",
+   "specializationId": "arms",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/warrior-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins MC/Ony DPS Warrior pre-raid list (one DPS list for Arms and Fury), filtered to phase 1 dungeons, quests and crafting. One-hand and two-hand options are both kept because the guide does not tie a weapon setup to Arms or Fury. Unranked alternatives.",
+   "weaponSetup": "Flexible",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 12640
+    },
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Head",
+     "itemId": 12587
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Neck",
+     "itemId": 17044
+    },
+    {
+     "slot": "Neck",
+     "itemId": 11933
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12082
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 16733,
+     "note": "Defensive option."
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Back",
+     "itemId": 11626
+    },
+    {
+     "slot": "Back",
+     "itemId": 13397
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11726
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Chest",
+     "itemId": 13944
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 12936
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13400
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13211
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 12966
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 13957
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13142
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13959
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13502
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16732
+    },
+    {
+     "slot": "Feet",
+     "itemId": 14616
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12555
+    },
+    {
+     "slot": "Feet",
+     "itemId": 13967
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 12548
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 12548
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13217
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13217
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 19120
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 11684
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12940
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12590
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12939
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 15806
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12592
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12784
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 11931
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 13348
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12653
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    }
+   ]
+  },
+  {
+   "characterClass": "Warrior",
+   "specializationId": "fury",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/warrior-dps-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins MC/Ony DPS Warrior pre-raid list (one DPS list for Arms and Fury), filtered to phase 1 dungeons, quests and crafting. One-hand and two-hand options are both kept because the guide does not tie a weapon setup to Arms or Fury. Unranked alternatives.",
+   "weaponSetup": "Flexible",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 12640
+    },
+    {
+     "slot": "Head",
+     "itemId": 13404
+    },
+    {
+     "slot": "Head",
+     "itemId": 12587
+    },
+    {
+     "slot": "Neck",
+     "itemId": 15411
+    },
+    {
+     "slot": "Neck",
+     "itemId": 17044
+    },
+    {
+     "slot": "Neck",
+     "itemId": 11933
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12927
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 12082
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 16733,
+     "note": "Defensive option."
+    },
+    {
+     "slot": "Back",
+     "itemId": 13340
+    },
+    {
+     "slot": "Back",
+     "itemId": 11626
+    },
+    {
+     "slot": "Back",
+     "itemId": 13397
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11726
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14637
+    },
+    {
+     "slot": "Chest",
+     "itemId": 13944
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 12936
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13400
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13211
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 12966
+    },
+    {
+     "slot": "Hands",
+     "itemId": 15063
+    },
+    {
+     "slot": "Hands",
+     "itemId": 13957
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13142
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13959
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13502
+    },
+    {
+     "slot": "Legs",
+     "itemId": 15062
+    },
+    {
+     "slot": "Legs",
+     "itemId": 16732
+    },
+    {
+     "slot": "Feet",
+     "itemId": 14616
+    },
+    {
+     "slot": "Feet",
+     "itemId": 12555
+    },
+    {
+     "slot": "Feet",
+     "itemId": 13967
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 12548
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 12548
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13217
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13217
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 19120
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 19120
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 11684
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12940
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12590
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12939
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 15806
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12592
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 12784
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 11931
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 13348
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12653
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    }
+   ]
+  },
+  {
+   "characterClass": "Warrior",
+   "specializationId": "protection",
+   "sourceUrl": "https://www.icy-veins.com/wow-classic/warrior-tank-pre-raid-gear",
+   "status": "Reviewed",
+   "selectionMethod": "Named items from the Icy Veins MC/Ony Tank Warrior pre-raid list and the Warcraft Tavern phase 1 Warrior Prot pre-raid list, filtered to phase 1 dungeons, quests and crafting. Random-enchantment items without a named suffix are left out. Unranked alternatives; no equivalent-value claim.",
+   "weaponSetup": "OneHandAndOffHand",
+   "weaponSetupSourceUrl": "https://www.icy-veins.com/wow-classic/warrior-tank-pre-raid-gear",
+   "rows": [
+    {
+     "slot": "Head",
+     "itemId": 11746
+    },
+    {
+     "slot": "Neck",
+     "itemId": 11755
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 16733
+    },
+    {
+     "slot": "Back",
+     "itemId": 13397
+    },
+    {
+     "slot": "Back",
+     "itemId": 11930
+    },
+    {
+     "slot": "Back",
+     "itemId": 11626
+    },
+    {
+     "slot": "Chest",
+     "itemId": 14624
+    },
+    {
+     "slot": "Chest",
+     "itemId": 15413
+    },
+    {
+     "slot": "Chest",
+     "itemId": 11678
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 16735
+    },
+    {
+     "slot": "Hands",
+     "itemId": 14525
+    },
+    {
+     "slot": "Hands",
+     "itemId": 13963,
+     "note": "Threat option."
+    },
+    {
+     "slot": "Waist",
+     "itemId": 13142
+    },
+    {
+     "slot": "Waist",
+     "itemId": 14620
+    },
+    {
+     "slot": "Legs",
+     "itemId": 12935
+    },
+    {
+     "slot": "Feet",
+     "itemId": 13381
+    },
+    {
+     "slot": "Feet",
+     "itemId": 13259
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13373
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13373
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 11669
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 11669
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 15855
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 15855
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 17774
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 17774
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11815,
+     "note": "Threat option."
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11815,
+     "note": "Threat option."
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 11810,
+     "note": "AoE tanking option."
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 11810,
+     "note": "AoE tanking option."
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 15806
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 12602
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 12651
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 16996
+    },
+    {
+     "slot": "Shoulder",
+     "itemId": 13405,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Chest",
+     "itemId": 13394,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 13951,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Wrist",
+     "itemId": 12966,
+     "note": "Threat option.",
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Hands",
+     "itemId": 14622,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Waist",
+     "itemId": 12115,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Legs",
+     "itemId": 14623,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Legs",
+     "itemId": 11927,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Legs",
+     "itemId": 19124,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Feet",
+     "itemId": 14621,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Back",
+     "itemId": 12967,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 17713,
+     "note": "Damage-focused option.",
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 17713,
+     "note": "Damage-focused option.",
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Finger1",
+     "itemId": 13098,
+     "note": "Damage-focused option.",
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Finger2",
+     "itemId": 13098,
+     "note": "Damage-focused option.",
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 10779,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 10779,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13965,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13965,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Trinket1",
+     "itemId": 13515,
+     "note": "AoE tanking option.",
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Trinket2",
+     "itemId": 13515,
+     "note": "AoE tanking option.",
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "MainHand",
+     "itemId": 11684,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 18696,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "OffHand",
+     "itemId": 13529,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18738,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    },
+    {
+     "slot": "Ranged",
+     "itemId": 18680,
+     "recommendationUrl": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/"
+    }
+   ]
+  }
+ ]
+}

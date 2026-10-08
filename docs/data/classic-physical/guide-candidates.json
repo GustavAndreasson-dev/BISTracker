@@ -1,0 +1,1409 @@
+{
+ "reviewedOn": "2026-10-08",
+ "note": "Guide rows as published (item, guide slot label, guide source text) before phase 1 and source filtering.",
+ "guides": [
+  {
+   "key": "icy-rogue",
+   "url": "https://www.icy-veins.com/wow-classic/rogue-dps-pre-raid-gear",
+   "title": "Rogue DPS Pre-Raid Gear (Icy Veins, Sellin)",
+   "lastUpdated": "Page header 2025-03-08; changelog 2025-05-01 Phase 4 of Classic Anniversary",
+   "appliesTo": [
+    "rogue-assassination",
+    "rogue-combat",
+    "rogue-subtlety"
+   ],
+   "scope": "One Rogue DPS list with separate Phase 1-4 tables (Classic Anniversary). The Phase 1 table is primary; rows from the Phase 2-4 tables are kept only when the item itself is obtainable in phase 1.",
+   "items": [
+    {
+     "guideSlot": "Helm (P1-P3)",
+     "itemId": 13404,
+     "name": "Mask of the Unforgiven",
+     "guideSource": "The Unforgiven in Stratholme"
+    },
+    {
+     "guideSlot": "Helm (P4)",
+     "itemId": 22005,
+     "name": "Darkmantle Cap",
+     "guideSource": "quest 9010 Saving the Best for Last"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 15411,
+     "name": "Mark of Fordring",
+     "guideSource": "Reward from quest 5944 In Dreams"
+    },
+    {
+     "guideSlot": "Shoulders (P1-P3)",
+     "itemId": 12927,
+     "name": "Truestrike Shoulders",
+     "guideSource": "Pyroguard Emberseer in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Shoulders (P4)",
+     "itemId": 22008,
+     "name": "Darkmantle Spaulders",
+     "guideSource": "Anthion's Parting Words"
+    },
+    {
+     "guideSlot": "Back",
+     "itemId": 13340,
+     "name": "Cape of the Black Baron",
+     "guideSource": "Baron Rivendare in Stratholme"
+    },
+    {
+     "guideSlot": "Chest (P1-P3)",
+     "itemId": 14637,
+     "name": "Cadaverous Armor",
+     "guideSource": "Multiple bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Chest (P4)",
+     "itemId": 22009,
+     "name": "Darkmantle Tunic",
+     "guideSource": "quest 9010 Saving the Best for Last"
+    },
+    {
+     "guideSlot": "Wrists (P1)",
+     "itemId": 13120,
+     "name": "Deepfury Bracers",
+     "guideSource": "World BoE drop"
+    },
+    {
+     "guideSlot": "Wrists (P2-P3)",
+     "itemId": 16710,
+     "name": "Shadowcraft Bracers",
+     "guideSource": "Trash in Scholomance"
+    },
+    {
+     "guideSlot": "Wrists (P4)",
+     "itemId": 22004,
+     "name": "Darkmantle Bracers",
+     "guideSource": "quest 8907 An Earnest Proposition"
+    },
+    {
+     "guideSlot": "Hands (P1, P4)",
+     "itemId": 15063,
+     "name": "Devilsaur Gauntlets",
+     "guideSource": "Leatherworking"
+    },
+    {
+     "guideSlot": "Hands (P2-P3)",
+     "itemId": 16712,
+     "name": "Shadowcraft Gloves",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Waist (P1)",
+     "itemId": 13252,
+     "name": "Cloudrunner Girdle",
+     "guideSource": "Quartermaster Zigris in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Waist (P2-P3)",
+     "itemId": 16713,
+     "name": "Shadowcraft Belt",
+     "guideSource": "Trash in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Waist (P4)",
+     "itemId": 22002,
+     "name": "Darkmantle Belt",
+     "guideSource": "Just Compensation"
+    },
+    {
+     "guideSlot": "Legs (P1, P4)",
+     "itemId": 15062,
+     "name": "Devilsaur Leggings",
+     "guideSource": "Leatherworking"
+    },
+    {
+     "guideSlot": "Legs (P2-P3)",
+     "itemId": 16709,
+     "name": "Shadowcraft Pants",
+     "guideSource": "Baron Rivendare in Stratholme"
+    },
+    {
+     "guideSlot": "Feet (P1)",
+     "itemId": 12553,
+     "name": "Swiftwalker Boots",
+     "guideSource": "Princess Moira Bronzebeard in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Feet (P2-P3)",
+     "itemId": 16711,
+     "name": "Shadowcraft Boots",
+     "guideSource": "Rattlegore in Scholomance"
+    },
+    {
+     "guideSlot": "Feet (P4)",
+     "itemId": 22003,
+     "name": "Darkmantle Boots",
+     "guideSource": "Anthion's Parting Words"
+    },
+    {
+     "guideSlot": "Rings (P1)",
+     "itemId": 13098,
+     "name": "Painweaver Band",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Rings (P1)",
+     "itemId": 17713,
+     "name": "Blackstone Ring",
+     "guideSource": "Princess Theradras in Maraudon"
+    },
+    {
+     "guideSlot": "Rings (P2-P4)",
+     "itemId": null,
+     "name": "Tarnished Elven Ring",
+     "guideSource": "Mizzle the Crafty in Dire Maul North"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 11815,
+     "name": "Hand of Justice",
+     "guideSource": "General Angerforge in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 13965,
+     "name": "Blackhand's Breadth",
+     "guideSource": "Reward from quest 5102 General Drakkisath's Demise / 4974 For The Horde!"
+    },
+    {
+     "guideSlot": "Swords",
+     "itemId": 12940,
+     "name": "Dal'Rend's Sacred Charge",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Swords",
+     "itemId": 12939,
+     "name": "Dal'Rend's Tribal Guardian",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Daggers",
+     "itemId": 12783,
+     "name": "Heartseeker",
+     "guideSource": "Blacksmithing"
+    },
+    {
+     "guideSlot": "Daggers",
+     "itemId": 14555,
+     "name": "Alcor's Sunrazor",
+     "guideSource": "World BoE drop"
+    },
+    {
+     "guideSlot": "Ranged Weapon",
+     "itemId": 12651,
+     "name": "Blackcrow",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    }
+   ]
+  },
+  {
+   "key": "icy-hunter",
+   "url": "https://www.icy-veins.com/wow-classic/hunter-dps-pre-raid-gear",
+   "title": "Hunter DPS Pre-Raid Gear (Icy Veins, Impakt)",
+   "lastUpdated": "2024-11-17 (Classic re-release)",
+   "appliesTo": [
+    "hunter-beast-mastery",
+    "hunter-marksmanship",
+    "hunter-survival"
+   ],
+   "scope": "One Hunter DPS list for gear before Molten Core or Onyxia's Lair; it mixes phase 1 dungeons with Dire Maul and later content and is filtered here.",
+   "items": [
+    {
+     "guideSlot": "Helm",
+     "itemId": 18421,
+     "name": "Backwood Helm",
+     "guideSource": "Quest 7877 The Treasure of the Shen'dralar in Dire Maul"
+    },
+    {
+     "guideSlot": "Helm",
+     "itemId": 13404,
+     "name": "Mask of the Unforgiven",
+     "guideSource": "The Unforgiven in Stratholme"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 15411,
+     "name": "Mark of Fordring",
+     "guideSource": "Quest 5944 In Dreams"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 22340,
+     "name": "Pendant of Celerity",
+     "guideSource": "Lord Valthalak in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 11933,
+     "name": "Imperial Jewel",
+     "guideSource": "Emperor Dagran Thaurissan in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Shoulders",
+     "itemId": 12927,
+     "name": "Truestrike Shoulders",
+     "guideSource": "Pyroguard Emberseer in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Shoulders",
+     "itemId": 15051,
+     "name": "Black Dragonscale Shoulders",
+     "guideSource": "Leatherworking"
+    },
+    {
+     "guideSlot": "Shoulders",
+     "itemId": null,
+     "name": "Any high Agility shoulders",
+     "guideSource": "Bind on equip items from the AH"
+    },
+    {
+     "guideSlot": "Back",
+     "itemId": 13340,
+     "name": "Cape of the Black Baron",
+     "guideSource": "Baron Rivendare in Stratholme"
+    },
+    {
+     "guideSlot": "Back",
+     "itemId": 13397,
+     "name": "Stoneskin Gargoyle Cape",
+     "guideSource": "Stonespine in Stratholme"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 11726,
+     "name": "Savage Gladiator Chain",
+     "guideSource": "Gorosh the Dervish in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 13944,
+     "name": "Tombstone Breastplate",
+     "guideSource": "Darkmaster Gandling in Scholomance"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 11926,
+     "name": "Deathdealer Breastplate",
+     "guideSource": "The Chest of Seven in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 14637,
+     "name": "Cadaverous Armor",
+     "guideSource": "Mini-bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 15050,
+     "name": "Black Dragonscale Breastplate",
+     "guideSource": "Leatherworking (for the set bonuses)"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 16674,
+     "name": "Beaststalker's Tunic",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire (4-piece set condition)"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 18375,
+     "name": "Bracers of the Eclipse",
+     "guideSource": "Prince Tortheldrin in Dire Maul West"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 13211,
+     "name": "Slashclaw Bracers",
+     "guideSource": "Halycon in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 16681,
+     "name": "Beaststalker's Bindings",
+     "guideSource": "Zone drop from Stratholme (4-piece set condition)"
+    },
+    {
+     "guideSlot": "Hands",
+     "itemId": 15063,
+     "name": "Devilsaur Gauntlets",
+     "guideSource": "Leatherworking"
+    },
+    {
+     "guideSlot": "Hands",
+     "itemId": 13255,
+     "name": "Trueaim Gauntlets",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Waist",
+     "itemId": 18393,
+     "name": "Warpwood Binding",
+     "guideSource": "Tendris Warpwood in Dire Maul West"
+    },
+    {
+     "guideSlot": "Waist",
+     "itemId": 16680,
+     "name": "Beaststalker's Belt",
+     "guideSource": "Zone drop from Blackrock Spire (4-piece set condition)"
+    },
+    {
+     "guideSlot": "Waist",
+     "itemId": 14636,
+     "name": "Cadaverous Belt",
+     "guideSource": "Bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 15062,
+     "name": "Devilsaur Leggings",
+     "guideSource": "Leatherworking"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 15052,
+     "name": "Black Dragonscale Leggings",
+     "guideSource": "Leatherworking (for the set bonuses)"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 16678,
+     "name": "Beaststalker's Pants",
+     "guideSource": "Baron Rivendare in Stratholme (4-piece set condition)"
+    },
+    {
+     "guideSlot": "Feet",
+     "itemId": 13967,
+     "name": "Windreaver Greaves",
+     "guideSource": "Quest 5384 Kirtonos the Herald in Scholomance"
+    },
+    {
+     "guideSlot": "Feet",
+     "itemId": 16675,
+     "name": "Beaststalker's Boots",
+     "guideSource": "Nerub'enkan in Stratholme (4-piece set condition)"
+    },
+    {
+     "guideSlot": "Feet",
+     "itemId": 12553,
+     "name": "Swiftwalker Boots",
+     "guideSource": "High Priestess of Thaurissan and Princess Moira Bronzebeard in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": null,
+     "name": "Tarnished Elven Ring",
+     "guideSource": "King Gordok in Dire Maul North"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 17713,
+     "name": "Blackstone Ring",
+     "guideSource": "Princess Theradras in Maraudon"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 13098,
+     "name": "Painweaver Band",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 18473,
+     "name": "Royal Seal of Eldre'Thalas",
+     "guideSource": "Quest 7503 The Greatest Race of Hunters in Dire Maul"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 13965,
+     "name": "Blackhand's Breadth",
+     "guideSource": "Quest 5102 (A) / 4974 (H) in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 19120,
+     "name": "Rune of the Guard Captain",
+     "guideSource": "(H) Quest 7862 Job Opening: Guard Captain of Revantusk Village"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 11815,
+     "name": "Hand of Justice",
+     "guideSource": "(A) General Angerforge in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Melee Weapons",
+     "itemId": 18520,
+     "name": "Barbarous Blade",
+     "guideSource": "King Gordok in Dire Maul North"
+    },
+    {
+     "guideSlot": "Melee Weapons",
+     "itemId": 18725,
+     "name": "Peacemaker",
+     "guideSource": "Magistrate Barthilas in Stratholme"
+    },
+    {
+     "guideSlot": "Melee Weapons",
+     "itemId": 13052,
+     "name": "Warmonger",
+     "guideSource": "World drop"
+    },
+    {
+     "guideSlot": "Ranged Weapon",
+     "itemId": 18738,
+     "name": "Carapace Spine Crossbow",
+     "guideSource": "Nerub'enkan in Stratholme"
+    },
+    {
+     "guideSlot": "Ranged Weapon",
+     "itemId": 12651,
+     "name": "Blackcrow",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Ranged Weapon",
+     "itemId": 18680,
+     "name": "Ancient Bone Bow",
+     "guideSource": "Multiple bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Ranged Weapon",
+     "itemId": 2099,
+     "name": "Dwarven Hand Cannon",
+     "guideSource": "World drop"
+    },
+    {
+     "guideSlot": "Quiver",
+     "itemId": 2662,
+     "name": "Ribbly's Quiver",
+     "guideSource": "Ribbly Screwspigot in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Arrows",
+     "itemId": 12654,
+     "name": "Doomshot",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Arrows",
+     "itemId": 15997,
+     "name": "Thorium Shells",
+     "guideSource": "Engineering"
+    },
+    {
+     "guideSlot": "Arrows",
+     "itemId": 18042,
+     "name": "Thorium Headed Arrow",
+     "guideSource": "Engineering"
+    }
+   ]
+  },
+  {
+   "key": "icy-warrior-dps",
+   "url": "https://www.icy-veins.com/wow-classic/warrior-dps-pre-raid-gear",
+   "title": "Warrior DPS Pre-Raid Gear, MC/Ony table (Icy Veins, Seksixeny)",
+   "lastUpdated": "2024-11-18 (Classic Anniversary)",
+   "appliesTo": [
+    "warrior-arms",
+    "warrior-fury"
+   ],
+   "scope": "The \"MC/Ony DPS Warrior Pre-Raid BiS\" table (gear before Molten Core/Onyxia). The separate Naxxramas pre-raid table is not used.",
+   "items": [
+    {
+     "guideSlot": "Helm",
+     "itemId": 12640,
+     "name": "Lionheart Helm",
+     "guideSource": "Blacksmithing"
+    },
+    {
+     "guideSlot": "Helm",
+     "itemId": 13404,
+     "name": "Mask of the Unforgiven",
+     "guideSource": "The Unforgiven in Stratholme"
+    },
+    {
+     "guideSlot": "Helm",
+     "itemId": 12587,
+     "name": "Eye of Rend",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 15411,
+     "name": "Mark of Fordring",
+     "guideSource": "Quest 5944 In Dreams"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 17044,
+     "name": "Will of the Martyr",
+     "guideSource": "Quest 5125 Aurius' Reckoning in Stratholme"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 11933,
+     "name": "Imperial Jewel",
+     "guideSource": "Emperor Dagran Thaurissan in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Shoulder",
+     "itemId": 12927,
+     "name": "Truestrike Shoulders",
+     "guideSource": "Pyroguard Emberseer in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Shoulder",
+     "itemId": 12082,
+     "name": "Wyrmhide Spaulders",
+     "guideSource": "Quest 4024 A Taste of Flame in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Shoulder",
+     "itemId": 16733,
+     "name": "Spaulders of Valor",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire (defensive / PvP)"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 13340,
+     "name": "Cape of the Black Baron",
+     "guideSource": "Baron Rivendare in Stratholme"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 11626,
+     "name": "Blackveil Cape",
+     "guideSource": "High Interrogator Gerstahn in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 13397,
+     "name": "Stoneskin Gargoyle Cape",
+     "guideSource": "Stonespine in Stratholme"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 11726,
+     "name": "Savage Gladiator Chain",
+     "guideSource": "Gorosh the Dervish in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 14637,
+     "name": "Cadaverous Armor",
+     "guideSource": "Side bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 13944,
+     "name": "Tombstone Breastplate",
+     "guideSource": "Darkmaster Gandling in Scholomance"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 12936,
+     "name": "Battleborn Armbraces",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 13400,
+     "name": "Vambraces of the Sadist",
+     "guideSource": "Timmy the Cruel in Stratholme"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 13211,
+     "name": "Slashclaw Bracers",
+     "guideSource": "Halycon in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 12966,
+     "name": "Blackmist Armguards",
+     "guideSource": "The Beast in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 14551,
+     "name": "Edgemaster's Handguards",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 15063,
+     "name": "Devilsaur Gauntlets",
+     "guideSource": "Tribal Leatherworking"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 13957,
+     "name": "Gargoyle Slashers",
+     "guideSource": "Quest 5384 Kirtonos the Herald in Scholomance"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 13142,
+     "name": "Brigam Girdle",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 13959,
+     "name": "Omokk's Girth Restrainer",
+     "guideSource": "Quest 5081 Maxwell's Mission / 4903 Warlord's Command in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 13502,
+     "name": "Handcrafted Mastersmith Girdle",
+     "guideSource": "Goraluk Anvilcrack in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 14554,
+     "name": "Cloudkeeper Legplates",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 15062,
+     "name": "Devilsaur Leggings",
+     "guideSource": "Tribal Leatherworking"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 18380,
+     "name": "Eldritch Reinforced Legplates",
+     "guideSource": "Prince Tortheldrin in Dire Maul West"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 16732,
+     "name": "Legplates of Valor",
+     "guideSource": "Baron Rivendare in Stratholme"
+    },
+    {
+     "guideSlot": "Boots",
+     "itemId": 14616,
+     "name": "Bloodmail Boots",
+     "guideSource": "Side bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Boots",
+     "itemId": 12555,
+     "name": "Battlechaser's Greaves",
+     "guideSource": "Blackrock Spire BoE drop"
+    },
+    {
+     "guideSlot": "Boots",
+     "itemId": 13967,
+     "name": "Windreaver Greaves",
+     "guideSource": "Quest 5384 Kirtonos the Herald in Scholomance"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 13098,
+     "name": "Painweaver Band",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": null,
+     "name": "Tarnished Elven Ring",
+     "guideSource": "Gordok Tribute in Dire Maul North"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 17713,
+     "name": "Blackstone Ring",
+     "guideSource": "Princess Theradras in Maraudon"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 2246,
+     "name": "Myrmidon's Signet",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 12548,
+     "name": "Magni's Will",
+     "guideSource": "Quest 4363 The Princess's Surprise in Blackrock Depths (Alliance only)"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 13217,
+     "name": "Band of the Penitent",
+     "guideSource": "Quest 5243 Houses of the Holy in Stratholme"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 11815,
+     "name": "Hand of Justice",
+     "guideSource": "Emperor Dagran Thaurissan in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 13965,
+     "name": "Blackhand's Breadth",
+     "guideSource": "Quest 5102 / 4974 in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Trinkets",
+     "itemId": 19120,
+     "name": "Rune of the Guard Captain",
+     "guideSource": "Quest 7862 in The Hinterlands"
+    },
+    {
+     "guideSlot": "Main-Hand",
+     "itemId": 11684,
+     "name": "Ironfoe",
+     "guideSource": "Emperor Dagran Thaurissan in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Main-Hand",
+     "itemId": 12940,
+     "name": "Dal'Rend's Sacred Charge",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Main-Hand",
+     "itemId": 811,
+     "name": "Axe of the Deep Woods",
+     "guideSource": "World drop BoE (Orc)"
+    },
+    {
+     "guideSlot": "Main-Hand",
+     "itemId": 18348,
+     "name": "Quel'Serrar",
+     "guideSource": "Quest 7509 The Forging of Quel'Serrar (book looted in Dire Maul)"
+    },
+    {
+     "guideSlot": "Off-Hand",
+     "itemId": 12590,
+     "name": "Felstriker",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Off-Hand",
+     "itemId": 12939,
+     "name": "Dal'Rend's Tribal Guardian",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Off-Hand",
+     "itemId": 871,
+     "name": "Flurry Axe",
+     "guideSource": "World drop BoE (Orc)"
+    },
+    {
+     "guideSlot": "Off-Hand",
+     "itemId": 15806,
+     "name": "Mirah's Song",
+     "guideSource": "Quest 5384 Kirtonos the Herald in Scholomance"
+    },
+    {
+     "guideSlot": "Off-Hand",
+     "itemId": 13015,
+     "name": "Serathil",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Two-Hand",
+     "itemId": 18538,
+     "name": "Treant's Bane",
+     "guideSource": "Gordok Tribute in Dire Maul North"
+    },
+    {
+     "guideSlot": "Two-Hand",
+     "itemId": 12592,
+     "name": "Blackblade of Shahram",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Two-Hand",
+     "itemId": 12784,
+     "name": "Arcanite Reaper",
+     "guideSource": "Blacksmithing"
+    },
+    {
+     "guideSlot": "Two-Hand",
+     "itemId": 11931,
+     "name": "Dreadforge Retaliator",
+     "guideSource": "Emperor Dagran Thaurissan in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Two-Hand",
+     "itemId": 13348,
+     "name": "Demonshear",
+     "guideSource": "Balnazzar in Stratholme"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 18323,
+     "name": "Satyr's Bow",
+     "guideSource": "Zevrim Thornhoof in Dire Maul East"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 12653,
+     "name": "Riphook",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 12651,
+     "name": "Blackcrow",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    }
+   ]
+  },
+  {
+   "key": "icy-warrior-tank",
+   "url": "https://www.icy-veins.com/wow-classic/warrior-tank-pre-raid-gear",
+   "title": "Warrior Tank Pre-Raid Gear, MC/Ony table (Icy Veins, Seksixeny)",
+   "lastUpdated": "2024-11-18 (Classic Anniversary)",
+   "appliesTo": [
+    "warrior-protection"
+   ],
+   "scope": "The \"MC/Ony Tank Warrior Pre-Raid BiS\" table. The Naxxramas pre-raid table is not used.",
+   "items": [
+    {
+     "guideSlot": "Helm",
+     "itemId": 12952,
+     "name": "Gyth's Skull",
+     "guideSource": "Gyth in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Helm",
+     "itemId": 11746,
+     "name": "Golem Skull Helm",
+     "guideSource": "Phalanx in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 13091,
+     "name": "Medallion of Grand Marshal Morris",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Neck",
+     "itemId": 11755,
+     "name": "Verek's Collar",
+     "guideSource": "Verek in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Shoulder",
+     "itemId": 14552,
+     "name": "Stockade Pauldrons",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Shoulder",
+     "itemId": 16733,
+     "name": "Spaulders of Valor",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 13397,
+     "name": "Stoneskin Gargoyle Cape",
+     "guideSource": "Stonespine in Stratholme"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 11930,
+     "name": "The Emperor's New Cape",
+     "guideSource": "Emperor Dagran Thaurissan in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 11626,
+     "name": "Blackveil Cape",
+     "guideSource": "High Interrogator Gerstahn in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 14624,
+     "name": "Deathbone Chestplate",
+     "guideSource": "Side bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 15413,
+     "name": "Ornate Adamantium Breastplate",
+     "guideSource": "Quest 5944 In Dreams"
+    },
+    {
+     "guideSlot": "Chest",
+     "itemId": 11678,
+     "name": "Carapace of Anub'shiah",
+     "guideSource": "Anub'shiah in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 16735,
+     "name": "Bracers of Valor",
+     "guideSource": "Blackrock Spire drop BoE"
+    },
+    {
+     "guideSlot": "Wrists",
+     "itemId": 12550,
+     "name": "Runed Golem Shackles",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 13072,
+     "name": "Stonegrip Gauntlets",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 14525,
+     "name": "Boneclenched Gauntlets",
+     "guideSource": "Ras Frostwhisper in Scholomance"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 13963,
+     "name": "Voone's Vice Grips",
+     "guideSource": "Quest 5081 Maxwell's Mission / 4903 Warlord's Command (threat)"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 13142,
+     "name": "Brigam Girdle",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 14620,
+     "name": "Deathbone Girdle",
+     "guideSource": "Side bosses in Scholomance"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 14554,
+     "name": "Cloudkeeper Legplates",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Legs",
+     "itemId": 12935,
+     "name": "Warmaster Legguards",
+     "guideSource": "Warchief Rend Blackhand in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Boots",
+     "itemId": 13381,
+     "name": "Master Cannoneer Boots",
+     "guideSource": "Cannon Master Willey in Stratholme"
+    },
+    {
+     "guideSlot": "Boots",
+     "itemId": 13259,
+     "name": "Ribsteel Footguards",
+     "guideSource": "Urok Doomhowl in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Ring #1",
+     "itemId": 2246,
+     "name": "Myrmidon's Signet",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Ring #1",
+     "itemId": 13373,
+     "name": "Band of Flesh",
+     "guideSource": "Ramstein the Gorger in Stratholme"
+    },
+    {
+     "guideSlot": "Ring #2",
+     "itemId": 11669,
+     "name": "Naglering",
+     "guideSource": "Golem Lord Argelmach in Blackrock Depths"
+    },
+    {
+     "guideSlot": "Ring #2",
+     "itemId": 15855,
+     "name": "Ring of Protection",
+     "guideSource": "Quest 5942 Hidden Treasures in Eastern Plaguelands"
+    },
+    {
+     "guideSlot": "Trinket 1",
+     "itemId": 17774,
+     "name": "Mark of the Chosen",
+     "guideSource": "Quest 7067 The Pariah's Instructions in Maraudon"
+    },
+    {
+     "guideSlot": "Trinket 2",
+     "itemId": 11815,
+     "name": "Hand of Justice",
+     "guideSource": "Emperor Dagran Thaurissan in Blackrock Depths (threat)"
+    },
+    {
+     "guideSlot": "Trinket 2",
+     "itemId": 11810,
+     "name": "Force of Will",
+     "guideSource": "General Angerforge in Blackrock Depths (AoE tanking)"
+    },
+    {
+     "guideSlot": "One-Hand",
+     "itemId": 15806,
+     "name": "Mirah's Song",
+     "guideSource": "Quest 5384 Kirtonos the Herald in Scholomance"
+    },
+    {
+     "guideSlot": "One-Hand",
+     "itemId": 811,
+     "name": "Axe of the Deep Woods",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Shield",
+     "itemId": 12602,
+     "name": "Draconian Deflector",
+     "guideSource": "General Drakkisath in Upper Blackrock Spire"
+    },
+    {
+     "guideSlot": "Shield",
+     "itemId": 1168,
+     "name": "Skullflame Shield",
+     "guideSource": "World drop BoE"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 12651,
+     "name": "Blackcrow",
+     "guideSource": "Shadow Hunter Vosh'gajin in Lower Blackrock Spire"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 16996,
+     "name": "Gorewood Bow",
+     "guideSource": "Quest 6187 Order Must Be Restored / 6148 The Scarlet Oracle, Demetria"
+    }
+   ]
+  },
+  {
+   "key": "wt-prot-p1",
+   "url": "https://www.warcrafttavern.com/wow-classic/guides/phase-1-warrior-prot-pre-raid-bis-list/",
+   "title": "Phase 1 Warrior Prot Pre Raid BiS List (Warcraft Tavern, thermophile)",
+   "lastUpdated": "not shown on the saved page",
+   "appliesTo": [
+    "warrior-protection"
+   ],
+   "scope": "Explicit Classic phase 1 warrior tank pre-raid list in text form.",
+   "items": [
+    {
+     "guideSlot": "Helm",
+     "itemId": 12952,
+     "name": "Gyth's Skull",
+     "guideSource": "Gyth in UBRS (random elemental resistances)"
+    },
+    {
+     "guideSlot": "Helm",
+     "itemId": 11746,
+     "name": "Golem Skull Helm",
+     "guideSource": "Magmus in BRD"
+    },
+    {
+     "guideSlot": "Shoulders",
+     "itemId": 14552,
+     "name": "Stockade Pauldrons",
+     "guideSource": "Random world drop"
+    },
+    {
+     "guideSlot": "Shoulders",
+     "itemId": 16733,
+     "name": "Spaulders of Valor",
+     "guideSource": "Rend in UBRS"
+    },
+    {
+     "guideSlot": "Shoulders",
+     "itemId": 13405,
+     "name": "Wailing Nightbane Pauldrons",
+     "guideSource": "The Unforgiven in Stratholme"
+    },
+    {
+     "guideSlot": "Chestplate",
+     "itemId": 14624,
+     "name": "Deathbone Chestplate",
+     "guideSource": "Scholomance (defense-cap fights)"
+    },
+    {
+     "guideSlot": "Chestplate",
+     "itemId": 15413,
+     "name": "Ornate Adamantium Breastplate",
+     "guideSource": "Quest In Dreams"
+    },
+    {
+     "guideSlot": "Chestplate",
+     "itemId": 13394,
+     "name": "Skul's Cold Embrace",
+     "guideSource": "Skul in Stratholme"
+    },
+    {
+     "guideSlot": "Bracers",
+     "itemId": 13951,
+     "name": "Vigorsteel Vambraces",
+     "guideSource": "Darkmaster Gandling in Scholomance"
+    },
+    {
+     "guideSlot": "Bracers",
+     "itemId": 16735,
+     "name": "Bracers of Valor",
+     "guideSource": "Random drop from mobs in Blackrock Spire"
+    },
+    {
+     "guideSlot": "Bracers",
+     "itemId": 12966,
+     "name": "Blackmist Armguards",
+     "guideSource": "The Beast in UBRS (TPS alternative)"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 13072,
+     "name": "Stonegrip Gauntlets",
+     "guideSource": "Random world drop"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 14622,
+     "name": "Deathbone Gauntlets",
+     "guideSource": "Scholomance"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 9410,
+     "name": "Cragfists",
+     "guideSource": "Ancient Stone Keeper in Uldaman (random stats: bear, monkey or stam)"
+    },
+    {
+     "guideSlot": "Gloves",
+     "itemId": 13963,
+     "name": "Voone's Vice Grips",
+     "guideSource": "Quest Warlord's Command / Maxwell's Mission (TPS alternative)"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 14620,
+     "name": "Deathbone Girdle",
+     "guideSource": "Scholomance"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 12115,
+     "name": "Stalwart Clutch",
+     "guideSource": "Quest 3907 Disharmony of Fire (H) / 4263 Incendius! (A)"
+    },
+    {
+     "guideSlot": "Belt",
+     "itemId": 13142,
+     "name": "Brigam Girdle",
+     "guideSource": "General Drakkisath in UBRS (TPS alternative)"
+    },
+    {
+     "guideSlot": "Legplates",
+     "itemId": 14623,
+     "name": "Deathbone Legguards",
+     "guideSource": "Scholomance"
+    },
+    {
+     "guideSlot": "Legplates",
+     "itemId": 11927,
+     "name": "Legplates of the Eternal Guardian",
+     "guideSource": "Chest in BRD"
+    },
+    {
+     "guideSlot": "Legplates",
+     "itemId": 19124,
+     "name": "Slagplate Leggings",
+     "guideSource": "Quest 7728 STOLEN: Smithing Tuyere and Lookout's Spyglass"
+    },
+    {
+     "guideSlot": "Boots",
+     "itemId": 14621,
+     "name": "Deathbone Sabatons",
+     "guideSource": "Scholomance"
+    },
+    {
+     "guideSlot": "Boots",
+     "itemId": 14549,
+     "name": "Boots of Avoidance",
+     "guideSource": "Random world drop"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 11669,
+     "name": "Naglering",
+     "guideSource": "Golem Lord Argelmach in BRD"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 10795,
+     "name": "Drakeclaw Band",
+     "guideSource": "Sunken Temple dragon mini-bosses (random stats: bear, monkey or stam)"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 2246,
+     "name": "Myrmidon's Signet",
+     "guideSource": "Random world drop"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 13373,
+     "name": "Band of Flesh",
+     "guideSource": "Ramstein the Gorger in Stratholme"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 18674,
+     "name": "Hardened Stone Band",
+     "guideSource": "Random world drop"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 17713,
+     "name": "Blackstone Ring",
+     "guideSource": "Princess Theradras in Maraudon (DPS-focused)"
+    },
+    {
+     "guideSlot": "Rings",
+     "itemId": 13098,
+     "name": "Painweaver Band",
+     "guideSource": "General Drakkisath in UBRS (DPS-focused)"
+    },
+    {
+     "guideSlot": "Necklace",
+     "itemId": 13091,
+     "name": "Medallion of Grand Marshal Morris",
+     "guideSource": "Random world drop"
+    },
+    {
+     "guideSlot": "Trinket",
+     "itemId": 11810,
+     "name": "Force of Will",
+     "guideSource": "General Angerforge in BRD"
+    },
+    {
+     "guideSlot": "Trinket",
+     "itemId": 10779,
+     "name": "Demon's Blood",
+     "guideSource": "Quest chain You Are Rakh'likh, Demon"
+    },
+    {
+     "guideSlot": "Trinket",
+     "itemId": 17774,
+     "name": "Mark of the Chosen",
+     "guideSource": "Quest 7067 The Pariah's Instructions"
+    },
+    {
+     "guideSlot": "Trinket",
+     "itemId": 13515,
+     "name": "Ramstein's Lightning Bolts",
+     "guideSource": "Ramstein the Gorger in Stratholme (AoE tanking)"
+    },
+    {
+     "guideSlot": "Trinket",
+     "itemId": 11815,
+     "name": "Hand of Justice",
+     "guideSource": "Emperor Dagran Thaurissan in BRD"
+    },
+    {
+     "guideSlot": "Trinket",
+     "itemId": 13965,
+     "name": "Blackhand's Breadth",
+     "guideSource": "Quest 4974 For The Horde! (H) / 5102 General Drakkisath's Demise (A)"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 12967,
+     "name": "Bloodmoon Cloak",
+     "guideSource": "The Beast in UBRS"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 13397,
+     "name": "Stoneskin Gargoyle Cape",
+     "guideSource": "Stonespine in Stratholme"
+    },
+    {
+     "guideSlot": "Cloak",
+     "itemId": 11930,
+     "name": "The Emperor's New Cape",
+     "guideSource": "Emperor Dagran Thaurissan in BRD"
+    },
+    {
+     "guideSlot": "Shield",
+     "itemId": 12602,
+     "name": "Draconian Deflector",
+     "guideSource": "General Drakkisath in UBRS"
+    },
+    {
+     "guideSlot": "Shield",
+     "itemId": 18696,
+     "name": "Intricately Runed Shield",
+     "guideSource": "Ras Frostwhisper in Scholomance"
+    },
+    {
+     "guideSlot": "Shield",
+     "itemId": 13529,
+     "name": "Husk of Nerub'enkan",
+     "guideSource": "Nerub'enkan in Stratholme"
+    },
+    {
+     "guideSlot": "Shield",
+     "itemId": 1168,
+     "name": "Skullflame Shield",
+     "guideSource": "Random world drop"
+    },
+    {
+     "guideSlot": "Weapon",
+     "itemId": 11684,
+     "name": "Ironfoe",
+     "guideSource": "Emperor Dagran Thaurissan in BRD"
+    },
+    {
+     "guideSlot": "Weapon",
+     "itemId": 12798,
+     "name": "Annihilator",
+     "guideSource": "Master Axesmith only; recommended only if the armor debuff stacks with Sunder Armor"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 16996,
+     "name": "Gorewood Bow",
+     "guideSource": "Quest chain in Eastern Plaguelands"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 18738,
+     "name": "Carapace Spine Crossbow",
+     "guideSource": "Nerub'enkan in Stratholme"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 18680,
+     "name": "Ancient Bone Bow",
+     "guideSource": "Scholomance"
+    },
+    {
+     "guideSlot": "Ranged",
+     "itemId": 12651,
+     "name": "Blackcrow",
+     "guideSource": "Shadow Hunter Vosh'gajin in LBRS"
+    }
+   ]
+  }
+ ]
+}
