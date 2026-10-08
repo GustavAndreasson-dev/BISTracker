@@ -1,6 +1,8 @@
 # Plan och öppna frågor
 
-Statusdatum: 2026-10-08. Plan för det beställda utkastet och fortsatt utveckling.
+Statusdatum: 2026-10-08. Version 1.0.0 är första färdiga testleveransen.
+Nästa agent börjar med [överlämningen inför appens beta 2](beta2-handoff.md).
+Nya beta 2-funktioner och programversionsnummer är ännu inte beslutade.
 
 ## Nuläge
 
@@ -20,6 +22,18 @@ Crafting är godkänt för Forever enligt DEC-012; Classic förblir dungeons/que
 - Appen använder 17 riktiga guidebaserade fas 1-val med bilder, anskaffning och källänkar. Demokatalogen finns kvar för kontroller.
 - Mappstruktur och kodspårning dokumenteras. Slutkontroller redovisas i verification.md.
 
+## Fortsättningsordning inför appens beta 2
+
+| Ordning | Arbete | Besluts-/leveransgräns |
+| --- | --- | --- |
+| 1 | Kontrollera arbetskatalogen, läs överlämning/krav och samla återkoppling från körningar av ZIP 1.0.0. | Ingen återkoppling från vänners körning är registrerad vid denna överlämning. Identifiera faktisk appversion och reproduktionssteg. |
+| 2 | Följ upp ren mottagarmiljö och manuell UI/DPI/tangentbordsgranskning. | Kvarstående verifiering; lokal start är inte ett ren-dator-prov. Windows Sandbox saknas här. |
+| 3 | Gör prioriterade rättelser enligt Chefens återkoppling och verifiera berörda regler. | Inga nya funktioner följer automatiskt av denna dokumentationsbeställning. Bevara sparfiler och godkänt katalogurval. |
+| 4 | Bekräfta nästa programversionsnummer, committa verifierad kod och publicera ett nytt ZIP. | Kräv nya rapporter för det exakta paketet; återanvänd inte version 1.0.0:s PASS för beta 2. |
+
+Verklig nivå 60-data, nya källtyper, antalshantering och ersättning av
+befintliga katalogpack är öppna frågor, inte automatiskt beta 2-scope.
+
 ## Genomförandeplan
 
 | Steg | Leverans | Klart när | Status |
@@ -31,7 +45,7 @@ Crafting är godkänt för Forever enligt DEC-012; Classic förblir dungeons/que
 | 5. Förfinad produkt | Karaktärer, tre listor, fler kataloger och nivåimport. | Överenskomna acceptanskriterier är verifierade med riktig data. | Karaktärs-/specval, 27 Forever beta nivå30-kataloger, tvåhands-/unique-regler och nivå60-import verifierade. Verklig nivå60-data och fullare källurval för vissa specs återstår. |
 | 6. Portabel delningsversion | Windows x64-ZIP med medföljande runtimes och distributionsprov. | Committad kod, ZIP-integritet, kataloggranskning och faktisk sparning/omstart från extraherad app passerar. | Lokalt klar: version 1.0.0, 49 kontroller, 27 kataloger och verkligt UI-prov godkända. Ren dator och äldre Windows återstår. |
 
-## Nästa beställda scope och lokal arbetsplats
+## Levererat scope och lokal arbetsplats
 
 Boromirs sex senare commits är överförda till denna dator och verifierade
 lokalt. Fortsatt arbete sker i C:\Users\gusta\source\repos\BISTracker;
@@ -45,7 +59,7 @@ karaktärshantering och tre sparade listor är implementerade. Med nivå30-lever
 passerar nu 49 beteendekontroller, isolerad WinUI-kontroll och portabelt distributionsprov.
 Se [listmodellen](characters-and-loadouts.md).
 
-Chefens nästa beställning, REQ-008/009, är levererad: alla 27 specs har separata
+Chefens beställning REQ-008/009 är levererad: alla 27 specs har separata
 Forever-kataloger för beta nivå 30/patch 1.60.1. Guidealternativen är källgranskade
 och filtreras till dungeons/quests/crafting samt guidens handkrav. Tidigare
 slotluckor är kompletterade och osäkra items uteslutna; urvalet
@@ -78,7 +92,7 @@ trådar nedan har inte behövt kontaktas för denna leverans.
 | Hur ska antal identiska exemplar och reviderade pack med samma kontext hanteras? | Nuvarande ägande är booleskt och importer får inte ersätta befintliga pack-ID:n. |
 | Behövs annan plattform eller synkronisering senare? | Utkastet fortsätter med WinUI och lokal lagring; framtida behov är öppna. |
 
-## Skapade Codex-trådar
+## Historiska användarägda Codex-trådar
 
 Huvudtråden håller ihop krav, arkitekturbeslut och integration. Varje delegerad
 uppgift ska ha tydligt scope, filansvar, beroenden och acceptanskriterier.

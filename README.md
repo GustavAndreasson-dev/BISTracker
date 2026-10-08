@@ -1,15 +1,25 @@
 # BISTracker
 
-En app för att visa och tracka best in slot (BiS). Första versionen gäller
+En app för att visa och tracka best in slot (BiS). Classic-urvalet gäller
 Holy Priest i vanliga WoW Classic (Vanilla), fas 1, med pre-raid BiS från
 endast dungeons och quests. Appens gränssnitt är på engelska.
 WoW Forever är valbar som separat spelversion, med källgranskade beta-kataloger
 på nivå 30 för alla nio klasser och 27 specs. Nivå 60 har ett eget katalogset
 och kan importeras när granskad data finns.
 
+## Fortsätt inför beta 2
+
+Nästa agent börjar med [arbetsreglerna](AGENTS.md) och
+[överlämningen inför beta 2](docs/beta2-handoff.md). Där finns verifierad
+bas, paketets källcommit, kodansvar, kommandon och kvarstående arbete.
+Version 1.0.0 är första färdiga testpaketet; nästa appbeta och Forever-spelets
+betakataloger är skilda begrepp. Nya beta 2-funktioner och programversionsnummer
+är ännu inte beslutade.
+
 ## Dokumentation
 
 - [Arbetsregler](AGENTS.md)
+- [Överlämning inför appens beta 2](docs/beta2-handoff.md)
 - [Krav och koppling till kod](docs/requirements.md)
 - [Arkitektur och domänspråk](docs/architecture.md)
 - [Mappstruktur i projekten](docs/project-structure.md)
@@ -41,7 +51,7 @@ och äldre Windows är ännu inte provade.
 
 ## Nuläge
 
-Första utkastet har en WinUI-vy med sökning, filter och tracking av erhållna
+Den lokalt verifierade version 1.0.0 har en WinUI-vy med sökning, filter och tracking av erhållna
 och utrustade items. Domain, Application och Infrastructure är separata projekt
 med dokumenterade mappar. Karaktärer och deras tre speclistor sparas lokalt i
 versionsstyrd JSON. Ägande delas mellan karaktärens specs; utrustning är separat.
@@ -70,7 +80,7 @@ Se verifieringsdokumentet för kontroller, startkommando och begränsningar.
 För specs utan granskad katalog visas en tom lista med uttrycklig datastatus.
 Forever använder inte Vanilla-items som ersättning för saknade rekommendationer.
 
-## Förhandsbild av apputkastet
+## Verifierad UI-förhandsbild
 
 ![Forever Mage med 17 grupperade slotmål](docs/previews/slots-mage-overview.png)
 

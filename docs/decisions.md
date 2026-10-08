@@ -4,12 +4,17 @@ Beslut ska ange datum, bakgrund och konsekvens. Förslag dokumenteras i plan ell
 arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 äldre dokumentation; uppdatera loggen när ett beslut ersätts.
 
+Status 2026-10-08: version 1.0.0 är lokalt verifierad och paketerad.
+[Överlämningen inför appens beta 2](beta2-handoff.md) skiljer denna leverans
+från nästa ännu ospecificerade beta. Äldre beslut nedan är historik när
+senare beslut uttryckligen utökar deras scope.
+
 ## DEC-001 — Första produktomfånget
 
 - Datum: 2026-10-07.
 - Status: beslutat av Chefen.
 - Beslut: första versionen visar och trackar pre-raid BiS för Holy Priest i vanliga WoW Classic (Vanilla).
-- Konsekvens: fler expansioner är framtida stöd. Fas och itemkällor preciserades senare i DEC-007. Guidebaserat kandidatunderlag finns i phase1-items.md.
+- Konsekvens vid första beslutet: fler expansioner var framtida stöd. Forever tillkom senare genom DEC-010/011. Classic-fas och itemkällor preciserades i DEC-007. Guidebaserat kandidatunderlag finns i phase1-items.md.
 
 ## DEC-002 — Arkitektur och arbetsregler
 
@@ -51,7 +56,7 @@ arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 - Datum: 2026-10-07.
 - Status: beslutat av Chefen.
 - Beslut: fas 1 gäller. BiS-listan ska endast omfatta dungeons och quests.
-- Konsekvens: crafting och köpta/world-drop BoE-items ska exkluderas. Guideval från dessa källor behöver ersättas med verifierade alternativ. Moderna Era-itemposter bevisar inte själva historisk fastillgänglighet.
+- Konsekvens för Classic: crafting och köpta/world-drop BoE-items exkluderas. Detta förblir Classic-policy. Forever får även crafting enligt DEC-012. Moderna Era-itemposter bevisar inte själva historisk fastillgänglighet.
 
 ## DEC-008 — Engelskt gränssnitt
 
@@ -83,14 +88,31 @@ arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 - Status: beställt av Chefen; alla 27 nivå 30-kataloger och nivå 60-import implementerade och verifierade. Verklig nivå 60-data inväntas.
 - Beslut: skaffa Forever-kataloger för alla specs på nivå 30 och förbered import av nivå 60 när data finns.
 - Arbetsform: utnyttja fyra arbetstrådar och gör regelbundna commits efter verifierade sammanhängande delar. Huvudtråden samordnar integration och commits; tre datatrådar äger varsin grupp om nio specs.
-- Tillåtna itemkällor: tidigare avgränsning dungeons/quests gäller tills Chefen besvarat förtydligandet för beta-listorna. Datainsamlingen bevarar även andra guidekandidater för ett eventuellt ändrat beslut.
+- Källpolicy vid det historiska beslutet: dungeons/quests tills förtydligandet för Forever-beta besvarades. Chefens svar finns nu i DEC-012: crafting tillåts där. Research bevarar andra guidekandidater, men dessa är inte därmed aktiva produktval.
 - Senare korrigering: källpolicy och kravet på fullständiga slotmål ändrades enligt DEC-012.
-- Genomförande: källbelagda guidealternativ för beta nivå 30/patch 1.60.1, separat nivå 60-kontext, validerad atomisk packimport och bevarade utrustningsuppsättningar. Luckor fylls inte med egna rankingar. Release-build, 39 beteendekontroller och isolerad WinUI-kontroll godkända; [leverans](forever-level30-catalogs.md).
+- Genomförande: källbelagda guidealternativ för beta nivå 30/patch 1.60.1, separat nivå 60-kontext, validerad atomisk packimport och bevarade utrustningsuppsättningar. Luckor fylls inte med egna rankingar. Denna historiska del verifierades med 39 beteendekontroller; senare slot-/distributionskontroller ger dagens 49 enligt DEC-012/013. [Leverans](forever-level30-catalogs.md).
 
 ## DEC-012 — Korrekt slotmodell och crafting i Forever
 
 - Datum: 2026-10-08.
-- Status: implementerat och verifierat; 27 kataloger, 54 fraktionsset, 46 beteendekontroller och slutlig UI-kontroll godkända. Distributionstest återstår.
+- Status: implementerat och verifierat; 27 kataloger och 54 fraktionsset godkända. Slotleveransens 46 beteendekontroller utökades till dagens 49 vid DEC-013. UI och lokal portabel distribution är nu godkända; ren mottagardator återstår.
 - Beslut: varje relevant slot ska vara ett mål med grupperade alternativ. Antalet rekommendationer får inte visas som antalet slots. Kontrollera alla specs före delning.
 - Förtydligande från Chefen: crafting tillåts i Forever-katalogerna för att fylla källbelagda luckor. Classic fas 1 behåller dungeons/quests. World drops, vendor, PvP och reputation ingår inte i det nya tillståndet.
 - Konsekvens: komplett set kontrolleras med fysisk itemkapacitet, unique, handuppsättning, fraktion och källgranskade quest-/professionsvillkor. En rad i varje slot är inte i sig bevis. Tidigare delningsbedömning var för tidig; [releasegranskningen](slot-catalog-correctness.md) måste godkännas.
+
+## DEC-013 — Paketera och verifiera första testleveransen
+
+- Datum: 2026-10-08.
+- Status: Chefens beställning genomförd lokalt; version 1.0.0 kan delas för vänners testning med dokumenterade begränsningar.
+- Beställning: kör paketering och distributionsprov efter kataloggranskningen.
+- Genomförandeval: portabel osignerad Windows x64-ZIP med både .NET och Windows App SDK. `PublishTrimmed=false` krävs för befintlig JSON-serialisering; normal leverans saknar DraftPreview. Paketet byggdes från committad kod `e25c134` med ren arbetskatalog; metadata dokumenterades i `043d859`.
+- Verifiering: Release-build utan varningar/fel, 49 beteendekontroller, 27 kataloger, ZIP-manifest och 275 PE-binärer. Verklig publicerad WinUI-checkbox sparade/återläste på disk efter omstart och byte av programmapp med samma ZIP. Fem runtime-filer laddades från paketet; ordinarie spelarprofil var oförändrad. [Rapport](data/portable-release-verification.json).
+- Avgränsning: Windows 11 Pro 10.0.26200 provad. Ren dator, äldre Windows, signering, MSIX och datamigration mellan framtida versioner är inte verifierade. [Leveransformat och kommandon](distribution.md).
+
+## DEC-014 — Dokumentöverlämning inför appens beta 2
+
+- Datum: 2026-10-08.
+- Status: genomfört och dokumentgranskat enligt REQ-012; alla 23 befintliga Markdown-filer uppdaterade och en samlad överlämning tillagd.
+- Beställning: uppdatera alla projektspecifika Markdown-filer så en annan agent kan fortsätta från nuvarande läge inför beta 2.
+- Genomförande: README/AGENTS och [beta2-handoff.md](beta2-handoff.md) ger startordning, verifierad bas, kodansvar, kommandon och kvarstående arbete. Äldre draft-, research- och överföringsdokument märks som historiska där de inte längre styr arbetet.
+- Konsekvens: inga nya beta 2-funktioner, programversionsnummer, källtyper eller migreringsregler beslutas genom denna dokumentation. Nästa release måste verifiera sina egna ändringar och sitt exakta paket.
