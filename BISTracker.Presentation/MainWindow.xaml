@@ -39,12 +39,14 @@
                     <Border Background="#302C23" CornerRadius="8" Padding="14,12" BorderBrush="#5B4C2F" BorderThickness="1">
                         <StackPanel Orientation="Horizontal" Spacing="10">
                             <FontIcon Glyph="&#xE8D4;" FontSize="16" Foreground="{StaticResource AccentBrush}" />
-                            <TextBlock Text="Pre-raid BiS" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding NavigationLabel}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold" />
                         </StackPanel>
                     </Border>
                     <ComboBox x:Name="CharacterPicker" Header="Character" HorizontalAlignment="Stretch" ItemsSource="{Binding Characters}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedCharacter, Mode=OneWay}" SelectionChanged="CharacterChanged" IsEnabled="{Binding IsInteractive}" />
                     <Button Content="New character" HorizontalAlignment="Stretch" Click="NewCharacterClicked" IsEnabled="{Binding IsInteractive}" />
                     <ComboBox x:Name="SpecializationPicker" Header="Specialization" HorizontalAlignment="Stretch" ItemsSource="{Binding Specializations}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedSpecialization, Mode=OneWay}" SelectionChanged="SpecializationChanged" IsEnabled="{Binding IsInteractive}" />
+                    <ComboBox x:Name="CatalogPicker" Header="Catalog" HorizontalAlignment="Stretch" ItemsSource="{Binding CatalogSets}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedCatalogSet, Mode=OneWay}" SelectionChanged="CatalogChanged" IsEnabled="{Binding IsInteractive}" />
+                    <Button Content="Import catalogs" HorizontalAlignment="Stretch" Click="ImportCatalogClicked" IsEnabled="{Binding CanImportCatalog}" />
                     <TextBlock Text="{Binding CatalogContext}" TextWrapping="Wrap" FontSize="12" Foreground="{StaticResource AccentBrush}" />
                 </StackPanel>
             </Grid>
@@ -61,8 +63,9 @@
             <Grid>
                 <StackPanel Spacing="7">
                     <TextBlock Text="{Binding CatalogLabel}" FontSize="11" CharacterSpacing="60" Foreground="{StaticResource AccentBrush}" />
-                    <TextBlock Text="Your pre-raid gear" FontSize="28" FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding ListTitle}" FontSize="28" FontWeight="SemiBold" />
                     <TextBlock Text="Track what you own and what you wear." Foreground="{StaticResource MutedBrush}" />
+                    <TextBlock Text="{Binding SelectionMethod}" FontSize="12" Foreground="{StaticResource AccentBrush}" />
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="1" ColumnSpacing="14">
@@ -94,7 +97,7 @@
                 </Border>
             </Grid>
             <StackPanel Grid.Row="2" Spacing="8">
-                <InfoBar IsOpen="{Binding HasReviewedCatalog}" IsClosable="False" Severity="Informational" Title="Dungeon &amp; quest BiS" Message="Phase 1, including UBRS (10 players). Random-suffix goals require of Healing. Sources and conditions are listed below." />
+                <InfoBar IsOpen="{Binding ShowClassicContext}" IsClosable="False" Severity="Informational" Title="Dungeon &amp; quest BiS" Message="Phase 1, including UBRS (10 players). Random-suffix goals require of Healing. Sources and conditions are listed below." />
                 <InfoBar IsOpen="{Binding HasDraftProgress}" IsClosable="False" Severity="Informational" Title="Your draft progress is preserved" Message="The real list starts with a separate collection. Marks on fictional draft items have not been transferred." />
                 <InfoBar IsOpen="{Binding HasError}" IsClosable="False" Severity="Error" Title="Could not update progress" Message="{Binding ErrorMessage}" />
             </StackPanel>
@@ -161,7 +164,7 @@
                                                 </Grid>
                                             </Border>
                                             <StackPanel Grid.Column="1" Spacing="4">
-                                                <HyperlinkButton Content="{Binding Name}" NavigateUri="{Binding ItemUri}" HorizontalAlignment="Left" Padding="0" MinHeight="0" FontWeight="SemiBold" Foreground="{StaticResource AccentBrush}" ToolTipService.ToolTip="Open the Classic item on Wowhead. Check the required suffix in this list." />
+                                                <HyperlinkButton Content="{Binding Name}" NavigateUri="{Binding ItemUri}" HorizontalAlignment="Left" Padding="0" MinHeight="0" FontWeight="SemiBold" Foreground="{StaticResource AccentBrush}" ToolTipService.ToolTip="Open item details" />
                                                 <TextBlock Text="{Binding Source}" Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" />
                                                 <TextBlock Text="{Binding Note}" Visibility="{Binding NoteVisibility}" Foreground="{StaticResource MutedBrush}" FontSize="11" TextWrapping="Wrap" />
                                                 <HyperlinkButton Content="Recommendation source ↗" NavigateUri="{Binding RecommendationUri}" HorizontalAlignment="Left" Padding="0" MinHeight="0" FontSize="10" ToolTipService.ToolTip="Open the guide used for this recommendation" />

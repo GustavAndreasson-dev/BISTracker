@@ -22,6 +22,7 @@ namespace BISTracker.Presentation
                 // Collection refreshes can clear ComboBox selection even when the model value is unchanged.
                 if (change.PropertyName == nameof(TrackerViewModel.SelectedCharacter)) CharacterPicker.SelectedItem = viewModel.SelectedCharacter;
                 if (change.PropertyName == nameof(TrackerViewModel.SelectedSpecialization)) SpecializationPicker.SelectedItem = viewModel.SelectedSpecialization;
+                if (change.PropertyName == nameof(TrackerViewModel.SelectedCatalogSet)) CatalogPicker.SelectedItem = viewModel.SelectedCatalogSet;
             };
             AppWindow.Resize(new Windows.Graphics.SizeInt32(1240, 900));
             Root.Loaded += OnLoaded;
@@ -72,6 +73,31 @@ namespace BISTracker.Presentation
             var dialog = new CharacterDialog(Root.XamlRoot);
             if (await dialog.ShowAsync() == ContentDialogResult.Primary)
                 await _viewModel.CreateCharacterAsync(dialog.CharacterName, dialog.Version, dialog.Class);
+        }
+
+        private async void CatalogChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (_viewModel?.IsInteractive == true && CatalogPicker.SelectedItem is CatalogSet set && set.Id != _viewModel.SelectedCatalogSet?.Id)
+            {
+                await _viewModel.SelectCatalogAsync(set);
+                CatalogPicker.SelectedItem = _viewModel.SelectedCatalogSet;
+            }
+        }
+
+        private async void ImportCatalogClicked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var picker = new Microsoft.Windows.Storage.Pickers.FolderPicker(AppWindow.Id);
+                var folder = await picker.PickSingleFolderAsync();
+                if (folder is not null) await _viewModel.ImportCatalogAsync(folder.Path);
+            }
+            catch (Exception exception)
+            {
+                var dialog = new ContentDialog { XamlRoot = Root.XamlRoot, RequestedTheme = ElementTheme.Dark,
+                    Title = "Could not open catalog folder", Content = exception.Message, CloseButtonText = "Close" };
+                await dialog.ShowAsync();
+            }
         }
 
         private async void EquippedClicked(object sender, RoutedEventArgs e)

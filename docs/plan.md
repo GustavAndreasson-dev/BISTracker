@@ -20,7 +20,7 @@ Statusdatum: 2026-10-08. Plan för det beställda utkastet och fortsatt utveckli
 | 2. Första utkast | WinUI-vy, domänregler och lokal tracking med exempeldata. | Bygg och relevanta kontroller passerar; faktisk UI-rendering granskas. | Klar: Release-build, 14 beteendekontroller och isolerad UI-kontroll godkända. |
 | 3. BiS-underlag | Källjämförelse och förslag på datametod. | Rapport med spårbara källor och kvarstående val finns. | Klar som research i data-research.md. |
 | 4. Verifierad katalog | Riktiga items och anskaffning för vald kontext. | Fas, tillåtna källor och rekommendationsgrund är dokumenterade; katalogen är integrerad och verifierad. | Klar för det fasta 17-item-urvalet: katalog-/lagringskontroller och renderad UI-verifiering godkända. Full questrevision och alternativa trackingmål är senare fördjupning. |
-| 5. Förfinad produkt | Anpassat UI, beslutad karaktärshantering och komplett kravverifiering. | Överenskomna acceptanskriterier är uppfyllda med riktig data. | Karaktärs-/specval och tre sparade listor verifierade. Nya klass-/Forever-kataloger och deras utrustningsregler återstår. |
+| 5. Förfinad produkt | Karaktärer, tre listor, fler kataloger och nivåimport. | Överenskomna acceptanskriterier är verifierade med riktig data. | Karaktärs-/specval, 27 Forever beta nivå30-kataloger, tvåhands-/unique-regler och nivå60-import verifierade. Verklig nivå60-data och fullare källurval för vissa specs återstår. |
 
 ## Nästa beställda scope och lokal arbetsplats
 
@@ -32,22 +32,40 @@ Se [överföringsrapport](local-transfer.md).
 Chefen har beställt utredning av Forever, därefter stöd för alla klasser/specs
 om Forever är genomförbart, samt tre speclistor per karaktär (REQ-005–007).
 [Genomförbarhetsutredningen](forever-feasibility.md) är klar. Version/klass/spec,
-karaktärshantering och tre sparade listor är implementerade och verifierade med
-26 beteendekontroller och isolerad WinUI-kontroll. Se [leveransen](characters-and-loadouts.md).
+karaktärshantering och tre sparade listor är implementerade. Med nivå30-leveransen
+passerar nu 39 beteendekontroller och isolerad WinUI-kontroll.
+Se [listmodellen](characters-and-loadouts.md).
 
-Nästa datasteg: granska och införa kataloger per spec, med uttrycklig nivå/build,
-fas, dungeons/quests och rekommendationsgrund. Aktuella Forever-guider gäller
-betans nivå 30; de används inte som kompletta pre-raid-listor. Endast Classic
-Holy Priest har en aktiverad katalog. REQ-005/006 är därför delvis uppfyllda;
-REQ-007:s listfunktion är implementerad. Inga nya commits har gjorts under denna
-fortsättning, enligt användarens uttryckliga regel om commit först på begäran.
+Chefens nästa beställning, REQ-008/009, är levererad: alla 27 specs har separata
+Forever-kataloger för beta nivå 30/patch 1.60.1. Guidealternativen är källgranskade
+och filtreras till dungeons/quests. Källornas luckor är dokumenterade; urvalet
+är inte en fullständig egen ranking. [Katalograpport](forever-level30-catalogs.md).
+
+Nivå 60 kan importeras från validerade JSON-pack utan omkompilering. Nivåbyte
+bevarar tre utrustningsuppsättningar per katalogset med gemensamt ägande.
+Verklig nivå 60-data saknas ännu och tomma listor visar datastatus.
+Chefens senaste uppdrag tillåter regelbundna commits; huvudtråden commitar
+verifierade delar löpande enligt DEC-011.
+
+## Fyra arbetstrådar för nivå 30-leveransen
+
+| Tråd | Filansvar | Verifierad leverans |
+| --- | --- | --- |
+| Huvudtråden | Domain/Application-kontext, Infrastructure-loader/import, Presentation och gemensamma docs | Nivåisolering, import, liveuppdatering, UI, bygg/granskning och commits. |
+| forever_casters | Mage/Priest/Warlock-data, källrapport och forskningsfakta | Nio kataloger, item-/quest-/ikonrevision; avslutande krav-/arkitekturgranskning. |
+| forever_hybrids | Druid/Paladin/Shaman-data och källrapport | Nio kataloger, källfelsrättelser, sju importscenarier och verifieringsdokument. |
+| forever_physical | Hunter/Rogue/Warrior-data och källrapport | Nio kataloger, korsgranskning av alla 27, unique-suffixregression och tre extra kontextscenarier. |
+
+Alla fyra har använts i samma lokala arbetsplats. Historiska användarägda
+trådar nedan har inte behövt kontaktas för denna leverans.
 
 ## Öppna beslut
 
 | Fråga | Varför den behövs |
 | --- | --- |
-| Vilken källa och metod ska styra nya BiS-kataloger? Ska alternativ visas? | Gör rekommendationerna spårbara och jämförbara. |
-| Vilken Forever-nivå/build och fas ska nya skarpa kataloger gälla? | Betans nivå 30 får inte förväxlas med slutlig pre-raid-data. |
+| Ska Forever-filtret även omfatta crafting/world drops? | Dungeons/quests gäller tills vidare; andra granskade guidealternativ finns bevarade. |
+| Vilken nivå60-patch/fas och källa ska styra kommande pack? | Importfunktionen är klar, men verkliga rekommendationer måste granskas när de finns. |
+| Hur ska antal identiska exemplar och reviderade pack med samma kontext hanteras? | Nuvarande ägande är booleskt och importer får inte ersätta befintliga pack-ID:n. |
 | Behövs annan plattform eller synkronisering senare? | Utkastet fortsätter med WinUI och lokal lagring; framtida behov är öppna. |
 
 ## Skapade Codex-trådar
@@ -78,4 +96,4 @@ granskar endast avsedda filer efter godkänd verifiering.
 - Huvudtråden har verifierat metadata och ikon-URL:er för 18 items, skapat tools/data/Get-ItemMetadata.ps1 och dokumenterat integrationsförslaget i data-import.md.
 - Tråden BISTracker – Domän och användningsfall slutförde sitt tillfälliga UI-uppdrag inom Presentation/: engelska texter utan ändrade trackingregler. Huvudtråden integrerade engelska katalog-/lagringstexter och verifierade den renderade vyn.
 - Den riktiga katalogen är aktiverad bakom IBisCatalog, med bilder/källor i UI och variantidentitet. En separat framstegsfil bevarar gamla demo-ID:n utan överföring av ägande.
-- Nästa förfining kan omfatta fler alternativa trackingmål, karaktärshantering och fördjupad questkedjegranskning efter beslutat scope.
+- Karaktärshantering och Forever-alternativ har senare levererats enligt REQ-005–009. Full questkedjegranskning i spelklient och verkliga nivå60-pack återstår.

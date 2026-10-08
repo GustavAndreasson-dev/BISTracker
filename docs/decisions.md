@@ -71,7 +71,7 @@ arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 ## DEC-010 — Forever, alla klasser och tre speclistor
 
 - Datum: 2026-10-08.
-- Status: beställt av Chefen; struktur och listfunktion implementerade, nya kataloger återstår.
+- Status: beställt av Chefen; struktur och listfunktion implementerade. Nivå 30-kataloger tillkom enligt DEC-011; nivå 60-data återstår.
 - Beslut: utred Blizzards Forever som nästa spelversion, utöka till alla klasser/specs om genomförbart och stöd tre separata listor per karaktär.
 - Förtydligande från Chefen: ägande är gemensamt för karaktären, utrustning separat per spec.
 - Genomförande: nio klasser med tre specs i Classic/Forever, lokalt karaktärs-ID, gemensam itemvariantidentitet, versionsstyrd JSON och bevarande av äldre framsteg. En otillgänglig katalog visas explicit; inga Vanilla-rekommendationer används som verifierad Forever-BiS. Se characters-and-loadouts.md.
@@ -80,7 +80,8 @@ arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 ## DEC-011 — Nivå 30 nu, nivå 60-import senare
 
 - Datum: 2026-10-08.
-- Status: beställt av Chefen; pågående arbete.
+- Status: beställt av Chefen; alla 27 nivå 30-kataloger och nivå 60-import implementerade och verifierade. Verklig nivå 60-data inväntas.
 - Beslut: skaffa Forever-kataloger för alla specs på nivå 30 och förbered import av nivå 60 när data finns.
 - Arbetsform: utnyttja fyra arbetstrådar och gör regelbundna commits efter verifierade sammanhängande delar. Huvudtråden samordnar integration och commits; tre datatrådar äger varsin grupp om nio specs.
 - Tillåtna itemkällor: tidigare avgränsning dungeons/quests gäller tills Chefen besvarat förtydligandet för beta-listorna. Datainsamlingen bevarar även andra guidekandidater för ett eventuellt ändrat beslut.
+- Genomförande: källbelagda guidealternativ för beta nivå 30/patch 1.60.1, separat nivå 60-kontext, validerad atomisk packimport och bevarade utrustningsuppsättningar. Luckor fylls inte med egna rankingar. Release-build, 39 beteendekontroller och isolerad WinUI-kontroll godkända; [leverans](forever-level30-catalogs.md).

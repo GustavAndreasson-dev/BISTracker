@@ -14,6 +14,7 @@ namespace BISTracker.Presentation.Features.Tracking.ViewModels;
 public sealed class TrackerViewModel : ObservableObject
 {
     private readonly ICharacterTrackerService _service;
+    private readonly ICatalogPackImporter? _catalogImporter;
     private readonly List<TrackerItemViewModel> _items = new();
     private bool _isBusy;
     private bool _loaded;
@@ -24,19 +25,28 @@ public sealed class TrackerViewModel : ObservableObject
     private string? _unavailableReason;
     private CharacterOption? _selectedCharacter;
     private Specialization? _selectedSpecialization;
-    public TrackerViewModel(ICharacterTrackerService service, bool hasDraftProgress = false)
+    private CatalogSet? _selectedCatalogSet;
+    public TrackerViewModel(ICharacterTrackerService service, bool hasDraftProgress = false, ICatalogPackImporter? catalogImporter = null)
     {
         _service = service;
+        _catalogImporter = catalogImporter;
         HasDraftProgress = hasDraftProgress;
     }
     public bool HasDraftProgress { get; }
     public string CatalogContext { get; private set; } = "";
     public string CatalogLabel { get; private set; } = "";
+    public string ListTitle => SelectedCharacter?.Version == GameVersion.Forever ? $"Your level {SelectedCatalogSet?.LevelCap ?? 30} gear" : "Your pre-raid gear";
+    public string NavigationLabel => SelectedCharacter?.Version == GameVersion.Forever ? $"Level {SelectedCatalogSet?.LevelCap ?? 30} gear" : "Pre-raid BiS";
+    public string SelectionMethod { get; private set; } = "";
+    public bool ShowClassicContext => HasReviewedCatalog && SelectedCharacter?.Version == GameVersion.Classic;
+    public bool CanImportCatalog => IsInteractive && _catalogImporter is not null;
     public bool HasReviewedCatalog => _loaded && _unavailableReason is null && TotalCount > 0;
     public ObservableCollection<CharacterOption> Characters { get; } = new();
     public ObservableCollection<Specialization> Specializations { get; } = new();
+    public ObservableCollection<CatalogSet> CatalogSets { get; } = new();
     public CharacterOption? SelectedCharacter => _selectedCharacter;
     public Specialization? SelectedSpecialization => _selectedSpecialization;
+    public CatalogSet? SelectedCatalogSet => _selectedCatalogSet;
     public ObservableCollection<TrackerItemViewModel> VisibleItems { get; } = new();
     public int TotalCount => _items.Count;
     public int OwnedCount => _items.Count(item => item.IsOwned);
@@ -59,24 +69,31 @@ public sealed class TrackerViewModel : ObservableObject
     public Task SelectSpecializationAsync(Specialization spec) => ExecuteAsync(() => _service.SelectAsync(SelectedCharacter!.Id, spec.Id), true);
     public Task CreateCharacterAsync(string name, GameVersion version, CharacterClass characterClass) =>
         ExecuteAsync(() => _service.CreateAsync(name, version, characterClass), true);
-    private async Task ExecuteAsync(Func<Task<TrackerSnapshot>> operation, bool saves)
+    public Task SelectCatalogAsync(CatalogSet set) => ExecuteAsync(() => _service.SelectCatalogAsync(set.Id), true);
+    public Task ImportCatalogAsync(string directory) => ExecuteAsync(async () =>
+    {
+        await (_catalogImporter ?? throw new InvalidOperationException("Catalog import is unavailable.")).ImportAsync(directory);
+        return await _service.LoadAsync();
+    }, false, importsCatalog: true);
+    private async Task ExecuteAsync(Func<Task<TrackerSnapshot>> operation, bool saves, bool importsCatalog = false)
     {
         if (_isBusy) return;
         _isBusy = true;
         Notify(nameof(IsInteractive));
+        Notify(nameof(CanImportCatalog));
         ErrorMessage = "";
         SaveStatus = saves ? "Saving progress…" : "Loading your progress…";
         try
         {
             var snapshot = await operation();
             var contextChanged = !_loaded || !Equals(_selectedCharacter?.Id, snapshot.Selection?.ActiveCharacter.Id) ||
-                _selectedSpecialization?.Id != snapshot.Selection?.ActiveSpecialization.Id;
-            if (contextChanged)
+                _selectedSpecialization?.Id != snapshot.Selection?.ActiveSpecialization.Id || _selectedCatalogSet?.Id != snapshot.Selection?.ActiveCatalogSet?.Id;
+            var itemsChanged = !_items.Select(item => item.Id).SequenceEqual(snapshot.Entries.Select(entry => entry.Item.Id));
+            if (contextChanged || itemsChanged)
             {
                 _items.Clear();
                 _items.AddRange(snapshot.Entries.Select(entry => new TrackerItemViewModel(entry)));
-                SearchText = "";
-                FilterIndex = 0;
+                if (contextChanged) { SearchText = ""; FilterIndex = 0; }
                 _loaded = true;
             }
             else
@@ -85,6 +102,7 @@ public sealed class TrackerViewModel : ObservableObject
             }
             CatalogContext = snapshot.Catalog.Context.Phase;
             CatalogLabel = $"{snapshot.Catalog.Context.Version} / {snapshot.Catalog.Context.Specialization}";
+            SelectionMethod = snapshot.Catalog.SelectionMethod ?? "";
             _unavailableReason = snapshot.Catalog.UnavailableReason;
             if (snapshot.Selection is { } selection)
             {
@@ -94,17 +112,20 @@ public sealed class TrackerViewModel : ObservableObject
                 Specializations.Clear();
                 foreach (var spec in CharacterDefinition.Specializations(selection.ActiveCharacter.Class)) Specializations.Add(spec);
                 _selectedSpecialization = Specializations.Single(spec => spec.Id == selection.ActiveSpecialization.Id);
+                CatalogSets.Clear();
+                foreach (var set in selection.CatalogSets ?? Array.Empty<CatalogSet>()) CatalogSets.Add(set);
+                _selectedCatalogSet = CatalogSets.SingleOrDefault(set => set.Id == selection.ActiveCatalogSet?.Id);
             }
-            foreach (var property in new[] { nameof(CatalogContext), nameof(CatalogLabel), nameof(HasReviewedCatalog) }) Notify(property);
+            foreach (var property in new[] { nameof(CatalogContext), nameof(CatalogLabel), nameof(HasReviewedCatalog), nameof(ShowClassicContext), nameof(ListTitle), nameof(NavigationLabel), nameof(SelectionMethod) }) Notify(property);
             foreach (var property in new[] { nameof(TotalCount), nameof(OwnedCount), nameof(RemainingCount), nameof(OwnedSummary), nameof(EquippedSummary) }) Notify(property);
             ApplyFilter();
-            SaveStatus = saves ? $"Saved locally · {DateTime.Now:HH:mm}" : "Your progress is saved locally on this computer.";
+            SaveStatus = importsCatalog ? "Catalogs imported locally." : saves ? $"Saved locally · {DateTime.Now:HH:mm}" : "Your progress is saved locally on this computer.";
         }
         catch (Exception ex)
         {
             Debug.WriteLine(ex);
-            ErrorMessage = $"{DescribeError(ex, saves)} Your progress in this view has not changed.";
-            SaveStatus = saves
+            ErrorMessage = $"{(importsCatalog ? ex.Message : DescribeError(ex, saves))} Your progress in this view has not changed.";
+            SaveStatus = importsCatalog ? "Catalog import or refresh failed." : saves
                 ? "Changes were not saved. Check the progress file and try again."
                 : "Could not load progress. Check the progress file and restart the app.";
         }
@@ -113,8 +134,10 @@ public sealed class TrackerViewModel : ObservableObject
             foreach (var item in _items) item.RefreshTrackingState();
             Notify(nameof(SelectedCharacter));
             Notify(nameof(SelectedSpecialization));
+            Notify(nameof(SelectedCatalogSet));
             _isBusy = false;
             Notify(nameof(IsInteractive));
+            Notify(nameof(CanImportCatalog));
         }
     }
     private static string DescribeError(Exception exception, bool saves) => exception switch

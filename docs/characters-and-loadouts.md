@@ -1,13 +1,17 @@
 # Karaktärer och tre speclistor
 
-Statusdatum: 2026-10-08. Funktionerna nedan är implementerade. Nya BiS-kataloger
-är en separat återstående leverans; stöd för klass/spec betyder inte att dess
-items redan har granskats.
+Statusdatum: 2026-10-08. Karaktärer, tre speclistor per katalogset och
+27 Forever-kataloger för betans nivå 30 är implementerade och verifierade.
+Katalogerna innehåller källbelagda guidealternativ med dokumenterade luckor.
+Verkliga nivå 60-kataloger saknas; importstödet är förberett och verifierat.
+Se [nivå 30-katalogerna](forever-level30-catalogs.md) och
+[katalogset och import](catalog-contexts.md).
 
 ## Beslut och beteende
 
 REQ-005–007 omfattar Forever, alla klasser/specs och tre listor per karaktär.
-Användaren bekräftade gemensamt ägande och separat utrustning per spec.
+Chefen bekräftade gemensamt ägande och separat utrustning per spec och
+beställde därefter nivå 30-kataloger med möjlighet att importera nivå 60.
 
 - En karaktär har ett stabilt lokalt GUID, namn, spelversion och klass.
 - Classic och Forever stöds som separata versioner, med nio klasser och 27 specs.
@@ -15,48 +19,71 @@ Användaren bekräftade gemensamt ägande och separat utrustning per spec.
   Rogue använder Combat. Varje klass har exakt tre specidentiteter.
 - Namn, version och klass väljs vid skapande. Dessa ändras inte genom specbyte.
   Namnet behöver inte vara unikt; realm/ruleset krävs inte för ett lokalt ID.
-- Ägande identifierar item-ID plus suffix och delas inom en karaktär.
-  Rekommendations-ID och slot kan skilja sig mellan listorna för samma item.
-  Karaktärens spelversion avgränsar itemidentiteten; samma ID i en annan
-  karaktär eller version överför aldrig ägande.
-- Varje spec har en egen slot→rekommendation-uppsättning. Utrustad innebär
-  ägd. Avmarkera utrustad påverkar bara vald spec; avmarkera ägd tar bort
-  itemvariantens utrustningsmarkeringar i samtliga tre specs.
-- Sökning/filter återställs vid byte. Aktiv karaktär och senast vald spec per
-  karaktär sparas. Misslyckad sparning lämnar både framsteg och val oförändrade.
+- Ägande identifierar item-ID plus suffix och delas inom en karaktär mellan
+  dess specs och katalogset. Rekommendations-ID och slot kan skilja sig mellan
+  listorna för samma item. Karaktärer och spelversioner delar aldrig ägande.
+- Varje katalogset har tre egna slot→rekommendation-uppsättningar, en per spec.
+  Utrustad innebär ägd. Vid nivåbyte arkiveras tidigare listor och återställs
+  när spelaren byter tillbaka. Avmarkera utrustad påverkar bara vald spec i
+  valt set; avmarkera ägd rensar itemvariantens utrustning i samtliga specs
+  och arkiverade set.
+- Tvåhandsvapen och offhand kan inte vara utrustade samtidigt i en spec.
+  Utrusta det ena avmarkerar det andra, med ägandet och andra specs bevarade.
+  Unique-equipped gäller basitem-ID oavsett suffix: en ny variant ersätter
+  tidigare placering av samma unika basitem i den valda specen.
+- Sökning/filter återställs vid byte. Aktiv karaktär, vald spec per karaktär
+  och aktivt katalogset sparas. Misslyckad sparning lämnar framsteg och val
+  oförändrade.
+
+Antal exemplar av ett item modelleras inte. Alternativa ring-/trinketslots
+och giltiga handplaceringar är separata rekommendationer, inte ett bevis på
+två ägda exemplar. För icke-unika items verifierar appen inte ett faktiskt
+antal kopior.
 
 ## Källor och tillgängliga listor
 
-Spelversion, klass och spec väljer katalog via `ICharacterCatalog`.
-`CharacterCatalog` returnerar den befintliga granskade 17-item-katalogen för
-Classic Holy Priest. Övriga val har explicit otillgänglig katalog, inga
-rekommendationer och texten “No reviewed BiS list available yet.”
+Spelversion, klass, spec och katalogset väljer katalog via `ICharacterCatalog`.
+`CharacterCatalog` returnerar den granskade 17-item-katalogen för Classic Holy
+Priest och separata Forever-kataloger för samtliga 27 specs på nivå 30,
+beta/patch 1.60.1. Övriga Classic-specs och Forever nivå 60 utan import har
+uttrycklig otillgänglig katalog; Vanilla-items används inte som Forever-data.
+
+Normal app visar endast Dungeon- och Quest-rader. Andra anskaffningstyper kan
+finnas i granskat källunderlag men filtreras bort av standardpolicyn. Suffix,
+faction-villkor, krav och källlänkar bevaras. Saknade slots fylls inte med
+gissade ersättare. Katalogerna är guidebaserade alternativ, inte en egen
+simulering eller en garanti om ett komplett optimalt set. Källor och
+individuella luckor finns i [nivå 30-rapporten](forever-level30-catalogs.md).
+
+Nivå 60-importen validerar katalogkontext, klass/spec, källreferenser och items.
+Dess verifiering använder uttryckliga testfixtures; ingen fiktiv nivå 60-lista
+följer med produkten. Se [import och katalogbyte](catalog-contexts.md).
 
 Blizzards [klassöversikt](https://news.blizzard.com/en-us/article/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever)
-anger nio klasser. [Icy Veins ursprungliga Forever-guide och klassnavigation](https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide/)
-listar de 27 specnamnen, inklusive Feral och Combat. Kontrollerat 2026-10-08.
-Guidens gearsektion gäller nivå 30 i betan och är inte underlag för kompletta
-pre-raid-listor på högsta nivå. Se [utredningen](forever-feasibility.md).
-
-Inga nya items, rankingar eller spelregler har lagts till. Dungeons/quests är
-fortsatt arbetsavgränsning för katalogarbetet. Fas, nivå/build, källor och
-urvalsmetod måste granskas innan varje ny katalog aktiveras.
+och [Icy Veins specnavigation](https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide/)
+kontrollerades vid den första genomförbarhetsgranskningen 2026-10-08.
+De stöder klass/spec-identiteterna. Den efterföljande kataloggranskningen
+använder ursprungliga nivå 30-guider och Forever-itemmetadata; betans
+rekommendationer presenteras inte som slutliga nivå 60-rankningar.
 
 ## Ansvar i koden
 
-- Domain/Game: `CharacterDefinition`, `GameVersion`, `CharacterClass` och
-  stabila spec-ID:n. Domain/Tracking: `CharacterLoadouts` skyddar gemensamt
-  ägande, tre giltiga listor, slotmatchning och utrustad→ägd.
+- Domain/Game: `CharacterDefinition`, `GameVersion`, `CharacterClass`,
+  stabila spec-ID:n och `CatalogSet`. Domain/Tracking: `CharacterLoadouts`
+  skyddar gemensamt ägande, tre giltiga listor, slotmatchning, utrustad→ägd,
+  unique-regler och tvåhands/offhand-konflikter.
 - Application/Characters: `CharacterTrackerService` orkestrerar migration,
-  skapande, val och tracking. Alla karaktärer valideras före mutation/sparning.
-  Snapshot returneras först efter lyckad lagring. `ICharacterTrackerService`
-  är UI-kontraktet; `IWorkspaceRepository` är lagringsgränsen.
-- Infrastructure/Catalog: version/klass/spec avgör vilken granskad katalog som
-  får användas. Infrastructure/Persistence: `JsonWorkspaceRepository` hanterar
-  schema, filåtkomst och atomisk ersättning.
-- Presentation: befintlig tracking-ViewModel, väljare i skalet och
-  `Features/Characters/Views/CharacterDialog` för skapande. UI duplicerar inte
-  regler för ägande eller utrustning.
+  skapande, karaktär/spec/set-val och tracking. Alla karaktärer och sparade
+  set valideras före mutation/sparning. Snapshot returneras först efter
+  lyckad lagring. `ICharacterTrackerService` är UI-kontraktet;
+  `IWorkspaceRepository` är lagringsgränsen.
+- Infrastructure/Catalog: `CharacterCatalog` laddar inbyggda och importerade
+  paket; `ForeverCatalogReader` validerar kontext, metadata och källpolicy.
+  Infrastructure/Persistence: `JsonWorkspaceRepository` hanterar schema,
+  filåtkomst och atomisk ersättning.
+- Presentation: tracking-ViewModel, karaktär/spec/set-val och import i skalet,
+  samt `Features/Characters/Views/CharacterDialog` för skapande. UI
+  duplicerar inte regler för ägande eller utrustning.
 
 Den äldre `CharacterProgress`/`TrackerService`-vägen används fortfarande för
 legacy-validering och befintliga kontroller; normal app använder nya aggregatet.
@@ -65,7 +92,10 @@ legacy-validering och befintliga kontroller; normal app använder nya aggregatet
 
 Normal app använder `%LOCALAPPDATA%\BISTracker\characters-v1.json` med
 `schemaVersion: 1`. Schemat sparar aktiva karaktärens GUID och varje karaktärs
-namn, version, klass, valda spec, ägda itemnycklar och tre utrustningslistor.
+namn, version, klass, valda spec, ägda itemnycklar, aktivt katalogset och
+utrustning för aktiva och arkiverade set. Äldre schema 1-filer utan
+`catalogSetId`/`archivedLoadouts` läses med versionens standardset och
+bevarar identitet och framsteg.
 
 Om filen saknas skapas “My Priest” för Classic, med Holy vald. Befintlig
 `holy-priest-classic-phase1-progress.json` läses, valideras mot den riktiga
@@ -75,27 +105,31 @@ aldrig av den nya tjänsten. `draft-progress.json` läses inte som itemägande.
 
 Migration sker en gång: en befintlig ny fil används även om legacy-filen senare
 ändras. Ett fel i legacy-data hindrar migration och lämnar båda filer bevarade.
-Korrupt workspace, okänd schemaversion eller inkonsekvent domäntillstånd
-rapporteras; ingen tyst återställning görs. Sparning använder temporär fil i
-samma katalog, flush och File.Replace/File.Move. Tempfiler städas vid fel.
+Korrupt workspace, okänd schemaversion, borttaget sparat katalogset eller
+inkonsekvent domäntillstånd rapporteras; ingen tyst återställning görs.
+Sparning använder temporär fil i samma katalog, flush och File.Replace/File.Move.
+Tempfiler städas vid fel.
 
 Tjänstens operationer serialiseras i en appinstans. Samtidig redigering från
 flera appinstanser är inte samordnad. Efter migration ska den nya appen användas;
 ändringar med en äldre appversion överförs inte automatiskt igen.
+Ingen databas har införts.
 
 ## Verifiering och begränsningar
 
-26 konsolscenarier passerar, varav nio nya i `CharacterScenarios`. De verifierar
-version/klass/spec, fysisk itemidentitet, suffix, tre olika listor efter omstart,
-karaktärsisolering, migration, sparfel, avbrott, korrupt data, låst målfil och
-domänvalidering. Fiktiva kataloger används endast i kontrollerna för att kunna
-testa gemensamma items utan att publicera obekräftad BiS-data.
+39 konsolkontroller passerar. De verifierar version/klass/spec, alla 27
+Forever-kataloger och D/Q-policy, fysisk itemidentitet och suffix,
+tre listor per set efter omstart, karaktärsisolering, migration,
+nivå 60-import, nivåbyte, gemensamt ägande över arkiverade set, unique-regler
+och tvåhands/offhand-konflikter. Sparfel, avbrott, korrupt data och låsta filer
+kontrolleras. Regressionerna visar att sparfel vid nivåbyte eller borttaget
+ägande inte ändrar aktiva eller arkiverade listor.
 
-WinUI kontrolleras med helt isolerad minneslagring: riktiga listan, faktiska
-karaktärs-/specvalhändelser, återställda val efter sparfel, tomma kataloger,
-Forever Mage, återläsning och nykaraktärsdialog. Se [verifieringen](verification.md).
+Den isolerade WinUI-kontrollen använder minneslagring och testkataloger för
+import. Den kontrollerar riktiga Classic-listan, Forever nivå 30, karaktär/
+spec/set-val, återställda val efter sparfel och nivå 60-import utan att röra
+spelarens framstegsfil. Se [verifieringen](verification.md).
 
-Fulla kataloger för nya specs återstår. Regler för antal identiska ringar/trinkets,
-unika items, tvåhandsvapen och dual wield behöver granskas med respektive
-katalog innan sådana rekommendationer införs. Ingen spelintegration,
-molnsynkronisering, radering eller redigering av karaktärsidentitet ingår.
+Katalogerna har dokumenterade dataluckor och beta-data kan ändras.
+Verkliga nivå 60-items återstår. Ingen spelintegration, molnsynkronisering,
+radering eller redigering av karaktärsidentitet ingår.

@@ -65,6 +65,6 @@ public sealed class TrackerItemViewModel : ObservableObject
         EquipmentSlot.Finger1 => "Ring 1", EquipmentSlot.Finger2 => "Ring 2",
         EquipmentSlot.Trinket1 => "Trinket 1", EquipmentSlot.Trinket2 => "Trinket 2",
         EquipmentSlot.MainHand => "Main hand", EquipmentSlot.OffHand => "Off hand",
-        EquipmentSlot.Ranged => "Wand", _ => slot.ToString()
+        EquipmentSlot.Ranged => "Ranged", _ => slot.ToString()
     };
 }

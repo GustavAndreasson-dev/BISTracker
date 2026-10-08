@@ -2,6 +2,7 @@
 
 Ursprunglig verifiering på Boromir: 2026-10-07.
 Lokal överföring och verifiering: 2026-10-08, se [rapport](local-transfer.md).
+Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå 60.
 
 ## Genomförda kontroller
 
@@ -9,35 +10,65 @@ Lokal överföring och verifiering: 2026-10-08, se [rapport](local-transfer.md).
   Den isolerade UI-kontrollen och PNG-renderingen har körts på den översatta vyn.
 
 - Hela solutionen byggd i Release för x64 utan varningar eller fel. WinUI-utkastet och isolerad verifieringsvariant är också byggda utan varningar eller fel.
-- Alla 26 konsolkontroller godkända: riktig katalog, suffixidentitet, separata profiler,
-  domäninvariants, separata trackingmarkeringar,
-  byte i samma slot, okända ID:n, skrivfel, JSON-återläsning, saknad fil, korrupt
-  data, avbruten sparning och låst målfil.
-- Nio nya scenarier verifierar 54 versions-/klass-/specval, tre olika listor
+- Alla **39 konsolkontroller** godkända: 17 äldre katalog-/domän-/tracking-/
+  lagringsscenarier, nio `CharacterScenarios`, sex `CatalogContextScenarios`
+  och sju `ForeverCatalogScenarios`.
+- Karaktärsscenarierna verifierar 54 versions-/klass-/specval, tre olika listor
   efter omstart, delat ägande med separata rekommendations-ID:n och suffix,
   karaktärs-/versionsisolering, migration, aktivt val, sparfel, avbrott och låst
   workspace. Se [CharacterScenarios](../BISTracker.Checks/Scenarios/CharacterScenarios.cs).
+- Kontextscenarierna verifierar sparade nivå 30-/60-uppsättningar för alla tre
+  specs, återläsning, äldre filer utan katalogval, avvisade versionsval,
+  tvåhandsvapen/offhand, unique över suffixvarianter och sparfel vid nivåbyte
+  eller borttaget ägande. Se [CatalogContextScenarios](../BISTracker.Checks/Scenarios/CatalogContextScenarios.cs).
+- Katalog-/importscenarierna verifierar alla 27 riktiga nivå 30-kataloger,
+  metadata och defaultpolicyn dungeons/quests, suffixnamn, kompletterande
+  rekommendationskällor, nivå 60-import och uppdatering av samma levande
+  katalogprovider. Ogiltig JSON, schema, kontext, nivåkrav, vapenhand och
+  duplicerade ID:n avvisas; blandade giltiga/ogiltiga batcher, avbrott och
+  tom import bevarar tidigare filer. Se [ForeverCatalogScenarios](../BISTracker.Checks/Scenarios/ForeverCatalogScenarios.cs).
+- De 27 Forever-katalogerna innehåller **1 020 placeringsrader** med
+  dungeons/quests i defaultvyn; granskningsdata innehåller **1 394 rader**
+  före källfiltrering. Alternativa placeringar och flera guideval ingår i
+  antalet; det är inte lika många verkliga items eller en rangordnad optimal
+  utrustningsuppsättning. [Samlad leverans](forever-level30-catalogs.md),
+  [hybrider](forever-level30-hybrids.md), [casters](forever-level30-casters.md)
+  och [övriga klasser](forever-level30-physical.md) redovisar rekommendations-
+  och metadataunderlag, quest-/fraktionsvillkor, ikonkontroller och uteslutna källfel.
 - Appen har startats i en isolerad verifieringsvariant med minneslagring.
   Inga sparade spelarframsteg läses eller skrivs av den kontrollen.
 - UI-kontrollen använder samma 17 riktiga items som appen och verifierar initialt
   tillstånd, sammanfattningar, erhållen/utrustad-regler, filter, sökning på item/slot/
   anskaffning, tomt resultat, källänkar, synliga ikonbilder och trasig bild med fallback.
   Radåteranvändning, suffixvillkor och fraktionsbundna questvillkor kontrolleras också.
-- Nya UI-kontrollen verifierar faktiska väljarnas händelser, återställda
-  karaktärs-/specval, oförändrat UI efter sparfel, Forever Mage, tomma kataloger
-  och nykaraktärsdialog. [Rapport](previews/characters-ui-checks.txt),
-  [översikt](previews/characters-overview.png), [Forever](previews/characters-forever.png)
-  och [dialog](previews/characters-create.png). Renderingar har granskats visuellt.
-- Den faktiska WinUI-vyn har renderats till [PNG](previews/draft-overview.png)
-  och granskats visuellt. Checkboxarnas bredd och listans utrymme korrigerades
-  efter första granskningen. Resultat finns i [UI-rapporten](previews/ui-checks.txt).
+- Den aktuella UI-kontrollen verifierar en riktig Forever Mage-katalog på
+  nivå 30, det uttryckliga tomma nivå 60-valet, återställd utrustning vid byte
+  tillbaka och att faktisk väljare återställs efter sparfel. Importuppdatering
+  i samma aktiva kontext verifieras med ett **TEST ONLY**-nivå 60-pack i en
+  temporär katalog och minneslagrade framsteg. Detta testpaket är inte produktdata.
+  [Aktuell rapport](previews/forever-level30-ui-checks.txt),
+  [nivå 30-vy](previews/forever-level30-overview.png) och
+  [nivå 60 utan data](previews/forever-level60-pending.png).
 - Projektberoenden, filplacering och Markdown-spårning har granskats.
 
 Renderingen använder appens eget visuella träd via
 [RenderTargetBitmap](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imaging.rendertargetbitmap.renderasync).
-Bilden visar isolerat tillstånd: 6 erhållna och 3 utrustade, inte sparade spelarframsteg.
-Ytterligare granskade renderingar: [suffixmål](previews/phase1-suffix.png),
+Samtliga verifieringsbilder visar isolerade markeringar, inte sparade spelarframsteg.
+Ytterligare granskade renderingar av Classic-listan: [suffixmål](previews/phase1-suffix.png),
 [questvillkor](previews/phase1-quest.png) och [saknad bild](previews/phase1-icon-fallback.png).
+
+## Historiska verifieringar
+
+Boromirs utkast från 2026-10-07 renderades till [PNG](previews/draft-overview.png)
+och granskades visuellt; checkboxarnas bredd och listans utrymme korrigerades.
+[Ursprunglig UI-rapport](previews/ui-checks.txt). Dess bild visar sex erhållna
+och tre utrustade items i isolerat verifieringstillstånd.
+
+Karaktärsleveransen tidigare 2026-10-08 verifierade 26 konsolscenarier och
+klass-/specval innan Forever-katalogerna infördes. Dess tomma Forever-vy
+beskriver dåvarande dataläge. [Historisk rapport](previews/characters-ui-checks.txt),
+[översikt](previews/characters-overview.png), [dåvarande Forever-vy](previews/characters-forever.png)
+och [nykaraktärsdialog](previews/characters-create.png).
 
 ## Bygg och starta
 
@@ -62,6 +93,12 @@ skapar “My Priest” med tomt framsteg om den äldre filen saknas. Originalet
 Demoägande importeras inte. Felaktig framstegsfil rapporteras och skrivs inte
 tyst över. Se [migrationsreglerna](characters-and-loadouts.md).
 
+Normal app importerar granskade katalogpack till
+`%LOCALAPPDATA%/BISTracker/Catalogs`. Import kopierar en komplett validerad
+batch till en ny underkatalog, bevarar källfiler och tillåter inte att ett
+befintligt katalog-ID ersätts. Nivå 60-data måste ha egen källgranskad kontext;
+de inbyggda nivå 30-listorna etiketteras inte om automatiskt.
+
 ## Återskapa den isolerade UI-kontrollen
 
 ```powershell
@@ -77,18 +114,24 @@ verifieringsprogrammets filer före start.
 
 ## Praktiska begränsningar
 
-- 17 riktiga, guidebaserade huvudval. Bonecreeper Stylus beskrivs som alternativ
+- Classic Holy Priest har 17 riktiga, guidebaserade huvudval. Bonecreeper Stylus beskrivs som alternativ
   men är inte ett eget trackingmål; full questkedjerevision återstår.
 - Lokala karaktärer i Classic/Forever, med nio klasser och tre specs vardera.
-  Bara Classic Holy Priest har granskad BiS-katalog; nya kataloger återstår.
+  Forever har granskade nivå 30-betaalternativ för samtliga 27 specs; övriga
+  Classic-specs saknar fortfarande granskade kataloger.
   Inget konto, molnsynk eller spelintegration ingår. Flera appinstanser som
-  skriver samma framsteg samtidigt är inte samordnade.
-- Utökade spelregler för unika items, tvåhandskombinationer och
-  omflyttbara ring-/trinketalternativ återstår. Den fasta katalogen innehåller
-  varje unikt item en gång och inga tvåhandsalternativ.
+  skriver samma framsteg eller importerar till samma katalog samtidigt är
+  inte samordnade.
+- Unique-/tvåhands-/offhand-regler och alternativa ring-/trinketplaceringar
+  är implementerade och verifierade. Antalet ägda exemplar modelleras inte;
+  ett shared-owned-värde bevisar inte att spelaren har två kopior av ett item.
+- Betaguiderna har källluckor och föränderliga rekommendationer. Listorna är
+  guidebaserade alternativ enligt vald källpolicy, inte ett beräknat optimalt
+  set. Fulla questkedjor och klientkontroll för varje anskaffningsväg återstår.
 - Ikonbilder kräver nätverk vid visning. Katalog och tracking fungerar utan nätverk;
   en saknad ikon får en platsmarkering. Externa webbläsarklick är inte automatiskt körda.
 - Rendering och ViewModel-beteenden är kontrollerade. Full manuell mus- och
   tangentbordsgranskning, olika DPI/fönsterstorlekar och MSIX-distribution återstår.
-- Forever är implementerad som separat valbar kontext; kompletta Forever-BiS-listor
-  är inte verifierade eller aktiverade. Betans nivå 30 används inte som slutlig pre-raid-data.
+- Ingen verklig Forever-nivå 60-katalog finns i leveransen. Nivå 60-valet visar
+  uttrycklig datastatus; importen verifieras med fiktiva kontrollpack. Betans
+  nivå 30-kataloger används inte som slutlig pre-raid-data för nivå 60.

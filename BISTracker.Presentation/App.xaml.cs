@@ -37,16 +37,19 @@ namespace BISTracker.Presentation
                 "BISTracker");
             var progressPath = ProgressFilePaths.ClassicPhaseOne(progressDirectory);
             var hasDraftProgress = File.Exists(ProgressFilePaths.Draft(progressDirectory)) && !File.Exists(progressPath);
-            ICharacterTrackerService service = new CharacterTrackerService(new CharacterCatalog(),
+            var catalogDirectory = Path.Combine(progressDirectory, "Catalogs");
+            ICatalogPackImporter? importer = new CatalogPackImporter(catalogDirectory);
+            ICharacterTrackerService service = new CharacterTrackerService(new CharacterCatalog(catalogDirectory),
                 new JsonWorkspaceRepository(ProgressFilePaths.Characters(progressDirectory)), new JsonProgressRepository(progressPath));
 #if DRAFT_PREVIEW
             if (Common.DraftPreview.IsRequested)
             {
-                service = new CharacterTrackerService(new CharacterCatalog(), Common.DraftPreview.Workspace, new Common.PreviewProgressRepository());
+                service = new CharacterTrackerService(Common.DraftPreview.Catalog, Common.DraftPreview.Workspace, new Common.PreviewProgressRepository());
                 hasDraftProgress = false;
+                importer = Common.DraftPreview.Importer;
             }
 #endif
-            _window = new MainWindow(new TrackerViewModel(service, hasDraftProgress));
+            _window = new MainWindow(new TrackerViewModel(service, hasDraftProgress, importer));
             _window.Activate();
         }
     }

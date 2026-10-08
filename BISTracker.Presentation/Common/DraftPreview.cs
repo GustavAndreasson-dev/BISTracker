@@ -26,6 +26,9 @@ internal static class DraftPreview
     private static readonly int FlagIndex = Array.IndexOf(Arguments, "--draft-preview");
     public static bool IsRequested => FlagIndex >= 0 && FlagIndex + 1 < Arguments.Length;
     public static PreviewWorkspaceRepository Workspace { get; } = new();
+    private static string ImportedCatalogDirectory => Path.Combine(Path.GetFullPath(Arguments[FlagIndex + 1]), "verification-catalog-imports");
+    public static CharacterCatalog Catalog { get; } = new(IsRequested ? ImportedCatalogDirectory : null);
+    public static ICatalogPackImporter Importer => new CatalogPackImporter(ImportedCatalogDirectory);
 
     public static async Task RunAsync(FrameworkElement root, TrackerViewModel model)
     {
@@ -108,13 +111,56 @@ internal static class DraftPreview
             await WaitForAsync(() => model.IsInteractive && model.HasError && model.SelectedSpecialization?.Id == "holy" &&
                 picker.SelectedItem is Specialization { Id: "holy" }, "Failed selection restores picker");
             await model.CreateCharacterAsync("Forever Mage", GameVersion.Forever, CharacterClass.Mage);
-            Require(model.Characters.Count == 2 && model.Specializations.Count == 3 && model.TotalCount == 0 && model.CatalogLabel.StartsWith("WoW Forever"), "Forever Mage selection");
+            Require(model.Characters.Count == 2 && model.Specializations.Count == 3 && model.TotalCount > 0 && model.CatalogLabel.StartsWith("WoW Forever") &&
+                model.SelectedCatalogSet?.LevelCap == 30 && model.CatalogContext.Contains("beta", StringComparison.OrdinalIgnoreCase), "Forever Mage level 30 selection");
             picker.SelectedItem = model.Specializations.Single(spec => spec.Id == "fire");
             await WaitForAsync(() => model.IsInteractive && model.SelectedSpecialization?.Id == "fire", "Forever spec selection");
+            Require(model.VisibleItems.All(item => item.ItemUri?.AbsoluteUri.Contains("/forever/", StringComparison.Ordinal) == true), "Forever item links");
+            var mageHead = model.VisibleItems.First(item => item.SlotName == "Head");
+            await model.SetEquippedAsync(mageHead.Id, true);
+            await WaitForAsync(() => IconMatches(root, mageHead), "Forever icon");
             await SaveImageAsync(root, Path.Combine(directory, "character-forever.png"));
-            var reloaded = new TrackerViewModel(new CharacterTrackerService(new CharacterCatalog(), Workspace, new PreviewProgressRepository()));
+            var catalogPicker = (ComboBox)root.FindName("CatalogPicker");
+            catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 60);
+            await WaitForAsync(() => model.IsInteractive && model.SelectedCatalogSet?.LevelCap == 60, "Level picker event");
+            Require(model.TotalCount == 0 && model.EmptyMessage == "No reviewed BiS list available yet.", "Level 60 pending catalog");
+            await SaveImageAsync(root, Path.Combine(directory, "forever-level60-pending.png"));
+            catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 30);
+            await WaitForAsync(() => model.IsInteractive && model.SelectedCatalogSet?.LevelCap == 30, "Return to beta catalog");
+            Require(model.VisibleItems.Single(item => item.Id == mageHead.Id).IsEquipped, "Level switch preserves equipment");
+            Workspace.FailNextSave = true;
+            catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 60);
+            await WaitForAsync(() => model.IsInteractive && model.HasError && model.SelectedCatalogSet?.LevelCap == 30 &&
+                catalogPicker.SelectedItem is CatalogSet { LevelCap: 30 }, "Failed level change restores picker");
+            catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 60);
+            await WaitForAsync(() => model.IsInteractive && model.SelectedCatalogSet?.LevelCap == 60, "Select pending import context");
+            var thirtyCatalog = await Catalog.LoadAsync(GameVersion.Forever, CharacterClass.Mage, "fire");
+            var physicalHead = thirtyCatalog.Items.First(item => item.Slot == EquipmentSlot.Head);
+            var fixtureDirectory = Path.Combine(directory, "test-only-pack-source-" + Guid.NewGuid().ToString("N"));
+            Directory.CreateDirectory(fixtureDirectory);
+            var fixture = new
+            {
+                schemaVersion = 1, catalogId = "forever-launch-level60-mage-fire", gameVersion = "Forever", characterClass = "Mage",
+                specializationId = "fire", levelCap = 60, releaseStage = "Launch", phase = "TEST ONLY import context",
+                sourceUrl = "https://example.com/test-only-import-fixture", reviewedOn = "2026-10-08",
+                selectionMethod = "TEST ONLY: UI import regression, not a level 60 recommendation", status = "Partial",
+                items = new[] { new { id = "test-only-imported-head", slot = "Head", itemId = physicalHead.Details!.ClassicItemId,
+                    name = "TEST ONLY import option", requiredSuffix = physicalHead.Details.RequiredSuffix, requiredLevel = 0,
+                    acquisitionType = "Dungeon", source = "TEST ONLY fixture", note = "TEST ONLY: no level 60 recommendation is implied.",
+                    iconUrl = physicalHead.Details.IconUrl, itemUrl = physicalHead.Details.ItemUrl, recommendationUrl = "https://example.com/test-only-import-fixture",
+                    weaponKind = "None", uniqueEquipped = false } }
+            };
+            await File.WriteAllTextAsync(Path.Combine(fixtureDirectory, "TEST-ONLY-mage-fire-60.json"), System.Text.Json.JsonSerializer.Serialize(fixture));
+            await model.ImportCatalogAsync(fixtureDirectory);
+            Require(!model.HasError && model.TotalCount == 1 && model.VisibleItems[0].Name == "TEST ONLY import option" &&
+                model.VisibleItems[0].IsOwned, "Import refreshes an already selected empty context and retains shared inventory");
+            catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 30);
+            await WaitForAsync(() => model.IsInteractive && model.SelectedCatalogSet?.LevelCap == 30, "Restore beta after import regression");
+            Require(model.VisibleItems.Single(item => item.Id == mageHead.Id).IsEquipped, "Import preserves beta equipment");
+            var reloaded = new TrackerViewModel(new CharacterTrackerService(Catalog, Workspace, new PreviewProgressRepository()));
             await reloaded.LoadAsync();
-            Require(reloaded.SelectedCharacter?.Name == "Forever Mage" && reloaded.SelectedSpecialization?.Id == "fire", "Restart restores character and spec");
+            Require(reloaded.SelectedCharacter?.Name == "Forever Mage" && reloaded.SelectedSpecialization?.Id == "fire" && reloaded.SelectedCatalogSet?.LevelCap == 30 &&
+                reloaded.VisibleItems.Single(item => item.Id == mageHead.Id).IsEquipped, "Restart restores character, spec, level and equipment");
             var characterPicker = (ComboBox)root.FindName("CharacterPicker");
             characterPicker.SelectedItem = model.Characters.Single(character => character.Id == priest.Id);
             await WaitForAsync(() => model.IsInteractive && model.SelectedCharacter?.Id == priest.Id, "Character picker event");
@@ -125,7 +171,7 @@ internal static class DraftPreview
             dialog.Hide();
             await dialogResult;
             await File.WriteAllTextAsync(Path.Combine(directory, "ui-checks.txt"),
-                "PASS: real 17-item catalog, source links, equip, unown, summaries, filters, search, icons and fallback, suffix/quest conditions, character/spec picker events, separate lists, unavailable catalogs, failed-save rollback, failed-selection rollback, Forever Mage, restored selection after reload, new-character dialog, render. All progress isolated in memory.\n");
+                "PASS: Classic 17-item catalog, tracking, filters/search, icons/fallback, suffix/quest conditions, character/spec picker events, failed-save/selection rollback; real Forever level30 Mage and item links, level30/60 picker events, preserved beta equipment, failed-level rollback, restored character/spec/level/equipment after reload, pending60 data, new-character dialog, render, same-context import refresh with TEST ONLY level60 fixture. All progress isolated in memory; imported fixture exists only in this temporary verification directory and is not product data.\n");
         }
         catch (Exception exception)
         {
