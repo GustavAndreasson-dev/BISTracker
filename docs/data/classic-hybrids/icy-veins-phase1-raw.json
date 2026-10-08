@@ -1,0 +1,3451 @@
+{
+ "paladin-holy": {
+  "heading": "2.4. Phase 1 Pre-raid BiS",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 10:48 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[12633]Whitesoul Helm",
+      "links": [
+       {
+        "itemId": 12633,
+        "text": "Whitesoul Helm"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Blacksmithing"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[18723]Animated Chain Necklace",
+      "links": [
+       {
+        "itemId": 18723,
+        "text": "Animated Chain Necklace"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ramstein the GorgerStratholme"
+    ]
+   },
+   {
+    "guideSlot": "Shoulder",
+    "items": [
+     {
+      "line": "[18681]Burial Shawl",
+      "links": [
+       {
+        "itemId": 18681,
+        "text": "Burial Shawl"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Shared LootScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Cloak",
+    "items": [
+     {
+      "line": "[13386]Archivist Cape — of Healing",
+      "links": [
+       {
+        "itemId": 13386,
+        "text": "Archivist Cape — of Healing"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Archivist GalfordStratholme"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[13346]Robes of the Exalted",
+      "links": [
+       {
+        "itemId": 13346,
+        "text": "Robes of the Exalted"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Baron RivendareStratholme"
+    ]
+   },
+   {
+    "guideSlot": "Wrist",
+    "items": [
+     {
+      "line": "[13969]Loomguard Armbraces",
+      "links": [
+       {
+        "itemId": 13969,
+        "text": "Loomguard Armbraces"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Kirtonos the HeraldScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[10787]Atal'ai Gloves — of Healing",
+      "links": [
+       {
+        "itemId": 10787,
+        "text": "Atal'ai Gloves — of Healing"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Mini-BossesSunken Temple"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[18702]Belt of the Ordained",
+      "links": [
+       {
+        "itemId": 18702,
+        "text": "Belt of the Ordained"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "BoE"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[11841]Senior Designer's Pantaloons",
+      "links": [
+       {
+        "itemId": 11841,
+        "text": "Senior Designer's Pantaloons"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Fineous DarkvireBlackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[13954]Verdant Footpads",
+      "links": [
+       {
+        "itemId": 13954,
+        "text": "Verdant Footpads"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "StonespineStratholme"
+    ]
+   },
+   {
+    "guideSlot": "Ring 1",
+    "items": [
+     {
+      "line": "[16058]Fordring's Seal",
+      "links": [
+       {
+        "itemId": 16058,
+        "text": "Fordring's Seal"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "In Dreams"
+    ]
+   },
+   {
+    "guideSlot": "Ring 2",
+    "items": [
+     {
+      "line": "[18103]Band of Rumination",
+      "links": [
+       {
+        "itemId": 18103,
+        "text": "Band of Rumination"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Warchief Rend BlackhandUpper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Trinket 1",
+    "items": [
+     {
+      "line": "[12930]Briarwood Reed",
+      "links": [
+       {
+        "itemId": 12930,
+        "text": "Briarwood Reed"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Jed RunewatcherUpper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Trinket 2",
+    "items": [
+     {
+      "line": "[11819]Second Wind",
+      "links": [
+       {
+        "itemId": 11819,
+        "text": "Second Wind"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Golem Lord ArgelmachBlackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Main-Hand",
+    "items": [
+     {
+      "line": "[11923]The Hammer of Grace",
+      "links": [
+       {
+        "itemId": 11923,
+        "text": "The Hammer of Grace"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Chest of The SevenBlackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Off-Hand",
+    "items": [
+     {
+      "line": "[11928]Thaurissan's Royal Scepter",
+      "links": [
+       {
+        "itemId": 11928,
+        "text": "Thaurissan's Royal Scepter"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Emperor Dagran ThaurissanBlackrock Depths"
+    ],
+    "unparsed": [
+     "Abide"
+    ]
+   }
+  ]
+ },
+ "paladin-protection": {
+  "heading": "2.1. Phases 1 Pre-raid BiS",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 10:48 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[12952]Gyth's Skull — of Fire Resistance",
+      "links": [
+       {
+        "itemId": 12952,
+        "text": "Gyth's Skull — of Fire Resistance"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "GythUpper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[13091]Medallion of Grand Marshal Morris",
+      "links": [
+       {
+        "itemId": 13091,
+        "text": "Medallion of Grand Marshal Morris"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "BoE World Drop"
+    ]
+   },
+   {
+    "guideSlot": "Shoulder",
+    "items": [
+     {
+      "line": "[14552]Stockade Pauldrons",
+      "links": [
+       {
+        "itemId": 14552,
+        "text": "Stockade Pauldrons"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "BoE World Drop"
+    ]
+   },
+   {
+    "guideSlot": "Cloak",
+    "items": [
+     {
+      "line": "[13397]Stoneskin Gargoyle Cape",
+      "links": [
+       {
+        "itemId": 13397,
+        "text": "Stoneskin Gargoyle Cape"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "StonespineStratholme"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[14624]Deathbone Chestplate",
+      "links": [
+       {
+        "itemId": 14624,
+        "text": "Deathbone Chestplate"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Shared LootScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Wrist",
+    "items": [
+     {
+      "line": "[12550]Runed Golem Shackles",
+      "links": [
+       {
+        "itemId": 12550,
+        "text": "Runed Golem Shackles"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "BoE World Drop"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[14622]Deathbone Gauntlets",
+      "links": [
+       {
+        "itemId": 14622,
+        "text": "Deathbone Gauntlets"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Shared LootScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[14620]Deathbone Girdle",
+      "links": [
+       {
+        "itemId": 14620,
+        "text": "Deathbone Girdle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Shared LootScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[14623]Deathbone Legguards",
+      "links": [
+       {
+        "itemId": 14623,
+        "text": "Deathbone Legguards"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Shared LootScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[14621]Deathbone Sabatons",
+      "links": [
+       {
+        "itemId": 14621,
+        "text": "Deathbone Sabatons"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Shared LootScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Ring 1",
+    "items": [
+     {
+      "line": "[11669]Naglering",
+      "links": [
+       {
+        "itemId": 11669,
+        "text": "Naglering"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Golem Lord ArgelmachBlackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Ring 2",
+    "items": [
+     {
+      "line": "[10795]Drakeclaw Band ...of the Monkey",
+      "links": [
+       {
+        "itemId": 10795,
+        "text": "Drakeclaw Band ...of the Monkey"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "DragonsSunken Temple"
+    ]
+   },
+   {
+    "guideSlot": "Trinket 1",
+    "items": [
+     {
+      "line": "[10779]Demon's Blood",
+      "links": [
+       {
+        "itemId": 10779,
+        "text": "Demon's Blood"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "You Are Rakh'likh, Demon"
+    ],
+    "unparsed": [
+     "Force of Will",
+     "General AngerforgeBlackrock Depths",
+     "Trinket 2"
+    ]
+   },
+   {
+    "guideSlot": "Main-Hand",
+    "items": [
+     {
+      "line": "[11784]Arbiter's Blade",
+      "links": [
+       {
+        "itemId": 11784,
+        "text": "Arbiter's Blade"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Warder StilgissBlackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Off-Hand",
+    "items": [
+     {
+      "line": "[12602]Draconian Deflector",
+      "links": [
+       {
+        "itemId": 12602,
+        "text": "Draconian Deflector"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "General DrakkisathUpper Blackrock Spire"
+    ]
+   }
+  ]
+ },
+ "paladin-retribution": {
+  "heading": "2.1. Phases 1 — 6 Pre-raid BiS",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 10:48 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[13404]Mask of the Unforgiven",
+      "links": [
+       {
+        "itemId": 13404,
+        "text": "Mask of the Unforgiven"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "The UnforgivenStratholme"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[15411]Mark of Fordring",
+      "links": [
+       {
+        "itemId": 15411,
+        "text": "Mark of Fordring"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "In Dreams"
+    ]
+   },
+   {
+    "guideSlot": "Shoulder",
+    "items": [
+     {
+      "line": "[12927]Truestrike Shoulders",
+      "links": [
+       {
+        "itemId": 12927,
+        "text": "Truestrike Shoulders"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Pyroguard EmberseerUpper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Cloak",
+    "items": [
+     {
+      "line": "[13340]Cape of the Black Baron",
+      "links": [
+       {
+        "itemId": 13340,
+        "text": "Cape of the Black Baron"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Baron RivendareStratholme"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[11726]Savage Gladiator Chain",
+      "links": [
+       {
+        "itemId": 11726,
+        "text": "Savage Gladiator Chain"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Gorosh the DervishBlackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Wrist",
+    "items": [
+     {
+      "line": "[12936]Battleborn Armbraces",
+      "links": [
+       {
+        "itemId": 12936,
+        "text": "Battleborn Armbraces"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Warchief Rend BlackhandUpper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[13957]Gargoyle Slashers",
+      "links": [
+       {
+        "itemId": 13957,
+        "text": "Gargoyle Slashers"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Kirtonos the HeraldScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[13959]Omokk's Girth Restrainer",
+      "links": [
+       {
+        "itemId": 13959,
+        "text": "Omokk's Girth Restrainer"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Maxwell's Mission"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[14554]Cloudkeeper Legplates",
+      "links": [
+       {
+        "itemId": 14554,
+        "text": "Cloudkeeper Legplates"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "BoE World Drop"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[14616]Bloodmail Boots",
+      "links": [
+       {
+        "itemId": 14616,
+        "text": "Bloodmail Boots"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Shared LootScholomance"
+    ]
+   },
+   {
+    "guideSlot": "Ring 1",
+    "items": [
+     {
+      "line": "[12548]Magni's Will",
+      "links": [
+       {
+        "itemId": 12548,
+        "text": "Magni's Will"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "The Princess's Surprise"
+    ]
+   },
+   {
+    "guideSlot": "Ring 2",
+    "items": [
+     {
+      "line": "[13098]Painweaver Band",
+      "links": [
+       {
+        "itemId": 13098,
+        "text": "Painweaver Band"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "General DrakkisathUpper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Trinket 1",
+    "items": [
+     {
+      "line": "[11815]Hand of Justice",
+      "links": [
+       {
+        "itemId": 11815,
+        "text": "Hand of Justice"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Emperor Dagran ThaurissanBlackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Trinket 2",
+    "items": [
+     {
+      "line": "[13965]Blackhand's Breadth",
+      "links": [
+       {
+        "itemId": 13965,
+        "text": "Blackhand's Breadth"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "General Drakkisath's Demise"
+    ]
+   },
+   {
+    "guideSlot": "Weapon",
+    "items": [
+     {
+      "line": "[12784]Arcanite Reaper",
+      "links": [
+       {
+        "itemId": 12784,
+        "text": "Arcanite Reaper"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Blacksmithing"
+    ],
+    "unparsed": [
+     "Abide"
+    ]
+   }
+  ]
+ },
+ "druid-balance": {
+  "heading": "General pre-raid list (no phase tabs)",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 2:05 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "* [10504]Green Lens (of Arcane Wrath)",
+      "links": [
+       {
+        "itemId": 10504,
+        "text": "Green Lens (of Arcane Wrath)"
+       }
+      ]
+     },
+     {
+      "line": "[10041]Dreamweave Circlet",
+      "links": [
+       {
+        "itemId": 10041,
+        "text": "Dreamweave Circlet"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crafted through Engineering",
+     "Crafted through Tailoring"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[12103]Star of Mystaria",
+      "links": [
+       {
+        "itemId": 12103,
+        "text": "Star of Mystaria"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Balnazzar in Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Shoulders",
+    "items": [
+     {
+      "line": "[18681]Burial Shawl",
+      "links": [
+       {
+        "itemId": 18681,
+        "text": "Burial Shawl"
+       }
+      ]
+     },
+     {
+      "line": "[13013]Elder Wizard's Mantle",
+      "links": [
+       {
+        "itemId": 13013,
+        "text": "Elder Wizard's Mantle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Multiple bosses in Scholomance",
+     "Random world drop, bind on equip"
+    ]
+   },
+   {
+    "guideSlot": "Back",
+    "items": [
+     {
+      "line": "* [13386]Archivist Cape (of Arcane Wrath)",
+      "links": [
+       {
+        "itemId": 13386,
+        "text": "Archivist Cape (of Arcane Wrath)"
+       }
+      ]
+     },
+     {
+      "line": "[11623]Spritecaster Cape",
+      "links": [
+       {
+        "itemId": 11623,
+        "text": "Spritecaster Cape"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Archivist Galford in Stratholme",
+     "Houndmaster Grebmar in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[18385]Robe of Everlasting Night",
+      "links": [
+       {
+        "itemId": 18385,
+        "text": "Robe of Everlasting Night"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Immol'thar in Dire Maul West"
+    ]
+   },
+   {
+    "guideSlot": "Wrists",
+    "items": [
+     {
+      "line": "* [11766]Flameweave Cuffs (of Arcane Wrath)",
+      "links": [
+       {
+        "itemId": 11766,
+        "text": "Flameweave Cuffs (of Arcane Wrath)"
+       }
+      ]
+     },
+     {
+      "line": "* [13409]Tearfall Bracers (of Arcane Wrath)",
+      "links": [
+       {
+        "itemId": 13409,
+        "text": "Tearfall Bracers (of Arcane Wrath)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Lord Incendius in Blackrock Depths",
+     "The Unforgiven in Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "* [13258]Slaghide Gauntlets (of Arcane Wrath)",
+      "links": [
+       {
+        "itemId": 13258,
+        "text": "Slaghide Gauntlets (of Arcane Wrath)"
+       }
+      ]
+     },
+     {
+      "line": "[13253]Hands of Power",
+      "links": [
+       {
+        "itemId": 13253,
+        "text": "Hands of Power"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Urok Doomhowl in Upper Blackrock Spire",
+     "Quartermaster Zigris in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[11662]Ban'thok Sash",
+      "links": [
+       {
+        "itemId": 11662,
+        "text": "Ban'thok Sash"
+       }
+      ]
+     },
+     {
+      "line": "[13956]Clutch of Andros",
+      "links": [
+       {
+        "itemId": 13956,
+        "text": "Clutch of Andros"
+       }
+      ]
+     },
+     {
+      "line": "[20171]Defiler's Lizardhide Girdle",
+      "links": [
+       {
+        "itemId": 20171,
+        "text": "Defiler's Lizardhide Girdle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ok'thor the Breaker in Blackrock Depths",
+     "Kirtonos the Herald in Scholomance",
+     "Honored with the Arathi Basin reputation"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[13170]Skyshroud Leggings",
+      "links": [
+       {
+        "itemId": 13170,
+        "text": "Skyshroud Leggings"
+       }
+      ]
+     },
+     {
+      "line": "[9484]Spellshock Leggings",
+      "links": [
+       {
+        "itemId": 9484,
+        "text": "Spellshock Leggings"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Highlord Omokk in Lower Blackrock Spire",
+     "Random drop in Zul'Farrak"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[11822]Omnicast Boots",
+      "links": [
+       {
+        "itemId": 11822,
+        "text": "Omnicast Boots"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Golem Lord Argelmach in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Rings",
+    "items": [
+     {
+      "line": "[12545]Eye of Orgrimmar or [12543]Songstone of Ironforge",
+      "links": [
+       {
+        "itemId": 12545,
+        "text": "Eye of Orgrimmar or"
+       },
+       {
+        "itemId": 12543,
+        "text": "Songstone of Ironforge"
+       }
+      ]
+     },
+     {
+      "line": "[13001]Maiden's Circle",
+      "links": [
+       {
+        "itemId": 13001,
+        "text": "Maiden's Circle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Reward from the quest The Princess Saved? in Blackrock Depths",
+     "World drop bind on equip item"
+    ]
+   },
+   {
+    "guideSlot": "Trinkets",
+    "items": [
+     {
+      "line": "[13968]Eye of the Beast",
+      "links": [
+       {
+        "itemId": 13968,
+        "text": "Eye of the Beast"
+       }
+      ]
+     },
+     {
+      "line": "[12930]Briarwood Reed",
+      "links": [
+       {
+        "itemId": 12930,
+        "text": "Briarwood Reed"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Reward from the quest General Drakkisath's Demise (Alliance) / For The Horde! (Horde) Upper Blackrock Spire",
+     "Jed Runewatcher in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Weapons",
+    "items": [
+     {
+      "line": "[18534]Rod of the Ogre Magi",
+      "links": [
+       {
+        "itemId": 18534,
+        "text": "Rod of the Ogre Magi"
+       }
+      ]
+     },
+     {
+      "line": "[13964]Witchblade",
+      "links": [
+       {
+        "itemId": 13964,
+        "text": "Witchblade"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Mizzle the Crafty in Dire Maul North",
+     "Darkmaster Gandling in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Off-hands",
+    "items": [
+     {
+      "line": "* [10796]Drakestone (of Arcane Wrath)",
+      "links": [
+       {
+        "itemId": 10796,
+        "text": "Drakestone (of Arcane Wrath)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Drake bosses in Sunken Temple"
+    ]
+   },
+   {
+    "guideSlot": "Idols",
+    "items": [
+     {
+      "line": "[23197]Idol of the Moon",
+      "links": [
+       {
+        "itemId": 23197,
+        "text": "Idol of the Moon"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "BoE world drop, bought from the Auction House"
+    ],
+    "unparsed": [
+     "*All of these are items that drop with random stats. You will be looking for",
+     "\"Arcane Wrath,\" which gives +Arcane Damage. This can sometimes be hard to farm,",
+     "especially when dealing with multiple items, so make sure you have reasonable",
+     "alternatives until you can get the correct drop.",
+     "You can find more druid BiS lists in our dedicated gear hub below.",
+     "Balance Druid Best in Slot Gear Hub",
+     "Seksixeny"
+    ]
+   }
+  ]
+ },
+ "druid-feral-dps": {
+  "heading": "General pre-raid list (no phase tabs)",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 2:05 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "* [8345]Wolfshead Helm",
+      "links": [
+       {
+        "itemId": 8345,
+        "text": "Wolfshead Helm"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crafted with Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[15411]Mark of Fordring",
+      "links": [
+       {
+        "itemId": 15411,
+        "text": "Mark of Fordring"
+       }
+      ]
+     },
+     {
+      "line": "[19491]Amulet of the Darkmoon",
+      "links": [
+       {
+        "itemId": 19491,
+        "text": "Amulet of the Darkmoon"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Quest In Dreams in Western Plaguelands",
+     "A 1200 ticket reward from the Darkmoon Faire"
+    ]
+   },
+   {
+    "guideSlot": "Shoulders",
+    "items": [
+     {
+      "line": "[12927]Truestrike Shoulders",
+      "links": [
+       {
+        "itemId": 12927,
+        "text": "Truestrike Shoulders"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Pyroguard Emberseer in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Back",
+    "items": [
+     {
+      "line": "[13340]Cape of the Black Baron",
+      "links": [
+       {
+        "itemId": 13340,
+        "text": "Cape of the Black Baron"
+       }
+      ]
+     },
+     {
+      "line": "[13397]Stoneskin Gargoyle Cape",
+      "links": [
+       {
+        "itemId": 13397,
+        "text": "Stoneskin Gargoyle Cape"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Baron Rivendare in Stratholme",
+     "Stonespine in Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[14637]Cadaverous Armor",
+      "links": [
+       {
+        "itemId": 14637,
+        "text": "Cadaverous Armor"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Mini-bosses in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Wrists",
+    "items": [
+     {
+      "line": "[16710]Shadowcraft Bracers",
+      "links": [
+       {
+        "itemId": 16710,
+        "text": "Shadowcraft Bracers"
+       }
+      ]
+     },
+     {
+      "line": "[13120]Deepfury Bracers",
+      "links": [
+       {
+        "itemId": 13120,
+        "text": "Deepfury Bracers"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Instructor Malicia in Scholomance",
+     "World drop bind on equip"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[15063]Devilsaur Gauntlets",
+      "links": [
+       {
+        "itemId": 15063,
+        "text": "Devilsaur Gauntlets"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[13252]Cloudrunner Girdle",
+      "links": [
+       {
+        "itemId": 13252,
+        "text": "Cloudrunner Girdle"
+       }
+      ]
+     },
+     {
+      "line": "[11686]Girdle of Beastial Fury",
+      "links": [
+       {
+        "itemId": 11686,
+        "text": "Girdle of Beastial Fury"
+       }
+      ]
+     },
+     {
+      "line": "[20190]Defiler's Leather Girdle",
+      "links": [
+       {
+        "itemId": 20190,
+        "text": "Defiler's Leather Girdle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Quartermaster Zigris in Lower Blackrock Spire",
+     "Eviscerator in Blackrock Depths",
+     "Honored with the Arathi Basin reputation"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[15062]Devilsaur Leggings",
+      "links": [
+       {
+        "itemId": 15062,
+        "text": "Devilsaur Leggings"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[12553]Swiftwalker Boots",
+      "links": [
+       {
+        "itemId": 12553,
+        "text": "Swiftwalker Boots"
+       }
+      ]
+     },
+     {
+      "line": "[20186]Defiler's Leather Boots",
+      "links": [
+       {
+        "itemId": 20186,
+        "text": "Defiler's Leather Boots"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Princess Moira Bronzebeard in Blackrock Depths",
+     "Revered with the Arathi Basin reputation"
+    ]
+   },
+   {
+    "guideSlot": "Rings",
+    "items": [
+     {
+      "line": "[17713]Blackstone Ring",
+      "links": [
+       {
+        "itemId": 17713,
+        "text": "Blackstone Ring"
+       }
+      ]
+     },
+     {
+      "line": "[2246]Myrmidon's Signet",
+      "links": [
+       {
+        "itemId": 2246,
+        "text": "Myrmidon's Signet"
+       }
+      ]
+     },
+     {
+      "line": "[13098]Painweaver Band",
+      "links": [
+       {
+        "itemId": 13098,
+        "text": "Painweaver Band"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Tribute Runs in Dire Maul North",
+     "Princess Theradras in Maraudon",
+     "World drop bind on equip item",
+     "General Drakkisath in Upper Blackrock Spire"
+    ],
+    "unparsed": [
+     "Tarnished Elven Ring"
+    ]
+   },
+   {
+    "guideSlot": "Trinkets",
+    "items": [
+     {
+      "line": "[13965]Blackhand's Breadth",
+      "links": [
+       {
+        "itemId": 13965,
+        "text": "Blackhand's Breadth"
+       }
+      ]
+     },
+     {
+      "line": "[11815]Hand of Justice",
+      "links": [
+       {
+        "itemId": 11815,
+        "text": "Hand of Justice"
+       }
+      ]
+     },
+     {
+      "line": "H [19120]Rune of the Guard Captain",
+      "links": [
+       {
+        "itemId": 19120,
+        "text": "Rune of the Guard Captain"
+       }
+      ]
+     },
+     {
+      "line": "[18537]Counterattack Lodestone",
+      "links": [
+       {
+        "itemId": 18537,
+        "text": "Counterattack Lodestone"
+       }
+      ]
+     },
+     {
+      "line": "** [10725]Gnomish Battle Chicken",
+      "links": [
+       {
+        "itemId": 10725,
+        "text": "Gnomish Battle Chicken"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Quest General Drakkisath's Demise (Alliance) / For The Horde! (Horde) in Upper Blackrock Spire",
+     "General Angerforge in Blackrock Depths",
+     "Quest Job Opening: Guard Captain of Revantusk Village (Horde) in the Hinterlands",
+     "Gordok Tribute in Dire Maul North",
+     "Engineering"
+    ]
+   },
+   {
+    "guideSlot": "Weapons",
+    "items": [
+     {
+      "line": "*** [9449]Manual Crowd Pummeler",
+      "links": [
+       {
+        "itemId": 9449,
+        "text": "Manual Crowd Pummeler"
+       }
+      ]
+     },
+     {
+      "line": "[18420]Bonecrusher",
+      "links": [
+       {
+        "itemId": 18420,
+        "text": "Bonecrusher"
+       }
+      ]
+     },
+     {
+      "line": "[13167]Fist of Omokk",
+      "links": [
+       {
+        "itemId": 13167,
+        "text": "Fist of Omokk"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crowd Pummeler 9-60 in Gnomeregan",
+     "Reward from The Treasure of the Shen'dralar in Dire Maul",
+     "Highlord Omokk in Lower Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Idols",
+    "items": [
+     {
+      "line": "[22397]Idol of Ferocity",
+      "links": [
+       {
+        "itemId": 22397,
+        "text": "Idol of Ferocity"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Lord Roccor in Blackrock Depths"
+    ],
+    "unparsed": [
+     "* This helm will be your BiS helm for all of WoW Classic. It is absolutely required",
+     "for competitive Feral Druid DPS and should be one of the first items that you",
+     "go for at max level.",
+     "** When the chicken attacks, it has a chance to increase the Haste of your",
+     "party members by 5%.",
+     "*** This will be your BiS weapon for all of WoW Classic due to its amazing",
+     "on-use effect. However, the weapon only has 3 charges of the effect, meaning that",
+     "you will need to farm multiple copies of this weapon before every raid if you",
+     "want to do optimal damage. It is also highly recommended to have another weapon,",
+     "such as [13167]Fist of Omokk, to use normally outside of raids.",
+     "You can find more druid BiS lists in our dedicated gear hub below.",
+     "Feral DPS Druid Best in Slot Gear Hub",
+     "Seksixeny"
+    ]
+   }
+  ]
+ },
+ "druid-feral-tank": {
+  "heading": "General pre-raid list (no phase tabs)",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 2:05 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[13404]Mask of the Unforgiven",
+      "links": [
+       {
+        "itemId": 13404,
+        "text": "Mask of the Unforgiven"
+       }
+      ]
+     },
+     {
+      "line": "[14539]Bone Ring Helm",
+      "links": [
+       {
+        "itemId": 14539,
+        "text": "Bone Ring Helm"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "The Unforgiven in Stratholme",
+     "Rattlegore in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[13177]Talisman of Evasion",
+      "links": [
+       {
+        "itemId": 13177,
+        "text": "Talisman of Evasion"
+       }
+      ]
+     },
+     {
+      "line": "[19491]Amulet of the Darkmoon",
+      "links": [
+       {
+        "itemId": 19491,
+        "text": "Amulet of the Darkmoon"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "War Master Voone in Lower Blackrock Spire",
+     "A 1200 ticket reward from the Darkmoon Faire"
+    ]
+   },
+   {
+    "guideSlot": "Shoulders",
+    "items": [
+     {
+      "line": "[19058]Golden Mantle of the Dawn",
+      "links": [
+       {
+        "itemId": 19058,
+        "text": "Golden Mantle of the Dawn"
+       }
+      ]
+     },
+     {
+      "line": "[10783]Atal'ai Spaulders (of the Monkey)",
+      "links": [
+       {
+        "itemId": 10783,
+        "text": "Atal'ai Spaulders (of the Monkey)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crafted through Leatherworking",
+     "Mini-bosses in the Sunken Temple"
+    ]
+   },
+   {
+    "guideSlot": "Back",
+    "items": [
+     {
+      "line": "[12551]Stoneshield Cloak",
+      "links": [
+       {
+        "itemId": 12551,
+        "text": "Stoneshield Cloak"
+       }
+      ]
+     },
+     {
+      "line": "[13397]Stoneskin Gargoyle Cape",
+      "links": [
+       {
+        "itemId": 13397,
+        "text": "Stoneskin Gargoyle Cape"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "World drop bind on equip",
+     "Stonespine in Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[15064]Warbear Harness",
+      "links": [
+       {
+        "itemId": 15064,
+        "text": "Warbear Harness"
+       }
+      ]
+     },
+     {
+      "line": "[12757]Breastplate of Bloodthirst",
+      "links": [
+       {
+        "itemId": 12757,
+        "text": "Breastplate of Bloodthirst"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crafted through Leatherworking",
+     "Reward from the quest [12757]Breastplate of Bloodthirst in Winterspring"
+    ]
+   },
+   {
+    "guideSlot": "Wrists",
+    "items": [
+     {
+      "line": "[12966]Blackmist Armguards",
+      "links": [
+       {
+        "itemId": 12966,
+        "text": "Blackmist Armguards"
+       }
+      ]
+     },
+     {
+      "line": "[18700]Malefic Bracers",
+      "links": [
+       {
+        "itemId": 18700,
+        "text": "Malefic Bracers"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "The Beast in Upper Blackrock Spire",
+     "Random drop in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[13258]Slaghide Gauntlets",
+      "links": [
+       {
+        "itemId": 13258,
+        "text": "Slaghide Gauntlets"
+       }
+      ]
+     },
+     {
+      "line": "[15063]Devilsaur Gauntlets",
+      "links": [
+       {
+        "itemId": 15063,
+        "text": "Devilsaur Gauntlets"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Urok Doomhowl in Lower Blackrock Spire",
+     "Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[14502]Frostbite Girdle",
+      "links": [
+       {
+        "itemId": 14502,
+        "text": "Frostbite Girdle"
+       }
+      ]
+     },
+     {
+      "line": "[13252]Cloudrunner Girdle",
+      "links": [
+       {
+        "itemId": 13252,
+        "text": "Cloudrunner Girdle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ras Frostwhisper in Scholomance",
+     "Quartermaster Zigris in Lower Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[11821]Warstrife Leggings",
+      "links": [
+       {
+        "itemId": 11821,
+        "text": "Warstrife Leggings"
+       }
+      ]
+     },
+     {
+      "line": "[15062]Devilsaur Leggings",
+      "links": [
+       {
+        "itemId": 15062,
+        "text": "Devilsaur Leggings"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "General Angerforge in Blackrock Depths",
+     "Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[18716]Ash Covered Boots",
+      "links": [
+       {
+        "itemId": 18716,
+        "text": "Ash Covered Boots"
+       }
+      ]
+     },
+     {
+      "line": "[16711]Shadowcraft Boots",
+      "links": [
+       {
+        "itemId": 16711,
+        "text": "Shadowcraft Boots"
+       }
+      ]
+     },
+     {
+      "line": "[20186]Defiler's Leather Boots",
+      "links": [
+       {
+        "itemId": 20186,
+        "text": "Defiler's Leather Boots"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Archivist Galford in Stratholme",
+     "Rattlegore in Scholomance",
+     "Revered with the Arathi Basin reputation"
+    ]
+   },
+   {
+    "guideSlot": "Rings",
+    "items": [
+     {
+      "line": "[15855]Ring of Protection",
+      "links": [
+       {
+        "itemId": 15855,
+        "text": "Ring of Protection"
+       }
+      ]
+     },
+     {
+      "line": "[2246]Myrmidon's Signet",
+      "links": [
+       {
+        "itemId": 2246,
+        "text": "Myrmidon's Signet"
+       }
+      ]
+     },
+     {
+      "line": "[11669]Naglering",
+      "links": [
+       {
+        "itemId": 11669,
+        "text": "Naglering"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Reward from the quest Hidden Treasures in Eastern Plaguelands",
+     "World drop bind on equip item",
+     "Golem Lord Argelmach in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Trinkets",
+    "items": [
+     {
+      "line": "[13966]Mark of Tyranny",
+      "links": [
+       {
+        "itemId": 13966,
+        "text": "Mark of Tyranny"
+       }
+      ]
+     },
+     {
+      "line": "[11811]Smoking Heart of the Mountain",
+      "links": [
+       {
+        "itemId": 11811,
+        "text": "Smoking Heart of the Mountain"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Reward from the quest General Drakkisath's Demise (Alliance) / For The Horde! (Horde) in Upper Blackrock Spire",
+     "Crafted through Enchanting"
+    ]
+   },
+   {
+    "guideSlot": "Weapons",
+    "items": [
+     {
+      "line": "* [9449]Manual Crowd Pummeler",
+      "links": [
+       {
+        "itemId": 9449,
+        "text": "Manual Crowd Pummeler"
+       }
+      ]
+     },
+     {
+      "line": "** [943]Warden Staff",
+      "links": [
+       {
+        "itemId": 943,
+        "text": "Warden Staff"
+       }
+      ]
+     },
+     {
+      "line": "[18531]Unyielding Maul",
+      "links": [
+       {
+        "itemId": 18531,
+        "text": "Unyielding Maul"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crowd Pummeler 9-60 in Gnomeregan",
+     "World drop bind on equip",
+     "Tribute Runs in Dire Maul North"
+    ]
+   },
+   {
+    "guideSlot": "Idols",
+    "items": [
+     {
+      "line": "[23198]Idol of Brutality",
+      "links": [
+       {
+        "itemId": 23198,
+        "text": "Idol of Brutality"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Magistrate Barthilas in Stratholme"
+    ],
+    "unparsed": [
+     "*This will be your BiS weapon for threat generation for all of WoW Classic, due to its amazing",
+     "on-use effect. However, the weapon only has 3 charges of the effect, meaning that",
+     "you will need to farm multiple copies of this weapon before every raid if you",
+     "want to do optimal damage. It is also highly recommended to have another weapon,",
+     "such as [943]Warden Staff, to use normally.",
+     "**This will be your BiS weapon for damage mitigation for all of WoW Classic. It",
+     "is a world drop BoE weapon, meaning you will most likely need to buy it from the",
+     "auction house, since it is almost impossible for farm for. However, it is absolutely",
+     "worth it, and will be a long term investment that you will never replace.",
+     "You can find more druid BiS lists in our dedicated gear hub below.",
+     "Feral Tank Druid Best in Slot Gear Hub",
+     "Seksixeny"
+    ]
+   }
+  ]
+ },
+ "druid-restoration": {
+  "heading": "General pre-raid list (no phase tabs)",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 2:05 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[18490]Insightful Hood",
+      "links": [
+       {
+        "itemId": 18490,
+        "text": "Insightful Hood"
+       }
+      ]
+     },
+     {
+      "line": "[13102]Cassandra's Grace",
+      "links": [
+       {
+        "itemId": 13102,
+        "text": "Cassandra's Grace"
+       }
+      ]
+     },
+     {
+      "line": "[10041]Dreamweave Circlet",
+      "links": [
+       {
+        "itemId": 10041,
+        "text": "Dreamweave Circlet"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Cho'Rush the Observer in Dire Maul North",
+     "World drop, bind on equip",
+     "Crafted through Tailoring"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[18723]Animated Chain Necklace",
+      "links": [
+       {
+        "itemId": 18723,
+        "text": "Animated Chain Necklace"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ramstein the Gorger in Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Shoulders",
+    "items": [
+     {
+      "line": "[15061]Living Shoulders",
+      "links": [
+       {
+        "itemId": 15061,
+        "text": "Living Shoulders"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crafted through Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Back",
+    "items": [
+     {
+      "line": "[18510]Hide of the Wild",
+      "links": [
+       {
+        "itemId": 18510,
+        "text": "Hide of the Wild"
+       }
+      ]
+     },
+     {
+      "line": "* [13386]Archivist Cape (of Healing)",
+      "links": [
+       {
+        "itemId": 13386,
+        "text": "Archivist Cape (of Healing)"
+       }
+      ]
+     },
+     {
+      "line": "[20427]Battle Healer's Cloak",
+      "links": [
+       {
+        "itemId": 20427,
+        "text": "Battle Healer's Cloak"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crafted through Leatherworking",
+     "Archivist Galford in Stratholme",
+     "Honored with the Warsong Gulch reputation"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[13346]Robes of the Exalted",
+      "links": [
+       {
+        "itemId": 13346,
+        "text": "Robes of the Exalted"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Baron Rivendare in Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Wrists",
+    "items": [
+     {
+      "line": "[18263]Flarecore Wraps",
+      "links": [
+       {
+        "itemId": 18263,
+        "text": "Flarecore Wraps"
+       }
+      ]
+     },
+     {
+      "line": "[18525]Bracers of Prosperity",
+      "links": [
+       {
+        "itemId": 18525,
+        "text": "Bracers of Prosperity"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Crafted through Tailoring",
+     "King Gordok in Dire Maul North"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[12554]Hands of the Exalted Herald",
+      "links": [
+       {
+        "itemId": 12554,
+        "text": "Hands of the Exalted Herald"
+       }
+      ]
+     },
+     {
+      "line": "[18309]Gloves of Restoration",
+      "links": [
+       {
+        "itemId": 18309,
+        "text": "Gloves of Restoration"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "High Priestess of Thaurissan in Blackrock Depths",
+     "Alzzin the Wildshaper in Dire Maul East"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[14553]Sash of Mercy",
+      "links": [
+       {
+        "itemId": 14553,
+        "text": "Sash of Mercy"
+       }
+      ]
+     },
+     {
+      "line": "[18327]Whipvine Cord",
+      "links": [
+       {
+        "itemId": 18327,
+        "text": "Whipvine Cord"
+       }
+      ]
+     },
+     {
+      "line": "[20171]Defiler's Lizardhide Girdle",
+      "links": [
+       {
+        "itemId": 20171,
+        "text": "Defiler's Lizardhide Girdle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Random world drop, bind on equip",
+     "Alzzin the Wildshaper in Dire Maul East",
+     "Honored with the Arathi Basin reputation"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[18386]Padre's Trousers",
+      "links": [
+       {
+        "itemId": 18386,
+        "text": "Padre's Trousers"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Illyanna Ravenoak in Dire Maul West"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[13954]Verdant Footpads",
+      "links": [
+       {
+        "itemId": 13954,
+        "text": "Verdant Footpads"
+       }
+      ]
+     },
+     {
+      "line": "[18507]Boots of the Full Moon",
+      "links": [
+       {
+        "itemId": 18507,
+        "text": "Boots of the Full Moon"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Captain Kromcrush in Dire Maul North",
+     "Reward from the quest In Dreams in Western Plaguelands"
+    ]
+   },
+   {
+    "guideSlot": "Rings",
+    "items": [
+     {
+      "line": "[13178]Rosewine Circle",
+      "links": [
+       {
+        "itemId": 13178,
+        "text": "Rosewine Circle"
+       }
+      ]
+     },
+     {
+      "line": "[16058]Fordring's Seal",
+      "links": [
+       {
+        "itemId": 16058,
+        "text": "Fordring's Seal"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Urok Doomhowl in Lower Blackrock Spire",
+     "Reward from the quest In Dreams in Western Plaguelands"
+    ]
+   },
+   {
+    "guideSlot": "Trinkets",
+    "items": [
+     {
+      "line": "[18470]Royal Seal of Eldre'Thalas",
+      "links": [
+       {
+        "itemId": 18470,
+        "text": "Royal Seal of Eldre'Thalas"
+       }
+      ]
+     },
+     {
+      "line": "[18371]Mindtap Talisman",
+      "links": [
+       {
+        "itemId": 18371,
+        "text": "Mindtap Talisman"
+       }
+      ]
+     },
+     {
+      "line": "[11819]Second Wind",
+      "links": [
+       {
+        "itemId": 11819,
+        "text": "Second Wind"
+       }
+      ]
+     },
+     {
+      "line": "[12930]Briarwood Reed",
+      "links": [
+       {
+        "itemId": 12930,
+        "text": "Briarwood Reed"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Reward from The Emerald Dream... in Dire Maul",
+     "Magister Kalendris in Dire Maul West",
+     "Golem Lord Argelmach in Blackrock Depths",
+     "Jed Runewatcher in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Weapons",
+    "items": [
+     {
+      "line": "[11923]The Hammer of Grace",
+      "links": [
+       {
+        "itemId": 11923,
+        "text": "The Hammer of Grace"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Doom'rel in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Off-hands",
+    "items": [
+     {
+      "line": "[18523]Brightly Glowing Stone",
+      "links": [
+       {
+        "itemId": 18523,
+        "text": "Brightly Glowing Stone"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "King Gordok in Dire Maul North"
+    ]
+   },
+   {
+    "guideSlot": "Idols",
+    "items": [
+     {
+      "line": "[22398]Idol of Rejuvenation",
+      "links": [
+       {
+        "itemId": 22398,
+        "text": "Idol of Rejuvenation"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Mor Grayhoof in Lower Blackrock Spire"
+    ],
+    "unparsed": [
+     "*All of these are items that drop with random stats. You will be looking for",
+     "\"Healing,\" which gives +Healing Power. This can sometimes be hard to farm,",
+     "especially when dealing with multiple items, so make sure you have reasonable",
+     "alternatives until you can get the correct drop.",
+     "You can find more druid BiS lists in our dedicated gear hub below.",
+     "Restoration Druid Best in Slot Gear Hub",
+     "Seksixeny"
+    ]
+   }
+  ]
+ },
+ "shaman-elemental": {
+  "heading": "5. MC/Ony Elemental Shaman Pre-Raid Best in Slot List",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 2:05 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[12752]Cap of the Scarlet Savant",
+      "links": [
+       {
+        "itemId": 12752,
+        "text": "Cap of the Scarlet Savant"
+       }
+      ]
+     },
+     {
+      "line": "[18727]Crimson Felt Hat",
+      "links": [
+       {
+        "itemId": 18727,
+        "text": "Crimson Felt Hat"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Cap of the Scarlet Savant in Winterspring",
+     "Magistrate Barthilas in (side-entrance) Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[12103]Star of Mystaria",
+      "links": [
+       {
+        "itemId": 12103,
+        "text": "Star of Mystaria"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Balnazzar in (main-entrance) Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Shoulders",
+    "items": [
+     {
+      "line": "[13013]Elder Wizard's Mantle",
+      "links": [
+       {
+        "itemId": 13013,
+        "text": "Elder Wizard's Mantle"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "World drop BoE"
+    ]
+   },
+   {
+    "guideSlot": "Back",
+    "items": [
+     {
+      "line": "[11623]Spritecaster Cape",
+      "links": [
+       {
+        "itemId": 11623,
+        "text": "Spritecaster Cape"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "High Interrogator Gerstahn in Blackrock Depths",
+     "Houndmaster Grebmar in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[13314]Alanna's Embrace",
+      "links": [
+       {
+        "itemId": 13314,
+        "text": "Alanna's Embrace"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ras Frostwhisper in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Wrists",
+    "items": [
+     {
+      "line": "* [11765]Pyremail Wristguards (of Nature's Wrath)",
+      "links": [
+       {
+        "itemId": 11765,
+        "text": "Pyremail Wristguards (of Nature's Wrath)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Lord Incendius in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[13253]Hands of Power",
+      "links": [
+       {
+        "itemId": 13253,
+        "text": "Hands of Power"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Quartermaster Zigris in Lower Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[11662]Ban'thok Sash",
+      "links": [
+       {
+        "itemId": 11662,
+        "text": "Ban'thok Sash"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ok'thor the Breaker in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[11823]Luminary Kilt",
+      "links": [
+       {
+        "itemId": 11823,
+        "text": "Luminary Kilt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Golem Lord Argelmach in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[11822]Omnicast Boots",
+      "links": [
+       {
+        "itemId": 11822,
+        "text": "Omnicast Boots"
+       }
+      ]
+     },
+     {
+      "line": "[13954]Verdant Footpads",
+      "links": [
+       {
+        "itemId": 13954,
+        "text": "Verdant Footpads"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Golem Lord Argelmach in Blackrock Depths",
+     "Stonespine in (side-entrance) Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Rings",
+    "items": [
+     {
+      "line": "[13001]Maiden's Circle",
+      "links": [
+       {
+        "itemId": 13001,
+        "text": "Maiden's Circle"
+       }
+      ]
+     },
+     {
+      "line": "[12545]Eye of Orgrimmar",
+      "links": [
+       {
+        "itemId": 12545,
+        "text": "Eye of Orgrimmar"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "World drop BoE",
+     "The Princess Saved? in Orgrimmar"
+    ]
+   },
+   {
+    "guideSlot": "Trinkets",
+    "items": [
+     {
+      "line": "[13968]Eye of the Beast",
+      "links": [
+       {
+        "itemId": 13968,
+        "text": "Eye of the Beast"
+       }
+      ]
+     },
+     {
+      "line": "[12930]Briarwood Reed",
+      "links": [
+       {
+        "itemId": 12930,
+        "text": "Briarwood Reed"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "For The Horde! in Orgrimmar",
+     "Jed Runewatcher in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Weapons",
+    "items": [
+     {
+      "line": "[13964]Witchblade (damage)",
+      "links": [
+       {
+        "itemId": 13964,
+        "text": "Witchblade (damage)"
+       }
+      ]
+     },
+     {
+      "line": "[11923]The Hammer of Grace (healing swap)",
+      "links": [
+       {
+        "itemId": 11923,
+        "text": "The Hammer of Grace (healing swap)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Darkmaster Gandling in Scholomance",
+     "Doom'rel in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Off-hands",
+    "items": [
+     {
+      "line": "[11904]Spirit of Aquementas (damage)",
+      "links": [
+       {
+        "itemId": 11904,
+        "text": "Spirit of Aquementas (damage)"
+       }
+      ]
+     },
+     {
+      "line": "[17718]Gizlock's Hypertech Buckler (PvP shield)",
+      "links": [
+       {
+        "itemId": 17718,
+        "text": "Gizlock's Hypertech Buckler (PvP shield)"
+       }
+      ]
+     },
+     {
+      "line": "[11928]Thaurissan's Royal Scepter (healing swap)",
+      "links": [
+       {
+        "itemId": 11928,
+        "text": "Thaurissan's Royal Scepter (healing swap)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "It's Dangerous to Go Alone in Un'Goro Crater",
+     "Tinkerer Gizlock in Maraudon",
+     "Emperor Dagran Thaurissan in Blackrock Depths"
+    ],
+    "unparsed": [
+     "*These items have random suffixes. You will be looking for \"of Nature's Wrath,\"",
+     "which gives +Nature Spell Damage. Since you need both the item and the correct suffix",
+     "to drop, these are often hard to farm, so make sure you have reasonable alternatives",
+     "until you can get the correct drop.",
+     "You can find more Elemental Shaman DPS BiS lists in our dedicated gear hub below.",
+     "Elemental Shaman DPS Best in Slot Gear Hub",
+     "Seksixeny"
+    ]
+   }
+  ]
+ },
+ "shaman-enhancement": {
+  "heading": "5. MC/Ony Enhancement Shaman Pre-Raid Best in Slot List",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 2:05 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[13216]Crown of the Penitent (totem twisting)",
+      "links": [
+       {
+        "itemId": 13216,
+        "text": "Crown of the Penitent (totem twisting)"
+       }
+      ]
+     },
+     {
+      "line": "[12587]Eye of Rend (damage)",
+      "links": [
+       {
+        "itemId": 12587,
+        "text": "Eye of Rend (damage)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Houses of the Holy in (side-entrance) Stratholme",
+     "Warchief Rend Blackhand in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[13141]Tooth of Gnarr (totem twisting)",
+      "links": [
+       {
+        "itemId": 13141,
+        "text": "Tooth of Gnarr (totem twisting)"
+       }
+      ]
+     },
+     {
+      "line": "[15411]Mark of Fordring (damage)",
+      "links": [
+       {
+        "itemId": 15411,
+        "text": "Mark of Fordring (damage)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "General Drakkisath in Blackrock Spire",
+     "In Dreams in Western Plaguelands"
+    ]
+   },
+   {
+    "guideSlot": "Shoulders",
+    "items": [
+     {
+      "line": "[14503]Death's Clutch (totem twisting)",
+      "links": [
+       {
+        "itemId": 14503,
+        "text": "Death's Clutch (totem twisting)"
+       }
+      ]
+     },
+     {
+      "line": "[12927]Truestrike Shoulders (damage)",
+      "links": [
+       {
+        "itemId": 12927,
+        "text": "Truestrike Shoulders (damage)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ras Frostwhisper in Scholomance",
+     "Pyroguard Emberseer in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Back",
+    "items": [
+     {
+      "line": "[13386]Archivist Cape (totem twisting)",
+      "links": [
+       {
+        "itemId": 13386,
+        "text": "Archivist Cape (totem twisting)"
+       }
+      ]
+     },
+     {
+      "line": "[13340]Cape of the Black Baron (damage)",
+      "links": [
+       {
+        "itemId": 13340,
+        "text": "Cape of the Black Baron (damage)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Archivist Galford in (main-entrance) Stratholme",
+     "Baron Rivendare in (side-entrance) Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[13314]Alanna's Embrace (totem twisting)",
+      "links": [
+       {
+        "itemId": 13314,
+        "text": "Alanna's Embrace (totem twisting)"
+       }
+      ]
+     },
+     {
+      "line": "[11726]Savage Gladiator Chain (damage)",
+      "links": [
+       {
+        "itemId": 11726,
+        "text": "Savage Gladiator Chain (damage)"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Ras Frostwhisper in Scholomance",
+     "Gorosh the Dervish in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Wrists",
+    "items": [
+     {
+      "line": "[13135]Lordly Armguards",
+      "links": [
+       {
+        "itemId": 13135,
+        "text": "Lordly Armguards"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "World drop BoE"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[15063]Devilsaur Gauntlets",
+      "links": [
+       {
+        "itemId": 15063,
+        "text": "Devilsaur Gauntlets"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Tribal Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[14614]Bloodmail Belt",
+      "links": [
+       {
+        "itemId": 14614,
+        "text": "Bloodmail Belt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Side bosses in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[15062]Devilsaur Leggings",
+      "links": [
+       {
+        "itemId": 15062,
+        "text": "Devilsaur Leggings"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Tribal Leatherworking"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[14616]Bloodmail Boots",
+      "links": [
+       {
+        "itemId": 14616,
+        "text": "Bloodmail Boots"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Side bosses in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Rings",
+    "items": [
+     {
+      "line": "[17713]Blackstone Ring",
+      "links": [
+       {
+        "itemId": 17713,
+        "text": "Blackstone Ring"
+       }
+      ]
+     },
+     {
+      "line": "[13098]Painweaver Band",
+      "links": [
+       {
+        "itemId": 13098,
+        "text": "Painweaver Band"
+       }
+      ]
+     },
+     {
+      "line": "[13143]Mark of the Dragon Lord",
+      "links": [
+       {
+        "itemId": 13143,
+        "text": "Mark of the Dragon Lord"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Princess Theradras in Maraudon",
+     "General Drakkisath in Upper Blackrock Spire",
+     "Overlord Wyrmthalak in Lower Blackrock Spire."
+    ]
+   },
+   {
+    "guideSlot": "Trinkets",
+    "items": [
+     {
+      "line": "[11815]Hand of Justice",
+      "links": [
+       {
+        "itemId": 11815,
+        "text": "Hand of Justice"
+       }
+      ]
+     },
+     {
+      "line": "[13965]Blackhand's Breadth",
+      "links": [
+       {
+        "itemId": 13965,
+        "text": "Blackhand's Breadth"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Emperor Dagran Thaurissan in Blackrock Depths",
+     "General Drakkisath's Demise / For The Horde! in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Two-Hand",
+    "items": [
+     {
+      "line": "[12784]Arcanite Reaper",
+      "links": [
+       {
+        "itemId": 12784,
+        "text": "Arcanite Reaper"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Master Axesmith Blacksmithing"
+    ]
+   },
+   {
+    "guideSlot": "One-Hand",
+    "items": [
+     {
+      "line": "[11684]Ironfoe",
+      "links": [
+       {
+        "itemId": 11684,
+        "text": "Ironfoe"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Emperor Dagran Thaurissan in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Shield",
+    "items": [
+     {
+      "line": "[17718]Gizlock's Hypertech Buckler",
+      "links": [
+       {
+        "itemId": 17718,
+        "text": "Gizlock's Hypertech Buckler"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Tinkerer Gizlock"
+    ],
+    "unparsed": [
+     "You can find more Enhancement Shaman DPS BiS lists in our dedicated gear hub below.",
+     "Enhancement Shaman DPS Best in Slot Gear Hub",
+     "Seksixeny"
+    ]
+   }
+  ]
+ },
+ "shaman-restoration": {
+  "heading": "5. MC/Ony Restoration Shaman Pre-Raid Best in Slot List",
+  "lastUpdated": "Last Updated: Nov 18, 2024 - 2:05 AM",
+  "rows": [
+   {
+    "guideSlot": "Helm",
+    "items": [
+     {
+      "line": "[12960]Tribal War Feathers",
+      "links": [
+       {
+        "itemId": 12960,
+        "text": "Tribal War Feathers"
+       }
+      ]
+     },
+     {
+      "line": "[13216]Crown of the Penitent",
+      "links": [
+       {
+        "itemId": 13216,
+        "text": "Crown of the Penitent"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Gyth in Upper Blackrock Spire",
+     "Houses of the Holy in (side-entrance) Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Neck",
+    "items": [
+     {
+      "line": "[13141]Tooth of Gnarr",
+      "links": [
+       {
+        "itemId": 13141,
+        "text": "Tooth of Gnarr"
+       }
+      ]
+     },
+     {
+      "line": "[1443]Jeweled Amulet of Cainwyn",
+      "links": [
+       {
+        "itemId": 1443,
+        "text": "Jeweled Amulet of Cainwyn"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "General Drakkisath in Upper Blackrock Spire",
+     "World drop BoE"
+    ]
+   },
+   {
+    "guideSlot": "Shoulders",
+    "items": [
+     {
+      "line": "[14548]Royal Cap Spaulders",
+      "links": [
+       {
+        "itemId": 14548,
+        "text": "Royal Cap Spaulders"
+       }
+      ]
+     },
+     {
+      "line": "[15061]Living Shoulders",
+      "links": [
+       {
+        "itemId": 15061,
+        "text": "Living Shoulders"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Jandice Barov in Scholomance",
+     "[15061]Living Shoulders (Leatherworking)"
+    ]
+   },
+   {
+    "guideSlot": "Back",
+    "items": [
+     {
+      "line": "* [13386]Archivist Cape (of Healing)",
+      "links": [
+       {
+        "itemId": 13386,
+        "text": "Archivist Cape (of Healing)"
+       }
+      ]
+     },
+     {
+      "line": "[11623]Spritecaster Cape",
+      "links": [
+       {
+        "itemId": 11623,
+        "text": "Spritecaster Cape"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Archivist Galford in (main-entrance) Stratholme",
+     "High Interrogator Gerstahn in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Chest",
+    "items": [
+     {
+      "line": "[13346]Robes of the Exalted",
+      "links": [
+       {
+        "itemId": 13346,
+        "text": "Robes of the Exalted"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Baron Rivendare in (side-entrance) Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Wrists",
+    "items": [
+     {
+      "line": "[13969]Loomguard Armbraces",
+      "links": [
+       {
+        "itemId": 13969,
+        "text": "Loomguard Armbraces"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Kirtonos the Herald in Scholomance"
+    ]
+   },
+   {
+    "guideSlot": "Hands",
+    "items": [
+     {
+      "line": "[12554]Hands of the Exalted Herald",
+      "links": [
+       {
+        "itemId": 12554,
+        "text": "Hands of the Exalted Herald"
+       }
+      ]
+     },
+     {
+      "line": "[13253]Hands of Power",
+      "links": [
+       {
+        "itemId": 13253,
+        "text": "Hands of Power"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "High Priestess of Thaurissan in Blackrock Depths",
+     "Quartermaster Zigris in Lower Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Waist",
+    "items": [
+     {
+      "line": "[14553]Sash of Mercy",
+      "links": [
+       {
+        "itemId": 14553,
+        "text": "Sash of Mercy"
+       }
+      ]
+     },
+     {
+      "line": "[12589]Dustfeather Sash",
+      "links": [
+       {
+        "itemId": 12589,
+        "text": "Dustfeather Sash"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "World drop BoE",
+     "Solakar Flamewreath in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Legs",
+    "items": [
+     {
+      "line": "[11841]Senior Designer's Pantaloons",
+      "links": [
+       {
+        "itemId": 11841,
+        "text": "Senior Designer's Pantaloons"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Fineous Darkvire in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Feet",
+    "items": [
+     {
+      "line": "[11822]Omnicast Boots",
+      "links": [
+       {
+        "itemId": 11822,
+        "text": "Omnicast Boots"
+       }
+      ]
+     },
+     {
+      "line": "[13954]Verdant Footpads",
+      "links": [
+       {
+        "itemId": 13954,
+        "text": "Verdant Footpads"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Golem Lord Argelmach in Blackrock Depths",
+     "Stonespine in (side-entrance) Stratholme"
+    ]
+   },
+   {
+    "guideSlot": "Rings",
+    "items": [
+     {
+      "line": "[13178]Rosewine Circle",
+      "links": [
+       {
+        "itemId": 13178,
+        "text": "Rosewine Circle"
+       }
+      ]
+     },
+     {
+      "line": "[16058]Fordring's Seal",
+      "links": [
+       {
+        "itemId": 16058,
+        "text": "Fordring's Seal"
+       }
+      ]
+     },
+     {
+      "line": "[13143]Mark of the Dragon Lord",
+      "links": [
+       {
+        "itemId": 13143,
+        "text": "Mark of the Dragon Lord"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Urok Doomhowl in Lower Blackrock Spire",
+     "In Dreams in Western Plaguelands",
+     "Overlord Wyrmthalak in Lower Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Trinkets",
+    "items": [
+     {
+      "line": "[11819]Second Wind",
+      "links": [
+       {
+        "itemId": 11819,
+        "text": "Second Wind"
+       }
+      ]
+     },
+     {
+      "line": "[12930]Briarwood Reed",
+      "links": [
+       {
+        "itemId": 12930,
+        "text": "Briarwood Reed"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Golem Lord Argelmach in Blackrock Depths",
+     "Jed Runewatcher in Upper Blackrock Spire"
+    ]
+   },
+   {
+    "guideSlot": "Weapons",
+    "items": [
+     {
+      "line": "[11923]The Hammer of Grace",
+      "links": [
+       {
+        "itemId": 11923,
+        "text": "The Hammer of Grace"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Doom'rel in Blackrock Depths"
+    ]
+   },
+   {
+    "guideSlot": "Off-hands",
+    "items": [
+     {
+      "line": "[17718]Gizlock's Hypertech Buckler",
+      "links": [
+       {
+        "itemId": 17718,
+        "text": "Gizlock's Hypertech Buckler"
+       }
+      ]
+     },
+     {
+      "line": "[11928]Thaurissan's Royal Scepter",
+      "links": [
+       {
+        "itemId": 11928,
+        "text": "Thaurissan's Royal Scepter"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     "Tinkerer Gizlock in Maraudon",
+     "Emperor Dagran Thaurissan in Blackrock Depths"
+    ],
+    "unparsed": [
+     "*These items have random suffixes. You will be looking for \"of Healing,\" which",
+     "gives +Spell Healing. Since you need both the item and the correct suffix to drop,",
+     "these are often hard to farm, so make sure you have reasonable alternatives until",
+     "you can get the correct drop.",
+     "You can find more Restoration Shaman BiS lists in our dedicated gear hub below.",
+     "Restoration Shaman Best in Slot Gear Hub",
+     "Seksixeny"
+    ]
+   }
+  ]
+ }
+}
