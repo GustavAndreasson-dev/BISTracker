@@ -44,28 +44,31 @@ public sealed class EquipmentPlan
 
     // Ownership currently records one known copy per physical item variant. Do not count
     // the same ring/trinket/weapon twice merely because it occurs in two recommendation rows.
-    public EquipmentCoverage OwnedCoverage(IEnumerable<string> ownedKeys, bool useTwoHandedWeapon = false,
+    public EquipmentCoverage OwnedCoverage(IEnumerable<string> ownedKeys, bool? useTwoHandedWeapon = null,
         IEnumerable<EquipmentSlot>? preferredSlots = null)
     {
         var keys = ownedKeys.ToHashSet(StringComparer.Ordinal);
-        return Cover(_items.Where(item => keys.Contains(CharacterLoadouts.ItemKey(item))).ToArray(), useTwoHandedWeapon, preferredSlots);
+        var owned = _items.Where(item => keys.Contains(CharacterLoadouts.ItemKey(item))).ToArray();
+        return Enum.GetValues<CharacterFaction>()
+            .Select(faction => Cover(owned.Where(item => item.Details?.AvailableFactions is not { } factions || factions.Contains(faction)).ToArray(), useTwoHandedWeapon, preferredSlots))
+            .OrderBy(coverage => coverage.MissingSlots.Count).ThenByDescending(coverage => coverage.CoveredSlots.Count).First();
     }
 
-    private EquipmentCoverage Cover(Recommendation[] available, bool useTwoHandedWeapon = false,
+    private EquipmentCoverage Cover(Recommendation[] available, bool? useTwoHandedWeapon = null,
         IEnumerable<EquipmentSlot>? preferredSlots = null)
     {
-        useTwoHandedWeapon &= _weaponSetup != WeaponSetup.OneHandAndOffHand;
+        if (_weaponSetup == WeaponSetup.OneHandAndOffHand) useTwoHandedWeapon = false;
+        if (_weaponSetup == WeaponSetup.TwoHanded) useTwoHandedWeapon = true;
         var mains = available.Where(item => item.Slot == EquipmentSlot.MainHand).ToArray();
         var offs = available.Where(item => item.Slot == EquipmentSlot.OffHand).ToArray();
         var preferred = (preferredSlots ?? []).ToHashSet();
         var modes = new List<(Recommendation? Main, Recommendation? Off, bool TwoHanded)>();
         // A missing hand choice remains a missing goal; alternatives are not silently dropped.
-        modes.Add((null, null, _weaponSetup == WeaponSetup.TwoHanded || useTwoHandedWeapon));
+        modes.Add((null, null, useTwoHandedWeapon == true));
         foreach (var main in mains)
         {
             var twoHanded = main.Details?.WeaponKind == WeaponKind.TwoHanded;
-            if ((_weaponSetup == WeaponSetup.TwoHanded && !twoHanded) ||
-                (_weaponSetup == WeaponSetup.OneHandAndOffHand && twoHanded) || (useTwoHandedWeapon && !twoHanded)) continue;
+            if (useTwoHandedWeapon is { } requiredTwoHanded && twoHanded != requiredTwoHanded) continue;
             if (twoHanded) modes.Add((main, null, true));
             else
             {
@@ -73,7 +76,7 @@ public sealed class EquipmentPlan
                 foreach (var off in offs.Where(off => CapacityKey(off) != CapacityKey(main))) modes.Add((main, off, false));
             }
         }
-        if (_weaponSetup != WeaponSetup.TwoHanded && !useTwoHandedWeapon)
+        if (useTwoHandedWeapon != true)
             foreach (var off in offs) modes.Add((null, off, false));
 
         EquipmentCoverage? best = null;

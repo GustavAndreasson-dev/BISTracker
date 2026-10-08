@@ -32,6 +32,8 @@ internal static class ForeverCatalogScenarios
                         Assert(item.Id.StartsWith($"forever-beta-level30-{characterClass.ToString().ToLowerInvariant()}-{spec.Id}-", StringComparison.Ordinal), "Identiteten är kontextavgränsad.");
                         Assert(details.ClassicItemId > 0 && !string.IsNullOrWhiteSpace(item.Name) && !string.IsNullOrWhiteSpace(item.Source), "Item-ID, namn och anskaffning finns.");
                         Assert(details.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest or AcquisitionType.Crafting, "Forever får visa crafting, men inte köp eller world drops.");
+                        Assert(catalog.WeaponSetup != WeaponSetup.OneHandAndOffHand || details.WeaponKind != WeaponKind.TwoHanded,
+                            "Guidekravet mainhand/offhand ska inte visa ett tvåhandsalternativ som aktivt mål.");
                         Assert(Https(details.ItemUrl) && Https(details.RecommendationUrl) &&
                             (details.IconUrl.Length == 0 || Https(details.IconUrl)), "Källänkar och eventuell ikon använder HTTPS.");
                         Assert(Enum.IsDefined(details.WeaponKind) &&

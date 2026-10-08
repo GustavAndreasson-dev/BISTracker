@@ -40,6 +40,14 @@ public static class ForeverCatalogReader
         try { _ = new CharacterProgress(mapped); }
         catch (ArgumentException exception) { throw new InvalidDataException("Invalid or duplicated catalog recommendations.", exception); }
         var items = includeOtherSources ? mapped : mapped.Where(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest or AcquisitionType.Crafting).ToArray();
+        if (!includeOtherSources)
+            items = items.Where(item => document.WeaponSetup switch
+            {
+                WeaponSetup.TwoHanded => item.Slot != EquipmentSlot.OffHand &&
+                    (item.Slot != EquipmentSlot.MainHand || item.Details!.WeaponKind == WeaponKind.TwoHanded),
+                WeaponSetup.OneHandAndOffHand => item.Details!.WeaponKind != WeaponKind.TwoHanded,
+                _ => true
+            }).ToArray();
         if (!Enum.IsDefined(document.WeaponSetup) || (document.WeaponSetup != WeaponSetup.Flexible && !IsHttps(document.WeaponSetupSourceUrl)) ||
             document.SlotExemptions is null || document.SlotExemptions.Any(value => value is null || !IsHttps(value.SourceUrl)))
             throw new InvalidDataException("Equipment-slot or weapon-setup exemptions need a reviewed source.");

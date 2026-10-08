@@ -28,6 +28,14 @@ alternativ behöver verifierad nivå-/skilltillgänglighet och konkreta villkor.
   `availableFactions` anger verifierad questtillgänglighet; en okänd
   questfraktion blockerar releasegranskningen. Fraktionsvillkor visas i
   itemvillkoren; karaktärens fraktion väljs ännu inte i appen.
+  Ägda mål väljer en möjlig kombination inom en enda fraktion; unionen av
+  Alliance- och Horde-belöningar kan inte ge falskt fullständigt framsteg.
+- Ägda och synliga mål använder samma handplan, även innan ett tvåhandsvapen
+  utrustats. En faktiskt utrustad enhandsuppsättning behåller sitt offhandmål.
+  Alternativ som strider mot guidens uttryckliga handkrav visas inte aktivt.
+- Ändrad katalogmetadata bygger om iteminformation och fullständighetskontroll,
+  även när rekommendationernas ID:n är oförändrade. Oförändrat kataloginnehåll
+  behåller vyns alternativgrupper och bildstatus.
 
 ## Ägande och bevarade framsteg
 
@@ -60,7 +68,14 @@ UI-kontroll och distributionstest måste vara godkända före delning.
 `EquipmentPlanScenarios` verifierar gruppering, saknade slots, ägda alternativ,
 kapacitet för ringar/trinkets, unique, handkombinationer och fraktionsisolering.
 Release-build för modelländringen passerar utan varningar/fel och projektets
-46 beteendekontroller är godkända. Den första körda releasegranskningen blockerar
-katalogerna, vilket är förväntat medan komplettering och fraktionsrevision pågår.
+46 beteendekontroller är godkända. Den slutliga
+[releasegranskningen](data/forever-slot-release-audit.json) passerar för alla
+27 kataloger, med noll luckor och noll okända questfraktioner. Den separata
+[integrationskontrollen](data/forever-slot-witness-integration.json) verifierar
+54 faktiska fraktionsset från de tre källgranskningarna mot produktkatalogerna.
+Questkedjor, valbara belöningar, recept, bindning och yrkeskrav granskas där;
+integrationskontrollen ersätter inte de källbevisen eller spelklientkontroll.
+Den slutliga [UI-kontrollen](previews/slots-ui-checks.txt) passerar med verkliga
+Mage-/Rogue-/Hunter-kataloger och isolerat framsteg. Distributionstest återstår.
 Specialisttrådarna granskar varsin grupp om nio kataloger; huvudtråden äger
 integration, granskning av hela resultatet och beslut om faktiskt verifierat nuläge.

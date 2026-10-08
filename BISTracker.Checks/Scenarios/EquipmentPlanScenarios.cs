@@ -78,6 +78,13 @@ internal static class EquipmentPlanScenarios
             items[(int)EquipmentSlot.MainHand] = Item("two-hand", EquipmentSlot.MainHand, 100003, WeaponKind.TwoHanded);
             var flexible = new EquipmentPlan(items).CatalogCoverage;
             Assert(flexible.IsComplete && flexible.RequiredSlots.Count == 16 && !flexible.RequiredSlots.Contains(EquipmentSlot.OffHand), "Tvåhandsval behöver inte offhand.");
+            var keys = items.Select(CharacterLoadouts.ItemKey).ToArray();
+            Assert(new EquipmentPlan(items).OwnedCoverage(keys).IsComplete &&
+                new EquipmentPlan(items).OwnedCoverage(keys).RequiredSlots.Count == 16,
+                "Ägt tvåhandsval ger samma handplan före och efter utrustning.");
+            Assert(new EquipmentPlan(items).OwnedCoverage(keys, useTwoHandedWeapon: false).RequiredSlots.Count == 17 &&
+                !new EquipmentPlan(items).OwnedCoverage(keys, useTwoHandedWeapon: false).IsComplete,
+                "En vald enhandsuppsättning får inte fyllas av ett ägt tvåhandsvapen.");
             Assert(!new EquipmentPlan(items, weaponSetup: WeaponSetup.OneHandAndOffHand).CatalogCoverage.IsComplete,
                 "Ett tvåhandsalternativ ersätter inte guidens uttryckliga dual-wield-mål.");
             var dualWieldOwned = new EquipmentPlan(items, weaponSetup: WeaponSetup.OneHandAndOffHand)
@@ -107,6 +114,8 @@ internal static class EquipmentPlanScenarios
             Assert(plan.CatalogCoverage.IsComplete, "Unionen kan ha alla slots.");
             Assert(plan.CatalogCoverageFor(CharacterFaction.Alliance).MissingSlots.Contains(EquipmentSlot.Hands) &&
                 plan.CatalogCoverageFor(CharacterFaction.Horde).MissingSlots.Contains(EquipmentSlot.Head), "Varje fraktion måste ha en egen laglig kombination.");
+            Assert(!plan.OwnedCoverage(items.Select(CharacterLoadouts.ItemKey)).IsComplete,
+                "Gemensamt ägande får inte kombinera båda fraktionerna till falskt fullständigt framsteg.");
             return Task.CompletedTask;
         });
     }

@@ -158,6 +158,13 @@ internal static class DraftPreview
             await model.ImportCatalogAsync(fixtureDirectory);
             Require(!model.HasError && model.TotalCount == 17 && model.VisibleSlots.Count == 17 && model.HasCatalogGaps && model.VisibleItems[0].Name == "TEST ONLY import option" &&
                 model.VisibleItems[0].IsOwned, "Import refreshes an already selected empty context and retains shared inventory");
+            var importedFixturePath = Directory.GetFiles(ImportedCatalogDirectory, "*.json", SearchOption.AllDirectories).Single();
+            var updatedFixture = System.Text.Json.Nodes.JsonNode.Parse(await File.ReadAllTextAsync(importedFixturePath))!;
+            updatedFixture["items"]![0]!["name"] = "TEST ONLY changed metadata";
+            await File.WriteAllTextAsync(importedFixturePath, updatedFixture.ToJsonString());
+            await model.LoadAsync();
+            Require(model.VisibleItems.Single().Name == "TEST ONLY changed metadata" && model.HasCatalogGaps,
+                "Same recommendation IDs refresh changed metadata and slot plan");
             catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 30);
             await WaitForAsync(() => model.IsInteractive && model.SelectedCatalogSet?.LevelCap == 30, "Restore beta after import regression");
             Require(model.VisibleItems.Single(item => item.Id == mageHead.Id).IsEquipped, "Import preserves beta equipment");
@@ -181,6 +188,16 @@ internal static class DraftPreview
             model.SearchText = "";
             rogueAlternatives.IsExpanded = false;
             await SaveImageAsync(root, Path.Combine(directory, "rogue-slot-overview.png"));
+            await model.CreateCharacterAsync("Forever Hunter", GameVersion.Forever, CharacterClass.Hunter);
+            var hunterCatalog = await Catalog.LoadAsync(GameVersion.Forever, CharacterClass.Hunter, model.SelectedSpecialization!.Id);
+            var hunterTwoHand = hunterCatalog.Items.First(item => item.Slot == EquipmentSlot.MainHand && item.Details?.WeaponKind == WeaponKind.TwoHanded);
+            await model.SetOwnedAsync(hunterTwoHand.Id, true);
+            Require(model.OwnedCount == 1 && model.TotalCount == 16 && model.VisibleSlots.All(slot => slot.Slot != EquipmentSlot.OffHand),
+                "Owned two-hand setup uses 16 consistent slot goals before equipping");
+            var hunterOneHand = hunterCatalog.Items.First(item => item.Slot == EquipmentSlot.MainHand && item.Details?.WeaponKind == WeaponKind.OneHanded);
+            await model.SetEquippedAsync(hunterOneHand.Id, true);
+            Require(model.TotalCount == 17 && model.VisibleSlots.Any(slot => slot.Slot == EquipmentSlot.OffHand),
+                "Equipped one-hand setup retains offhand even when a two-hand alternative is owned");
             var characterPicker = (ComboBox)root.FindName("CharacterPicker");
             characterPicker.SelectedItem = model.Characters.Single(character => character.Id == priest.Id);
             await WaitForAsync(() => model.IsInteractive && model.SelectedCharacter?.Id == priest.Id, "Character picker event");
@@ -191,7 +208,7 @@ internal static class DraftPreview
             dialog.Hide();
             await dialogResult;
             await File.WriteAllTextAsync(Path.Combine(directory, "ui-checks.txt"),
-                "PASS: Classic 17-slot catalog, tracking, grouped slot filters/search, icons/fallback, suffix/quest conditions, character/spec picker events, failed-save/selection rollback; real Forever level30 Mage and Rogue Combat each show 17 unique slot goals, owning two alternatives covers only one slot, grouped alternatives survive search; level30/60 picker events, preserved beta equipment, failed-level rollback, restored character/spec/level/equipment after reload, pending60 data, new-character dialog, render, same-context import refresh with TEST ONLY sparse level60 fixture that remains visibly incomplete. All progress isolated in memory; imported fixture exists only in this temporary verification directory and is not product data.\n");
+                "PASS: Classic 17-slot catalog, tracking, grouped slot filters/search, icons/fallback, suffix/quest conditions, character/spec picker events, failed-save/selection rollback; real Forever level30 Mage and Rogue Combat each show 17 unique slot goals, owning two alternatives covers only one slot, grouped alternatives survive search; Hunter owned two-hand setup shows16 before equipping, equipped one-hand retains17 despite owned two-hand alternative; level30/60 picker events, preserved beta equipment, failed-level rollback, restored character/spec/level/equipment after reload, pending60 data, new-character dialog, render, same-context import refresh with TEST ONLY sparse level60 fixture that remains visibly incomplete, metadata refresh with identical recommendation IDs. All progress isolated in memory; imported fixture exists only in this temporary verification directory and is not product data.\n");
         }
         catch (Exception exception)
         {

@@ -18,6 +18,7 @@ public sealed class TrackerViewModel : ObservableObject
     private readonly List<TrackerItemViewModel> _items = new();
     private readonly List<TrackerSlotViewModel> _slots = new();
     private EquipmentPlan? _plan;
+    private BisCatalog? _catalogSnapshot;
     private EquipmentCoverage? _catalogCoverage;
     private EquipmentCoverage? _allianceCoverage;
     private EquipmentCoverage? _hordeCoverage;
@@ -102,8 +103,9 @@ public sealed class TrackerViewModel : ObservableObject
             var contextChanged = !_loaded || !Equals(_selectedCharacter?.Id, snapshot.Selection?.ActiveCharacter.Id) ||
                 _selectedSpecialization?.Id != snapshot.Selection?.ActiveSpecialization.Id || _selectedCatalogSet?.Id != snapshot.Selection?.ActiveCatalogSet?.Id;
             var itemsChanged = !_items.Select(item => item.Id).SequenceEqual(snapshot.Entries.Select(entry => entry.Item.Id));
-            if (contextChanged || itemsChanged)
+            if (contextChanged || itemsChanged || importsCatalog || CatalogChanged(snapshot.Catalog))
             {
+                _catalogSnapshot = snapshot.Catalog;
                 _items.Clear();
                 _items.AddRange(snapshot.Entries.Select(entry => new TrackerItemViewModel(entry)));
                 _plan = snapshot.Catalog.UnavailableReason is null ? snapshot.Catalog.EquipmentPlan : null;
@@ -120,11 +122,12 @@ public sealed class TrackerViewModel : ObservableObject
             {
                 foreach (var entry in snapshot.Entries) _items.Single(item => item.Id == entry.Item.Id).Update(entry);
             }
-            _usesTwoHandedWeapon = snapshot.Catalog.WeaponSetup == WeaponSetup.TwoHanded ||
-                (snapshot.Catalog.WeaponSetup != WeaponSetup.OneHandAndOffHand &&
-                 snapshot.Entries.Any(entry => entry.IsEquipped && entry.Item.Details?.WeaponKind == WeaponKind.TwoHanded));
+            var equippedMain = snapshot.Entries.SingleOrDefault(entry => entry.IsEquipped && entry.Item.Slot == EquipmentSlot.MainHand);
+            bool? handChoice = equippedMain is not null ? equippedMain.Item.Details?.WeaponKind == WeaponKind.TwoHanded :
+                snapshot.Entries.Any(entry => entry.IsEquipped && entry.Item.Slot == EquipmentSlot.OffHand) ? false : null;
             _ownedCoverage = _plan?.OwnedCoverage(snapshot.Entries.Where(entry => entry.IsOwned).Select(entry => CharacterLoadouts.ItemKey(entry.Item)),
-                _usesTwoHandedWeapon, snapshot.Entries.Where(entry => entry.IsEquipped).Select(entry => entry.Item.Slot));
+                handChoice, snapshot.Entries.Where(entry => entry.IsEquipped).Select(entry => entry.Item.Slot));
+            _usesTwoHandedWeapon = _ownedCoverage is not null && !_ownedCoverage.RequiredSlots.Contains(EquipmentSlot.OffHand);
             foreach (var slot in _slots)
                 slot.Update(_ownedCoverage?.CoveredSlots.Contains(slot.Slot) == true,
                     _catalogCoverage?.MissingSlots.Contains(slot.Slot) == true || _allianceCoverage?.MissingSlots.Contains(slot.Slot) == true || _hordeCoverage?.MissingSlots.Contains(slot.Slot) == true);
@@ -179,6 +182,12 @@ public sealed class TrackerViewModel : ObservableObject
         OperationCanceledException => "The update was canceled.",
         _ => saves ? "Your progress could not be saved." : "Your progress could not be loaded."
     };
+    private bool CatalogChanged(BisCatalog catalog) => _catalogSnapshot is not { } previous ||
+        previous.Context != catalog.Context || previous.Set != catalog.Set || previous.IsSample != catalog.IsSample ||
+        previous.UnavailableReason != catalog.UnavailableReason || previous.SelectionMethod != catalog.SelectionMethod ||
+        previous.WeaponSetup != catalog.WeaponSetup || previous.WeaponSetupSourceUrl != catalog.WeaponSetupSourceUrl ||
+        !previous.Items.SequenceEqual(catalog.Items) ||
+        !(previous.SlotExemptions ?? Array.Empty<SlotExemption>()).SequenceEqual(catalog.SlotExemptions ?? Array.Empty<SlotExemption>());
     private void ApplyFilter()
     {
         var term = SearchText.Trim();
