@@ -13,18 +13,18 @@ BISTracker/
 │   ├── data/                          Kandidatmanifest och hämtad itemmetadata (forskningsdata)
 │   └── previews/                      Verifierad UI-bild och resultat
 ├── tools/
-│   └── data/                          Separata script för granskad metadatahämtning
+│   └── data/                          Metadatahämtning; forever-casters/hybrids/physical för research/import
 ├── BISTracker.Domain/
 │   ├── Equipment/                     EquipmentSlot, Recommendation och ItemDetails
 │   ├── Game/                          GameContext, CatalogSet, CharacterDefinition, version/klass/spec
 │   └── Tracking/                      CharacterLoadouts samt legacy CharacterProgress
 ├── BISTracker.Application/
-│   ├── Catalog/                       BisCatalog, IBisCatalog och ICharacterCatalog
+│   ├── Catalog/                       BisCatalog, IBisCatalog, ICharacterCatalog och ICatalogPackImporter
 │   ├── Characters/                    CharacterTrackerService, workspace och kontrakt
 │   └── Tracking/                      Legacy TrackerService, ITrackerService, snapshot och kontrakt
 ├── BISTracker.Infrastructure/
-│   ├── Catalog/                       CharacterCatalog, ClassicPhaseOneBisCatalog, SampleBisCatalog
-│   │   └── Data/                      Inbyggd, granskad produktkatalog
+│   ├── Catalog/                       CharacterCatalog, ForeverCatalogReader, CatalogPackImporter samt Classic/Sample
+│   │   └── Data/                      Classic fas 1 och Forever/level30 med 27 inbyggda kataloger
 │   └── Persistence/                   JsonWorkspaceRepository, legacy JSON och ProgressFilePaths
 ├── BISTracker.Presentation/
 │   ├── App.xaml + MainWindow.xaml     Start, composition root och appens skal

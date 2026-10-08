@@ -1,0 +1,10 @@
+{
+  "reviewedOn": "2026-10-08",
+  "identityProof": "Forever item-metadata.json: item 7001, Gravestone Scepter, slotId 26 (Ranged). Forever quest-metadata.json: quests 1200 (Alliance) and 6561 (Horde), minimum level 18, both reward item 7001.",
+  "recommendationProof": "Web-read original Mobalytics Discipline guide lines 427/439, Holy guide lines 424/436, Shadow guide lines 424/436 each show Level 30 BETA then Level 18 - Gravestone Scepter, 29 DPS (Blackfathom Villainy Quest in Ashenvale).",
+  "items": [
+    {"class":"Priest","spec":"discipline","itemId":7001,"name":"Gravestone Scepter","slot":"Ranged","slotId":26,"acquisitionType":"Quest","source":"Blackfathom Villainy (Alliance/Horde)","location":"Blackfathom Deeps","faction":"Both Factions","questIds":["1200","6561"],"note":"Recommended in the original guide's level-30 beta wand section.","modifiers":"","itemUrl":"https://www.wowhead.com/forever/item=7001/gravestone-scepter","recommendationUrl":"https://mobalytics.gg/wow-forever/classes/discipline-priest-guide"},
+    {"class":"Priest","spec":"holy","itemId":7001,"name":"Gravestone Scepter","slot":"Ranged","slotId":26,"acquisitionType":"Quest","source":"Blackfathom Villainy (Alliance/Horde)","location":"Blackfathom Deeps","faction":"Both Factions","questIds":["1200","6561"],"note":"Recommended in the original guide's level-30 beta wand section.","modifiers":"","itemUrl":"https://www.wowhead.com/forever/item=7001/gravestone-scepter","recommendationUrl":"https://mobalytics.gg/wow-forever/classes/holy-priest-guide"},
+    {"class":"Priest","spec":"shadow","itemId":7001,"name":"Gravestone Scepter","slot":"Ranged","slotId":26,"acquisitionType":"Quest","source":"Blackfathom Villainy (Alliance/Horde)","location":"Blackfathom Deeps","faction":"Both Factions","questIds":["1200","6561"],"note":"Recommended in the original guide's level-30 beta wand section.","modifiers":"","itemUrl":"https://www.wowhead.com/forever/item=7001/gravestone-scepter","recommendationUrl":"https://mobalytics.gg/wow-forever/classes/shadow-priest-guide"}
+  ]
+}

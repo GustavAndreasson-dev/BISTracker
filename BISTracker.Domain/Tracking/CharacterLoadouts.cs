@@ -88,9 +88,10 @@ public sealed class CharacterLoadouts
         {
             _owned.Add(ItemKey(item));
             var slots = _equipped[spec];
-            // Move a unique item between possible placements; retain its ownership.
-            if (item.Details?.UniqueEquipped == true)
-                foreach (var slot in slots.Where(pair => ItemKey(Item(spec, pair.Value)) == ItemKey(item)).Select(pair => pair.Key).ToArray()) slots.Remove(slot);
+            // Unique-equipped applies to the base item, including differently suffixed variants.
+            var matching = slots.Where(pair => UniqueKey(Item(spec, pair.Value)) == UniqueKey(item)).ToArray();
+            if (item.Details?.UniqueEquipped == true || matching.Any(pair => Item(spec, pair.Value).Details?.UniqueEquipped == true))
+                foreach (var entry in matching) slots.Remove(entry.Key);
             if (item.Details?.WeaponKind == WeaponKind.TwoHanded) slots.Remove(EquipmentSlot.OffHand);
             if (item.Slot == EquipmentSlot.OffHand && slots.TryGetValue(EquipmentSlot.MainHand, out var main) &&
                 Item(spec, main).Details?.WeaponKind == WeaponKind.TwoHanded) slots.Remove(EquipmentSlot.MainHand);
@@ -104,9 +105,12 @@ public sealed class CharacterLoadouts
         var items = _equipped[spec].Values.Select(id => Item(spec, id)).ToArray();
         if (items.Any(item => item.Details?.WeaponKind == WeaponKind.TwoHanded) && _equipped[spec].ContainsKey(EquipmentSlot.OffHand))
             throw new ArgumentException("A two-handed weapon cannot be equipped with an off-hand item.");
-        if (items.GroupBy(ItemKey).Any(group => group.Count() > 1 && group.Any(item => item.Details?.UniqueEquipped == true)))
+        if (items.GroupBy(UniqueKey).Any(group => group.Count() > 1 && group.Any(item => item.Details?.UniqueEquipped == true)))
             throw new ArgumentException("A unique item cannot be equipped twice in one specialization.");
     }
+
+    private static string UniqueKey(Recommendation item) => item.Details is { } details
+        ? $"item:{details.ClassicItemId}" : ItemKey(item);
 
     private Recommendation Item(string spec, string id) =>
         _lists.TryGetValue(spec, out var list) && list.TryGetValue(id, out var item)

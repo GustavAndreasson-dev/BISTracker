@@ -1,0 +1,23 @@
+{
+  "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
+  "items": [
+    {"itemId":6688,"acquisitionType":"Dungeon","source":"Razorfen Kraul · Earthcaller Halmgar"},
+    {"itemId":274068,"acquisitionType":"Dungeon","source":"Gnomeregan · Crowd Pummeler 9-60"},
+    {"itemId":5964,"acquisitionType":"Crafting","source":"Leatherworking"},
+    {"itemId":252451,"acquisitionType":"Crafting","source":"Leatherworking · Merchant's Favor"},
+    {"itemId":270043,"acquisitionType":"Quest","source":"Baron Aquanis","note":"Horde only."},
+    {"itemId":273026,"acquisitionType":"Dungeon","source":"Excavation Site: Wetlands · Shadetooth"},
+    {"itemId":7690,"acquisitionType":"Dungeon","source":"Scarlet Monastery Graveyard · Fallen Champion (rare)"},
+    {"itemId":252459,"acquisitionType":"Crafting","source":"Leatherworking · Merchant's Favor"},
+    {"itemId":274042,"acquisitionType":"Dungeon","source":"Gnomeregan · Grubbis"},
+    {"itemId":252518,"acquisitionType":"Crafting","source":"Leatherworking · Merchant's Favor"},
+    {"itemId":10410,"acquisitionType":"Dungeon","source":"Wailing Caverns · Lord Cobrahn"},
+    {"itemId":7751,"acquisitionType":"Quest","source":"Vorrel's Revenge","note":"Horde only."},
+    {"itemId":6752,"acquisitionType":"Quest","source":"Mortality Wanes","note":"Alliance only."},
+    {"itemId":7686,"acquisitionType":"Dungeon","source":"Scarlet Monastery Graveyard · Ironspine (rare)"},
+    {"itemId":274152,"acquisitionType":"Dungeon","source":"Razorfen Kraul · Roogug"},
+    {"itemId":273643,"acquisitionType":"Dungeon","source":"Shadowfang Keep · Commander Springvale"},
+    {"itemId":249398,"acquisitionType":"Crafting","source":"Enchanting · Merchant's Favor"},
+    {"itemId":271667,"acquisitionType":"Quest","source":"Horrors in the Highland","note":"Alliance only."}
+  ]
+}

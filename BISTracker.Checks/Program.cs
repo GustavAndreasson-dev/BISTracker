@@ -9,6 +9,7 @@ try
     await PersistenceScenarios.RunAsync(checks);
     await CharacterScenarios.RunAsync(checks);
     await CatalogContextScenarios.RunAsync(checks);
+    await ForeverCatalogScenarios.RunAsync(checks);
     Console.WriteLine(checks.Failures == 0
         ? "Alla kontroller godkända."
         : $"{checks.Failures} kontroll(er) misslyckades.");

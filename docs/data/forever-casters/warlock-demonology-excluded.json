@@ -1,0 +1,47 @@
+[
+  {
+    "itemId": 6349,
+    "name": "Formula: Enchant 2H Weapon - Lesser Intellect",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 249481,
+    "name": "Formula: Enchant Weapon - Revelation",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 249502,
+    "name": "Formula: Enchant Necklace - Spell Power",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 20746,
+    "name": "Lesser Wizard Oil",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 250342,
+    "name": "Lesser Arcane Elixir",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 250934,
+    "name": "Spellblasting Potion",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 250340,
+    "name": "Lesser Mageblood Elixir",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 21217,
+    "name": "Sagefish Delight",
+    "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 21072,
+    "name": "Smoked Sagefish",
+    "reason": "Consumable or recipe; not equipment."
+  }
+]

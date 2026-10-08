@@ -1,6 +1,8 @@
 # Arkitektur och domänspråk
 
-Status: arkitekturen nedan är implementerad i första utkastet. DDD och SOLID är beslutade principer.
+Status 2026-10-08: Classic-katalogen, Forever beta nivå 30 för alla 27 specs,
+separata katalogset och katalogimport är implementerade. Verklig nivå 60-data
+saknas. DDD och SOLID är beslutade principer.
 Mappindelningen inom lagren ska följa [strukturkartan](project-structure.md).
 WinUI-presentationen använder C# och .NET 8, med separata domän-, applikations- och infrastrukturprojekt.
 
@@ -15,11 +17,14 @@ WinUI-presentationen använder C# och .NET 8, med separata domän-, applikations
 
 Presentation kan använda domäntyper när det är motiverat, men får inte duplicera
 domänregler. Filformat och externa datamodeller översätts vid infrastrukturgränsen.
-Presentation använder MVVM för listan och filter. App.xaml.cs är composition root
-och kopplar CharacterCatalog, JsonWorkspaceRepository och CharacterTrackerService
-till TrackerViewModel genom ICharacterTrackerService.
+Presentation använder MVVM för listan och filter. [App.xaml.cs](../BISTracker.Presentation/App.xaml.cs)
+är composition root och kopplar CharacterCatalog, JsonWorkspaceRepository och
+CharacterTrackerService till TrackerViewModel genom ICharacterTrackerService.
+Den kopplar också CatalogPackImporter genom applikationskontraktet
+[ICatalogPackImporter](../BISTracker.Application/Catalog/ICatalogPackImporter.cs).
+Katalogpack lagras separat från spelarens framsteg under appens lokala `Catalogs`-mapp.
 
-## Domängränser i utkastet
+## Domängränser
 
 - Utrustningskatalog: itemidentitet, utrustningsplats och var ett item kan erhållas.
 - BiS-rekommendationer: vilka items som rekommenderas för en given klass, specialisering och spelkontext, samt rekommendationens källa.
@@ -34,7 +39,9 @@ utvecklas när riktiga källor och urvalsmetod är beslutade.
 
 - Utrustad innebär erhållen; avmarkering av erhållen tar bort aktiv utrustning för itemet.
 - Avmarkering av utrustad behåller erhållen.
-- Ett item per EquipmentSlot kan vara utrustat. Ring- och trinketplatser är separata slotvärden i utkastet.
+- Ett item per EquipmentSlot kan vara utrustat. Ring- och trinketplatser är separata slotvärden; en rekommendation på båda platserna kan uttrycka alternativa placeringar.
+- Unique-regeln gäller basitem-ID oavsett suffix inom en spec. Att utrusta det i en annan plats flyttar utrustningen; separat variantägande och andra specs bevaras.
+- Tvåhandsvapen och offhand kan inte vara utrustade samtidigt i en spec. Ett byte rensar den oförenliga platsen, men bevarar ägande och andra specs.
 - Okända katalog-ID:n och inkonsekvent återställt tillstånd avvisas.
 - CharacterTrackerService serialiserar läs/ändra/spara, validerar alla karaktärer och returnerar snapshot först efter lyckad sparning.
 - JSON-lagringen skriver temporär fil och ersätter målet. Korrupt data rapporteras och bevaras.
@@ -45,10 +52,11 @@ utvecklas när riktiga källor och urvalsmetod är beslutade.
 | Begrepp | Arbetsdefinition |
 | --- | --- |
 | Item | Ett identifierbart utrustningsföremål. |
-| Equipment slot | Utrustningsplats; hantering av flera platser av samma typ behöver modelleras uttryckligt. |
+| Equipment slot | Utrustningsplats; ringar och trinkets har två uttryckliga slotvärden. |
 | BiS recommendation | En källbelagd rekommendation för en definierad spelkontext, inte en universell ranking. |
 | Pre-raid | Avgränsning vars tillåtna itemkällor ska bestämmas innan listan tas fram. |
 | Game context | Spelvariant eller expansion samt den fas/tillgänglighet som styr rekommendationen. |
+| Catalog set | Separat kontext med spelversion, nivågräns och utgivningsstadium; har egna sparade utrustningslistor. |
 | Progress | Spelarens erhållna och utrustade items mot en rekommendation. |
 
 ## Utbyggnad till fler expansioner
@@ -66,15 +74,59 @@ domänen; lagringskontrakt verifieras mot den valda implementationen.
 ## Riktig katalog och variantidentitet
 
 ClassicPhaseOneBisCatalog läser den granskade produktkatalogen som inbyggd
-resurs i Infrastructure. JSON och dess validering stannar där. ItemDetails
-i Domain beskriver Classic-ID, suffix, anskaffningstyp och referenslänkar.
-IBisCatalog och TrackerService används utan HTTP-beroenden.
+resurs i Infrastructure. CharacterCatalog läser dessutom de 27 inbyggda
+Forever-katalogerna och importerade pack genom ForeverCatalogReader.
+JSON-format, källmetadata och kontextvalidering stannar i Infrastructure.
+ItemDetails i Domain beskriver item-ID, suffix, anskaffningstyp, vapenhand,
+unique-villkor och referenslänkar. Kataloger och användningsfall kräver ingen
+HTTP-hämtning av guider vid körning.
 
 De tre of Healing-målen har variant i både namn och tracking-ID. Domain
 avvisar okända ID:n; ett basitem eller demo-ID kan inte räknas som den
 nödvändiga varianten. Presentation visar fakta och hämtar externa ikoner
 med fallback. Separata framstegsfiler skyddar övergången från fiktiva items.
 Se [integrationen](catalog-integration.md) för filansvar och begränsningar.
+
+Forever beta nivå 30 innehåller 1 394 alternativa placeringsrader. Appens ordinarie
+Dungeon/Quest-policy visar 1 020; läsaren kan även inkludera andra granskade
+anskaffningstyper. Katalogerna innehåller källbelagda guidealternativ, inte en
+beräknad optimal ranking av ett helt utrustningsset. En ring på två platser har
+två rekommendations-ID:n och samma fysiska itemidentitet; detta innebär inte
+automatiskt en rekommendation av två exemplar. Källor och luckor redovisas i
+[Forever-katalograpporten](forever-level30-catalogs.md).
+
+ForeverCatalogReader prefixar varje rå rekommendations-ID med katalogens
+version/stadium/nivå/klass/spec-identitet. Därmed kan samma rå-ID återkomma i
+andra katalogset utan att utrustningsval blandas ihop. Gemensamt ägande använder
+basitem-ID plus uttryckligt suffix inom karaktären; unique-regeln använder
+basitem-ID utan suffix.
+
+## Katalogimport och nivåkontext
+
+[CatalogPackImporter](../BISTracker.Infrastructure/Catalog/CatalogPackImporter.cs)
+implementerar ICatalogPackImporter. Den läser JSON-filer i en vald mapp och
+undermappar och låter [ForeverCatalogReader](../BISTracker.Infrastructure/Catalog/ForeverCatalogReader.cs)
+validera hela batchen före publicering. Läsaren kontrollerar schema, Forever-kontext,
+giltig klass/spec, nivå 30 eller 60, Beta eller Launch, granskningsdatum,
+urvalsmetod, HTTPS-källänkar och itemmetadata. Ett angivet itemnivåkrav får inte
+överstiga katalogens nivågräns; vapenhand måste stämma med slot. Datainsamlingens
+källgranskning ansvarar för rekommendationernas riktighet och faktisk anskaffning;
+importören gör ingen ny webbrevision av guideinnehåll.
+
+Duplicerade katalogidentiteter inom batchen eller mot inbyggda/tidigare importerade
+pack avvisas. Validerade originalbytes kopieras till en separat stagingmapp och
+hela mappen publiceras genom en enda mappflytt. Källfiler, befintliga kataloger
+och framstegsdata skrivs inte över. Fel eller avbrott före publicering lämnar ingen
+delvis importerad katalogbatch.
+
+CharacterCatalog upptäcker ändrade importfiler genom en fingerprint av sökväg,
+filstorlek och ändringstid och läser då om packen. Samma levande provider ger
+tillgång till ett importerat katalogset utan omstart. TrackerViewModel anropar
+importkontraktet och laddar sedan om snapshoten. Nivåval och import finns i UI.
+Format och arbetsflöde finns i [katalogkontexter och import](catalog-contexts.md).
+
+Nivå 60 visas som väntande tills verklig granskad data importeras. Importvägen
+har verifierats med tydligt märkta testfixturer; dessa är inte produktdata.
 
 ## Karaktärer och speclistor
 
@@ -83,9 +135,20 @@ tre giltiga spec-ID:n för klassen. CharacterLoadouts skiljer gemensamt ägande
 (item-ID/suffix inom karaktärens version) från utrustning (rekommendations-ID i
 varje spec). Borttaget ägande rensar motsvarande utrustning i alla tre specs.
 Listorna och ägandet isoleras mellan karaktärer. Katalogkontraktet väljer uttrycklig
-version/klass/spec och kan ange att granskad data saknas.
+version/katalogset/klass/spec och kan ange att granskad data saknas. Vid nivåbyte
+arkiverar CharacterTrackerService det tidigare setets tre utrustningslistor och
+återställer det valda setets listor. Gemensamt ägande gäller även mellan nivåerna;
+borttaget ägande rensar motsvarande utrustning i både aktiva och arkiverade listor.
 
 Application orkestrerar migration och tillståndsbyten genom IWorkspaceRepository.
 Infrastructure sköter JSON och atomisk filersättning. Gamla framsteg kopieras en
 gång utan att originalet ändras. Reglerna kräver varken UI eller filsystem för
 att verifieras. Detaljer och begränsningar finns i [listmodellen](characters-and-loadouts.md).
+
+Projektets 39 beteendekontroller och renderad UI-kontroll är godkända.
+[ForeverCatalogScenarios](../BISTracker.Checks/Scenarios/ForeverCatalogScenarios.cs)
+verifierar alla 27 kataloger, importvalidering, batchpublicering, duplicerade pack,
+avbrott och uppdatering utan omstart.
+[CatalogContextScenarios](../BISTracker.Checks/Scenarios/CatalogContextScenarios.cs)
+verifierar nivåisolering, suffix/unique- och tvåhandsregler, återläsning samt att
+sparfel bevarar aktiva och arkiverade listor.

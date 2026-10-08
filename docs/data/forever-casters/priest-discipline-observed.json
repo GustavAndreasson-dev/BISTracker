@@ -1,0 +1,1959 @@
+{
+  "class": "Priest",
+  "spec": "discipline",
+  "sourceUrl": "https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview",
+  "rows": [
+    {
+      "itemId": 273024,
+      "name": "Glinteye Slippers",
+      "slot": "Feet",
+      "slotId": 8,
+      "requiredLevel": 26,
+      "itemUrl": "https://www.wowhead.com/forever/item=273024/glinteye-slippers",
+      "source": "Saltspine",
+      "location": "Excavation Site: Wetlands",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_boots_05",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            734651,
+            ""
+          ]
+        },
+        "armor": 33,
+        "displayid": 734651,
+        "dura": 40,
+        "int": 6,
+        "itemSquishEraId": 0,
+        "reqlevel": 26,
+        "sellprice": 1723,
+        "slotbak": 8,
+        "spi": 6,
+        "sta": 9
+      }
+    },
+    {
+      "itemId": 273027,
+      "name": "Raptor's Gaze",
+      "slot": "OffHand",
+      "slotId": 23,
+      "requiredLevel": 26,
+      "itemUrl": "https://www.wowhead.com/forever/item=273027/raptors-gaze",
+      "source": "Shadetooth",
+      "location": "Excavation Site: Wetlands",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "spell_nature_crystalball",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            21603,
+            "inv_misc_orb_01"
+          ]
+        },
+        "displayid": 21603,
+        "int": 4,
+        "itemSquishEraId": 0,
+        "reqlevel": 26,
+        "sellprice": 2324,
+        "sheathtype": 3,
+        "slotbak": 23,
+        "splpwr": 5,
+        "sta": 7
+      }
+    },
+    {
+      "itemId": 273030,
+      "name": "Ring of Power Regulation",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 28,
+      "itemUrl": "https://www.wowhead.com/forever/item=273030/ring-of-power-regulation",
+      "source": "Relic Guardian",
+      "location": "Excavation Site: Wetlands",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_jewelry_ring_28",
+      "rawMetadata": {
+        "itemSquishEraId": 0,
+        "manargn": 2,
+        "reqlevel": 28,
+        "sellprice": 2920,
+        "slotbak": 11,
+        "sta": 8
+      }
+    },
+    {
+      "itemId": 273806,
+      "name": "Dark Horde Band",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 21,
+      "itemUrl": "https://www.wowhead.com/forever/item=273806/dark-horde-band",
+      "source": "Targorr the Dread",
+      "location": "The Stockades",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_jewelry_ring_15",
+      "rawMetadata": {
+        "itemSquishEraId": 0,
+        "reqlevel": 21,
+        "sellprice": 1525,
+        "slotbak": 11,
+        "splpwr": 6,
+        "sta": 6
+      }
+    },
+    {
+      "itemId": 273825,
+      "name": "Red Wool Cloak",
+      "slot": "Back",
+      "slotId": 16,
+      "requiredLevel": 26,
+      "itemUrl": "https://www.wowhead.com/forever/item=273825/red-wool-cloak",
+      "source": "Bazil Thredd",
+      "location": "The Stockades",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_cape_18",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            15165,
+            ""
+          ]
+        },
+        "armor": 24,
+        "displayid": 15165,
+        "itemSquishEraId": 0,
+        "manargn": 3,
+        "reqlevel": 26,
+        "sellprice": 1836,
+        "slotbak": 16,
+        "splheal": 6,
+        "splpwr": 3
+      }
+    },
+    {
+      "itemId": 9452,
+      "name": "Hydrocane",
+      "slot": "MainHand",
+      "slotId": 17,
+      "requiredLevel": 27,
+      "itemUrl": "https://www.wowhead.com/forever/item=9452/hydrocane",
+      "source": "Viscous Fallout",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_staff_15",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            20323,
+            ""
+          ]
+        },
+        "displayid": 20323,
+        "dmgmax1": 67,
+        "dmgmin1": 44,
+        "dmgrange": 0.4,
+        "dmgtype1": 0,
+        "dps": 19.82,
+        "dura": 100,
+        "frores": 15,
+        "itemSquishEraId": 0,
+        "mledmgmax": 67,
+        "mledmgmin": 44,
+        "mledps": 19.82,
+        "mlespeed": 2.8,
+        "reqlevel": 27,
+        "sellprice": 8153,
+        "sheathtype": 2,
+        "slotbak": 17,
+        "speed": 2.8,
+        "spldmg": 36,
+        "splheal": 36
+      }
+    },
+    {
+      "itemId": 9454,
+      "name": "Acidic Walkers",
+      "slot": "Feet",
+      "slotId": 8,
+      "requiredLevel": 27,
+      "itemUrl": "https://www.wowhead.com/forever/item=9454/acidic-walkers",
+      "source": "Viscous Fallout",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_boots_05",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            4623,
+            ""
+          ]
+        },
+        "armor": 34,
+        "displayid": 4623,
+        "dmgrange": 0.2,
+        "dura": 40,
+        "int": 8,
+        "itemSquishEraId": 0,
+        "natres": 5,
+        "reqlevel": 27,
+        "sellprice": 1956,
+        "slotbak": 8,
+        "spi": 4,
+        "splpwr": 5
+      }
+    },
+    {
+      "itemId": 9447,
+      "name": "Electrocutioner Lagnut",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 29,
+      "itemUrl": "https://www.wowhead.com/forever/item=9447/electrocutioner-lagnut",
+      "source": "Electrocutioner 6000",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_gear_04",
+      "rawMetadata": {
+        "itemSquishEraId": 0,
+        "reqlevel": 29,
+        "sellprice": 3156,
+        "sheathtype": 1,
+        "slotbak": 11,
+        "spi": 7,
+        "splheal": 6,
+        "splpwr": 3,
+        "sta": 4
+      }
+    },
+    {
+      "itemId": 9448,
+      "name": "Spidertank Oilrag",
+      "slot": "Wrist",
+      "slotId": 9,
+      "requiredLevel": 29,
+      "itemUrl": "https://www.wowhead.com/forever/item=9448/spidertank-oilrag",
+      "source": "Electrocutioner 6000",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_bandage_09",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            11204,
+            "inv_bracer_05"
+          ]
+        },
+        "armor": 22,
+        "displayid": 11204,
+        "dura": 25,
+        "itemSquishEraId": 0,
+        "manargn": 3,
+        "reqlevel": 29,
+        "sellprice": 1578,
+        "slotbak": 9,
+        "splpwr": 9
+      }
+    },
+    {
+      "itemId": 274068,
+      "name": "Thermaplugg Medal of Honor",
+      "slot": "Neck",
+      "slotId": 2,
+      "requiredLevel": 29,
+      "itemUrl": "https://www.wowhead.com/forever/item=274068/thermaplugg-medal-of-honor",
+      "source": "Crowd Pummeler 9-60",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_jewelry_amulet_03",
+      "rawMetadata": {
+        "atkpwr": 10,
+        "itemSquishEraId": 0,
+        "reqlevel": 29,
+        "sellprice": 3223,
+        "slotbak": 2,
+        "spi": 6,
+        "sta": 6
+      }
+    },
+    {
+      "itemId": 9457,
+      "name": "Royal Diplomatic Scepter",
+      "slot": "MainHand",
+      "slotId": 21,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=9457/royal-diplomatic-scepter",
+      "source": "Dark Iron Ambassador (Rare)",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_mace_08",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            18373,
+            ""
+          ]
+        },
+        "displayid": 18373,
+        "dmgmax1": 46,
+        "dmgmin1": 24,
+        "dmgrange": 0.6,
+        "dmgtype1": 0,
+        "dps": 15.22,
+        "dura": 90,
+        "itemSquishEraId": 0,
+        "mledmgmax": 46,
+        "mledmgmin": 24,
+        "mledps": 15.22,
+        "mlespeed": 2.3,
+        "reqlevel": 30,
+        "sellprice": 8681,
+        "sheathtype": 3,
+        "slotbak": 21,
+        "speed": 2.3,
+        "spi": 7,
+        "spldmg": 25,
+        "splheal": 75,
+        "sta": 3
+      }
+    },
+    {
+      "itemId": 274149,
+      "name": "Thornweaver Drape",
+      "slot": "Back",
+      "slotId": 16,
+      "requiredLevel": 25,
+      "itemUrl": "https://www.wowhead.com/forever/item=274149/thornweaver-drape",
+      "source": "Roogug",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_cape_11",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            23008,
+            "inv_misc_cape_08"
+          ]
+        },
+        "armor": 24,
+        "displayid": 23008,
+        "dmgrange": 0.2,
+        "itemSquishEraId": 0,
+        "reqlevel": 25,
+        "sellprice": 1537,
+        "slotbak": 16,
+        "spi": 6,
+        "splpwr": 7
+      }
+    },
+    {
+      "itemId": 274152,
+      "name": "Roogug's Severed Head",
+      "slot": "Trinket1",
+      "slotId": 12,
+      "requiredLevel": 25,
+      "itemUrl": "https://www.wowhead.com/forever/item=274152/roogugs-severed-head",
+      "source": "Roogug",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_head_quillboar_01",
+      "rawMetadata": {
+        "cooldown": 300000,
+        "itemSquishEraId": 0,
+        "reqlevel": 25,
+        "sellprice": 2073,
+        "slotbak": 12,
+        "spi": 6
+      }
+    },
+    {
+      "itemId": 274158,
+      "name": "Death Prophet Spine",
+      "slot": "MainHand",
+      "slotId": 17,
+      "requiredLevel": 26,
+      "itemUrl": "https://www.wowhead.com/forever/item=274158/death-prophet-spine",
+      "source": "Aggem Thorncurse",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_staff_17",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            28228,
+            "inv_staff_goldfeathered_01"
+          ]
+        },
+        "displayid": 28228,
+        "dmgmax1": 64,
+        "dmgmin1": 42,
+        "dmgrange": 0.4,
+        "dmgtype1": 0,
+        "dps": 18.93,
+        "dura": 100,
+        "itemSquishEraId": 0,
+        "manargn": 5,
+        "mledmgmax": 64,
+        "mledmgmin": 42,
+        "mledps": 18.93,
+        "mlespeed": 2.8,
+        "reqlevel": 26,
+        "sellprice": 7487,
+        "sheathtype": 2,
+        "slotbak": 17,
+        "speed": 2.8,
+        "spldmg": 34,
+        "splheal": 34,
+        "sta": 11
+      }
+    },
+    {
+      "itemId": 2816,
+      "name": "Death Speaker Scepter",
+      "slot": "MainHand",
+      "slotId": 21,
+      "requiredLevel": 28,
+      "itemUrl": "https://www.wowhead.com/forever/item=2816/death-speaker-scepter",
+      "source": "Death Speaker Jargba",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_mace_07",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            19669,
+            ""
+          ]
+        },
+        "displayid": 19669,
+        "dmgmax1": 52,
+        "dmgmin1": 28,
+        "dmgrange": 0.6,
+        "dmgtype1": 0,
+        "dps": 14.29,
+        "dura": 90,
+        "healthrgn": 12,
+        "itemSquishEraId": 0,
+        "mledmgmax": 52,
+        "mledmgmin": 28,
+        "mledps": 14.29,
+        "mlespeed": 2.8,
+        "reqlevel": 28,
+        "sellprice": 7175,
+        "shasplpwr": 28,
+        "sheathtype": 3,
+        "slotbak": 21,
+        "speed": 2.8,
+        "splheal": 68
+      }
+    },
+    {
+      "itemId": 6685,
+      "name": "Death Speaker Mantle",
+      "slot": "Shoulder",
+      "slotId": 3,
+      "requiredLevel": 27,
+      "itemUrl": "https://www.wowhead.com/forever/item=6685/death-speaker-mantle",
+      "source": "Death Speaker Jargba",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_shoulder_09",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            11473,
+            ""
+          ]
+        },
+        "armor": 37,
+        "displayid": 11473,
+        "dura": 45,
+        "int": 11,
+        "itemSquishEraId": 0,
+        "reqlevel": 27,
+        "sellprice": 1956,
+        "slotbak": 3,
+        "splpwr": 6
+      }
+    },
+    {
+      "itemId": 6682,
+      "name": "Death Speaker Robes",
+      "slot": "Chest",
+      "slotId": 20,
+      "requiredLevel": 26,
+      "itemUrl": "https://www.wowhead.com/forever/item=6682/death-speaker-robes",
+      "source": "Death Speaker Jargba",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_chest_cloth_20",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            12216,
+            ""
+          ]
+        },
+        "armor": 48,
+        "displayid": 12216,
+        "dmgrange": 0.2,
+        "dura": 70,
+        "int": 11,
+        "itemSquishEraId": 0,
+        "reqlevel": 26,
+        "sellprice": 2371,
+        "slotbak": 20,
+        "splheal": 13,
+        "splpwr": 7,
+        "sta": 4
+      }
+    },
+    {
+      "itemId": 6691,
+      "name": "Swinetusk Shank",
+      "slot": "MainHand",
+      "slotId": 21,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=6691/swinetusk-shank",
+      "source": "Agathelos the Raging",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_bone_06",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            12880,
+            ""
+          ]
+        },
+        "displayid": 12880,
+        "dmgmax1": 30,
+        "dmgmin1": 16,
+        "dmgrange": 0.6,
+        "dmgtype1": 0,
+        "dps": 15.33,
+        "dura": 65,
+        "itemSquishEraId": 0,
+        "mledmgmax": 30,
+        "mledmgmin": 16,
+        "mledps": 15.33,
+        "mlespeed": 1.5,
+        "reqlevel": 30,
+        "sellprice": 8681,
+        "sheathtype": 3,
+        "slotbak": 21,
+        "speed": 1.5,
+        "spi": 4,
+        "spldmg": 40,
+        "splheal": 40,
+        "sta": 6
+      }
+    },
+    {
+      "itemId": 6693,
+      "name": "Agamaggan's Clutch",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=6693/agamaggans-clutch",
+      "source": "Charlga Razorflank",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_bone_05",
+      "rawMetadata": {
+        "itemSquishEraId": 0,
+        "reqlevel": 30,
+        "sellprice": 3472,
+        "sheathtype": 1,
+        "slotbak": 11,
+        "spi": 6,
+        "sta": 5
+      }
+    },
+    {
+      "itemId": 6697,
+      "name": "Batwing Mantle",
+      "slot": "Shoulder",
+      "slotId": 3,
+      "requiredLevel": 29,
+      "itemUrl": "https://www.wowhead.com/forever/item=6697/batwing-mantle",
+      "source": "Blind Hunter (Rare)",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_shoulder_05",
+      "rawMetadata": {
+        "agi": 3,
+        "appearances": {
+          "0": [
+            5116,
+            ""
+          ]
+        },
+        "armor": 38,
+        "displayid": 5116,
+        "dmgrange": 0.2,
+        "dura": 50,
+        "int": 11,
+        "itemSquishEraId": 0,
+        "reqlevel": 29,
+        "sellprice": 2367,
+        "slotbak": 3,
+        "spi": 5
+      }
+    },
+    {
+      "itemId": 7684,
+      "name": "Bloodmage Mantle",
+      "slot": "Shoulder",
+      "slotId": 3,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=7684/bloodmage-mantle",
+      "source": "Bloodmage Thalnos",
+      "location": "Scarlet Monastery - Graveyard",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_shoulder_05",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            10791,
+            ""
+          ]
+        },
+        "armor": 38,
+        "displayid": 10791,
+        "dmgrange": 0.2,
+        "dura": 45,
+        "healthrgn": 9,
+        "int": 9,
+        "itemSquishEraId": 0,
+        "reqlevel": 30,
+        "sellprice": 2604,
+        "slotbak": 3,
+        "splpwr": 9
+      }
+    },
+    {
+      "itemId": 7709,
+      "name": "Blighted Leggings",
+      "slot": "Legs",
+      "slotId": 7,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=7709/blighted-leggings",
+      "source": "Azshir the Sleepless (Rare)",
+      "location": "Scarlet Monastery - Graveyard",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_pants_07",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            5870,
+            ""
+          ]
+        },
+        "armor": 45,
+        "displayid": 5870,
+        "dura": 65,
+        "itemSquishEraId": 0,
+        "reqlevel": 30,
+        "sellprice": 3472,
+        "shasplpwr": 19,
+        "slotbak": 7,
+        "spi": 14
+      }
+    },
+    {
+      "itemId": 7691,
+      "name": "Embalmed Shroud",
+      "slot": "Head",
+      "slotId": 1,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=7691/embalmed-shroud",
+      "source": "Fallen Champion (Rare)",
+      "location": "Scarlet Monastery - Graveyard",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Dungeon",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_helmet_28",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            15391,
+            ""
+          ]
+        },
+        "armor": 42,
+        "displayid": 15391,
+        "dmgrange": 0.2,
+        "dura": 50,
+        "itemSquishEraId": 0,
+        "reqlevel": 30,
+        "sellprice": 2604,
+        "slotbak": 1,
+        "spi": 12,
+        "splheal": 16,
+        "splpwr": 8,
+        "sta": 7
+      }
+    },
+    {
+      "itemId": 271670,
+      "name": "Curl of Life",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=271670/curl-of-life",
+      "source": "Horrors in the Highland",
+      "location": "Excavation Site: Wetlands",
+      "faction": "Alliance",
+      "questIds": [
+        "95646"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_jewelry_ring_12",
+      "rawMetadata": {
+        "healthrgn": 5,
+        "itemSquishEraId": 0,
+        "sellprice": 2802,
+        "slotbak": 11,
+        "splpwr": 5,
+        "sta": 7
+      }
+    },
+    {
+      "itemId": 271716,
+      "name": "Explorer's League Dustcover",
+      "slot": "Back",
+      "slotId": 16,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=271716/explorers-league-dustcover",
+      "source": "Prehistoric Prism",
+      "location": "Excavation Site: Wetlands",
+      "faction": "Alliance",
+      "questIds": [
+        "98824"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_cape_21",
+      "rawMetadata": {
+        "agi": 4,
+        "appearances": {
+          "0": [
+            737172,
+            "inv_misc_cape_10"
+          ]
+        },
+        "armor": 25,
+        "displayid": 737172,
+        "dmgrange": 1,
+        "int": 7,
+        "itemSquishEraId": 0,
+        "sellprice": 2205,
+        "slotbak": 16,
+        "str": 4
+      }
+    },
+    {
+      "itemId": 271767,
+      "name": "Healer's Staff",
+      "slot": "MainHand",
+      "slotId": 17,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+      "source": "Prehistoric Prism",
+      "location": "Excavation Site: Wetlands",
+      "faction": "Alliance",
+      "questIds": [
+        "98824"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_staff_10",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            5554,
+            "inv_staff_08"
+          ]
+        },
+        "displayid": 5554,
+        "dmgmax1": 65,
+        "dmgmin1": 43,
+        "dmgrange": 0.4,
+        "dmgtype1": 0,
+        "dps": 20.77,
+        "dura": 100,
+        "itemSquishEraId": 0,
+        "manargn": 5,
+        "mledmgmax": 65,
+        "mledmgmin": 43,
+        "mledps": 20.77,
+        "mlespeed": 2.6,
+        "sellprice": 8889,
+        "sheathtype": 1,
+        "slotbak": 17,
+        "speed": 2.6,
+        "spldmg": 22,
+        "splheal": 67,
+        "sta": 12
+      }
+    },
+    {
+      "itemId": 271769,
+      "name": "Daewyn's Girdle",
+      "slot": "Waist",
+      "slotId": 6,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=271769/daewyns-girdle",
+      "source": "Fallen in the Fen",
+      "location": "Excavation Site: Wetlands",
+      "faction": "Alliance",
+      "questIds": [
+        "95795"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_belt_16",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            11172,
+            "inv_belt_10"
+          ]
+        },
+        "armor": 28,
+        "displayid": 11172,
+        "dura": 30,
+        "healthrgn": 10,
+        "itemSquishEraId": 0,
+        "sellprice": 1433,
+        "slotbak": 6,
+        "spi": 9,
+        "splpwr": 6
+      }
+    },
+    {
+      "itemId": 271740,
+      "name": "Knife-Polishing Rag",
+      "slot": "Wrist",
+      "slotId": 9,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=271740/knife-polishing-rag",
+      "source": "Open the Maw",
+      "location": "Excavation Site: Wetlands",
+      "faction": "",
+      "questIds": [
+        "95682"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_bracer_10",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            22593,
+            "inv_bracer_19"
+          ]
+        },
+        "armor": 22,
+        "displayid": 22593,
+        "dura": 30,
+        "int": 4,
+        "itemSquishEraId": 0,
+        "sellprice": 1491,
+        "slotbak": 9,
+        "spi": 7,
+        "splpwr": 5
+      }
+    },
+    {
+      "itemId": 271719,
+      "name": "Furs of the Earthen Ring",
+      "slot": "Back",
+      "slotId": 16,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=271719/furs-of-the-earthen-ring",
+      "source": "Earthen Echo",
+      "location": "Excavation Site: Wetlands",
+      "faction": "Horde",
+      "questIds": [
+        "98823"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_cape_04",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            27088,
+            "inv_misc_cape_07"
+          ]
+        },
+        "armor": 25,
+        "displayid": 27088,
+        "dmgrange": 1,
+        "int": 5,
+        "itemSquishEraId": 0,
+        "sellprice": 2229,
+        "slotbak": 16,
+        "spi": 4,
+        "sta": 3,
+        "str": 4
+      }
+    },
+    {
+      "itemId": 271767,
+      "name": "Healer's Staff",
+      "slot": "MainHand",
+      "slotId": 17,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+      "source": "Earthen Echo",
+      "location": "Excavation Site: Wetlands",
+      "faction": "Horde",
+      "questIds": [
+        "98823"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_staff_10",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            5554,
+            "inv_staff_08"
+          ]
+        },
+        "displayid": 5554,
+        "dmgmax1": 65,
+        "dmgmin1": 43,
+        "dmgrange": 0.4,
+        "dmgtype1": 0,
+        "dps": 20.77,
+        "dura": 100,
+        "itemSquishEraId": 0,
+        "manargn": 5,
+        "mledmgmax": 65,
+        "mledmgmin": 43,
+        "mledps": 20.77,
+        "mlespeed": 2.6,
+        "sellprice": 8889,
+        "sheathtype": 1,
+        "slotbak": 17,
+        "speed": 2.6,
+        "spldmg": 22,
+        "splheal": 67,
+        "sta": 12
+      }
+    },
+    {
+      "itemId": 1317,
+      "name": "Hardened Root Staff",
+      "slot": "MainHand",
+      "slotId": 17,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=1317/hardened-root-staff",
+      "source": "What Comes Around...",
+      "location": "The Stockades",
+      "faction": "Alliance",
+      "questIds": [
+        "386"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_staff_16",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            20377,
+            ""
+          ]
+        },
+        "displayid": 20377,
+        "dmgmax1": 66,
+        "dmgmin1": 43,
+        "dmgrange": 0.4,
+        "dmgtype1": 0,
+        "dps": 16.52,
+        "dura": 75,
+        "itemSquishEraId": 0,
+        "mledmgmax": 66,
+        "mledmgmin": 43,
+        "mledps": 16.52,
+        "mlespeed": 3.3,
+        "sellprice": 5062,
+        "sheathtype": 2,
+        "slotbak": 17,
+        "speed": 3.3,
+        "spi": 13,
+        "spldmg": 30,
+        "splheal": 30,
+        "str": 2
+      }
+    },
+    {
+      "itemId": 270029,
+      "name": "Town Clerk's Mittens",
+      "slot": "Hands",
+      "slotId": 10,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=270029/town-clerks-mittens",
+      "source": "Crime and Punishment",
+      "location": "The Stockades",
+      "faction": "Alliance",
+      "questIds": [
+        "377"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_gauntlets_27",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            27753,
+            ""
+          ]
+        },
+        "armor": 29,
+        "displayid": 27753,
+        "dmgrange": 0.2,
+        "dura": 30,
+        "int": 11,
+        "itemSquishEraId": 0,
+        "sellprice": 850,
+        "slotbak": 10,
+        "splpwr": 4
+      }
+    },
+    {
+      "itemId": 270036,
+      "name": "Magistrate's Pantaloons",
+      "slot": "Legs",
+      "slotId": 7,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=270036/magistrates-pantaloons",
+      "source": "The Fury Runs Deep",
+      "location": "The Stockades",
+      "faction": "Alliance",
+      "questIds": [
+        "378"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_pants_14",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            27755,
+            ""
+          ]
+        },
+        "armor": 41,
+        "displayid": 27755,
+        "dmgrange": 0.2,
+        "dura": 65,
+        "int": 14,
+        "itemSquishEraId": 0,
+        "sellprice": 1920,
+        "slotbak": 7,
+        "splpwr": 5
+      }
+    },
+    {
+      "itemId": 9609,
+      "name": "Shilly Mitts",
+      "slot": "Hands",
+      "slotId": 10,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=9609/shilly-mitts",
+      "source": "Gyrodrillmatic Excavationators",
+      "location": "Gnomeregan",
+      "faction": "Alliance",
+      "questIds": [
+        "2928"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_gauntlets_27",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            18991,
+            ""
+          ]
+        },
+        "armor": 31,
+        "armorbonus": 60,
+        "displayid": 18991,
+        "dmgrange": 0.2,
+        "dura": 25,
+        "itemSquishEraId": 0,
+        "sellprice": 1304,
+        "slotbak": 10,
+        "spi": 9,
+        "splpwr": 7
+      }
+    },
+    {
+      "itemId": 9536,
+      "name": "Fairywing Mantle",
+      "slot": "Shoulder",
+      "slotId": 3,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=9536/fairywing-mantle",
+      "source": "A Fine Mess",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [
+        "2904"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_shoulder_02",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            18901,
+            ""
+          ]
+        },
+        "armor": 37,
+        "displayid": 18901,
+        "dura": 45,
+        "int": 9,
+        "itemSquishEraId": 0,
+        "sellprice": 1956,
+        "slotbak": 3,
+        "splpwr": 6,
+        "sta": 2
+      }
+    },
+    {
+      "itemId": 9538,
+      "name": "Talvash's Gold Ring",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=9538/talvashs-gold-ring",
+      "source": "Gnome Improvement",
+      "location": "Gnomeregan",
+      "faction": "Alliance",
+      "questIds": [
+        "2948"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_jewelry_ring_03",
+      "rawMetadata": {
+        "itemSquishEraId": 0,
+        "sellprice": 4202,
+        "slotbak": 11,
+        "spi": 4,
+        "sta": 10
+      }
+    },
+    {
+      "itemId": 9623,
+      "name": "Civinad Robes",
+      "slot": "Chest",
+      "slotId": 20,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=9623/civinad-robes",
+      "source": "The Grand Betrayal Rig Wars",
+      "location": "Gnomeregan",
+      "faction": "",
+      "questIds": [
+        "2929",
+        "2841"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_chest_cloth_18",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            14760,
+            ""
+          ]
+        },
+        "armor": 54,
+        "displayid": 14760,
+        "dmgrange": 0.2,
+        "dura": 80,
+        "itemSquishEraId": 0,
+        "sellprice": 4202,
+        "slotbak": 20,
+        "spi": 12,
+        "splheal": 17,
+        "splpwr": 9,
+        "sta": 7
+      }
+    },
+    {
+      "itemId": 9588,
+      "name": "Nogg's Gold Ring",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=9588/noggs-gold-ring",
+      "source": "Nogg's Ring Redo",
+      "location": "Gnomeregan",
+      "faction": "Horde",
+      "questIds": [
+        "2950"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_jewelry_ring_03",
+      "rawMetadata": {
+        "itemSquishEraId": 0,
+        "sellprice": 4202,
+        "slotbak": 11,
+        "spi": 4,
+        "sta": 10
+      }
+    },
+    {
+      "itemId": 6750,
+      "name": "Snake Hoop",
+      "slot": "Finger1",
+      "slotId": 11,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=6750/snake-hoop",
+      "source": "Willix the Importer",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [
+        "1144"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_jewelry_ring_06",
+      "rawMetadata": {
+        "int": 7,
+        "itemSquishEraId": 0,
+        "sellprice": 2609,
+        "sheathtype": 1,
+        "slotbak": 11,
+        "spi": 7
+      }
+    },
+    {
+      "itemId": 4197,
+      "name": "Berylline Pads",
+      "slot": "Shoulder",
+      "slotId": 3,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=4197/berylline-pads",
+      "source": "The Crone of the Kraul A Vengeful Fate",
+      "location": "Razorfen Kraul",
+      "faction": "",
+      "questIds": [
+        "1101",
+        "1102"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_shoulder_05",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            12980,
+            ""
+          ]
+        },
+        "armor": 39,
+        "displayid": 12980,
+        "dmgrange": 0.2,
+        "dura": 50,
+        "int": 10,
+        "itemSquishEraId": 0,
+        "sellprice": 2864,
+        "slotbak": 3,
+        "splpwr": 7,
+        "sta": 5
+      }
+    },
+    {
+      "itemId": 17039,
+      "name": "Skullbreaker",
+      "slot": "MainHand",
+      "slotId": 21,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=17039/skullbreaker",
+      "source": "An Unholy Alliance",
+      "location": "Razorfen Kraul",
+      "faction": "Horde",
+      "questIds": [
+        "6521"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_bone_dwarfskull_01",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            28869,
+            ""
+          ]
+        },
+        "displayid": 28869,
+        "dmgmax1": 54,
+        "dmgmin1": 29,
+        "dmgrange": 0.6,
+        "dmgtype1": 0,
+        "dps": 17.29,
+        "dura": 75,
+        "int": 7,
+        "itemSquishEraId": 0,
+        "mledmgmax": 54,
+        "mledmgmin": 29,
+        "mledps": 17.29,
+        "mlespeed": 2.4,
+        "sellprice": 11345,
+        "sheathtype": 3,
+        "slotbak": 21,
+        "speed": 2.4,
+        "spldmg": 42,
+        "splheal": 42,
+        "sta": 5
+      }
+    },
+    {
+      "itemId": 17043,
+      "name": "Zealot's Robe",
+      "slot": "Chest",
+      "slotId": 20,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=17043/zealots-robe",
+      "source": "An Unholy Alliance",
+      "location": "Razorfen Kraul",
+      "faction": "Horde",
+      "questIds": [
+        "6521"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_chest_cloth_06",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            15820,
+            "inv_chest_cloth_26"
+          ]
+        },
+        "armor": 55,
+        "displayid": 15820,
+        "dmgrange": 0.2,
+        "dura": 70,
+        "int": 10,
+        "itemSquishEraId": 0,
+        "sellprice": 4538,
+        "slotbak": 20,
+        "spi": 10,
+        "splpwr": 15
+      }
+    },
+    {
+      "itemId": 7750,
+      "name": "Mantle of Woe",
+      "slot": "Shoulder",
+      "slotId": 3,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=7750/mantle-of-woe",
+      "source": "Vorrel's Revenge",
+      "location": "Scarlet Monastery - Graveyard",
+      "faction": "Horde",
+      "questIds": [
+        "1051"
+      ],
+      "acquisitionType": "Quest",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_shoulder_23",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            12832,
+            ""
+          ]
+        },
+        "armor": 38,
+        "armorbonus": 50,
+        "displayid": 12832,
+        "dmgrange": 0.2,
+        "dura": 45,
+        "int": 12,
+        "itemSquishEraId": 0,
+        "sellprice": 2604,
+        "slotbak": 3,
+        "splpwr": 5
+      }
+    },
+    {
+      "itemId": 249392,
+      "name": "Glimmering Staff",
+      "slot": "MainHand",
+      "slotId": 17,
+      "requiredLevel": 25,
+      "itemUrl": "https://www.wowhead.com/forever/item=249392/glimmering-staff",
+      "source": "Enchanting",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_staff_19",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            28578,
+            "inv_wand_06"
+          ]
+        },
+        "displayid": 28578,
+        "dmgmax1": 49,
+        "dmgmin1": 32,
+        "dmgrange": 0.4,
+        "dmgtype1": 0,
+        "dps": 18.41,
+        "dura": 100,
+        "int": 11,
+        "itemSquishEraId": 0,
+        "mledmgmax": 49,
+        "mledmgmin": 32,
+        "mledps": 18.41,
+        "mlespeed": 2.2,
+        "reqlevel": 25,
+        "sellprice": 601,
+        "sheathtype": 2,
+        "slotbak": 17,
+        "speed": 2.2,
+        "spldmg": 34,
+        "splheal": 34,
+        "sta": 11
+      }
+    },
+    {
+      "itemId": 249393,
+      "name": "Soulstaff",
+      "slot": "MainHand",
+      "slotId": 17,
+      "requiredLevel": 25,
+      "itemUrl": "https://www.wowhead.com/forever/item=249393/soulstaff",
+      "source": "Enchanting",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_staff_31",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            20363,
+            "inv_staff_04"
+          ]
+        },
+        "displayid": 20363,
+        "dmgmax1": 40,
+        "dmgmin1": 26,
+        "dmgrange": 0.4,
+        "dmgtype1": 0,
+        "dps": 18.33,
+        "dura": 100,
+        "itemSquishEraId": 0,
+        "mledmgmax": 40,
+        "mledmgmin": 26,
+        "mledps": 18.33,
+        "mlespeed": 1.8,
+        "reqlevel": 25,
+        "sellprice": 601,
+        "sheathtype": 2,
+        "slotbak": 17,
+        "speed": 1.8,
+        "spi": 11,
+        "spldmg": 34,
+        "splheal": 34,
+        "sta": 11
+      }
+    },
+    {
+      "itemId": 249394,
+      "name": "Orb of Mystic Insight",
+      "slot": "OffHand",
+      "slotId": 23,
+      "requiredLevel": 25,
+      "itemUrl": "https://www.wowhead.com/forever/item=249394/orb-of-mystic-insight",
+      "source": "Enchanting",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_orb_blue",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            27801,
+            "inv_misc_gem_pearl_06"
+          ]
+        },
+        "displayid": 27801,
+        "int": 6,
+        "itemSquishEraId": 0,
+        "reqlevel": 25,
+        "sellprice": 2156,
+        "sheathtype": 3,
+        "slotbak": 23,
+        "speed": 2,
+        "splpwr": 7
+      }
+    },
+    {
+      "itemId": 217287,
+      "name": "Greater Mystic Wand",
+      "slot": "Ranged",
+      "slotId": 26,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=217287/greater-mystic-wand",
+      "source": "Enchanting",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_wand_07",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            21101,
+            ""
+          ]
+        },
+        "avgbuyout": 25487,
+        "displayid": 21101,
+        "dmgmax1": 76,
+        "dmgmin1": 40,
+        "dmgrange": 0.6,
+        "dmgtype1": 6,
+        "dps": 29,
+        "dura": 55,
+        "itemSquishEraId": 0,
+        "reqlevel": 30,
+        "sellprice": 1,
+        "slotbak": 26,
+        "speed": 2,
+        "splpwr": 5
+      }
+    },
+    {
+      "itemId": 253975,
+      "name": "Filigreed Pristine Circlet",
+      "slot": "Head",
+      "slotId": 1,
+      "requiredLevel": 25,
+      "itemUrl": "https://www.wowhead.com/forever/item=253975/filigreed-pristine-circlet",
+      "source": "Tailoring",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_crown_01",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            747756,
+            ""
+          ]
+        },
+        "armor": 38,
+        "displayid": 747756,
+        "dura": 50,
+        "itemSquishEraId": 0,
+        "reqlevel": 25,
+        "sellprice": 1605,
+        "slotbak": 1,
+        "splheal": 14,
+        "splpwr": 8,
+        "sta": 12
+      }
+    },
+    {
+      "itemId": 253961,
+      "name": "Pristine Gown",
+      "slot": "Chest",
+      "slotId": 5,
+      "requiredLevel": 22,
+      "itemUrl": "https://www.wowhead.com/forever/item=253961/pristine-gown",
+      "source": "Tailoring",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_chest_cloth_32",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            715246,
+            ""
+          ]
+        },
+        "armor": 45,
+        "displayid": 715246,
+        "dura": 80,
+        "int": 7,
+        "itemSquishEraId": 0,
+        "reqlevel": 22,
+        "sellprice": 1643,
+        "slotbak": 5,
+        "spi": 4,
+        "splheal": 13,
+        "splpwr": 7,
+        "sta": 6
+      }
+    },
+    {
+      "itemId": 253925,
+      "name": "Pristine Sash",
+      "slot": "Waist",
+      "slotId": 6,
+      "requiredLevel": 17,
+      "itemUrl": "https://www.wowhead.com/forever/item=253925/pristine-sash",
+      "source": "Tailoring",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_belt_43",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            715247,
+            ""
+          ]
+        },
+        "armor": 22,
+        "displayid": 715247,
+        "dura": 20,
+        "int": 4,
+        "itemSquishEraId": 0,
+        "reqlevel": 17,
+        "sellprice": 465,
+        "slotbak": 6,
+        "splheal": 7,
+        "splpwr": 4,
+        "sta": 5
+      }
+    },
+    {
+      "itemId": 253987,
+      "name": "Pristine Leggings",
+      "slot": "Legs",
+      "slotId": 7,
+      "requiredLevel": 25,
+      "itemUrl": "https://www.wowhead.com/forever/item=253987/pristine-leggings",
+      "source": "Tailoring",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_pants_01",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            715248,
+            ""
+          ]
+        },
+        "armor": 41,
+        "displayid": 715248,
+        "int": 7,
+        "itemSquishEraId": 0,
+        "reqlevel": 25,
+        "sellprice": 2076,
+        "slotbak": 7,
+        "spi": 5,
+        "splheal": 15,
+        "splpwr": 7,
+        "sta": 7
+      }
+    },
+    {
+      "itemId": 254001,
+      "name": "Gilded Slippers",
+      "slot": "Feet",
+      "slotId": 8,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=254001/gilded-slippers",
+      "source": "Tailoring",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_boots_cloth_08",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            715316,
+            ""
+          ]
+        },
+        "armor": 35,
+        "displayid": 715316,
+        "int": 7,
+        "itemSquishEraId": 0,
+        "reqlevel": 30,
+        "sellprice": 2711,
+        "slotbak": 8,
+        "spi": 4,
+        "splheal": 13,
+        "splpwr": 7,
+        "sta": 6
+      }
+    },
+    {
+      "itemId": 10504,
+      "name": "Green Lens",
+      "slot": "Head",
+      "slotId": 1,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=10504/green-lens",
+      "source": "Engineering",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "bonus=13056",
+      "iconName": "inv_helmet_44",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            16098,
+            ""
+          ]
+        },
+        "armor": 57,
+        "avgbuyout": 54189,
+        "displayid": 16098,
+        "dura": 50,
+        "itemSquishEraId": 0,
+        "reqskill": 202,
+        "reqskillrank": 245,
+        "sellprice": 7770,
+        "slotbak": 1,
+        "sta": 10
+      }
+    },
+    {
+      "itemId": 15999,
+      "name": "Spellpower Goggles Xtreme Plus",
+      "slot": "Head",
+      "slotId": 1,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=15999/spellpower-goggles-xtreme-plus",
+      "source": "Engineering",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_helmet_47",
+      "rawMetadata": {
+        "appearances": {
+          "0": [
+            745507,
+            ""
+          ]
+        },
+        "armor": 57,
+        "avgbuyout": 49975,
+        "displayid": 745507,
+        "dura": 45,
+        "itemSquishEraId": 0,
+        "reqskill": 202,
+        "reqskillrank": 270,
+        "sellprice": 9002,
+        "slotbak": 1,
+        "splpwr": 27
+      }
+    },
+    {
+      "itemId": 4381,
+      "name": "Minor Recombobulator",
+      "slot": "Trinket1",
+      "slotId": 12,
+      "requiredLevel": 0,
+      "itemUrl": "https://www.wowhead.com/forever/item=4381/minor-recombobulator",
+      "source": "Engineering",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_gizmo_07",
+      "rawMetadata": {
+        "avgbuyout": 9458,
+        "cooldown": 300000,
+        "itemSquishEraId": 0,
+        "reqskill": 202,
+        "reqskillrank": 140,
+        "sellprice": 600,
+        "slotbak": 12
+      }
+    },
+    {
+      "itemId": 4396,
+      "name": "Mechanical Dragonling",
+      "slot": "Trinket1",
+      "slotId": 12,
+      "requiredLevel": 30,
+      "itemUrl": "https://www.wowhead.com/forever/item=4396/mechanical-dragonling",
+      "source": "Engineering",
+      "location": "",
+      "faction": "",
+      "questIds": [],
+      "acquisitionType": "Crafting",
+      "note": "",
+      "modifiers": "",
+      "iconName": "inv_misc_head_dragon_01",
+      "rawMetadata": {
+        "avgbuyout": 47500,
+        "cooldown": 3600000,
+        "itemSquishEraId": 0,
+        "reqlevel": 30,
+        "reqskill": 202,
+        "reqskillrank": 200,
+        "sellprice": 6000,
+        "slotbak": 12
+      }
+    }
+  ]
+}

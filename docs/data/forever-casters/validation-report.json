@@ -1,0 +1,82 @@
+{
+  "reviewedOn": "2026-10-08",
+  "catalogs": [
+    {
+      "class": "Mage",
+      "spec": "arcane",
+      "items": 94,
+      "placementRows": 105,
+      "dungeonQuestRows": 76,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Mage",
+      "spec": "fire",
+      "items": 94,
+      "placementRows": 105,
+      "dungeonQuestRows": 76,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Mage",
+      "spec": "frost",
+      "items": 99,
+      "placementRows": 110,
+      "dungeonQuestRows": 76,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Priest",
+      "spec": "discipline",
+      "items": 54,
+      "placementRows": 65,
+      "dungeonQuestRows": 52,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Priest",
+      "spec": "holy",
+      "items": 54,
+      "placementRows": 65,
+      "dungeonQuestRows": 52,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Priest",
+      "spec": "shadow",
+      "items": 51,
+      "placementRows": 62,
+      "dungeonQuestRows": 47,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Warlock",
+      "spec": "affliction",
+      "items": 96,
+      "placementRows": 104,
+      "dungeonQuestRows": 72,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Warlock",
+      "spec": "demonology",
+      "items": 96,
+      "placementRows": 104,
+      "dungeonQuestRows": 72,
+      "dungeonQuestSlots": 17
+    },
+    {
+      "class": "Warlock",
+      "spec": "destruction",
+      "items": 96,
+      "placementRows": 104,
+      "dungeonQuestRows": 72,
+      "dungeonQuestSlots": 17
+    }
+  ],
+  "placementRows": 824,
+  "checkedItemPages": 162,
+  "checkedQuestPages": 46,
+  "http200Icons": 109,
+  "result": "PASS"
+}

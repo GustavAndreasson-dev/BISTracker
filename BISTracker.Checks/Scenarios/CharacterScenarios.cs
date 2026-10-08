@@ -23,7 +23,9 @@ internal static class CharacterScenarios
                         Assert(catalog.Context.Version == CharacterDefinition.VersionName(version), "Rätt spelversion i katalogen.");
                         var reviewed = version == GameVersion.Classic && characterClass == CharacterClass.Priest && spec.Id == "holy";
                         Assert(reviewed ? catalog.Items.Count == 17 && catalog.UnavailableReason is null :
-                            catalog.Items.Count == 0 && catalog.UnavailableReason is not null, "Ingen påhittad eller återanvänd Forever-BiS.");
+                            version == GameVersion.Forever ? catalog.Items.Count > 0 && catalog.UnavailableReason is null && catalog.Set?.LevelCap == 30 &&
+                                catalog.Items.All(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest) :
+                                catalog.Items.Count == 0 && catalog.UnavailableReason is not null, "Rätt granskad katalog och källpolicy för varje kontext.");
                     }
                 }
             await Throws<ArgumentException>(() => catalogs.LoadAsync(GameVersion.Forever, CharacterClass.Mage, "holy"));
