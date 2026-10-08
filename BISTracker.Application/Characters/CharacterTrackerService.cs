@@ -45,14 +45,33 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
     public Task<TrackerSnapshot> SetEquippedAsync(string itemId, bool equipped, CancellationToken cancellationToken = default) =>
         ChangeProgressAsync((progress, spec) => progress.SetEquipped(spec, itemId, equipped), cancellationToken);
 
+    public Task<TrackerSnapshot> SelectCatalogAsync(string catalogSetId, CancellationToken cancellationToken = default) =>
+        ExecuteAsync((state, validated) =>
+        {
+            var active = state.Characters.Single(item => item.Id == state.ActiveCharacterId);
+            if (!_catalogs.CatalogSets(active.Version).Any(set => set.Id == catalogSetId)) throw new ArgumentException("Unknown catalog set.");
+            var previousId = SetId(active);
+            if (previousId == catalogSetId) return state;
+            var archived = active.ArchivedLoadouts is null ? new Dictionary<string, Dictionary<string, Dictionary<EquipmentSlot, string>>>() : new(active.ArchivedLoadouts);
+            archived[previousId] = active.EquippedBySpec;
+            var restored = archived.Remove(catalogSetId, out var equipment) ? equipment : EmptyEquipment(active.Class);
+            var changed = active with { CatalogSetId = catalogSetId, EquippedBySpec = restored, ArchivedLoadouts = archived };
+            return state with { Characters = state.Characters.Select(item => item.Id == active.Id ? changed : item).ToArray() };
+        }, cancellationToken);
+
     private Task<TrackerSnapshot> ChangeProgressAsync(Action<CharacterLoadouts, string> change, CancellationToken cancellationToken) =>
         ExecuteAsync((state, validated) =>
         {
             var character = state.Characters.Single(item => item.Id == state.ActiveCharacterId);
-            var progress = validated[character.Id].Progress;
+            var validation = validated[character.Id];
+            var progress = validation.ProgressBySet[SetId(character)];
+            var previouslyOwned = progress.OwnedItemKeys.ToHashSet(StringComparer.Ordinal);
             change(progress, character.SelectedSpecialization);
+            foreach (var removed in previouslyOwned.Except(progress.OwnedItemKeys))
+                foreach (var other in validation.ProgressBySet.Values) other.SetItemOwnership(removed, false);
+            var archives = validation.ProgressBySet.Where(pair => pair.Key != SetId(character)).ToDictionary(pair => pair.Key, pair => pair.Value.EquippedBySpec);
             return state with { Characters = state.Characters.Select(item => item.Id == character.Id
-                ? item with { OwnedItemKeys = progress.OwnedItemKeys, EquippedBySpec = progress.EquippedBySpec } : item).ToArray() };
+                ? item with { OwnedItemKeys = progress.OwnedItemKeys, EquippedBySpec = progress.EquippedBySpec, ArchivedLoadouts = archives } : item).ToArray() };
         }, cancellationToken);
 
     private async Task<TrackerSnapshot> ExecuteAsync(
@@ -72,13 +91,15 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
             }
             if (isNew || change is not null) await _repository.SaveAsync(state, cancellationToken).ConfigureAwait(false);
             var active = state.Characters.Single(item => item.Id == state.ActiveCharacterId);
-            var catalog = validated[active.Id].Catalogs[active.SelectedSpecialization];
-            var progress = validated[active.Id].Progress;
+            var setId = SetId(active);
+            var catalog = validated[active.Id].CatalogsBySet[setId][active.SelectedSpecialization];
+            var progress = validated[active.Id].ProgressBySet[setId];
             var entries = catalog.Items.Select(item => new TrackerEntry(item,
                 progress.IsOwned(active.SelectedSpecialization, item.Id), progress.IsEquipped(active.SelectedSpecialization, item.Id))).ToArray();
             var options = state.Characters.Select(item => new CharacterOption(item.Id, item.Name, item.Version, item.Class, item.SelectedSpecialization)).ToArray();
             return new TrackerSnapshot(catalog, Array.AsReadOnly(entries), new CharacterSelection(Array.AsReadOnly(options),
-                options.Single(item => item.Id == active.Id), CharacterDefinition.Specialization(active.Class, active.SelectedSpecialization)));
+                options.Single(item => item.Id == active.Id), CharacterDefinition.Specialization(active.Class, active.SelectedSpecialization),
+                _catalogs.CatalogSets(active.Version), _catalogs.CatalogSets(active.Version).Single(set => set.Id == setId)));
         }
         finally { _gate.Release(); }
     }
@@ -107,22 +128,36 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
             ValidateName(character.Name);
             _ = CharacterDefinition.VersionName(character.Version);
             _ = CharacterDefinition.Specialization(character.Class, character.SelectedSpecialization);
-            var catalogs = new Dictionary<string, BisCatalog>();
-            foreach (var spec in CharacterDefinition.Specializations(character.Class))
+            var sets = _catalogs.CatalogSets(character.Version);
+            if (!sets.Any(set => set.Id == SetId(character)) || character.ArchivedLoadouts?.Any(pair => pair.Key == SetId(character) || !sets.Any(set => set.Id == pair.Key)) == true)
+                throw new InvalidDataException("Saved catalog context is unavailable. The existing progress has been preserved.");
+            var catalogsBySet = new Dictionary<string, Dictionary<string, BisCatalog>>();
+            foreach (var set in sets)
             {
-                var catalog = await _catalogs.LoadAsync(character.Version, character.Class, spec.Id, cancellationToken).ConfigureAwait(false);
-                catalogs.Add(spec.Id, catalog with { Items = Array.AsReadOnly(catalog.Items.ToArray()) });
+                var catalogs = new Dictionary<string, BisCatalog>();
+                foreach (var spec in CharacterDefinition.Specializations(character.Class))
+                {
+                    var catalog = await _catalogs.LoadAsync(character.Version, character.Class, spec.Id, set.Id, cancellationToken).ConfigureAwait(false);
+                    catalogs.Add(spec.Id, catalog with { Items = Array.AsReadOnly(catalog.Items.ToArray()) });
+                }
+                catalogsBySet.Add(set.Id, catalogs);
             }
-            var progress = new CharacterLoadouts(character.Class, catalogs.ToDictionary(pair => pair.Key, pair => pair.Value.Items),
-                character.OwnedItemKeys, character.EquippedBySpec);
-            result.Add(character.Id, new ValidatedCharacter(catalogs, progress));
+            var inventory = catalogsBySet.Values.SelectMany(catalogs => catalogs.Values).SelectMany(catalog => catalog.Items).ToArray();
+            var equipmentBySet = character.ArchivedLoadouts is null ? new Dictionary<string, Dictionary<string, Dictionary<EquipmentSlot, string>>>() : new(character.ArchivedLoadouts);
+            equipmentBySet.Add(SetId(character), character.EquippedBySpec);
+            var progressBySet = equipmentBySet.ToDictionary(pair => pair.Key, pair => new CharacterLoadouts(character.Class,
+                catalogsBySet[pair.Key].ToDictionary(item => item.Key, item => item.Value.Items), character.OwnedItemKeys, pair.Value, inventory));
+            result.Add(character.Id, new ValidatedCharacter(catalogsBySet, progressBySet));
         }
         return result;
     }
 
     private static CharacterState NewCharacter(string name, GameVersion version, CharacterClass characterClass, string spec) =>
-        new(Guid.NewGuid(), name, version, characterClass, spec, [], CharacterDefinition.Specializations(characterClass)
-            .ToDictionary(item => item.Id, _ => new Dictionary<EquipmentSlot, string>()));
+        new(Guid.NewGuid(), name, version, characterClass, spec, [], EmptyEquipment(characterClass), CatalogSet.Default(version).Id, new());
+
+    private static Dictionary<string, Dictionary<EquipmentSlot, string>> EmptyEquipment(CharacterClass characterClass) =>
+        CharacterDefinition.Specializations(characterClass).ToDictionary(item => item.Id, _ => new Dictionary<EquipmentSlot, string>());
+    private static string SetId(CharacterState character) => character.CatalogSetId ?? CatalogSet.Default(character.Version).Id;
 
     private static void ValidateName(string name)
     {
@@ -130,5 +165,5 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
             throw new ArgumentException("Enter a character name with 1–40 characters.", nameof(name));
     }
 
-    private sealed record ValidatedCharacter(Dictionary<string, BisCatalog> Catalogs, CharacterLoadouts Progress);
+    private sealed record ValidatedCharacter(Dictionary<string, Dictionary<string, BisCatalog>> CatalogsBySet, Dictionary<string, CharacterLoadouts> ProgressBySet);
 }

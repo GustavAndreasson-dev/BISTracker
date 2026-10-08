@@ -16,7 +16,7 @@ BISTracker/
 │   └── data/                          Separata script för granskad metadatahämtning
 ├── BISTracker.Domain/
 │   ├── Equipment/                     EquipmentSlot, Recommendation och ItemDetails
-│   ├── Game/                          GameContext, CharacterDefinition, version/klass/spec
+│   ├── Game/                          GameContext, CatalogSet, CharacterDefinition, version/klass/spec
 │   └── Tracking/                      CharacterLoadouts samt legacy CharacterProgress
 ├── BISTracker.Application/
 │   ├── Catalog/                       BisCatalog, IBisCatalog och ICharacterCatalog

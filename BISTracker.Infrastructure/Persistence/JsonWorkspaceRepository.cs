@@ -96,9 +96,14 @@ public sealed class JsonWorkspaceRepository : IWorkspaceRepository
             CharacterDefinition.Specializations(character.Class).Any(spec => spec.Id == character.SelectedSpecialization) &&
             character.OwnedItemKeys is not null && character.OwnedItemKeys.All(key => !string.IsNullOrWhiteSpace(key)) &&
             character.OwnedItemKeys.Distinct(StringComparer.Ordinal).Count() == character.OwnedItemKeys.Length &&
-            character.EquippedBySpec is { Count: 3 } && CharacterDefinition.Specializations(character.Class).All(spec =>
-                character.EquippedBySpec.TryGetValue(spec.Id, out var equipment) && equipment is not null &&
-                equipment.All(pair => Enum.IsDefined(pair.Key) && !string.IsNullOrWhiteSpace(pair.Value)))) &&
+            ValidEquipment(character.Class, character.EquippedBySpec) &&
+            (character.CatalogSetId is null || !string.IsNullOrWhiteSpace(character.CatalogSetId)) &&
+            (character.ArchivedLoadouts is null || character.ArchivedLoadouts.All(pair => !string.IsNullOrWhiteSpace(pair.Key) && ValidEquipment(character.Class, pair.Value)))) &&
         state.Characters.Select(character => character.Id).Distinct().Count() == state.Characters.Length &&
         state.Characters.Any(character => character.Id == state.ActiveCharacterId);
+
+    private static bool ValidEquipment(CharacterClass characterClass, Dictionary<string, Dictionary<EquipmentSlot, string>>? lists) =>
+        lists is { Count: 3 } && CharacterDefinition.Specializations(characterClass).All(spec =>
+            lists.TryGetValue(spec.Id, out var equipment) && equipment is not null &&
+            equipment.All(pair => Enum.IsDefined(pair.Key) && !string.IsNullOrWhiteSpace(pair.Value)));
 }

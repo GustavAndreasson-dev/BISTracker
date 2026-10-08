@@ -6,11 +6,13 @@ public sealed class CharacterLoadouts
     private readonly Dictionary<string, Dictionary<string, Recommendation>> _lists;
     private readonly HashSet<string> _owned;
     private readonly Dictionary<string, Dictionary<EquipmentSlot, string>> _equipped;
+    private readonly HashSet<string> _knownKeys;
 
     public CharacterLoadouts(CharacterClass characterClass,
         IReadOnlyDictionary<string, IReadOnlyList<Recommendation>> lists,
         IEnumerable<string> ownedItemKeys,
-        IReadOnlyDictionary<string, Dictionary<EquipmentSlot, string>> equipped)
+        IReadOnlyDictionary<string, Dictionary<EquipmentSlot, string>> equipped,
+        IEnumerable<Recommendation>? inventoryItems = null)
     {
         ArgumentNullException.ThrowIfNull(lists);
         ArgumentNullException.ThrowIfNull(ownedItemKeys);
@@ -32,8 +34,8 @@ public sealed class CharacterLoadouts
             _equipped.Add(spec.Id, new(equipped[spec.Id]));
         }
         _owned = new(ownedItemKeys, StringComparer.Ordinal);
-        var knownKeys = _lists.Values.SelectMany(list => list.Values).Select(ItemKey).ToHashSet(StringComparer.Ordinal);
-        if (_owned.Any(key => !knownKeys.Contains(key)))
+        _knownKeys = _lists.Values.SelectMany(list => list.Values).Concat(inventoryItems ?? []).Select(ItemKey).ToHashSet(StringComparer.Ordinal);
+        if (_owned.Any(key => !_knownKeys.Contains(key)))
             throw new ArgumentException("Ownership contains an unknown item variant.");
         foreach (var spec in specs)
             foreach (var entry in _equipped[spec.Id])
@@ -42,6 +44,7 @@ public sealed class CharacterLoadouts
                 if (item.Slot != entry.Key || !_owned.Contains(ItemKey(item)))
                     throw new ArgumentException("Equipment must match its slot and be owned by the character.");
             }
+        foreach (var spec in specs) ValidateEquipment(spec.Id);
     }
 
     public string[] OwnedItemKeys => _owned.Order(StringComparer.Ordinal).ToArray();
@@ -62,6 +65,12 @@ public sealed class CharacterLoadouts
     public void SetOwned(string spec, string recommendationId, bool owned)
     {
         var key = ItemKey(Item(spec, recommendationId));
+        SetItemOwnership(key, owned);
+    }
+
+    public void SetItemOwnership(string key, bool owned)
+    {
+        if (!_knownKeys.Contains(key)) throw new ArgumentException("Unknown item variant.", nameof(key));
         if (owned) _owned.Add(key);
         else
         {
@@ -78,9 +87,25 @@ public sealed class CharacterLoadouts
         if (equipped)
         {
             _owned.Add(ItemKey(item));
+            var slots = _equipped[spec];
+            // Move a unique item between possible placements; retain its ownership.
+            if (item.Details?.UniqueEquipped == true)
+                foreach (var slot in slots.Where(pair => ItemKey(Item(spec, pair.Value)) == ItemKey(item)).Select(pair => pair.Key).ToArray()) slots.Remove(slot);
+            if (item.Details?.WeaponKind == WeaponKind.TwoHanded) slots.Remove(EquipmentSlot.OffHand);
+            if (item.Slot == EquipmentSlot.OffHand && slots.TryGetValue(EquipmentSlot.MainHand, out var main) &&
+                Item(spec, main).Details?.WeaponKind == WeaponKind.TwoHanded) slots.Remove(EquipmentSlot.MainHand);
             _equipped[spec][item.Slot] = item.Id;
         }
         else if (IsEquipped(spec, recommendationId)) _equipped[spec].Remove(item.Slot);
+    }
+
+    private void ValidateEquipment(string spec)
+    {
+        var items = _equipped[spec].Values.Select(id => Item(spec, id)).ToArray();
+        if (items.Any(item => item.Details?.WeaponKind == WeaponKind.TwoHanded) && _equipped[spec].ContainsKey(EquipmentSlot.OffHand))
+            throw new ArgumentException("A two-handed weapon cannot be equipped with an off-hand item.");
+        if (items.GroupBy(ItemKey).Any(group => group.Count() > 1 && group.Any(item => item.Details?.UniqueEquipped == true)))
+            throw new ArgumentException("A unique item cannot be equipped twice in one specialization.");
     }
 
     private Recommendation Item(string spec, string id) =>

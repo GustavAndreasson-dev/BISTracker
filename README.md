@@ -22,6 +22,7 @@ kan väljas; källgranskade BiS-kataloger för de nya valen återstår.
 - [Överföring från Boromir och lokal verifiering](docs/local-transfer.md)
 - [Forever och tre speclistor per karaktär](docs/forever-feasibility.md)
 - [Karaktärer och sparade speclistor](docs/characters-and-loadouts.md)
+- [Katalognivåer och säkert byte](docs/catalog-contexts.md)
 
 Dokumenten skiljer mellan beslut, förslag och verifierad implementation.
 

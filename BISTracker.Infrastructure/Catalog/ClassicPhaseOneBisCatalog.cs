@@ -53,7 +53,7 @@ public sealed class ClassicPhaseOneBisCatalog : IBisCatalog
     {
         if (item is null || item.ItemId <= 0 || string.IsNullOrWhiteSpace(item.Name) ||
             string.IsNullOrWhiteSpace(item.Source) || item.Note is null ||
-            !Enum.IsDefined(item.AcquisitionType) || !Enum.IsDefined(item.Slot) ||
+            item.AcquisitionType is not (AcquisitionType.Dungeon or AcquisitionType.Quest) || !Enum.IsDefined(item.Slot) ||
             (item.RequiredSuffix is not null && item.RequiredSuffix != "of Healing") ||
             !IsHttps(item.IconUrl) || !IsHttps(item.ItemUrl) || !IsHttps(item.RecommendationUrl))
             throw new InvalidDataException("The Phase 1 catalog contains an invalid item or acquisition source.");
