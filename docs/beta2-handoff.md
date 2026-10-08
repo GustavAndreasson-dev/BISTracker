@@ -2,8 +2,10 @@
 
 Statusdatum: 2026-10-08. Detta är startpunkten för nästa agent. Chefen har
 beställt att hela projektdokumentationen ska vara aktuell inför nästa beta.
-Nya produktfunktioner för beta 2 är ännu inte specificerade. Implementera
-inte öppna förslag som om de vore beslutade krav.
+Beta 2-scope är beslutat i [DEC-016](decisions.md#dec-016--scope-för-appens-beta-2):
+Classic fas 1 för alla 27 specs (REQ-013) samt namnbyte och borttagning av
+karaktärer (REQ-014, REQ-015). Implementera inte andra öppna förslag som om
+de vore beslutade krav.
 
 **Appens beta 2 är nästa testleverans av BISTracker.** Den ska inte blandas
 ihop med spelversionen WoW Forever eller katalogernas `releaseStage: Beta`.

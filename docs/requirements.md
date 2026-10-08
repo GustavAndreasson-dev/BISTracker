@@ -5,8 +5,8 @@ Acceptanskriterier och detaljer markerade som förslag behöver preciseras tills
 
 Aktuell bas är appversion 1.0.0 med 49 godkända beteendekontroller och lokalt
 verifierat Windows x64-ZIP. Börja med [beta 2-överlämningen](beta2-handoff.md).
-Nästa appbetas produktfunktioner och versionsnummer är ännu inte beslutade;
-följande tabeller beskriver levererad kod och kvarvarande verifieringsgränser.
+Beta 2-kraven REQ-013–REQ-015 är beslutade men inte implementerade;
+versionsnumret är ännu inte beslutat.
 
 ## Beslutade produktkrav
 
@@ -26,6 +26,16 @@ följande tabeller beskriver levererad kod och kvarvarande verifieringsgränser.
 | REQ-007 | Ha tre bestående, separata listor per karaktär, en per spec; gemensamt ägande och separat utrustning är bekräftat. | [CharacterLoadouts](../BISTracker.Domain/Tracking/CharacterLoadouts.cs), [CharacterTrackerService](../BISTracker.Application/Characters/CharacterTrackerService.cs), [JsonWorkspaceRepository](../BISTracker.Infrastructure/Persistence/JsonWorkspaceRepository.cs) och val i UI. **Listfunktionen implementerad**, även tomma listor när katalog saknas. | Tre olika listor återlästa efter omstart; delat ägande, utrustningsisolering, karaktärs-/versionsisolering, migration, sparfel och återställda UI-val verifierade. |
 | REQ-008 | Skaffa Forever nivå 30-kataloger för alla 27 specs. | [27 inbyggda JSON-kataloger](../BISTracker.Infrastructure/Catalog/Data/Forever/level30) läses av [ForeverCatalogReader](../BISTracker.Infrastructure/Catalog/ForeverCatalogReader.cs) och visas via CharacterCatalog. 1 655 råa alternativrader, 1 635 efter godkänd Dungeon/Quest/Crafting-policy och handkrav. **Aktiverat och slotgranskat.** | Alla 27 kataloger och 54 fraktionsset verifierade; [katalograpporten](forever-level30-catalogs.md), [releasekontrollen](data/forever-slot-release-audit.json) och [vittneskontrollen](data/forever-slot-witness-integration.json). Alternativen är inte en egen optimal ranking. |
 | REQ-009 | Förbered nivå 60-import när källgranskad data blir tillgänglig, utan att skriva över nivå 30-listorna. | [ICatalogPackImporter](../BISTracker.Application/Catalog/ICatalogPackImporter.cs), [CatalogPackImporter](../BISTracker.Infrastructure/Catalog/CatalogPackImporter.cs), ForeverCatalogReader, CatalogSet, CharacterTrackerService och ViewModel ger atomisk import, nivåval och separata utrustningslistor. CharacterCatalog upptäcker import utan omstart. **Implementerat; verklig nivå 60-data saknas.** | 49 beteendekontroller och renderad UI-kontroll godkända, inklusive faktisk Rogue-diskpersistens över tre specs och nivå 30/60. Importbatcher, dubbletter, avbrott, bevarade original, nivåisolering och sparfel verifieras. Ett glest testpack förblir synligt ofullständigt; ändrad metadata uppdateras även med samma rad-ID:n. Testdata ingår inte i produkten; [importkontraktet](catalog-contexts.md). |
+
+## Appens beta 2
+
+Beställt av Chefen 2026-10-08 enligt [DEC-016](decisions.md#dec-016--scope-för-appens-beta-2).
+
+| ID | Krav | Implementation | Verifiering |
+| --- | --- | --- | --- |
+| REQ-013 | Visa pre-raid BiS i WoW Classic (Vanilla) fas 1, nivå 60, för alla nio klasser och 27 specs. Källpolicy: Dungeon, Quest och Crafting. Holy Priest utökas och behåller sina 17 befintliga rad-ID:n. | **Ej påbörjat.** | Acceptans: varje spec har en källbelagd katalog eller visas uttryckligen som ofullständig; inga påhittade items; slot- och fraktionsgranskning som för Forever; en sparfil från 1.0.0 med Holy Priest-framsteg laddas oförändrad. |
+| REQ-014 | Spelaren kan byta namn på en karaktär. Version och klass kan inte ändras. | **Ej påbörjat.** | Acceptans: samma namnregler som vid skapande; ägande och utrustning oförändrade; sparfel återställer namnet och visar fel. |
+| REQ-015 | Spelaren kan ta bort en karaktär permanent efter en bekräftelse, även den sista. Utan karaktärer visar appen ett tomt läge med möjlighet att skapa en karaktär. | **Ej påbörjat.** | Acceptans: övriga karaktärers data orörd; aktiv karaktär byts till en kvarvarande; noll karaktärer sparas och återläses; sparfel återställer listan och visar fel. |
 
 ## Beslutade tekniska krav och riktning
 

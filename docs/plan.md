@@ -2,7 +2,9 @@
 
 Statusdatum: 2026-10-08. Version 1.0.0 är första färdiga testleveransen.
 Nästa agent börjar med [överlämningen inför appens beta 2](beta2-handoff.md).
-Nya beta 2-funktioner och programversionsnummer är ännu inte beslutade.
+Beta 2-scope är beslutat i [DEC-016](decisions.md#dec-016--scope-för-appens-beta-2): Classic för alla 27 specs
+(REQ-013) samt namnbyte och borttagning av karaktärer (REQ-014, REQ-015).
+Programversionsnumret är ännu inte beslutat.
 
 ## Nuläge
 
