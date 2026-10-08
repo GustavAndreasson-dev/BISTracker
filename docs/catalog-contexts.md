@@ -1,5 +1,9 @@
 # Katalognivåer och säkert byte
 
+Aktuell överlämning 2026-10-08: [beta 2-handoff](beta2-handoff.md).
+Portabel 1.0.0 är verifierad från kod `e25c134`, dokumenterad i `043d859`;
+beta 2-funktioner är inte beslutade.
+
 Beställt av Chefen 2026-10-08: Forever nivå 30 nu och nivå 60-import när data finns.
 Modell, katalogläsning och import är implementerade. Alla 27 beta-kataloger på
 nivå 30 är aktiva. Verkliga nivå 60-kataloger inväntar källgranskad data.
@@ -9,15 +13,25 @@ Forever nivå 60. `ICharacterCatalog` kan erbjuda nya källgranskade set. Val av
 ett set från fel spelversion avvisas. Spelversion, nivå och beta/launch anges
 uttryckligt; beta-listor presenteras inte som slutliga pre-raid-rankningar.
 
+De levererade standard-ID:na är `classic-phase1-level60`,
+`forever-beta-level30` och **`forever-launch-level60`**. Det väntande nivå60-valet
+är Launch, inte Beta. Läsaren tillåter även separat källgranskad Beta60-import,
+men en sådan import fyller inte automatiskt den valda Launch60-kontexten.
+
 Karaktären behåller gemensamt itemägande inom sin spelversion, men tre egna
 utrustningslistor per katalogset. Vid nivåbyte arkiveras tidigare listor och
 återställs när spelaren byter tillbaka. Det aktiva setet sparas. Borttaget
 ägande rensar itemvariantens utrustning i alla specs och arkiverade nivåer.
 
-JSON-schema 1 utökas med frivilliga `catalogSetId` och `archivedLoadouts`.
+JSON-schema 1 har bakåtkompatibla frivilliga `catalogSetId` och `archivedLoadouts`.
 Äldre filer utan dem använder versionens ursprungliga set och bevarar
 karaktärs-ID, ägande och utrustning. Okända eller borttagna sparade set
 rapporteras som fel i stället för att framsteg raderas. Inget databasschema ändras.
+
+Ägande är booleskt: ett exemplar per fysisk itemvariant, identifierad av
+item-ID/suffix. Gamla dubbelutrustningar och sparade referenser till uteslutna
+items avvisas med filen bevarad. Ingen automatisk reparations- eller mängdmigration
+ingår i den levererade katalogbytesfunktionen.
 
 Domänen hanterar källbelagda tvåhands/offhand-konflikter och unika items.
 Utrusta tvåhandsvapen avmarkerar vald specs offhand; utrusta offhand avmarkerar
@@ -42,6 +56,12 @@ filer och `ForeverCatalogReader` översätter JSON till domänens rekommendation
 `CharacterCatalog` upptäcker importen i samma appinstans. Även en redan vald,
 tidigare tom nivå 60-lista uppdateras. Underlaget ska först granskas enligt
 projektreglerna och hämtas separat före import.
+
+Det gäller när importens stage/nivå/klass/spec matchar det valda setet.
+Verkliga nivå60-Launch-guider/items finns ännu inte i produkten; verifierade
+importprov använder tydligt märkta TEST ONLY-fixturer, aldrig produktpack.
+En absolut `BISTRACKER_DATA_DIRECTORY`-override flyttar både framsteg och
+`Catalogs` till den isolerade profilen. Utan override behålls LocalAppData.
 
 Packidentiteter är oföränderliga: en dubblett mot ett inbyggt pack, befintlig
 import eller annan fil i batchen avvisas. Nivå 30 skrivs aldrig över vid
@@ -97,7 +117,7 @@ Antal exemplar modelleras inte. Samtidiga importer från flera appinstanser
 
 ## Verifiering
 
-Release-build godkänd utan varningar/fel; samtliga 46 konsolscenarier passerar.
+Release-build godkänd utan varningar/fel; samtliga **49** konsolkontroller passerar.
 Sex `CatalogContextScenarios` verifierar nivåisolering, äldre JSON, delat ägande,
 arkiverade markeringar, tvåhands-/unique-regler och oförändrat tillstånd efter
 sparfel. Sju `ForeverCatalogScenarios` verifierar alla 27 produktpack, filtrering,
@@ -105,3 +125,11 @@ uppdatering av samma katalogprovider, dubbletter, ogiltiga/blandade pack och avb
 filförändringar. Isolerad WinUI-kontroll verifierar riktiga nivåval och import;
 dess fiktiva nivå 60-prov levereras aldrig som produktdata.
 Se [katalograpport](forever-level30-catalogs.md) och [verifiering](verification.md).
+
+De tre distributionskontrollerna omfattar faktisk diskpersistens och Rogue
+med tre specs över nivå30/60; kontrollhostens kärn-DLL:er matchar det exakta
+1.0.0-paketet enligt [leveransrapporten](data/portable-release-verification.json).
+Alla 27 Forever30-kataloger använder godkänd Dungeon/Quest/Crafting-policy
+och har 54 granskade fraktionsset. Uppdatering av befintliga pack-ID:n,
+gamla ogiltiga framsteg och nya beta 2-funktioner behöver Chefens beslut;
+denna överlämning beställer ingen sådan implementation.

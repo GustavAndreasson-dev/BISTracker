@@ -5,6 +5,11 @@ Windows 11 x64. Ren mottagardator är inte provad. Paketet kan delas för
 vänners testning med denna begränsning; generell Windows-kompatibilitet
 är ännu inte verifierad.
 
+Detta dokument är den daterade distributionsbasen för v1 inför
+[appbeta2](beta2-handoff.md). Kodcommit `e25c134` och tidigare
+leveransdokumentation `043d859` hör till version 1.0.0. Nästa appversion och
+beta2-funktioner är inte beslutade; dokumentrevisionen paketerar ingen ny app.
+
 | Slutpaket | Värde |
 | --- | --- |
 | Fil | `BISTracker-1.0.0-win-x64.zip` |
@@ -20,7 +25,9 @@ ZIP-filens SHA-256:
 81c6bb0bfc145ee313737d362c930af9c9fe4960f6146ad7613b1e886314c51f
 ```
 
-Leveransmappen är ignorerad av Git och ligger kvar lokalt. Dela endast ZIP-filen;
+Leveransmappen är ignorerad av Git och ligger kvar lokalt. Den följer inte
+med vid Git-kloning; använd publiceringsskriptet för att skapa en ny kandidat
+om den lokala artefakten saknas. Dela endast ZIP-filen;
 checkhost och rapportmappar behövs inte för att köra appen. Checksumma finns
 även i en separat `.zip.sha256`-fil bredvid arkivet.
 
@@ -103,7 +110,7 @@ Resultat nedan gäller det angivna ZIP-paketet från committad kod. Tester från
 | Paketets fullständiga filer, storlek och SHA-256 | Godkända; 517 filer och slutmetadata enligt tabellen ovan |
 | ZIP-extraktion till ny mapp och kontroll av filinnehåll | Godkänd; SHA-256 för varje fil, sökväg med blanksteg |
 | Start av extraherad normal app utanför byggmappen | Godkänd; verklig WinUI-checkbox, ingen PreviewRepository |
-| Isolerade UI-/katalogkontroller från publicerat innehåll | 49 beteendekontroller och 27 slotkataloger godkända; tre verkliga Rogue-specs med diskpersistens |
+| Publicerat checkhost och katalogkontroller | 49 beteendekontroller och 27 slotkataloger godkända; tre verkliga Rogue-specs med diskpersistens |
 | Karaktärsdata sparas, återläses efter omstart och bevaras vid byte av programmapp | Godkänd; checkboxens diskdata återläst i två omstarter, ordinarie spelarprofil oförändrad |
 | Bekräftad Windows-version och medföljande runtime-filer | Windows 11 Pro 10.0.26200; coreclr, hostfxr, hostpolicy, WindowsAppRuntime och WinUI laddades från paketet |
 | Ren mottagardator utan utvecklingsverktyg eller tidigare runtimes | Ej genomfört |
@@ -121,7 +128,10 @@ webbsidor. Verkliga Forever nivå 60-kataloger ingår fortfarande inte.
 
 ## Återskapa och verifiera leveransen
 
-Kör från repot med committad kod och ren arbetskatalog:
+Kör från repot med committad kod och ren arbetskatalog. För beta2 anger
+Chefen nästa programversionsnummer; använd `-Version` enligt
+[överlämningen](beta2-handoff.md). Att återskapa version 1.0.0 ger en ny
+kandidat och ersätter inte det befintliga paketets checksumma eller bevis.
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/distribution/Publish-PortableRelease.ps1
@@ -133,8 +143,10 @@ policy, installerar inga certifikat och ändrar inga Windows-funktioner.
 Publicering använder en ny GUID-mapp under ignorerade `artifacts/`.
 Checkhost, rapporter och testprofiler följer inte med i ZIP-filen.
 Varje prov får en ny rapportmapp med PENDING/PASS/FAIL, så gamla resultat
-inte skrivs över. Slutlig PASS kräver alla 49 beteendekontroller och
-27 kompletta Forever-kataloger.
+inte skrivs över. Även felvägar skriver FAIL; spelarprofilens kontroll ligger
+i `finally`. Slutlig PASS kräver v1-basens 49 beteendekontroller, inklusive
+alla tre distributionsscenarier, och 27 kompletta Forever-kataloger. Om beta2
+utökar testsviten ska skriptets förväntade antal uppdateras med ändringen.
 
 UI-provet använder `BISTRACKER_DATA_DIRECTORY` enbart i den teststartade
 processen. Appen accepterar då en absolut datamapp; vanlig start behåller
@@ -143,3 +155,14 @@ process-ID och fönster. De fem observerade runtime-filerna måste ligga i
 den extraherade programmappen. En PE-inventering kontrollerar vanliga och
 fördröjda VC-runtimeimporter i 275 binärer; inga saknade lokala VC-beroenden
 hittades. Detta är en statisk kontroll, inte bevis för körning på ren dator.
+
+## Användning inför appbeta2
+
+Behåll v1-paketet och [dess verifieringsrapport](data/portable-release-verification.json)
+som jämförelseunderlag. Efter en faktisk beta2-ändring behövs nya rapporter
+för den committade koden och det exakta nya ZIP-paketet. Byte mellan
+programversioner måste provas separat från den redan verifierade
+omextraktionen av samma ZIP. Ren Windows x64-miljö, manuell UI/DPI-granskning
+och eventuella nya krav prioriteras med Chefen enligt [beta2-handoff.md](beta2-handoff.md).
+Ingen ny kod, paketering, distribution eller fjärrsynk har utförts genom
+uppdateringen av detta dokument.

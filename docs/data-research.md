@@ -1,8 +1,26 @@
 # Källresearch för Holy Priest pre-raid
 
-Granskningsdatum: 2026-10-07. Underlag för REQ-001, inte en beslutad BiS-lista.
-Ingen itemkatalog, ranking eller kod har skapats. Utkastet ska fortsatt använda
-tydligt märkt exempeldata enligt [draft-contract.md](draft-contract.md).
+Ursprungligt granskningsdatum: 2026-10-07. Uppdaterat för överlämning
+2026-10-08. Rapporten nedan bevarar den första researchen för REQ-001;
+vid den granskningen fanns ännu ingen riktig itemkatalog. Anvisningen om
+exempeldata i [draft-contract.md](draft-contract.md) gällde det historiska utkastet.
+
+## Aktuell roll inför beta 2
+
+Starta nästa agents arbete i [beta2-handoff.md](beta2-handoff.md). Den här
+filen förklarar varför spelkontext, rekommendation och itemmetadata behöver
+separata källor; den är inte en instruktion att återgå till demoitems.
+Classic Holy Priest har nu 17 aktiva fas 1-mål från dungeons/quests enligt
+[phase1-items.md](phase1-items.md) och [catalog-integration.md](catalog-integration.md).
+Forever har 27 egna nivå 30-kataloger med godkänd crafting och 54 verifierade
+fraktionsset; Classic-källor används inte som Forever-rekommendationer.
+
+Den verifierade baslinjen är portabel version **1.0.0**, kod/runtime från
+`e25c134` och leveransdokumentation från `043d859`: 49 beteendekontroller och
+distributionstest på utvecklingsdatorns Windows 11. Se
+[leveransrapport](data/portable-release-verification.json). Ren dator,
+Windows 10 och verklig nivå 60-data är inte verifierade. Beta 2-funktioner
+är ännu inte beslutade av Chefen; gamla öppna frågor nedan är inte nya krav.
 
 ## Källbelagda observationer
 
@@ -37,7 +55,7 @@ granskningens frågor, inte återkallade beslut.
   Slutsats: importera inte guidens anskaffningskolumn utan separat kontroll.
   Samma itemnamn räcker inte heller som identitet för klassvarianter.
 
-## Rekommenderad metod — förslag, inte beslut
+## Historiskt metodförslag från första granskningen
 
 1. Lås en uttrycklig kontext: Vanilla Classic-variant, tillgänglighetsläge/fas,
    referensdatum och Holy-bygge. Använd inte enbart etiketten ”Classic”.
@@ -68,11 +86,12 @@ granskningens frågor, inte återkallade beslut.
 - Ska katalogen täcka båda fraktionerna och professionsberoende alternativ,
   eller anpassas till en viss karaktär?
 
-## Verifiering och begränsningar
+## Den ursprungliga granskningens verifiering och begränsningar
 
 Projektets README, arbetsregler och relevanta docs är lästa. Guiderna och
 Blizzards FAQ har öppnats och relevanta avsnitt jämförts; Anniversary-artikeln
 har granskats via sökverktygets sidinnehåll. Itemposten för 18469 har öppnats som
 stickprov. Ingen fullständig item-/quest-/fasrevision eller verifiering i spelet
-har gjorts. Rapporten fastställer därför ingen skarp katalog och kan inte
-användas som bevis för att REQ-001 är implementerat.
+har gjorts i den ursprungliga granskningen. Denna research är därför inte
+ensam implementationsbevis för REQ-001. Senare katalog-, lagrings-, UI- och
+distributionstester redovisas i [verification.md](verification.md).

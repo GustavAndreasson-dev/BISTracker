@@ -5,6 +5,13 @@ rekommendationsrader som mål: exempelvis Rogue Combats 39 alternativ syntes
 som 39 mål trots att karaktären har högst 17 utrustningsplatser. Den tidigare
 bedömningen att appen var redo att dela var för tidig.
 
+Nuläge inför [appbeta2](beta2-handoff.md): sloträttningen ingår i den
+verifierade portabla appversionen 1.0.0 från kodcommit `e25c134`.
+Releasekontrollen godkänner samtliga 27 Forever-kataloger och den separata
+integrationskontrollen 54 fraktionsset. Detta dokument beskriver regler och
+acceptanskriterier som nästa agent ska bevara vid beta2-ändringar; det är
+inte en beställning av nya funktioner eller en ny godkänd beta2-release.
+
 ## Korrigerade regler
 
 Chefen har därefter godkänt crafting för Forever. Det aktiva urvalet är
@@ -48,7 +55,7 @@ kan inte tyst återställas som en verifierad utrustningskombination.
 Befintliga filer ändras inte vid läsfel. Ett äldre tillstånd som markerar
 samma variant i två slots avvisas och originalet bevaras; antal exemplar och
 en eventuell sådan migration kräver ett separat beslutat arbetsflöde.
-Inget databas- eller framstegsfilformat har ändrats.
+Sloträttningen krävde ingen databas- eller framstegsformatändring; v1 använder fortfarande JSON-schema 1.
 
 ## Releasegranskning
 
@@ -57,18 +64,20 @@ maskinläsbart resultat med målgrupper, handkrav, undantag, fraktionsspecifika
 luckor och okända questfraktioner:
 
 ```powershell
-dotnet run --project BISTracker.Checks/BISTracker.Checks.csproj -c Release -- --catalog-release-audit docs/data/forever-slot-release-audit.json
+dotnet run --project BISTracker.Checks/BISTracker.Checks.csproj -c Release -- --catalog-release-audit artifacts/beta2-slot-audit.json
 ```
 
+Använd en ny rapportfil vid omkörning så att v1-granskningen bevaras.
 Exitkod 1 och `releaseReady: false` betyder att katalogerna blockerar delning.
-Passing beteendekontroller betyder att kontrollen fungerar; det betyder inte
+Godkända beteendekontroller betyder att kontrollen fungerar; det betyder inte
 att katalogerna är fullständiga. Full slotgranskning, alla tester, renderad
 UI-kontroll och distributionstest måste vara godkända före delning.
 
 `EquipmentPlanScenarios` verifierar gruppering, saknade slots, ägda alternativ,
 kapacitet för ringar/trinkets, unique, handkombinationer och fraktionsisolering.
 Release-build för modelländringen passerar utan varningar/fel och projektets
-46 beteendekontroller är godkända. Den slutliga
+49 beteendekontroller är godkända, inklusive de tre distributionsscenarierna.
+Den slutliga
 [releasegranskningen](data/forever-slot-release-audit.json) passerar för alla
 27 kataloger, med noll luckor och noll okända questfraktioner. Den separata
 [integrationskontrollen](data/forever-slot-witness-integration.json) verifierar
@@ -76,6 +85,27 @@ Release-build för modelländringen passerar utan varningar/fel och projektets
 Questkedjor, valbara belöningar, recept, bindning och yrkeskrav granskas där;
 integrationskontrollen ersätter inte de källbevisen eller spelklientkontroll.
 Den slutliga [UI-kontrollen](previews/slots-ui-checks.txt) passerar med verkliga
-Mage-/Rogue-/Hunter-kataloger och isolerat framsteg. Distributionstest återstår.
-Specialisttrådarna granskar varsin grupp om nio kataloger; huvudtråden äger
-integration, granskning av hela resultatet och beslut om faktiskt verifierat nuläge.
+Mage-/Rogue-/Hunter-kataloger och isolerat framsteg. Det separata
+[distributionstestet](distribution.md) är också godkänt för v1: normala
+appens faktiska checkbox, diskpersistens, två omstarter och samma ZIP i en ny
+programmapp på Windows 11 Pro 10.0.26200. Ordinarie spelarprofil var oförändrad.
+[Paketeringsrapporten](data/portable-release-verification.json) gäller exakt
+version 1.0.0; ren mottagardator och migration mellan olika versioner är oprövade.
+
+Källarbetet genomfördes av tre specialisttrådar med nio kataloger var och
+huvudtrådens gemensamma integration. För nästa agent är de sparade rapporterna
+underlag; fortsatt samordning och nya krav följer [överlämningen](beta2-handoff.md).
+
+## Acceptans vid nästa katalog- eller UI-ändring
+
+Bevara ett mål per relevant slot, faktisk variantkapacitet, unique på bas-ID,
+handplan, fraktionsseparation och granskade crafting-/questvillkor. Katalogens
+metadataändringar ska slå igenom även om rekommendations-ID:n behålls. Vid
+ändrade identiteter eller sparformat behöver migreringsbeteendet beslutas och
+verifieras; befintliga filer får inte skrivas över för att få testet att passera.
+
+Kör betydelsefulla domän-/lagringsscenarier, den fulla kataloggranskningen,
+setintegrationen och relevant UI-kontroll för den faktiska ändringen. Inför
+nästa delbara paket behövs ett nytt distributionstest. Fraktionsväljare,
+antalshantering och andra öppna produktförslag är inte redan implementerade
+krav för appbeta2; Chefen beslutar scope i [beta2-handoff.md](beta2-handoff.md).

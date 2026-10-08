@@ -1,10 +1,27 @@
 # Holy Priest pre-raid: fas 1, dungeons och quests
 
-Granskningsdatum: 2026-10-07. Forskningsunderlag för huvudtrådens katalogarbete;
-ingen kod eller katalogimport ingår i denna fil.
+Ursprungligt granskningsdatum: 2026-10-07. Uppdaterat för överlämning
+2026-10-08. Denna fil bevarar källunderlaget till Classic-katalogen;
+produktfil och kod beskrivs i [catalog-integration.md](catalog-integration.md).
 
 De 17 huvudvalen är nu integrerade i appen. Denna fil bevarar researchen;
 aktuell kodkoppling och UI-verifiering beskrivs i [catalog-integration.md](catalog-integration.md).
+
+## Aktuell roll inför beta 2
+
+[beta2-handoff.md](beta2-handoff.md) är nästa agents startpunkt. Bevara dessa
+17 Classic Holy Priest-mål, fas 1, dungeons/quests, tre of Healing-varianter,
+UBRS-villkor och Stormragers fraktionsvägar när appen ändras. Crafting är
+godkänt för Forever, inte för denna Classic-lista. Forever har separat
+beta nivå 30-data för alla 27 specs och 54 verifierade fraktionsset; detta
+Classic-underlag får inte användas som ersättning för dess items.
+
+Baslinjen är portabel **1.0.0**, kod/runtime `e25c134`, dokumenterad i
+`043d859`, med 49 beteendekontroller och godkänd distribution på Windows 11.
+[Leveransrapporten](data/portable-release-verification.json) bevisar inte
+körning på ren dator eller Windows 10; verklig nivå 60-data saknas.
+Chefens beta 2-funktioner är ännu inte beslutade. Den historiska researchens
+begränsningar nedan ska skiljas från den senare fungerande integrationen.
 
 ## Beslutad kontext och urvalsmetod
 
@@ -55,9 +72,10 @@ BoP i de granskade tooltipsen.
 | Wand | [Stormrager — 16997](https://classicdb.ch/?item=16997) | Olika questkedjor för Alliance och Horde | Icy Veins fas 1; se fraktion och Raid-quest nedan. |
 
 Ring 1/2 och Trinket 1/2 är visningspositioner, inte olika typer av itemslots.
-Unique-märkningen måste beaktas om alternativ senare tillåter dubblering.
-Main Hand och Off Hand utgör ett par; ett framtida tvåhandsalternativ ersätter
-båda. Denna lista introducerar inget tvåhandsalternativ.
+Unique-märkningen måste bevaras vid framtida ändringar. Appens gemensamma
+utrustningsregler hanterar nu variantkapacitet, Unique och tvåhand/offhand
+för alternativa Forever-mål. Classic-listan har fortsatt ett fast main-hand/
+off-hand-par och introducerar inget tvåhandsalternativ.
 
 ## Kontrollkällor för anskaffning
 
@@ -94,10 +112,10 @@ upp till **10 spelare**. Det är inte en vanlig femmannainstans. Gruppens
 tillträde förutsätter att någon har Seal of Ascension. Detta stöds av
 [Wowheads ursprungliga Classic-guidepresentation från 2019](https://www.wowhead.com/classic/news/classic-guide-spotlight-upper-blackrock-spire-strategy-guide-292714).
 
-Förslaget är att låta UBRS ingå som dungeon i produktens pre-raid-urval,
-med tydlig information om tiomannagruppen. Detta behöver vara ett medvetet
-scopeval i huvudtråden: utan UBRS faller Waist, Ring 2 och Trinket 1 i
-tabellen ovan bort. Listan ska inte presentera dem som femmanna-dungeonloot.
+Det ursprungliga förslaget var att inkludera UBRS med tiomannavillkor.
+Det har genomförts enligt [DEC-009](decisions.md#dec-009--aktivera-den-riktiga-listan):
+Waist, Ring 2 och Trinket 1 i tabellen ingår i produktkatalogen. De får
+fortsatt inte beskrivas som femmanna-dungeonloot.
 
 ### Of Healing är en del av rekommendationen
 
@@ -177,11 +195,12 @@ betyder inte att bilden hämtats och visuellt jämförts med itemet.
 | 11928 | [ikon](https://static.icy-veins.com/images/classic/icons/inv_mace_13.jpg) | Cache miss |
 | 16997 | [ikon](https://static.icy-veins.com/images/classic/icons/inv_wand_05.jpg) | Cache miss |
 
-För ersättarna 18727, 13346 och 12589 samt alternativen finns inga separat
-verifierade direkta ikon-URL:er i denna rapport. Huvudtrådens item-API-arbete
-behöver hämta och kontrollera dessa; URL:er ska inte konstrueras från minnet.
+Den första researchen saknade separat verifierade direkta ikon-URL:er för
+ersättarna 18727, 13346 och 12589 samt alternativen. Det efterföljande
+[metadataimportprovet](data-import.md) verifierade alla 18 item-/ikonposter.
+Tabellen ovan bevarar det äldre provet, inte dagens bildstatus.
 
-## Verifieringsnivå och kvarstående integration
+## Källgranskningens verifieringsnivå och kvarstående databegränsningar
 
 - De 17 huvudraderna har verkliga bas-ID:n, slotar och individuellt lästa
   ClassicDB-fasetiketter. De tre bortfiltrerade platserna har namngivna
@@ -195,8 +214,10 @@ behöver hämta och kontrollera dessa; URL:er ska inte konstrueras från minnet.
   har samma begränsning. Ingen verifiering i en fas 1-spelklient är gjord.
 - UBRS-definition, Raid-quest för Alliance, slumpbonusar, fraktioner och
   ikonernas hämtbarhet behöver bevaras i katalogens presentation. Fulla
-  questkedjor, suffix-ID:n och alla bildresurser är inte slutverifierade.
-- Ingen kod, item-API-integration eller färdig UI har verifierats här.
-  Huvudtråden ansvarar för gemensamma krav-/beslutsdokument, strukturkarta,
-  implementation, tester och commits. Denna fil fastställer inte att
-  REQ-001 är implementerat.
+  questkedjor och numeriska suffix-ID:n är inte slutverifierade i en klient.
+  Item-/ikonimporten och visningen har däremot verifierats i senare steg.
+- Filens ursprungliga research verifierade inte kod eller färdig UI.
+  Den nu aktiva katalogen, manuell suffixidentitet, lagring och presentation
+  är senare införda och verifierade enligt [verification.md](verification.md).
+  Ingen ny Classic-ranking eller ny anskaffningsrevision har gjorts vid
+  denna dokumentöverlämning.

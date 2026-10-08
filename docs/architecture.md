@@ -1,6 +1,9 @@
 # Arkitektur och domänspråk
 
-Status 2026-10-08: Classic-katalogen, Forever beta nivå 30 för alla 27 specs,
+Status inför beta 2, 2026-10-08: portabel version **1.0.0** är levererad från
+kodcommit `e25c134`; leveransdokumentationen finns i `043d859`.
+Nästa agents startpunkt är [överlämningen inför beta 2](beta2-handoff.md).
+Beta 2-funktioner är ännu inte beslutade. Classic-katalogen, Forever beta nivå 30 för alla 27 specs,
 separata katalogset och katalogimport är implementerade. Verklig nivå 60-data
 saknas. DDD och SOLID är beslutade principer.
 Mappindelningen inom lagren ska följa [strukturkartan](project-structure.md).
@@ -43,12 +46,13 @@ kombination med itemkapacitet, unique, handkrav och separat fraktionstillgång.
 En enda fysisk variant räknas inte som två ägda eller utrustade exemplar.
 Se [korrekthetsregler och releasekontroll](slot-catalog-correctness.md).
 
-- Utrustad innebär erhållen; avmarkering av erhållen tar bort aktiv utrustning för itemet.
+- Ägande är booleskt och representerar ett exemplar per item-ID/suffix inom karaktären; antal exemplar modelleras inte.
+- Utrustad innebär erhållen; avmarkering av erhållen tar bort variantens utrustning i alla specs och aktiva/arkiverade katalogset.
 - Avmarkering av utrustad behåller erhållen.
 - Ett item per EquipmentSlot kan vara utrustat. Ring- och trinketplatser är separata slotvärden; en rekommendation på båda platserna kan uttrycka alternativa placeringar.
 - Unique-regeln gäller basitem-ID oavsett suffix inom en spec. Att utrusta det i en annan plats flyttar utrustningen; separat variantägande och andra specs bevaras.
 - Tvåhandsvapen och offhand kan inte vara utrustade samtidigt i en spec. Ett byte rensar den oförenliga platsen, men bevarar ägande och andra specs.
-- Okända katalog-ID:n och inkonsekvent återställt tillstånd avvisas.
+- Okända katalog-ID:n och inkonsekvent återställt tillstånd avvisas. Äldre dubbelutrustade varianter och referenser till borttagna items är fel; originalfilen bevaras utan tyst reparation.
 - CharacterTrackerService serialiserar läs/ändra/spara, validerar alla karaktärer och returnerar snapshot först efter lyckad sparning.
 - JSON-lagringen skriver temporär fil och ersätter målet. Korrupt data rapporteras och bevaras.
 - UI visar fel vid läs- eller skrivproblem och uppdaterar endast framsteg efter lyckat användningsfall.
@@ -152,10 +156,36 @@ Infrastructure sköter JSON och atomisk filersättning. Gamla framsteg kopieras 
 gång utan att originalet ändras. Reglerna kräver varken UI eller filsystem för
 att verifieras. Detaljer och begränsningar finns i [listmodellen](characters-and-loadouts.md).
 
-Projektets 46 beteendekontroller och renderad UI-kontroll är godkända.
+Projektets **49 beteendekontroller** och lokala distributionsprov är godkända.
 [ForeverCatalogScenarios](../BISTracker.Checks/Scenarios/ForeverCatalogScenarios.cs)
 verifierar alla 27 kataloger, importvalidering, batchpublicering, duplicerade pack,
 avbrott och uppdatering utan omstart.
 [CatalogContextScenarios](../BISTracker.Checks/Scenarios/CatalogContextScenarios.cs)
 verifierar nivåisolering, suffix/unique- och tvåhandsregler, återläsning samt att
 sparfel bevarar aktiva och arkiverade listor.
+
+De tre [DistributionScenarios](../BISTracker.Checks/Scenarios/DistributionScenarios.cs)
+provar absoluta isolerade datavägar, verklig Classic-start och faktisk JSON-
+återläsning samt Forever Rogue med tre specs och separata nivå30/60-listor.
+Nivå60-fixturer är endast testdata. Alla 27 Forever30-kataloger har separata
+granskade fraktionsvittnen, totalt **54 möjliga set**; detta är ingen optimal ranking.
+
+## Leveransgräns och ansvar inför beta 2
+
+Normal WinUI-start väljer `CharacterTrackerService` och riktig JSON-lagring.
+`BISTRACKER_DATA_DIRECTORY` kan ange en absolut isolerad profil; utan override
+används `%LOCALAPPDATA%\BISTracker`. Relativa profiler avvisas. Framsteg och
+importerade pack ligger utanför programmappen, så nytt extraherat program inte
+ersätter spelarens filer.
+
+Publiceringen använder `PublishTrimmed=false` och inkluderar .NET samt Windows
+App SDK/WinUI. [Portabel leveransverifiering](data/portable-release-verification.json)
+kopplar exakt ZIP till 49 kontroller, identiska Domain/Application/Infrastructure-
+DLL:er i kontrollhosten och verklig produktions-UI-sparning/omstart med isolerad
+diskprofil. Ren mottagardator och äldre Windows har inte verifierats.
+
+Huvudtråden samordnar nya krav, gränser, integration och commits. Domänregler
+ska fortsatt ligga i Domain, användningsfall i Application, filformat och
+import i Infrastructure och UI i Presentation. Datakällors riktighet kräver
+källgranskning utöver formatvalideringen. Ingen mängdmodell, reparationsmigration,
+databas eller annan beta 2-funktion är beställd genom detta dokument.

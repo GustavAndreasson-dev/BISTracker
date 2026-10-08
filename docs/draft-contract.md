@@ -1,41 +1,59 @@
-# Första utkastet — arbetsfördelning och kontrakt
+# Historiskt första utkast — arbetsfördelning och kontrakt
+
+**Historiskt dokument från 2026-10-07, inte nya arbetsuppgifter.** Inför beta 2
+är [beta2-handoff.md](beta2-handoff.md) startpunkten. Den tidigare filfördelningen
+och signaturlistan nedan får inte användas för att återskapa utkastet eller
+återuppta gamla agentuppdrag. Nya beta 2-funktioner är ännu inte beslutade.
 
 Datum: 2026-10-07. Chefen har beställt plan, separata Codex-trådar med
 instruktioner och ett första apputkast. Tracking omfattar både erhållna och
 utrustade items.
 
-Detta är kontraktet för det första utkastet och dess regressionstester.
-Normal app använder nu den riktiga katalogen enligt
-[catalog-integration.md](catalog-integration.md), med ItemDetails och en
-separat fas 1-framstegsfil. Exempelkatalogen nedan styr inte produktens UI.
+Detta var kontraktet för första utkastet. SampleBisCatalog och den äldre
+TrackerService/CharacterProgress-vägen finns kvar för regressioner och
+legacy-validering; de styr inte normal produktions-UI.
 
-## Utkastets omfattning
+Levererad 1.0.0 från kod `e25c134` och dokumentation `043d859` använder
+CharacterCatalog, CharacterTrackerService och JsonWorkspaceRepository:
+Classic Holy Priest och 27 Forever30-kataloger med crafting, 54 granskade
+fraktionsset, gemensamt boolägande per itemvariant och tre separata speclistor
+per katalogset. Schema1-filen är characters-v1.json i LocalAppData, eller en
+absolut BISTRACKER_DATA_DIRECTORY-testprofil. Gamla dubbletter och borttagna
+itemreferenser ger fel med originalfilen bevarad. Verklig nivå60-Launch-data
+saknas; importen är verifierad med isolerade TEST ONLY-fixturer.
+Aktuellt kontrakt finns i [arkitekturen](architecture.md),
+[listmodellen](characters-and-loadouts.md) och [katalogkontexterna](catalog-contexts.md).
 
-Fortsätt i befintlig WinUI-app. Visa utrustningsplatser, sökning, sammanfattning
-och kontroller för erhållen/utrustad. Spara framsteg lokalt i JSON för en
-demokaraktär. Visa tydligt att katalogen är exempeldata, inte en verifierad
-BiS-lista. Fas 1 och endast dungeons/quests har därefter fastställts. Riktig data granskas separat.
+## Historisk omfattning
+
+Utkastet byggdes i den befintliga WinUI-appen med utrustningsplatser, sökning,
+sammanfattning, erhållen/utrustad och lokal JSON för en demokaraktär.
+Exempeldata markerades uttryckligen. Därefter fastställdes Classic fas1 med
+endast dungeons/quests och ersattes produktens data med granskade kataloger.
 
 Arbetsregel för utkastet: utrustad innebär erhållen, en rekommendation per
 utrustningsplats kan vara utrustad, och avmarkering av erhållen tar bort dess
 utrustningsmarkering. Avmarkering av utrustad behåller erhållen.
 
-## Filansvar
+## Historiska filansvar
+
+Denna fördelning gällde utkastets genomförande. Huvudtråden tilldelar nya
+ansvar enligt aktuellt beslutat scope; inga filer reserveras genom listan nedan.
 
 - Domäntråd: BISTracker.Domain/ och BISTracker.Application/.
 - Infrastrukturtråd: BISTracker.Infrastructure/ och BISTracker.Checks/.
 - Datatråd: endast docs/data-research.md.
 - Huvudtråd: BISTracker.Presentation/, BISTracker.slnx och gemensam dokumentation.
 
-Arbeta i den delade lokala projektmappen. Ändra inte andras filer, solution,
-gemensamma dokument eller Git-historik. Rapportera filförändringar, kontroller
-och begränsningar i trådens slutmeddelande. Huvudtråden integrerar och granskar.
+Arbetet utfördes i den delade lokala projektmappen med avgränsade filansvar.
+Huvudtråden integrerade bidrag och samordnade granskning och Git.
 
-## Gemensamma C#-kontrakt
+## Historiska C#-kontrakt
 
-Alla projekt utom Presentation riktar sig mot net8.0 med nullable och implicit usings.
-Placera filer i mappar enligt project-structure.md. Publika namespace i kontraktet behålls.
-Använd följande publika typer och signaturer så att parallella bidrag passar ihop.
+Alla projekt utom Presentation riktade sig mot net8.0 med nullable och implicit usings.
+Följande signaturer var utkastets integrationskontrakt. De är historiska;
+Recommendation/BisCatalog/TrackerSnapshot har senare utökats och dagens kod
+är auktoritativ för exakt API. [Strukturkartan](project-structure.md) är aktuell.
 
 ### BISTracker.Domain
 
@@ -80,3 +98,14 @@ Persistensfel ska nå UI; en misslyckad sparning får inte rapporteras som lycka
   Kontrollera ägande/utrustningsregler, byte i samma slot, okända IDs, återläsning
   från JSON, saknad fil och korrupt JSON. Använd isolerad temporär katalog och
   använd inte spelarens riktiga framstegsfil.
+
+## Leveransverifiering och fortsatt arbete
+
+Den levererade produkten har **49 godkända beteendekontroller**, inklusive
+tre DistributionScenarios med riktig diskpersistens och absoluta testprofiler.
+[1.0.0-rapporten](data/portable-release-verification.json) verifierar exakt ZIP,
+kärn-DLL-hashar, normal UI-sparning/omstart och byte av programmapp.
+Publiceringen är untrimmed och paketerar .NET samt Windows App SDK/WinUI;
+ren mottagardator har ännu inte provats. Dessa resultat ersätter utkastets
+begränsade demoverifiering. Fortsatt arbete börjar med Chefens beslut och
+överlämningen, inte med implementation av den historiska signaturlistan.

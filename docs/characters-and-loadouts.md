@@ -1,6 +1,9 @@
 # Karaktärer och tre speclistor
 
-Statusdatum: 2026-10-08. Karaktärer, tre speclistor per katalogset och
+Status inför beta 2: 2026-10-08. Läs [agentöverlämningen](beta2-handoff.md)
+innan fortsatt arbete; nya beta 2-funktioner är ännu inte beslutade.
+Version 1.0.0 bygger på kodcommit `e25c134` med leveransdokumentation i
+`043d859`. Karaktärer, tre speclistor per katalogset och
 27 Forever-kataloger för betans nivå 30 är implementerade och verifierade.
 Katalogerna innehåller källbelagda guidealternativ som grupperas till slotmål.
 Verkliga nivå 60-kataloger saknas; importstödet är förberett och verifierat.
@@ -99,6 +102,12 @@ utrustning för aktiva och arkiverade set. Äldre schema 1-filer utan
 `catalogSetId`/`archivedLoadouts` läses med versionens standardset och
 bevarar identitet och framsteg.
 
+En absolut `BISTRACKER_DATA_DIRECTORY`-override ger en separat profil för
+testning. `ProgressFilePaths.DataDirectory` avvisar relativa sökvägar; normal
+app utan override behåller samma LocalAppData-profil. JSON och importerade
+kataloger följer profilen, inte programmappens placering. Schema 1 är bevarat;
+den levererade modellen ska inte behandlas som en ny schemamigration inför beta 2.
+
 Om filen saknas skapas “My Priest” för Classic, med Holy vald. Befintlig
 `holy-priest-classic-phase1-progress.json` läses, valideras mot den riktiga
 katalogen och kopieras till Holy-listan. Item-ID/suffix-nycklar härleds från
@@ -122,7 +131,8 @@ Ingen databas har införts.
 
 ## Verifiering och begränsningar
 
-46 konsolkontroller passerar. De verifierar version/klass/spec, alla 27
+49 konsolkontroller passerar, inklusive tre `DistributionScenarios`.
+De verifierar version/klass/spec, alla 27
 Forever-kataloger och godkänd D/Q/Crafting-policy, fysisk itemidentitet och suffix,
 tre listor per set efter omstart, karaktärsisolering, migration,
 nivå 60-import, nivåbyte, gemensamt ägande över arkiverade set, unique-regler
@@ -130,11 +140,24 @@ och tvåhands/offhand-konflikter. Sparfel, avbrott, korrupt data och låsta file
 kontrolleras. Regressionerna visar att sparfel vid nivåbyte eller borttaget
 ägande inte ändrar aktiva eller arkiverade listor.
 
-Den isolerade WinUI-kontrollen använder minneslagring och testkataloger för
+Den tidigare isolerade WinUI-previewkontrollen använder minneslagring och testkataloger för
 import. Den kontrollerar riktiga Classic-listan, Forever nivå 30, karaktär/
 spec/set-val, återställda val efter sparfel och nivå 60-import utan att röra
 spelarens framstegsfil. Se [verifieringen](verification.md).
 
-Katalogerna har verifierade kompletta fraktionsset; beta-data kan ändras.
+Den portabla 1.0.0-versionens normala UI har dessutom provats med faktisk
+JSON-lagring i en absolut isolerad diskprofil: utrustningsmarkering sparades,
+återlästes efter appomstart och bevarades när samma ZIP extraherades till en
+ny programmapp. Kontrollhostens tre kärn-DLL:er är identiska med ZIP-paketets.
+[Leveransrapporten](data/portable-release-verification.json) visar att normal
+spelarprofil inte ändrades. Distributionsscenarierna provar också verkliga
+Rogue30-resurser och alla sex nivå/spec-kombinationer med TEST ONLY60-import.
+
+Katalogerna har 54 verifierade fraktionsset för alla 27 specs; beta-data kan ändras.
 Verkliga nivå 60-items återstår. Ingen spelintegration, molnsynkronisering,
 radering eller redigering av karaktärsidentitet ingår.
+
+Inför beta 2 äger Domain identitets-/utrustningsreglerna, Application
+transaktionens användningsfall och Infrastructure filbevarandet. Huvudtråden
+måste samordna ett uttryckligt krav och migrationsbeslut innan antal exemplar,
+återställning av gamla dubbletter eller reviderade itemreferenser införs.

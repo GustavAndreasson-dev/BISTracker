@@ -4,6 +4,22 @@ Levererat och granskat 2026-10-08, REQ-008/009. Appen innehåller separata
 kataloger för alla nio klasser och deras tre specs i **Forever beta, nivå 30,
 patch 1.60.1**. Classic Holy Priests befintliga 17-item-lista bevaras.
 
+## Roll inför beta 2 och levererad baslinje
+
+[beta2-handoff.md](beta2-handoff.md) är nästa agents startpunkt. Den här
+filen samlar dataomfång, källpolicy och fullständighetsbevis för beta nivå 30;
+den beslutar inte nästa betas produktfunktioner. Chefen har ännu inte
+fastställt nya beta 2-funktioner eller ett nytt gear-scope.
+
+Den portabla **1.0.0**-leveransen bygger på kod/runtime `e25c134`;
+`043d859` dokumenterar den verifierade ZIP-filen. [Leveransrapporten](data/portable-release-verification.json)
+redovisar 49 godkända beteendekontroller, 27 färdiga kataloger, 275
+granskade PE-binärer utan saknade lokala VC-beroenden, ZIP-integritet och
+produktions-UI med sparning/omstart samt byte av programmapp på Windows 11.
+Det är inte ett test på ren dator; Windows 10 och verklig nivå 60-data är
+inte verifierade. Statisk filkontroll ersätter inte ett distributionsprov
+på en sådan dator. [Detaljerad verifiering](verification.md).
+
 ## Urval och källspår
 
 Katalogerna innehåller originalguidernas namngivna utrustningsalternativ,
@@ -15,7 +31,7 @@ från respektive specs ursprungliga Forever-guider, inklusive WOWTBC:s
 orankade utrustningsalternativ, och individuella Forever-item-/quest-/receptposter.
 
 1655 råa rekommendationsrader ger **1635 alternativa placeringsrader** efter
-källfiltret. UI grupperar dem till ett mål per relevant slot, högst 17 och
+käll- och handfiltret. UI grupperar dem till ett mål per relevant slot, högst 17 och
 16 för en vald tvåhandsuppsättning. Alternativ ökar inte antalet mål eller framsteg.
 Varje slot kan bara ha ett utrustat val. Ägande delas mellan karaktärens specs
 och katalogset; utrustningsuppsättningarna sparas separat.
@@ -52,7 +68,8 @@ genomförbara exempelset redovisas per grupp:
   klassquests, suffix, crafting och källbelagda vapenupplägg.
 
 Produktfiler ligger i `BISTracker.Infrastructure/Catalog/Data/Forever/level30/`.
-Forskningsfakta ligger i `docs/data/forever-casters/` och `docs/data/forever-hybrids/`;
+Forskningsfakta ligger i `docs/data/forever-casters/`, `docs/data/forever-hybrids/`
+och `docs/data/forever-physical/`;
 verktygen ligger i motsvarande grupper under `tools/data/`, inklusive
 `tools/data/forever-physical/`. Full HTML och fullständiga tooltips versionshanteras
 inte. Programstart läser JSON-kataloger och hämtar inga guidetabeller.
@@ -65,7 +82,7 @@ JSON-pack från en vald mapp; ingen omkompilering behövs. Både betans och
 lanseringens nivå 60 stöds av formatet. Nivå 30-data och dess sparade utrustning
 bevaras. [Importformat och regler](catalog-contexts.md).
 
-Release-build passerar utan varningar/fel och samtliga 46 beteendekontroller
+Release-build passerar utan varningar/fel och samtliga 49 beteendekontroller
 är godkända. Den isolerade WinUI-kontrollen använder verklig nivå 30-data,
 verifierar nivåbyte och import som uppdaterar en redan vald tom lista. Dess
 tydligt fiktiva nivå 60-prov används bara i TEMP och är inte produktdata.
@@ -79,4 +96,20 @@ Betaguider kan förändras, och hela questkedjor har inte spelats i en klient.
 Ägandet registrerar ett exemplar per variant; samma variant kan inte fylla
 två mål. Questkedjor, alternativa belöningar, nivåtak, bindning och aktiva
 yrkeskrav har granskats mot publicerade poster. Ingen full genomspelning i
-en klient har gjorts. Verklig nivå 60-data och distributionstest återstår.
+en klient har gjorts. Verklig nivå 60-data och distribution på ren dator/
+Windows 10 återstår; portabel distribution på Windows 11 är genomförd.
+
+## Bevara och kontrollera vid nästa förändring
+
+Behåll explicit spelversion, beta/launch, nivåtak, patch, klass/spec och
+separata rekommendations-/itemidentiteter. Import får inte skriva över ett
+befintligt katalog-ID eller nivå 30-framsteg. En datakorrigering måste
+bevara källspåret och verifiera båda fraktionernas lagliga kombinationer,
+questnivå/kedja, belöningsval, Unique, ring-/trinketkapacitet och professions-
+villkor. Status `Reviewed`, positivt item-ID eller 17 namngivna positioner
+räcker inte ensamt. Bevara de osäkra items som redan har uteslutits.
+
+Nya listor/rankningar ska följa Chefens nya beslut och egen verifierad
+Forever-källa. De sparade rapporterna är ögonblicksbilder från 2026-10-08,
+inte nya livekontroller av betaguiderna. Verkliga nivå 60-listor ska få egen
+katalogkontext och källgranskning; testfixturer ska fortsätta vara testdata.

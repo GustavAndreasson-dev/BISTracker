@@ -1,5 +1,9 @@
 # Forever beta level 30: Druid, Paladin och Shaman
 
+Överlämning inför appens beta 2: [beta2-handoff.md](beta2-handoff.md).
+Denna granskning ingår i levererad 1.0.0 från kod `e25c134` med
+leveransdokumentation `043d859`. Nya beta 2-funktioner är ännu inte beslutade.
+
 Slutgranskat 2026-10-08. De nio katalogerna gäller Forever **1.60.1**, beta och
 nivåtak **30**. Chefens godkända anskaffningspolicy är **Dungeon, Quest och
 Crafting**. Nivå 60 får senare separat källunderlag och katalogidentitet.
@@ -81,6 +85,9 @@ vittnena väljer en kompatibel kombination.
 [Extra receptåtkomstkontroll](data/forever-hybrids/crafting-accessibility.json)
 visar att Paladins Tenets-formula säljs för 45 Merchant's Favor på båda
 fraktionernas läger och kräver vanlig Runed Silver Rod, ingen specialforge.
+Mystic Mushroom och Polished Driftwood Icon har samma individuellt verifierade
+formulakostnad/försäljare; villkoret finns i alla relevanta produktanteckningar
+och i writern. Det har inte antagits enbart från Tenets.
 För Defender's Leather Helm stöds åtkomsten av originalguidernas uttryckliga
 nivå 30-rekommendation och aktuell receptrelation; en separat trainer-/pattern-
 tabell saknas på spell-sidan. Ingen oberoende trainerväg har därför påståtts.
@@ -127,5 +134,26 @@ tools/data/forever-hybrids/review-slot-supplements.py använder uttryckligt
 nedladdat originalunderlag i en temporär mapp. Verktyget kontrollerar
 same-spec-rekommendationer, metadata, faction, recipe och konkreta uppsättningar
 innan --apply får skriva egna kataloger. Befintliga arbetsfiler säkerhetskopieras.
-Fulla originalsidor och tooltips versionshanteras inte. Specialisttråden har
-inte gjort staging eller commit.
+Fulla originalsidor och tooltips versionshanteras inte. Specialistbidraget
+integrerades av huvudtråden; dokumentet reserverar inga nya agentuppdrag.
+
+## Leveransstatus och ansvar inför beta 2
+
+Hela Forever30-leveransen har **27 kataloger och 54 granskade fraktionsset**;
+denna rapport täcker nio kataloger och 18 av vittnena. Samtliga **49 kontroller**,
+inklusive tre DistributionScenarios, passerade mot den portabla 1.0.0-versionens
+kärn-DLL:er. [Leveransrapporten](data/portable-release-verification.json)
+visar även faktisk normal-UI-sparning/omstart och byte av programmapp.
+PublishTrimmed är false och .NET/Windows App SDK följer med. Normal profil
+är LocalAppData; en absolut BISTRACKER_DATA_DIRECTORY ger isolerad testlagring.
+
+Ägande är ett boolvärde för ett exemplar per item-ID/suffix. Utrustning är
+separat för tre specs och varje katalogset, medan ägande delas inom karaktären.
+Schema1-JSON är bevarat. Gamla dubblerade varianter eller referenser till
+uteslutna items ger fel med filen bevarad, utan tyst datarensning.
+
+Researchunderlaget behöver ny uttrycklig källgranskning om betans itemdata
+ändras. Huvudtråden äger beslut, loader/import, UI, integration och commits;
+specgranskning får inte ensam ersätta befintliga katalog-ID:n eller reparera
+sparade framsteg. Verklig nivå60-Launch-data finns ännu inte. Mängdmodell,
+reparationsmigration och andra beta 2-funktioner är inte beslutade genom rapporten.

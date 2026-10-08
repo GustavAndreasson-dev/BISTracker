@@ -1,6 +1,10 @@
 # Forever nivå 30: Hunter, Rogue och Warrior
 
-Granskat 2026-10-08. Chefens nivå 30-beställning gäller Forever-betan,
+Granskat 2026-10-08. Detta är den klasspecifika källbasen för portabel v1
+(version 1.0.0, kodcommit `e25c134`) inför [appbeta2](beta2-handoff.md).
+Källfynden och rapporterna är daterade v1-bevis; dokumentuppdateringen innebär
+ingen ny livekontroll av guiderna eller ändring av katalogdata.
+Chefens nivå 30-beställning gäller Forever-betan,
 patch 1.60.1. Nio separata JSON-kataloger har skapats med källbelagda
 utrustningsalternativ. De är nu markerade **Reviewed**: samtliga relevanta
 slots har källbelagda alternativ och en separat, möjlig uppsättning har
@@ -60,7 +64,13 @@ namngivet Arms/Fury-alternativ utan att en egen statranking behövdes.
 
 [Slotgranskningen](data/forever-physical/slot-audit.json) innehåller 18
 `legalSetWitness`: en möjlig samtidig uppsättning per spec och fraktion.
-Alla har tom `missingSlots` och `fullSetValidated: true`.
+Alla har tom `missingSlots` och `fullSetValidated: true`. Den gemensamma
+[integrationskontrollen](data/forever-slot-witness-integration.json) godkänner
+dessa set mot faktisk produktdata tillsammans med de övriga 36 fraktionsseten.
+[Releasegranskningen](data/forever-slot-release-audit.json) godkänner alla 27
+kataloger. V1-paketets [distributionsrapport](data/portable-release-verification.json)
+redovisar 49 beteendekontroller och start/sparning/återläsning av den normala
+appen; detta ersätter inte klassgruppens anskaffningsbevis.
 
 | Specs | Platser i exempelset | Egen profession i exempelset |
 | --- | ---: | --- |
@@ -101,9 +111,9 @@ guidens metadata inte anger nivåkrav; questtillgänglighet följer den
 uttryckliga nivå 30-guiden. Vissa API-fält anger 1 trots att den synliga
 tooltipsen saknar nivåkrav; dessa metadatafält har bevarats.
 
-Ikonens namn kommer från samma Forever-tooltip. Ursprungligen kontrollerades 70 olika fullständiga
-`wow.zamimg.com/images/wow/icons/large/*.jpg`-URL:er härleddes och kontrollerades
-med HTTP HEAD: 200 och bildinnehåll. Det är nätverksverifierade ikonlänkar,
+Ikonens namn kommer från samma Forever-tooltip. Ursprungligen härleddes och
+kontrollerades 70 olika fullständiga
+`wow.zamimg.com/images/wow/icons/large/*.jpg`-URL:er med HTTP HEAD: 200 och bildinnehåll. Det är nätverksverifierade ikonlänkar,
 inte lokalt hämtade eller visuellt jämförda bilder.
 
 Unique-equipped har endast markerats när den lästa tooltipsen uttryckligen
@@ -152,9 +162,9 @@ Rogue-guidernas generella länk till en grupp Brawler's Leather Items har inte
 expanderats till gissade bas-ID:n. Tabellen saknar individuella rekommendationer
 för gruppen. Campingföremål, ammo och consumables ingår inte i utrustningsslots.
 
-Icy Veins kontrollerades också. Dess Warrior-guider saknar ännu namngivna
-nivå 30-listor, och Subtlety-guiden har tagit bort sin lista medan nya items
-undersöks. Dessa luckor har inte fyllts med Classic/SoD-data. Wowheads
+Vid källkontrollen 2026-10-08 saknade Icy Veins Warrior-guider namngivna
+nivå 30-listor, och Subtlety-guiden hade tagit bort sin lista medan nya items
+undersöktes. Dessa luckor har inte fyllts med Classic/SoD-data. Wowheads
 separata Forever-guider gav de konkreta rekommendationerna ovan.
 
 Starving Arcane-itemet 279837 hade fraktionskod 0 utan verifierad questväg.
@@ -188,5 +198,28 @@ Dungeon/Quest/Crafting-policyn och den slutliga slotgranskningen.
 som lästs av hybridtråden återanvänds för observerade receptfakta; full HTML
 och tooltips hålls under TEMP, medan endast relevanta fakta ligger i repot.
 
-Ingen spelares framstegsfil har lästs eller ändrats. Huvudtråden ansvarar för
-gemensam loader, domänregler, appverifiering, slutlig källfiltrering och commits.
+Det klasspecifika källarbetet läste eller ändrade inga sparade spelarframsteg.
+Det separata distributionstestet kontrollerade ordinarie profilens filhashar
+utan att ändra dess data. Huvudtråden samordnade integration och commits;
+framtida arbete följer [överlämningen](beta2-handoff.md).
+
+## Användning inför appbeta2
+
+Appen använder inbyggda JSON-resurser i Infrastructure; den behöver inte
+research-HTML, gamla TEMP-mappar eller Boromir för start, build eller ordinarie
+katalogkontroller. Researchverktygen kan däremot behöva återskapa råmaterial.
+`Complete-SlotAudit.ps1` beskriver ett historiskt mellanläge med en snävare
+policy; det är inte ensam slutvalidering av de godkända produktkatalogerna.
+
+Vid en beslutad ny katalogrevision ska nästa agent kontrollera aktuella
+samma-spec-källor, spelpatch, nivå, tillåtna källor, questfraktion/kedja,
+valbelöningar och crafting-/bindningsvillkor på nytt. Bevara daterade
+uteslutningar och dokumentera vad som faktiskt har ändrats. Verifiera nya
+fraktionsset mot aktiv produktdata och slotreglerna innan en ny katalog
+markeras Reviewed. Gör inte en researchregenerering enbart för att uppdatera
+Markdown eller ersätt nivå30-data med påhittad nivå60-ranking.
+
+Katalogidentiteter och schemaändringar måste hantera befintligt ägande och
+utrustning enligt [katalogkontexterna](catalog-contexts.md). Nytt produkt-scope,
+programversionsnummer och eventuell datamigration för appbeta2 beslutas av
+Chefen; detta dokument fastställer inga sådana nya funktioner.

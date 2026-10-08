@@ -9,6 +9,21 @@ Se [nivå 30-katalogerna](forever-level30-catalogs.md),
 [katalogset och import](catalog-contexts.md) och
 [kod, beteenden och verifiering](characters-and-loadouts.md).
 
+## Roll inför beta 2
+
+Starta i [beta2-handoff.md](beta2-handoff.md). Den här filen bevarar
+genomförbarhetsbedömningen och hur dess beställda funktioner blev
+implementation. Den är inte en ny lanserings- eller itemdatagranskning.
+Chefens produktfunktioner för beta 2 är ännu inte beslutade.
+
+Portabel **1.0.0** är verifierad med 49 beteendekontroller och
+produktions-UI/sparning på utvecklingsdatorns Windows 11. Kod/runtime
+kommer från `e25c134`; `043d859` dokumenterar ZIP-leveransen. Se
+[leveransrapporten](data/portable-release-verification.json).
+Ren dator, Windows 10 och verklig nivå 60-data är inte testade.
+Behåll de 27 Forever nivå 30-katalogernas 54 verifierade fraktionsset,
+delat ägande och separata spec-/nivåuppsättningar tills Chefen beslutar annat.
+
 ## Beställt scope
 
 Chefen har bett att först föra över de saknade Boromir-ändringarna, därefter
@@ -30,9 +45,10 @@ dokumentation. Tabellen skiljer verifierad funktion och nivå 30-underlag från
 
 Överlämningens Classic-scope är fas 1 pre-raid, dungeons och quests.
 Forever nivå 30 är ett separat beta-scope och visas som guidealternativ.
-Normal app filtrerar även dessa kataloger till dungeons och quests; andra
-källtyper kan finnas i researchen men aktiveras inte som ersättare för saknade
-slots. Lokal JSON används fortfarande; ingen databas har införts.
+Normal Forever-app filtrerar till **dungeons, quests och crafting** enligt
+Chefens senare godkännande (DEC-012); den tidigare D/Q-avgränsningen är
+historisk för Forever. Övriga källtyper filtreras bort. Classic behåller
+endast dungeons/quests. Lokal JSON används fortfarande; ingen databas har införts.
 
 ## Källbelagda fynd vid första granskningen 2026-10-08
 
@@ -103,12 +119,14 @@ Punkt 1–4 och 6–7 är genomförda för det beställda nivå 30-scopet och im
 Ägande delas inom karaktären, medan utrustning sparas separat för varje spec
 och katalogset. Sparfel bevarar aktiva och arkiverade listor.
 
-Punkt 5 har genomförda unique- och tvåhands/offhand-regler. Unique-equipped
+Punkt 5 har genomförda unique- och tvåhands/offhand-regler samt ett slotmål
+med grupperade alternativ enligt REQ-010. Unique-equipped
 begränsas efter basitem-ID oavsett suffix; ägande gäller fortfarande varje
 item-ID/suffix-variant. Katalogernas handplaceringar bygger på verifierat
 klass/spec-underlag. Antal exemplar av ett item modelleras inte.
-Fullständiga optimala set får inte hävdas där guiderna bara ger alternativ
-eller saknar slots. Verkliga nivå 60-rekommendationer återstår.
+54 kompletta lagliga fraktionsset är verifierade mot aktiva nivå 30-items;
+detta bevisar genomförbarhet, inte optimal ranking eller lika starka alternativ.
+Verkliga nivå 60-rekommendationer återstår.
 
 ## Implementation efter överföring
 
@@ -116,8 +134,8 @@ eller saknar slots. Verkliga nivå 60-rekommendationer återstår.
   samt unique- och tvåhands/offhand-regler.
 - Application: karaktär/spec/set-val, tracking och bevarade arkiverade listor.
 - Infrastructure: 27 nivå 30-kataloger, validerad import och säker JSON-lagring.
-- Presentation: karaktär/spec/set-val, guidealternativ och katalogimport.
-- Checks: 46 godkända konsolkontroller för bland annat kataloger, källpolicy,
+- Presentation: karaktär/spec/set-val, grupperade slotmål och katalogimport.
+- Checks: 49 godkända konsolkontroller för bland annat kataloger, källpolicy,
   nivå 60-import, nivåisolering, sparfel, utrustningsregler och legacy-migration.
 - Isolerad WinUI-kontroll: verkliga Classic- och Forever nivå 30-listor,
   nivåbyte och import med testdata utan att ändra spelarens framsteg.
@@ -126,10 +144,15 @@ eller saknar slots. Verkliga nivå 60-rekommendationer återstår.
 Acceptanskriterier: tre listor finns kvar efter omstart, specbyte bevarar dem,
 fel klass/spec avvisas, karaktärer/versioner blandas inte och gamla framsteg
 bevaras. Varje publicerad katalog måste ha verifierade items och källor för sin
-uttryckliga spelkontext. Release-build, 46 konsolkontroller och isolerad
+uttryckliga spelkontext. Release-build, 49 konsolkontroller och isolerad
 UI-verifiering är godkända för den aktuella leveransen. Importtesten använder
 fiktiv nivå 60-data, inte en publicerad nivå 60-katalog. Se
 [verifieringen](verification.md).
+
+Den portabla normalappen har dessutom testats med isolerad diskbaserad
+profil, faktiska checkboxklick, sparning/omstart och byte av programmapp.
+Spelarens normala framsteg har inte ändrats av verifieringen. Det är ett
+genomfört Windows 11-distributionstest, inte bevis för alla målmaskiner.
 
 ## Överföringsstatus
 

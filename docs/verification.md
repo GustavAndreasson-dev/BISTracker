@@ -2,7 +2,13 @@
 
 Ursprunglig verifiering på Boromir: 2026-10-07.
 Lokal överföring och verifiering: 2026-10-08, se [rapport](local-transfer.md).
-Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå 60.
+Verifierad v1-bas: portabel appversion **1.0.0**, byggd 2026-10-08 från
+kodcommit `e25c1345c84dd4c975c208adb35c83ee68b1b88c`. Leveransens dokumentation
+registrerades i `043d859`. Dessa är daterade referenser, inte ett påstående
+om framtida HEAD. Denna fil redovisar genomförda kontroller och hur nästa
+agent kan återskapa dem inför [appbeta2](beta2-handoff.md).
+Appbeta2 är nästa testleverans av appen, skild från Forever-katalogernas
+spelbeta. Nya funktioner och nästa programversionsnummer är inte beslutade.
 
 ## Genomförda kontroller
 
@@ -20,7 +26,11 @@ Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå
   Ordinarie spelarprofil är oförändrad. Det separata publicerade checkhostet
   använder samma Domain/Application/Infrastructure-DLL-hashar och verifierar
   Classic samt alla tre Rogue-specs över nivå 30/60 med verklig JSON-lagring.
-  Nivå 60-fixtures är fortfarande enbart testdata. Se [distribution](distribution.md).
+  Nivå 60-fixtures är fortfarande enbart testdata. Den sparade
+  [v1-rapporten](data/portable-release-verification.json) anger PASS, 517 filer,
+  90 273 350 byte, 275 inventerade PE-binärer och noll saknade lokala
+  VC-beroenden. Samma ZIP har startats i en ny programmapp; testet bevisar
+  inte migration mellan olika programversioner. Se [distribution](distribution.md).
 - Karaktärsscenarierna verifierar 54 versions-/klass-/specval, tre olika listor
   efter omstart, delat ägande med separata rekommendations-ID:n och suffix,
   karaktärs-/versionsisolering, migration, aktivt val, sparfel, avbrott och låst
@@ -65,10 +75,11 @@ Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå
   [Mage-vy](previews/slots-mage-overview.png), [Rogue-vy](previews/slots-rogue-overview.png),
   [grupperade alternativ](previews/slots-rogue-alternatives.png) och
   [nivå 60 utan data](previews/forever-level60-pending.png).
-- Projektberoenden, filplacering och Markdown-spårning har granskats.
-  Samtliga 19 Python- och åtta PowerShell-researchverktyg klarar syntaxkontroll;
-  78 JSON-filer parsas och 21 Markdown-filer har inga trasiga lokala länkar.
-  Vanliga katalogscenariet kräver nu också komplett täckning för båda fraktioner;
+- Projektberoenden, filplacering och Markdown-spårning granskades under v1-arbetet.
+  Den dåvarande strukturella kontrollen omfattade 19 Python- och åtta
+  PowerShell-researchverktyg, 78 JSON-filer och 21 Markdown-filer.
+  Antalen beskriver det kontrolltillfället; de är inte dagens filinventering.
+  Vanliga katalogscenariet kräver också komplett täckning för båda fraktioner;
   framtida slotluckor kan inte passera enbart den ordinarie kontrollkörningen.
 
 Renderingen använder appens eget visuella träd via
@@ -97,9 +108,16 @@ Från projektroten på Windows med .NET SDK och WinUI-byggberoenden:
 ```powershell
 dotnet build BISTracker.slnx -c Release -p:Platform=x64 -p:WindowsPackageType=None
 dotnet run --project BISTracker.Checks/BISTracker.Checks.csproj -c Release
-dotnet run --project BISTracker.Checks/BISTracker.Checks.csproj -c Release -- --catalog-release-audit docs/data/forever-slot-release-audit.json
-python tools/data/verify-forever-slot-witnesses.py docs/data/forever-slot-witness-integration.json
+$verificationDirectory = Join-Path 'artifacts' ('beta2-verification-' + [guid]::NewGuid().ToString('N'))
+New-Item -ItemType Directory -Path $verificationDirectory | Out-Null
+dotnet run --project BISTracker.Checks/BISTracker.Checks.csproj -c Release -- --catalog-release-audit (Join-Path $verificationDirectory 'catalog-release-audit.json')
+python tools/data/verify-forever-slot-witnesses.py (Join-Path $verificationDirectory 'slot-witness-integration.json')
 ```
+
+Använd nya rapportsökvägar vid beta2-arbete så att de daterade v1-bevisen
+bevaras. För en ny delbar ZIP ska även publicerings- och distributionstestet
+från [distribution.md](distribution.md) köras. De 49 kontrollerna gäller v1;
+nya scenarier kräver också att testskriptets förväntade kontrollantal uppdateras.
 
 Öppna BISTracker.slnx i Visual Studio, välj BISTracker.Presentation och x64
 för normal utveckling. Den opaketerade Release-builden kan även startas direkt:
@@ -134,6 +152,12 @@ verifieringsfönstret efter kontrollen. Normal build inkluderar inte den koden.
 Separat utdatakatalog undviker att en annan tråds MSIX-build ersätter
 verifieringsprogrammets filer före start.
 
+Det separata distributionsprovet startar den normala publicerade appen med
+en absolut `BISTRACKER_DATA_DIRECTORY` endast i provets process. UI Automation
+använder processens eget fönster. Skriptet jämför ordinarie spelarprofilens
+hashar även i `finally` och skapar en ny PENDING/PASS/FAIL-rapport per körning.
+Detta diskprov ska hållas isär från DraftPreview med minneslagring.
+
 ## Praktiska begränsningar
 
 - Classic Holy Priest har 17 riktiga, guidebaserade huvudval. Bonecreeper Stylus beskrivs som alternativ
@@ -151,7 +175,8 @@ verifieringsprogrammets filer före start.
 - Betaguiderna har föränderliga rekommendationer. Osäkra items har uteslutits
   och tidigare slotluckor är kompletterade. Listorna är
   guidebaserade alternativ enligt vald källpolicy, inte ett beräknat optimalt
-  set. Fulla questkedjor och klientkontroll för varje anskaffningsväg återstår.
+  set. Publicerade questkedjor har källgranskats; en full spelklientgenomgång
+  av varje anskaffningsväg har inte genomförts.
 - Ikonbilder kräver nätverk vid visning. Katalog och tracking fungerar utan nätverk;
   en saknad ikon får en platsmarkering. Externa webbläsarklick är inte automatiskt körda.
 - Rendering och ViewModel-beteenden är kontrollerade. Full manuell mus- och
@@ -159,3 +184,25 @@ verifieringsprogrammets filer före start.
 - Ingen verklig Forever-nivå 60-katalog finns i leveransen. Nivå 60-valet visar
   uttrycklig datastatus; importen verifieras med fiktiva kontrollpack. Betans
   nivå 30-kataloger används inte som slutlig pre-raid-data för nivå 60.
+
+För appbeta2 kvarstår prov på ren mottagardator, olika DPI-/fönsterstorlekar
+och eventuell framtida versions-/datamigration. WindowsSandbox.exe saknades
+på den verifierade datorn; ingen Sandbox-körning gjordes. MSIX, certifikat
+och signering är oprövade. Denna dokumentrevision ändrar inga tidigare
+byggresultat och verifierar inte en ny beta2-release. Se [överlämningen](beta2-handoff.md).
+
+## Dokumentöverlämning inför beta 2
+
+Dokumentationskontroll 2026-10-08, REQ-012: samtliga 23 befintliga
+projektspecifika Markdown-filer är uppdaterade. Med beta2-handoff.md
+granskades 24 dokument och 270 lokala länkar, inklusive interna rubrikankare,
+utan fel. Varje områdesdokument leder till överlämningen. Versionsnummer,
+källcommit, testantal, ZIP-storlek och SHA-256 jämfördes med den sparade
+1.0.0-rapporten och den lokala ZIP-filen. Diff-/filkontrollen visar endast
+Markdown-ändringar; ingen kod, katalogdata, lagringsfil eller paket ändrades.
+
+De ovan beskrivna 49 beteendekontrollerna och distributionsresultaten är
+fortfarande v1-bevis. Inga nya builds, beteendetester, webbresearch, fetch
+eller push kördes för dokumentuppdraget. Läs- och metadatautvärdering av
+MSBuild bekräftade den dokumenterade UI-preview-utdatasökvägen; det var
+inte en ny kompilering eller UI-körning.

@@ -6,6 +6,22 @@ Kontexten är **WoW Forever, beta, patch 1.60.1, level cap 30**.
 Detta är guidernas namngivna utrustningsalternativ, inte en självberäknad
 rangordning eller ett påstående om en färdig optimal uppsättning.
 
+## Roll inför beta 2
+
+Startpunkt: [beta2-handoff.md](beta2-handoff.md). Denna rapport är
+granskningsspåret för nio av de 27 aktiva Forever-katalogerna; dess 18
+fraktionsset ingår i de [54 integrerade produktseten](data/forever-slot-witness-integration.json).
+Alla 833 caster-rader tillhör Forever-policyn dungeons/quests/crafting.
+Classic behåller endast dungeons/quests och får inte användas som källa
+för ersättningsitems här.
+
+Portabel baslinje **1.0.0** bygger på kod/runtime `e25c134`, med
+leveransdokumentation i `043d859`. [Distributionsrapporten](data/portable-release-verification.json)
+visar 49 godkända beteendekontroller, 27 färdiga Forever-kataloger och
+produktions-UI/sparning på Windows 11. Ren dator, Windows 10 och verklig
+nivå 60-data är inte testade. Beta 2-funktioner är ännu inte beslutade
+av Chefen; denna överlämning ändrar inga items eller rekommendationer.
+
 ## Originalkällor och omfattning
 
 Wowheads Forever-guider beskriver eget spel i betan och skiljer dungeon-drops,
@@ -180,3 +196,13 @@ rotfält. Därmed kan level 60 få egna kataloger och villkor utan att skriva
 
 Datagranskningen fastställer riktiga guidealternativ. Huvudtråden verifierar
 loader, urvalsfilter, domänregler, UI, sparning och commits separat.
+De sparade datarapporterna avser granskningen 2026-10-08; ikonernas HTTP-
+status och guidernas innehåll har inte kontrollerats på nytt vid överlämningen.
+
+Inför beta 2 ska `excluded-research.json` och per-spec exkluderingslistor
+bevaras. Healer's Staff 271767, Magistrate's Pantaloons 270036 och Boots
+of Darkness 7027 får inte återinföras utan att de dokumenterade källluckorna
+först löses. Nya produktnoteringar ska innehålla spelarens faktiska villkor,
+inte intern text om research, rankning eller metadata. Efter en beslutad
+datakorrigering krävs både gruppens audit/validering och den gemensamma
+kontrollen mot aktiva produktkataloger; programstart uppdaterar ingen research.
