@@ -37,6 +37,12 @@ utvecklas när riktiga källor och urvalsmetod är beslutade.
 
 ### Invariants och användningsfall
 
+REQ-010 korrigerar skillnaden mellan rekommendationsrader och slotmål.
+`EquipmentPlan` grupperar alternativ per slot och kontrollerar en möjlig
+kombination med itemkapacitet, unique, handkrav och separat fraktionstillgång.
+En enda fysisk variant räknas inte som två ägda eller utrustade exemplar.
+Se [korrekthetsregler och releasekontroll](slot-catalog-correctness.md).
+
 - Utrustad innebär erhållen; avmarkering av erhållen tar bort aktiv utrustning för itemet.
 - Avmarkering av utrustad behåller erhållen.
 - Ett item per EquipmentSlot kan vara utrustat. Ring- och trinketplatser är separata slotvärden; en rekommendation på båda platserna kan uttrycka alternativa placeringar.

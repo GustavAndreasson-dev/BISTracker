@@ -88,6 +88,9 @@ public sealed class CharacterLoadouts
         {
             _owned.Add(ItemKey(item));
             var slots = _equipped[spec];
+            // A boolean ownership entry represents one recorded copy, not an inventory quantity.
+            foreach (var slot in slots.Where(pair => ItemKey(Item(spec, pair.Value)) == ItemKey(item)).Select(pair => pair.Key).ToArray())
+                slots.Remove(slot);
             // Unique-equipped applies to the base item, including differently suffixed variants.
             var matching = slots.Where(pair => UniqueKey(Item(spec, pair.Value)) == UniqueKey(item)).ToArray();
             if (item.Details?.UniqueEquipped == true || matching.Any(pair => Item(spec, pair.Value).Details?.UniqueEquipped == true))
@@ -107,6 +110,8 @@ public sealed class CharacterLoadouts
             throw new ArgumentException("A two-handed weapon cannot be equipped with an off-hand item.");
         if (items.GroupBy(UniqueKey).Any(group => group.Count() > 1 && group.Any(item => item.Details?.UniqueEquipped == true)))
             throw new ArgumentException("A unique item cannot be equipped twice in one specialization.");
+        if (items.GroupBy(ItemKey).Any(group => group.Count() > 1))
+            throw new ArgumentException("Two equipped copies require separate inventory quantities, which this version does not record. The saved file has been preserved.");
     }
 
     private static string UniqueKey(Recommendation item) => item.Details is { } details

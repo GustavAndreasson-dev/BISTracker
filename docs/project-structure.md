@@ -15,7 +15,7 @@ BISTracker/
 ├── tools/
 │   └── data/                          Metadatahämtning; forever-casters/hybrids/physical för research/import
 ├── BISTracker.Domain/
-│   ├── Equipment/                     EquipmentSlot, Recommendation och ItemDetails
+│   ├── Equipment/                     EquipmentSlot, EquipmentPlan, Recommendation och ItemDetails
 │   ├── Game/                          GameContext, CatalogSet, CharacterDefinition, version/klass/spec
 │   └── Tracking/                      CharacterLoadouts samt legacy CharacterProgress
 ├── BISTracker.Application/

@@ -40,10 +40,17 @@ public static class ForeverCatalogReader
         try { _ = new CharacterProgress(mapped); }
         catch (ArgumentException exception) { throw new InvalidDataException("Invalid or duplicated catalog recommendations.", exception); }
         var items = includeOtherSources ? mapped : mapped.Where(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest).ToArray();
+        if (!Enum.IsDefined(document.WeaponSetup) || (document.WeaponSetup != WeaponSetup.Flexible && !IsHttps(document.WeaponSetupSourceUrl)) ||
+            document.SlotExemptions is null || document.SlotExemptions.Any(value => value is null || !IsHttps(value.SourceUrl)))
+            throw new InvalidDataException("Equipment-slot or weapon-setup exemptions need a reviewed source.");
+        var exemptions = document.SlotExemptions.Select(value => new SlotExemption(value.Slot, value.Reason, value.SourceUrl)).ToArray();
+        try { _ = new EquipmentPlan(items, exemptions, document.WeaponSetup); }
+        catch (ArgumentException exception) { throw new InvalidDataException("Invalid equipment-slot coverage metadata.", exception); }
         var phase = document.Phase + (string.IsNullOrWhiteSpace(document.Patch) ? "" : $" · Patch {document.Patch}");
         var method = includeOtherSources ? "Guide alternatives · all reviewed sources" : "Guide alternatives · dungeons & quests";
         var catalog = new BisCatalog(new GameContext(CharacterDefinition.VersionName(GameVersion.Forever), $"{spec.Name} {document.CharacterClass}", phase),
-            Array.AsReadOnly(items), false, items.Length == 0 ? "No reviewed items match the catalog source policy." : null, set, method);
+            Array.AsReadOnly(items), false, items.Length == 0 ? "No reviewed items match the catalog source policy." : null, set, method,
+            exemptions, document.WeaponSetup, document.WeaponSetupSourceUrl);
         return new ReviewedCatalogPack(document.CatalogId, set, document.CharacterClass, spec.Id, catalog);
     }
 
@@ -53,7 +60,8 @@ public static class ForeverCatalogReader
             string.IsNullOrWhiteSpace(item.Source) || item.Note is null || !Enum.IsDefined(item.Slot) ||
             !Enum.IsDefined(item.AcquisitionType) || !Enum.IsDefined(item.WeaponKind) || !IsHttps(item.ItemUrl) || !IsHttps(item.RecommendationUrl) ||
             (item.IconUrl is not null && !IsHttps(item.IconUrl)) || item.RequiredLevel is < 0 || item.RequiredLevel > document.LevelCap ||
-            (item.RequiredSuffix is not null && string.IsNullOrWhiteSpace(item.RequiredSuffix)))
+            (item.RequiredSuffix is not null && string.IsNullOrWhiteSpace(item.RequiredSuffix)) ||
+            (item.AvailableFactions is not null && (item.AvailableFactions.Any(value => !Enum.IsDefined(value)) || item.AvailableFactions.Distinct().Count() != item.AvailableFactions.Length)))
             throw new InvalidDataException("Invalid catalog item, source, reference or level requirement.");
         if ((item.WeaponKind == WeaponKind.TwoHanded && item.Slot != EquipmentSlot.MainHand) ||
             (item.WeaponKind == WeaponKind.OffHand && item.Slot != EquipmentSlot.OffHand) ||
@@ -64,7 +72,8 @@ public static class ForeverCatalogReader
             ? item.Name : $"{item.Name} {item.RequiredSuffix}";
         return new Recommendation($"{document.CatalogId}-{item.Id}", item.Slot, name, item.Source, item.Note,
             new ItemDetails(item.ItemId, item.RequiredSuffix, item.AcquisitionType, item.IconUrl ?? "", item.ItemUrl,
-                item.RecommendationUrl, item.WeaponKind, item.UniqueEquipped));
+                item.RecommendationUrl, item.WeaponKind, item.UniqueEquipped,
+                item.AvailableFactions ?? (item.AcquisitionType == AcquisitionType.Quest ? [] : Enum.GetValues<CharacterFaction>())));
     }
 
     private static bool IsHttps(string? value) => Uri.TryCreate(value, UriKind.Absolute, out var uri) && uri.Scheme == Uri.UriSchemeHttps;
@@ -84,6 +93,15 @@ public static class ForeverCatalogReader
         public required string SelectionMethod { get; init; }
         public required string Status { get; init; }
         public required CatalogItem[] Items { get; init; }
+        public SlotExemptionDocument[] SlotExemptions { get; init; } = [];
+        public WeaponSetup WeaponSetup { get; init; }
+        public string? WeaponSetupSourceUrl { get; init; }
+    }
+    private sealed record SlotExemptionDocument
+    {
+        public required EquipmentSlot Slot { get; init; }
+        public required string Reason { get; init; }
+        public required string SourceUrl { get; init; }
     }
     private sealed record CatalogItem
     {
@@ -101,5 +119,6 @@ public static class ForeverCatalogReader
         public required string RecommendationUrl { get; init; }
         public required WeaponKind WeaponKind { get; init; }
         public required bool UniqueEquipped { get; init; }
+        public CharacterFaction[]? AvailableFactions { get; init; }
     }
 }

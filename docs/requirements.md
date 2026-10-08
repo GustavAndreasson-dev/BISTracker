@@ -24,6 +24,14 @@ Acceptanskriterier och detaljer markerade som förslag behöver preciseras tills
 
 ## Beslutade tekniska krav och riktning
 
+REQ-010, beställt 2026-10-08: varje relevant utrustningsslot ska vara ett mål
+med källbelagda itemalternativ. Dubbletter och alternativ får inte räknas som
+extra slots. Samtliga specs ska kontrolleras för en möjlig komplett kombination
+före delning. Implementationsgräns: [EquipmentPlan](../BISTracker.Domain/Equipment/EquipmentPlan.cs),
+[EquipmentPlanScenarios](../BISTracker.Checks/Scenarios/EquipmentPlanScenarios.cs)
+och [releasegranskning](slot-catalog-correctness.md). Katalogkomplettering och
+slutlig UI-/releaseverifiering pågår; tidigare antal rader bevisade inte detta krav.
+
 | ID | Krav eller riktning | Implementation | Verifiering |
 | --- | --- | --- | --- |
 | ARC-001 | Använd DDD-struktur och en domänmodell för verksamhetens regler. | Fyra lager; CharacterLoadouts skyddar reglerna för tre listor. CharacterProgress validerar legacy-data. Se [arkitektur](architecture.md). | Projektberoenden och regler granskade; domän och användningsfall kontrolleras utan WinUI. |
