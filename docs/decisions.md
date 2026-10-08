@@ -124,3 +124,13 @@ senare beslut uttryckligen utökar deras scope.
 - Beslut: `AGENTS.md` döps om till [CLAUDE.md](../CLAUDE.md). Nya arbetsbranches använder prefixet `claude/`. Huvudagenten får dela upp arbetet på flera underagenter efter eget omdöme.
 - Genomförande: de tidigare Codex-trådarna ersätts av underagenter i `.claude/agents/` med filansvar enligt [planen](plan.md#underagenter): domän, infrastruktur/kontroller, katalogdata per klassgrupp, presentation och en oberoende granskare.
 - Konsekvens: arbetsregler, scope och datapolicy är oförändrade. Huvudagenten integrerar, verifierar och committar; underagenter committar inte. Äldre `codex/`-branches och chatt-ID:n är historik.
+
+## DEC-016 — Scope för appens beta 2
+
+- Datum: 2026-10-08.
+- Status: beslutat av Chefen.
+- Beslut: beta 2 omfattar Classic fas 1 nivå 60 för alla nio klasser och 27 specs ([REQ-013](requirements.md#appens-beta-2)) samt namnbyte och borttagning av karaktärer (REQ-014, REQ-015).
+- Källpolicy: Classic fas 1 tillåter nu Dungeon, Quest och Crafting. Detta ersätter Dungeon/Quest-gränsen i REQ-003 och DEC-012 för Classic. World drops, vendor, PvP, reputation och raid ingår fortfarande inte. Forevers policy är oförändrad.
+- Holy Priest: den befintliga katalogen utökas. De 17 nuvarande raderna behåller sina rad-ID:n så att sparat ägande och utrustning från 1.0.0 fortsätter gälla utan migration.
+- Redigering: endast namn. Version och klass är låsta eftersom ägande och utrustning hör till dem.
+- Borttagning: permanent efter bekräftelse, även den sista karaktären. Sparfilen behåller `schemaVersion` 1 men tillåter noll karaktärer; ingen aktiv karaktär anges då med tomt ID. Befintliga filer läses som förut. App 1.0.0 avvisar en tom sparfil och bevarar den, vilket accepteras.
