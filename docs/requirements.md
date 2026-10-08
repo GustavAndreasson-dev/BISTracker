@@ -55,7 +55,7 @@ REQ-012, beställt 2026-10-08: aktualisera samtliga projektspecifika
 Markdown-filer så en annan agent kan fortsätta inför appens beta 2.
 [Överlämningen](beta2-handoff.md) samlar verifierad bas, rapporter,
 kodgränser, körkommandon, data-/katalogregler och öppna frågor. README och
-AGENTS leder dit; områdesdokument anger sin aktuella respektive historiska
+AGENTS (nu CLAUDE.md) leder dit; områdesdokument anger sin aktuella respektive historiska
 roll. Acceptans: alla tidigare 23 Markdown-filer ska vara granskade och
 uppdaterade, lokala länkar giltiga och ingen kod/katalog/spelardata ändrad.
 **Verifierat:** 23 befintliga dokument uppdaterade och 24 Markdown-filer
@@ -67,7 +67,7 @@ Dokumentgranskningen ersätter inte nya beta 2-tester.
 | --- | --- | --- | --- |
 | ARC-001 | Använd DDD-struktur och en domänmodell för verksamhetens regler. | Fyra lager; CharacterLoadouts skyddar reglerna för tre listor. CharacterProgress validerar legacy-data. Se [arkitektur](architecture.md). | Projektberoenden och regler granskade; domän och användningsfall kontrolleras utan WinUI. |
 | ARC-002 | Följ SOLID-principer. | Separata ansvar och små applikationskontrakt: ICharacterCatalog, IWorkspaceRepository, ICharacterTrackerService och [ICatalogPackImporter](../BISTracker.Application/Catalog/ICatalogPackImporter.cs). JSON-/källmetadata valideras i Infrastructure; domänens utrustningsregler kräver inget filsystem. Appens composition root kopplar importimplementationen. Legacy-kontrakt bevarade. | Katalog och repository utbytta i beteendekontroller; importbatcher, fel och levande kataloguppdatering verifierade i ForeverCatalogScenarios. Fortsatt granskningskrav vid varje ändring. |
-| ARC-003 | Håll Markdown-dokumentation som kan jämföras med koden. | AGENTS.md och docs, inklusive denna kodspårning. | Nuläge, projektgränser och källfiler har jämförts mot koden. |
+| ARC-003 | Håll Markdown-dokumentation som kan jämföras med koden. | CLAUDE.md och docs, inklusive denna kodspårning. | Nuläge, projektgränser och källfiler har jämförts mot koden. |
 | ARC-004 | Ha god mappstruktur inom varje projekt. | Kod indelad enligt [strukturkartan](project-structure.md). | Faktiska filplaceringar granskade; områden för Equipment, Game, Tracking, Catalog, Persistence och Features finns. |
 | DIR-001 | Stöd fler expansioner senare. | Classic och Forever är separata val enligt REQ-005. | Versionsisolering verifierad; nya versioners data kräver egen granskning. |
 

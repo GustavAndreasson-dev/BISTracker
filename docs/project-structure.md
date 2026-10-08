@@ -8,7 +8,9 @@ Mappar skapas när de innehåller kod; huvudtråden verifierar ansvar vid integr
 
 ```text
 BISTracker/
-├── AGENTS.md
+├── CLAUDE.md                          Arbetsregler för huvudagent och underagenter
+├── .claude/
+│   └── agents/                        Underagenter med filansvar, se plan.md
 ├── README.md
 ├── BISTracker.slnx
 ├── docs/                              Krav, plan, struktur och beslut

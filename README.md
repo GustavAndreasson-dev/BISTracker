@@ -9,7 +9,7 @@ och kan importeras när granskad data finns.
 
 ## Fortsätt inför beta 2
 
-Nästa agent börjar med [arbetsreglerna](AGENTS.md) och
+Nästa agent börjar med [arbetsreglerna](CLAUDE.md) och
 [överlämningen inför beta 2](docs/beta2-handoff.md). Där finns verifierad
 bas, paketets källcommit, kodansvar, kommandon och kvarstående arbete.
 Version 1.0.0 är första färdiga testpaketet; nästa appbeta och Forever-spelets
@@ -18,7 +18,8 @@ betakataloger är skilda begrepp. Nya beta 2-funktioner och programversionsnumme
 
 ## Dokumentation
 
-- [Arbetsregler](AGENTS.md)
+- [Arbetsregler](CLAUDE.md)
+- [Underagenter och arbetsform](docs/plan.md#underagenter)
 - [Överlämning inför appens beta 2](docs/beta2-handoff.md)
 - [Krav och koppling till kod](docs/requirements.md)
 - [Arkitektur och domänspråk](docs/architecture.md)

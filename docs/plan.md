@@ -92,11 +92,27 @@ trådar nedan har inte behövt kontaktas för denna leverans.
 | Hur ska antal identiska exemplar och reviderade pack med samma kontext hanteras? | Nuvarande ägande är booleskt och importer får inte ersätta befintliga pack-ID:n. |
 | Behövs annan plattform eller synkronisering senare? | Utkastet fortsätter med WinUI och lokal lagring; framtida behov är öppna. |
 
+## Underagenter
+
+Från 2026-10-08 drivs arbetet av Claude. De tidigare Codex-trådarna är
+ersatta av underagenter i [.claude/agents/](../.claude/agents/). Huvudagenten
+väljer vilka som används; flera kan köras parallellt när filansvaren inte
+överlappar. Underagenter committar inte.
+
+| Underagent | Ersätter | Filansvar |
+| --- | --- | --- |
+| Huvudagent | Huvudtråden | Samordning, `App.xaml.cs`, solution, gemensamma docs, integration och commits. |
+| `bistracker-domain` | Domän och användningsfall | `BISTracker.Domain/`, `BISTracker.Application/`. |
+| `bistracker-infrastructure` | Lagring och verifiering | C#-kod i `BISTracker.Infrastructure/`, `BISTracker.Checks/`. |
+| `bistracker-catalog-data` | BiS-källor, forever_casters/hybrids/physical | Katalog-JSON, `docs/data/`, `tools/data/` och källrapporter för angiven klassgrupp. En instans per klassgrupp. |
+| `bistracker-presentation` | (nytt; tidigare huvudtråden) | `BISTracker.Presentation/` utom composition root. |
+| `bistracker-reviewer` | (nytt) | Läser bara. Oberoende granskning före commit och release. |
+
 ## Historiska användarägda Codex-trådar
 
 Huvudtråden håller ihop krav, arkitekturbeslut och integration. Varje delegerad
 uppgift ska ha tydligt scope, filansvar, beroenden och acceptanskriterier.
-Resultat granskas mot AGENTS.md och relevanta krav innan uppgiften markeras klar.
+Resultat granskas mot CLAUDE.md och relevanta krav innan uppgiften markeras klar.
 
 | Tråd | ID | Filansvar | Uppdrag |
 | --- | --- | --- | --- |

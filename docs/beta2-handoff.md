@@ -12,9 +12,9 @@ programversionsnummer och beta 2-innehåll är inte beslutade.
 
 ## Börja här
 
-1. Läs [README](../README.md) och [AGENTS](../AGENTS.md), sedan detta dokument.
+1. Läs [README](../README.md) och [CLAUDE](../CLAUDE.md), sedan detta dokument.
 2. Kontrollera `git status --short` och `git log -5 --oneline`. Arbetet ligger
-   på `main` vid denna överlämning; nya arbetsbranches använder `codex/`.
+   på `main` vid denna överlämning; nya arbetsbranches använder `claude/`.
    Bevara
    befintligt arbete. Arbetsplatsen är `C:\Users\gusta\source\repos\BISTracker`
    på denna dator; Boromir och gamla användarägda chattar behövs inte.
@@ -155,7 +155,7 @@ testverktyg. Detta kräver inte gamla Codex-chattar eller den hjälpprocessen.
 
 | Dokument | Användning vid fortsatt arbete |
 | --- | --- |
-| [README](../README.md), [AGENTS](../AGENTS.md) | Start, arbetsregler, godkänt scope och språk. |
+| [README](../README.md), [CLAUDE](../CLAUDE.md) | Start, arbetsregler, godkänt scope och språk. |
 | [Plan](plan.md), [krav](requirements.md), [beslut](decisions.md) | Vad som är klart, öppet respektive beställt. |
 | [Arkitektur](architecture.md), [mappstruktur](project-structure.md) | Ansvarsgränser och faktisk filplacering. |
 | [Karaktärer](characters-and-loadouts.md), [katalogkontexter](catalog-contexts.md) | Ägande, tre specs, lagring, nivåbyte och importkontrakt. |
@@ -169,11 +169,13 @@ testverktyg. Detta kräver inte gamla Codex-chattar eller den hjälpprocessen.
 
 ## Arbetsform för nästa agent
 
-Chefen har beställt fyra arbetstrådar och regelbundna commits för denna
-projektfortsättning. Huvudagenten samordnar tre medhjälpare med avgränsade
-filansvar och granskar resultat mot kod, data och acceptanskriterier.
-Gamla agentnamn och chatt-ID:n är historik, inte krav på kontakt med dem.
-Skapa eller kontakta användarägda chattar endast på Chefens uttryckliga uppdrag.
+Arbetet drivs av Claude: en huvudagent som samordnar och integrerar, och
+underagenter i `.claude/agents/` med avgränsade filansvar (domän,
+infrastruktur/kontroller, katalogdata per klassgrupp, presentation och en
+oberoende granskare). Se [underagenterna](plan.md#underagenter) och
+[arbetsreglerna](../CLAUDE.md). Chefen har beställt regelbundna commits;
+huvudagenten granskar och committar. Gamla Codex-trådar och chatt-ID:n är
+historik. Nya användarägda sessioner skapas endast på Chefens uppdrag.
 
 Detta dokumentationsuppdrag ändrar inga appfunktioner, kataloger eller
 spelardata. Dokumentationskontroller ska skiljas från de tidigare

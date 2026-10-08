@@ -116,3 +116,11 @@ senare beslut uttryckligen utökar deras scope.
 - Beställning: uppdatera alla projektspecifika Markdown-filer så en annan agent kan fortsätta från nuvarande läge inför beta 2.
 - Genomförande: README/AGENTS och [beta2-handoff.md](beta2-handoff.md) ger startordning, verifierad bas, kodansvar, kommandon och kvarstående arbete. Äldre draft-, research- och överföringsdokument märks som historiska där de inte längre styr arbetet.
 - Konsekvens: inga nya beta 2-funktioner, programversionsnummer, källtyper eller migreringsregler beslutas genom denna dokumentation. Nästa release måste verifiera sina egna ändringar och sitt exakta paket.
+
+## DEC-015 — Claude som arbetsmiljö och underagenter
+
+- Datum: 2026-10-08.
+- Status: beslutat av Chefen.
+- Beslut: `AGENTS.md` döps om till [CLAUDE.md](../CLAUDE.md). Nya arbetsbranches använder prefixet `claude/`. Huvudagenten får dela upp arbetet på flera underagenter efter eget omdöme.
+- Genomförande: de tidigare Codex-trådarna ersätts av underagenter i `.claude/agents/` med filansvar enligt [planen](plan.md#underagenter): domän, infrastruktur/kontroller, katalogdata per klassgrupp, presentation och en oberoende granskare.
+- Konsekvens: arbetsregler, scope och datapolicy är oförändrade. Huvudagenten integrerar, verifierar och committar; underagenter committar inte. Äldre `codex/`-branches och chatt-ID:n är historik.
