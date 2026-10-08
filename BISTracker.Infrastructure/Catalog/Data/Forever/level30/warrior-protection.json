@@ -10,8 +10,8 @@
   "phase": "Level 30 beta",
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
   "reviewedOn": "2026-10-08",
-  "selectionMethod": "Named equipment alternatives from the original level-30 guide; item identity and restrictions checked against Forever metadata. No independent ranking or complete slot set is implied.",
-  "status": "Partial",
+  "selectionMethod": "Named alternatives from original Forever level-30 guides and this exact spec’s unranked WOWTBC Forever upgrade list. Dungeon, quest and approved crafting sources only are active. Metadata and quest availability checked separately. No independent ranking or equivalent-value claim.",
+  "status": "Reviewed",
   "items": [
     {
       "id": "warrior-protection-mainhand-6692",
@@ -107,7 +107,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=4107",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "warrior-protection-offhand-9522",
@@ -123,7 +127,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=9522",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
       "weaponKind": "OffHand",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "warrior-protection-wrist-10358",
@@ -139,7 +147,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=10358",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "warrior-protection-finger1-18585",
@@ -155,7 +167,10 @@
       "itemUrl": "https://www.wowhead.com/forever/item=18585",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "warrior-protection-finger2-18585",
@@ -171,7 +186,10 @@
       "itemUrl": "https://www.wowhead.com/forever/item=18585",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "warrior-protection-offhand-4129",
@@ -187,7 +205,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=4129",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
       "weaponKind": "OffHand",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "warrior-protection-waist-250556",
@@ -198,7 +220,7 @@
       "requiredLevel": 30,
       "acquisitionType": "Crafting",
       "source": "Blacksmithing",
-      "note": "Bind on pickup. Requires level 30.",
+      "note": "Bind on pickup. Requires level 30. Recipe: https://www.wowhead.com/forever/spell=1252305; Blacksmithing 150. Self-crafted bind-on-pickup item.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_20.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250556",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
@@ -214,7 +236,7 @@
       "requiredLevel": 25,
       "acquisitionType": "Crafting",
       "source": "Blacksmithing",
-      "note": "Bind on pickup. Requires level 25.",
+      "note": "Bind on pickup. Requires level 25. Recipe: https://www.wowhead.com/forever/spell=1252272; Blacksmithing 125. Self-crafted bind-on-pickup item.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_mail_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250523",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
@@ -230,7 +252,7 @@
       "requiredLevel": 25,
       "acquisitionType": "Crafting",
       "source": "Blacksmithing",
-      "note": "Bind on pickup. Requires level 25.",
+      "note": "Bind on pickup. Requires level 25. Recipe: https://www.wowhead.com/forever/spell=1252247; Blacksmithing 130. Self-crafted bind-on-pickup item.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_39.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250498",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
@@ -246,7 +268,7 @@
       "requiredLevel": 22,
       "acquisitionType": "Crafting",
       "source": "Blacksmithing",
-      "note": "Bind on pickup. Requires level 22.",
+      "note": "Bind on pickup. Requires level 22. Recipe: https://www.wowhead.com/forever/spell=1252267; Blacksmithing 110. Self-crafted bind-on-pickup item.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_chain_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250518",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
@@ -262,7 +284,7 @@
       "requiredLevel": 27,
       "acquisitionType": "Crafting",
       "source": "Leatherworking",
-      "note": "Requires level 27.",
+      "note": "Requires level 27. Recipe: https://www.wowhead.com/forever/spell=23399; Leatherworking 155.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_15.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=18948",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
@@ -278,7 +300,7 @@
       "requiredLevel": 30,
       "acquisitionType": "Crafting",
       "source": "Blacksmithing",
-      "note": "Requires level 30.",
+      "note": "Requires level 30. Recipe: https://www.wowhead.com/forever/spell=1301527; Blacksmithing 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_mail_skybornec60_b_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=277041",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
@@ -294,7 +316,7 @@
       "requiredLevel": 0,
       "acquisitionType": "Crafting",
       "source": "Engineering",
-      "note": "Requires Engineering 140; 10 charges. Alternative placement; choose one slot per owned copy. Unique-equipped.",
+      "note": "Requires Engineering 140; 10 charges. Alternative placement; choose one slot per owned copy. Unique-equipped. Recipe: https://www.wowhead.com/forever/spell=3952; Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
@@ -310,12 +332,590 @@
       "requiredLevel": 0,
       "acquisitionType": "Crafting",
       "source": "Engineering",
-      "note": "Requires Engineering 140; 10 charges. Alternative placement; choose one slot per owned copy. Unique-equipped.",
+      "note": "Requires Engineering 140; 10 charges. Alternative placement; choose one slot per owned copy. Unique-equipped. Recipe: https://www.wowhead.com/forever/spell=3952; Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
       "weaponKind": "None",
       "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-chest-7133",
+      "slot": "Chest",
+      "itemId": 7133,
+      "name": "Brutal Hauberk",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Brutal Hauberk (Horde); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Horde only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1848.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_chain_07.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7133",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-head-7130",
+      "slot": "Head",
+      "itemId": 7130,
+      "name": "Brutal Helm",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Brutal Helm (Horde); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Horde only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1845.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7130",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-hands-7129",
+      "slot": "Hands",
+      "itemId": 7129,
+      "name": "Brutal Gauntlets",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Brutal Gauntlets (Horde); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Horde only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1843.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_04.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7129",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-legs-7132",
+      "slot": "Legs",
+      "itemId": 7132,
+      "name": "Brutal Legguards",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Brutal Legguards (Horde); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Horde only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1847.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7132",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-chest-6972",
+      "slot": "Chest",
+      "itemId": 6972,
+      "name": "Fire Hardened Hauberk",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Furen's Armor (Alliance); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Alliance only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1782.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_chain_07.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6972",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-head-6971",
+      "slot": "Head",
+      "itemId": 6971,
+      "name": "Fire Hardened Coif",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Grimand's Armor (Alliance); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Alliance only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1706.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_39.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6971",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-hands-6974",
+      "slot": "Hands",
+      "itemId": 6974,
+      "name": "Fire Hardened Gauntlets",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Klockmort's Creation (Alliance); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Alliance only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1709.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_04.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6974",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-legs-6973",
+      "slot": "Legs",
+      "itemId": 6973,
+      "name": "Fire Hardened Leggings",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Mathiel's Armor (Alliance); Warrior class quest chain",
+      "note": "Chain starts at level 20 and requires Razorfen Kraul plus travel/combat in multiple zones. Alliance only; Warrior only. Final quest: https://www.wowhead.com/forever/quest=1711.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6973",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-back-4643",
+      "slot": "Back",
+      "itemId": 4643,
+      "name": "Grimsteel Cape",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Vorrel's Revenge (Horde)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=1051 (minimum level 25; Horde).",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=4643",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-back-9699",
+      "slot": "Back",
+      "itemId": 9699,
+      "name": "Garrison Cloak",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Return to Vahlarriel (Alliance)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=1440 (minimum level 30; Alliance).",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9699",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-back-2953",
+      "slot": "Back",
+      "itemId": 2953,
+      "name": "Watch Master's Cloak",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Morbent Fel (Alliance)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=55 (minimum level 20; Alliance).",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_05.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=2953",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-finger1-281634",
+      "slot": "Finger1",
+      "itemId": 281634,
+      "name": "Field Researcher's Loop",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Greater Friend of the Library (Alliance/Horde)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=79536 (minimum level 20; Alliance/Horde). Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=281634",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-finger2-281634",
+      "slot": "Finger2",
+      "itemId": 281634,
+      "name": "Field Researcher's Loop",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Greater Friend of the Library (Alliance/Horde)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=79536 (minimum level 20; Alliance/Horde). Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=281634",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-finger1-9538",
+      "slot": "Finger1",
+      "itemId": 9538,
+      "name": "Talvash's Gold Ring",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Gnome Improvement (Alliance)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=2948 (minimum level 28; Alliance). Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9538",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-finger2-9538",
+      "slot": "Finger2",
+      "itemId": 9538,
+      "name": "Talvash's Gold Ring",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Gnome Improvement (Alliance)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=2948 (minimum level 28; Alliance). Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9538",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "warrior-protection-finger1-9588",
+      "slot": "Finger1",
+      "itemId": 9588,
+      "name": "Nogg's Gold Ring",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Nogg's Ring Redo (Horde)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=2950 (minimum level 28; Horde). Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9588",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-finger2-9588",
+      "slot": "Finger2",
+      "itemId": 9588,
+      "name": "Nogg's Gold Ring",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Nogg's Ring Redo (Horde)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=2950 (minimum level 28; Horde). Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9588",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-finger1-2039",
+      "slot": "Finger1",
+      "itemId": 2039,
+      "name": "Plains Ring",
+      "requiredSuffix": null,
+      "requiredLevel": 24,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul — Trash drop",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=2039",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-finger2-2039",
+      "slot": "Finger2",
+      "itemId": 2039,
+      "name": "Plains Ring",
+      "requiredSuffix": null,
+      "requiredLevel": 24,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul — Trash drop",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=2039",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-ranged-7729",
+      "slot": "Ranged",
+      "itemId": 7729,
+      "name": "Chesterfall Musket",
+      "requiredSuffix": null,
+      "requiredLevel": 28,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery — Trash drop",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_rifle_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7729",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "warrior-protection-ranged-17042",
+      "slot": "Ranged",
+      "itemId": 17042,
+      "name": "Nail Spitter",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "An Unholy Alliance (Horde)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=6521 (minimum level 28; Horde).",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_rifle_01.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=17042",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-ranged-273843",
+      "slot": "Ranged",
+      "itemId": 273843,
+      "name": "Fallenroot Longbow",
+      "requiredSuffix": null,
+      "requiredLevel": 23,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps — Lorgus Jett",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_bow_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273843",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "warrior-protection-trinket1-280766",
+      "slot": "Trinket1",
+      "itemId": 280766,
+      "name": "Satchel of Potions",
+      "requiredSuffix": null,
+      "requiredLevel": 1,
+      "acquisitionType": "Quest",
+      "source": "Changing Tastes (Horde); Heartwoven (Alliance)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=95697 (minimum level 24; Horde); https://www.wowhead.com/forever/quest=95809 (minimum level 24; Alliance). Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bag_08.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=280766",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-trinket2-280766",
+      "slot": "Trinket2",
+      "itemId": 280766,
+      "name": "Satchel of Potions",
+      "requiredSuffix": null,
+      "requiredLevel": 1,
+      "acquisitionType": "Quest",
+      "source": "Changing Tastes (Horde); Heartwoven (Alliance)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=95697 (minimum level 24; Horde); https://www.wowhead.com/forever/quest=95809 (minimum level 24; Alliance). Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bag_08.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=280766",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "warrior-protection-trinket1-3456",
+      "slot": "Trinket1",
+      "itemId": 3456,
+      "name": "Dog Whistle",
+      "requiredSuffix": null,
+      "requiredLevel": 25,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery — Houndmaster Loksey",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_beastcall.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=3456",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-trinket2-3456",
+      "slot": "Trinket2",
+      "itemId": 3456,
+      "name": "Dog Whistle",
+      "requiredSuffix": null,
+      "requiredLevel": 25,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery — Houndmaster Loksey",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_beastcall.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=3456",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-trinket1-274152",
+      "slot": "Trinket1",
+      "itemId": 274152,
+      "name": "Roogug's Severed Head",
+      "requiredSuffix": null,
+      "requiredLevel": 25,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul — Roogug",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=274152",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-trinket2-274152",
+      "slot": "Trinket2",
+      "itemId": 274152,
+      "name": "Roogug's Severed Head",
+      "requiredSuffix": null,
+      "requiredLevel": 25,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul — Roogug",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=274152",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-trinket1-273840",
+      "slot": "Trinket1",
+      "itemId": 273840,
+      "name": "Cursed Murloc Eye",
+      "requiredSuffix": null,
+      "requiredLevel": 24,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps — Gelihast",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_evileye.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273840",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-trinket2-273840",
+      "slot": "Trinket2",
+      "itemId": 273840,
+      "name": "Cursed Murloc Eye",
+      "requiredSuffix": null,
+      "requiredLevel": 24,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps — Gelihast",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_evileye.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273840",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-trinket1-273643",
+      "slot": "Trinket1",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "requiredLevel": 21,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep — Commander Springvale",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
+    },
+    {
+      "id": "warrior-protection-trinket2-273643",
+      "slot": "Trinket2",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "requiredLevel": 21,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep — Commander Springvale",
+      "note": "Unique-equipped. Alternative placement; choose one slot per owned copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+      "weaponKind": "None",
+      "uniqueEquipped": true
     }
-  ]
+  ],
+  "weaponSetup": "OneHandAndOffHand",
+  "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview"
 }

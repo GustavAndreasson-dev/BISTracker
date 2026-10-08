@@ -10,8 +10,8 @@
   "phase": "Level 30 beta",
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
   "reviewedOn": "2026-10-08",
-  "selectionMethod": "Named equipment alternatives from the original level-30 guide; item identity and restrictions checked against Forever metadata. No independent ranking or complete slot set is implied.",
-  "status": "Partial",
+  "selectionMethod": "Named alternatives from original Forever level-30 guides and this exact spec’s unranked WOWTBC Forever upgrade list. Dungeon, quest and approved crafting sources only are active. Metadata and quest availability checked separately. No independent ranking or equivalent-value claim.",
+  "status": "Reviewed",
   "items": [
     {
       "id": "hunter-survival-mainhand-7689",
@@ -267,7 +267,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=277254",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-wrist-270080",
@@ -283,7 +287,10 @@
       "itemUrl": "https://www.wowhead.com/forever/item=270080",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "hunter-survival-legs-9624",
@@ -299,7 +306,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=9624",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-feet-7751",
@@ -315,7 +326,10 @@
       "itemUrl": "https://www.wowhead.com/forever/item=7751",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-hands-270072",
@@ -331,7 +345,10 @@
       "itemUrl": "https://www.wowhead.com/forever/item=270072",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "hunter-survival-head-6720",
@@ -347,7 +364,10 @@
       "itemUrl": "https://www.wowhead.com/forever/item=6720",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-finger1-6748",
@@ -363,7 +383,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=6748",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-finger2-6748",
@@ -379,7 +403,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=6748",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-trinket1-280766",
@@ -395,7 +423,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=280766",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-trinket2-280766",
@@ -411,7 +443,11 @@
       "itemUrl": "https://www.wowhead.com/forever/item=280766",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
-      "uniqueEquipped": false
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "hunter-survival-waist-252520",
@@ -422,7 +458,7 @@
       "requiredLevel": 30,
       "acquisitionType": "Crafting",
       "source": "Leatherworking",
-      "note": "Bind on pickup. Requires level 30.",
+      "note": "Bind on pickup. Requires level 30. Recipe: https://www.wowhead.com/forever/spell=1255080; Leatherworking 150. Self-crafted bind-on-pickup item.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_37b.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252520",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
@@ -438,7 +474,7 @@
       "requiredLevel": 22,
       "acquisitionType": "Crafting",
       "source": "Leatherworking",
-      "note": "Bind on pickup. Requires level 22.",
+      "note": "Bind on pickup. Requires level 22. Recipe: https://www.wowhead.com/forever/spell=1255102; Leatherworking 110. Self-crafted bind-on-pickup item.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_leather_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252508",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
@@ -454,7 +490,7 @@
       "requiredLevel": 30,
       "acquisitionType": "Crafting",
       "source": "Leatherworking",
-      "note": "Requires level 30.",
+      "note": "Requires level 30. Recipe: https://www.wowhead.com/forever/spell=9196; Leatherworking 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_leather_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=7374",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
@@ -470,7 +506,7 @@
       "requiredLevel": 30,
       "acquisitionType": "Crafting",
       "source": "Leatherworking",
-      "note": "Requires level 30.",
+      "note": "Requires level 30. Recipe: https://www.wowhead.com/forever/spell=7151; Leatherworking 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_08.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=5964",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
@@ -572,6 +608,158 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-mainhand-6679",
+      "slot": "MainHand",
+      "itemId": 6679,
+      "name": "Armor Piercer",
+      "requiredSuffix": null,
+      "requiredLevel": 24,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul (Icy Veins level-30 recommendation)",
+      "note": "two-handed melee stat weapon. Requires level 24; OffHand is not applicable while this weapon is equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_spear_05.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6679",
+      "recommendationUrl": "https://www.icy-veins.com/wow-forever/survival-hunter-melee-dps-pve-guide",
+      "weaponKind": "TwoHanded",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-back-6340",
+      "slot": "Back",
+      "itemId": 6340,
+      "name": "Fenrus' Hide",
+      "requiredSuffix": null,
+      "requiredLevel": 22,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep — Fenrus the Devourer",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_pelt_wolf_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6340",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-back-5193",
+      "slot": "Back",
+      "itemId": 5193,
+      "name": "Cape of the Brotherhood",
+      "requiredSuffix": null,
+      "requiredLevel": 19,
+      "acquisitionType": "Dungeon",
+      "source": "The Deadmines — Edwin VanCleef",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_08.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=5193",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-back-6314",
+      "slot": "Back",
+      "itemId": 6314,
+      "name": "Wolfmaster Cape",
+      "requiredSuffix": null,
+      "requiredLevel": 22,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep — Wolf Master Nandos",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_10.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6314",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-neck-7731",
+      "slot": "Neck",
+      "itemId": 7731,
+      "name": "Ghostshard Talisman",
+      "requiredSuffix": null,
+      "requiredLevel": 30,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery — Azshir the Sleepless",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_necklace_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7731",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-neck-274068",
+      "slot": "Neck",
+      "itemId": 274068,
+      "name": "Thermaplugg Medal of Honor",
+      "requiredSuffix": null,
+      "requiredLevel": 29,
+      "acquisitionType": "Dungeon",
+      "source": "Gnomeregan — Crowd Pummeler 9-60",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_amulet_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=274068",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-neck-277204",
+      "slot": "Neck",
+      "itemId": 277204,
+      "name": "Erudite's Amulet",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Friend of the Library (Alliance/Horde)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=78150 (minimum level 1; Alliance/Horde).",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_necklace_01.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=277204",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "hunter-survival-neck-23169",
+      "slot": "Neck",
+      "itemId": 23169,
+      "name": "Scorn's Icy Choker",
+      "requiredSuffix": null,
+      "requiredLevel": 30,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery — Scorn",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_necklace_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=23169",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false
+    },
+    {
+      "id": "hunter-survival-feet-6752",
+      "slot": "Feet",
+      "itemId": 6752,
+      "name": "Lancer Boots",
+      "requiredSuffix": null,
+      "requiredLevel": 0,
+      "acquisitionType": "Quest",
+      "source": "Mortality Wanes (Alliance)",
+      "note": "Quest: https://www.wowhead.com/forever/quest=1142 (minimum level 25; Alliance).",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6752",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": [
+        "Alliance"
+      ]
     }
-  ]
+  ],
+  "weaponSetup": "Flexible"
 }

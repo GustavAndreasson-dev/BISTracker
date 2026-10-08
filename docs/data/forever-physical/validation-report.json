@@ -1,0 +1,61 @@
+{
+  "reviewedOn": "2026-10-08",
+  "ownCatalogsValidated": [
+    {
+      "catalogId": "forever-beta-level30-hunter-beast-mastery",
+      "rawPlacementRows": 37,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-marksmanship",
+      "rawPlacementRows": 39,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-survival",
+      "rawPlacementRows": 44,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-assassination",
+      "rawPlacementRows": 41,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-combat",
+      "rawPlacementRows": 52,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-subtlety",
+      "rawPlacementRows": 52,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-arms",
+      "rawPlacementRows": 40,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-fury",
+      "rawPlacementRows": 50,
+      "factionWitnesses": 2,
+      "validated": true
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-protection",
+      "rawPlacementRows": 51,
+      "factionWitnesses": 2,
+      "validated": true
+    }
+  ],
+  "physicalMetadataConflictsAcrossAvailableCatalogs": [],
+  "validationScope": "Saved JSON and individual source facts, both faction feasibility witnesses, duplicate IDs, distinct item capacity, quest alternative rewards, profession count and hands. Root performs the .NET/WinUI release checks."
+}

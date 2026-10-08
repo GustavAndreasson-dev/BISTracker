@@ -1,0 +1,132 @@
+{
+  "250518": {
+    "itemId": 250518,
+    "spellId": 1252267,
+    "skill": 110,
+    "profession": "Blacksmithing",
+    "itemUrl": "https://www.wowhead.com/forever/item=250518",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1252267",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "250528": {
+    "itemId": 250528,
+    "spellId": 1252277,
+    "skill": 95,
+    "profession": "Blacksmithing",
+    "itemUrl": "https://www.wowhead.com/forever/item=250528",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1252277",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "250556": {
+    "itemId": 250556,
+    "spellId": 1252305,
+    "skill": 150,
+    "profession": "Blacksmithing",
+    "itemUrl": "https://www.wowhead.com/forever/item=250556",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1252305",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "252508": {
+    "itemId": 252508,
+    "spellId": 1255102,
+    "skill": 110,
+    "profession": "Leatherworking",
+    "itemUrl": "https://www.wowhead.com/forever/item=252508",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1255102",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "252520": {
+    "itemId": 252520,
+    "spellId": 1255080,
+    "skill": 150,
+    "profession": "Leatherworking",
+    "itemUrl": "https://www.wowhead.com/forever/item=252520",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1255080",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "252521": {
+    "itemId": 252521,
+    "spellId": 1255079,
+    "skill": 150,
+    "profession": "Leatherworking",
+    "itemUrl": "https://www.wowhead.com/forever/item=252521",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1255079",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "277041": {
+    "itemId": 277041,
+    "spellId": 1301527,
+    "skill": 175,
+    "profession": "Blacksmithing",
+    "itemUrl": "https://www.wowhead.com/forever/item=277041",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1301527",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "250498": {
+    "itemId": 250498,
+    "spellId": 1252247,
+    "skill": 130,
+    "profession": "Blacksmithing",
+    "itemUrl": "https://www.wowhead.com/forever/item=250498",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1252247",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "250523": {
+    "itemId": 250523,
+    "spellId": 1252272,
+    "skill": 125,
+    "profession": "Blacksmithing",
+    "itemUrl": "https://www.wowhead.com/forever/item=250523",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=1252272",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "5964": {
+    "itemId": 5964,
+    "spellId": 7151,
+    "skill": 175,
+    "profession": "Leatherworking",
+    "itemUrl": "https://www.wowhead.com/forever/item=5964",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=7151",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "7374": {
+    "itemId": 7374,
+    "spellId": 9196,
+    "skill": 175,
+    "profession": "Leatherworking",
+    "itemUrl": "https://www.wowhead.com/forever/item=7374",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=9196",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "18948": {
+    "itemId": 18948,
+    "spellId": 23399,
+    "skill": 155,
+    "profession": "Leatherworking",
+    "itemUrl": "https://www.wowhead.com/forever/item=18948",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=23399",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  },
+  "4381": {
+    "itemId": 4381,
+    "spellId": 3952,
+    "skill": 140,
+    "profession": "Engineering",
+    "itemUrl": "https://www.wowhead.com/forever/item=4381",
+    "recipeUrl": "https://www.wowhead.com/forever/spell=3952",
+    "recipeCharacterLevel": 0,
+    "reviewedOn": "2026-10-08"
+  }
+}

@@ -1,0 +1,1357 @@
+[
+  {
+    "catalogId": "forever-beta-level30-hunter-beast-mastery",
+    "recommendationId": "hunter-beast-mastery-neck-7731",
+    "itemId": 7731,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/beast-mastery-hunter/page-data.json",
+    "guideDeclaredName": "Ghostshard Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-beast-mastery",
+    "recommendationId": "hunter-beast-mastery-neck-274068",
+    "itemId": 274068,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/beast-mastery-hunter/page-data.json",
+    "guideDeclaredName": "Thermaplugg Medal of Honor",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-beast-mastery",
+    "recommendationId": "hunter-beast-mastery-neck-277204",
+    "itemId": 277204,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/beast-mastery-hunter/page-data.json",
+    "guideDeclaredName": "Erudite's Amulet",
+    "questIds": [
+      78150
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-beast-mastery",
+    "recommendationId": "hunter-beast-mastery-neck-23169",
+    "itemId": 23169,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/beast-mastery-hunter/page-data.json",
+    "guideDeclaredName": "Scorn's Icy Choker",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-marksmanship",
+    "recommendationId": "hunter-marksmanship-neck-7731",
+    "itemId": 7731,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/marksmanship-hunter/page-data.json",
+    "guideDeclaredName": "Ghostshard Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-marksmanship",
+    "recommendationId": "hunter-marksmanship-neck-274068",
+    "itemId": 274068,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/marksmanship-hunter/page-data.json",
+    "guideDeclaredName": "Thermaplugg Medal of Honor",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-marksmanship",
+    "recommendationId": "hunter-marksmanship-neck-277204",
+    "itemId": 277204,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/marksmanship-hunter/page-data.json",
+    "guideDeclaredName": "Erudite's Amulet",
+    "questIds": [
+      78150
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-marksmanship",
+    "recommendationId": "hunter-marksmanship-neck-23169",
+    "itemId": 23169,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/marksmanship-hunter/page-data.json",
+    "guideDeclaredName": "Scorn's Icy Choker",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-back-6340",
+    "itemId": 6340,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Fenrus' Hide",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-back-5193",
+    "itemId": 5193,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Cape of the Brotherhood",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-back-6314",
+    "itemId": 6314,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Wolfmaster Cape",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-neck-7731",
+    "itemId": 7731,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Ghostshard Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-neck-274068",
+    "itemId": 274068,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Thermaplugg Medal of Honor",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-neck-277204",
+    "itemId": 277204,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Erudite's Amulet",
+    "questIds": [
+      78150
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-neck-23169",
+    "itemId": 23169,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Scorn's Icy Choker",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-back-6340",
+    "itemId": 6340,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Fenrus' Hide",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-head-252512",
+    "itemId": 252512,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Brawler's Leather Helm",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket1-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket2-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket1-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket2-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket1-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket2-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket1-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "recommendationId": "rogue-assassination-trinket2-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/assassination-rogue/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-back-6340",
+    "itemId": 6340,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Fenrus' Hide",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-head-252512",
+    "itemId": 252512,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Brawler's Leather Helm",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket1-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket2-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket1-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket2-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket1-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket2-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket1-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "recommendationId": "rogue-combat-trinket2-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/combat-rogue/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-back-6340",
+    "itemId": 6340,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Fenrus' Hide",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-head-252512",
+    "itemId": 252512,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Brawler's Leather Helm",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket1-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket2-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket1-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket2-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket1-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket2-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket1-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "recommendationId": "rogue-subtlety-trinket2-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/subtlety-rogue/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-back-271716",
+    "itemId": 271716,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Explorer's League Dustcover",
+    "questIds": [
+      98824
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-back-6314",
+    "itemId": 6314,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Wolfmaster Cape",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-feet-273646",
+    "itemId": 273646,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Half-Eaten Boots",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-finger1-6749",
+    "itemId": 6749,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Tiger Band",
+    "questIds": [
+      1144
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-finger2-6749",
+    "itemId": 6749,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Tiger Band",
+    "questIds": [
+      1144
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-finger1-17694",
+    "itemId": 17694,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Band of the Fist",
+    "questIds": [
+      6565
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-finger2-17694",
+    "itemId": 17694,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Band of the Fist",
+    "questIds": [
+      6565
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-finger1-6321",
+    "itemId": 6321,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Silverlaine's Family Seal",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-finger2-6321",
+    "itemId": 6321,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Silverlaine's Family Seal",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-neck-7731",
+    "itemId": 7731,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Ghostshard Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-neck-274068",
+    "itemId": 274068,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Thermaplugg Medal of Honor",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-neck-277204",
+    "itemId": 277204,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Erudite's Amulet",
+    "questIds": [
+      78150
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-ranged-9456",
+    "itemId": 9456,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Glass Shooter",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-ranged-17042",
+    "itemId": 17042,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Nail Spitter",
+    "questIds": [
+      6521
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-ranged-285292",
+    "itemId": 285292,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Dull Sawblade",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket1-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket2-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket1-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket2-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket1-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket2-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket1-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-trinket2-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-wrist-4438",
+    "itemId": 4438,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Pugilist Bracers",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-wrist-6902",
+    "itemId": 6902,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Bands of Serra'kis",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-back-271716",
+    "itemId": 271716,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Explorer's League Dustcover",
+    "questIds": [
+      98824
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-back-6314",
+    "itemId": 6314,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Wolfmaster Cape",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-chest-1488",
+    "itemId": 1488,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Avenger's Armor",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-feet-273646",
+    "itemId": 273646,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Half-Eaten Boots",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-finger1-7686",
+    "itemId": 7686,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Ironspine's Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-finger2-7686",
+    "itemId": 7686,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Ironspine's Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-finger1-6749",
+    "itemId": 6749,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Tiger Band",
+    "questIds": [
+      1144
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-finger2-6749",
+    "itemId": 6749,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Tiger Band",
+    "questIds": [
+      1144
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-finger1-6321",
+    "itemId": 6321,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Silverlaine's Family Seal",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-finger2-6321",
+    "itemId": 6321,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Silverlaine's Family Seal",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-hands-4107",
+    "itemId": 4107,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Tiger Hunter Gloves",
+    "questIds": [
+      188
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-legs-6690",
+    "itemId": 6690,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Ferine Leggings",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-legs-9624",
+    "itemId": 9624,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Triprunner Dungarees",
+    "questIds": [
+      2841,
+      2929
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-legs-9625",
+    "itemId": 9625,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Dual Reinforced Leggings",
+    "questIds": [
+      2841,
+      2929
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-mainhand-7687",
+    "itemId": 7687,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Ironspine's Fist",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-offhand-7687",
+    "itemId": 7687,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Ironspine's Fist",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-mainhand-6692",
+    "itemId": 6692,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Pronged Reaver",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-offhand-6692",
+    "itemId": 6692,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Pronged Reaver",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-neck-7731",
+    "itemId": 7731,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Ghostshard Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-neck-274068",
+    "itemId": 274068,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Thermaplugg Medal of Honor",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-neck-277204",
+    "itemId": 277204,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Erudite's Amulet",
+    "questIds": [
+      78150
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-mainhand-271664",
+    "itemId": 271664,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Hornbeam Heft",
+    "questIds": [
+      95646
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-offhand-271664",
+    "itemId": 271664,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Hornbeam Heft",
+    "questIds": [
+      95646
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-mainhand-7683",
+    "itemId": 7683,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Bloody Brass Knuckles",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-offhand-7683",
+    "itemId": 7683,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Bloody Brass Knuckles",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-ranged-9456",
+    "itemId": 9456,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Glass Shooter",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-ranged-17042",
+    "itemId": 17042,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Nail Spitter",
+    "questIds": [
+      6521
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-ranged-285292",
+    "itemId": 285292,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Dull Sawblade",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket1-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket2-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket1-3456",
+    "itemId": 3456,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Dog Whistle",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket2-3456",
+    "itemId": 3456,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Dog Whistle",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket1-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket2-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket1-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket2-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket1-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-trinket2-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-wrist-4438",
+    "itemId": 4438,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Pugilist Bracers",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-wrist-6902",
+    "itemId": 6902,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Bands of Serra'kis",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-back-4643",
+    "itemId": 4643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Grimsteel Cape",
+    "questIds": [
+      1051
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-back-9699",
+    "itemId": 9699,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Garrison Cloak",
+    "questIds": [
+      1440
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-back-2953",
+    "itemId": 2953,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Watch Master's Cloak",
+    "questIds": [
+      55
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger1-281634",
+    "itemId": 281634,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Field Researcher's Loop",
+    "questIds": [
+      79536
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger2-281634",
+    "itemId": 281634,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Field Researcher's Loop",
+    "questIds": [
+      79536
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger1-9538",
+    "itemId": 9538,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Talvash's Gold Ring",
+    "questIds": [
+      2948
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger2-9538",
+    "itemId": 9538,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Talvash's Gold Ring",
+    "questIds": [
+      2948
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger1-9588",
+    "itemId": 9588,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Nogg's Gold Ring",
+    "questIds": [
+      2950
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger2-9588",
+    "itemId": 9588,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Nogg's Gold Ring",
+    "questIds": [
+      2950
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger1-2039",
+    "itemId": 2039,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Plains Ring",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-finger2-2039",
+    "itemId": 2039,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Plains Ring",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-ranged-7729",
+    "itemId": 7729,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Chesterfall Musket",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-ranged-17042",
+    "itemId": 17042,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Nail Spitter",
+    "questIds": [
+      6521
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-ranged-273843",
+    "itemId": 273843,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Fallenroot Longbow",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket1-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket2-280766",
+    "itemId": 280766,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Satchel of Potions",
+    "questIds": [
+      95697,
+      95809
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket1-3456",
+    "itemId": 3456,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Dog Whistle",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket2-3456",
+    "itemId": 3456,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Dog Whistle",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket1-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket2-274152",
+    "itemId": 274152,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Roogug's Severed Head",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket1-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket2-273840",
+    "itemId": 273840,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Cursed Murloc Eye",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket1-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "recommendationId": "warrior-protection-trinket2-273643",
+    "itemId": 273643,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/protection-warrior/page-data.json",
+    "guideDeclaredName": "Worgenbane Talisman",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-beast-mastery",
+    "recommendationId": "hunter-beast-mastery-feet-6752",
+    "itemId": 6752,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/beast-mastery-hunter/page-data.json",
+    "guideDeclaredName": "Lancer Boots",
+    "questIds": [
+      1142
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-marksmanship",
+    "recommendationId": "hunter-marksmanship-feet-6752",
+    "itemId": 6752,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/marksmanship-hunter/page-data.json",
+    "guideDeclaredName": "Lancer Boots",
+    "questIds": [
+      1142
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "recommendationId": "hunter-survival-feet-6752",
+    "itemId": 6752,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/survival-hunter/page-data.json",
+    "guideDeclaredName": "Lancer Boots",
+    "questIds": [
+      1142
+    ]
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "recommendationId": "warrior-arms-shoulder-5964",
+    "itemId": 5964,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/arms-warrior/page-data.json",
+    "guideDeclaredName": "Barbaric Shoulders",
+    "questIds": []
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "recommendationId": "warrior-fury-shoulder-5964",
+    "itemId": 5964,
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+    "pageDataUrl": "https://wowtbc.gg/page-data/warcraftforever/bis-list/fury-warrior/page-data.json",
+    "guideDeclaredName": "Barbaric Shoulders",
+    "questIds": []
+  }
+]

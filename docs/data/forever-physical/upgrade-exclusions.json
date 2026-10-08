@@ -1,0 +1,638 @@
+[
+  {
+    "catalogId": "forever-beta-level30-hunter-beast-mastery",
+    "itemId": 6752,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-beast-mastery",
+    "itemId": 281290,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-marksmanship",
+    "itemId": 6752,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-marksmanship",
+    "itemId": 281290,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "itemId": 6745,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "itemId": 2805,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "itemId": 16658,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "itemId": 6752,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-hunter-survival",
+    "itemId": 281290,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "itemId": 2805,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "itemId": 6745,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "itemId": 6720,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-assassination",
+    "itemId": 276895,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "itemId": 2805,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "itemId": 6745,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "itemId": 6720,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-combat",
+    "itemId": 276895,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "itemId": 2805,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "itemId": 6745,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "itemId": 6720,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-rogue-subtlety",
+    "itemId": 276895,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 281319,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 2805,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 16658,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 4136,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 18585,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 270052,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 270053,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 270050,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 281290,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 4086,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 277254,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 8183,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 217315,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 4383,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 15698,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 3765,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 6747,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 6792,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 4443,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 276895,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 270080,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 270068,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 4132,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 281319,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 2805,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 16658,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 6773,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270054,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270043,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 4136,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 18585,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270052,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270053,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270050,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270075,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270060,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 3754,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 6794,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270074,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270057,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 281295,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 6804,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 4977,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 9520,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 281290,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 9520,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 16886,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 4086,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 277254,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 8183,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 217315,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 4383,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 15698,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 3765,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 6747,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 6792,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 4443,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 276895,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270080,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 270068,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 4132,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "itemId": 6751,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "itemId": 276899,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "itemId": 281320,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "itemId": 6414,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "itemId": 277254,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "itemId": 6798,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-protection",
+    "itemId": 276895,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 279837,
+    "reason": "Quest faction unverified; removed from active catalog",
+    "historicalRecommendation": {
+      "id": "warrior-arms-neck-279837",
+      "slot": "Neck",
+      "itemId": 279837,
+      "name": "Fallen Guard's Pendant",
+      "requiredSuffix": null,
+      "requiredLevel": 1,
+      "acquisitionType": "Quest",
+      "source": "Starving Arcane",
+      "note": "Requires level 1. Faction availability is unverified; excluded from a faction-complete target set.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_necklace_44.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=279837",
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "availableFactions": []
+    }
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 15698,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 7913,
+    "reason": "Crafting recipe availability not individually reviewed"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 3765,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 6747,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 6792,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 3841,
+    "reason": "Crafting recipe availability not individually reviewed"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-arms",
+    "itemId": 4443,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 15698,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 7913,
+    "reason": "Crafting recipe availability not individually reviewed"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 3765,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 6747,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 6792,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 3841,
+    "reason": "Crafting recipe availability not individually reviewed"
+  },
+  {
+    "catalogId": "forever-beta-level30-warrior-fury",
+    "itemId": 4443,
+    "reason": "Quest reward/minimum level/faction not individually verified",
+    "guideUrl": "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/"
+  }
+]

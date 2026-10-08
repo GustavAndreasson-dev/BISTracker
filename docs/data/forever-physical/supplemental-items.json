@@ -1,0 +1,11 @@
+{
+  "itemId": 6679,
+  "name": "Armor Piercer",
+  "slot": "MainHand",
+  "requiredLevel": 24,
+  "itemUrl": "https://www.wowhead.com/forever/item=6679",
+  "recommendationUrl": "https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide",
+  "acquisitionType": "Dungeon",
+  "source": "Razorfen Kraul (Icy Veins level-30 recommendation)",
+  "availabilityEvidence": "Named level-30 Hunter recommendation; two-handed melee stat weapon. Requires level 24; OffHand is not applicable while this weapon is equipped."
+}

@@ -2,8 +2,15 @@
 
 Granskat 2026-10-08. Chefens nivå 30-beställning gäller Forever-betan,
 patch 1.60.1. Nio separata JSON-kataloger har skapats med källbelagda
-utrustningsalternativ. De är markerade **Partial**: guiderna täcker inte ett
-fullständigt, rangordnat set för alla slots. De är inte nivå 60-listor.
+utrustningsalternativ. De är nu markerade **Reviewed**: samtliga relevanta
+slots har källbelagda alternativ och en separat, möjlig uppsättning har
+verifierats för Alliance och Horde. Ingen egen ranking eller likvärdighet
+mellan alternativen har fastställts. De är inte nivå 60-listor.
+
+Chefens senare beslut samma dag tillåter **Dungeon, Quest och Crafting** i
+Forever. World drops ingår fortfarande inte i den aktiva policyn. Se även
+[samlad katalogöversikt](forever-level30-catalogs.md) och
+[katalogkontexter](catalog-contexts.md).
 
 ## Ursprungliga rekommendationskällor
 
@@ -14,19 +21,70 @@ alternativa giltiga slots; det anger inte antalet items som ska farmas.
 
 | Klass/spec | Namngivna guideitems | Placeringar | Ursprunglig guide |
 | --- | ---: | ---: | --- |
-| Hunter / Beast Mastery | 24 | 31 | [Docoda, granskad av Neteyes](https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-30-dps-overview) |
-| Hunter / Marksmanship | 26 | 33 | [Docoda, granskad av Neteyes](https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-30-dps-overview) |
-| Hunter / Survival | 27 | 35 | [Docoda, granskad av Neteyes](https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview) |
-| Rogue / Assassination | 25 | 33 | [warstry, granskad av Simonize](https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-30-dps-overview) |
-| Rogue / Combat | 30 | 42 | [warstry, granskad av Simonize](https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview) |
-| Rogue / Subtlety | 30 | 42 | [warstry, granskad av Simonize](https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-30-dps-overview) |
-| Warrior / Arms | 12 | 15 | [shoop](https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview) |
-| Warrior / Fury | 8 | 9 | [Babyhoof](https://www.wowhead.com/forever/guide/classes/warrior/fury/level-30-dps-overview) |
-| Warrior / Protection | 17 | 19 | [Riyani](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview) |
+| Hunter / Beast Mastery | 30 | 37 | [Docoda, granskad av Neteyes](https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-30-dps-overview) |
+| Hunter / Marksmanship | 32 | 39 | [Docoda, granskad av Neteyes](https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-30-dps-overview) |
+| Hunter / Survival | 36 | 44 | [Docoda, granskad av Neteyes](https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview) |
+| Rogue / Assassination | 30 | 41 | [warstry, granskad av Simonize](https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-30-dps-overview) |
+| Rogue / Combat | 36 | 52 | [warstry, granskad av Simonize](https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview) |
+| Rogue / Subtlety | 36 | 52 | [warstry, granskad av Simonize](https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-30-dps-overview) |
+| Warrior / Arms | 30 | 40 | [shoop](https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview) |
+| Warrior / Fury | 37 | 50 | [Babyhoof](https://www.wowhead.com/forever/guide/classes/warrior/fury/level-30-dps-overview) |
+| Warrior / Protection | 40 | 51 | [Riyani](https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview) |
 
-Totalt 259 rekommendationsplaceringar. Ingen egen simulering eller omrankning
-har gjorts. Alla anskaffningstyper i dessa tabeller har samlats in för att
-huvudtråden ska kunna tillämpa Chefens slutliga källavgränsning.
+Totalt 406 råa rekommendationsplaceringar; 388 kan användas i respektive
+beslutade vapenupplägg med Dungeon/Quest/Crafting. Placeringarna grupperas
+inom en målrad per utrustningsslot. Antalet ovan anger därför inte antal
+utrustningsmål eller antal kopior som ska farmas.
+
+## Slotkomplettering och möjliga set
+
+Vid den första granskningen 2026-10-08 innehöll de nio ursprungstabellerna
+259 placeringsrader och betydande luckor under Dungeon/Quest-policyn.
+Icy Veins namngivna Hunter-rekommendation för Armor Piercer samt Wowheads
+uttryckliga Protection-klassquests gav ytterligare källbelagda alternativ.
+Ruby-Adorned Blade togs bort från Assassination: författaren rekommenderar
+svärdet för Combat/Subtlety och beskriver det som ett dåligt specval för
+Assassination.
+
+WOWTBC:s **egna Forever-listor för samma spec** kompletterar återstående
+luckor. Exempel: [Beast Mastery](https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/),
+[Assassination](https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/),
+[Arms](https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/) och
+[Fury](https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/).
+Källan anger uttryckligen att items inte är ordnade. Den observerade
+offentliga Gatsby-`page-data.json` länkar spec, slot, item-ID och källa.
+139 nya placeringsrader har tagits med efter separat Forever-kontroll av
+itemmetadata och, för quests, belöning, fraktion och miniminivå.
+Craftinggodkännandet gjorde exempelvis Barbaric Shoulders till ett giltigt,
+namngivet Arms/Fury-alternativ utan att en egen statranking behövdes.
+
+[Slotgranskningen](data/forever-physical/slot-audit.json) innehåller 18
+`legalSetWitness`: en möjlig samtidig uppsättning per spec och fraktion.
+Alla har tom `missingSlots` och `fullSetValidated: true`.
+
+| Specs | Platser i exempelset | Egen profession i exempelset |
+| --- | ---: | --- |
+| Hunter, alla tre | 16; tvåhands melee-vapen upptar OffHand | Leatherworking 150 |
+| Rogue, alla tre | 17; två enhandade vapen | Ingen |
+| Arms Warrior | 16; tvåhandsvapen upptar OffHand | Blacksmithing 150 |
+| Fury Warrior | 17; två enhandade vapen | Ingen |
+| Protection Warrior | 17; enhandat vapen och shield | Blacksmithing 150 |
+
+Exempelseten är tillgänglighetsbevis, inte ranking. De använder olika basitem-ID:n
+i parade slots, kontrollerar unique-equipped och vapenhänder samt väljer aldrig
+två alternativa valbelöningar från samma quest. Publicerade questkedjor är
+kontrollerade till miniminivå högst 30. Antal ägda kopior modelleras fortfarande
+inte. Hunter kan även välja dual wield; OffHand-undantaget ovan gäller den
+verifierade tvåhandsuppsättningen, inte alla Hunter-listor permanent.
+
+Samtliga 13 befintliga craftingitems har en individuellt observerad
+`created-by-spell`-post med recept-ID och skill 95–175, Engineering 140.
+[Blacksmithing](https://www.icy-veins.com/wow-forever/blacksmithing),
+[Leatherworking](https://www.icy-veins.com/wow-forever/leatherworking) och
+[Engineering](https://www.icy-veins.com/wow-forever/engineering) anger Expert 225
+från karaktärsnivå 20. Bind-on-pickup behandlas som egen tillverkning och
+itemets användningskrav räknas separat. Ingen uppsättning kräver fler än två
+samtidiga professioner; uppsättningarna ovan kräver högst en.
 
 ## Metadata och kontroll
 
@@ -36,22 +94,28 @@ Forever-data. Questens namn och fraktion kommer från samma guides questdata.
 Namngivna professioner och dungeonområden följer tabellerna. Dungeonbossar
 som tabellen inte anger har inte lagts till från Vanilla.
 
-78 olika item-ID:n kontrollerades mot Wowheads Forever-tooltip:
+Den ursprungliga granskningen kontrollerade 78 olika item-ID:n mot Wowheads Forever-tooltip:
 `https://nether.wowhead.com/tooltip/item/{id}?dataEnv=16&locale=0`.
 Namn matchade. Alla uttryckliga nivåkrav är högst 30. Värdet 0 används där
 guidens metadata inte anger nivåkrav; questtillgänglighet följer den
 uttryckliga nivå 30-guiden. Vissa API-fält anger 1 trots att den synliga
 tooltipsen saknar nivåkrav; dessa metadatafält har bevarats.
 
-Ikonens namn kommer från samma Forever-tooltip. 70 olika fullständiga
+Ikonens namn kommer från samma Forever-tooltip. Ursprungligen kontrollerades 70 olika fullständiga
 `wow.zamimg.com/images/wow/icons/large/*.jpg`-URL:er härleddes och kontrollerades
 med HTTP HEAD: 200 och bildinnehåll. Det är nätverksverifierade ikonlänkar,
 inte lokalt hämtade eller visuellt jämförda bilder.
 
 Unique-equipped har endast markerats när den lästa tooltipsen uttryckligen
-anger det: 274152, 3456, 4381, 6692, 7682, 7686 och 9453.
+anger det, exempelvis 274152, 3456, 4381, 6692, 7682, 7686 och 9453.
 Se exempelvis [Ironspine's Eye](https://www.wowhead.com/forever/item=7686).
 Övriga items har inte fått påhittade unique-regler.
+
+Den slutliga faktasamlingen innehåller 150 individuella itemmetadata-poster,
+inklusive granskade men avvisade kandidater, 82 quest-/kedjeposter och 45
+itemers egna reward-from-quest-tabeller. Alla 118 olika ikon-URL:er i den
+slutliga faktasamlingen gav HTTP 200 och bildinnehåll. Kontrollunderlaget
+finns i [data/forever-physical](data/forever-physical).
 
 ## Slots och särskilda villkor
 
@@ -93,6 +157,19 @@ nivå 30-listor, och Subtlety-guiden har tagit bort sin lista medan nya items
 undersöks. Dessa luckor har inte fyllts med Classic/SoD-data. Wowheads
 separata Forever-guider gav de konkreta rekommendationerna ovan.
 
+Starving Arcane-itemet 279837 hade fraktionskod 0 utan verifierad questväg.
+Det har uteslutits från aktiv Arms-data och bevarats i `upgrade-exclusions.json`.
+Det gäller även andra nya kandidater vars itemnivåkrav är över 30, vars
+questbelöning/tillgänglighet inte kunnat verifieras eller vars recept ännu
+inte granskats. Inget sådant item har använts för att dölja en slotlucka.
+
+Power Stones har fortfarande äldre item-ID:n i questens valbelöningstabell.
+Forever-guiden och Charged Leather Bracers individuella itempost pekar
+båda på samma quest. Den observerade reward-from-quest-kopplingen sparas
+separat och betraktas konservativt som ett alternativt questval i exempelsetet.
+Detta dokumenterade metadatafel innebär inte rätt att välja två belöningar.
+Ingen spelklientgenomgång eller DPS-/healing-/tank-simulering har utförts.
+
 ## Researchverktyg och ansvar
 
 `tools/data/forever-physical/Read-GuideResearch.ps1` hämtar och extraherar endast
@@ -101,6 +178,15 @@ de nio originalguiderna till en separat researchkatalog under TEMP.
 namn, nivåer och ikonlänkar. Det vägrar ersätta befintliga kataloger utan ett
 uttryckligt regenereringsval och matchande källidentitet. Tooltips måste finnas
 i researchkatalogens `tips`-mapp före körning.
+
+`Complete-SlotAudit.ps1` kompletterar de ursprungliga klassquest-/Icy-fynden
+och visar den historiska Dungeon/Quest-luckbilden. Kör därefter
+`Read-SlotUpgrades.ps1`, `Read-UpgradeTooltips.ps1`, `Review-QuestMetadata.py`,
+`Review-QuestItemSources.py` och `Complete-UpgradeAudit.py` för den beslutade
+Dungeon/Quest/Crafting-policyn och den slutliga slotgranskningen.
+`Review-Icons.ps1` verifierar ikonernas HTTP-status. Individuella crafting-HTML
+som lästs av hybridtråden återanvänds för observerade receptfakta; full HTML
+och tooltips hålls under TEMP, medan endast relevanta fakta ligger i repot.
 
 Ingen spelares framstegsfil har lästs eller ändrats. Huvudtråden ansvarar för
 gemensam loader, domänregler, appverifiering, slutlig källfiltrering och commits.

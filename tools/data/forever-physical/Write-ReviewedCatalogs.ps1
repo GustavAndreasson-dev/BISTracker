@@ -6,10 +6,10 @@ New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
 $slotNames=@{1='Head';2='Neck';3='Shoulder';5='Chest';6='Waist';7='Legs';8='Feet';9='Wrist';10='Hands';11='Finger1';12='Trinket1';13='MainHand';14='OffHand';15='Ranged';16='Back';17='MainHand';21='MainHand';22='OffHand';23='OffHand';25='Ranged';26='Ranged'}
 $skillNames=@{164='Blacksmithing';165='Leatherworking';202='Engineering'}
 $iconResults=@{}
-foreach($file in Get-ChildItem $researchDir -Filter '*.json') {
+foreach($file in Get-ChildItem $researchDir -Filter '*.json' | Where-Object BaseName -Match '^(hunter|rogue|warrior)-') {
  $guide=Get-Content -Raw $file.FullName | ConvertFrom-Json -AsHashtable
  $items=@();$rows=@($guide.rows)
- if($guide.characterClass -eq 'Rogue') {
+ if($guide.characterClass -eq 'Rogue' -and $guide.specializationId -ne 'assassination') {
   $meta=$guide.entities['3']['277246']
   $rows+=@{id=277246;name=$meta.name_enus;metadata=$meta;slot=$meta.jsonequip.slotbak;requiredLevel=$meta.jsonequip.reqlevel;source='The Eye of Bhossca';section='Best Level 30 Quest Rewards';itemCell='[item=277246]'}
  }

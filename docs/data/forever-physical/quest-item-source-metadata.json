@@ -1,0 +1,750 @@
+{
+  "2545": {
+    "itemId": 2545,
+    "itemUrl": "https://www.wowhead.com/forever/item=2545",
+    "observedRewardQuestIds": [
+      471
+    ],
+    "questSources": [
+      {
+        "questId": 471,
+        "name": "Apprentice's Duties",
+        "minimumLevel": 18,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "2953": {
+    "itemId": 2953,
+    "itemUrl": "https://www.wowhead.com/forever/item=2953",
+    "observedRewardQuestIds": [
+      55
+    ],
+    "questSources": [
+      {
+        "questId": 55,
+        "name": "Morbent Fel",
+        "minimumLevel": 20,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "4107": {
+    "itemId": 4107,
+    "itemUrl": "https://www.wowhead.com/forever/item=4107",
+    "observedRewardQuestIds": [
+      188
+    ],
+    "questSources": [
+      {
+        "questId": 188,
+        "name": "Tiger Mastery",
+        "minimumLevel": 28,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "4129": {
+    "itemId": 4129,
+    "itemUrl": "https://www.wowhead.com/forever/item=4129",
+    "observedRewardQuestIds": [
+      613
+    ],
+    "questSources": [
+      {
+        "questId": 613,
+        "name": "Cracking Maury's Foot",
+        "minimumLevel": 30,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "4643": {
+    "itemId": 4643,
+    "itemUrl": "https://www.wowhead.com/forever/item=4643",
+    "observedRewardQuestIds": [
+      1051
+    ],
+    "questSources": [
+      {
+        "questId": 1051,
+        "name": "Vorrel's Revenge",
+        "minimumLevel": 25,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6720": {
+    "itemId": 6720,
+    "itemUrl": "https://www.wowhead.com/forever/item=6720",
+    "observedRewardQuestIds": [
+      1136
+    ],
+    "questSources": [
+      {
+        "questId": 1136,
+        "name": "Frostmaw",
+        "minimumLevel": 26,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6727": {
+    "itemId": 6727,
+    "itemUrl": "https://www.wowhead.com/forever/item=6727",
+    "observedRewardQuestIds": [
+      1189
+    ],
+    "questSources": [
+      {
+        "questId": 1189,
+        "name": "Safety First",
+        "minimumLevel": 29,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6748": {
+    "itemId": 6748,
+    "itemUrl": "https://www.wowhead.com/forever/item=6748",
+    "observedRewardQuestIds": [
+      1144
+    ],
+    "questSources": [
+      {
+        "questId": 1144,
+        "name": "Willix the Importer",
+        "minimumLevel": 22,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6749": {
+    "itemId": 6749,
+    "itemUrl": "https://www.wowhead.com/forever/item=6749",
+    "observedRewardQuestIds": [
+      1144
+    ],
+    "questSources": [
+      {
+        "questId": 1144,
+        "name": "Willix the Importer",
+        "minimumLevel": 22,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6752": {
+    "itemId": 6752,
+    "itemUrl": "https://www.wowhead.com/forever/item=6752",
+    "observedRewardQuestIds": [
+      1142
+    ],
+    "questSources": [
+      {
+        "questId": 1142,
+        "name": "Mortality Wanes",
+        "minimumLevel": 25,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6971": {
+    "itemId": 6971,
+    "itemUrl": "https://www.wowhead.com/forever/item=6971",
+    "observedRewardQuestIds": [
+      1706
+    ],
+    "questSources": [
+      {
+        "questId": 1706,
+        "name": "Grimand's Armor",
+        "minimumLevel": 20,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6972": {
+    "itemId": 6972,
+    "itemUrl": "https://www.wowhead.com/forever/item=6972",
+    "observedRewardQuestIds": [
+      1782
+    ],
+    "questSources": [
+      {
+        "questId": 1782,
+        "name": "Furen's Armor",
+        "minimumLevel": 20,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6973": {
+    "itemId": 6973,
+    "itemUrl": "https://www.wowhead.com/forever/item=6973",
+    "observedRewardQuestIds": [
+      1711
+    ],
+    "questSources": [
+      {
+        "questId": 1711,
+        "name": "Mathiel's Armor",
+        "minimumLevel": 20,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6974": {
+    "itemId": 6974,
+    "itemUrl": "https://www.wowhead.com/forever/item=6974",
+    "observedRewardQuestIds": [
+      1709
+    ],
+    "questSources": [
+      {
+        "questId": 1709,
+        "name": "Klockmort's Creation",
+        "minimumLevel": 20,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "6975": {
+    "itemId": 6975,
+    "itemUrl": "https://www.wowhead.com/forever/item=6975",
+    "observedRewardQuestIds": [
+      1792
+    ],
+    "questSources": [
+      {
+        "questId": 1792,
+        "name": "Whirlwind Weapon",
+        "minimumLevel": 30,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "7129": {
+    "itemId": 7129,
+    "itemUrl": "https://www.wowhead.com/forever/item=7129",
+    "observedRewardQuestIds": [
+      1843
+    ],
+    "questSources": [
+      {
+        "questId": 1843,
+        "name": "Brutal Gauntlets",
+        "minimumLevel": 20,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "7130": {
+    "itemId": 7130,
+    "itemUrl": "https://www.wowhead.com/forever/item=7130",
+    "observedRewardQuestIds": [
+      1845
+    ],
+    "questSources": [
+      {
+        "questId": 1845,
+        "name": "Brutal Helm",
+        "minimumLevel": 20,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "7132": {
+    "itemId": 7132,
+    "itemUrl": "https://www.wowhead.com/forever/item=7132",
+    "observedRewardQuestIds": [
+      1847
+    ],
+    "questSources": [
+      {
+        "questId": 1847,
+        "name": "Brutal Legguards",
+        "minimumLevel": 20,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "7133": {
+    "itemId": 7133,
+    "itemUrl": "https://www.wowhead.com/forever/item=7133",
+    "observedRewardQuestIds": [
+      1848
+    ],
+    "questSources": [
+      {
+        "questId": 1848,
+        "name": "Brutal Hauberk",
+        "minimumLevel": 20,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "7751": {
+    "itemId": 7751,
+    "itemUrl": "https://www.wowhead.com/forever/item=7751",
+    "observedRewardQuestIds": [
+      1051
+    ],
+    "questSources": [
+      {
+        "questId": 1051,
+        "name": "Vorrel's Revenge",
+        "minimumLevel": 25,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "9520": {
+    "itemId": 9520,
+    "itemUrl": "https://www.wowhead.com/forever/item=9520",
+    "observedRewardQuestIds": [
+      679
+    ],
+    "questSources": [
+      {
+        "questId": 679,
+        "name": "Call to Arms",
+        "minimumLevel": 30,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "9522": {
+    "itemId": 9522,
+    "itemUrl": "https://www.wowhead.com/forever/item=9522",
+    "observedRewardQuestIds": [
+      2418
+    ],
+    "questSources": [
+      {
+        "questId": 2418,
+        "name": "Power Stones",
+        "minimumLevel": 30,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "9538": {
+    "itemId": 9538,
+    "itemUrl": "https://www.wowhead.com/forever/item=9538",
+    "observedRewardQuestIds": [
+      2948
+    ],
+    "questSources": [
+      {
+        "questId": 2948,
+        "name": "Gnome Improvement",
+        "minimumLevel": 28,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "9588": {
+    "itemId": 9588,
+    "itemUrl": "https://www.wowhead.com/forever/item=9588",
+    "observedRewardQuestIds": [
+      2950
+    ],
+    "questSources": [
+      {
+        "questId": 2950,
+        "name": "Nogg's Ring Redo",
+        "minimumLevel": 28,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "9624": {
+    "itemId": 9624,
+    "itemUrl": "https://www.wowhead.com/forever/item=9624",
+    "observedRewardQuestIds": [
+      2841,
+      2929
+    ],
+    "questSources": [
+      {
+        "questId": 2841,
+        "name": "Rig Wars",
+        "minimumLevel": 25,
+        "factionCode": 2
+      },
+      {
+        "questId": 2929,
+        "name": "The Grand Betrayal",
+        "minimumLevel": 25,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "9625": {
+    "itemId": 9625,
+    "itemUrl": "https://www.wowhead.com/forever/item=9625",
+    "observedRewardQuestIds": [
+      2841,
+      2929
+    ],
+    "questSources": [
+      {
+        "questId": 2841,
+        "name": "Rig Wars",
+        "minimumLevel": 25,
+        "factionCode": 2
+      },
+      {
+        "questId": 2929,
+        "name": "The Grand Betrayal",
+        "minimumLevel": 25,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "9699": {
+    "itemId": 9699,
+    "itemUrl": "https://www.wowhead.com/forever/item=9699",
+    "observedRewardQuestIds": [
+      1440
+    ],
+    "questSources": [
+      {
+        "questId": 1440,
+        "name": "Return to Vahlarriel",
+        "minimumLevel": 30,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "10358": {
+    "itemId": 10358,
+    "itemUrl": "https://www.wowhead.com/forever/item=10358",
+    "observedRewardQuestIds": [
+      2418
+    ],
+    "questSources": [
+      {
+        "questId": 2418,
+        "name": "Power Stones",
+        "minimumLevel": 30,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "16886": {
+    "itemId": 16886,
+    "itemUrl": "https://www.wowhead.com/forever/item=16886",
+    "observedRewardQuestIds": [
+      909,
+      6922
+    ],
+    "questSources": [
+      {
+        "questId": 909,
+        "name": "Baron Aquanis",
+        "minimumLevel": 25,
+        "factionCode": 2
+      },
+      {
+        "questId": 6922,
+        "name": "Baron Aquanis",
+        "minimumLevel": 21,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "17042": {
+    "itemId": 17042,
+    "itemUrl": "https://www.wowhead.com/forever/item=17042",
+    "observedRewardQuestIds": [
+      6521
+    ],
+    "questSources": [
+      {
+        "questId": 6521,
+        "name": "An Unholy Alliance",
+        "minimumLevel": 28,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "17694": {
+    "itemId": 17694,
+    "itemUrl": "https://www.wowhead.com/forever/item=17694",
+    "observedRewardQuestIds": [
+      6565
+    ],
+    "questSources": [
+      {
+        "questId": 6565,
+        "name": "Allegiance to the Old Gods",
+        "minimumLevel": 17,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "18585": {
+    "itemId": 18585,
+    "itemUrl": "https://www.wowhead.com/forever/item=18585",
+    "observedRewardQuestIds": [
+      7541
+    ],
+    "questSources": [
+      {
+        "questId": 7541,
+        "name": "Service to the Horde",
+        "minimumLevel": 30,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "270021": {
+    "itemId": 270021,
+    "itemUrl": "https://www.wowhead.com/forever/item=270021",
+    "observedRewardQuestIds": [
+      1275
+    ],
+    "questSources": [
+      {
+        "questId": 1275,
+        "name": "Researching the Corruption",
+        "minimumLevel": 18,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "270055": {
+    "itemId": 270055,
+    "itemUrl": "https://www.wowhead.com/forever/item=270055",
+    "observedRewardQuestIds": [
+      2418
+    ],
+    "questSources": [
+      {
+        "questId": 2418,
+        "name": "Power Stones",
+        "minimumLevel": 30,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "270072": {
+    "itemId": 270072,
+    "itemUrl": "https://www.wowhead.com/forever/item=270072",
+    "observedRewardQuestIds": [
+      504
+    ],
+    "questSources": [
+      {
+        "questId": 504,
+        "name": "Crushridge Warmongers",
+        "minimumLevel": 30,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "270080": {
+    "itemId": 270080,
+    "itemUrl": "https://www.wowhead.com/forever/item=270080",
+    "observedRewardQuestIds": [
+      685
+    ],
+    "questSources": [
+      {
+        "questId": 685,
+        "name": "Wanted! Otto and Falconcrest",
+        "minimumLevel": 30,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "271664": {
+    "itemId": 271664,
+    "itemUrl": "https://www.wowhead.com/forever/item=271664",
+    "observedRewardQuestIds": [
+      95646
+    ],
+    "questSources": [
+      {
+        "questId": 95646,
+        "name": "Horrors in the Highland",
+        "minimumLevel": 24,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "271716": {
+    "itemId": 271716,
+    "itemUrl": "https://www.wowhead.com/forever/item=271716",
+    "observedRewardQuestIds": [
+      98824
+    ],
+    "questSources": [
+      {
+        "questId": 98824,
+        "name": "Prehistoric Prism",
+        "minimumLevel": 24,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "277204": {
+    "itemId": 277204,
+    "itemUrl": "https://www.wowhead.com/forever/item=277204",
+    "observedRewardQuestIds": [
+      78150
+    ],
+    "questSources": [
+      {
+        "questId": 78150,
+        "name": "Friend of the Library",
+        "minimumLevel": 1,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "277246": {
+    "itemId": 277246,
+    "itemUrl": "https://www.wowhead.com/forever/item=277246",
+    "observedRewardQuestIds": [
+      78699
+    ],
+    "questSources": [
+      {
+        "questId": 78699,
+        "name": "The Eye of Bhossca",
+        "minimumLevel": 25,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "277254": {
+    "itemId": 277254,
+    "itemUrl": "https://www.wowhead.com/forever/item=277254",
+    "observedRewardQuestIds": [
+      82208
+    ],
+    "questSources": [
+      {
+        "questId": 82208,
+        "name": "Greater Friend of the Library",
+        "minimumLevel": 30,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "280766": {
+    "itemId": 280766,
+    "itemUrl": "https://www.wowhead.com/forever/item=280766",
+    "observedRewardQuestIds": [
+      95697,
+      95809
+    ],
+    "questSources": [
+      {
+        "questId": 95697,
+        "name": "Changing Tastes",
+        "minimumLevel": 24,
+        "factionCode": 2
+      },
+      {
+        "questId": 95809,
+        "name": "Heartwoven",
+        "minimumLevel": 24,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "280805": {
+    "itemId": 280805,
+    "itemUrl": "https://www.wowhead.com/forever/item=280805",
+    "observedRewardQuestIds": [
+      95697
+    ],
+    "questSources": [
+      {
+        "questId": 95697,
+        "name": "Changing Tastes",
+        "minimumLevel": 24,
+        "factionCode": 2
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "281314": {
+    "itemId": 281314,
+    "itemUrl": "https://www.wowhead.com/forever/item=281314",
+    "observedRewardQuestIds": [
+      98297
+    ],
+    "questSources": [
+      {
+        "questId": 98297,
+        "name": "Stopping the Cycle",
+        "minimumLevel": 24,
+        "factionCode": 1
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  },
+  "281634": {
+    "itemId": 281634,
+    "itemUrl": "https://www.wowhead.com/forever/item=281634",
+    "observedRewardQuestIds": [
+      79536
+    ],
+    "questSources": [
+      {
+        "questId": 79536,
+        "name": "Greater Friend of the Library",
+        "minimumLevel": 20,
+        "factionCode": 3
+      }
+    ],
+    "reviewedOn": "2026-10-08"
+  }
+}

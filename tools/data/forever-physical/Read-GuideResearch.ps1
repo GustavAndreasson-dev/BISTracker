@@ -37,7 +37,7 @@ foreach($target in $targets) {
 }
 $tipDir=Join-Path $researchDir 'tips'
 New-Item -ItemType Directory -Path $tipDir -Force | Out-Null
-$ids=@(Get-ChildItem $researchDir -Filter '*.json' | ForEach-Object { (Get-Content -Raw $_.FullName | ConvertFrom-Json).rows.id })
+$ids=@(Get-ChildItem $researchDir -Filter '*.json' | Where-Object BaseName -Match '^(hunter|rogue|warrior)-' | ForEach-Object { (Get-Content -Raw $_.FullName | ConvertFrom-Json).rows.id })
 foreach($id in ($ids + @(6687,277246) | Sort-Object -Unique)) {
  $tip=Invoke-RestMethod ('https://nether.wowhead.com/tooltip/item/{0}?dataEnv=16&locale=0' -f $id)
  $tip | ConvertTo-Json -Depth 10 | Set-Content (Join-Path $tipDir "$id.json")
