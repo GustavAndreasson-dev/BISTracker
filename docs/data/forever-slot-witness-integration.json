@@ -1,0 +1,507 @@
+{
+  "auditType": "ForeverSlotWitnessIntegration",
+  "reviewedOn": "2026-10-08",
+  "result": "PASS",
+  "checkedCatalogs": 27,
+  "checkedFactionSets": 54,
+  "errors": [],
+  "witnesses": [
+    {
+      "catalogId": "forever-beta-level30-mage-arcane",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-mage-arcane",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-mage-fire",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-mage-fire",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-mage-frost",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-mage-frost",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-priest-discipline",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-priest-discipline",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-priest-holy",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-priest-holy",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-priest-shadow",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-priest-shadow",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warlock-affliction",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warlock-affliction",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warlock-demonology",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warlock-demonology",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warlock-destruction",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warlock-destruction",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-casters/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-druid-balance",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-druid-balance",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-druid-feral",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        "Leatherworking"
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-druid-feral",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-druid-restoration",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-druid-restoration",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-paladin-holy",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        "Enchanting"
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-paladin-holy",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        "Enchanting"
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-paladin-protection",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [
+        "Enchanting"
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-paladin-protection",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [
+        "Enchanting"
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-paladin-retribution",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        "Enchanting"
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-paladin-retribution",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        "Enchanting"
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-shaman-elemental",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-shaman-elemental",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-shaman-enhancement",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-shaman-enhancement",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-shaman-restoration",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-shaman-restoration",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-hybrids/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-beast-mastery",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Leatherworking",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-beast-mastery",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Leatherworking",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-marksmanship",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Leatherworking",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-marksmanship",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Leatherworking",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-survival",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Leatherworking",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-hunter-survival",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Leatherworking",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-assassination",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-assassination",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-combat",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-combat",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-subtlety",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-rogue-subtlety",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-arms",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Blacksmithing",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-arms",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 16,
+      "requiredProfessions": [
+        {
+          "profession": "Blacksmithing",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-fury",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-fury",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-protection",
+      "faction": "Alliance",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [
+        {
+          "profession": "Blacksmithing",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "catalogId": "forever-beta-level30-warrior-protection",
+      "faction": "Horde",
+      "reviewSource": "docs/data/forever-physical/slot-audit.json",
+      "verifiedSlots": 17,
+      "requiredProfessions": [
+        {
+          "profession": "Blacksmithing",
+          "skill": 150
+        }
+      ],
+      "result": "PASS"
+    }
+  ],
+  "scope": "Actual active product identities, slots, factions, physical variants, unique rules, weapon plans, reviewed profession count. Quest reward/chain and recipe accessibility evidence remains in the linked specialist reviews; no game-client playthrough."
+}

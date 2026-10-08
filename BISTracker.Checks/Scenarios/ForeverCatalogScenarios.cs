@@ -26,6 +26,9 @@ internal static class ForeverCatalogScenarios
                         catalog.Context.Phase.Contains("beta", StringComparison.OrdinalIgnoreCase), "Nivå, beta, klass och spec är uttryckliga.");
                     Assert(catalog.Items.Select(item => item.Id).Distinct().Count() == catalog.Items.Count, "Rekommendations-ID:n är unika.");
                     Assert(unfiltered.Items.Count >= catalog.Items.Count, "Källpolicyn får bara filtrera alternativ.");
+                    Assert(Enum.GetValues<CharacterFaction>().All(faction => catalog.EquipmentPlan.CatalogCoverageFor(faction).IsComplete) &&
+                        catalog.Items.All(item => item.Details?.AvailableFactions is not { Count: 0 }),
+                        "Varje aktiv produktkatalog måste ha en möjlig komplett kombination för båda fraktioner utan okänd questtillgång.");
                     foreach (var item in catalog.Items)
                     {
                         var details = item.Details ?? throw new InvalidOperationException("Riktig itemmetadata saknas.");

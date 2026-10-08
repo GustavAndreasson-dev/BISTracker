@@ -1,0 +1,3519 @@
+{
+  "schemaVersion": 1,
+  "auditType": "ForeverSlotRelease",
+  "reviewedOn": "2026-10-08",
+  "releaseReady": true,
+  "checkedCatalogs": 27,
+  "blockedCatalogs": 0,
+  "validationScope": "Slot combinations, variant capacity, unique, weapon plans and faction availability. Quest/profession source evidence and distribution checks are separate.",
+  "quantityPolicy": "One recorded copy per item variant; unique applies to base item ID.",
+  "catalogs": [
+    {
+      "characterClass": "Druid",
+      "specializationId": "balance",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 71,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 2
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 5
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 9
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 5
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 6
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 3
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 6
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 3
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 14
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/balance-druid/",
+        "https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Druid",
+      "specializationId": "feral",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 64,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 16,
+      "hordeGoalCount": 16,
+      "weaponSetup": "TwoHanded",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 2
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 4
+        },
+        {
+          "slot": "Back",
+          "alternatives": 4
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 5
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 6
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 4
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 5
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 4
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 6
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 6
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 3
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 5
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 0
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/feral-dps-druid/",
+        "https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-dps-overview",
+        "https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-tank-overview"
+      ]
+    },
+    {
+      "characterClass": "Druid",
+      "specializationId": "restoration",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 40,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 3
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 2
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 3
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 2
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 5
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 3
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 2
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 3
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+        "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview"
+      ]
+    },
+    {
+      "characterClass": "Hunter",
+      "specializationId": "beast-mastery",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 33,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 16,
+      "hordeGoalCount": 16,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 1
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 1
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 2
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 1
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 3
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 3
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 1
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/beast-mastery-hunter/",
+        "https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide",
+        "https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Hunter",
+      "specializationId": "marksmanship",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 33,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 16,
+      "hordeGoalCount": 16,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 1
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 1
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 2
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 1
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 3
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 3
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 1
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/",
+        "https://www.icy-veins.com/wow-forever/marksmanship-hunter-ranged-dps-pve-guide",
+        "https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Hunter",
+      "specializationId": "survival",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 38,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 2
+        },
+        {
+          "slot": "Back",
+          "alternatives": 3
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 2
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 2
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 1
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 3
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 4
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 1
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/survival-hunter/",
+        "https://www.icy-veins.com/wow-forever/survival-hunter-melee-dps-pve-guide",
+        "https://www.wowhead.com/forever/guide/classes/hunter/survival/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Mage",
+      "specializationId": "arcane",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 106,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 8
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 10
+        },
+        {
+          "slot": "Back",
+          "alternatives": 6
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 9
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 6
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 8
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 4
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 7
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 8
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 8
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 12
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://www.icy-veins.com/wow-forever/arcane-mage-ranged-dps-pve-guide/",
+        "https://www.wowhead.com/forever/guide/classes/mage/arcane/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Mage",
+      "specializationId": "fire",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 106,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 8
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 10
+        },
+        {
+          "slot": "Back",
+          "alternatives": 6
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 9
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 6
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 8
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 4
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 7
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 8
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 8
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 12
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide/",
+        "https://www.wowhead.com/forever/guide/classes/mage/fire/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Mage",
+      "specializationId": "frost",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 111,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 9
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 10
+        },
+        {
+          "slot": "Back",
+          "alternatives": 7
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 10
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 7
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 8
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 5
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 7
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 8
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 8
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 12
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/frost-mage/",
+        "https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Paladin",
+      "specializationId": "holy",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 34,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 2
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 2
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 3
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 2
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 1
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/holy-paladin/",
+        "https://www.wowhead.com/forever/guide/classes/paladin/holy/level-30-healer-overview"
+      ]
+    },
+    {
+      "characterClass": "Paladin",
+      "specializationId": "protection",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 30,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 2
+        },
+        {
+          "slot": "Back",
+          "alternatives": 1
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 2
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 2
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 2
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 4
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 2
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 1
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 1
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/protection-paladin/",
+        "https://www.wowhead.com/forever/guide/classes/paladin/protection/level-30-tank-overview"
+      ]
+    },
+    {
+      "characterClass": "Paladin",
+      "specializationId": "retribution",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 49,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 16,
+      "hordeGoalCount": 16,
+      "weaponSetup": "TwoHanded",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 3
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 2
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 2
+        },
+        {
+          "slot": "Back",
+          "alternatives": 3
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 4
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 4
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 4
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 5
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 0
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 1
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/",
+        "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+        "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Priest",
+      "specializationId": "discipline",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 67,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 6
+        },
+        {
+          "slot": "Back",
+          "alternatives": 4
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 4
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 2
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 3
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 8
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 8
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 9
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://mobalytics.gg/wow-forever/classes/discipline-priest-guide",
+        "https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide/",
+        "https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview"
+      ]
+    },
+    {
+      "characterClass": "Priest",
+      "specializationId": "holy",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 67,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 6
+        },
+        {
+          "slot": "Back",
+          "alternatives": 4
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 4
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 2
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 3
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 8
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 8
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 9
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://mobalytics.gg/wow-forever/classes/holy-priest-guide",
+        "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide/",
+        "https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview"
+      ]
+    },
+    {
+      "characterClass": "Priest",
+      "specializationId": "shadow",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 64,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 6
+        },
+        {
+          "slot": "Back",
+          "alternatives": 4
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 3
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 4
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 2
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 3
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 8
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 8
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 6
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://mobalytics.gg/wow-forever/classes/shadow-priest-guide",
+        "https://wowtbc.gg/warcraftforever/bis-list/shadow-priest/",
+        "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Rogue",
+      "specializationId": "assassination",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 41,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "OneHandAndOffHand",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 1
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 1
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 4
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 1
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 5
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 4
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 4
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/assassination-rogue/",
+        "https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Rogue",
+      "specializationId": "combat",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 52,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "OneHandAndOffHand",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 1
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 1
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 4
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 1
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 5
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 10
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 9
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/combat-rogue/",
+        "https://www.wowhead.com/forever/guide/classes/rogue/combat/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Rogue",
+      "specializationId": "subtlety",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 52,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "OneHandAndOffHand",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 1
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 1
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 4
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 1
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 5
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 10
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 9
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/subtlety-rogue/",
+        "https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Shaman",
+      "specializationId": "elemental",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 45,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 3
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 4
+        },
+        {
+          "slot": "Back",
+          "alternatives": 1
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 3
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 3
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 3
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 5
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 1
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/elemental-shaman/",
+        "https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Shaman",
+      "specializationId": "enhancement",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 36,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 16,
+      "hordeGoalCount": 16,
+      "weaponSetup": "TwoHanded",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 1
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 2
+        },
+        {
+          "slot": "Back",
+          "alternatives": 3
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 3
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 3
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 2
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 2
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 4
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 0
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/",
+        "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
+        "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Shaman",
+      "specializationId": "restoration",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 45,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 4
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 3
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 4
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 2
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 3
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 3
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 4
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+        "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview"
+      ]
+    },
+    {
+      "characterClass": "Warlock",
+      "specializationId": "affliction",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 104,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 9
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 10
+        },
+        {
+          "slot": "Back",
+          "alternatives": 6
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 9
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 7
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 8
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 5
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 7
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 13
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 3
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/affliction-warlock/",
+        "https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Warlock",
+      "specializationId": "demonology",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 104,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 9
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 10
+        },
+        {
+          "slot": "Back",
+          "alternatives": 6
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 9
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 7
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 8
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 5
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 7
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 13
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 3
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/demonology-warlock/",
+        "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Warlock",
+      "specializationId": "destruction",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 104,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "Flexible",
+      "weaponSetupSourceUrl": null,
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 9
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 4
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 10
+        },
+        {
+          "slot": "Back",
+          "alternatives": 6
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 9
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 7
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 8
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 5
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 7
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 4
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 13
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 3
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 2
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/destruction-warlock/",
+        "https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Warrior",
+      "specializationId": "arms",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 40,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 16,
+      "hordeGoalCount": 16,
+      "weaponSetup": "TwoHanded",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 3
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 1
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 1
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 1
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 1
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 5
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 0
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/",
+        "https://www.wowhead.com/forever/guide/classes/warrior/arms/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Warrior",
+      "specializationId": "fury",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 48,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "OneHandAndOffHand",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/warrior/fury/level-30-dps-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 2
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 3
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 2
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 1
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 1
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 2
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 4
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 1
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 4
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 4
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 5
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 4
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 4
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/fury-warrior/",
+        "https://www.wowhead.com/forever/guide/classes/warrior/fury/level-30-dps-overview"
+      ]
+    },
+    {
+      "characterClass": "Warrior",
+      "specializationId": "protection",
+      "levelCap": 30,
+      "releaseStage": "Beta",
+      "sourcePolicy": "Dungeon/Quest/Crafting",
+      "rawRecommendationRows": 51,
+      "slotGroupCount": 17,
+      "allianceGoalCount": 17,
+      "hordeGoalCount": 17,
+      "weaponSetup": "OneHandAndOffHand",
+      "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview",
+      "slotGroups": [
+        {
+          "slot": "Head",
+          "alternatives": 3
+        },
+        {
+          "slot": "Neck",
+          "alternatives": 1
+        },
+        {
+          "slot": "Shoulder",
+          "alternatives": 1
+        },
+        {
+          "slot": "Back",
+          "alternatives": 3
+        },
+        {
+          "slot": "Chest",
+          "alternatives": 3
+        },
+        {
+          "slot": "Wrist",
+          "alternatives": 3
+        },
+        {
+          "slot": "Hands",
+          "alternatives": 3
+        },
+        {
+          "slot": "Waist",
+          "alternatives": 1
+        },
+        {
+          "slot": "Legs",
+          "alternatives": 3
+        },
+        {
+          "slot": "Feet",
+          "alternatives": 1
+        },
+        {
+          "slot": "Finger1",
+          "alternatives": 5
+        },
+        {
+          "slot": "Finger2",
+          "alternatives": 5
+        },
+        {
+          "slot": "Trinket1",
+          "alternatives": 6
+        },
+        {
+          "slot": "Trinket2",
+          "alternatives": 6
+        },
+        {
+          "slot": "MainHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "OffHand",
+          "alternatives": 2
+        },
+        {
+          "slot": "Ranged",
+          "alternatives": 3
+        }
+      ],
+      "exemptions": [],
+      "allianceRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "allianceMissingSlots": [],
+      "hordeRequiredSlots": [
+        "Head",
+        "Neck",
+        "Shoulder",
+        "Back",
+        "Chest",
+        "Wrist",
+        "Hands",
+        "Waist",
+        "Legs",
+        "Feet",
+        "Finger1",
+        "Finger2",
+        "Trinket1",
+        "Trinket2",
+        "MainHand",
+        "OffHand",
+        "Ranged"
+      ],
+      "hordeMissingSlots": [],
+      "unknownFactionItemIds": [],
+      "releaseReady": true,
+      "recommendationSources": [
+        "https://wowtbc.gg/warcraftforever/bis-list/protection-warrior/",
+        "https://www.wowhead.com/forever/guide/classes/warrior/protection/level-30-tank-overview"
+      ]
+    }
+  ]
+}

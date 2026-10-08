@@ -27,7 +27,8 @@ internal static class CatalogReleaseAudit
                     characterClass = characterClass.ToString(), specializationId = spec.Id,
                     levelCap = catalog.Set!.LevelCap, releaseStage = catalog.Set.ReleaseStage,
                     sourcePolicy = "Dungeon/Quest/Crafting", rawRecommendationRows = catalog.Items.Count,
-                    goalCount = plan.Goals.Count, weaponSetup = catalog.WeaponSetup.ToString(), catalog.WeaponSetupSourceUrl,
+                    slotGroupCount = plan.Goals.Count, allianceGoalCount = alliance.RequiredSlots.Count,
+                    hordeGoalCount = horde.RequiredSlots.Count, weaponSetup = catalog.WeaponSetup.ToString(), catalog.WeaponSetupSourceUrl,
                     slotGroups = plan.Goals.Select(goal => new { slot = goal.Slot.ToString(), alternatives = goal.Alternatives.Count }).ToArray(),
                     exemptions = catalog.SlotExemptions ?? [],
                     allianceRequiredSlots = alliance.RequiredSlots.Select(slot => slot.ToString()).ToArray(),
@@ -37,7 +38,8 @@ internal static class CatalogReleaseAudit
                     unknownFactionItemIds = unknownFaction, releaseReady = ready,
                     recommendationSources = catalog.Items.Select(item => item.Details!.RecommendationUrl).Distinct().Order().ToArray()
                 });
-                Console.WriteLine($"{(ready ? "READY" : "BLOCKED")}: {characterClass} {spec.Name}; {plan.Goals.Count} slot goals; " +
+                Console.WriteLine($"{(ready ? "READY" : "BLOCKED")}: {characterClass} {spec.Name}; " +
+                    $"{alliance.RequiredSlots.Count}/{horde.RequiredSlots.Count} relevant Alliance/Horde goals; " +
                     $"Alliance missing [{string.Join(", ", alliance.MissingSlots)}]; Horde missing [{string.Join(", ", horde.MissingSlots)}]; " +
                     $"unknown quest faction IDs [{string.Join(", ", unknownFaction)}].");
             }
@@ -52,6 +54,7 @@ internal static class CatalogReleaseAudit
         {
             schemaVersion = 1, auditType = "ForeverSlotRelease", reviewedOn = "2026-10-08",
             releaseReady = blocked == 0, checkedCatalogs = rows.Count, blockedCatalogs = blocked,
+            validationScope = "Slot combinations, variant capacity, unique, weapon plans and faction availability. Quest/profession source evidence and distribution checks are separate.",
             quantityPolicy = "One recorded copy per item variant; unique applies to base item ID.", catalogs = rows
         }, new JsonSerializerOptions { WriteIndented = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             Converters = { new System.Text.Json.Serialization.JsonStringEnumConverter() } }) + Environment.NewLine);

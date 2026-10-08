@@ -78,7 +78,18 @@ får inte vara negativ eller över packets nivåtak. Vapenhand måste passa slot
 Råa rad-ID:n får inte dubbleras inom paketet; läsaren prefixar dem med
 `catalogId` så rekommendations-ID:n skiljer nivå 30 från 60.
 
-Läsaren validerar alla råa rader före dungeon/quest-filtret. Den verifierar
+Frivilliga tillgänglighetsfält:
+
+- `availableFactions` per item: `Alliance` och/eller `Horde`. En Quest-rad
+  utan verifierad fraktion räknas inte i något fraktionsset och blockerar
+  releasekontrollen. Ogiltiga eller dubblerade fraktionsvärden avvisas.
+- `weaponSetup`: `Flexible` (standard), `TwoHanded` eller `OneHandAndOffHand`.
+Ett uttryckligt handkrav behöver HTTPS-källan `weaponSetupSourceUrl`.
+- `slotExemptions`: lista av `slot`, `reason`, `sourceUrl` för en styrkt
+  oanvändbar plats. Undantaget får inte motsäga katalogens itemrader.
+
+Läsaren validerar alla råa rader före Dungeon/Quest/Crafting-filtret för
+Forever. Classic behåller sin Dungeon/Quest-policy. Den verifierar
 format och metadatarelationer, inte att en extern guide faktiskt stöder
 rekommendationen. Källgranskningen är därför en nödvändig del före import.
 Antal exemplar modelleras inte. Samtidiga importer från flera appinstanser
@@ -86,7 +97,7 @@ Antal exemplar modelleras inte. Samtidiga importer från flera appinstanser
 
 ## Verifiering
 
-Release-build godkänd utan varningar/fel; samtliga 39 konsolscenarier passerar.
+Release-build godkänd utan varningar/fel; samtliga 46 konsolscenarier passerar.
 Sex `CatalogContextScenarios` verifierar nivåisolering, äldre JSON, delat ägande,
 arkiverade markeringar, tvåhands-/unique-regler och oförändrat tillstånd efter
 sparfel. Sju `ForeverCatalogScenarios` verifierar alla 27 produktpack, filtrering,

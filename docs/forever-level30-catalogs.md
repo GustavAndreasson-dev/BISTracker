@@ -8,44 +8,48 @@ patch 1.60.1**. Classic Holy Priests befintliga 17-item-lista bevaras.
 
 Katalogerna innehåller originalguidernas namngivna utrustningsalternativ,
 med Forever-itemidentitet, anskaffning, villkor, itemlänk och rekommendationslänk.
-Appen visar endast dungeons och quests enligt den tidigare avgränsningen.
-Övriga granskade guidekällor bevaras i råkatalogerna inför ett möjligt ändrat
-beslut. Ingen egen ranking eller statviktning har införts.
+Chefen har godkänt **dungeons, quests och crafting för Forever**, DEC-012.
+Classic behåller dungeons/quests. Övriga källtyper filtreras bort.
+Ingen egen ranking eller statviktning har införts. Kompletteringar kommer
+från respektive specs ursprungliga Forever-guider, inklusive WOWTBC:s
+orankade utrustningsalternativ, och individuella Forever-item-/quest-/receptposter.
 
-1394 råa rekommendationsrader ger **1020 synliga placeringsrader** efter
-dungeon/quest-filtret. Antalet räknar alternativ och möjliga ring-/trinket-/
-vapenplaceringar; det är inte antalet items att skaffa till en färdig uppsättning.
+1655 råa rekommendationsrader ger **1635 alternativa placeringsrader** efter
+källfiltret. UI grupperar dem till ett mål per relevant slot, högst 17 och
+16 för en vald tvåhandsuppsättning. Alternativ ökar inte antalet mål eller framsteg.
 Varje slot kan bara ha ett utrustat val. Ägande delas mellan karaktärens specs
 och katalogset; utrustningsuppsättningarna sparas separat.
 
-`Reviewed` anger granskade guidealternativ; `Partial` anger dessutom att
-guidernas betaurval har täckningsluckor. Ingen status garanterar ett optimalt
-eller komplett rangordnat set. Tabellen visar täckning efter filtret.
-En tvåhandsuppsättning behöver ingen OffHand, och vissa klasser använder relic
-i Ranged-platsen; 17 slots är därför inte ett universellt fullständighetskrav.
+`Reviewed` anger granskade guidealternativ; `Partial` anger att vidare
+granskning behövs. Statusfältet är aldrig ensamt bevis på fullständighet.
+[Releasekontrollen](data/forever-slot-release-audit.json) passerar för samtliga
+27 kataloger, utan luckor eller okända questfraktioner. En oberoende
+[integrationskontroll](data/forever-slot-witness-integration.json) matchar
+54 konkreta lagliga exempelset mot aktiva produkt-ID:n, fraktion, distinkta
+itemvarianter, unique, handkrav och granskade yrkeskrav.
+Exempelseten bevisar genomförbarhet, inte optimal ranking eller likvärdig styrka.
 
-| Klass | Specs i tabellordning | Råa rader | Dungeons/quests | Täckt antal slots |
-| --- | --- | --- | --- | --- |
-| Druid | Balance / Feral / Restoration | 63 / 57 / 36 | 41 / 41 / 27 | 15 / 14 / 14 |
-| Hunter | Beast Mastery / Marksmanship / Survival | 31 / 33 / 35 | 25 / 25 / 25 | 14 / 14 / 13 |
-| Mage | Arcane / Fire / Frost | 105 / 105 / 110 | 76 / 76 / 76 | 17 / 17 / 17 |
-| Paladin | Holy / Protection / Retribution | 14 / 16 / 41 | 10 / 10 / 23 | 10 / 8 / 12 |
-| Priest | Discipline / Holy / Shadow | 65 / 65 / 62 | 52 / 52 / 47 | 17 / 17 / 17 |
-| Rogue | Assassination / Combat / Subtlety | 33 / 42 / 42 | 30 / 39 / 39 | 14 / 14 / 14 |
-| Shaman | Elemental / Enhancement / Restoration | 26 / 32 / 26 | 18 / 25 / 18 | 9 / 14 / 9 |
-| Warlock | Affliction / Demonology / Destruction | 104 / 104 / 104 | 72 / 72 / 72 | 17 / 17 / 17 |
-| Warrior | Arms / Fury / Protection | 15 / 9 / 19 | 11 / 7 / 11 | 8 / 6 / 8 |
+| Klass | Specs i tabellordning | Aktiva alternativrader | Relevanta slots i releasekontrollens giltiga kombination |
+| --- | --- | --- | --- |
+| Druid | Balance / Feral / Restoration | 71 / 64 / 40 | 17 / 16 / 17 |
+| Hunter | Beast Mastery / Marksmanship / Survival | 33 / 33 / 38 | 16 / 16 / 17 |
+| Mage | Arcane / Fire / Frost | 106 / 106 / 111 | 17 / 17 / 17 |
+| Paladin | Holy / Protection / Retribution | 34 / 30 / 49 | 17 / 17 / 16 |
+| Priest | Discipline / Holy / Shadow | 67 / 67 / 64 | 17 / 17 / 17 |
+| Rogue | Assassination / Combat / Subtlety | 41 / 52 / 52 | 17 / 17 / 17 |
+| Shaman | Elemental / Enhancement / Restoration | 45 / 36 / 45 | 17 / 16 / 17 |
+| Warlock | Affliction / Demonology / Destruction | 104 / 104 / 104 | 17 / 17 / 17 |
+| Warrior | Arms / Fury / Protection | 40 / 48 / 51 | 16 / 17 / 17 |
 
 Primärkällor, metadata- och questkontroller, uteslutna källfel samt konkreta
-luckor redovisas per grupp:
+genomförbara exempelset redovisas per grupp:
 
 - [Mage, Priest och Warlock](forever-level30-casters.md): nio kataloger,
-  824 rader; källbelagda Priest-wands och uteslutna engineering-items vars
-  skillkrav inte nås på nivå 30.
+  källbelagda wands/trinkets, receptkrav och uteslutna osäkra questitems.
 - [Druid, Paladin och Shaman](forever-level30-hybrids.md): nio kataloger,
-  311 rader; uteslutet level 31-item och felaktig dungeonmappning.
+  craftingrelics, fraktionsbundna questvägar och receptkontroller.
 - [Hunter, Rogue och Warrior](forever-level30-physical.md): nio kataloger,
-  259 rader; suffix och tillåtna vapenplaceringar granskade separat.
+  klassquests, suffix, crafting och källbelagda vapenupplägg.
 
 Produktfiler ligger i `BISTracker.Infrastructure/Catalog/Data/Forever/level30/`.
 Forskningsfakta ligger i `docs/data/forever-casters/` och `docs/data/forever-hybrids/`;
@@ -61,7 +65,7 @@ JSON-pack från en vald mapp; ingen omkompilering behövs. Både betans och
 lanseringens nivå 60 stöds av formatet. Nivå 30-data och dess sparade utrustning
 bevaras. [Importformat och regler](catalog-contexts.md).
 
-Release-build passerar utan varningar/fel och samtliga 39 beteendekontroller
+Release-build passerar utan varningar/fel och samtliga 46 beteendekontroller
 är godkända. Den isolerade WinUI-kontrollen använder verklig nivå 30-data,
 verifierar nivåbyte och import som uppdaterar en redan vald tom lista. Dess
 tydligt fiktiva nivå 60-prov används bara i TEMP och är inte produktdata.
@@ -72,6 +76,7 @@ och commits; tre specialisttrådar för varsin grupp om nio specs, följt av
 korsgranskning, regressionskontroller och dokumentgranskning.
 
 Betaguider kan förändras, och hela questkedjor har inte spelats i en klient.
-Antal identiska exemplar modelleras inte; placering av ett icke-unikt item i
-två slots bevisar därför inte att spelaren äger två exemplar. Verklig nivå
-60-data och kompletta urval för guidernas täckningsluckor återstår.
+Ägandet registrerar ett exemplar per variant; samma variant kan inte fylla
+två mål. Questkedjor, alternativa belöningar, nivåtak, bindning och aktiva
+yrkeskrav har granskats mot publicerade poster. Ingen full genomspelning i
+en klient har gjorts. Verklig nivå 60-data och distributionstest återstår.

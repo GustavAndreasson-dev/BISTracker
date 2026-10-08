@@ -4,6 +4,13 @@ Statusdatum: 2026-10-08. Plan för det beställda utkastet och fortsatt utveckli
 
 ## Nuläge
 
+Aktuell kvalitetsgranskning enligt REQ-010: tidigare rekommendationsrader
+räknades felaktigt som mål. Gruppering per slot, giltiga kombinationer och
+fraktionsspecifik fullständighet är verifierade för alla 27 specs och 54 set.
+Crafting är godkänt för Forever enligt DEC-012; Classic förblir dungeons/quests.
+Ingen delningsversion markeras klar innan [releasekontrollen](slot-catalog-correctness.md)
+och återstående distributionstest är godkända.
+
 - Bekräftat scope: Vanilla Classic, fas 1, Holy Priest och pre-raid BiS från endast dungeons och quests.
 - DDD, SOLID och Markdown-dokumentation är beslutade.
 - Tracking omfattar både erhållna och utrustade items.
@@ -33,12 +40,13 @@ Chefen har beställt utredning av Forever, därefter stöd för alla klasser/spe
 om Forever är genomförbart, samt tre speclistor per karaktär (REQ-005–007).
 [Genomförbarhetsutredningen](forever-feasibility.md) är klar. Version/klass/spec,
 karaktärshantering och tre sparade listor är implementerade. Med nivå30-leveransen
-passerar nu 39 beteendekontroller och isolerad WinUI-kontroll.
+passerar nu 46 beteendekontroller och isolerad WinUI-kontroll.
 Se [listmodellen](characters-and-loadouts.md).
 
 Chefens nästa beställning, REQ-008/009, är levererad: alla 27 specs har separata
 Forever-kataloger för beta nivå 30/patch 1.60.1. Guidealternativen är källgranskade
-och filtreras till dungeons/quests. Källornas luckor är dokumenterade; urvalet
+och filtreras till dungeons/quests/crafting samt guidens handkrav. Tidigare
+slotluckor är kompletterade och osäkra items uteslutna; urvalet
 är inte en fullständig egen ranking. [Katalograpport](forever-level30-catalogs.md).
 
 Nivå 60 kan importeras från validerade JSON-pack utan omkompilering. Nivåbyte
@@ -63,7 +71,7 @@ trådar nedan har inte behövt kontaktas för denna leverans.
 
 | Fråga | Varför den behövs |
 | --- | --- |
-| Ska Forever-filtret även omfatta crafting/world drops? | Dungeons/quests gäller tills vidare; andra granskade guidealternativ finns bevarade. |
+| Behövs ytterligare itemkällor senare? | Crafting är nu godkänt i Forever. Övriga källtyper kräver fortfarande eget beslut. |
 | Vilken nivå60-patch/fas och källa ska styra kommande pack? | Importfunktionen är klar, men verkliga rekommendationer måste granskas när de finns. |
 | Hur ska antal identiska exemplar och reviderade pack med samma kontext hanteras? | Nuvarande ägande är booleskt och importer får inte ersätta befintliga pack-ID:n. |
 | Behövs annan plattform eller synkronisering senare? | Utkastet fortsätter med WinUI och lokal lagring; framtida behov är öppna. |

@@ -2,7 +2,7 @@
 
 Statusdatum: 2026-10-08. Karaktärer, tre speclistor per katalogset och
 27 Forever-kataloger för betans nivå 30 är implementerade och verifierade.
-Katalogerna innehåller källbelagda guidealternativ med dokumenterade luckor.
+Katalogerna innehåller källbelagda guidealternativ som grupperas till slotmål.
 Verkliga nivå 60-kataloger saknas; importstödet är förberett och verifierat.
 Se [nivå 30-katalogerna](forever-level30-catalogs.md) och
 [katalogset och import](catalog-contexts.md).
@@ -35,10 +35,11 @@ beställde därefter nivå 30-kataloger med möjlighet att importera nivå 60.
   och aktivt katalogset sparas. Misslyckad sparning lämnar framsteg och val
   oförändrade.
 
-Antal exemplar av ett item modelleras inte. Alternativa ring-/trinketslots
-och giltiga handplaceringar är separata rekommendationer, inte ett bevis på
-två ägda exemplar. För icke-unika items verifierar appen inte ett faktiskt
-antal kopior.
+Ägandet registrerar ett känt exemplar per item-ID/suffix. Samma variant
+flyttas mellan möjliga ring-/trinket-/handplaceringar vid utrustningsbyte;
+den räknas aldrig som två fyllda mål. Ett äldre tillstånd med samma variant
+utrustad två gånger avvisas och filen bevaras. Antal exemplar och en sådan
+migration kräver ett separat beslutat flöde. Se [slotreglerna](slot-catalog-correctness.md).
 
 ## Källor och tillgängliga listor
 
@@ -48,7 +49,8 @@ Priest och separata Forever-kataloger för samtliga 27 specs på nivå 30,
 beta/patch 1.60.1. Övriga Classic-specs och Forever nivå 60 utan import har
 uttrycklig otillgänglig katalog; Vanilla-items används inte som Forever-data.
 
-Normal app visar endast Dungeon- och Quest-rader. Andra anskaffningstyper kan
+Forever visar Dungeon-, Quest- och Crafting-rader enligt Chefens godkännande;
+Classic visar fortfarande endast Dungeon/Quest. Andra anskaffningstyper kan
 finnas i granskat källunderlag men filtreras bort av standardpolicyn. Suffix,
 faction-villkor, krav och källlänkar bevaras. Saknade slots fylls inte med
 gissade ersättare. Katalogerna är guidebaserade alternativ, inte en egen
@@ -107,6 +109,9 @@ Migration sker en gång: en befintlig ny fil används även om legacy-filen sena
 ändras. Ett fel i legacy-data hindrar migration och lämnar båda filer bevarade.
 Korrupt workspace, okänd schemaversion, borttaget sparat katalogset eller
 inkonsekvent domäntillstånd rapporteras; ingen tyst återställning görs.
+Det gäller även en tidigare sparad utrustningsreferens till ett item som
+uteslutits efter källrevision. Originalfilen bevaras; appen raderar inte
+Chefens eller spelarens tidigare val för att få valideringen att passera.
 Sparning använder temporär fil i samma katalog, flush och File.Replace/File.Move.
 Tempfiler städas vid fel.
 
@@ -117,8 +122,8 @@ Ingen databas har införts.
 
 ## Verifiering och begränsningar
 
-39 konsolkontroller passerar. De verifierar version/klass/spec, alla 27
-Forever-kataloger och D/Q-policy, fysisk itemidentitet och suffix,
+46 konsolkontroller passerar. De verifierar version/klass/spec, alla 27
+Forever-kataloger och godkänd D/Q/Crafting-policy, fysisk itemidentitet och suffix,
 tre listor per set efter omstart, karaktärsisolering, migration,
 nivå 60-import, nivåbyte, gemensamt ägande över arkiverade set, unique-regler
 och tvåhands/offhand-konflikter. Sparfel, avbrott, korrupt data och låsta filer
@@ -130,6 +135,6 @@ import. Den kontrollerar riktiga Classic-listan, Forever nivå 30, karaktär/
 spec/set-val, återställda val efter sparfel och nivå 60-import utan att röra
 spelarens framstegsfil. Se [verifieringen](verification.md).
 
-Katalogerna har dokumenterade dataluckor och beta-data kan ändras.
+Katalogerna har verifierade kompletta fraktionsset; beta-data kan ändras.
 Verkliga nivå 60-items återstår. Ingen spelintegration, molnsynkronisering,
 radering eller redigering av karaktärsidentitet ingår.

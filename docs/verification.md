@@ -10,9 +10,9 @@ Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå
   Den isolerade UI-kontrollen och PNG-renderingen har körts på den översatta vyn.
 
 - Hela solutionen byggd i Release för x64 utan varningar eller fel. WinUI-utkastet och isolerad verifieringsvariant är också byggda utan varningar eller fel.
-- Alla **39 konsolkontroller** godkända: 17 äldre katalog-/domän-/tracking-/
+- Alla **46 konsolkontroller** godkända: 17 äldre katalog-/domän-/tracking-/
   lagringsscenarier, nio `CharacterScenarios`, sex `CatalogContextScenarios`
-  och sju `ForeverCatalogScenarios`.
+  och sju `ForeverCatalogScenarios`, samt sju `EquipmentPlanScenarios`.
 - Karaktärsscenarierna verifierar 54 versions-/klass-/specval, tre olika listor
   efter omstart, delat ägande med separata rekommendations-ID:n och suffix,
   karaktärs-/versionsisolering, migration, aktivt val, sparfel, avbrott och låst
@@ -22,16 +22,20 @@ Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå
   tvåhandsvapen/offhand, unique över suffixvarianter och sparfel vid nivåbyte
   eller borttaget ägande. Se [CatalogContextScenarios](../BISTracker.Checks/Scenarios/CatalogContextScenarios.cs).
 - Katalog-/importscenarierna verifierar alla 27 riktiga nivå 30-kataloger,
-  metadata och defaultpolicyn dungeons/quests, suffixnamn, kompletterande
+  metadata och Forever-policyn dungeons/quests/crafting, suffixnamn, kompletterande
   rekommendationskällor, nivå 60-import och uppdatering av samma levande
   katalogprovider. Ogiltig JSON, schema, kontext, nivåkrav, vapenhand och
   duplicerade ID:n avvisas; blandade giltiga/ogiltiga batcher, avbrott och
   tom import bevarar tidigare filer. Se [ForeverCatalogScenarios](../BISTracker.Checks/Scenarios/ForeverCatalogScenarios.cs).
-- De 27 Forever-katalogerna innehåller **1 020 placeringsrader** med
-  dungeons/quests i defaultvyn; granskningsdata innehåller **1 394 rader**
-  före källfiltrering. Alternativa placeringar och flera guideval ingår i
-  antalet; det är inte lika många verkliga items eller en rangordnad optimal
-  utrustningsuppsättning. [Samlad leverans](forever-level30-catalogs.md),
+- De 27 Forever-katalogerna innehåller **1 635 alternativa placeringsrader**
+  efter D/Q/Crafting- och handfiltret; rådata innehåller **1 655 rader**.
+  UI räknar slotmål, aldrig alternativrader. [Releasekontrollen](data/forever-slot-release-audit.json)
+  passerar med noll ofullständiga kataloger och noll okända questfraktioner.
+  [Integrationskontrollen](data/forever-slot-witness-integration.json) verifierar
+  54 konkreta fraktionsset mot faktiskt aktiva items, slots, unique, fysisk
+  variantkapacitet, handkrav och granskade professionskrav. Källgranskningen
+  kontrollerar publicerade questkedjor, valbara belöningar, recept och bindning.
+  Det bevisar genomförbarhet, inte optimal ranking. [Samlad leverans](forever-level30-catalogs.md),
   [hybrider](forever-level30-hybrids.md), [casters](forever-level30-casters.md)
   och [övriga klasser](forever-level30-physical.md) redovisar rekommendations-
   och metadataunderlag, quest-/fraktionsvillkor, ikonkontroller och uteslutna källfel.
@@ -46,10 +50,18 @@ Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå
   tillbaka och att faktisk väljare återställs efter sparfel. Importuppdatering
   i samma aktiva kontext verifieras med ett **TEST ONLY**-nivå 60-pack i en
   temporär katalog och minneslagrade framsteg. Detta testpaket är inte produktdata.
-  [Aktuell rapport](previews/forever-level30-ui-checks.txt),
-  [nivå 30-vy](previews/forever-level30-overview.png) och
+  Den slutliga slotkontrollen verifierar också riktig Rogue Combat med
+  17 mål, två ägda alternativ som fyller bara en slot, sökning i grupper,
+  konsekventa 16-/17-mål för Hunter före/efter utrustning samt uppdaterad
+  metadata med samma rekommendations-ID:n. [Aktuell rapport](previews/slots-ui-checks.txt),
+  [Mage-vy](previews/slots-mage-overview.png), [Rogue-vy](previews/slots-rogue-overview.png),
+  [grupperade alternativ](previews/slots-rogue-alternatives.png) och
   [nivå 60 utan data](previews/forever-level60-pending.png).
 - Projektberoenden, filplacering och Markdown-spårning har granskats.
+  Samtliga 19 Python- och åtta PowerShell-researchverktyg klarar syntaxkontroll;
+  78 JSON-filer parsas och 21 Markdown-filer har inga trasiga lokala länkar.
+  Vanliga katalogscenariet kräver nu också komplett täckning för båda fraktioner;
+  framtida slotluckor kan inte passera enbart den ordinarie kontrollkörningen.
 
 Renderingen använder appens eget visuella träd via
 [RenderTargetBitmap](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imaging.rendertargetbitmap.renderasync).
@@ -77,6 +89,8 @@ Från projektroten på Windows med .NET SDK och WinUI-byggberoenden:
 ```powershell
 dotnet build BISTracker.slnx -c Release -p:Platform=x64 -p:WindowsPackageType=None
 dotnet run --project BISTracker.Checks/BISTracker.Checks.csproj -c Release
+dotnet run --project BISTracker.Checks/BISTracker.Checks.csproj -c Release -- --catalog-release-audit docs/data/forever-slot-release-audit.json
+python tools/data/verify-forever-slot-witnesses.py docs/data/forever-slot-witness-integration.json
 ```
 
 Öppna BISTracker.slnx i Visual Studio, välj BISTracker.Presentation och x64
@@ -123,9 +137,11 @@ verifieringsprogrammets filer före start.
   skriver samma framsteg eller importerar till samma katalog samtidigt är
   inte samordnade.
 - Unique-/tvåhands-/offhand-regler och alternativa ring-/trinketplaceringar
-  är implementerade och verifierade. Antalet ägda exemplar modelleras inte;
-  ett shared-owned-värde bevisar inte att spelaren har två kopior av ett item.
-- Betaguiderna har källluckor och föränderliga rekommendationer. Listorna är
+  är implementerade och verifierade. Ägandet registrerar ett exemplar per
+  variant; samma variant flyttas vid platsbyte och fyller aldrig två mål.
+  Äldre dubbelutrustade varianter avvisas med originalfilen bevarad.
+- Betaguiderna har föränderliga rekommendationer. Osäkra items har uteslutits
+  och tidigare slotluckor är kompletterade. Listorna är
   guidebaserade alternativ enligt vald källpolicy, inte ett beräknat optimalt
   set. Fulla questkedjor och klientkontroll för varje anskaffningsväg återstår.
 - Ikonbilder kräver nätverk vid visning. Katalog och tracking fungerar utan nätverk;

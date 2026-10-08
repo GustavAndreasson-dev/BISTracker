@@ -2,7 +2,7 @@
 
 Statusdatum: 2026-10-08. Genomförbarhetsbedömningen följdes av implementation:
 alla nio klasser/27 specs har aktiva Forever-kataloger för beta, nivå 30,
-patch 1.60.1. De innehåller källbelagda guidealternativ med dokumenterade luckor;
+patch 1.60.1. De innehåller källbelagda guidealternativ med verifierade kompletta fraktionsset;
 verkliga nivå 60-listor saknas. Nivå 60-import, katalogbyte och tre sparade
 speclistor per katalogset är implementerade och verifierade.
 Se [nivå 30-katalogerna](forever-level30-catalogs.md),
@@ -25,7 +25,7 @@ dokumentation. Tabellen skiljer verifierad funktion och nivå 30-underlag från
 | ID | Krav | Status |
 | --- | --- | --- |
 | REQ-005 | Stöd WoW Forever som separat valbar spelversion, med egen katalogkontext. | Implementerat/verifierat: separat beta/nivå 30 och förberedd nivå 60-import. |
-| REQ-006 | Utöka till alla klasser och specs om Forever-stöd är genomförbart. | Nio klasser/27 specs med aktiva nivå 30-kataloger; guidealternativ med dokumenterade dataluckor. |
+| REQ-006 | Utöka till alla klasser och specs om Forever-stöd är genomförbart. | Nio klasser/27 specs med aktiva nivå 30-kataloger och 54 verifierade fraktionsset enligt REQ-010. |
 | REQ-007 | Tre bestående, separata listor per karaktär, en per spec. | Implementerat/verifierat: gemensamt ägande, tre separata listor per katalogset och bevarade arkiverade nivåer. |
 
 Överlämningens Classic-scope är fas 1 pre-raid, dungeons och quests.
@@ -117,7 +117,7 @@ eller saknar slots. Verkliga nivå 60-rekommendationer återstår.
 - Application: karaktär/spec/set-val, tracking och bevarade arkiverade listor.
 - Infrastructure: 27 nivå 30-kataloger, validerad import och säker JSON-lagring.
 - Presentation: karaktär/spec/set-val, guidealternativ och katalogimport.
-- Checks: 39 godkända konsolkontroller för bland annat kataloger, källpolicy,
+- Checks: 46 godkända konsolkontroller för bland annat kataloger, källpolicy,
   nivå 60-import, nivåisolering, sparfel, utrustningsregler och legacy-migration.
 - Isolerad WinUI-kontroll: verkliga Classic- och Forever nivå 30-listor,
   nivåbyte och import med testdata utan att ändra spelarens framsteg.
@@ -126,7 +126,7 @@ eller saknar slots. Verkliga nivå 60-rekommendationer återstår.
 Acceptanskriterier: tre listor finns kvar efter omstart, specbyte bevarar dem,
 fel klass/spec avvisas, karaktärer/versioner blandas inte och gamla framsteg
 bevaras. Varje publicerad katalog måste ha verifierade items och källor för sin
-uttryckliga spelkontext. Release-build, 39 konsolkontroller och isolerad
+uttryckliga spelkontext. Release-build, 46 konsolkontroller och isolerad
 UI-verifiering är godkända för den aktuella leveransen. Importtesten använder
 fiktiv nivå 60-data, inte en publicerad nivå 60-katalog. Se
 [verifieringen](verification.md).

@@ -25,6 +25,7 @@ och kan importeras när granskad data finns.
 - [Karaktärer och sparade speclistor](docs/characters-and-loadouts.md)
 - [Katalognivåer och säkert byte](docs/catalog-contexts.md)
 - [Forever nivå 30: alla 27 kataloger och källgranskning](docs/forever-level30-catalogs.md)
+- [Slotmål och kontroll före delning](docs/slot-catalog-correctness.md)
 
 Dokumenten skiljer mellan beslut, förslag och verifierad implementation.
 
@@ -38,9 +39,12 @@ Ny karaktär skapas med namn, spelversion och klass. Byte av karaktär/spec
 återställer dess sparade lista. Äldre Holy Priest-framsteg importeras en gång
 utan att originalfilen ändras; demoframsteg importeras inte.
 
-Forever-listorna visar guidernas utrustningsalternativ från dungeons och quests,
-med item- och källänkar. Alla 27 specs har egna kataloger. Där guiderna eller
-källfiltret lämnar luckor har inga egna BiS-val lagts till. Nivå 30 och 60
+Forever-listorna grupperar guidernas utrustningsalternativ till ett mål per
+slot, med item- och källänkar. Dungeons, quests och crafting är godkända för
+Forever; Classic behåller endast dungeons/quests. Alla 27 specs har egna
+kataloger. Fullständighet kontrolleras separat för båda fraktioner och giltiga
+utrustningskombinationer. Saknade val visas och blockerar releasegranskningen.
+Nivå 30 och 60
 behåller separata utrustningsuppsättningar; ägandet är gemensamt per karaktär.
 **Import catalogs** kopierar validerade JSON-pack och uppdaterar listorna direkt.
 Verklig nivå 60-data återstår; [format och regler](docs/catalog-contexts.md).
@@ -58,6 +62,6 @@ Forever använder inte Vanilla-items som ersättning för saknade rekommendation
 
 ## Förhandsbild av apputkastet
 
-![Forever nivå 30 med karaktärs-, spec- och katalogval](docs/previews/forever-level30-overview.png)
+![Forever Mage med 17 grupperade slotmål](docs/previews/slots-mage-overview.png)
 
 Bildens markeringar kommer från isolerad verifieringsdata och påverkar inte dina sparade framsteg.

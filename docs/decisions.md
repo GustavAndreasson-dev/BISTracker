@@ -84,4 +84,13 @@ arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 - Beslut: skaffa Forever-kataloger för alla specs på nivå 30 och förbered import av nivå 60 när data finns.
 - Arbetsform: utnyttja fyra arbetstrådar och gör regelbundna commits efter verifierade sammanhängande delar. Huvudtråden samordnar integration och commits; tre datatrådar äger varsin grupp om nio specs.
 - Tillåtna itemkällor: tidigare avgränsning dungeons/quests gäller tills Chefen besvarat förtydligandet för beta-listorna. Datainsamlingen bevarar även andra guidekandidater för ett eventuellt ändrat beslut.
+- Senare korrigering: källpolicy och kravet på fullständiga slotmål ändrades enligt DEC-012.
 - Genomförande: källbelagda guidealternativ för beta nivå 30/patch 1.60.1, separat nivå 60-kontext, validerad atomisk packimport och bevarade utrustningsuppsättningar. Luckor fylls inte med egna rankingar. Release-build, 39 beteendekontroller och isolerad WinUI-kontroll godkända; [leverans](forever-level30-catalogs.md).
+
+## DEC-012 — Korrekt slotmodell och crafting i Forever
+
+- Datum: 2026-10-08.
+- Status: implementerat och verifierat; 27 kataloger, 54 fraktionsset, 46 beteendekontroller och slutlig UI-kontroll godkända. Distributionstest återstår.
+- Beslut: varje relevant slot ska vara ett mål med grupperade alternativ. Antalet rekommendationer får inte visas som antalet slots. Kontrollera alla specs före delning.
+- Förtydligande från Chefen: crafting tillåts i Forever-katalogerna för att fylla källbelagda luckor. Classic fas 1 behåller dungeons/quests. World drops, vendor, PvP och reputation ingår inte i det nya tillståndet.
+- Konsekvens: komplett set kontrolleras med fysisk itemkapacitet, unique, handuppsättning, fraktion och källgranskade quest-/professionsvillkor. En rad i varje slot är inte i sig bevis. Tidigare delningsbedömning var för tidig; [releasegranskningen](slot-catalog-correctness.md) måste godkännas.

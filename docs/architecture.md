@@ -93,9 +93,10 @@ nödvändiga varianten. Presentation visar fakta och hämtar externa ikoner
 med fallback. Separata framstegsfiler skyddar övergången från fiktiva items.
 Se [integrationen](catalog-integration.md) för filansvar och begränsningar.
 
-Forever beta nivå 30 innehåller 1 394 alternativa placeringsrader. Appens ordinarie
-Dungeon/Quest-policy visar 1 020; läsaren kan även inkludera andra granskade
-anskaffningstyper. Katalogerna innehåller källbelagda guidealternativ, inte en
+Forever beta nivå 30 visar Dungeon/Quest/Crafting enligt DEC-012;
+Classic behåller Dungeon/Quest. Antal alternativ, slotgrupper och giltiga
+fraktionsset redovisas av [releasegranskningen](data/forever-slot-release-audit.json).
+Katalogerna innehåller källbelagda guidealternativ, inte en
 beräknad optimal ranking av ett helt utrustningsset. En ring på två platser har
 två rekommendations-ID:n och samma fysiska itemidentitet; detta innebär inte
 automatiskt en rekommendation av två exemplar. Källor och luckor redovisas i
@@ -151,7 +152,7 @@ Infrastructure sköter JSON och atomisk filersättning. Gamla framsteg kopieras 
 gång utan att originalet ändras. Reglerna kräver varken UI eller filsystem för
 att verifieras. Detaljer och begränsningar finns i [listmodellen](characters-and-loadouts.md).
 
-Projektets 39 beteendekontroller och renderad UI-kontroll är godkända.
+Projektets 46 beteendekontroller och renderad UI-kontroll är godkända.
 [ForeverCatalogScenarios](../BISTracker.Checks/Scenarios/ForeverCatalogScenarios.cs)
 verifierar alla 27 kataloger, importvalidering, batchpublicering, duplicerade pack,
 avbrott och uppdatering utan omstart.
