@@ -39,7 +39,7 @@ public static class ForeverCatalogReader
         var mapped = document.Items.Select(item => Map(item, document)).OrderBy(item => item.Slot).ThenBy(item => item.Name, StringComparer.Ordinal).ToArray();
         try { _ = new CharacterProgress(mapped); }
         catch (ArgumentException exception) { throw new InvalidDataException("Invalid or duplicated catalog recommendations.", exception); }
-        var items = includeOtherSources ? mapped : mapped.Where(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest).ToArray();
+        var items = includeOtherSources ? mapped : mapped.Where(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest or AcquisitionType.Crafting).ToArray();
         if (!Enum.IsDefined(document.WeaponSetup) || (document.WeaponSetup != WeaponSetup.Flexible && !IsHttps(document.WeaponSetupSourceUrl)) ||
             document.SlotExemptions is null || document.SlotExemptions.Any(value => value is null || !IsHttps(value.SourceUrl)))
             throw new InvalidDataException("Equipment-slot or weapon-setup exemptions need a reviewed source.");
@@ -47,7 +47,7 @@ public static class ForeverCatalogReader
         try { _ = new EquipmentPlan(items, exemptions, document.WeaponSetup); }
         catch (ArgumentException exception) { throw new InvalidDataException("Invalid equipment-slot coverage metadata.", exception); }
         var phase = document.Phase + (string.IsNullOrWhiteSpace(document.Patch) ? "" : $" · Patch {document.Patch}");
-        var method = includeOtherSources ? "Guide alternatives · all reviewed sources" : "Guide alternatives · dungeons & quests";
+        var method = includeOtherSources ? "Guide alternatives · all reviewed sources" : "Guide alternatives · dungeons, quests & crafting";
         var catalog = new BisCatalog(new GameContext(CharacterDefinition.VersionName(GameVersion.Forever), $"{spec.Name} {document.CharacterClass}", phase),
             Array.AsReadOnly(items), false, items.Length == 0 ? "No reviewed items match the catalog source policy." : null, set, method,
             exemptions, document.WeaponSetup, document.WeaponSetupSourceUrl);

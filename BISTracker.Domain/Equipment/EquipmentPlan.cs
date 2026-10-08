@@ -44,16 +44,20 @@ public sealed class EquipmentPlan
 
     // Ownership currently records one known copy per physical item variant. Do not count
     // the same ring/trinket/weapon twice merely because it occurs in two recommendation rows.
-    public EquipmentCoverage OwnedCoverage(IEnumerable<string> ownedKeys, bool useTwoHandedWeapon = false)
+    public EquipmentCoverage OwnedCoverage(IEnumerable<string> ownedKeys, bool useTwoHandedWeapon = false,
+        IEnumerable<EquipmentSlot>? preferredSlots = null)
     {
         var keys = ownedKeys.ToHashSet(StringComparer.Ordinal);
-        return Cover(_items.Where(item => keys.Contains(CharacterLoadouts.ItemKey(item))).ToArray(), useTwoHandedWeapon);
+        return Cover(_items.Where(item => keys.Contains(CharacterLoadouts.ItemKey(item))).ToArray(), useTwoHandedWeapon, preferredSlots);
     }
 
-    private EquipmentCoverage Cover(Recommendation[] available, bool useTwoHandedWeapon = false)
+    private EquipmentCoverage Cover(Recommendation[] available, bool useTwoHandedWeapon = false,
+        IEnumerable<EquipmentSlot>? preferredSlots = null)
     {
+        useTwoHandedWeapon &= _weaponSetup != WeaponSetup.OneHandAndOffHand;
         var mains = available.Where(item => item.Slot == EquipmentSlot.MainHand).ToArray();
         var offs = available.Where(item => item.Slot == EquipmentSlot.OffHand).ToArray();
+        var preferred = (preferredSlots ?? []).ToHashSet();
         var modes = new List<(Recommendation? Main, Recommendation? Off, bool TwoHanded)>();
         // A missing hand choice remains a missing goal; alternatives are not silently dropped.
         modes.Add((null, null, _weaponSetup == WeaponSetup.TwoHanded || useTwoHandedWeapon));
@@ -86,7 +90,7 @@ public sealed class EquipmentPlan
             var matching = new Dictionary<string, EquipmentSlot>(StringComparer.Ordinal);
             var options = required.Where(slot => slot is not (EquipmentSlot.MainHand or EquipmentSlot.OffHand))
                 .ToDictionary(slot => slot, slot => available.Where(item => item.Slot == slot).Select(CapacityKey).Distinct().ToArray());
-            foreach (var slot in options.Keys) Match(slot, new HashSet<string>(StringComparer.Ordinal));
+            foreach (var slot in options.Keys.OrderByDescending(preferred.Contains)) Match(slot, new HashSet<string>(StringComparer.Ordinal));
             covered.UnionWith(matching.Values);
             var candidate = new EquipmentCoverage(required, required.Where(covered.Contains).ToArray());
             if (best is null || candidate.MissingSlots.Count < best.MissingSlots.Count ||

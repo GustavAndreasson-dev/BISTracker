@@ -33,7 +33,7 @@ BISTracker/
 │   │   ├── Characters/
 │   │   │   └── Views/                 CharacterDialog för ny karaktär
 │   │   └── Tracking/
-│   │       └── ViewModels/            TrackerViewModel och TrackerItemViewModel
+│   │       └── ViewModels/            TrackerViewModel, TrackerSlotViewModel och TrackerItemViewModel
 │   ├── Assets/                        Bilder och paketresurser
 │   └── Properties/                    Startkonfiguration
 └── BISTracker.Checks/

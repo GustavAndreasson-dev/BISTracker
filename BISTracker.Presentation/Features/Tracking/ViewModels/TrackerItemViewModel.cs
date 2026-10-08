@@ -20,9 +20,11 @@ public sealed class TrackerItemViewModel : ObservableObject
         ItemUri = entry.Item.Details is null ? null : new Uri(entry.Item.Details.ItemUrl);
         RecommendationUri = entry.Item.Details is null ? null : new Uri(entry.Item.Details.RecommendationUrl);
         SlotName = TranslateSlot(entry.Item.Slot);
+        Slot = entry.Item.Slot;
         Update(entry);
     }
     public string Id { get; }
+    public EquipmentSlot Slot { get; private init; }
     public string Name { get; }
     public string Source { get; }
     public string Note { get; }
@@ -55,7 +57,7 @@ public sealed class TrackerItemViewModel : ObservableObject
             Notify(nameof(IconPlaceholderVisibility));
         }
     }
-    private static string TranslateSlot(EquipmentSlot slot) => slot switch
+    public static string TranslateSlot(EquipmentSlot slot) => slot switch
     {
         EquipmentSlot.Head => "Head", EquipmentSlot.Neck => "Neck",
         EquipmentSlot.Shoulder => "Shoulders", EquipmentSlot.Back => "Back",

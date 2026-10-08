@@ -26,7 +26,7 @@ internal static class CatalogReleaseAudit
                 {
                     characterClass = characterClass.ToString(), specializationId = spec.Id,
                     levelCap = catalog.Set!.LevelCap, releaseStage = catalog.Set.ReleaseStage,
-                    sourcePolicy = "Dungeon/Quest", rawRecommendationRows = catalog.Items.Count,
+                    sourcePolicy = "Dungeon/Quest/Crafting", rawRecommendationRows = catalog.Items.Count,
                     goalCount = plan.Goals.Count, weaponSetup = catalog.WeaponSetup.ToString(), catalog.WeaponSetupSourceUrl,
                     slotGroups = plan.Goals.Select(goal => new { slot = goal.Slot.ToString(), alternatives = goal.Alternatives.Count }).ToArray(),
                     exemptions = catalog.SlotExemptions ?? [],

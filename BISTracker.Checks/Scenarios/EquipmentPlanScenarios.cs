@@ -61,6 +61,9 @@ internal static class EquipmentPlanScenarios
             var keys = new[] { CharacterLoadouts.ItemKey(items[0]), CharacterLoadouts.ItemKey(extraHead), CharacterLoadouts.ItemKey(firstRing) };
             Assert(plan.OwnedCoverage(keys).CoveredSlots.Count == 2, "Två head-alternativ och en ring ger två fyllda slots.");
             Assert(!plan.OwnedCoverage(keys).CoveredSlots.Contains(EquipmentSlot.Finger2), "Samma ring räknas inte igen.");
+            Assert(plan.OwnedCoverage(keys, preferredSlots: [EquipmentSlot.Finger2]).CoveredSlots.Contains(EquipmentSlot.Finger2) &&
+                !plan.OwnedCoverage(keys, preferredSlots: [EquipmentSlot.Finger2]).CoveredSlots.Contains(EquipmentSlot.Finger1),
+                "Den utrustade ringplatsen ska visas som täckt; den andra förblir saknad.");
             var secondRing = items[(int)EquipmentSlot.Finger2];
             Assert(plan.OwnedCoverage(keys.Append(CharacterLoadouts.ItemKey(secondRing))).CoveredSlots.Count == 3, "Ett separat andra ringitem fyller nästa plats.");
             return Task.CompletedTask;
@@ -77,6 +80,10 @@ internal static class EquipmentPlanScenarios
             Assert(flexible.IsComplete && flexible.RequiredSlots.Count == 16 && !flexible.RequiredSlots.Contains(EquipmentSlot.OffHand), "Tvåhandsval behöver inte offhand.");
             Assert(!new EquipmentPlan(items, weaponSetup: WeaponSetup.OneHandAndOffHand).CatalogCoverage.IsComplete,
                 "Ett tvåhandsalternativ ersätter inte guidens uttryckliga dual-wield-mål.");
+            var dualWieldOwned = new EquipmentPlan(items, weaponSetup: WeaponSetup.OneHandAndOffHand)
+                .OwnedCoverage(items.Select(CharacterLoadouts.ItemKey), useTwoHandedWeapon: true);
+            Assert(dualWieldOwned.RequiredSlots.Count == 17 && dualWieldOwned.MissingSlots.Contains(EquipmentSlot.MainHand),
+                "Ett utrustat tvåhandsalternativ får inte ta bort offhand från ett uttryckligt dual-wield-mål.");
             return Task.CompletedTask;
         });
         await checks.RunAsync("Saknade slots förblir synliga mål; källbelagda undantag får inte motsäga katalogitems", () =>

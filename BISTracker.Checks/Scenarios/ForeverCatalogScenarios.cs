@@ -10,7 +10,7 @@ internal static class ForeverCatalogScenarios
 {
     public static async Task RunAsync(CheckRun checks)
     {
-        await checks.RunAsync("27 Forever-kataloger innehåller källbelagda nivå 30-alternativ enligt dungeon/quest-policyn", async () =>
+        await checks.RunAsync("27 Forever-kataloger följer godkänd dungeon/quest/crafting-policy; Classic bevarar sitt urval", async () =>
         {
             var provider = new CharacterCatalog();
             var allSources = new CharacterCatalog(includeOtherSources: true);
@@ -31,7 +31,7 @@ internal static class ForeverCatalogScenarios
                         var details = item.Details ?? throw new InvalidOperationException("Riktig itemmetadata saknas.");
                         Assert(item.Id.StartsWith($"forever-beta-level30-{characterClass.ToString().ToLowerInvariant()}-{spec.Id}-", StringComparison.Ordinal), "Identiteten är kontextavgränsad.");
                         Assert(details.ClassicItemId > 0 && !string.IsNullOrWhiteSpace(item.Name) && !string.IsNullOrWhiteSpace(item.Source), "Item-ID, namn och anskaffning finns.");
-                        Assert(details.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest, "Default får inte visa crafting, köp eller world drops.");
+                        Assert(details.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest or AcquisitionType.Crafting, "Forever får visa crafting, men inte köp eller world drops.");
                         Assert(Https(details.ItemUrl) && Https(details.RecommendationUrl) &&
                             (details.IconUrl.Length == 0 || Https(details.IconUrl)), "Källänkar och eventuell ikon använder HTTPS.");
                         Assert(Enum.IsDefined(details.WeaponKind) &&
@@ -42,6 +42,9 @@ internal static class ForeverCatalogScenarios
                     count++;
                 }
             Assert(count == 27 && provider.CatalogIds().Count == 27, "Alla nio klasser och 27 specs laddades.");
+            var classic = await provider.LoadAsync(GameVersion.Classic, CharacterClass.Priest, "holy");
+            Assert(classic.Items.Count == 17 && classic.Items.All(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest),
+                "Classic får inte ärva Forevers nya crafting-policy.");
         });
 
         await checks.RunAsync("Katalogläsaren bevarar fullständigt suffixnamn, alternativa källänkar och källfiltrering", () =>
@@ -53,17 +56,18 @@ internal static class ForeverCatalogScenarios
             first["recommendationUrl"] = "https://example.com/test-only-independent-guide";
             var crafted = Item("crafted", 900002, "Chest", "None", "Crafting");
             document["items"]!.AsArray().Add(crafted);
+            document["items"]!.AsArray().Add(Item("world-drop", 900003, "Neck", "None", "WorldDrop"));
             var filtered = Read(document);
             var complete = Read(document, true);
-            Assert(filtered.Catalog.Items.Single().Name == "TEST ONLY Circlet of Healing", "Suffixet ska inte läggas till två gånger.");
-            Assert(filtered.Catalog.Items.Single().Details!.RequiredSuffix == "of Healing" &&
-                filtered.Catalog.Items.Single().Details!.RecommendationUrl == "https://example.com/test-only-independent-guide", "Suffixidentitet och separat rekommendationskälla bevaras.");
-            Assert(complete.Catalog.Items.Count == 2 && complete.Catalog.Items.Single(item => item.Slot == EquipmentSlot.Chest).Details!.AcquisitionType == AcquisitionType.Crafting,
-                "Rawimporten granskar även källor som defaultfiltreringen döljer.");
+            Assert(filtered.Catalog.Items.Single(item => item.Slot == EquipmentSlot.Head).Name == "TEST ONLY Circlet of Healing", "Suffixet ska inte läggas till två gånger.");
+            Assert(filtered.Catalog.Items.Single(item => item.Slot == EquipmentSlot.Head).Details!.RequiredSuffix == "of Healing" &&
+                filtered.Catalog.Items.Single(item => item.Slot == EquipmentSlot.Head).Details!.RecommendationUrl == "https://example.com/test-only-independent-guide", "Suffixidentitet och separat rekommendationskälla bevaras.");
+            Assert(filtered.Catalog.Items.Count == 2 && filtered.Catalog.Items.Single(item => item.Slot == EquipmentSlot.Chest).Details!.AcquisitionType == AcquisitionType.Crafting && complete.Catalog.Items.Count == 3,
+                "Crafting är godkänt i Forever; rawimporten granskar även world drops som normalpolicyn döljer.");
             first["name"] = "TEST ONLY Circlet";
-            Assert(Read(document).Catalog.Items.Single().Name == "TEST ONLY Circlet of Healing", "Ett saknat suffix läggs till exakt en gång.");
+            Assert(Read(document).Catalog.Items.Single(item => item.Slot == EquipmentSlot.Head).Name == "TEST ONLY Circlet of Healing", "Ett saknat suffix läggs till exakt en gång.");
             var thirty = Fixture(30, "Beta");
-            Assert(Read(thirty).Catalog.Items.Single().Id != filtered.Catalog.Items.Single().Id, "Nivå 30 och 60 ska inte dela rekommendations-ID även när rå-ID är samma.");
+            Assert(Read(thirty).Catalog.Items.Single().Id != filtered.Catalog.Items.Single(item => item.Slot == EquipmentSlot.Head).Id, "Nivå 30 och 60 ska inte dela rekommendations-ID även när rå-ID är samma.");
             return Task.CompletedTask;
         });
 
@@ -118,6 +122,12 @@ internal static class ForeverCatalogScenarios
             Invalid("wrong-twohand-slot", doc => doc["items"]!.AsArray()[0]!["weaponKind"] = "TwoHanded");
             Invalid("wrong-offhand-slot", doc => doc["items"]!.AsArray()[0]!["weaponKind"] = "OffHand");
             Invalid("duplicate-rows", doc => doc["items"]!.AsArray().Add(doc["items"]!.AsArray()[0]!.DeepClone()));
+            Invalid("unsupported-weapon-plan", doc => doc["weaponSetup"] = "DualWieldAnything");
+            Invalid("unsourced-weapon-plan", doc => doc["weaponSetup"] = "TwoHanded");
+            Invalid("null-slot-exemptions", doc => doc["slotExemptions"] = null);
+            Invalid("contradictory-slot-exemption", doc => doc["slotExemptions"] = new JsonArray(new JsonObject
+                { ["slot"] = "Head", ["reason"] = "TEST ONLY", ["sourceUrl"] = "https://example.com/test-only-guide" }));
+            Invalid("invalid-quest-faction", doc => doc["items"]!.AsArray()[0]!["availableFactions"] = new JsonArray("NoSuchFaction"));
             foreach (var invalid in cases)
             {
                 var source = checks.PathFor("forever-invalid/" + invalid.Name);

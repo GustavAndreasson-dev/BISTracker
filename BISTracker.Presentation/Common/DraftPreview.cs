@@ -117,8 +117,12 @@ internal static class DraftPreview
             await WaitForAsync(() => model.IsInteractive && model.SelectedSpecialization?.Id == "fire", "Forever spec selection");
             Require(model.VisibleItems.All(item => item.ItemUri?.AbsoluteUri.Contains("/forever/", StringComparison.Ordinal) == true), "Forever item links");
             var mageHead = model.VisibleItems.First(item => item.SlotName == "Head");
+            model.VisibleSlots.Single(slot => slot.Slot == EquipmentSlot.Head).IsExpanded = true;
             await model.SetEquippedAsync(mageHead.Id, true);
             await WaitForAsync(() => IconMatches(root, mageHead), "Forever icon");
+            Require(model.VisibleSlots.Count == 17 && model.TotalCount == 17 && model.OwnedCount == 1, "Mage alternatives count as slot goals");
+            await SaveImageAsync(root, Path.Combine(directory, "slot-alternatives.png"));
+            model.VisibleSlots.Single(slot => slot.Slot == EquipmentSlot.Head).IsExpanded = false;
             await SaveImageAsync(root, Path.Combine(directory, "character-forever.png"));
             var catalogPicker = (ComboBox)root.FindName("CatalogPicker");
             catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 60);
@@ -152,7 +156,7 @@ internal static class DraftPreview
             };
             await File.WriteAllTextAsync(Path.Combine(fixtureDirectory, "TEST-ONLY-mage-fire-60.json"), System.Text.Json.JsonSerializer.Serialize(fixture));
             await model.ImportCatalogAsync(fixtureDirectory);
-            Require(!model.HasError && model.TotalCount == 1 && model.VisibleItems[0].Name == "TEST ONLY import option" &&
+            Require(!model.HasError && model.TotalCount == 17 && model.VisibleSlots.Count == 17 && model.HasCatalogGaps && model.VisibleItems[0].Name == "TEST ONLY import option" &&
                 model.VisibleItems[0].IsOwned, "Import refreshes an already selected empty context and retains shared inventory");
             catalogPicker.SelectedItem = model.CatalogSets.Single(set => set.LevelCap == 30);
             await WaitForAsync(() => model.IsInteractive && model.SelectedCatalogSet?.LevelCap == 30, "Restore beta after import regression");
@@ -161,6 +165,22 @@ internal static class DraftPreview
             await reloaded.LoadAsync();
             Require(reloaded.SelectedCharacter?.Name == "Forever Mage" && reloaded.SelectedSpecialization?.Id == "fire" && reloaded.SelectedCatalogSet?.LevelCap == 30 &&
                 reloaded.VisibleItems.Single(item => item.Id == mageHead.Id).IsEquipped, "Restart restores character, spec, level and equipment");
+            await model.CreateCharacterAsync("Forever Rogue", GameVersion.Forever, CharacterClass.Rogue);
+            picker.SelectedItem = model.Specializations.Single(spec => spec.Id == "combat");
+            await WaitForAsync(() => model.IsInteractive && model.SelectedSpecialization?.Id == "combat", "Rogue combat selector");
+            Require(model.TotalCount == 17 && model.VisibleSlots.Count == 17 && model.VisibleSlots.Select(slot => slot.Slot).Distinct().Count() == 17,
+                "Rogue has 17 unique slot rows, not an alternative-row count");
+            var rogueAlternatives = model.VisibleSlots.First(slot => slot.Alternatives.Length > 1 && slot.Slot is not
+                (EquipmentSlot.MainHand or EquipmentSlot.OffHand or EquipmentSlot.Finger1 or EquipmentSlot.Finger2 or EquipmentSlot.Trinket1 or EquipmentSlot.Trinket2));
+            await model.SetOwnedAsync(rogueAlternatives.Alternatives[0].Id, true);
+            await model.SetOwnedAsync(rogueAlternatives.Alternatives[1].Id, true);
+            Require(model.OwnedCount == 1 && model.RemainingCount == 16, "Owning two Rogue alternatives covers one slot");
+            model.SearchText = rogueAlternatives.SlotName;
+            Require(model.VisibleSlots.Count == 1 && model.VisibleItems.Count == rogueAlternatives.Alternatives.Length, "Slot search retains grouped alternatives");
+            await SaveImageAsync(root, Path.Combine(directory, "rogue-slot-alternatives.png"));
+            model.SearchText = "";
+            rogueAlternatives.IsExpanded = false;
+            await SaveImageAsync(root, Path.Combine(directory, "rogue-slot-overview.png"));
             var characterPicker = (ComboBox)root.FindName("CharacterPicker");
             characterPicker.SelectedItem = model.Characters.Single(character => character.Id == priest.Id);
             await WaitForAsync(() => model.IsInteractive && model.SelectedCharacter?.Id == priest.Id, "Character picker event");
@@ -171,7 +191,7 @@ internal static class DraftPreview
             dialog.Hide();
             await dialogResult;
             await File.WriteAllTextAsync(Path.Combine(directory, "ui-checks.txt"),
-                "PASS: Classic 17-item catalog, tracking, filters/search, icons/fallback, suffix/quest conditions, character/spec picker events, failed-save/selection rollback; real Forever level30 Mage and item links, level30/60 picker events, preserved beta equipment, failed-level rollback, restored character/spec/level/equipment after reload, pending60 data, new-character dialog, render, same-context import refresh with TEST ONLY level60 fixture. All progress isolated in memory; imported fixture exists only in this temporary verification directory and is not product data.\n");
+                "PASS: Classic 17-slot catalog, tracking, grouped slot filters/search, icons/fallback, suffix/quest conditions, character/spec picker events, failed-save/selection rollback; real Forever level30 Mage and Rogue Combat each show 17 unique slot goals, owning two alternatives covers only one slot, grouped alternatives survive search; level30/60 picker events, preserved beta equipment, failed-level rollback, restored character/spec/level/equipment after reload, pending60 data, new-character dialog, render, same-context import refresh with TEST ONLY sparse level60 fixture that remains visibly incomplete. All progress isolated in memory; imported fixture exists only in this temporary verification directory and is not product data.\n");
         }
         catch (Exception exception)
         {

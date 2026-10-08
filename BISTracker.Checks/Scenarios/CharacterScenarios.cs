@@ -24,7 +24,7 @@ internal static class CharacterScenarios
                         var reviewed = version == GameVersion.Classic && characterClass == CharacterClass.Priest && spec.Id == "holy";
                         Assert(reviewed ? catalog.Items.Count == 17 && catalog.UnavailableReason is null :
                             version == GameVersion.Forever ? catalog.Items.Count > 0 && catalog.UnavailableReason is null && catalog.Set?.LevelCap == 30 &&
-                                catalog.Items.All(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest) :
+                                catalog.Items.All(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest or AcquisitionType.Crafting) :
                                 catalog.Items.Count == 0 && catalog.UnavailableReason is not null, "Rätt granskad katalog och källpolicy för varje kontext.");
                     }
                 }

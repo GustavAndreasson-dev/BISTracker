@@ -7,6 +7,10 @@ bedömningen att appen var redo att dela var för tidig.
 
 ## Korrigerade regler
 
+Chefen har därefter godkänt crafting för Forever. Det aktiva urvalet är
+Dungeon/Quest/Crafting; Classic-katalogen behåller Dungeon/Quest. Tillverkade
+alternativ behöver verifierad nivå-/skilltillgänglighet och konkreta villkor.
+
 - `EquipmentPlan` grupperar rekommendationer till ett mål per förväntad slot.
   Flera alternativ i samma slot ökar inte antalet mål eller den slotens framsteg.
   En saknad rekommendation blir ett synligt ofyllt mål, inte en dold rad.

@@ -16,6 +16,13 @@ public sealed class TrackerViewModel : ObservableObject
     private readonly ICharacterTrackerService _service;
     private readonly ICatalogPackImporter? _catalogImporter;
     private readonly List<TrackerItemViewModel> _items = new();
+    private readonly List<TrackerSlotViewModel> _slots = new();
+    private EquipmentPlan? _plan;
+    private EquipmentCoverage? _catalogCoverage;
+    private EquipmentCoverage? _allianceCoverage;
+    private EquipmentCoverage? _hordeCoverage;
+    private EquipmentCoverage? _ownedCoverage;
+    private bool _usesTwoHandedWeapon;
     private bool _isBusy;
     private bool _loaded;
     private string _searchText = "";
@@ -48,13 +55,19 @@ public sealed class TrackerViewModel : ObservableObject
     public Specialization? SelectedSpecialization => _selectedSpecialization;
     public CatalogSet? SelectedCatalogSet => _selectedCatalogSet;
     public ObservableCollection<TrackerItemViewModel> VisibleItems { get; } = new();
-    public int TotalCount => _items.Count;
-    public int OwnedCount => _items.Count(item => item.IsOwned);
+    public ObservableCollection<TrackerSlotViewModel> VisibleSlots { get; } = new();
+    private bool IsRequired(TrackerSlotViewModel slot) => slot.Slot != EquipmentSlot.OffHand || !_usesTwoHandedWeapon;
+    public int TotalCount => _slots.Count(IsRequired);
+    public int OwnedCount => _ownedCoverage?.CoveredSlots.Count ?? 0;
     public int RemainingCount => TotalCount - OwnedCount;
     public string OwnedSummary => $"{OwnedCount} / {TotalCount}";
-    public string EquippedSummary => $"{_items.Count(item => item.IsEquipped)} / {TotalCount}";
-    public string VisibleSummary => $"Showing {VisibleItems.Count} of {TotalCount} items";
-    public string EmptyMessage => _loaded && VisibleItems.Count == 0 ? _unavailableReason ?? "No items match your search or filter." : "";
+    public string EquippedSummary => $"{_slots.Count(slot => IsRequired(slot) && slot.IsEquipped)} / {TotalCount}";
+    public string VisibleSummary => $"Showing {VisibleSlots.Count} of {TotalCount} slots";
+    public bool HasCatalogGaps => _catalogCoverage is { IsComplete: false } || _allianceCoverage is { IsComplete: false } || _hordeCoverage is { IsComplete: false };
+    public string CatalogStatus => !HasCatalogGaps ? "" : string.Join(" · ", new[] { CoverageStatus("Alliance", _allianceCoverage), CoverageStatus("Horde", _hordeCoverage) }.Where(value => value.Length > 0));
+    private static string CoverageStatus(string faction, EquipmentCoverage? coverage) => coverage is not { IsComplete: false } ? "" :
+        $"{faction}: " + string.Join(", ", coverage.MissingSlots.Select(TrackerItemViewModel.TranslateSlot));
+    public string EmptyMessage => _loaded && VisibleSlots.Count == 0 ? _unavailableReason ?? "No items match your search or filter." : "";
     public string EmptyStateVisibility => EmptyMessage.Length > 0 ? "Visible" : "Collapsed";
     public bool IsInteractive => _loaded && !_isBusy;
     public bool HasError => !string.IsNullOrEmpty(ErrorMessage);
@@ -93,6 +106,13 @@ public sealed class TrackerViewModel : ObservableObject
             {
                 _items.Clear();
                 _items.AddRange(snapshot.Entries.Select(entry => new TrackerItemViewModel(entry)));
+                _plan = snapshot.Catalog.UnavailableReason is null ? snapshot.Catalog.EquipmentPlan : null;
+                _catalogCoverage = _plan?.CatalogCoverage;
+                _allianceCoverage = _plan?.CatalogCoverageFor(CharacterFaction.Alliance);
+                _hordeCoverage = _plan?.CatalogCoverageFor(CharacterFaction.Horde);
+                _slots.Clear();
+                if (_plan is not null)
+                    _slots.AddRange(_plan.Goals.Select(goal => new TrackerSlotViewModel(goal.Slot, _items.Where(item => item.Slot == goal.Slot).ToArray())));
                 if (contextChanged) { SearchText = ""; FilterIndex = 0; }
                 _loaded = true;
             }
@@ -100,6 +120,14 @@ public sealed class TrackerViewModel : ObservableObject
             {
                 foreach (var entry in snapshot.Entries) _items.Single(item => item.Id == entry.Item.Id).Update(entry);
             }
+            _usesTwoHandedWeapon = snapshot.Catalog.WeaponSetup == WeaponSetup.TwoHanded ||
+                (snapshot.Catalog.WeaponSetup != WeaponSetup.OneHandAndOffHand &&
+                 snapshot.Entries.Any(entry => entry.IsEquipped && entry.Item.Details?.WeaponKind == WeaponKind.TwoHanded));
+            _ownedCoverage = _plan?.OwnedCoverage(snapshot.Entries.Where(entry => entry.IsOwned).Select(entry => CharacterLoadouts.ItemKey(entry.Item)),
+                _usesTwoHandedWeapon, snapshot.Entries.Where(entry => entry.IsEquipped).Select(entry => entry.Item.Slot));
+            foreach (var slot in _slots)
+                slot.Update(_ownedCoverage?.CoveredSlots.Contains(slot.Slot) == true,
+                    _catalogCoverage?.MissingSlots.Contains(slot.Slot) == true || _allianceCoverage?.MissingSlots.Contains(slot.Slot) == true || _hordeCoverage?.MissingSlots.Contains(slot.Slot) == true);
             CatalogContext = snapshot.Catalog.Context.Phase;
             CatalogLabel = $"{snapshot.Catalog.Context.Version} / {snapshot.Catalog.Context.Specialization}";
             SelectionMethod = snapshot.Catalog.SelectionMethod ?? "";
@@ -116,7 +144,7 @@ public sealed class TrackerViewModel : ObservableObject
                 foreach (var set in selection.CatalogSets ?? Array.Empty<CatalogSet>()) CatalogSets.Add(set);
                 _selectedCatalogSet = CatalogSets.SingleOrDefault(set => set.Id == selection.ActiveCatalogSet?.Id);
             }
-            foreach (var property in new[] { nameof(CatalogContext), nameof(CatalogLabel), nameof(HasReviewedCatalog), nameof(ShowClassicContext), nameof(ListTitle), nameof(NavigationLabel), nameof(SelectionMethod) }) Notify(property);
+            foreach (var property in new[] { nameof(CatalogContext), nameof(CatalogLabel), nameof(HasReviewedCatalog), nameof(ShowClassicContext), nameof(ListTitle), nameof(NavigationLabel), nameof(SelectionMethod), nameof(HasCatalogGaps), nameof(CatalogStatus) }) Notify(property);
             foreach (var property in new[] { nameof(TotalCount), nameof(OwnedCount), nameof(RemainingCount), nameof(OwnedSummary), nameof(EquippedSummary) }) Notify(property);
             ApplyFilter();
             SaveStatus = importsCatalog ? "Catalogs imported locally." : saves ? $"Saved locally · {DateTime.Now:HH:mm}" : "Your progress is saved locally on this computer.";
@@ -154,10 +182,13 @@ public sealed class TrackerViewModel : ObservableObject
     private void ApplyFilter()
     {
         var term = SearchText.Trim();
-        var matches = _items.Where(item =>
-            (term.Length == 0 || item.Name.Contains(term, StringComparison.OrdinalIgnoreCase) ||
-                item.SlotName.Contains(term, StringComparison.OrdinalIgnoreCase) || item.Source.Contains(term, StringComparison.OrdinalIgnoreCase)) &&
-            (FilterIndex switch { 1 => !item.IsOwned, 2 => item.IsOwned, 3 => item.IsEquipped, _ => true })).ToArray();
+        var slots = _slots.Where(slot => IsRequired(slot) && slot.ApplyFilter(term, FilterIndex)).ToArray();
+        var matches = slots.SelectMany(slot => slot.VisibleAlternatives).ToArray();
+        if (!VisibleSlots.SequenceEqual(slots))
+        {
+            VisibleSlots.Clear();
+            foreach (var slot in slots) VisibleSlots.Add(slot);
+        }
         if (!VisibleItems.SequenceEqual(matches))
         {
             VisibleItems.Clear();

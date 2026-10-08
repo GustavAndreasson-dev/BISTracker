@@ -76,27 +76,28 @@
                 </Grid.ColumnDefinitions>
                 <Border Style="{StaticResource CardStyle}">
                     <StackPanel Spacing="6">
-                        <TextBlock Text="OWNED" FontSize="11" CharacterSpacing="90" Foreground="{StaticResource MutedBrush}" />
+                        <TextBlock Text="OWNED SLOTS" FontSize="11" CharacterSpacing="90" Foreground="{StaticResource MutedBrush}" />
                         <TextBlock Text="{Binding OwnedSummary}" FontSize="26" FontWeight="SemiBold" Foreground="{StaticResource AccentBrush}" />
                         <ProgressBar Value="{Binding OwnedCount}" Maximum="{Binding TotalCount}" Foreground="{StaticResource AccentBrush}" Margin="0,4,0,0" />
                     </StackPanel>
                 </Border>
                 <Border Grid.Column="1" Style="{StaticResource CardStyle}">
                     <StackPanel Spacing="6">
-                        <TextBlock Text="EQUIPPED" FontSize="11" CharacterSpacing="90" Foreground="{StaticResource MutedBrush}" />
+                        <TextBlock Text="EQUIPPED SLOTS" FontSize="11" CharacterSpacing="90" Foreground="{StaticResource MutedBrush}" />
                         <TextBlock Text="{Binding EquippedSummary}" FontSize="26" FontWeight="SemiBold" />
                         <TextBlock Text="Currently worn by your character" FontSize="12" Foreground="{StaticResource MutedBrush}" />
                     </StackPanel>
                 </Border>
                 <Border Grid.Column="2" Style="{StaticResource CardStyle}">
                     <StackPanel Spacing="6">
-                        <TextBlock Text="STILL TO COLLECT" FontSize="11" CharacterSpacing="90" Foreground="{StaticResource MutedBrush}" />
+                        <TextBlock Text="MISSING SLOTS" FontSize="11" CharacterSpacing="90" Foreground="{StaticResource MutedBrush}" />
                         <TextBlock Text="{Binding RemainingCount}" FontSize="26" FontWeight="SemiBold" />
                         <TextBlock Text="Your next collection goals" FontSize="12" Foreground="{StaticResource MutedBrush}" />
                     </StackPanel>
                 </Border>
             </Grid>
             <StackPanel Grid.Row="2" Spacing="8">
+                <InfoBar IsOpen="{Binding HasCatalogGaps}" IsClosable="False" Severity="Warning" Title="Catalog incomplete" Message="{Binding CatalogStatus}" />
                 <InfoBar IsOpen="{Binding ShowClassicContext}" IsClosable="False" Severity="Informational" Title="Dungeon &amp; quest BiS" Message="Phase 1, including UBRS (10 players). Random-suffix goals require of Healing. Sources and conditions are listed below." />
                 <InfoBar IsOpen="{Binding HasDraftProgress}" IsClosable="False" Severity="Informational" Title="Your draft progress is preserved" Message="The real list starts with a separate collection. Marks on fictional draft items have not been transferred." />
                 <InfoBar IsOpen="{Binding HasError}" IsClosable="False" Severity="Error" Title="Could not update progress" Message="{Binding ErrorMessage}" />
@@ -108,10 +109,10 @@
                 </Grid.ColumnDefinitions>
                 <TextBox PlaceholderText="Search items, slots or dungeons" Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsInteractive}" AutomationProperties.Name="Search gear" />
                 <ComboBox Grid.Column="1" HorizontalAlignment="Stretch" SelectedIndex="{Binding FilterIndex, Mode=TwoWay}" IsEnabled="{Binding IsInteractive}" AutomationProperties.Name="Filter progress">
-                    <ComboBoxItem Content="All items" />
-                    <ComboBoxItem Content="Missing from collection" />
-                    <ComboBoxItem Content="Owned" />
-                    <ComboBoxItem Content="Equipped" />
+                    <ComboBoxItem Content="All slots" />
+                    <ComboBoxItem Content="Missing slots" />
+                    <ComboBoxItem Content="Owned slots" />
+                    <ComboBoxItem Content="Equipped slots" />
                 </ComboBox>
             </Grid>
             <Border Grid.Row="4" Background="#171C25" BorderBrush="#2B3342" BorderThickness="1" CornerRadius="12">
@@ -129,11 +130,11 @@
                             <ColumnDefinition Width="85" />
                         </Grid.ColumnDefinitions>
                         <TextBlock Text="SLOT" FontSize="10" CharacterSpacing="80" Foreground="{StaticResource MutedBrush}" />
-                        <TextBlock Grid.Column="1" Text="RECOMMENDED ITEM" FontSize="10" CharacterSpacing="80" Foreground="{StaticResource MutedBrush}" />
+                        <TextBlock Grid.Column="1" Text="ITEM ALTERNATIVES" FontSize="10" CharacterSpacing="80" Foreground="{StaticResource MutedBrush}" />
                         <TextBlock Grid.Column="2" Text="OWNED" FontSize="10" CharacterSpacing="60" HorizontalAlignment="Center" Foreground="{StaticResource MutedBrush}" />
                         <TextBlock Grid.Column="3" Text="EQUIPPED" FontSize="10" CharacterSpacing="60" HorizontalAlignment="Center" Foreground="{StaticResource MutedBrush}" />
                     </Grid>
-                    <ListView x:Name="EquipmentList" Grid.Row="1" ItemsSource="{Binding VisibleItems}" SelectionMode="None" IsItemClickEnabled="False" IsEnabled="{Binding IsInteractive}">
+                    <ListView x:Name="EquipmentList" Grid.Row="1" ItemsSource="{Binding VisibleSlots}" SelectionMode="None" IsItemClickEnabled="False" IsEnabled="{Binding IsInteractive}">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -143,6 +144,20 @@
                         </ListView.ItemContainerStyle>
                         <ListView.ItemTemplate>
                             <DataTemplate>
+                                <Expander IsExpanded="{Binding IsExpanded, Mode=TwoWay}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                                    <Expander.Header>
+                                        <Grid ColumnSpacing="12">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Text="{Binding SlotName}" FontWeight="SemiBold" />
+                                            <TextBlock Grid.Column="1" Text="{Binding Status}" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap" />
+                                        </Grid>
+                                    </Expander.Header>
+                                    <ItemsControl ItemsSource="{Binding VisibleAlternatives}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
                                 <Border BorderBrush="#262E3B" BorderThickness="0,0,0,1" Padding="20,10">
                                     <Grid ColumnSpacing="12">
                                         <Grid.ColumnDefinitions>
@@ -151,7 +166,6 @@
                                             <ColumnDefinition Width="75" />
                                             <ColumnDefinition Width="85" />
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock Text="{Binding SlotName}" VerticalAlignment="Center" Foreground="{StaticResource MutedBrush}" FontSize="13" />
                                         <Grid Grid.Column="1" ColumnSpacing="10">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="36" />
@@ -174,6 +188,10 @@
                                         <CheckBox Grid.Column="3" MinWidth="0" Width="32" Padding="0" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding IsEquipped, Mode=OneWay}" Click="EquippedClicked" AutomationProperties.Name="{Binding EquippedAccessibleName}" ToolTipService.ToolTip="Mark as equipped" />
                                     </Grid>
                                 </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Expander>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
