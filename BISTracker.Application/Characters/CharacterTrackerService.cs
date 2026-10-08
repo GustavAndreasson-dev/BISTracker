@@ -23,8 +23,7 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
     public Task<TrackerSnapshot> SelectAsync(Guid characterId, string specializationId, CancellationToken cancellationToken = default) =>
         ExecuteAsync((state, validated) =>
         {
-            var character = state.Characters.SingleOrDefault(item => item.Id == characterId)
-                ?? throw new ArgumentException("Unknown character.");
+            var character = Character(state, characterId);
             _ = CharacterDefinition.Specialization(character.Class, specializationId);
             return state with { ActiveCharacterId = characterId, Characters = state.Characters.Select(item => item.Id == characterId
                 ? item with { SelectedSpecialization = specializationId } : item).ToArray() };
@@ -40,6 +39,23 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
             return state with { ActiveCharacterId = character.Id, Characters = [.. state.Characters, character] };
         }, cancellationToken);
 
+    public Task<TrackerSnapshot> RenameAsync(Guid characterId, string name, CancellationToken cancellationToken = default) =>
+        ExecuteAsync((state, validated) =>
+        {
+            ValidateName(name);
+            _ = Character(state, characterId);
+            return state with { Characters = state.Characters.Select(item => item.Id == characterId ? item with { Name = name.Trim() } : item).ToArray() };
+        }, cancellationToken);
+
+    public Task<TrackerSnapshot> DeleteAsync(Guid characterId, CancellationToken cancellationToken = default) =>
+        ExecuteAsync((state, validated) =>
+        {
+            _ = Character(state, characterId);
+            var remaining = state.Characters.Where(item => item.Id != characterId).ToArray();
+            var active = state.ActiveCharacterId != characterId ? state.ActiveCharacterId : remaining.FirstOrDefault()?.Id ?? Guid.Empty;
+            return state with { ActiveCharacterId = active, Characters = remaining };
+        }, cancellationToken);
+
     public Task<TrackerSnapshot> SetOwnedAsync(string itemId, bool owned, CancellationToken cancellationToken = default) =>
         ChangeProgressAsync((progress, spec) => progress.SetOwned(spec, itemId, owned), cancellationToken);
     public Task<TrackerSnapshot> SetEquippedAsync(string itemId, bool equipped, CancellationToken cancellationToken = default) =>
@@ -48,7 +64,7 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
     public Task<TrackerSnapshot> SelectCatalogAsync(string catalogSetId, CancellationToken cancellationToken = default) =>
         ExecuteAsync((state, validated) =>
         {
-            var active = state.Characters.Single(item => item.Id == state.ActiveCharacterId);
+            var active = Active(state);
             if (!_catalogs.CatalogSets(active.Version).Any(set => set.Id == catalogSetId)) throw new ArgumentException("Unknown catalog set.");
             var previousId = SetId(active);
             if (previousId == catalogSetId) return state;
@@ -62,7 +78,7 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
     private Task<TrackerSnapshot> ChangeProgressAsync(Action<CharacterLoadouts, string> change, CancellationToken cancellationToken) =>
         ExecuteAsync((state, validated) =>
         {
-            var character = state.Characters.Single(item => item.Id == state.ActiveCharacterId);
+            var character = Active(state);
             var validation = validated[character.Id];
             var progress = validation.ProgressBySet[SetId(character)];
             var previouslyOwned = progress.OwnedItemKeys.ToHashSet(StringComparer.Ordinal);
@@ -81,6 +97,7 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
         try
         {
             var state = await _repository.LoadAsync(cancellationToken).ConfigureAwait(false);
+            // Only a missing workspace file triggers the one-time legacy import; an intentionally empty workspace stays empty.
             var isNew = state is null;
             state ??= await ImportLegacyAsync(cancellationToken).ConfigureAwait(false);
             var validated = await ValidateAsync(state, cancellationToken).ConfigureAwait(false);
@@ -90,6 +107,7 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
                 validated = await ValidateAsync(state, cancellationToken).ConfigureAwait(false);
             }
             if (isNew || change is not null) await _repository.SaveAsync(state, cancellationToken).ConfigureAwait(false);
+            if (state.Characters.Length == 0) return TrackerSnapshot.NoCharacters;
             var active = state.Characters.Single(item => item.Id == state.ActiveCharacterId);
             var setId = SetId(active);
             var catalog = validated[active.Id].CatalogsBySet[setId][active.SelectedSpecialization];
@@ -117,10 +135,10 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
 
     private async Task<Dictionary<Guid, ValidatedCharacter>> ValidateAsync(WorkspaceState state, CancellationToken cancellationToken)
     {
-        if (state.SchemaVersion != 1 || state.Characters is null || state.Characters.Length == 0 ||
+        if (state.SchemaVersion != 1 || state.Characters is null ||
             state.Characters.Any(item => item is null || item.Id == Guid.Empty) ||
             state.Characters.Select(item => item.Id).Distinct().Count() != state.Characters.Length ||
-            !state.Characters.Any(item => item.Id == state.ActiveCharacterId))
+            (state.Characters.Length == 0 ? state.ActiveCharacterId != Guid.Empty : !state.Characters.Any(item => item.Id == state.ActiveCharacterId)))
             throw new InvalidDataException("Invalid workspace or unsupported schema. Existing progress has been preserved.");
         var result = new Dictionary<Guid, ValidatedCharacter>();
         foreach (var character in state.Characters)
@@ -151,6 +169,11 @@ public sealed class CharacterTrackerService : ICharacterTrackerService
         }
         return result;
     }
+
+    private static CharacterState Character(WorkspaceState state, Guid characterId) =>
+        state.Characters.SingleOrDefault(item => item.Id == characterId) ?? throw new ArgumentException("Unknown character.");
+    private static CharacterState Active(WorkspaceState state) =>
+        state.Characters.SingleOrDefault(item => item.Id == state.ActiveCharacterId) ?? throw new InvalidOperationException("No character is selected.");
 
     private static CharacterState NewCharacter(string name, GameVersion version, CharacterClass characterClass, string spec) =>
         new(Guid.NewGuid(), name, version, characterClass, spec, [], EmptyEquipment(characterClass), CatalogSet.Default(version).Id, new());

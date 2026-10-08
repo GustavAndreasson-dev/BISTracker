@@ -42,10 +42,33 @@
                             <TextBlock Text="{Binding NavigationLabel}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold" />
                         </StackPanel>
                     </Border>
-                    <ComboBox x:Name="CharacterPicker" Header="Character" HorizontalAlignment="Stretch" ItemsSource="{Binding Characters}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedCharacter, Mode=OneWay}" SelectionChanged="CharacterChanged" IsEnabled="{Binding IsInteractive}" />
-                    <Button Content="New character" HorizontalAlignment="Stretch" Click="NewCharacterClicked" IsEnabled="{Binding IsInteractive}" />
-                    <ComboBox x:Name="SpecializationPicker" Header="Specialization" HorizontalAlignment="Stretch" ItemsSource="{Binding Specializations}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedSpecialization, Mode=OneWay}" SelectionChanged="SpecializationChanged" IsEnabled="{Binding IsInteractive}" />
-                    <ComboBox x:Name="CatalogPicker" Header="Catalog" HorizontalAlignment="Stretch" ItemsSource="{Binding CatalogSets}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedCatalogSet, Mode=OneWay}" SelectionChanged="CatalogChanged" IsEnabled="{Binding IsInteractive}" />
+                    <ComboBox x:Name="CharacterPicker" Header="Character" HorizontalAlignment="Stretch" ItemsSource="{Binding Characters}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedCharacter, Mode=OneWay}" SelectionChanged="CharacterChanged" IsEnabled="{Binding IsCharacterInteractive}" />
+                    <Grid ColumnSpacing="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Button Content="New character" HorizontalAlignment="Stretch" Click="NewCharacterClicked" IsEnabled="{Binding IsInteractive}" />
+                        <Button x:Name="CharacterActionsButton" Grid.Column="1" IsEnabled="{Binding IsCharacterInteractive}" AutomationProperties.Name="Character actions" ToolTipService.ToolTip="Character actions">
+                            <FontIcon Glyph="&#xE712;" FontSize="14" />
+                            <Button.Flyout>
+                                <MenuFlyout Placement="Bottom">
+                                    <MenuFlyoutItem Text="Rename…" Click="RenameCharacterClicked">
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE8AC;" />
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+                                    <MenuFlyoutItem Text="Delete…" Click="DeleteCharacterClicked">
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE74D;" />
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+                                </MenuFlyout>
+                            </Button.Flyout>
+                        </Button>
+                    </Grid>
+                    <ComboBox x:Name="SpecializationPicker" Header="Specialization" HorizontalAlignment="Stretch" ItemsSource="{Binding Specializations}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedSpecialization, Mode=OneWay}" SelectionChanged="SpecializationChanged" IsEnabled="{Binding IsCharacterInteractive}" />
+                    <ComboBox x:Name="CatalogPicker" Header="Catalog" HorizontalAlignment="Stretch" ItemsSource="{Binding CatalogSets}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedCatalogSet, Mode=OneWay}" SelectionChanged="CatalogChanged" IsEnabled="{Binding IsCharacterInteractive}" />
                     <Button Content="Import catalogs" HorizontalAlignment="Stretch" Click="ImportCatalogClicked" IsEnabled="{Binding CanImportCatalog}" />
                     <TextBlock Text="{Binding CatalogContext}" TextWrapping="Wrap" FontSize="12" Foreground="{StaticResource AccentBrush}" />
                 </StackPanel>
@@ -68,7 +91,7 @@
                     <TextBlock Text="{Binding SelectionMethod}" FontSize="12" Foreground="{StaticResource AccentBrush}" />
                 </StackPanel>
             </Grid>
-            <Grid Grid.Row="1" ColumnSpacing="14">
+            <Grid Grid.Row="1" ColumnSpacing="14" Visibility="{Binding CharacterContentVisibility}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -102,7 +125,7 @@
                 <InfoBar IsOpen="{Binding HasDraftProgress}" IsClosable="False" Severity="Informational" Title="Your draft progress is preserved" Message="The real list starts with a separate collection. Marks on fictional draft items have not been transferred." />
                 <InfoBar IsOpen="{Binding HasError}" IsClosable="False" Severity="Error" Title="Could not update progress" Message="{Binding ErrorMessage}" />
             </StackPanel>
-            <Grid Grid.Row="3" ColumnSpacing="12">
+            <Grid Grid.Row="3" ColumnSpacing="12" Visibility="{Binding CharacterContentVisibility}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="200" />
@@ -115,7 +138,9 @@
                     <ComboBoxItem Content="Equipped slots" />
                 </ComboBox>
             </Grid>
-            <Border Grid.Row="4" Background="#171C25" BorderBrush="#2B3342" BorderThickness="1" CornerRadius="12">
+            <Button x:Name="CreateFirstCharacterButton" Grid.Row="4" Content="Create character" Style="{StaticResource AccentButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Click="NewCharacterClicked" IsEnabled="{Binding IsInteractive}" Visibility="{Binding NoCharactersVisibility}" />
+            <Border Grid.Row="4" Background="#171C25" BorderBrush="#2B3342" BorderThickness="1" CornerRadius="12" Visibility="{Binding CharacterContentVisibility}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -200,7 +225,7 @@
             </Border>
             <Grid Grid.Row="5">
                 <TextBlock Text="{Binding SaveStatus}" Foreground="{StaticResource MutedBrush}" FontSize="11" />
-                <TextBlock Text="{Binding VisibleSummary}" HorizontalAlignment="Right" Foreground="{StaticResource MutedBrush}" FontSize="11" />
+                <TextBlock Text="{Binding VisibleSummary}" Visibility="{Binding CharacterContentVisibility}" HorizontalAlignment="Right" Foreground="{StaticResource MutedBrush}" FontSize="11" />
             </Grid>
         </Grid>
     </Grid>

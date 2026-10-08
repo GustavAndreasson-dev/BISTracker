@@ -205,7 +205,131 @@ internal static class CharacterScenarios
             AssertRejects(() => new CharacterLoadouts(CharacterClass.Priest, lists, [], equipment));
             return Task.CompletedTask;
         });
+
+        await checks.RunAsync("REQ-014: namnbyte sparas efter omstart och ändrar inte version, klass, ägande eller utrustning", async () =>
+        {
+            var service = Service(checks, "rename");
+            var priest = (await service.LoadAsync()).Selection!.ActiveCharacter.Id;
+            await service.SetEquippedAsync("holy-head", true);
+            await service.SelectAsync(priest, "discipline");
+            await service.SetEquippedAsync("discipline-chest", true);
+            var mage = (await service.CreateAsync("Forever Mage", GameVersion.Forever, CharacterClass.Mage)).Selection!.ActiveCharacter.Id;
+            var repository = new JsonWorkspaceRepository(checks.PathFor("rename-workspace.json"));
+            var before = (await repository.LoadAsync())!;
+            var renamed = await service.RenameAsync(priest, "  Renamed Priest  ");
+            Assert(renamed.Selection!.ActiveCharacter.Id == mage && renamed.Selection.Characters.Single(item => item.Id == priest).Name == "Renamed Priest",
+                "Namnet trimmas och aktivt val ändras inte av namnbyte.");
+            var after = (await repository.LoadAsync())!;
+            Assert(after.ActiveCharacterId == before.ActiveCharacterId && after.Characters.Length == 2, "Workspace behåller aktiv karaktär och antal.");
+            Assert(Json(after.Characters.Single(item => item.Id == priest)) == Json(before.Characters.Single(item => item.Id == priest) with { Name = "Renamed Priest" }) &&
+                Json(after.Characters.Single(item => item.Id == mage)) == Json(before.Characters.Single(item => item.Id == mage)),
+                "Endast namnet ändras; version, klass, spec, ägande, utrustning och andra karaktärer är oförändrade.");
+            var restarted = Service(checks, "rename");
+            var holy = await restarted.SelectAsync(priest, "holy");
+            Assert(holy.Selection!.ActiveCharacter is { Name: "Renamed Priest", Version: GameVersion.Classic, Class: CharacterClass.Priest } &&
+                Entry(holy, "holy-head").IsEquipped && Entry(holy, "holy-chest").IsOwned, "Namn och framsteg återläses efter omstart.");
+            Assert(Entry(await restarted.SelectAsync(priest, "discipline"), "discipline-chest").IsEquipped, "Annan specs utrustning bevaras.");
+        });
+
+        await checks.RunAsync("REQ-014: ogiltiga namn och okänd karaktär avvisas före ändring", async () =>
+        {
+            var service = Service(checks, "rename-invalid");
+            var id = (await service.LoadAsync()).Selection!.ActiveCharacter.Id;
+            var path = checks.PathFor("rename-invalid-workspace.json");
+            var original = await File.ReadAllTextAsync(path);
+            foreach (var name in new[] { "", "   ", new string('x', 41), "Bad\nName", "Tab\tName" })
+                await Throws<ArgumentException>(() => service.RenameAsync(id, name));
+            await Throws<ArgumentException>(() => service.RenameAsync(Guid.NewGuid(), "Valid"));
+            await Throws<ArgumentException>(() => service.RenameAsync(Guid.Empty, "Valid"));
+            Assert(await File.ReadAllTextAsync(path) == original, "Avvisat namnbyte får inte ändra filen.");
+            Assert((await service.LoadAsync()).Selection!.ActiveCharacter.Name == "My Priest", "Avvisat namnbyte syns inte i resultatet.");
+            Assert((await service.RenameAsync(id, new string('y', 40))).Selection!.ActiveCharacter.Name.Length == 40, "40 tecken är tillåtet som vid skapande.");
+        });
+
+        await checks.RunAsync("REQ-015: borttagning av inaktiv och aktiv karaktär lämnar övriga karaktärers data orörda", async () =>
+        {
+            var service = Service(checks, "delete");
+            var first = (await service.LoadAsync()).Selection!.ActiveCharacter.Id;
+            await service.SetEquippedAsync("holy-head", true);
+            var second = (await service.CreateAsync("Second", GameVersion.Forever, CharacterClass.Priest)).Selection!.ActiveCharacter.Id;
+            await service.SetEquippedAsync("discipline-chest", true);
+            var third = (await service.CreateAsync("Third", GameVersion.Classic, CharacterClass.Mage)).Selection!.ActiveCharacter.Id;
+            var repository = new JsonWorkspaceRepository(checks.PathFor("delete-workspace.json"));
+            var before = (await repository.LoadAsync())!;
+            var inactive = await service.DeleteAsync(first);
+            Assert(inactive.Selection!.ActiveCharacter.Id == third && inactive.Selection.Characters.Select(item => item.Id).SequenceEqual([second, third]),
+                "Borttagen inaktiv karaktär försvinner; aktiv karaktär är oförändrad.");
+            var afterInactive = (await repository.LoadAsync())!;
+            Assert(afterInactive.ActiveCharacterId == third && afterInactive.Characters.Select(Json).SequenceEqual(before.Characters.Where(item => item.Id != first).Select(Json)),
+                "Övriga karaktärers sparade data är byte-för-byte desamma.");
+            var active = await service.DeleteAsync(third);
+            Assert(active.Selection!.ActiveCharacter.Id == second && active.Selection.Characters.Count == 1 && Entry(active, "discipline-chest").IsEquipped,
+                "Borttagen aktiv karaktär ersätts av första kvarvarande med dess framsteg.");
+            var restarted = await Service(checks, "delete").LoadAsync();
+            Assert(restarted.Selection!.ActiveCharacter.Id == second && restarted.Selection.Characters.Count == 1 &&
+                Json((await repository.LoadAsync())!.Characters[0]) == Json(before.Characters.Single(item => item.Id == second)), "Borttagning återläses efter omstart.");
+            await Throws<ArgumentException>(() => service.DeleteAsync(first));
+        });
+
+        await checks.RunAsync("REQ-015: sista karaktären tas bort; tom workspace återläses utan legacy-import och ny karaktär kan skapas", async () =>
+        {
+            var catalog = await new ClassicPhaseOneBisCatalog().LoadAsync();
+            var legacy = checks.Repository("empty-legacy.json");
+            await legacy.SaveAsync(new ProgressState([catalog.Items[0].Id], new()));
+            var path = checks.PathFor("empty-workspace.json");
+            var service = new CharacterTrackerService(new CharacterCatalog(), new JsonWorkspaceRepository(path), legacy);
+            var migrated = await service.LoadAsync();
+            Assert(migrated.Selection!.ActiveCharacter.Name == "My Priest" && Entry(migrated, catalog.Items[0].Id).IsOwned, "Första start importerar legacy en gång.");
+            var empty = await service.DeleteAsync(migrated.Selection.ActiveCharacter.Id);
+            Assert(empty.Selection is null && empty.Entries.Count == 0 && empty.Catalog == TrackerSnapshot.NoCharacterCatalog, "Tomt läge saknar val och rader.");
+            var stored = (await new JsonWorkspaceRepository(path).LoadAsync())!;
+            Assert(stored is { SchemaVersion: 1, Characters.Length: 0 } && stored.ActiveCharacterId == Guid.Empty, "Noll karaktärer sparas i schema 1 med tomt aktivt ID.");
+            var emptyFile = await File.ReadAllTextAsync(path);
+            var restarted = new CharacterTrackerService(new CharacterCatalog(), new JsonWorkspaceRepository(path), new UnreadableLegacyRepository());
+            var reloaded = await restarted.LoadAsync();
+            Assert(reloaded.Selection is null && reloaded.Entries.Count == 0, "Tom workspace återläses tom; legacy läses inte och My Priest återskapas inte.");
+            await Throws<InvalidOperationException>(() => restarted.SetOwnedAsync(catalog.Items[0].Id, true));
+            await Throws<InvalidOperationException>(() => restarted.SelectCatalogAsync(CatalogSet.Default(GameVersion.Classic).Id));
+            await Throws<ArgumentException>(() => restarted.SelectAsync(Guid.NewGuid(), "holy"));
+            await Throws<ArgumentException>(() => restarted.RenameAsync(Guid.NewGuid(), "Name"));
+            await Throws<ArgumentException>(() => restarted.DeleteAsync(Guid.NewGuid()));
+            Assert(await File.ReadAllTextAsync(path) == emptyFile, "Avvisade operationer i tomt läge ändrar inte filen.");
+            var created = await restarted.CreateAsync("Fresh Priest", GameVersion.Classic, CharacterClass.Priest);
+            var createdHoly = await restarted.SelectAsync(created.Selection!.ActiveCharacter.Id, "holy");
+            Assert(created.Selection.ActiveCharacter.Name == "Fresh Priest" && created.Selection.Characters.Count == 1 && createdHoly.Entries.Count > 0 &&
+                createdHoly.Entries.All(entry => !entry.IsOwned), "Ny karaktär från tomt läge blir aktiv utan importerat legacy-ägande.");
+            var afterCreate = await new CharacterTrackerService(new CharacterCatalog(), new JsonWorkspaceRepository(path), new UnreadableLegacyRepository()).LoadAsync();
+            Assert(afterCreate.Selection!.ActiveCharacter.Id == created.Selection.ActiveCharacter.Id, "Skapad karaktär återläses efter omstart.");
+        });
+
+        await checks.RunAsync("REQ-014/015: sparfel vid namnbyte och borttagning lämnar sparat och returnerat tillstånd oförändrat", async () =>
+        {
+            var path = checks.PathFor("failed-edit-workspace.json");
+            var repository = new FailOnSaveRepository(new JsonWorkspaceRepository(path));
+            var service = new CharacterTrackerService(new FixtureCatalog(), repository, checks.Repository("failed-edit-legacy.json"));
+            var first = (await service.LoadAsync()).Selection!.ActiveCharacter.Id;
+            await service.SetEquippedAsync("holy-head", true);
+            var second = (await service.CreateAsync("Second", GameVersion.Forever, CharacterClass.Mage)).Selection!.ActiveCharacter.Id;
+            var original = await File.ReadAllTextAsync(path);
+            repository.Fail = true;
+            await Throws<IOException>(() => service.RenameAsync(first, "Renamed"));
+            await Throws<IOException>(() => service.DeleteAsync(first));
+            await Throws<IOException>(() => service.DeleteAsync(second));
+            repository.Fail = false;
+            Assert(await File.ReadAllTextAsync(path) == original, "Sparfel får inte ändra filen.");
+            var after = await service.LoadAsync();
+            Assert(after.Selection!.ActiveCharacter.Id == second && after.Selection.Characters.Count == 2 &&
+                after.Selection.Characters.Single(item => item.Id == first).Name == "My Priest", "Sparfel syns inte som lyckat namnbyte eller borttagning.");
+            await service.DeleteAsync(second);
+            repository.Fail = true;
+            await Throws<IOException>(() => service.DeleteAsync(first));
+            repository.Fail = false;
+            var last = await service.LoadAsync();
+            Assert(last.Selection!.ActiveCharacter.Id == first && Entry(last, "holy-head").IsEquipped, "Sparfel vid borttagning av sista karaktären bevarar den.");
+        });
     }
+
+    private static string Json(CharacterState character) => System.Text.Json.JsonSerializer.Serialize(character);
 
     private static CharacterTrackerService Service(CheckRun checks, string name) => new(new FixtureCatalog(),
         new JsonWorkspaceRepository(checks.PathFor(name + "-workspace.json")), checks.Repository(name + "-legacy.json"));
@@ -239,7 +363,7 @@ internal static class CharacterScenarios
                 "https://example.com/icon", "https://example.com/item", "https://example.com/guide"));
     }
 
-    private sealed class UnreadableLegacyRepository : IProgressRepository
+    internal sealed class UnreadableLegacyRepository : IProgressRepository
     {
         public Task<ProgressState> LoadAsync(CancellationToken cancellationToken = default) => throw new InvalidOperationException("Must not read legacy data twice.");
         public Task SaveAsync(ProgressState state, CancellationToken cancellationToken = default) => throw new InvalidOperationException("Must never write legacy data.");

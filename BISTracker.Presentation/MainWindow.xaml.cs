@@ -75,6 +75,24 @@ namespace BISTracker.Presentation
                 await _viewModel.CreateCharacterAsync(dialog.CharacterName, dialog.Version, dialog.Class);
         }
 
+        private async void RenameCharacterClicked(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.SelectedCharacter is not { } character) return;
+            var dialog = new CharacterDialog(Root.XamlRoot, character);
+            if (await dialog.ShowAsync() == ContentDialogResult.Primary && dialog.CharacterName != character.Name)
+                await _viewModel.RenameCharacterAsync(character, dialog.CharacterName);
+            // A rejected save leaves the model unchanged; reset the picker to the model's character.
+            CharacterPicker.SelectedItem = _viewModel.SelectedCharacter;
+        }
+
+        private async void DeleteCharacterClicked(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.SelectedCharacter is not { } character) return;
+            if (await new DeleteCharacterDialog(Root.XamlRoot, character).ShowAsync() == ContentDialogResult.Primary)
+                await _viewModel.DeleteCharacterAsync(character);
+            CharacterPicker.SelectedItem = _viewModel.SelectedCharacter;
+        }
+
         private async void CatalogChanged(object sender, SelectionChangedEventArgs e)
         {
             if (_viewModel?.IsInteractive == true && CatalogPicker.SelectedItem is CatalogSet set && set.Id != _viewModel.SelectedCatalogSet?.Id)

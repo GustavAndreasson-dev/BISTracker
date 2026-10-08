@@ -43,11 +43,15 @@ public sealed class TrackerViewModel : ObservableObject
     public bool HasDraftProgress { get; }
     public string CatalogContext { get; private set; } = "";
     public string CatalogLabel { get; private set; } = "";
-    public string ListTitle => SelectedCharacter?.Version == GameVersion.Forever ? $"Your level {SelectedCatalogSet?.LevelCap ?? 30} gear" : "Your pre-raid gear";
+    public string ListTitle => IsWorkspaceEmpty ? "No characters" : SelectedCharacter?.Version == GameVersion.Forever ? $"Your level {SelectedCatalogSet?.LevelCap ?? 30} gear" : "Your pre-raid gear";
     public string NavigationLabel => SelectedCharacter?.Version == GameVersion.Forever ? $"Level {SelectedCatalogSet?.LevelCap ?? 30} gear" : "Pre-raid BiS";
     public string SelectionMethod { get; private set; } = "";
     public bool ShowClassicContext => HasReviewedCatalog && SelectedCharacter?.Version == GameVersion.Classic;
     public bool CanImportCatalog => IsInteractive && _catalogImporter is not null;
+    public bool IsWorkspaceEmpty => _loaded && _selectedCharacter is null;
+    public bool IsCharacterInteractive => IsInteractive && _selectedCharacter is not null;
+    public string CharacterContentVisibility => IsWorkspaceEmpty ? "Collapsed" : "Visible";
+    public string NoCharactersVisibility => IsWorkspaceEmpty ? "Visible" : "Collapsed";
     public bool HasReviewedCatalog => _loaded && _unavailableReason is null && TotalCount > 0;
     public ObservableCollection<CharacterOption> Characters { get; } = new();
     public ObservableCollection<Specialization> Specializations { get; } = new();
@@ -83,6 +87,8 @@ public sealed class TrackerViewModel : ObservableObject
     public Task SelectSpecializationAsync(Specialization spec) => ExecuteAsync(() => _service.SelectAsync(SelectedCharacter!.Id, spec.Id), true);
     public Task CreateCharacterAsync(string name, GameVersion version, CharacterClass characterClass) =>
         ExecuteAsync(() => _service.CreateAsync(name, version, characterClass), true);
+    public Task RenameCharacterAsync(CharacterOption character, string name) => ExecuteAsync(() => _service.RenameAsync(character.Id, name), true);
+    public Task DeleteCharacterAsync(CharacterOption character) => ExecuteAsync(() => _service.DeleteAsync(character.Id), true);
     public Task SelectCatalogAsync(CatalogSet set) => ExecuteAsync(() => _service.SelectCatalogAsync(set.Id), true);
     public Task ImportCatalogAsync(string directory) => ExecuteAsync(async () =>
     {
@@ -95,6 +101,7 @@ public sealed class TrackerViewModel : ObservableObject
         _isBusy = true;
         Notify(nameof(IsInteractive));
         Notify(nameof(CanImportCatalog));
+        Notify(nameof(IsCharacterInteractive));
         ErrorMessage = "";
         SaveStatus = saves ? "Saving progress…" : "Loading your progress…";
         try
@@ -132,7 +139,7 @@ public sealed class TrackerViewModel : ObservableObject
                 slot.Update(_ownedCoverage?.CoveredSlots.Contains(slot.Slot) == true,
                     _catalogCoverage?.MissingSlots.Contains(slot.Slot) == true || _allianceCoverage?.MissingSlots.Contains(slot.Slot) == true || _hordeCoverage?.MissingSlots.Contains(slot.Slot) == true);
             CatalogContext = snapshot.Catalog.Context.Phase;
-            CatalogLabel = $"{snapshot.Catalog.Context.Version} / {snapshot.Catalog.Context.Specialization}";
+            CatalogLabel = snapshot.Selection is null ? "" : $"{snapshot.Catalog.Context.Version} / {snapshot.Catalog.Context.Specialization}";
             SelectionMethod = snapshot.Catalog.SelectionMethod ?? "";
             _unavailableReason = snapshot.Catalog.UnavailableReason;
             if (snapshot.Selection is { } selection)
@@ -147,7 +154,18 @@ public sealed class TrackerViewModel : ObservableObject
                 foreach (var set in selection.CatalogSets ?? Array.Empty<CatalogSet>()) CatalogSets.Add(set);
                 _selectedCatalogSet = CatalogSets.SingleOrDefault(set => set.Id == selection.ActiveCatalogSet?.Id);
             }
-            foreach (var property in new[] { nameof(CatalogContext), nameof(CatalogLabel), nameof(HasReviewedCatalog), nameof(ShowClassicContext), nameof(ListTitle), nameof(NavigationLabel), nameof(SelectionMethod), nameof(HasCatalogGaps), nameof(CatalogStatus) }) Notify(property);
+            else
+            {
+                // A character snapshot without a selection means that the workspace has no characters.
+                Characters.Clear();
+                Specializations.Clear();
+                CatalogSets.Clear();
+                _selectedCharacter = null;
+                _selectedSpecialization = null;
+                _selectedCatalogSet = null;
+            }
+            foreach (var property in new[] { nameof(CatalogContext), nameof(CatalogLabel), nameof(HasReviewedCatalog), nameof(ShowClassicContext), nameof(ListTitle), nameof(NavigationLabel), nameof(SelectionMethod), nameof(HasCatalogGaps), nameof(CatalogStatus),
+                nameof(IsWorkspaceEmpty), nameof(CharacterContentVisibility), nameof(NoCharactersVisibility) }) Notify(property);
             foreach (var property in new[] { nameof(TotalCount), nameof(OwnedCount), nameof(RemainingCount), nameof(OwnedSummary), nameof(EquippedSummary) }) Notify(property);
             ApplyFilter();
             SaveStatus = importsCatalog ? "Catalogs imported locally." : saves ? $"Saved locally · {DateTime.Now:HH:mm}" : "Your progress is saved locally on this computer.";
@@ -169,11 +187,13 @@ public sealed class TrackerViewModel : ObservableObject
             _isBusy = false;
             Notify(nameof(IsInteractive));
             Notify(nameof(CanImportCatalog));
+            Notify(nameof(IsCharacterInteractive));
         }
     }
     private static string DescribeError(Exception exception, bool saves) => exception switch
     {
         InvalidDataException => "The progress file contains invalid data.",
+        ArgumentException { ParamName: "name" } => "Enter a character name with 1–40 characters.",
         UnauthorizedAccessException => "Access to the progress file was denied.",
         IOException => saves
             ? "The progress file could not be saved. Make sure it is accessible and is not in use by another app."

@@ -144,9 +144,9 @@ Publicering använder en ny GUID-mapp under ignorerade `artifacts/`.
 Checkhost, rapporter och testprofiler följer inte med i ZIP-filen.
 Varje prov får en ny rapportmapp med PENDING/PASS/FAIL, så gamla resultat
 inte skrivs över. Även felvägar skriver FAIL; spelarprofilens kontroll ligger
-i `finally`. Slutlig PASS kräver v1-basens 49 beteendekontroller, inklusive
-alla tre distributionsscenarier, och 27 kompletta Forever-kataloger. Om beta2
-utökar testsviten ska skriptets förväntade antal uppdateras med ändringen.
+i `finally`. Slutlig PASS kräver alla 56 beteendekontroller (49 i v1 plus REQ-014/015),
+inklusive alla tre distributionsscenarier, och 27 kompletta Forever-kataloger.
+Skriptets förväntade antal uppdateras när testsviten utökas.
 
 UI-provet använder `BISTRACKER_DATA_DIRECTORY` enbart i den teststartade
 processen. Appen accepterar då en absolut datamapp; vanlig start behåller

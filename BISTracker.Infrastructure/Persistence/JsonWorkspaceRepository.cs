@@ -88,8 +88,9 @@ public sealed class JsonWorkspaceRepository : IWorkspaceRepository
     }
 
     // Catalog-dependent relationships are validated by the application and domain before saving.
+    // Schema 1 allows zero characters (REQ-015); the active ID is then empty, otherwise it must reference a character.
     private static bool HasValidShape(WorkspaceState? state) =>
-        state is { SchemaVersion: 1, Characters.Length: > 0 } &&
+        state is { SchemaVersion: 1, Characters: not null } &&
         state.Characters.All(character => character is not null && character.Id != Guid.Empty &&
             !string.IsNullOrWhiteSpace(character.Name) && character.Name.Trim().Length <= 40 && !character.Name.Any(char.IsControl) &&
             Enum.IsDefined(character.Version) && Enum.IsDefined(character.Class) &&
@@ -100,7 +101,7 @@ public sealed class JsonWorkspaceRepository : IWorkspaceRepository
             (character.CatalogSetId is null || !string.IsNullOrWhiteSpace(character.CatalogSetId)) &&
             (character.ArchivedLoadouts is null || character.ArchivedLoadouts.All(pair => !string.IsNullOrWhiteSpace(pair.Key) && ValidEquipment(character.Class, pair.Value)))) &&
         state.Characters.Select(character => character.Id).Distinct().Count() == state.Characters.Length &&
-        state.Characters.Any(character => character.Id == state.ActiveCharacterId);
+        (state.Characters.Length == 0 ? state.ActiveCharacterId == Guid.Empty : state.Characters.Any(character => character.Id == state.ActiveCharacterId));
 
     private static bool ValidEquipment(CharacterClass characterClass, Dictionary<string, Dictionary<EquipmentSlot, string>>? lists) =>
         lists is { Count: 3 } && CharacterDefinition.Specializations(characterClass).All(spec =>
