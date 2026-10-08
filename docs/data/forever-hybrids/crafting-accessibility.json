@@ -1,0 +1,117 @@
+{
+  "reviewedOn": "2026-10-08",
+  "scope": "Additional direct recipe access checks for crafting items used by hybrid full-set witnesses.",
+  "items": [
+    {
+      "itemId": 249397,
+      "name": "Tenets of the Silver Hand",
+      "recipeSpellId": 1248754,
+      "recipeSpellUrl": "https://www.wowhead.com/forever/spell=1248754",
+      "recipeItemId": 249477,
+      "recipeItemUrl": "https://www.wowhead.com/forever/item=249477",
+      "profession": "Enchanting",
+      "requiredSkill": 130,
+      "recipeBinding": "BindOnPickup",
+      "tools": [
+        "Runed Silver Rod"
+      ],
+      "specialForgeOrCampingRequirementInSpellTooltip": false,
+      "vendors": [
+        {
+          "faction": "Alliance",
+          "npcId": 256732,
+          "name": "Alynsia",
+          "zoneId": 44,
+          "merchantFavorCost": 45
+        },
+        {
+          "faction": "Horde",
+          "npcId": 248199,
+          "name": "Beneris",
+          "zoneId": 17,
+          "merchantFavorCost": 45
+        }
+      ],
+      "vendorSourceUrl": "https://www.wowhead.com/forever/item=249477",
+      "guideSourceUrl": "https://www.wowhead.com/forever/guide/azeroth-commerce-authority-reputation-professions",
+      "note": "Original Forever guide independently confirms Enchanting130 and45 Merchant's Favor. Recipe vendor level60 is the NPC level, not a player purchase level. The guide describes both faction camps and crate turn-ins; whole currency acquisition routes have not been played in the client."
+    },
+    {
+      "itemId": 252455,
+      "name": "Defender's Leather Helm",
+      "recipeSpellId": 1255091,
+      "recipeSpellUrl": "https://www.wowhead.com/forever/spell=1255091",
+      "profession": "Leatherworking",
+      "requiredSkill": 130,
+      "tools": [],
+      "specialForgeOrCampingRequirementInSpellTooltip": false,
+      "reagents": [
+        {
+          "itemId": 2319,
+          "quantity": 12
+        },
+        {
+          "itemId": 4233,
+          "quantity": 2
+        },
+        {
+          "itemId": 2458,
+          "quantity": 3
+        }
+      ],
+      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-tank-overview",
+      "additionalOriginalGuide": "https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide/",
+      "itemSourceUrl": "https://www.wowhead.com/forever/item=252455",
+      "availabilityEvidence": "Explicit original level30 Feral crafted recommendation, direct current Forever recipe relation and achievable Journeyman130. Current item HTML also records dungeon drops.",
+      "limitation": "Spell page does not expose a separate learned-by-NPC or pattern-item list for this recipe. Do not claim an independently verified trainer or pattern vendor. Full crafting learning was not played in the client."
+    },
+    {
+      "itemId": 249396,
+      "name": "Mystic Mushroom",
+      "recipeItemId": 249476,
+      "recipeItemUrl": "https://www.wowhead.com/forever/item=249476",
+      "profession": "Enchanting",
+      "requiredSkill": 130,
+      "vendors": [
+        {
+          "faction": "Alliance",
+          "npcId": 256732,
+          "name": "Alynsia",
+          "merchantFavorCost": 45
+        },
+        {
+          "faction": "Horde",
+          "npcId": 248199,
+          "name": "Beneris",
+          "merchantFavorCost": 45
+        }
+      ],
+      "guideSourceUrl": "https://www.wowhead.com/forever/guide/azeroth-commerce-authority-reputation-professions",
+      "evidence": "Individual recipe item HTML sold-by and creates tables independently confirm both vendors, cost and crafted item relation. Original guide explicitly lists this individual formula at Enchanting130 and45 Merchant Favor."
+    },
+    {
+      "itemId": 249398,
+      "name": "Polished Driftwood Icon",
+      "recipeItemId": 249478,
+      "recipeItemUrl": "https://www.wowhead.com/forever/item=249478",
+      "profession": "Enchanting",
+      "requiredSkill": 130,
+      "vendors": [
+        {
+          "faction": "Alliance",
+          "npcId": 256732,
+          "name": "Alynsia",
+          "merchantFavorCost": 45
+        },
+        {
+          "faction": "Horde",
+          "npcId": 248199,
+          "name": "Beneris",
+          "merchantFavorCost": 45
+        }
+      ],
+      "guideSourceUrl": "https://www.wowhead.com/forever/guide/azeroth-commerce-authority-reputation-professions",
+      "evidence": "Individual recipe item HTML sold-by and creates tables independently confirm both vendors, cost and crafted item relation. Original guide explicitly lists this individual formula at Enchanting130 and45 Merchant Favor."
+    }
+  ]
+}

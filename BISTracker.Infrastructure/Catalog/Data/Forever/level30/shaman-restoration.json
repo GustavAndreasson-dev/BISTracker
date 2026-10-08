@@ -9,7 +9,7 @@
   "phase": "Level 30 beta",
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
   "reviewedOn": "2026-10-08",
-  "selectionMethod": "Equipment alternatives from the original Forever level-30 guide; source categories retained, no new stat weights or invented slot replacements.",
+  "selectionMethod": "Unranked equipment alternatives explicitly recommended by original Forever guides and original WOWTBC Forever class/spec lists; no invented stat weights or slot replacements.",
   "status": "Partial",
   "items": [
     {
@@ -122,7 +122,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "MainHand",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-offhand-280696",
@@ -138,7 +141,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "OffHand",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-finger1-271670",
@@ -148,13 +154,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Horrors in the Highland",
-      "note": "Alliance only. Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Alliance only. Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271670",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-finger2-271670",
@@ -164,13 +173,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Horrors in the Highland",
-      "note": "Alliance only. Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Alliance only. Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271670",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-wrist-271740",
@@ -180,13 +192,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Open the Maw",
-      "note": "",
+      "note": "Horde only.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_10.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271740",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-finger1-6750",
@@ -196,13 +211,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Willix the Importer",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6750",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-finger2-6750",
@@ -212,13 +231,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Willix the Importer",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6750",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-hands-9609",
@@ -234,7 +257,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-shoulder-9536",
@@ -250,7 +276,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-shoulder-4197",
@@ -266,7 +296,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-mainhand-17039",
@@ -282,7 +316,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "MainHand",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-chest-17043",
@@ -298,7 +335,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-restoration-ranged-249398",
@@ -307,8 +347,8 @@
       "name": "Polished Driftwood Icon",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Enchanting",
-      "note": "Crafted item binds on pickup.",
+      "source": "Enchanting 130",
+      "note": "Crafted item binds on pickup. Self-crafting requires Enchanting 130. Recipe: 45 Merchant's Favor from Alynsia (Alliance) or Beneris (Horde) at the supply camp.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_totemrecall.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249398",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
@@ -323,8 +363,8 @@
       "name": "Totemic Leather Helm",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 130",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 130.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_24.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252456",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
@@ -339,8 +379,8 @@
       "name": "Invoker's Mantle",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Tailoring",
-      "note": "",
+      "source": "Tailoring 150",
+      "note": "Crafting requires Tailoring 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=215365",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
@@ -355,8 +395,8 @@
       "name": "Totemic Leather Tunic",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 110",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 110.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_leather_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252451",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
@@ -371,8 +411,8 @@
       "name": "Totemic Leather Leggings",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 125",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252458",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
@@ -387,8 +427,8 @@
       "name": "Spidersilk Boots",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Tailoring",
-      "note": "",
+      "source": "Tailoring 125",
+      "note": "Crafting requires Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4320",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
@@ -403,8 +443,8 @@
       "name": "Totemic Leather Gloves",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 75",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 75.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252497",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
@@ -419,14 +459,332 @@
       "name": "Skycaller's Leather Belt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 150",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_39a.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252522",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
       "requiredLevel": 30
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-head-7691",
+      "slot": "Head",
+      "itemId": 7691,
+      "name": "Embalmed Shroud",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery · Fallen Champion",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_28.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7691",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 30
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-neck-23169",
+      "slot": "Neck",
+      "itemId": 23169,
+      "name": "Scorn's Icy Choker",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery · Scorn",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_necklace_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=23169",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 30
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-back-274149",
+      "slot": "Back",
+      "itemId": 274149,
+      "name": "Thornweaver Drape",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul · Roogug",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_11.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=274149",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 25
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-back-6901",
+      "slot": "Back",
+      "itemId": 6901,
+      "name": "Glowing Thresher Cape",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps · Old Serra'kis",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_monsterscales_03.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6901",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 24
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-waist-6392",
+      "slot": "Waist",
+      "itemId": 6392,
+      "name": "Belt of Arugal",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep · Archmage Arugal",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_10.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6392",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 23
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-legs-273289",
+      "slot": "Legs",
+      "itemId": 273289,
+      "name": "Ogre Loincloth",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "The Deadmines · Rhahk'Zor",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_09.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273289",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 17
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-legs-6903",
+      "slot": "Legs",
+      "itemId": 6903,
+      "name": "Gaze Dreamer Pants",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps · Twilight Lord Kelris",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6903",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 23
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-legs-270031",
+      "slot": "Legs",
+      "itemId": 270031,
+      "name": "Dark Ritual Leggings",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Blackfathom Villainy",
+      "note": "Horde only.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=270031",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-trinket1-274152",
+      "slot": "Trinket1",
+      "itemId": 274152,
+      "name": "Roogug's Severed Head",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul · Roogug",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=274152",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 25
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-trinket2-274152",
+      "slot": "Trinket2",
+      "itemId": 274152,
+      "name": "Roogug's Severed Head",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul · Roogug",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=274152",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 25
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-trinket1-273643",
+      "slot": "Trinket1",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep · Commander Springvale",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 21
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-trinket2-273643",
+      "slot": "Trinket2",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep · Commander Springvale",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 21
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-trinket1-280766",
+      "slot": "Trinket1",
+      "itemId": 280766,
+      "name": "Satchel of Potions",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Heartwoven",
+      "note": "Alliance only.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bag_08.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=280766",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-trinket2-280766",
+      "slot": "Trinket2",
+      "itemId": 280766,
+      "name": "Satchel of Potions",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Heartwoven",
+      "note": "Alliance only.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bag_08.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=280766",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-ranged-263412",
+      "slot": "Ranged",
+      "itemId": 263412,
+      "name": "Totem of Charged Flames",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Call of Fire",
+      "note": "Beta reward moved from Meddlesome Mages to the class quest chain. Characters that completed the class quest before the change may be unable to obtain it.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_relics_totemofrage.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=263412",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-chest-6682",
+      "slot": "Chest",
+      "itemId": 6682,
+      "name": "Death Speaker Robes",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul · Death Speaker Jargba",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_cloth_20.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6682",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 26
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-hands-888",
+      "slot": "Hands",
+      "itemId": 888,
+      "name": "Naga Battle Gloves",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps · Lady Sarevess",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_13.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=888",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 22
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-finger1-9447",
+      "slot": "Finger1",
+      "itemId": 9447,
+      "name": "Electrocutioner Lagnut",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Gnomeregan · Electrocutioner 6000",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gear_04.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9447",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 29
+    },
+    {
+      "id": "forever-beta-level30-shaman-restoration-finger2-9447",
+      "slot": "Finger2",
+      "itemId": 9447,
+      "name": "Electrocutioner Lagnut",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Gnomeregan · Electrocutioner 6000",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gear_04.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9447",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 29
     }
   ],
   "patch": "1.60.1"

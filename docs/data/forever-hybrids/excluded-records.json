@@ -12,7 +12,9 @@
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview",
     "itemId": 270030,
-    "reason": "Ambiguous multi-quest row; precise reward relation requires separate review"
+    "reason": "Ambiguous multi-quest row; precise reward relation requires separate review",
+    "resolution": "2026-10-08: precise Forever quest reward relation verified; restored to Balance with faction and minimum quest level evidence in slot-audit.json.",
+    "status": "Resolved"
   },
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview",
@@ -42,7 +44,9 @@
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview",
     "itemId": 270029,
-    "reason": "Ambiguous multi-quest row; precise reward relation requires separate review"
+    "reason": "Ambiguous multi-quest row; precise reward relation requires separate review",
+    "resolution": "2026-10-08: precise Forever quest reward relation verified; restored to Balance with faction and minimum quest level evidence in slot-audit.json.",
+    "status": "Resolved"
   },
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview",
@@ -77,7 +81,9 @@
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview",
     "itemId": 9609,
-    "reason": "Ambiguous multi-quest row; precise reward relation requires separate review"
+    "reason": "Ambiguous multi-quest row; precise reward relation requires separate review",
+    "resolution": "2026-10-08: precise Forever quest reward relation verified; restored to Balance with faction and minimum quest level evidence in slot-audit.json.",
+    "status": "Resolved"
   },
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview",
@@ -107,17 +113,26 @@
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
     "itemId": 252455,
-    "reason": "Crafted Defender helm mapped to several unrelated dungeon bosses; source mismatch rejected"
+    "reason": "Crafted Defender helm mapped to several unrelated dungeon bosses; source mismatch rejected",
+    "resolution": "2026-10-08: initial mismatch inference corrected. Fresh Forever item HTML records crafting and dungeon drops (Kam Deepfury, Bazil Thredd, Interrogator Vishas, Charlga Razorflank and others). Do not infer that a crafted item cannot drop. Feral uses its independently recommended Leatherworking130 source.",
+    "itemUrl": "https://www.wowhead.com/forever/item=252455",
+    "status": "EarlierInferenceCorrected"
   },
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
     "itemId": 252455,
-    "reason": "Crafted Defender helm mapped to several unrelated dungeon bosses; source mismatch rejected"
+    "reason": "Crafted Defender helm mapped to several unrelated dungeon bosses; source mismatch rejected",
+    "resolution": "2026-10-08: initial mismatch inference corrected. Fresh Forever item HTML records crafting and dungeon drops (Kam Deepfury, Bazil Thredd, Interrogator Vishas, Charlga Razorflank and others). Do not infer that a crafted item cannot drop. Feral uses its independently recommended Leatherworking130 source.",
+    "itemUrl": "https://www.wowhead.com/forever/item=252455",
+    "status": "EarlierInferenceCorrected"
   },
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
     "itemId": 252455,
-    "reason": "Crafted Defender helm mapped to several unrelated dungeon bosses; source mismatch rejected"
+    "reason": "Crafted Defender helm mapped to several unrelated dungeon bosses; source mismatch rejected",
+    "resolution": "2026-10-08: initial mismatch inference corrected. Fresh Forever item HTML records crafting and dungeon drops (Kam Deepfury, Bazil Thredd, Interrogator Vishas, Charlga Razorflank and others). Do not infer that a crafted item cannot drop. Feral uses its independently recommended Leatherworking130 source.",
+    "itemUrl": "https://www.wowhead.com/forever/item=252455",
+    "status": "EarlierInferenceCorrected"
   },
   {
     "guide": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",

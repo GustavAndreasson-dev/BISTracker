@@ -9,7 +9,7 @@
   "phase": "Level 30 beta",
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
   "reviewedOn": "2026-10-08",
-  "selectionMethod": "Equipment alternatives from the original Forever level-30 guide; source categories retained, no new stat weights or invented slot replacements.",
+  "selectionMethod": "Unranked equipment alternatives explicitly recommended by original Forever guides and original WOWTBC Forever class/spec lists; no invented stat weights or slot replacements.",
   "status": "Partial",
   "items": [
     {
@@ -106,7 +106,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-enhancement-finger1-6749",
@@ -116,13 +120,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Willix the Importer",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_13.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6749",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-enhancement-finger2-6749",
@@ -132,13 +140,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Willix the Importer",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_13.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6749",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-enhancement-mainhand-280604",
@@ -154,7 +166,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-enhancement-hands-4253",
@@ -163,8 +178,8 @@
       "name": "Toughened Leather Gloves",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "",
+      "source": "Leatherworking 135",
+      "note": "Crafting requires Leatherworking 135.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_24.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4253",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
@@ -179,8 +194,8 @@
       "name": "Skirmisher's Leather Belt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 150",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_37a.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252461",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview",
@@ -227,8 +242,8 @@
       "name": "Barbaric Shoulders",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "",
+      "source": "Leatherworking 175",
+      "note": "Crafting requires Leatherworking 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_08.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=5964",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -243,8 +258,8 @@
       "name": "Totemic Leather Tunic",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking · Merchant's Favor",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 110",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 110.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_leather_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252451",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -266,7 +281,10 @@
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-enhancement-chest-273026",
@@ -307,8 +325,8 @@
       "name": "Prowler's Leather Belt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking · Merchant's Favor",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 150",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_43.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252459",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -339,8 +357,8 @@
       "name": "Stormrider's Leather Kilt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking · Merchant's Favor",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 125",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_kilt_cloth_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252518",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -378,7 +396,10 @@
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-enhancement-feet-6752",
@@ -394,7 +415,10 @@
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-shaman-enhancement-finger1-7686",
@@ -404,7 +428,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Scarlet Monastery Graveyard · Ironspine (rare)",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=7686",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -420,7 +444,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Scarlet Monastery Graveyard · Ironspine (rare)",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=7686",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -436,7 +460,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Razorfen Kraul · Roogug",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -452,7 +476,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Razorfen Kraul · Roogug",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -468,7 +492,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Shadowfang Keep · Commander Springvale",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273643",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -484,7 +508,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Shadowfang Keep · Commander Springvale",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273643",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -499,8 +523,8 @@
       "name": "Polished Driftwood Icon",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Enchanting · Merchant's Favor",
-      "note": "Crafted item binds on pickup.",
+      "source": "Enchanting 130",
+      "note": "Crafted item binds on pickup. Self-crafting requires Enchanting 130. Recipe: 45 Merchant's Favor from Alynsia (Alliance) or Beneris (Horde) at the supply camp.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_totemrecall.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249398",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
@@ -522,8 +546,87 @@
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-shaman-enhancement-back-6314",
+      "slot": "Back",
+      "itemId": 6314,
+      "name": "Wolfmaster Cape",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep · Wolf Master Nandos",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_10.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6314",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 22
+    },
+    {
+      "id": "forever-beta-level30-shaman-enhancement-back-271716",
+      "slot": "Back",
+      "itemId": 271716,
+      "name": "Explorer's League Dustcover",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Prehistoric Prism",
+      "note": "Alliance only.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_21.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=271716",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-shaman-enhancement-back-271719",
+      "slot": "Back",
+      "itemId": 271719,
+      "name": "Furs of the Earthen Ring",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Earthen Echo",
+      "note": "Horde only.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_04.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=271719",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-shaman-enhancement-ranged-263412",
+      "slot": "Ranged",
+      "itemId": 263412,
+      "name": "Totem of Charged Flames",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Call of Fire",
+      "note": "Beta reward moved from Meddlesome Mages to the class quest chain. Characters that completed the class quest before the change may be unable to obtain it.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_relics_totemofrage.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=263412",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     }
   ],
-  "patch": "1.60.1"
+  "patch": "1.60.1",
+  "weaponSetup": "TwoHanded",
+  "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview"
 }

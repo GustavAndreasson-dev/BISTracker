@@ -9,7 +9,7 @@
   "phase": "Level 30 beta",
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
   "reviewedOn": "2026-10-08",
-  "selectionMethod": "Equipment alternatives from the original Forever level-30 guide; source categories retained, no new stat weights or invented slot replacements.",
+  "selectionMethod": "Unranked equipment alternatives explicitly recommended by original Forever guides and original WOWTBC Forever class/spec lists; no invented stat weights or slot replacements.",
   "status": "Partial",
   "items": [
     {
@@ -141,22 +141,6 @@
       "requiredLevel": 29
     },
     {
-      "id": "forever-beta-level30-druid-restoration-mainhand-271767",
-      "slot": "MainHand",
-      "itemId": 271767,
-      "name": "Healer's Staff",
-      "requiredSuffix": null,
-      "acquisitionType": "Dungeon",
-      "source": "Excavation Site: Wetlands",
-      "note": "",
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
-      "itemUrl": "https://www.wowhead.com/forever/item=271767",
-      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
-      "weaponKind": "TwoHanded",
-      "uniqueEquipped": false,
-      "requiredLevel": 0
-    },
-    {
       "id": "forever-beta-level30-druid-restoration-feet-9450",
       "slot": "Feet",
       "itemId": 9450,
@@ -180,7 +164,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Gnomeregan",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gear_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9447",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -196,7 +180,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Gnomeregan",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gear_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9447",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -212,7 +196,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Razorfen Kraul",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -228,7 +212,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Razorfen Kraul",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -244,7 +228,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Shadowfang Keep",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273643",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -260,7 +244,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Shadowfang Keep",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273643",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -282,7 +266,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-back-9605",
@@ -298,7 +285,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-chest-4746",
@@ -314,7 +304,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-chest-9623",
@@ -330,7 +324,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-wrist-4744",
@@ -346,7 +344,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-offhand-276898",
@@ -362,7 +363,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "OffHand",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-hands-270059",
@@ -378,7 +382,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-hands-277223",
@@ -394,7 +401,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-feet-10359",
@@ -410,7 +421,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-finger1-9622",
@@ -420,13 +435,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Jarl Needs a Blade",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_33.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9622",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-finger2-9622",
@@ -436,13 +455,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Jarl Needs a Blade",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_33.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9622",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-druid-restoration-offhand-249395",
@@ -451,8 +474,8 @@
       "name": "Orb of Souls",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Enchanting",
-      "note": "Crafted item binds on pickup.",
+      "source": "Enchanting 140",
+      "note": "Crafted item binds on pickup. Self-crafting requires Enchanting 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249395",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -467,8 +490,8 @@
       "name": "Wisdom's Leather Helm",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 130",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 130.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_26.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252515",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -483,8 +506,8 @@
       "name": "Mender's Leather Belt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 150",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_26.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252523",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -499,8 +522,8 @@
       "name": "Wisdom's Leather Leggings",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 125",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252519",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -515,8 +538,8 @@
       "name": "Filigreed Pristine Circlet",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Tailoring",
-      "note": "Crafted item binds on pickup.",
+      "source": "Tailoring 125",
+      "note": "Crafted item binds on pickup. Self-crafting requires Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_crown_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253975",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -531,8 +554,8 @@
       "name": "Pristine Leggings",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Tailoring",
-      "note": "Crafted item binds on pickup.",
+      "source": "Tailoring 125",
+      "note": "Crafted item binds on pickup. Self-crafting requires Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253987",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -547,8 +570,8 @@
       "name": "Gilded Slippers",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Tailoring",
-      "note": "Crafted item binds on pickup.",
+      "source": "Tailoring 140",
+      "note": "Crafted item binds on pickup. Self-crafting requires Tailoring 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_cloth_08.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=254001",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -564,7 +587,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Reputation",
       "source": "Booty Bay",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274746",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
@@ -580,13 +603,133 @@
       "requiredSuffix": null,
       "acquisitionType": "Reputation",
       "source": "Booty Bay",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274746",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
       "requiredLevel": 30
+    },
+    {
+      "id": "forever-beta-level30-druid-restoration-back-274149",
+      "slot": "Back",
+      "itemId": 274149,
+      "name": "Thornweaver Drape",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul · Roogug",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_11.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=274149",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 25
+    },
+    {
+      "id": "forever-beta-level30-druid-restoration-waist-6392",
+      "slot": "Waist",
+      "itemId": 6392,
+      "name": "Belt of Arugal",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Shadowfang Keep · Archmage Arugal",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_10.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6392",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 23
+    },
+    {
+      "id": "forever-beta-level30-druid-restoration-legs-273289",
+      "slot": "Legs",
+      "itemId": 273289,
+      "name": "Ogre Loincloth",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "The Deadmines · Rhahk'Zor",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_09.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273289",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 17
+    },
+    {
+      "id": "forever-beta-level30-druid-restoration-legs-6903",
+      "slot": "Legs",
+      "itemId": 6903,
+      "name": "Gaze Dreamer Pants",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps · Twilight Lord Kelris",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6903",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 23
+    },
+    {
+      "id": "forever-beta-level30-druid-restoration-legs-270031",
+      "slot": "Legs",
+      "itemId": 270031,
+      "name": "Dark Ritual Leggings",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Blackfathom Villainy",
+      "note": "Horde only.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_02.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=270031",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-druid-restoration-ranged-263411",
+      "slot": "Ranged",
+      "itemId": 263411,
+      "name": "Idol of Shifting Tides",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Aquatic Form",
+      "note": "Beta reward moved from Meddlesome Mages to the class quest chain. Characters that completed the class quest before the change may be unable to obtain it.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_relics_idolofrejuvenation.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=263411",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-druid-restoration-ranged-249396",
+      "slot": "Ranged",
+      "itemId": 249396,
+      "name": "Mystic Mushroom",
+      "requiredSuffix": null,
+      "acquisitionType": "Crafting",
+      "source": "Enchanting 130",
+      "note": "Crafted item binds on pickup. Self-crafting requires Enchanting 130. Recipe: 45 Merchant's Favor from Alynsia (Alliance) or Beneris (Horde) at the supply camp.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_mushroom_11.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=249396",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 20
     }
   ],
   "patch": "1.60.1"

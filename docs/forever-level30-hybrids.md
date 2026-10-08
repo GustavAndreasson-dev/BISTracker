@@ -1,95 +1,131 @@
 # Forever beta level 30: Druid, Paladin och Shaman
 
-Granskat 2026-10-08. Chefens beställning gäller alla specs och senare separat
-nivå 60-import. Dessa nio JSON-kataloger innehåller ursprungliga Forever-
-guiders uttryckliga utrustningsalternativ. Patchkontexten är **1.60.1**, betan
-och nivåtaket **30**. De är inte Vanilla-, SoD- eller framtida nivå 60-listor.
+Slutgranskat 2026-10-08. De nio katalogerna gäller Forever **1.60.1**, beta och
+nivåtak **30**. Chefens godkända anskaffningspolicy är **Dungeon, Quest och
+Crafting**. Nivå 60 får senare separat källunderlag och katalogidentitet.
 
 ## Kataloger och originalkällor
 
-| Klass/spec | Rekommendationsrader | Dungeons/quests | Originalguide |
-| --- | ---: | ---: | --- |
-| Druid Balance | 63 | 41 | [DrWonder, Wowhead](https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview) |
-| Druid Feral | 57 | 41 | [Lexolas, DPS](https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-dps-overview) och [tank](https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-tank-overview) |
-| Druid Restoration | 36 | 27 | [Frankensteak, Wowhead](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview) |
-| Paladin Holy | 14 | 10 | [Harreks, Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/holy/level-30-healer-overview) |
-| Paladin Protection | 16 | 10 | [Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/protection/level-30-tank-overview) |
-| Paladin Retribution | 41 | 23 | [Surveillant, Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview) |
-| Shaman Elemental | 26 | 18 | [Lucenia, Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-30-dps-overview) |
-| Shaman Enhancement | 32 | 25 | [Yebb, Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview) |
-| Shaman Restoration | 26 | 18 | [Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview) |
+| Klass/spec | Råa placeringsrader | Aktiva D/Q/Crafting | Dungeons/quests | Originalguide |
+| --- | ---: | ---: | ---: | --- |
+| Druid Balance | 71 | 71 | 49 | [Wowhead](https://www.wowhead.com/forever/guide/classes/druid/balance/level-30-dps-overview) |
+| Druid Feral | 64 | 64 | 47 | [DPS](https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-dps-overview), [tank](https://www.wowhead.com/forever/guide/classes/druid/feral/level-30-tank-overview) |
+| Druid Restoration | 42 | 40 | 32 | [Wowhead](https://www.wowhead.com/forever/guide/classes/druid/restoration/level-30-healer-overview) |
+| Paladin Holy | 34 | 34 | 29 | [Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/holy/level-30-healer-overview) |
+| Paladin Protection | 30 | 30 | 24 | [Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/protection/level-30-tank-overview) |
+| Paladin Retribution | 49 | 49 | 31 | [Wowhead](https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview) |
+| Shaman Elemental | 45 | 45 | 37 | [Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-30-dps-overview) |
+| Shaman Enhancement | 36 | 36 | 29 | [Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-30-dps-overview) |
+| Shaman Restoration | 45 | 45 | 37 | [Wowhead](https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-30-healer-overview) |
 
-Totalt 311 rekommendationsrader. Antalet är större än antalet verkliga items:
-alternativ till samma slot förekommer och ringar/trinkets har två möjliga
-placeringar. Det innebär inte att guiden rekommenderar två exemplar av ett
-unikt item. Feral förblir en spec; anteckningarna anger tank-/DPS-alternativ.
+Totalt **416 råa och 414 aktiva placeringsrader**: 315 dungeon/quest och 99
+crafting. Restoration Druids två reputationplaceringar är endast rådata.
+Placeringsrader är inte utrustningsslots eller en ranking. Alternativen grupperas
+under en målplats per slot; ringar och trinkets har två möjliga placeringar utan
+att två exemplar rekommenderas. Feral är en spec med markerade DPS-/tankalternativ.
 
-Enhancement kompletteras från [Wordups ursprungliga Forever-guide](https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide).
-Retributions Reedknot Ring rekommenderas uttryckligen i [Meyras Forever-guide](https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/).
-Itemmetadata för ett gemensamt item kan återanvändas, men klassens/specens
-rekommendationskälla följer varje katalograd och har kontrollerats separat.
+Luckorna kompletterades med uttryckliga same-spec-rekommendationer från
+WOWTBC:s egna Forever-listor:
+[Balance](https://wowtbc.gg/warcraftforever/bis-list/balance-druid/),
+[Feral DPS](https://wowtbc.gg/warcraftforever/bis-list/feral-dps-druid/),
+[Restoration Druid](https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/),
+[Holy](https://wowtbc.gg/warcraftforever/bis-list/holy-paladin/),
+[Protection](https://wowtbc.gg/warcraftforever/bis-list/protection-paladin/),
+[Retribution](https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/),
+[Elemental](https://wowtbc.gg/warcraftforever/bis-list/elemental-shaman/),
+[Enhancement](https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/) och
+[Restoration Shaman](https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/).
+Författaren beskriver dessa som värdefulla alternativ utan inbördes ordning.
+Rekommendations-ID:t måste förekomma i specens verkliga slotlista; förekomst i
+sidans gemensamma itemmetadata räcker inte som rekommendation.
 
-## Urval och verifiering
+Icy Veins ursprungliga Forever-guider kompletterar
+[Feral](https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide/),
+[Retribution](https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/) och
+[Enhancement](https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide).
+Varje rekommendation har egen källkontroll. Classic/SoD-tabeller, godtyckliga
+statvikter och automatiskt scorade urval har inte använts för att fylla slots.
 
-- Wowheads Forever-guideinnehåll och `WH.Gatherer.addData(..., 16, ...)`
-  kopplar respektive tabellrad till positivt item-ID, engelskt namn och slot.
-  Metadata har inte hämtats från Classic-namespace.
-- Forever-tooltiparna kontrollerar namn, faktisk miniminivå, vapenhand,
-  tvåhandsvapen, Unique, professionkrav och bindning. Ikonlänkar har gett
-  HTTP 200. [Itemkontroller](data/forever-hybrids/item-verification.json)
-  omfattar 203 kontrollerade identiteter, inklusive sådana som senare uteslutits.
-- 45 berörda quests kontrollerades separat i Forever-namespace; alla hade
-  verifierad miniminivå högst 30. [Questkontroller](data/forever-hybrids/quest-verification.json).
-  Fraktionsvillkor kommer från Forever-questmetadata och guiderna. Hela
-  förquestkedjor har inte spelats igenom i klienten.
-- Katalogerna behåller Crafting och en Reputation-källa som granskningsdata.
-  Appens beslutade anskaffningsfilter avgör vilka rader som visas. Guidernas
-  alternativ ersätts inte med självberäknade statvikter efter filtrering.
-- Konsumtionsvaror, enchants och generiska itemfamiljer utan ett individuellt
-  utrustnings-ID har inte importerats som utrustning.
-- Inget suffix har gissats. Vapen, unikhet och itemägande använder verifierad
-  physical item-identitet; rekommendations-ID:n skiljer alternativa placeringar.
+## Faktiskt möjliga uppsättningar
 
-## Upptäckta källfel och kvarstående hål
+[Slotgranskningen](data/forever-hybrids/slot-audit.json) innehåller **18 separata
+legalSetWitness**, en per spec och fraktion. Varje vittne anger verkligt
+rekommendations-ID, item, slot, källa och vald quest. Det är ett bevis på en
+möjlig uppsättning, inte ett påstående om optimalt BiS-set eller likvärdighet.
 
-`Partial` innebär att originalguidernas betaurval är preliminärt och har hål;
-det innebär inte att katalogerna är tomma. En tom slot fylls inte med en
-oprovad ersättare. Vapenpar och tvåhandsalternativ är alternativa uppsättningar,
-så OffHand saknas avsiktligt när ett relevant tvåhandsval används.
+- Alla relevanta slots täcks separat för Alliance och Horde. Feral,
+  Retribution och Enhancement har källbelagd tvåhandsplan; OffHand upptas då
+  av huvudvapnet. Övriga vittnen har ett giltigt enhand/offhand-par.
+- Vittnena använder olika fysiska ringar och trinkets. Unique-items dubbleras
+  inte och två alternativa belöningar från samma quest väljs aldrig tillsammans.
+- Alla valda questitems har observerad Forever-belöningsrelation och verifierad
+  questminiminivå högst 30. Alla 116 questplaceringsrader har källbelagda
+  availableFactions; okända fraktioner finns inte i aktiva kataloger.
+- Feral Alliance använder Defender's Leather Helm, egen Leatherworking **130**.
+  Alla Paladin-vittnen använder Tenets of the Silver Hand, egen Enchanting
+  **130**, i relicslotten. Övriga vittnen behöver inget craftingyrke.
+  Ingen uppsättning kräver fler än två samtidiga professioner.
 
-- Electromagnetic Gigaflux Reactivator (9492) förekommer i Shamanguidernas
-  nivå 30-tabeller men Forever-metadata kräver **31**. Det har uteslutits.
-- Retributions Wowhead-tabell länkar crafted Defender's Leather Helm (252455)
-  som flera dungeonbossars drops. Den felaktiga dungeonmappningen har uteslutits.
-- Balance-tabellrader med flera quests och fler/färre belöningar behölls bara
-  när belöningens questrelation kunde fastställas. Övriga är dokumenterade i
-  [uteslutningsrapporten](data/forever-hybrids/excluded-records.json).
-- Originalguidernas kvarvarande täckningshål: Feral och Restoration Druid saknar
-  relic i detta urval; Holy Paladin saknar Neck, Hands, Feet, OffHand och relic;
-  Protection Paladin saknar Back, Wrist och Waist; Elemental/Restoration Shaman
-  saknar Back, Neck och trinkets; Enhancement saknar Back. Dungeons/quests-
-  filtrering kan skapa ytterligare hål när enda källa är crafting.
+Samtliga **76 individuella craftingitems** har observerad Forever-receptrelation
+med spell-ID, yrke, skill, bindning, eventuellt equipyrke och ingredienser i
+craftingReviews. Receptskill är högst 225. Forever-guidernas ranktabeller
+bekräftar Journeyman från nivå 10 och Expert från nivå 20:
+[Enchanting](https://www.icy-veins.com/wow-forever/enchanting),
+[Leatherworking](https://www.icy-veins.com/wow-forever/leatherworking),
+[Blacksmithing](https://www.icy-veins.com/wow-forever/blacksmithing),
+[Tailoring](https://www.icy-veins.com/wow-forever/tailoring) och
+[Engineering](https://www.icy-veins.com/wow-forever/engineering).
+Flera BoP-professionsalternativ innebär inte att alla ska bäras samtidigt;
+vittnena väljer en kompatibel kombination.
 
-Icy Veins Balance/Restoration Druid samt Holy/Protection Paladin hade ännu inga
-konkreta nivå 30-tabeller vid kontrollen. Wowheads ursprungliga Forever-guider
-gav separat underlag för samtliga. Alternativa communitysidor granskades också
-(ForeverChanges, WoW Forever Tools och wow-forever.gg), men deras bredare
-datamined/scorade urval har inte använts för att fylla hålen.
+[Extra receptåtkomstkontroll](data/forever-hybrids/crafting-accessibility.json)
+visar att Paladins Tenets-formula säljs för 45 Merchant's Favor på båda
+fraktionernas läger och kräver vanlig Runed Silver Rod, ingen specialforge.
+För Defender's Leather Helm stöds åtkomsten av originalguidernas uttryckliga
+nivå 30-rekommendation och aktuell receptrelation; en separat trainer-/pattern-
+tabell saknas på spell-sidan. Ingen oberoende trainerväg har därför påståtts.
 
-## Importgräns inför nivå 60
+## Metadata, korrigeringar och begränsningar
 
-Nivåtak, Beta/Launch, patch, klass/spec, sourceUrl och catalogId är uttryckliga
-rootfält. Nivå 60 får en separat katalogidentitet och egna källgranskade data;
-ingen nivå 30-rekommendation får automatiskt etiketteras om till level 60.
-Huvudtråden äger loader, kontextisolering, UI och integrationstester.
+Forever-guideinnehåll och WH.Gatherer.addData(...,16,...) kopplar ID till
+namn och slot. Forever-tooltiparna kontrollerar miniminivå, vapenhand,
+tvåhandsvapen, Unique och bindning; ikonlänkar gav HTTP 200.
+[Tidigare itemkontroller](data/forever-hybrids/item-verification.json) omfattar
+203 identiteter och [tidigare questkontroller](data/forever-hybrids/quest-verification.json)
+45 quests. Slotgranskningen tillför 91 kontrollerade spec/slot-rekommendationer
+samt aktuella faction-, recipe- och uppsättningsbevis.
 
-Researchverktygen i `tools/data/forever-hybrids/` läser explicit nedladdat
-guideunderlag ur en temporär mapp. Originalsidornas HTML och fulla tooltips
-versionshanteras inte. Importverktyget vägrar ersätta befintliga kataloger
-utan ett uttryckligt arbetsimportargument; tidigare filer säkerhetskopierades
-före granskningens korrigeringar. `verify-working-import.py` kräver uttryckligt
-`--update-working-catalogs` för sin eftergranskning av arbetskatalogerna.
-Verktygen är inte en nätverksfunktion i appen.
+Electromagnetic Gigaflux Reactivator (9492) kräver 31 och är uteslutet.
+Fallen Guard's Pendant (279837) är borttaget eftersom Starving Arcane saknar
+verifierad fraktion. Healer's Staff (271767) och Magistrate's Pantaloons (270036)
+är uteslutna tills Alliance-fix respektive motstridiga questbelönings-ID:n är
+lösta. Vittnena beror inte på dessa items.
 
-Ingen commit eller staging har utförts av specialisttråden. Huvudtråden
-verifierar och samordnar commits enligt Chefens uppdrag.
+En tidigare slutsats om Defender's Leather Helm (252455) har korrigerats:
+det är både craftat och registrerat som dungeon-drop i den aktuella
+[Forever-itemkällan](https://www.wowhead.com/forever/item=252455).
+Att ett item är craftat bevisar inte att dess dropdata är fel.
+[Uteslutningsrapporten](data/forever-hybrids/excluded-records.json) behåller
+det tidigare fyndet med korrigerad status och bevis.
+
+Idol of Shifting Tides och Totem of Charged Flames har flyttats från
+Meddlesome Mages till Aquatic Form respektive Call of Fire under betan.
+Aktuella itemkällor visar båda fraktionernas class quests. Redan genomförda
+quests kan hindra äldre betakaraktärer från att få belöningen; detta står i
+anskaffningsvillkoren. Alla Druid-/Shamankataloger har även ett källbelagt
+Enchanting-relicalternativ. Hela förquestkedjor och materialanskaffning har
+inte spelats igenom i klienten. Katalogernas Partial-status anger preliminärt
+betaunderlag, inte kvarvarande hål i de verifierade uppsättningarna.
+
+## Import och researchverktyg
+
+Nivåtak, stage, patch, klass/spec och catalogId är uttryckliga kontextfält.
+Nivå 30 ometiketteras inte till nivå 60. Huvudtråden äger loader, UI,
+kontextisolering, verifiering och commits.
+
+tools/data/forever-hybrids/review-slot-supplements.py använder uttryckligt
+nedladdat originalunderlag i en temporär mapp. Verktyget kontrollerar
+same-spec-rekommendationer, metadata, faction, recipe och konkreta uppsättningar
+innan --apply får skriva egna kataloger. Befintliga arbetsfiler säkerhetskopieras.
+Fulla originalsidor och tooltips versionshanteras inte. Specialisttråden har
+inte gjort staging eller commit.

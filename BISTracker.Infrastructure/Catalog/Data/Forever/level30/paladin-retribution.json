@@ -9,7 +9,7 @@
   "phase": "Level 30 beta",
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
   "reviewedOn": "2026-10-08",
-  "selectionMethod": "Equipment alternatives from the original Forever level-30 guide; source categories retained, no new stat weights or invented slot replacements.",
+  "selectionMethod": "Unranked equipment alternatives explicitly recommended by original Forever guides and original WOWTBC Forever class/spec lists; no invented stat weights or slot replacements.",
   "status": "Partial",
   "items": [
     {
@@ -52,7 +52,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Razorfen Kraul · (Roogug)",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -68,7 +68,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Razorfen Kraul · (Roogug)",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -100,7 +100,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Shadowfang Keep · (Commander Springvale)",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273643",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -116,7 +116,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Shadowfang Keep · (Commander Springvale)",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped.",
+      "note": "Unique; one copy may be equipped.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273643",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -186,7 +186,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-back-271716",
@@ -202,7 +205,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-back-271719",
@@ -218,7 +224,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-mainhand-271667",
@@ -234,7 +243,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-mainhand-4983",
@@ -250,7 +262,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-shoulder-15698",
@@ -266,7 +281,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-back-277205",
@@ -282,7 +301,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-legs-9624",
@@ -298,7 +320,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-legs-9625",
@@ -314,7 +339,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-wrist-270080",
@@ -330,7 +358,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-hands-16978",
@@ -346,7 +377,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-head-250528",
@@ -355,8 +389,8 @@
       "name": "Veteran's Silvered Chain Helm",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 95",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 95.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_39.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250528",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -371,8 +405,8 @@
       "name": "Veteran's Boots",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 85",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 85.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_chain_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250503",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -387,8 +421,8 @@
       "name": "Veteran's Silvered Chain Leggings",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 125",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_mail_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250523",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -403,8 +437,8 @@
       "name": "Veteran's Silvered Chain Shirt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 110",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 110.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_chain_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250518",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -419,8 +453,8 @@
       "name": "Crusader's Silvered Chain Helm",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 95",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 95.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_37.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250532",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -435,8 +469,8 @@
       "name": "Crusader's Gloves",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 80",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 80.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250512",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -451,8 +485,8 @@
       "name": "Crusader's Chain Belt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 45",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 45.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_22.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250517",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -467,8 +501,8 @@
       "name": "Crusader's Boots",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 85",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 85.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_chain_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250507",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -483,8 +517,8 @@
       "name": "Officer's Belt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "Crafted item binds on pickup.",
+      "source": "Blacksmithing 150",
+      "note": "Crafted item binds on pickup. Self-crafting requires Blacksmithing 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_20.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=250556",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -499,8 +533,8 @@
       "name": "Shining Silver Breastplate",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "",
+      "source": "Blacksmithing 145",
+      "note": "Crafting requires Blacksmithing 145.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_plate15.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=2870",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -515,8 +549,8 @@
       "name": "Golden Scale Shoulders",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Blacksmithing",
-      "note": "",
+      "source": "Blacksmithing 175",
+      "note": "Crafting requires Blacksmithing 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_09.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=3841",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -531,8 +565,8 @@
       "name": "Defender's Leather Kilt",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "Crafted item binds on pickup.",
+      "source": "Leatherworking 125",
+      "note": "Crafted item binds on pickup. Self-crafting requires Leatherworking 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_kilt_cloth_04v4.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=252457",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -547,8 +581,8 @@
       "name": "Barbaric Bracers",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Leatherworking",
-      "note": "",
+      "source": "Leatherworking 155",
+      "note": "Crafting requires Leatherworking 155.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_15.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=18948",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -563,8 +597,8 @@
       "name": "Minor Recombobulator",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Engineering",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped. Requires Engineering 140.",
+      "source": "Engineering 140",
+      "note": "Unique; one copy may be equipped. Requires Engineering 140. Crafting requires Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -579,8 +613,8 @@
       "name": "Minor Recombobulator",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Engineering",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped. Requires Engineering 140.",
+      "source": "Engineering 140",
+      "note": "Unique; one copy may be equipped. Requires Engineering 140. Crafting requires Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -595,8 +629,8 @@
       "name": "Mechanical Dragonling",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Engineering",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped. Requires Engineering 200.",
+      "source": "Engineering 200",
+      "note": "Unique; one copy may be equipped. Requires Engineering 200. Crafting requires Engineering 200.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4396",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -611,8 +645,8 @@
       "name": "Mechanical Dragonling",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Engineering",
-      "note": "Alternative slot placement; not a recommendation to obtain two copies. Unique; one copy may be equipped. Requires Engineering 200.",
+      "source": "Engineering 200",
+      "note": "Unique; one copy may be equipped. Requires Engineering 200. Crafting requires Engineering 200.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4396",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -627,8 +661,8 @@
       "name": "Tenets of the Silver Hand",
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
-      "source": "Enchanting",
-      "note": "Crafted item binds on pickup.",
+      "source": "Enchanting 130",
+      "note": "Crafted item binds on pickup. Self-crafting requires Enchanting 130. Recipe: 45 Merchant's Favor from Alynsia (Alliance) or Beneris (Horde) at the supply camp.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_13.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249397",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview",
@@ -644,13 +678,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Jarl Needs a Blade",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_33.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9622",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-paladin-retribution-finger2-9622",
@@ -660,14 +698,151 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Jarl Needs a Blade",
-      "note": " Alternative slot placement; not a recommendation to obtain two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_33.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9622",
       "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-head-6686",
+      "slot": "Head",
+      "itemId": 6686,
+      "name": "Tusken Helm",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul · Overlord Ramtusk",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_09.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6686",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 29
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-chest-1488",
+      "slot": "Chest",
+      "itemId": 1488,
+      "name": "Avenger's Armor",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Razorfen Kraul · Trash drop",
+      "note": "Dungeon-farmed BoE alternative; auction-house acquisition is outside this list.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_chain.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=1488",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 26
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-chest-7728",
+      "slot": "Chest",
+      "itemId": 7728,
+      "name": "Beguiler Robes",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery · random dungeon drop",
+      "note": "Dungeon-farmed BoE alternative; auction-house acquisition is outside this list.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_cloth_25.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7728",
+      "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 29
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-waist-6911",
+      "slot": "Waist",
+      "itemId": 6911,
+      "name": "Moss Cinch",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Blackfathom Deeps · Aku'mai",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_25.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6911",
+      "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 25
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-hands-9609",
+      "slot": "Hands",
+      "itemId": 9609,
+      "name": "Shilly Mitts",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Gyrodrillmatic Excavationators",
+      "note": "Alliance only.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_27.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9609",
+      "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-wrist-9448",
+      "slot": "Wrist",
+      "itemId": 9448,
+      "name": "Spidertank Oilrag",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Gnomeregan · Electrocutioner 6000",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_09.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=9448",
+      "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 29
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-finger1-7686",
+      "slot": "Finger1",
+      "itemId": 7686,
+      "name": "Ironspine's Eye",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery · Ironspine",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_04.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7686",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 30
+    },
+    {
+      "id": "forever-beta-level30-paladin-retribution-finger2-7686",
+      "slot": "Finger2",
+      "itemId": 7686,
+      "name": "Ironspine's Eye",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Scarlet Monastery · Ironspine",
+      "note": "Unique; one copy may be equipped.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_04.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=7686",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 30
     }
   ],
-  "patch": "1.60.1"
+  "patch": "1.60.1",
+  "weaponSetup": "TwoHanded",
+  "weaponSetupSourceUrl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-30-dps-overview"
 }

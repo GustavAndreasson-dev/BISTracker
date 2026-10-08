@@ -1,0 +1,446 @@
+{
+  "reviewedOn": "2026-10-08",
+  "selectionMethod": "Only explicit alternatives for gaps in the existing dungeon/quest catalog; original Forever class/spec recommendations are checked separately from item metadata.",
+  "catalogs": {
+    "druid-balance": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/balance-druid/",
+      "items": [
+        {
+          "itemId": 274149,
+          "slot": "Back"
+        },
+        {
+          "itemId": 263411,
+          "slot": "Ranged",
+          "questId": 94411
+        },
+        {
+          "itemId": 274152,
+          "slot": "Trinket1"
+        },
+        {
+          "itemId": 273643,
+          "slot": "Trinket1"
+        }
+      ]
+    },
+    "druid-feral": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/feral-dps-druid/",
+      "items": [
+        {
+          "itemId": 6720,
+          "slot": "Head",
+          "questId": 1136
+        },
+        {
+          "itemId": 263411,
+          "slot": "Ranged",
+          "questId": 94411
+        },
+        {
+          "itemId": 249396,
+          "slot": "Ranged",
+          "acquisitionType": "Crafting"
+        },
+        {
+          "itemId": 274152,
+          "slot": "Trinket1"
+        },
+        {
+          "itemId": 273643,
+          "slot": "Trinket1"
+        }
+      ]
+    },
+    "druid-restoration": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/",
+      "items": [
+        {
+          "itemId": 274149,
+          "slot": "Back"
+        },
+        {
+          "itemId": 6392,
+          "slot": "Waist"
+        },
+        {
+          "itemId": 273289,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 6903,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 270031,
+          "slot": "Legs",
+          "questId": 6561
+        },
+        {
+          "itemId": 263411,
+          "slot": "Ranged",
+          "questId": 94411
+        },
+        {
+          "itemId": 249396,
+          "slot": "Ranged",
+          "acquisitionType": "Crafting"
+        }
+      ]
+    },
+    "paladin-holy": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/holy-paladin/",
+      "items": [
+        {
+          "itemId": 23169,
+          "slot": "Neck"
+        },
+        {
+          "itemId": 888,
+          "slot": "Hands"
+        },
+        {
+          "itemId": 270059,
+          "slot": "Hands",
+          "questId": 704
+        },
+        {
+          "itemId": 270030,
+          "slot": "Hands",
+          "questId": 1013
+        },
+        {
+          "itemId": 6392,
+          "slot": "Waist"
+        },
+        {
+          "itemId": 273289,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 6903,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 10359,
+          "slot": "Feet",
+          "questId": 2418
+        },
+        {
+          "itemId": 271214,
+          "slot": "Feet"
+        },
+        {
+          "itemId": 6694,
+          "slot": "OffHand"
+        },
+        {
+          "itemId": 273137,
+          "slot": "OffHand"
+        },
+        {
+          "itemId": 7684,
+          "slot": "Shoulder"
+        },
+        {
+          "itemId": 274149,
+          "slot": "Back"
+        },
+        {
+          "itemId": 9448,
+          "slot": "Wrist"
+        },
+        {
+          "itemId": 249397,
+          "slot": "Ranged",
+          "acquisitionType": "Crafting"
+        },
+        {
+          "itemId": 9447,
+          "slot": "Finger1"
+        },
+        {
+          "itemId": 274152,
+          "slot": "Trinket1"
+        },
+        {
+          "itemId": 9457,
+          "slot": "MainHand"
+        }
+      ]
+    },
+    "paladin-protection": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/protection-paladin/",
+      "items": [
+        {
+          "itemId": 5819,
+          "slot": "Head"
+        },
+        {
+          "itemId": 273028,
+          "slot": "Shoulder"
+        },
+        {
+          "itemId": 274149,
+          "slot": "Back"
+        },
+        {
+          "itemId": 7688,
+          "slot": "Chest"
+        },
+        {
+          "itemId": 3228,
+          "slot": "Wrist"
+        },
+        {
+          "itemId": 273023,
+          "slot": "Waist"
+        },
+        {
+          "itemId": 274161,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 10332,
+          "slot": "Feet"
+        },
+        {
+          "itemId": 9510,
+          "slot": "Feet"
+        },
+        {
+          "itemId": 273025,
+          "slot": "Feet"
+        },
+        {
+          "itemId": 273806,
+          "slot": "Finger1"
+        },
+        {
+          "itemId": 274152,
+          "slot": "Trinket1"
+        }
+      ]
+    },
+    "paladin-retribution": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/",
+      "items": [
+        {
+          "itemId": 6686,
+          "slot": "Head"
+        },
+        {
+          "itemId": 1488,
+          "slot": "Chest"
+        },
+        {
+          "itemId": 7728,
+          "slot": "Chest",
+          "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+          "source": "Scarlet Monastery · random dungeon drop"
+        },
+        {
+          "itemId": 6911,
+          "slot": "Waist",
+          "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+          "source": "Blackfathom Deeps · Aku'mai"
+        },
+        {
+          "itemId": 9609,
+          "slot": "Hands",
+          "questId": 2928,
+          "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/"
+        },
+        {
+          "itemId": 9448,
+          "slot": "Wrist",
+          "recommendationUrl": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide/",
+          "source": "Gnomeregan · Electrocutioner 6000"
+        },
+        {
+          "itemId": 7686,
+          "slot": "Finger1"
+        }
+      ]
+    },
+    "shaman-elemental": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/elemental-shaman/",
+      "items": [
+        {
+          "itemId": 7691,
+          "slot": "Head"
+        },
+        {
+          "itemId": 6688,
+          "slot": "Head"
+        },
+        {
+          "itemId": 23169,
+          "slot": "Neck"
+        },
+        {
+          "itemId": 274149,
+          "slot": "Back"
+        },
+        {
+          "itemId": 6911,
+          "slot": "Waist"
+        },
+        {
+          "itemId": 6392,
+          "slot": "Waist"
+        },
+        {
+          "itemId": 6903,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 270031,
+          "slot": "Legs",
+          "questId": 6561
+        },
+        {
+          "itemId": 270036,
+          "slot": "Legs",
+          "questId": 378
+        },
+        {
+          "itemId": 274152,
+          "slot": "Trinket1"
+        },
+        {
+          "itemId": 273643,
+          "slot": "Trinket1"
+        },
+        {
+          "itemId": 280766,
+          "slot": "Trinket1",
+          "questId": 95809
+        },
+        {
+          "itemId": 263412,
+          "slot": "Ranged",
+          "questId": 94411
+        },
+        {
+          "itemId": 7728,
+          "slot": "Chest"
+        },
+        {
+          "itemId": 5970,
+          "slot": "Hands"
+        },
+        {
+          "itemId": 9447,
+          "slot": "Finger1"
+        }
+      ]
+    },
+    "shaman-enhancement": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/",
+      "items": [
+        {
+          "itemId": 6314,
+          "slot": "Back"
+        },
+        {
+          "itemId": 271716,
+          "slot": "Back",
+          "questId": 98824
+        },
+        {
+          "itemId": 271719,
+          "slot": "Back",
+          "questId": 98823
+        },
+        {
+          "itemId": 263412,
+          "slot": "Ranged",
+          "questId": 94411
+        }
+      ]
+    },
+    "shaman-restoration": {
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/restoration-shaman/",
+      "items": [
+        {
+          "itemId": 7691,
+          "slot": "Head"
+        },
+        {
+          "itemId": 23169,
+          "slot": "Neck"
+        },
+        {
+          "itemId": 274149,
+          "slot": "Back"
+        },
+        {
+          "itemId": 6901,
+          "slot": "Back"
+        },
+        {
+          "itemId": 6392,
+          "slot": "Waist"
+        },
+        {
+          "itemId": 273289,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 6903,
+          "slot": "Legs"
+        },
+        {
+          "itemId": 270031,
+          "slot": "Legs",
+          "questId": 6561
+        },
+        {
+          "itemId": 274152,
+          "slot": "Trinket1"
+        },
+        {
+          "itemId": 273643,
+          "slot": "Trinket1"
+        },
+        {
+          "itemId": 280766,
+          "slot": "Trinket1",
+          "questId": 95809
+        },
+        {
+          "itemId": 263412,
+          "slot": "Ranged",
+          "questId": 94411
+        },
+        {
+          "itemId": 6682,
+          "slot": "Chest"
+        },
+        {
+          "itemId": 888,
+          "slot": "Hands"
+        },
+        {
+          "itemId": 9447,
+          "slot": "Finger1"
+        }
+      ]
+    }
+  },
+  "balanceQuestRows": [
+    {
+      "itemId": 270030,
+      "questId": 1013
+    },
+    {
+      "itemId": 270029,
+      "questId": 377
+    },
+    {
+      "itemId": 9609,
+      "questId": 2928
+    }
+  ]
+}
