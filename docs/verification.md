@@ -16,7 +16,11 @@ spelbeta. Nya funktioner och nästa programversionsnummer är inte beslutade.
   Den isolerade UI-kontrollen och PNG-renderingen har körts på den översatta vyn.
 
 - Hela solutionen byggd i Release för x64 utan varningar eller fel. WinUI-utkastet och isolerad verifieringsvariant är också byggda utan varningar eller fel.
-- Alla **49 konsolkontroller** godkända: 17 äldre katalog-/domän-/tracking-/
+- Beta 2 (REQ-014/015): **56 konsolkontroller** godkända, de 49 nedan plus
+  fem nya `CharacterScenarios` och två nya `PersistenceScenarios` för namnbyte,
+  borttagning, tomt läge och sparfel. Isolerad UI-kontroll godkänd
+  ([rapport](previews/beta2-characters-ui-checks.txt)).
+- Version 1.0.0: alla **49 konsolkontroller** godkända: 17 äldre katalog-/domän-/tracking-/
   lagringsscenarier, nio `CharacterScenarios`, sex `CatalogContextScenarios`
   och sju `ForeverCatalogScenarios`, sju `EquipmentPlanScenarios` samt tre
   [DistributionScenarios](../BISTracker.Checks/Scenarios/DistributionScenarios.cs).

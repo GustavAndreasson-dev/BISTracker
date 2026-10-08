@@ -207,8 +207,53 @@ internal static class DraftPreview
             await SaveImageAsync(dialog, Path.Combine(directory, "character-create.png"));
             dialog.Hide();
             await dialogResult;
+
+            // REQ-014: rename keeps identity and progress; a failed save restores the previous name.
+            var renameDialog = new CharacterDialog(root.XamlRoot, model.SelectedCharacter!);
+            var renameResult = renameDialog.ShowAsync();
+            await SaveImageAsync(renameDialog, Path.Combine(directory, "character-rename.png"));
+            renameDialog.Hide();
+            await renameResult;
+            await model.RenameCharacterAsync(model.SelectedCharacter!, "Renamed Priest");
+            Require(!model.HasError && model.SelectedCharacter?.Id == priest.Id && model.SelectedCharacter.Name == "Renamed Priest" &&
+                characterPicker.SelectedItem is CharacterOption { Name: "Renamed Priest" } && model.OwnedCount == 6 && model.EquippedSummary == "3 / 17",
+                "Rename keeps character, picker and progress");
+            Workspace.FailNextSave = true;
+            await model.RenameCharacterAsync(model.SelectedCharacter!, "Not Saved");
+            Require(model.HasError && model.SelectedCharacter?.Name == "Renamed Priest" && model.Characters.All(character => character.Name != "Not Saved"),
+                "Failed rename keeps previous name");
+
+            // REQ-015: delete non-active, active and last characters; a failed save restores the list.
+            var deleteDialog = new DeleteCharacterDialog(root.XamlRoot, model.SelectedCharacter!);
+            var deleteResult = deleteDialog.ShowAsync();
+            await SaveImageAsync(deleteDialog, Path.Combine(directory, "character-delete-confirm.png"));
+            deleteDialog.Hide();
+            await deleteResult;
+            var characterCount = model.Characters.Count;
+            Workspace.FailNextSave = true;
+            await model.DeleteCharacterAsync(model.SelectedCharacter!);
+            Require(model.HasError && model.Characters.Count == characterCount && model.SelectedCharacter?.Id == priest.Id, "Failed delete keeps character list");
+            var mage = model.Characters.Single(character => character.Name == "Forever Mage");
+            await model.DeleteCharacterAsync(mage);
+            Require(!model.HasError && model.Characters.Count == characterCount - 1 && model.SelectedCharacter?.Id == priest.Id && model.OwnedCount == 6,
+                "Deleting another character keeps the active one");
+            await model.DeleteCharacterAsync(model.SelectedCharacter!);
+            Require(!model.HasError && model.Characters.Count == characterCount - 2 && model.SelectedCharacter?.Id == model.Characters[0].Id &&
+                characterPicker.SelectedItem is CharacterOption selected && selected.Id == model.Characters[0].Id, "Deleting the active character selects the first remaining one");
+            for (var attempt = 0; attempt < 5 && model.SelectedCharacter is { } remaining; attempt++) await model.DeleteCharacterAsync(remaining);
+            Require(!model.HasError && model.IsWorkspaceEmpty && !model.IsCharacterInteractive && model.NoCharactersVisibility == "Visible" &&
+                model.CharacterContentVisibility == "Collapsed" && model.Specializations.Count == 0 && model.CatalogSets.Count == 0 && model.TotalCount == 0 &&
+                ((Button)root.FindName("CreateFirstCharacterButton")).Visibility == Visibility.Visible, "Empty state after deleting the last character");
+            await SaveImageAsync(root, Path.Combine(directory, "characters-empty.png"));
+            var emptyReload = new TrackerViewModel(new CharacterTrackerService(Catalog, Workspace, new PreviewProgressRepository()));
+            await emptyReload.LoadAsync();
+            Require(emptyReload.IsWorkspaceEmpty && emptyReload.Characters.Count == 0, "Empty workspace reloads without recreating a character");
+            await model.CreateCharacterAsync("Fresh Priest", GameVersion.Classic, CharacterClass.Priest);
+            Require(!model.HasError && !model.IsWorkspaceEmpty && model.Characters.Count == 1 && model.SelectedCharacter?.Name == "Fresh Priest" &&
+                model.Specializations.Count == 3 && model.CharacterContentVisibility == "Visible", "Create character from empty state");
             await File.WriteAllTextAsync(Path.Combine(directory, "ui-checks.txt"),
-                "PASS: Classic 17-slot catalog, tracking, grouped slot filters/search, icons/fallback, suffix/quest conditions, character/spec picker events, failed-save/selection rollback; real Forever level30 Mage and Rogue Combat each show 17 unique slot goals, owning two alternatives covers only one slot, grouped alternatives survive search; Hunter owned two-hand setup shows16 before equipping, equipped one-hand retains17 despite owned two-hand alternative; level30/60 picker events, preserved beta equipment, failed-level rollback, restored character/spec/level/equipment after reload, pending60 data, new-character dialog, render, same-context import refresh with TEST ONLY sparse level60 fixture that remains visibly incomplete, metadata refresh with identical recommendation IDs. All progress isolated in memory; imported fixture exists only in this temporary verification directory and is not product data.\n");
+                "PASS: REQ-014 rename dialog, rename with preserved progress and picker, failed-rename rollback; REQ-015 delete confirmation, failed-delete rollback, delete non-active/active/last character, empty state with Create character, empty reload without recreated character, create from empty. " +
+                "Classic 17-slot catalog, tracking, grouped slot filters/search, icons/fallback, suffix/quest conditions, character/spec picker events, failed-save/selection rollback; real Forever level30 Mage and Rogue Combat each show 17 unique slot goals, owning two alternatives covers only one slot, grouped alternatives survive search; Hunter owned two-hand setup shows16 before equipping, equipped one-hand retains17 despite owned two-hand alternative; level30/60 picker events, preserved beta equipment, failed-level rollback, restored character/spec/level/equipment after reload, pending60 data, new-character dialog, render, same-context import refresh with TEST ONLY sparse level60 fixture that remains visibly incomplete, metadata refresh with identical recommendation IDs. All progress isolated in memory; imported fixture exists only in this temporary verification directory and is not product data.\n");
         }
         catch (Exception exception)
         {

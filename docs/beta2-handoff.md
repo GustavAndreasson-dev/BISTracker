@@ -36,7 +36,7 @@ programversionsnummer och beta 2-innehåll är inte beslutade.
 | Forever | Nio klasser och 27 specs med egna nivå 30-beta/patch 1.60.1-kataloger. Dungeons, quests och crafting är godkända. Inga Vanilla-listor används som ersättning. |
 | Alternativ och slots | 1 655 råa placeringsrader, 1 635 aktiva efter källpolicy/handfilter. UI visar relevanta slotmål; Rogue har 17, vissa tvåhandsplaner 16. Alternativ i samma slot ger ett mål. |
 | Fullständighet | 27 kataloger och 54 möjliga Alliance/Horde-set granskade med faktisk variantkapacitet, unique, händer, fraktion och dokumenterade anskaffningsvillkor. |
-| Karaktärer | Namn/version/klass, tre specs per karaktär. Ägande gemensamt, utrustning separat per spec och katalogset; aktivt val återställs efter omstart. |
+| Karaktärer | Namn/version/klass, tre specs per karaktär. Ägande gemensamt, utrustning separat per spec och katalogset; aktivt val återställs efter omstart. Beta 2: namnbyte, permanent borttagning och tomt läge (REQ-014/015). |
 | Nivå 60 | Atomisk import och separata utrustningsuppsättningar finns. Verklig Forever nivå 60-data saknas. Den synliga väntande kontexten är `forever-launch-level60`, inte `forever-beta-level60`. |
 | UI | Engelska texter, karaktär/spec/nivåval, sökning/filter, grupperade alternativ, item-/guidelänkar och ikoner med fallback. |
 | Lagring | Lokal JSON, schema 1, kontrollerad engångsmigration av äldre verkliga Classic-framsteg. Demodata importeras inte som verkligt ägande. |
@@ -130,9 +130,9 @@ python tools/data/verify-forever-slot-witnesses.py artifacts/beta2-witness-audit
 ```
 
 Använd en ny rapportfil om ett tidigare resultat eller genererad data ska
-bevaras. Antalet 49 gäller nuvarande bas. Läggs riktiga scenarier till ska
-också `Test-PortableRelease.ps1` uppdateras: där är förväntat antal **49**
-och tre distributionsscenarier ett uttryckligt releasevillkor.
+bevaras. Antalet 49 gäller paket 1.0.0; med REQ-014/015 är det 56. Läggs
+riktiga scenarier till ska också `Test-PortableRelease.ps1` uppdateras: där är
+förväntat antal **56** och tre distributionsscenarier ett uttryckligt releasevillkor.
 
 Inför en ny ZIP: granska staged filer och committa verifierad kod samt
 relevant dokumentation. Publiceringsskriptet kräver en ren arbetskatalog.

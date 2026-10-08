@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using BISTracker.Application;
 using BISTracker.Domain;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -38,6 +40,18 @@ public sealed class CharacterDialog : ContentDialog
             _error.Message = "Enter a character name.";
             _error.IsOpen = true;
         };
+    }
+
+    // Rename mode: only the name is editable; version and class stay locked.
+    public CharacterDialog(XamlRoot root, CharacterOption character) : this(root)
+    {
+        Title = "Rename character";
+        PrimaryButtonText = "Save";
+        _name.Text = character.Name;
+        _version.SelectedItem = ((VersionOption[])_version.ItemsSource).Single(option => option.Version == character.Version);
+        _class.SelectedItem = character.Class;
+        _version.IsEnabled = false;
+        _class.IsEnabled = false;
     }
 
     public string CharacterName => _name.Text.Trim();

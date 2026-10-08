@@ -51,8 +51,8 @@ finally { $ErrorActionPreference = $previousPreference }
 $checksOutput | Set-Content -LiteralPath (Join-Path $reports 'behavior-checks.txt') -Encoding UTF8
 if ($checksExitCode -ne 0) { throw 'Published behavior checks failed; see behavior-checks.txt.' }
 $passed = @($checksOutput | Where-Object { $_ -match '^PASS:' }).Count
-if ($passed -ne 49 -or @($checksOutput | Where-Object { $_ -match '^PASS: Distribution:' }).Count -ne 3) {
-    throw 'Expected all 49 behavior checks, including the three distribution scenarios.'
+if ($passed -ne 56 -or @($checksOutput | Where-Object { $_ -match '^PASS: Distribution:' }).Count -ne 3) {
+    throw 'Expected all 56 behavior checks, including the three distribution scenarios.'
 }
 & (Join-Path $checkHost 'BISTracker.Checks.exe') --catalog-release-audit (Join-Path $reports 'catalog-release-audit.json')
 if ($LASTEXITCODE -ne 0) { throw 'Published catalog audit failed.' }

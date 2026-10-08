@@ -37,14 +37,14 @@ BISTracker/
 │   ├── Common/                        Gemensam presentationsbas, ObservableObject
 │   ├── Features/
 │   │   ├── Characters/
-│   │   │   └── Views/                 CharacterDialog för ny karaktär
+│   │   │   └── Views/                 CharacterDialog (ny/namnbyte), DeleteCharacterDialog
 │   │   └── Tracking/
 │   │       └── ViewModels/            TrackerViewModel, TrackerSlotViewModel och TrackerItemViewModel
 │   ├── Assets/                        Bilder och paketresurser
 │   └── Properties/                    Startkonfiguration
 └── BISTracker.Checks/
     ├── Program.cs                     Startar konsolkontroller
-    └── Scenarios/                     49 beteendekontroller, releaseaudit och tre distributionsscenarier
+    └── Scenarios/                     56 beteendekontroller, releaseaudit och tre distributionsscenarier
 ```
 
 ## Regler

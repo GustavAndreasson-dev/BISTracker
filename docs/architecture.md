@@ -54,6 +54,8 @@ Se [korrekthetsregler och releasekontroll](slot-catalog-correctness.md).
 - Tvåhandsvapen och offhand kan inte vara utrustade samtidigt i en spec. Ett byte rensar den oförenliga platsen, men bevarar ägande och andra specs.
 - Okända katalog-ID:n och inkonsekvent återställt tillstånd avvisas. Äldre dubbelutrustade varianter och referenser till borttagna items är fel; originalfilen bevaras utan tyst reparation.
 - CharacterTrackerService serialiserar läs/ändra/spara, validerar alla karaktärer och returnerar snapshot först efter lyckad sparning.
+- Namnbyte (REQ-014) ändrar endast namnet med samma namnregler som skapande; version, klass, ägande och utrustning är låsta. Borttagning (REQ-015) är permanent, får gälla sista karaktären och väljer första kvarvarande karaktär om den aktiva tas bort.
+- En workspace med noll karaktärer är giltig i schema 1 och har tomt aktivt ID. Engångsimporten av äldre Holy Priest-framsteg sker bara när workspace-filen saknas, aldrig för en avsiktligt tom workspace.
 - JSON-lagringen skriver temporär fil och ersätter målet. Korrupt data rapporteras och bevaras.
 - UI visar fel vid läs- eller skrivproblem och uppdaterar endast framsteg efter lyckat användningsfall.
 
@@ -156,7 +158,17 @@ Infrastructure sköter JSON och atomisk filersättning. Gamla framsteg kopieras 
 gång utan att originalet ändras. Reglerna kräver varken UI eller filsystem för
 att verifieras. Detaljer och begränsningar finns i [listmodellen](characters-and-loadouts.md).
 
-Projektets **49 beteendekontroller** och lokala distributionsprov är godkända.
+`ICharacterTrackerService.RenameAsync` och `DeleteAsync` följer samma
+transaktionsmönster som övriga användningsfall. Utan karaktärer returnerar
+tjänsten `TrackerSnapshot.NoCharacters`: `Selection` är `null`, inga rader och
+katalogen `TrackerSnapshot.NoCharacterCatalog` (tom kontext, inga items,
+`UnavailableReason` satt). Operationer som kräver aktiv karaktär avvisas då med
+`InvalidOperationException` utan sparning; skapande fungerar som vanligt.
+Presentation visar ett tomt läge med knappen "Create character" och behandlar
+ett karaktärssnapshot utan `Selection` som noll karaktärer.
+
+Projektets **56 beteendekontroller** (49 i v1 och sju för REQ-014/015) är godkända;
+v1:s lokala distributionsprov gäller 49-basen.
 [ForeverCatalogScenarios](../BISTracker.Checks/Scenarios/ForeverCatalogScenarios.cs)
 verifierar alla 27 kataloger, importvalidering, batchpublicering, duplicerade pack,
 avbrott och uppdatering utan omstart.
