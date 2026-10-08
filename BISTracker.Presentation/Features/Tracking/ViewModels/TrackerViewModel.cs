@@ -6,13 +6,14 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BISTracker.Application;
+using BISTracker.Domain;
 using BISTracker.Presentation.Common;
 
 namespace BISTracker.Presentation.Features.Tracking.ViewModels;
 
 public sealed class TrackerViewModel : ObservableObject
 {
-    private readonly TrackerService _service;
+    private readonly ICharacterTrackerService _service;
     private readonly List<TrackerItemViewModel> _items = new();
     private bool _isBusy;
     private bool _loaded;
@@ -20,13 +21,22 @@ public sealed class TrackerViewModel : ObservableObject
     private int _filterIndex;
     private string _errorMessage = "";
     private string _saveStatus = "Loading your progress…";
-    public TrackerViewModel(TrackerService service, bool hasDraftProgress = false)
+    private string? _unavailableReason;
+    private CharacterOption? _selectedCharacter;
+    private Specialization? _selectedSpecialization;
+    public TrackerViewModel(ICharacterTrackerService service, bool hasDraftProgress = false)
     {
         _service = service;
         HasDraftProgress = hasDraftProgress;
     }
     public bool HasDraftProgress { get; }
     public string CatalogContext { get; private set; } = "";
+    public string CatalogLabel { get; private set; } = "";
+    public bool HasReviewedCatalog => _loaded && _unavailableReason is null && TotalCount > 0;
+    public ObservableCollection<CharacterOption> Characters { get; } = new();
+    public ObservableCollection<Specialization> Specializations { get; } = new();
+    public CharacterOption? SelectedCharacter => _selectedCharacter;
+    public Specialization? SelectedSpecialization => _selectedSpecialization;
     public ObservableCollection<TrackerItemViewModel> VisibleItems { get; } = new();
     public int TotalCount => _items.Count;
     public int OwnedCount => _items.Count(item => item.IsOwned);
@@ -34,7 +44,7 @@ public sealed class TrackerViewModel : ObservableObject
     public string OwnedSummary => $"{OwnedCount} / {TotalCount}";
     public string EquippedSummary => $"{_items.Count(item => item.IsEquipped)} / {TotalCount}";
     public string VisibleSummary => $"Showing {VisibleItems.Count} of {TotalCount} items";
-    public string EmptyMessage => _loaded && VisibleItems.Count == 0 ? "No items match your search or filter." : "";
+    public string EmptyMessage => _loaded && VisibleItems.Count == 0 ? _unavailableReason ?? "No items match your search or filter." : "";
     public string EmptyStateVisibility => EmptyMessage.Length > 0 ? "Visible" : "Collapsed";
     public bool IsInteractive => _loaded && !_isBusy;
     public bool HasError => !string.IsNullOrEmpty(ErrorMessage);
@@ -45,6 +55,10 @@ public sealed class TrackerViewModel : ObservableObject
     public Task LoadAsync() => ExecuteAsync(() => _service.LoadAsync(), false);
     public Task SetOwnedAsync(string id, bool owned) => ExecuteAsync(() => _service.SetOwnedAsync(id, owned), true);
     public Task SetEquippedAsync(string id, bool equipped) => ExecuteAsync(() => _service.SetEquippedAsync(id, equipped), true);
+    public Task SelectCharacterAsync(CharacterOption character) => ExecuteAsync(() => _service.SelectAsync(character.Id, character.SelectedSpecialization), true);
+    public Task SelectSpecializationAsync(Specialization spec) => ExecuteAsync(() => _service.SelectAsync(SelectedCharacter!.Id, spec.Id), true);
+    public Task CreateCharacterAsync(string name, GameVersion version, CharacterClass characterClass) =>
+        ExecuteAsync(() => _service.CreateAsync(name, version, characterClass), true);
     private async Task ExecuteAsync(Func<Task<TrackerSnapshot>> operation, bool saves)
     {
         if (_isBusy) return;
@@ -55,17 +69,33 @@ public sealed class TrackerViewModel : ObservableObject
         try
         {
             var snapshot = await operation();
-            if (!_loaded)
+            var contextChanged = !_loaded || !Equals(_selectedCharacter?.Id, snapshot.Selection?.ActiveCharacter.Id) ||
+                _selectedSpecialization?.Id != snapshot.Selection?.ActiveSpecialization.Id;
+            if (contextChanged)
             {
+                _items.Clear();
                 _items.AddRange(snapshot.Entries.Select(entry => new TrackerItemViewModel(entry)));
-                CatalogContext = snapshot.Catalog.Context.Phase;
-                Notify(nameof(CatalogContext));
+                SearchText = "";
+                FilterIndex = 0;
                 _loaded = true;
             }
             else
             {
                 foreach (var entry in snapshot.Entries) _items.Single(item => item.Id == entry.Item.Id).Update(entry);
             }
+            CatalogContext = snapshot.Catalog.Context.Phase;
+            CatalogLabel = $"{snapshot.Catalog.Context.Version} / {snapshot.Catalog.Context.Specialization}";
+            _unavailableReason = snapshot.Catalog.UnavailableReason;
+            if (snapshot.Selection is { } selection)
+            {
+                Characters.Clear();
+                foreach (var character in selection.Characters) Characters.Add(character);
+                _selectedCharacter = Characters.Single(character => character.Id == selection.ActiveCharacter.Id);
+                Specializations.Clear();
+                foreach (var spec in CharacterDefinition.Specializations(selection.ActiveCharacter.Class)) Specializations.Add(spec);
+                _selectedSpecialization = Specializations.Single(spec => spec.Id == selection.ActiveSpecialization.Id);
+            }
+            foreach (var property in new[] { nameof(CatalogContext), nameof(CatalogLabel), nameof(HasReviewedCatalog) }) Notify(property);
             foreach (var property in new[] { nameof(TotalCount), nameof(OwnedCount), nameof(RemainingCount), nameof(OwnedSummary), nameof(EquippedSummary) }) Notify(property);
             ApplyFilter();
             SaveStatus = saves ? $"Saved locally · {DateTime.Now:HH:mm}" : "Your progress is saved locally on this computer.";
@@ -81,6 +111,8 @@ public sealed class TrackerViewModel : ObservableObject
         finally
         {
             foreach (var item in _items) item.RefreshTrackingState();
+            Notify(nameof(SelectedCharacter));
+            Notify(nameof(SelectedSpecialization));
             _isBusy = false;
             Notify(nameof(IsInteractive));
         }

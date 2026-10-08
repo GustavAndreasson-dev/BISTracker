@@ -2,7 +2,7 @@ using BISTracker.Domain;
 
 namespace BISTracker.Application;
 
-public sealed class TrackerService
+public sealed class TrackerService : ITrackerService
 {
     private readonly IBisCatalog _catalog;
     private readonly IProgressRepository _progress;

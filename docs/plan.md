@@ -1,6 +1,6 @@
 # Plan och öppna frågor
 
-Statusdatum: 2026-10-07. Plan för det beställda utkastet och fortsatt utveckling.
+Statusdatum: 2026-10-08. Plan för det beställda utkastet och fortsatt utveckling.
 
 ## Nuläge
 
@@ -8,7 +8,7 @@ Statusdatum: 2026-10-07. Plan för det beställda utkastet och fortsatt utveckli
 - DDD, SOLID och Markdown-dokumentation är beslutade.
 - Tracking omfattar både erhållna och utrustade items.
 - Utkastet byggs i befintlig WinUI/C#/.NET 8-app med Domain, Application och Infrastructure.
-- UI har utrustningslista, sökning, filter och sammanfattningar. Lokal JSON-lagring används för en demoprofil.
+- UI har utrustningslista, sökning, filter, sammanfattningar, karaktärsval och tre specs per karaktär. Lokal JSON bevarar gemensamt ägande och separat utrustning; äldre filer bevaras.
 - Appen använder 17 riktiga guidebaserade fas 1-val med bilder, anskaffning och källänkar. Demokatalogen finns kvar för kontroller.
 - Mappstruktur och kodspårning dokumenteras. Slutkontroller redovisas i verification.md.
 
@@ -20,14 +20,34 @@ Statusdatum: 2026-10-07. Plan för det beställda utkastet och fortsatt utveckli
 | 2. Första utkast | WinUI-vy, domänregler och lokal tracking med exempeldata. | Bygg och relevanta kontroller passerar; faktisk UI-rendering granskas. | Klar: Release-build, 14 beteendekontroller och isolerad UI-kontroll godkända. |
 | 3. BiS-underlag | Källjämförelse och förslag på datametod. | Rapport med spårbara källor och kvarstående val finns. | Klar som research i data-research.md. |
 | 4. Verifierad katalog | Riktiga items och anskaffning för vald kontext. | Fas, tillåtna källor och rekommendationsgrund är dokumenterade; katalogen är integrerad och verifierad. | Klar för det fasta 17-item-urvalet: katalog-/lagringskontroller och renderad UI-verifiering godkända. Full questrevision och alternativa trackingmål är senare fördjupning. |
-| 5. Förfinad produkt | Anpassat UI, beslutad karaktärshantering och komplett kravverifiering. | Överenskomna acceptanskriterier är uppfyllda med riktig data. | Planerad efter återkoppling på utkastet. |
+| 5. Förfinad produkt | Anpassat UI, beslutad karaktärshantering och komplett kravverifiering. | Överenskomna acceptanskriterier är uppfyllda med riktig data. | Karaktärs-/specval och tre sparade listor verifierade. Nya klass-/Forever-kataloger och deras utrustningsregler återstår. |
+
+## Nästa beställda scope och lokal arbetsplats
+
+Boromirs sex senare commits är överförda till denna dator och verifierade
+lokalt. Fortsatt arbete sker i C:\Users\gusta\source\repos\BISTracker;
+historiska tråd-ID:n nedan är referenser, inte beroenden för implementation.
+Se [överföringsrapport](local-transfer.md).
+
+Chefen har beställt utredning av Forever, därefter stöd för alla klasser/specs
+om Forever är genomförbart, samt tre speclistor per karaktär (REQ-005–007).
+[Genomförbarhetsutredningen](forever-feasibility.md) är klar. Version/klass/spec,
+karaktärshantering och tre sparade listor är implementerade och verifierade med
+26 beteendekontroller och isolerad WinUI-kontroll. Se [leveransen](characters-and-loadouts.md).
+
+Nästa datasteg: granska och införa kataloger per spec, med uttrycklig nivå/build,
+fas, dungeons/quests och rekommendationsgrund. Aktuella Forever-guider gäller
+betans nivå 30; de används inte som kompletta pre-raid-listor. Endast Classic
+Holy Priest har en aktiverad katalog. REQ-005/006 är därför delvis uppfyllda;
+REQ-007:s listfunktion är implementerad. Inga nya commits har gjorts under denna
+fortsättning, enligt användarens uttryckliga regel om commit först på begäran.
 
 ## Öppna beslut
 
 | Fråga | Varför den behövs |
 | --- | --- |
-| Vilken källa och metod ska styra BiS-listan? Ska alternativ visas? | Gör rekommendationerna spårbara och jämförbara. |
-| Ska första versionen hantera en eller flera karaktärer? | Bestämmer vilken kontext framsteg hör till. |
+| Vilken källa och metod ska styra nya BiS-kataloger? Ska alternativ visas? | Gör rekommendationerna spårbara och jämförbara. |
+| Vilken Forever-nivå/build och fas ska nya skarpa kataloger gälla? | Betans nivå 30 får inte förväxlas med slutlig pre-raid-data. |
 | Behövs annan plattform eller synkronisering senare? | Utkastet fortsätter med WinUI och lokal lagring; framtida behov är öppna. |
 
 ## Skapade Codex-trådar
@@ -47,9 +67,10 @@ Trådarna har fått uppdrag och den senare instruktionen om mappstruktur.
 
 ## Löpande leverans
 
-En avklarad och verifierad del ska följas av en sammanhängande commit med ett
-tydligt syfte. Huvudtråden samordnar detta i den delade projektmappen enligt
-AGENTS.md. Koden och den dokumentation som berör ändringen uppdateras tillsammans.
+Kod och berörd dokumentation uppdateras tillsammans för varje sammanhängande
+del. Chefen har 2026-10-08 uttryckligen beställt regelbundna commits för
+nivå 30-leveransen; detta tillstånd gäller nu. Huvudtråden samordnar commits och
+granskar endast avsedda filer efter godkänd verifiering.
 
 ## Genomförd del: itemresearch och engelska
 

@@ -7,6 +7,7 @@ try
     await DomainScenarios.RunAsync(checks);
     await TrackingScenarios.RunAsync(checks);
     await PersistenceScenarios.RunAsync(checks);
+    await CharacterScenarios.RunAsync(checks);
     Console.WriteLine(checks.Failures == 0
         ? "Alla kontroller godkända."
         : $"{checks.Failures} kontroll(er) misslyckades.");

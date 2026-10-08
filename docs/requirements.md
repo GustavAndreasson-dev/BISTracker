@@ -1,6 +1,6 @@
 # Krav och koppling till kod
 
-Statusdatum: 2026-10-07. Beslutade krav kommer från Chefen.
+Statusdatum: 2026-10-08. Beslutade krav kommer från Chefen.
 Acceptanskriterier och detaljer markerade som förslag behöver preciseras tillsammans.
 
 ## Beslutade produktkrav
@@ -8,19 +8,27 @@ Acceptanskriterier och detaljer markerade som förslag behöver preciseras tills
 | ID | Krav | Implementation | Verifiering |
 | --- | --- | --- | --- |
 | REQ-001 | Visa pre-raid BiS för Holy Priest i vanliga WoW Classic (Vanilla). | [Riktig katalog](../BISTracker.Infrastructure/Catalog/ClassicPhaseOneBisCatalog.cs) med 17 huvudval kopplad i App; [vyn](../BISTracker.Presentation/MainWindow.xaml) visar bilder, anskaffning, villkor och item-/guidelänkar. | Katalogkontroller och renderad UI-kontroll godkända. Guidebaserat fas 1-urval enligt phase1-items.md; full questkedjerevision och verifiering i spelet återstår. |
-| REQ-002 | Tracka både erhållna och utrustade items mot pre-raid BiS. | [CharacterProgress](../BISTracker.Domain/Tracking/CharacterProgress.cs), [TrackerService](../BISTracker.Application/Tracking/TrackerService.cs), [JSON-lagring](../BISTracker.Infrastructure/Persistence/JsonProgressRepository.cs) och [ViewModel](../BISTracker.Presentation/Features/Tracking/ViewModels/TrackerViewModel.cs). | Tracking-/lagringskontroller, återläsning med riktig katalog, suffixidentitet och isolerad UI-kontroll godkända. Gamla demomarkeringar bevaras separat. |
+| REQ-002 | Tracka både erhållna och utrustade items mot pre-raid BiS. | [CharacterLoadouts](../BISTracker.Domain/Tracking/CharacterLoadouts.cs), [CharacterTrackerService](../BISTracker.Application/Characters/CharacterTrackerService.cs), [JSON-lagring](../BISTracker.Infrastructure/Persistence/JsonWorkspaceRepository.cs) och [ViewModel](../BISTracker.Presentation/Features/Tracking/ViewModels/TrackerViewModel.cs). | Tracking-/lagringskontroller, återläsning med riktig katalog, delat ägande, suffixidentitet och isolerad UI-kontroll godkända. Legacy- och demofiler bevaras. |
 | REQ-003 | Använd fas 1 och endast dungeons/quests för BiS-urvalet. | [Produktkatalog](../BISTracker.Infrastructure/Catalog/Data/holy-priest-classic-phase1.json) och synlig kontext; endast Dungeon/Quest tillåts av katalogläsaren. | Källor och fasetiketter granskade. UBRS, of Healing och fraktions-/Raid-questvillkor visas. Kontroll av de 17 katalogmålen godkänd; inget crafting/world-drop-val från originalguiden ingår. |
 | REQ-004 | Ha appens gränssnitt på engelska. | [Presentation](../BISTracker.Presentation/MainWindow.xaml), ViewModels, exempelmetadata och egna lagringsfel översatta. | Release-build, textgranskning och isolerad engelsk UI-preview godkända. Manuella tillgänglighets-/DPI-kontroller återstår. |
+
+## Beställd nästa utökning
+
+| ID | Krav | Implementation | Verifiering |
+| --- | --- | --- | --- |
+| REQ-005 | Lägg till WoW Forever som nästa separat valbara spelversion efter genomförbarhetsutredning. | [CharacterDialog](../BISTracker.Presentation/Features/Characters/Views/CharacterDialog.cs) väljer version; [CharacterCatalog](../BISTracker.Infrastructure/Catalog/CharacterCatalog.cs) isolerar kontext. **Versionsstöd implementerat; Forever-BiS återstår.** | Alla versions-/klass-/specval kontrollerade i [CharacterScenarios](../BISTracker.Checks/Scenarios/CharacterScenarios.cs), Forever Mage i renderad UI. Ingen Vanilla-katalog används som Forever-data. |
+| REQ-006 | Om Forever kan stödjas, utöka till alla klasser och specs. | [CharacterDefinition](../BISTracker.Domain/Game/CharacterDefinition.cs) anger nio klasser/27 specs; skapande och specval fungerar. **Struktur/UI implementerade; kompletta kataloger och utökade utrustningsregler återstår.** | 54 version/klass/spec-kombinationer kontrollerade. Specnamn och databegränsningar är källbelagda i [rapporten](characters-and-loadouts.md). |
+| REQ-007 | Ha tre bestående, separata listor per karaktär, en per spec; gemensamt ägande och separat utrustning är bekräftat. | [CharacterLoadouts](../BISTracker.Domain/Tracking/CharacterLoadouts.cs), [CharacterTrackerService](../BISTracker.Application/Characters/CharacterTrackerService.cs), [JsonWorkspaceRepository](../BISTracker.Infrastructure/Persistence/JsonWorkspaceRepository.cs) och val i UI. **Listfunktionen implementerad**, även tomma listor när katalog saknas. | Tre olika listor återlästa efter omstart; delat ägande, utrustningsisolering, karaktärs-/versionsisolering, migration, sparfel och återställda UI-val verifierade. |
 
 ## Beslutade tekniska krav och riktning
 
 | ID | Krav eller riktning | Implementation | Verifiering |
 | --- | --- | --- | --- |
-| ARC-001 | Använd DDD-struktur och en domänmodell för verksamhetens regler. | Fyra lager; CharacterProgress skyddar invariants. Se [arkitektur](architecture.md). | Projektberoenden och regler granskade; domän och användningsfall kontrolleras utan WinUI. |
-| ARC-002 | Följ SOLID-principer. | Separata ansvar och IBisCatalog/IProgressRepository för externa beroenden. | Katalog och repository utbytta i beteendekontroller. Fortsatt granskningskrav vid varje ändring. |
+| ARC-001 | Använd DDD-struktur och en domänmodell för verksamhetens regler. | Fyra lager; CharacterLoadouts skyddar reglerna för tre listor. CharacterProgress validerar legacy-data. Se [arkitektur](architecture.md). | Projektberoenden och regler granskade; domän och användningsfall kontrolleras utan WinUI. |
+| ARC-002 | Följ SOLID-principer. | Separata ansvar, ICharacterCatalog/IWorkspaceRepository och ICharacterTrackerService för aktuella gränser; legacy-kontrakt bevarade. | Katalog och repository utbytta i beteendekontroller. Fortsatt granskningskrav vid varje ändring. |
 | ARC-003 | Håll Markdown-dokumentation som kan jämföras med koden. | AGENTS.md och docs, inklusive denna kodspårning. | Nuläge, projektgränser och källfiler har jämförts mot koden. |
 | ARC-004 | Ha god mappstruktur inom varje projekt. | Kod indelad enligt [strukturkartan](project-structure.md). | Faktiska filplaceringar granskade; områden för Equipment, Game, Tracking, Catalog, Persistence och Features finns. |
-| DIR-001 | Stöd fler expansioner senare. | Ingen expansion utöver första målversionen är implementerad. | Planerad riktning; ännu inga beslutade funktionella acceptanskriterier. |
+| DIR-001 | Stöd fler expansioner senare. | Classic och Forever är separata val enligt REQ-005. | Versionsisolering verifierad; nya versioners data kräver egen granskning. |
 
 ## Föreslagna acceptanskriterier för första fungerande flödet
 

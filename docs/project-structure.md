@@ -16,19 +16,22 @@ BISTracker/
 │   └── data/                          Separata script för granskad metadatahämtning
 ├── BISTracker.Domain/
 │   ├── Equipment/                     EquipmentSlot, Recommendation och ItemDetails
-│   ├── Game/                          GameContext
-│   └── Tracking/                      CharacterProgress och dess regler
+│   ├── Game/                          GameContext, CharacterDefinition, version/klass/spec
+│   └── Tracking/                      CharacterLoadouts samt legacy CharacterProgress
 ├── BISTracker.Application/
-│   ├── Catalog/                       BisCatalog och IBisCatalog
-│   └── Tracking/                      TrackerService, tillstånd, snapshot och lagringskontrakt
+│   ├── Catalog/                       BisCatalog, IBisCatalog och ICharacterCatalog
+│   ├── Characters/                    CharacterTrackerService, workspace och kontrakt
+│   └── Tracking/                      Legacy TrackerService, ITrackerService, snapshot och kontrakt
 ├── BISTracker.Infrastructure/
-│   ├── Catalog/                       ClassicPhaseOneBisCatalog och SampleBisCatalog för kontroller
+│   ├── Catalog/                       CharacterCatalog, ClassicPhaseOneBisCatalog, SampleBisCatalog
 │   │   └── Data/                      Inbyggd, granskad produktkatalog
-│   └── Persistence/                   JsonProgressRepository och ProgressFilePaths
+│   └── Persistence/                   JsonWorkspaceRepository, legacy JSON och ProgressFilePaths
 ├── BISTracker.Presentation/
 │   ├── App.xaml + MainWindow.xaml     Start, composition root och appens skal
 │   ├── Common/                        Gemensam presentationsbas, ObservableObject
 │   ├── Features/
+│   │   ├── Characters/
+│   │   │   └── Views/                 CharacterDialog för ny karaktär
 │   │   └── Tracking/
 │   │       └── ViewModels/            TrackerViewModel och TrackerItemViewModel
 │   ├── Assets/                        Bilder och paketresurser

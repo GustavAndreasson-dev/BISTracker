@@ -67,3 +67,20 @@ arkitektur tills de är beslutade. Chefens senare instruktioner gäller framför
 - Beslut: koppla in den granskade riktiga listan i appen.
 - Genomförande: 17 huvudval i en inbyggd katalog bakom IBisCatalog, med bilder, anskaffning, villkor och källänkar. Of Healing bevaras i namn och tracking-ID. Bonecreeper Stylus anges som alternativ i wand-raden.
 - Genomförandeval: använd en separat fas 1-framstegsfil och bevara demofilen. UBRS ingår som dungeon med tiomannavillkor; Stormragers Raid-quest för Alliance beskrivs uttryckligen. Se catalog-integration.md för verifiering och avgränsning.
+
+## DEC-010 — Forever, alla klasser och tre speclistor
+
+- Datum: 2026-10-08.
+- Status: beställt av Chefen; struktur och listfunktion implementerade, nya kataloger återstår.
+- Beslut: utred Blizzards Forever som nästa spelversion, utöka till alla klasser/specs om genomförbart och stöd tre separata listor per karaktär.
+- Förtydligande från Chefen: ägande är gemensamt för karaktären, utrustning separat per spec.
+- Genomförande: nio klasser med tre specs i Classic/Forever, lokalt karaktärs-ID, gemensam itemvariantidentitet, versionsstyrd JSON och bevarande av äldre framsteg. En otillgänglig katalog visas explicit; inga Vanilla-rekommendationer används som verifierad Forever-BiS. Se characters-and-loadouts.md.
+- Commitregel vid denna leverans: inga commits gjordes före explicit begäran. Efterföljande beställning av regelbundna commits beskrivs i DEC-011.
+
+## DEC-011 — Nivå 30 nu, nivå 60-import senare
+
+- Datum: 2026-10-08.
+- Status: beställt av Chefen; pågående arbete.
+- Beslut: skaffa Forever-kataloger för alla specs på nivå 30 och förbered import av nivå 60 när data finns.
+- Arbetsform: utnyttja fyra arbetstrådar och gör regelbundna commits efter verifierade sammanhängande delar. Huvudtråden samordnar integration och commits; tre datatrådar äger varsin grupp om nio specs.
+- Tillåtna itemkällor: tidigare avgränsning dungeons/quests gäller tills Chefen besvarat förtydligandet för beta-listorna. Datainsamlingen bevarar även andra guidekandidater för ett eventuellt ändrat beslut.

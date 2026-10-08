@@ -1,0 +1,1 @@
+PASS: real 17-item catalog, source links, equip, unown, summaries, filters, item/slot/acquisition search, empty state, remote icons, failed-image fallback, suffix conditions, faction quest conditions, render.

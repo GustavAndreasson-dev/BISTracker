@@ -1,0 +1,1 @@
+PASS: real 17-item catalog, source links, equip, unown, summaries, filters, search, icons and fallback, suffix/quest conditions, character/spec picker events, separate lists, unavailable catalogs, failed-save rollback, failed-selection rollback, Forever Mage, restored selection after reload, new-character dialog, render. All progress isolated in memory.

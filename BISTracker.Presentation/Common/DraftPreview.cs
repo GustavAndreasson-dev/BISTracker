@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using BISTracker.Application;
+using BISTracker.Domain;
+using BISTracker.Infrastructure;
+using BISTracker.Presentation.Features.Characters.Views;
 using BISTracker.Presentation.Features.Tracking.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -22,6 +25,7 @@ internal static class DraftPreview
     private static readonly string[] Arguments = Environment.GetCommandLineArgs();
     private static readonly int FlagIndex = Array.IndexOf(Arguments, "--draft-preview");
     public static bool IsRequested => FlagIndex >= 0 && FlagIndex + 1 < Arguments.Length;
+    public static PreviewWorkspaceRepository Workspace { get; } = new();
 
     public static async Task RunAsync(FrameworkElement root, TrackerViewModel model)
     {
@@ -31,6 +35,8 @@ internal static class DraftPreview
         {
             Require(model.TotalCount == 17 && model.OwnedCount == 0, "Initial state");
             Require(model.CatalogContext == "Phase 1 · dungeons and quests", "Real catalog context");
+            Require(((ComboBox)root.FindName("CharacterPicker")).SelectedItem is CharacterOption &&
+                ((ComboBox)root.FindName("SpecializationPicker")).SelectedItem is Specialization { Id: "holy" }, "Initial picker selection");
             var hat = model.VisibleItems.Single(item => item.Name == "Crimson Felt Hat");
             var neck = model.VisibleItems.Single(item => item.Name == "Animated Chain Necklace");
             var chest = model.VisibleItems.Single(item => item.Name == "Robes of the Exalted");
@@ -58,7 +64,7 @@ internal static class DraftPreview
             model.SearchText = "no-matching-item";
             Require(model.VisibleItems.Count == 0 && model.EmptyMessage.Length > 0, "Empty state");
             model.SearchText = "";
-            await WaitForAsync(() => hat.IsIconLoaded && neck.IsIconLoaded, "Visible remote item icons");
+            await WaitForAsync(() => IconMatches(root, hat) && IconMatches(root, neck), "Visible remote item icons");
             await SaveImageAsync(root, Path.Combine(directory, "draft-overview.png"));
 
             // Exercise the actual ImageFailed event and the visible fallback without changing real progress.
@@ -71,22 +77,55 @@ internal static class DraftPreview
             {
                 Path = new PropertyPath(nameof(TrackerItemViewModel.IconUrl))
             });
-            await WaitForAsync(() => hat.IsIconLoaded, "Restored image");
+            await WaitForAsync(() => IconMatches(root, hat), "Restored image");
 
             model.SearchText = "of Healing";
             Require(model.VisibleItems.Count == 3 && model.VisibleItems.All(item => item.Note.Contains("Other variants")), "Suffix conditions");
-            await WaitForAsync(() => cape.IsIconLoaded && cuffs.IsIconLoaded, "Suffix item icons");
+            await WaitForAsync(() => IconMatches(root, cape) && IconMatches(root, cuffs), "Suffix item icons");
             Require(IconMatches(root, cape) && IconMatches(root, cuffs), "Recycled rows keep correct icons");
             await SaveImageAsync(root, Path.Combine(directory, "phase1-suffix.png"));
             model.SearchText = "Stormrager";
             Require(model.VisibleItems.Count == 1 && model.VisibleItems[0].Note.Contains("Raid quest") &&
                 model.VisibleItems[0].Note.Contains("Bonecreeper Stylus"), "Faction quest conditions and alternative");
             var wand = model.VisibleItems[0];
-            await WaitForAsync(() => wand.IsIconLoaded, "Quest item icon");
+            await WaitForAsync(() => IconMatches(root, wand), "Quest item icon");
             Require(IconMatches(root, wand), "Quest item has correct icon");
             await SaveImageAsync(root, Path.Combine(directory, "phase1-quest.png"));
+            var priest = model.SelectedCharacter!;
+            var picker = (ComboBox)root.FindName("SpecializationPicker");
+            picker.SelectedItem = model.Specializations.Single(spec => spec.Id == "shadow");
+            await WaitForAsync(() => model.IsInteractive && model.SelectedSpecialization?.Id == "shadow", "Spec picker event");
+            Require(model.TotalCount == 0 && model.EmptyMessage == "No reviewed BiS list available yet.", "Unavailable spec is explicit");
+            await SaveImageAsync(root, Path.Combine(directory, "character-shadow.png"));
+            picker.SelectedItem = model.Specializations.Single(spec => spec.Id == "holy");
+            await WaitForAsync(() => model.IsInteractive && model.SelectedSpecialization?.Id == "holy", "Return to Holy");
+            Require(model.OwnedCount == 6 && model.EquippedSummary == "3 / 17" && model.VisibleItems.Count == 17, "Spec switch preserves progress and resets search");
+            Workspace.FailNextSave = true;
+            await model.SetOwnedAsync(hat.Id, false);
+            Require(model.HasError && model.OwnedCount == 6 && model.EquippedSummary == "3 / 17", "Failed save leaves view unchanged");
+            Workspace.FailNextSave = true;
+            picker.SelectedItem = model.Specializations.Single(spec => spec.Id == "shadow");
+            await WaitForAsync(() => model.IsInteractive && model.HasError && model.SelectedSpecialization?.Id == "holy" &&
+                picker.SelectedItem is Specialization { Id: "holy" }, "Failed selection restores picker");
+            await model.CreateCharacterAsync("Forever Mage", GameVersion.Forever, CharacterClass.Mage);
+            Require(model.Characters.Count == 2 && model.Specializations.Count == 3 && model.TotalCount == 0 && model.CatalogLabel.StartsWith("WoW Forever"), "Forever Mage selection");
+            picker.SelectedItem = model.Specializations.Single(spec => spec.Id == "fire");
+            await WaitForAsync(() => model.IsInteractive && model.SelectedSpecialization?.Id == "fire", "Forever spec selection");
+            await SaveImageAsync(root, Path.Combine(directory, "character-forever.png"));
+            var reloaded = new TrackerViewModel(new CharacterTrackerService(new CharacterCatalog(), Workspace, new PreviewProgressRepository()));
+            await reloaded.LoadAsync();
+            Require(reloaded.SelectedCharacter?.Name == "Forever Mage" && reloaded.SelectedSpecialization?.Id == "fire", "Restart restores character and spec");
+            var characterPicker = (ComboBox)root.FindName("CharacterPicker");
+            characterPicker.SelectedItem = model.Characters.Single(character => character.Id == priest.Id);
+            await WaitForAsync(() => model.IsInteractive && model.SelectedCharacter?.Id == priest.Id, "Character picker event");
+            Require(model.OwnedCount == 6 && model.EquippedSummary == "3 / 17", "Character switch preserves separate collection");
+            var dialog = new CharacterDialog(root.XamlRoot);
+            var dialogResult = dialog.ShowAsync();
+            await SaveImageAsync(dialog, Path.Combine(directory, "character-create.png"));
+            dialog.Hide();
+            await dialogResult;
             await File.WriteAllTextAsync(Path.Combine(directory, "ui-checks.txt"),
-                "PASS: real 17-item catalog, source links, equip, unown, summaries, filters, item/slot/acquisition search, empty state, remote icons, failed-image fallback, suffix conditions, faction quest conditions, render.\n");
+                "PASS: real 17-item catalog, source links, equip, unown, summaries, filters, search, icons and fallback, suffix/quest conditions, character/spec picker events, separate lists, unavailable catalogs, failed-save rollback, failed-selection rollback, Forever Mage, restored selection after reload, new-character dialog, render. All progress isolated in memory.\n");
         }
         catch (Exception exception)
         {
@@ -104,8 +143,11 @@ internal static class DraftPreview
     private static Image FindImage(DependencyObject parent, TrackerItemViewModel item) =>
         FindImageOrNull(parent, item) ?? throw new InvalidOperationException("Visible item icon was not found.");
 
+    // Filtering updates the visual tree asynchronously; an earlier load flag can remain true.
     private static bool IconMatches(DependencyObject root, TrackerItemViewModel item) =>
-        FindImage(root, item).Source is BitmapImage bitmap && bitmap.UriSource.AbsoluteUri == item.IconUrl;
+        item.IsIconLoaded &&
+        FindImageOrNull(root, item)?.Source is BitmapImage { PixelWidth: > 0, PixelHeight: > 0 } bitmap &&
+        bitmap.UriSource.AbsoluteUri == item.IconUrl;
 
     private static Image? FindImageOrNull(DependencyObject parent, TrackerItemViewModel item)
     {
@@ -156,6 +198,24 @@ internal sealed class PreviewProgressRepository : IProgressRepository
     public Task SaveAsync(ProgressState state, CancellationToken cancellationToken = default)
     {
         _state = state;
+        return Task.CompletedTask;
+    }
+}
+
+internal sealed class PreviewWorkspaceRepository : IWorkspaceRepository
+{
+    private string? _json;
+    public bool FailNextSave { get; set; }
+    public Task<WorkspaceState?> LoadAsync(CancellationToken cancellationToken = default) =>
+        Task.FromResult(_json is null ? null : System.Text.Json.JsonSerializer.Deserialize<WorkspaceState>(_json));
+    public Task SaveAsync(WorkspaceState state, CancellationToken cancellationToken = default)
+    {
+        if (FailNextSave)
+        {
+            FailNextSave = false;
+            throw new IOException("Simulated verification failure.");
+        }
+        _json = System.Text.Json.JsonSerializer.Serialize(state);
         return Task.CompletedTask;
     }
 }

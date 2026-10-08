@@ -16,7 +16,8 @@ WinUI-presentationen använder C# och .NET 8, med separata domän-, applikations
 Presentation kan använda domäntyper när det är motiverat, men får inte duplicera
 domänregler. Filformat och externa datamodeller översätts vid infrastrukturgränsen.
 Presentation använder MVVM för listan och filter. App.xaml.cs är composition root
-och kopplar katalog, repository och TrackerService till TrackerViewModel.
+och kopplar CharacterCatalog, JsonWorkspaceRepository och CharacterTrackerService
+till TrackerViewModel genom ICharacterTrackerService.
 
 ## Domängränser i utkastet
 
@@ -24,8 +25,9 @@ och kopplar katalog, repository och TrackerService till TrackerViewModel.
 - BiS-rekommendationer: vilka items som rekommenderas för en given klass, specialisering och spelkontext, samt rekommendationens källa.
 - Framsteg: spelarens registrerade framsteg mot en vald rekommendation.
 
-Detta är logiska gränser inom samma app. CharacterProgress är aggregatet som
-skyddar ägande/utrustning. Katalogen är referensdata. Djupare rekommendationsregler
+Detta är logiska gränser inom samma app. CharacterLoadouts är aggregatet som
+skyddar gemensamt ägande och tre separata utrustningslistor per karaktär.
+CharacterProgress finns kvar för legacy-validering. Katalogen är referensdata. Djupare rekommendationsregler
 utvecklas när riktiga källor och urvalsmetod är beslutade.
 
 ### Invariants och användningsfall
@@ -34,7 +36,7 @@ utvecklas när riktiga källor och urvalsmetod är beslutade.
 - Avmarkering av utrustad behåller erhållen.
 - Ett item per EquipmentSlot kan vara utrustat. Ring- och trinketplatser är separata slotvärden i utkastet.
 - Okända katalog-ID:n och inkonsekvent återställt tillstånd avvisas.
-- TrackerService serialiserar läs/ändra/spara och returnerar snapshot först efter lyckad sparning.
+- CharacterTrackerService serialiserar läs/ändra/spara, validerar alla karaktärer och returnerar snapshot först efter lyckad sparning.
 - JSON-lagringen skriver temporär fil och ersätter målet. Korrupt data rapporteras och bevaras.
 - UI visar fel vid läs- eller skrivproblem och uppdaterar endast framsteg efter lyckat användningsfall.
 
@@ -73,3 +75,17 @@ avvisar okända ID:n; ett basitem eller demo-ID kan inte räknas som den
 nödvändiga varianten. Presentation visar fakta och hämtar externa ikoner
 med fallback. Separata framstegsfiler skyddar övergången från fiktiva items.
 Se [integrationen](catalog-integration.md) för filansvar och begränsningar.
+
+## Karaktärer och speclistor
+
+En karaktär har stabilt ID, version och klass. CharacterDefinition anger exakt
+tre giltiga spec-ID:n för klassen. CharacterLoadouts skiljer gemensamt ägande
+(item-ID/suffix inom karaktärens version) från utrustning (rekommendations-ID i
+varje spec). Borttaget ägande rensar motsvarande utrustning i alla tre specs.
+Listorna och ägandet isoleras mellan karaktärer. Katalogkontraktet väljer uttrycklig
+version/klass/spec och kan ange att granskad data saknas.
+
+Application orkestrerar migration och tillståndsbyten genom IWorkspaceRepository.
+Infrastructure sköter JSON och atomisk filersättning. Gamla framsteg kopieras en
+gång utan att originalet ändras. Reglerna kräver varken UI eller filsystem för
+att verifieras. Detaljer och begränsningar finns i [listmodellen](characters-and-loadouts.md).

@@ -37,11 +37,12 @@ namespace BISTracker.Presentation
                 "BISTracker");
             var progressPath = ProgressFilePaths.ClassicPhaseOne(progressDirectory);
             var hasDraftProgress = File.Exists(ProgressFilePaths.Draft(progressDirectory)) && !File.Exists(progressPath);
-            var service = new TrackerService(new ClassicPhaseOneBisCatalog(), new JsonProgressRepository(progressPath));
+            ICharacterTrackerService service = new CharacterTrackerService(new CharacterCatalog(),
+                new JsonWorkspaceRepository(ProgressFilePaths.Characters(progressDirectory)), new JsonProgressRepository(progressPath));
 #if DRAFT_PREVIEW
             if (Common.DraftPreview.IsRequested)
             {
-                service = new TrackerService(new ClassicPhaseOneBisCatalog(), new Common.PreviewProgressRepository());
+                service = new CharacterTrackerService(new CharacterCatalog(), Common.DraftPreview.Workspace, new Common.PreviewProgressRepository());
                 hasDraftProgress = false;
             }
 #endif
