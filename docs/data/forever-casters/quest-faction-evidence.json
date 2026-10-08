@@ -1,0 +1,11 @@
+{
+  "reviewedOn": "2026-10-08",
+  "quests": [
+    {
+      "questId": 95682,
+      "availableFactions": ["Horde"],
+      "sourceUrl": "https://www.wowhead.com/forever/guide/classes/mage/arcane/level-30-dps-overview",
+      "evidence": "The original level-30 Forever guide's dungeon quest table explicitly names Open the Maw (Horde) for Knife-Polishing Rag. The individual Forever quest page verifies minimum level 24 and reward 271740, but omits its numeric faction code. This is shared quest-eligibility evidence, not a copied spec recommendation."
+    }
+  ]
+}

@@ -434,5 +434,9 @@
   {
     "url": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_crystalball.jpg",
     "status": 200
+  },
+  {
+    "url": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+    "status": 200
   }
 ]

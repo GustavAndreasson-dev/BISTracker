@@ -11,9 +11,10 @@
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
   "reviewedOn": "2026-10-08",
   "supplementarySourceUrls": [
-    "https://mobalytics.gg/wow-forever/classes/shadow-priest-guide"
+    "https://mobalytics.gg/wow-forever/classes/shadow-priest-guide",
+    "https://wowtbc.gg/warcraftforever/bis-list/shadow-priest/"
   ],
-  "selectionMethod": "Named equipment alternatives in the original Wowhead level-30 Forever guide. Priest wand recommendation separately sourced from the original Mobalytics level-30 beta spec guide. No independent ranking; consumables, unverified bonus variants and unavailable profession requirements excluded.",
+  "selectionMethod": "Named equipment alternatives in the original Wowhead level-30 Forever guide. Priest wand recommendation separately sourced from the original Mobalytics level-30 beta spec guide. No independent ranking; consumables, unverified bonus variants and unavailable profession requirements excluded. Additional missing-slot alternatives are independently sourced from each original Forever spec guide/list; no ranking or equal-strength groups inferred.",
   "status": "Reviewed",
   "items": [
     {
@@ -56,7 +57,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Relic Guardian, Excavation Site: Wetlands Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_28.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273030/ring-of-power-regulation",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -72,7 +73,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Relic Guardian, Excavation Site: Wetlands Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_28.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273030/ring-of-power-regulation",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -88,7 +89,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Targorr the Dread, The Stockade Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_15.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273806/dark-horde-band",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -104,7 +105,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Targorr the Dread, The Stockade Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_15.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273806/dark-horde-band",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -152,7 +153,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Electrocutioner 6000, Gnomeregan Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gear_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9447/electrocutioner-lagnut",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -168,7 +169,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Electrocutioner 6000, Gnomeregan Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gear_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9447/electrocutioner-lagnut",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -232,7 +233,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Roogug, Razorfen Kraul Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152/roogugs-severed-head",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -248,7 +249,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Roogug, Razorfen Kraul Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_quillboar_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=274152/roogugs-severed-head",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -328,7 +329,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Charlga Razorflank, Razorfen Kraul Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bone_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6693/agamaggans-clutch",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -344,7 +345,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Charlga Razorflank, Razorfen Kraul Drops:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bone_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6693/agamaggans-clutch",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -424,13 +425,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Horrors in the Highland (Alliance), Excavation Site: Wetlands Quests:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271670/curl-of-life",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-finger2-271670",
@@ -440,13 +444,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Horrors in the Highland (Alliance), Excavation Site: Wetlands Quests:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271670/curl-of-life",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-back-271716",
@@ -462,23 +469,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
-    },
-    {
-      "id": "forever-beta-level30-priest-shadow-mainhand-271767",
-      "slot": "MainHand",
-      "itemId": 271767,
-      "name": "Healer's Staff",
-      "requiredSuffix": null,
-      "acquisitionType": "Quest",
-      "source": "Prehistoric Prism (Alliance), Excavation Site: Wetlands Quests: / Earthen Echo (Horde), Excavation Site: Wetlands Quests:",
-      "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
-      "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
-      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
-      "weaponKind": "TwoHanded",
-      "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-waist-271769",
@@ -494,7 +488,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-wrist-271740",
@@ -503,14 +500,17 @@
       "name": "Knife-Polishing Rag",
       "requiredSuffix": null,
       "acquisitionType": "Quest",
-      "source": "Open the Maw, Excavation Site: Wetlands Quests:",
+      "source": "Open the Maw, Excavation Site: Wetlands Quests: (Horde)",
       "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_10.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271740/knife-polishing-rag",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-back-271719",
@@ -526,7 +526,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-mainhand-1317",
@@ -542,7 +545,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-hands-270029",
@@ -558,23 +564,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
-    },
-    {
-      "id": "forever-beta-level30-priest-shadow-legs-270036",
-      "slot": "Legs",
-      "itemId": 270036,
-      "name": "Magistrate's Pantaloons",
-      "requiredSuffix": null,
-      "acquisitionType": "Quest",
-      "source": "The Fury Runs Deep (Alliance), The Stockade Quests:",
-      "note": "",
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_14.jpg",
-      "itemUrl": "https://www.wowhead.com/forever/item=270036/magistrates-pantaloons",
-      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
-      "weaponKind": "None",
-      "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-hands-9609",
@@ -590,7 +583,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-shoulder-9536",
@@ -606,7 +602,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-finger1-9538",
@@ -616,13 +616,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Gnome Improvement (Alliance), Gnomeregan Quests:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9538/talvashs-gold-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-finger2-9538",
@@ -632,13 +635,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Gnome Improvement (Alliance), Gnomeregan Quests:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9538/talvashs-gold-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-chest-9623",
@@ -654,7 +660,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-finger1-9588",
@@ -664,13 +674,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Nogg's Ring Redo (Horde), Gnomeregan Quests:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9588/noggs-gold-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-finger2-9588",
@@ -680,13 +693,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Nogg's Ring Redo (Horde), Gnomeregan Quests:",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=9588/noggs-gold-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-finger1-6750",
@@ -696,13 +712,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Willix the Importer, Razorfen Kraul Quests:",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6750/snake-hoop",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-finger2-6750",
@@ -712,13 +732,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Willix the Importer, Razorfen Kraul Quests:",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6750/snake-hoop",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-shoulder-4197",
@@ -734,7 +758,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-shoulder-7750",
@@ -750,7 +778,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-priest-shadow-mainhand-249392",
@@ -760,7 +791,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Enchanting crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Enchanting 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_19.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249392/glimmering-staff",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -776,7 +807,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Enchanting crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Enchanting 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_31.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249393/soulstaff",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -792,7 +823,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Enchanting crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Enchanting 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_blue.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249394/orb-of-mystic-insight",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -808,7 +839,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Enchanting crafting",
-      "note": "",
+      "note": "Crafting recipe: Enchanting 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_wand_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=217287/greater-mystic-wand",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -824,7 +855,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_crown_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253981/filigreed-shadow-circlet",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -840,7 +871,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 110.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_cloth_48.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253967/shadow-gown",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -856,7 +887,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 75.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_27.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253919/shadow-gloves",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -872,7 +903,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 85.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_43.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253931/shadow-sash",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -888,7 +919,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_11.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253993/shadow-leggings",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -904,7 +935,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_cloth_21.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=254007/black-slippers",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -920,7 +951,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Crafting recipe: Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381/minor-recombobulator",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -936,7 +967,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Crafting recipe: Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381/minor-recombobulator",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -952,7 +983,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Crafting recipe: Engineering 200.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4396/mechanical-dragonling",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -968,7 +999,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Crafting recipe: Engineering 200.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4396/mechanical-dragonling",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -984,7 +1015,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Leatherworking crafting",
-      "note": "",
+      "note": "Crafting recipe: Leatherworking 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=3719/hillmans-cloak",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
@@ -1000,13 +1031,84 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Blackfathom Villainy (Alliance/Horde), Blackfathom Deeps",
-      "note": "Recommended in the original guide's level-30 beta wand section.",
+      "note": "Quest requires level 18.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_wand_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=7001/gravestone-scepter",
       "recommendationUrl": "https://mobalytics.gg/wow-forever/classes/shadow-priest-guide",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
+    },
+    {
+      "id": "forever-beta-level30-priest-shadow-trinket1-273643",
+      "slot": "Trinket1",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Commander Springvale, Shadowfang Keep",
+      "note": "Unique-equipped: one equipped copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643/worgenbane-talisman",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/shadow-priest/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 21
+    },
+    {
+      "id": "forever-beta-level30-priest-shadow-trinket2-273643",
+      "slot": "Trinket2",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Commander Springvale, Shadowfang Keep",
+      "note": "Unique-equipped: one equipped copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643/worgenbane-talisman",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/shadow-priest/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 21
+    },
+    {
+      "id": "forever-beta-level30-priest-shadow-waist-6392",
+      "slot": "Waist",
+      "itemId": 6392,
+      "name": "Belt of Arugal",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Archmage Arugal, Shadowfang Keep",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_10.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=6392/belt-of-arugal",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/shadow-priest/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 23
+    },
+    {
+      "id": "forever-beta-level30-priest-shadow-hands-10654",
+      "slot": "Hands",
+      "itemId": 10654,
+      "name": "Jutebraid Gloves",
+      "requiredSuffix": null,
+      "acquisitionType": "Quest",
+      "source": "Horde Presence (Horde), Stonetalon Mountains",
+      "note": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_21.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=10654/jutebraid-gloves",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/shadow-priest/",
+      "weaponKind": "None",
+      "uniqueEquipped": false,
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     }
   ]
 }

@@ -1,0 +1,1631 @@
+{
+  "253983": {
+    "itemId": 253983,
+    "itemUrl": "https://www.wowhead.com/forever/item=253983/filigreed-pearly-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257417,
+        "name": "Filigreed Pearly Circlet",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257417",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253957": {
+    "itemId": 253957,
+    "itemUrl": "https://www.wowhead.com/forever/item=253957/pearly-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257404,
+        "name": "Pearly Circlet",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257404",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4322": {
+    "itemId": 4322,
+    "itemUrl": "https://www.wowhead.com/forever/item=4322/enchanters-cowl",
+    "createdBySpell": [
+      {
+        "spellId": 3857,
+        "name": "Enchanter's Cowl",
+        "learnedAtSkill": 165,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3857",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 165,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253969": {
+    "itemId": 253969,
+    "itemUrl": "https://www.wowhead.com/forever/item=253969/pearly-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257410,
+        "name": "Pearly Gown",
+        "learnedAtSkill": 110,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257410",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 110,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "7065": {
+    "itemId": 7065,
+    "itemUrl": "https://www.wowhead.com/forever/item=7065/green-silk-armor",
+    "createdBySpell": [
+      {
+        "spellId": 8784,
+        "name": "Green Silk Armor",
+        "learnedAtSkill": 165,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=8784",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 165,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253921": {
+    "itemId": 253921,
+    "itemUrl": "https://www.wowhead.com/forever/item=253921/pearly-gloves",
+    "createdBySpell": [
+      {
+        "spellId": 1257386,
+        "name": "Pearly Gloves",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257386",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253933": {
+    "itemId": 253933,
+    "itemUrl": "https://www.wowhead.com/forever/item=253933/pearly-sash",
+    "createdBySpell": [
+      {
+        "spellId": 1257392,
+        "name": "Pearly Sash",
+        "learnedAtSkill": 85,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257392",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 85,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "7055": {
+    "itemId": 7055,
+    "itemUrl": "https://www.wowhead.com/forever/item=7055/crimson-silk-belt",
+    "createdBySpell": [
+      {
+        "spellId": 8772,
+        "name": "Crimson Silk Belt",
+        "learnedAtSkill": 175,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=8772",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 175,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253995": {
+    "itemId": 253995,
+    "itemUrl": "https://www.wowhead.com/forever/item=253995/pearly-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257423,
+        "name": "Pearly Leggings",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257423",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253945": {
+    "itemId": 253945,
+    "itemUrl": "https://www.wowhead.com/forever/item=253945/filigreed-pearly-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257398,
+        "name": "Filigreed Pearly Leggings",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257398",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253897": {
+    "itemId": 253897,
+    "itemUrl": "https://www.wowhead.com/forever/item=253897/pearly-boots",
+    "createdBySpell": [
+      {
+        "spellId": 1257374,
+        "name": "Pearly Boots",
+        "learnedAtSkill": 60,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257374",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 60,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4320": {
+    "itemId": 4320,
+    "itemUrl": "https://www.wowhead.com/forever/item=4320/spidersilk-boots",
+    "createdBySpell": [
+      {
+        "spellId": 3855,
+        "name": "Spidersilk Boots",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3855",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4325": {
+    "itemId": 4325,
+    "itemUrl": "https://www.wowhead.com/forever/item=4325/boots-of-the-enchanter",
+    "createdBySpell": [
+      {
+        "spellId": 3860,
+        "name": "Boots of the Enchanter",
+        "learnedAtSkill": 175,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3860",
+        "recipeSourceTypes": [
+          2,
+          16
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 175,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4321": {
+    "itemId": 4321,
+    "itemUrl": "https://www.wowhead.com/forever/item=4321/spider-silk-slippers",
+    "createdBySpell": [
+      {
+        "spellId": 3856,
+        "name": "Spider Silk Slippers",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3856",
+        "recipeSourceTypes": [
+          2,
+          16
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253885": {
+    "itemId": 253885,
+    "itemUrl": "https://www.wowhead.com/forever/item=253885/novice-arcanists-sash",
+    "createdBySpell": [
+      {
+        "spellId": 1257368,
+        "name": "Novice Arcanist's Sash",
+        "learnedAtSkill": 50,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257368",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 50,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253909": {
+    "itemId": 253909,
+    "itemUrl": "https://www.wowhead.com/forever/item=253909/filigreed-pearly-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257380,
+        "name": "Filigreed Pearly Gown",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257380",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "215365": {
+    "itemId": 215365,
+    "itemUrl": "https://www.wowhead.com/forever/item=215365/invokers-mantle",
+    "createdBySpell": [
+      {
+        "spellId": 435848,
+        "name": "Invoker's Mantle",
+        "learnedAtSkill": 150,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=435848",
+        "recipeSourceTypes": [
+          2,
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 150,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "215366": {
+    "itemId": 215366,
+    "itemUrl": "https://www.wowhead.com/forever/item=215366/invokers-cord",
+    "createdBySpell": [
+      {
+        "spellId": 435841,
+        "name": "Invoker's Cord",
+        "learnedAtSkill": 150,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=435841",
+        "recipeSourceTypes": [
+          2,
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 150,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "249392": {
+    "itemId": 249392,
+    "itemUrl": "https://www.wowhead.com/forever/item=249392/glimmering-staff",
+    "createdBySpell": [
+      {
+        "spellId": 1248703,
+        "name": "Glimmering Staff",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          333
+        ],
+        "professions": [
+          "Enchanting"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1248703",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "249393": {
+    "itemId": 249393,
+    "itemUrl": "https://www.wowhead.com/forever/item=249393/soulstaff",
+    "createdBySpell": [
+      {
+        "spellId": 1248739,
+        "name": "Soulstaff",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          333
+        ],
+        "professions": [
+          "Enchanting"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1248739",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "249394": {
+    "itemId": 249394,
+    "itemUrl": "https://www.wowhead.com/forever/item=249394/orb-of-mystic-insight",
+    "createdBySpell": [
+      {
+        "spellId": 1248745,
+        "name": "Orb of Mystic Insight",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          333
+        ],
+        "professions": [
+          "Enchanting"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1248745",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4368": {
+    "itemId": 4368,
+    "itemUrl": "https://www.wowhead.com/forever/item=4368/flying-tiger-goggles",
+    "createdBySpell": [
+      {
+        "spellId": 3934,
+        "name": "Flying Tiger Goggles",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          202
+        ],
+        "professions": [
+          "Engineering"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3934",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4373": {
+    "itemId": 4373,
+    "itemUrl": "https://www.wowhead.com/forever/item=4373/shadow-goggles",
+    "createdBySpell": [
+      {
+        "spellId": 3940,
+        "name": "Shadow Goggles",
+        "learnedAtSkill": 120,
+        "professionIds": [
+          202
+        ],
+        "professions": [
+          "Engineering"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3940",
+        "recipeSourceTypes": [
+          2,
+          16
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 120,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4385": {
+    "itemId": 4385,
+    "itemUrl": "https://www.wowhead.com/forever/item=4385/green-tinted-goggles",
+    "createdBySpell": [
+      {
+        "spellId": 3956,
+        "name": "Green Tinted Goggles",
+        "learnedAtSkill": 150,
+        "professionIds": [
+          202
+        ],
+        "professions": [
+          "Engineering"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3956",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 150,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "10499": {
+    "itemId": 10499,
+    "itemUrl": "https://www.wowhead.com/forever/item=10499/bright-eye-goggles",
+    "createdBySpell": [
+      {
+        "spellId": 12587,
+        "name": "Bright-Eye Goggles",
+        "learnedAtSkill": 175,
+        "professionIds": [
+          202
+        ],
+        "professions": [
+          "Engineering"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=12587",
+        "recipeSourceTypes": [
+          2,
+          16
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 175,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4381": {
+    "itemId": 4381,
+    "itemUrl": "https://www.wowhead.com/forever/item=4381/minor-recombobulator",
+    "createdBySpell": [
+      {
+        "spellId": 3952,
+        "name": "Minor Recombobulator",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          202
+        ],
+        "professions": [
+          "Engineering"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3952",
+        "recipeSourceTypes": [
+          2,
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4396": {
+    "itemId": 4396,
+    "itemUrl": "https://www.wowhead.com/forever/item=4396/mechanical-dragonling",
+    "createdBySpell": [
+      {
+        "spellId": 3969,
+        "name": "Mechanical Dragonling",
+        "learnedAtSkill": 200,
+        "professionIds": [
+          202
+        ],
+        "professions": [
+          "Engineering"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3969",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 200,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253979": {
+    "itemId": 253979,
+    "itemUrl": "https://www.wowhead.com/forever/item=253979/filigreed-flame-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257415,
+        "name": "Filigreed Flame Circlet",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257415",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253953": {
+    "itemId": 253953,
+    "itemUrl": "https://www.wowhead.com/forever/item=253953/flame-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257402,
+        "name": "Flame Circlet",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257402",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253965": {
+    "itemId": 253965,
+    "itemUrl": "https://www.wowhead.com/forever/item=253965/flame-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257408,
+        "name": "Flame Gown",
+        "learnedAtSkill": 110,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257408",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 110,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253917": {
+    "itemId": 253917,
+    "itemUrl": "https://www.wowhead.com/forever/item=253917/flame-gloves",
+    "createdBySpell": [
+      {
+        "spellId": 1257384,
+        "name": "Flame Gloves",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257384",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253929": {
+    "itemId": 253929,
+    "itemUrl": "https://www.wowhead.com/forever/item=253929/flame-sash",
+    "createdBySpell": [
+      {
+        "spellId": 1257390,
+        "name": "Flame Sash",
+        "learnedAtSkill": 85,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257390",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 85,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253991": {
+    "itemId": 253991,
+    "itemUrl": "https://www.wowhead.com/forever/item=253991/flame-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257421,
+        "name": "Flame Leggings",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257421",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253941": {
+    "itemId": 253941,
+    "itemUrl": "https://www.wowhead.com/forever/item=253941/filigreed-flame-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257396,
+        "name": "Filigreed Flame Leggings",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257396",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253893": {
+    "itemId": 253893,
+    "itemUrl": "https://www.wowhead.com/forever/item=253893/flame-boots",
+    "createdBySpell": [
+      {
+        "spellId": 1257372,
+        "name": "Flame Boots",
+        "learnedAtSkill": 60,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257372",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 60,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253905": {
+    "itemId": 253905,
+    "itemUrl": "https://www.wowhead.com/forever/item=253905/filigreed-flame-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257378,
+        "name": "Filigreed Flame Gown",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257378",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253977": {
+    "itemId": 253977,
+    "itemUrl": "https://www.wowhead.com/forever/item=253977/filigreed-silky-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257414,
+        "name": "Filigreed Silky Circlet",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257414",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253951": {
+    "itemId": 253951,
+    "itemUrl": "https://www.wowhead.com/forever/item=253951/silky-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257401,
+        "name": "Silky Circlet",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257401",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "7048": {
+    "itemId": 7048,
+    "itemUrl": "https://www.wowhead.com/forever/item=7048/azure-silk-hood",
+    "createdBySpell": [
+      {
+        "spellId": 8760,
+        "name": "Azure Silk Hood",
+        "learnedAtSkill": 145,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=8760",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 145,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253963": {
+    "itemId": 253963,
+    "itemUrl": "https://www.wowhead.com/forever/item=253963/silky-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257407,
+        "name": "Silky Gown",
+        "learnedAtSkill": 110,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257407",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 110,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4324": {
+    "itemId": 4324,
+    "itemUrl": "https://www.wowhead.com/forever/item=4324/azure-silk-vest",
+    "createdBySpell": [
+      {
+        "spellId": 3859,
+        "name": "Azure Silk Vest",
+        "learnedAtSkill": 150,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3859",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 150,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4319": {
+    "itemId": 4319,
+    "itemUrl": "https://www.wowhead.com/forever/item=4319/azure-silk-gloves",
+    "createdBySpell": [
+      {
+        "spellId": 3854,
+        "name": "Azure Silk Gloves",
+        "learnedAtSkill": 145,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3854",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 145,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253915": {
+    "itemId": 253915,
+    "itemUrl": "https://www.wowhead.com/forever/item=253915/silky-gloves",
+    "createdBySpell": [
+      {
+        "spellId": 1257383,
+        "name": "Silky Gloves",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257383",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253927": {
+    "itemId": 253927,
+    "itemUrl": "https://www.wowhead.com/forever/item=253927/silky-sash",
+    "createdBySpell": [
+      {
+        "spellId": 1257389,
+        "name": "Silky Sash",
+        "learnedAtSkill": 85,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257389",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 85,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253989": {
+    "itemId": 253989,
+    "itemUrl": "https://www.wowhead.com/forever/item=253989/silky-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257420,
+        "name": "Silky Leggings",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257420",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253939": {
+    "itemId": 253939,
+    "itemUrl": "https://www.wowhead.com/forever/item=253939/filigreed-silky-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257395,
+        "name": "Filigreed Silky Leggings",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257395",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "7046": {
+    "itemId": 7046,
+    "itemUrl": "https://www.wowhead.com/forever/item=7046/azure-silk-pants",
+    "createdBySpell": [
+      {
+        "spellId": 8758,
+        "name": "Azure Silk Pants",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=8758",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253891": {
+    "itemId": 253891,
+    "itemUrl": "https://www.wowhead.com/forever/item=253891/silky-boots",
+    "createdBySpell": [
+      {
+        "spellId": 1257371,
+        "name": "Silky Boots",
+        "learnedAtSkill": 60,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257371",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 60,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "7053": {
+    "itemId": 7053,
+    "itemUrl": "https://www.wowhead.com/forever/item=7053/azure-silk-cloak",
+    "createdBySpell": [
+      {
+        "spellId": 8786,
+        "name": "Azure Silk Cloak",
+        "learnedAtSkill": 175,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=8786",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 175,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253903": {
+    "itemId": 253903,
+    "itemUrl": "https://www.wowhead.com/forever/item=253903/filigreed-silky-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257377,
+        "name": "Filigreed Silky Gown",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257377",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "217287": {
+    "itemId": 217287,
+    "itemUrl": "https://www.wowhead.com/forever/item=217287/greater-mystic-wand",
+    "createdBySpell": [
+      {
+        "spellId": 14810,
+        "name": "Greater Mystic Wand",
+        "learnedAtSkill": 175,
+        "professionIds": [
+          333
+        ],
+        "professions": [
+          "Enchanting"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=14810",
+        "recipeSourceTypes": [
+          6
+        ]
+      },
+      {
+        "spellId": 439134,
+        "name": "Greater Mystic Wand",
+        "learnedAtSkill": 175,
+        "professionIds": [
+          333
+        ],
+        "professions": [
+          "Enchanting"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=439134",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 175,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253975": {
+    "itemId": 253975,
+    "itemUrl": "https://www.wowhead.com/forever/item=253975/filigreed-pristine-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257413,
+        "name": "Filigreed Pristine Circlet",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257413",
+        "recipeSourceTypes": []
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253961": {
+    "itemId": 253961,
+    "itemUrl": "https://www.wowhead.com/forever/item=253961/pristine-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257406,
+        "name": "Pristine Gown",
+        "learnedAtSkill": 110,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257406",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 110,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253925": {
+    "itemId": 253925,
+    "itemUrl": "https://www.wowhead.com/forever/item=253925/pristine-sash",
+    "createdBySpell": [
+      {
+        "spellId": 1257388,
+        "name": "Pristine Sash",
+        "learnedAtSkill": 85,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257388",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 85,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253987": {
+    "itemId": 253987,
+    "itemUrl": "https://www.wowhead.com/forever/item=253987/pristine-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257419,
+        "name": "Pristine Leggings",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257419",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "254001": {
+    "itemId": 254001,
+    "itemUrl": "https://www.wowhead.com/forever/item=254001/gilded-slippers",
+    "createdBySpell": [
+      {
+        "spellId": 1257426,
+        "name": "Gilded Slippers",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257426",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253981": {
+    "itemId": 253981,
+    "itemUrl": "https://www.wowhead.com/forever/item=253981/filigreed-shadow-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257416,
+        "name": "Filigreed Shadow Circlet",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257416",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253967": {
+    "itemId": 253967,
+    "itemUrl": "https://www.wowhead.com/forever/item=253967/shadow-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257409,
+        "name": "Shadow Gown",
+        "learnedAtSkill": 110,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257409",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 110,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253919": {
+    "itemId": 253919,
+    "itemUrl": "https://www.wowhead.com/forever/item=253919/shadow-gloves",
+    "createdBySpell": [
+      {
+        "spellId": 1257385,
+        "name": "Shadow Gloves",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257385",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253931": {
+    "itemId": 253931,
+    "itemUrl": "https://www.wowhead.com/forever/item=253931/shadow-sash",
+    "createdBySpell": [
+      {
+        "spellId": 1257391,
+        "name": "Shadow Sash",
+        "learnedAtSkill": 85,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257391",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 85,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253993": {
+    "itemId": 253993,
+    "itemUrl": "https://www.wowhead.com/forever/item=253993/shadow-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257422,
+        "name": "Shadow Leggings",
+        "learnedAtSkill": 125,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257422",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 125,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "254007": {
+    "itemId": 254007,
+    "itemUrl": "https://www.wowhead.com/forever/item=254007/black-slippers",
+    "createdBySpell": [
+      {
+        "spellId": 1257429,
+        "name": "Black Slippers",
+        "learnedAtSkill": 140,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257429",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 140,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "3719": {
+    "itemId": 3719,
+    "itemUrl": "https://www.wowhead.com/forever/item=3719/hillmans-cloak",
+    "createdBySpell": [
+      {
+        "spellId": 3760,
+        "name": "Hillman's Cloak",
+        "learnedAtSkill": 150,
+        "professionIds": [
+          165
+        ],
+        "professions": [
+          "Leatherworking"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3760",
+        "recipeSourceTypes": [
+          6
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 150,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253955": {
+    "itemId": 253955,
+    "itemUrl": "https://www.wowhead.com/forever/item=253955/shadow-circlet",
+    "createdBySpell": [
+      {
+        "spellId": 1257403,
+        "name": "Shadow Circlet",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257403",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "4323": {
+    "itemId": 4323,
+    "itemUrl": "https://www.wowhead.com/forever/item=4323/shadow-hood",
+    "createdBySpell": [
+      {
+        "spellId": 3858,
+        "name": "Shadow Hood",
+        "learnedAtSkill": 170,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=3858",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 170,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "7047": {
+    "itemId": 7047,
+    "itemUrl": "https://www.wowhead.com/forever/item=7047/hands-of-darkness",
+    "createdBySpell": [
+      {
+        "spellId": 8780,
+        "name": "Hands of Darkness",
+        "learnedAtSkill": 145,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=8780",
+        "recipeSourceTypes": [
+          2,
+          16
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 145,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "253943": {
+    "itemId": 253943,
+    "itemUrl": "https://www.wowhead.com/forever/item=253943/filigreed-shadow-leggings",
+    "createdBySpell": [
+      {
+        "spellId": 1257397,
+        "name": "Filigreed Shadow Leggings",
+        "learnedAtSkill": 100,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257397",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 100,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "7027": {
+    "itemId": 7027,
+    "itemUrl": "https://www.wowhead.com/forever/item=7027/boots-of-darkness",
+    "createdBySpell": [
+      {
+        "spellId": 8778,
+        "name": "Boots of Darkness",
+        "learnedAtSkill": null,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=8778",
+        "recipeSourceTypes": []
+      }
+    ],
+    "minimumVerifiedRecipeSkill": null,
+    "recipeWithinLevel30ExpertCap": false
+  },
+  "253907": {
+    "itemId": 253907,
+    "itemUrl": "https://www.wowhead.com/forever/item=253907/filigreed-shadow-gown",
+    "createdBySpell": [
+      {
+        "spellId": 1257379,
+        "name": "Filigreed Shadow Gown",
+        "learnedAtSkill": 75,
+        "professionIds": [
+          197
+        ],
+        "professions": [
+          "Tailoring"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1257379",
+        "recipeSourceTypes": [
+          2
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 75,
+    "recipeWithinLevel30ExpertCap": true
+  },
+  "277041": {
+    "itemId": 277041,
+    "itemUrl": "https://www.wowhead.com/forever/item=277041",
+    "createdBySpell": [
+      {
+        "spellId": 1301527,
+        "name": "Cloudy Skyforged Pauldrons",
+        "learnedAtSkill": 175,
+        "professionIds": [
+          164
+        ],
+        "professions": [
+          "Blacksmithing"
+        ],
+        "spellUrl": "https://www.wowhead.com/forever/spell=1301527",
+        "recipeSourceTypes": [
+          5
+        ]
+      }
+    ],
+    "minimumVerifiedRecipeSkill": 175,
+    "recipeWithinLevel30ExpertCap": true
+  }
+}

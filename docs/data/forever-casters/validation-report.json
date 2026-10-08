@@ -5,78 +5,80 @@
       "class": "Mage",
       "spec": "arcane",
       "items": 94,
-      "placementRows": 105,
-      "dungeonQuestRows": 76,
+      "placementRows": 106,
+      "dungeonQuestRows": 77,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Mage",
       "spec": "fire",
       "items": 94,
-      "placementRows": 105,
-      "dungeonQuestRows": 76,
+      "placementRows": 106,
+      "dungeonQuestRows": 77,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Mage",
       "spec": "frost",
       "items": 99,
-      "placementRows": 110,
-      "dungeonQuestRows": 76,
+      "placementRows": 111,
+      "dungeonQuestRows": 77,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Priest",
       "spec": "discipline",
-      "items": 54,
-      "placementRows": 65,
-      "dungeonQuestRows": 52,
+      "items": 55,
+      "placementRows": 67,
+      "dungeonQuestRows": 54,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Priest",
       "spec": "holy",
-      "items": 54,
-      "placementRows": 65,
-      "dungeonQuestRows": 52,
+      "items": 55,
+      "placementRows": 67,
+      "dungeonQuestRows": 54,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Priest",
       "spec": "shadow",
-      "items": 51,
-      "placementRows": 62,
-      "dungeonQuestRows": 47,
+      "items": 52,
+      "placementRows": 64,
+      "dungeonQuestRows": 49,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Warlock",
       "spec": "affliction",
-      "items": 96,
+      "items": 95,
       "placementRows": 104,
-      "dungeonQuestRows": 72,
+      "dungeonQuestRows": 73,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Warlock",
       "spec": "demonology",
-      "items": 96,
+      "items": 95,
       "placementRows": 104,
-      "dungeonQuestRows": 72,
+      "dungeonQuestRows": 73,
       "dungeonQuestSlots": 17
     },
     {
       "class": "Warlock",
       "spec": "destruction",
-      "items": 96,
+      "items": 95,
       "placementRows": 104,
-      "dungeonQuestRows": 72,
+      "dungeonQuestRows": 73,
       "dungeonQuestSlots": 17
     }
   ],
-  "placementRows": 824,
-  "checkedItemPages": 162,
-  "checkedQuestPages": 46,
-  "http200Icons": 109,
+  "placementRows": 833,
+  "checkedItemPages": 165,
+  "checkedQuestPages": 104,
+  "http200Icons": 110,
+  "completeFactionSets": 18,
+  "checkedCraftingRecipes": 68,
   "result": "PASS"
 }

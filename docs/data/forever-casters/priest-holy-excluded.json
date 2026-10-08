@@ -8,5 +8,19 @@
     "itemId": 15999,
     "name": "Spellpower Goggles Xtreme Plus",
     "reason": "Engineering above the level-30 beta skill cap (225)."
+  },
+  {
+    "itemId": 271767,
+    "name": "Healer's Staff",
+    "reason": "Horde beta-fix report does not independently verify Alliance acquisition; excluded from active product data until both claimed faction routes are verified.",
+    "sourceUrl": "https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview",
+    "researchEvidenceFile": "excluded-research.json"
+  },
+  {
+    "itemId": 270036,
+    "name": "Magistrate's Pantaloons",
+    "reason": "Original guide and item reward-from-quest table conflict with The Fury Runs Deep's current reward IDs; excluded until the quest reward identity is resolved.",
+    "sourceUrl": "https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview",
+    "researchEvidenceFile": "excluded-research.json"
   }
 ]

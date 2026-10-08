@@ -18,6 +18,29 @@
         1
       ]
     ],
+    "itemRewards": [
+      [
+        7344,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      269,
+      270,
+      321,
+      322,
+      323,
+      324,
+      325,
+      453,
+      526
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=55"
   },
   "377": {
@@ -39,6 +62,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=377"
   },
   "378": {
@@ -56,6 +81,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=378"
   },
   "386": {
@@ -77,6 +104,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=386"
   },
   "505": {
@@ -94,6 +123,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=505"
   },
   "971": {
@@ -102,6 +133,13 @@
     "minimumLevel": 10,
     "factionCode": 1,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        6743,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=971"
   },
   "1013": {
@@ -123,6 +161,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1013"
   },
   "1051": {
@@ -140,6 +180,13 @@
         1
       ]
     ],
+    "itemRewards": [
+      [
+        7751,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1051"
   },
   "1089": {
@@ -148,6 +195,24 @@
     "minimumLevel": 20,
     "factionCode": 2,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        6669,
+        1
+      ],
+      [
+        6670,
+        1
+      ],
+      [
+        6671,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      1087,
+      1088
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=1089"
   },
   "1098": {
@@ -169,6 +234,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1098"
   },
   "1101": {
@@ -189,6 +256,15 @@
         6725,
         1
       ]
+    ],
+    "itemRewards": [
+      [
+        3041,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      1100
     ],
     "questUrl": "https://www.wowhead.com/forever/quest=1101"
   },
@@ -211,6 +287,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1102"
   },
   "1144": {
@@ -236,6 +314,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1144"
   },
   "1199": {
@@ -244,6 +324,21 @@
     "minimumLevel": 20,
     "factionCode": 1,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        6998,
+        1
+      ],
+      [
+        7000,
+        1
+      ],
+      [
+        270025,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1199"
   },
   "1200": {
@@ -269,6 +364,10 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1198
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=1200"
   },
   "1275": {
@@ -289,6 +388,10 @@
         270021,
         1
       ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      3765
     ],
     "questUrl": "https://www.wowhead.com/forever/quest=1275"
   },
@@ -315,6 +418,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1440"
   },
   "1740": {
@@ -332,6 +437,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1740"
   },
   "1952": {
@@ -353,6 +460,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=1952"
   },
   "2841": {
@@ -374,6 +483,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=2841"
   },
   "2904": {
@@ -395,6 +506,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=2904"
   },
   "2928": {
@@ -416,6 +529,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=2928"
   },
   "2929": {
@@ -437,6 +552,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=2929"
   },
   "2930": {
@@ -445,6 +562,19 @@
     "minimumLevel": 25,
     "factionCode": 1,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        9605,
+        1
+      ],
+      [
+        9604,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      2931
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=2930"
   },
   "2948": {
@@ -453,6 +583,15 @@
     "minimumLevel": 28,
     "factionCode": 1,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        9538,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      2947
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=2948"
   },
   "2950": {
@@ -461,6 +600,15 @@
     "minimumLevel": 28,
     "factionCode": 2,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        9588,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      2949
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=2950"
   },
   "3514": {
@@ -482,6 +630,10 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      3513
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=3514"
   },
   "4904": {
@@ -499,6 +651,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=4904"
   },
   "5151": {
@@ -507,6 +661,13 @@
     "minimumLevel": 24,
     "factionCode": 2,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        15467,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=5151"
   },
   "6284": {
@@ -524,6 +685,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=6284"
   },
   "6521": {
@@ -544,6 +707,10 @@
         17043,
         1
       ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      6522
     ],
     "questUrl": "https://www.wowhead.com/forever/quest=6521"
   },
@@ -570,6 +737,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=6561"
   },
   "6565": {
@@ -586,6 +755,10 @@
         17695,
         1
       ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      6564
     ],
     "questUrl": "https://www.wowhead.com/forever/quest=6565"
   },
@@ -608,6 +781,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=6571"
   },
   "78150": {
@@ -625,6 +800,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=78150"
   },
   "86576": {
@@ -633,6 +810,13 @@
     "minimumLevel": 18,
     "factionCode": 2,
     "itemChoices": [],
+    "itemRewards": [
+      [
+        281252,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=86576"
   },
   "92456": {
@@ -650,6 +834,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=92456"
   },
   "92489": {
@@ -667,6 +853,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=92489"
   },
   "95646": {
@@ -688,6 +876,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=95646"
   },
   "95682": {
@@ -704,6 +894,15 @@
         271732,
         1
       ]
+    ],
+    "itemRewards": [
+      [
+        271745,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      95663
     ],
     "questUrl": "https://www.wowhead.com/forever/quest=95682"
   },
@@ -722,6 +921,17 @@
         1
       ]
     ],
+    "itemRewards": [
+      [
+        250185,
+        1
+      ],
+      [
+        250077,
+        5
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=95697"
   },
   "95795": {
@@ -739,6 +949,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=95795"
   },
   "95809": {
@@ -755,6 +967,19 @@
         3827,
         4
       ]
+    ],
+    "itemRewards": [
+      [
+        2459,
+        1
+      ],
+      [
+        280766,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      95647
     ],
     "questUrl": "https://www.wowhead.com/forever/quest=95809"
   },
@@ -773,6 +998,8 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
     "questUrl": "https://www.wowhead.com/forever/quest=96988"
   },
   "98823": {
@@ -793,6 +1020,10 @@
         271719,
         1
       ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95664
     ],
     "questUrl": "https://www.wowhead.com/forever/quest=98823"
   },
@@ -815,6 +1046,897 @@
         1
       ]
     ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95810
+    ],
     "questUrl": "https://www.wowhead.com/forever/quest=98824"
+  },
+  "95": {
+    "questId": 95,
+    "name": "Sven's Revenge",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=95"
+  },
+  "230": {
+    "questId": 230,
+    "name": "Sven's Camp",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=230"
+  },
+  "262": {
+    "questId": 262,
+    "name": "The Shadowy Figure",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=262"
+  },
+  "265": {
+    "questId": 265,
+    "name": "The Shadowy Search Continues",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=265"
+  },
+  "266": {
+    "questId": 266,
+    "name": "Inquire at the Inn",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=266"
+  },
+  "268": {
+    "questId": 268,
+    "name": "Return to Sven",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      453
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=268"
+  },
+  "269": {
+    "questId": 269,
+    "name": "Seeking Wisdom",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      323,
+      453
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=269"
+  },
+  "270": {
+    "questId": 270,
+    "name": "The Doomed Fleet",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      269,
+      323,
+      453
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=270"
+  },
+  "321": {
+    "questId": 321,
+    "name": "Lightforge Iron",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [
+      [
+        2702,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      269,
+      270,
+      323,
+      453
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=321"
+  },
+  "322": {
+    "questId": 322,
+    "name": "Blessed Arm",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      269,
+      270,
+      321,
+      323,
+      324,
+      453,
+      526
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=322"
+  },
+  "323": {
+    "questId": 323,
+    "name": "Proving Your Worth",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      453
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=323"
+  },
+  "324": {
+    "questId": 324,
+    "name": "The Lost Ingots",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      269,
+      270,
+      321,
+      323,
+      453
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=324"
+  },
+  "325": {
+    "questId": 325,
+    "name": "Armed and Ready",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      269,
+      270,
+      321,
+      322,
+      323,
+      324,
+      453,
+      526
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=325"
+  },
+  "453": {
+    "questId": 453,
+    "name": "Finding the Shadowy Figure",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=453"
+  },
+  "526": {
+    "questId": 526,
+    "name": "Lightforge Ingots",
+    "minimumLevel": 20,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      95,
+      230,
+      262,
+      265,
+      266,
+      268,
+      269,
+      270,
+      321,
+      323,
+      324,
+      453
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=526"
+  },
+  "1087": {
+    "questId": 1087,
+    "name": "Cenarius' Legacy",
+    "minimumLevel": 20,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=1087"
+  },
+  "1088": {
+    "questId": 1088,
+    "name": "Ordanus",
+    "minimumLevel": 20,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1087
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1088"
+  },
+  "1100": {
+    "questId": 1100,
+    "name": "Lonebrow's Journal",
+    "minimumLevel": 29,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=1100"
+  },
+  "1198": {
+    "questId": 1198,
+    "name": "In Search of Thaelrid",
+    "minimumLevel": 18,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=1198"
+  },
+  "2931": {
+    "questId": 2931,
+    "name": "Castpipe's Task",
+    "minimumLevel": 25,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=2931"
+  },
+  "2947": {
+    "questId": 2947,
+    "name": "Return of the Ring",
+    "minimumLevel": 28,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=2947"
+  },
+  "2949": {
+    "questId": 2949,
+    "name": "Return of the Ring",
+    "minimumLevel": 28,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=2949"
+  },
+  "3513": {
+    "questId": 3513,
+    "name": "The Runed Scroll",
+    "minimumLevel": 15,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=3513"
+  },
+  "3765": {
+    "questId": 3765,
+    "name": "The Corruption Abroad",
+    "minimumLevel": 18,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=3765"
+  },
+  "6522": {
+    "questId": 6522,
+    "name": "An Unholy Alliance",
+    "minimumLevel": 28,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=6522"
+  },
+  "6564": {
+    "questId": 6564,
+    "name": "Allegiance to the Old Gods",
+    "minimumLevel": 17,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=6564"
+  },
+  "95647": {
+    "questId": 95647,
+    "name": "Lost in the Thicket Things",
+    "minimumLevel": 24,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=95647"
+  },
+  "95663": {
+    "questId": 95663,
+    "name": "Dragonmaw Rumors",
+    "minimumLevel": 24,
+    "factionCode": null,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=95663"
+  },
+  "95664": {
+    "questId": 95664,
+    "name": "Elder Knowledge",
+    "minimumLevel": 24,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=95664"
+  },
+  "95810": {
+    "questId": 95810,
+    "name": "Lost Relic Carry",
+    "minimumLevel": 24,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=95810"
+  },
+  "442": {
+    "questId": 442,
+    "name": "Assault on Fenris Isle",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [
+      [
+        3461,
+        1
+      ],
+      [
+        3462,
+        1
+      ],
+      [
+        270020,
+        1
+      ],
+      [
+        276722,
+        1
+      ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      446,
+      448
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=442"
+  },
+  "79536": {
+    "questId": 79536,
+    "name": "Greater Friend of the Library",
+    "minimumLevel": 20,
+    "factionCode": 3,
+    "itemChoices": [
+      [
+        281634,
+        1
+      ],
+      [
+        281635,
+        1
+      ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=79536"
+  },
+  "95981": {
+    "questId": 95981,
+    "name": "Watching the Roads",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [
+      [
+        281265,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      477,
+      478,
+      479,
+      481,
+      482
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=95981"
+  },
+  "446": {
+    "questId": 446,
+    "name": "Thule Ravenclaw",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [
+      [
+        3251,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=446"
+  },
+  "448": {
+    "questId": 448,
+    "name": "Report to Hadrec",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [
+      [
+        3240,
+        5
+      ],
+      [
+        2863,
+        5
+      ]
+    ],
+    "itemRewards": [
+      [
+        2313,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      446
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=448"
+  },
+  "477": {
+    "questId": 477,
+    "name": "Border Crossings",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=477"
+  },
+  "478": {
+    "questId": 478,
+    "name": "Maps and Runes",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      477
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=478"
+  },
+  "479": {
+    "questId": 479,
+    "name": "Ambermill Investigations",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      477,
+      478,
+      481,
+      482
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=479"
+  },
+  "481": {
+    "questId": 481,
+    "name": "Dalar's Analysis",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      477,
+      478
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=481"
+  },
+  "482": {
+    "questId": 482,
+    "name": "Dalaran's Intentions",
+    "minimumLevel": 10,
+    "factionCode": 2,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      477,
+      478,
+      481
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=482"
+  },
+  "166": {
+    "questId": 166,
+    "name": "The Defias Brotherhood",
+    "minimumLevel": 14,
+    "factionCode": 1,
+    "itemChoices": [
+      [
+        6087,
+        1
+      ],
+      [
+        2041,
+        1
+      ],
+      [
+        2042,
+        1
+      ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      155
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=166"
+  },
+  "188": {
+    "questId": 188,
+    "name": "Tiger Mastery",
+    "minimumLevel": 28,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [
+      [
+        4107,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [
+      185,
+      186,
+      187
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=188"
+  },
+  "1188": {
+    "questId": 1188,
+    "name": "Safety First",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178,
+      1180,
+      1181,
+      1182,
+      1183,
+      1186,
+      1187
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1188"
+  },
+  "1189": {
+    "questId": 1189,
+    "name": "Safety First",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [
+      [
+        6726,
+        1
+      ],
+      [
+        6727,
+        1
+      ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178,
+      1180,
+      1181,
+      1182,
+      1183,
+      1186,
+      1187,
+      1188
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1189"
+  },
+  "1393": {
+    "questId": 1393,
+    "name": "Galen's Escape",
+    "minimumLevel": 30,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [
+      [
+        6828,
+        1
+      ]
+    ],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=1393"
+  },
+  "155": {
+    "questId": 155,
+    "name": "The Defias Brotherhood",
+    "minimumLevel": 14,
+    "factionCode": 1,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=155"
+  },
+  "185": {
+    "questId": 185,
+    "name": "Tiger Mastery",
+    "minimumLevel": 28,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=185"
+  },
+  "186": {
+    "questId": 186,
+    "name": "Tiger Mastery",
+    "minimumLevel": 28,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      185
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=186"
+  },
+  "187": {
+    "questId": 187,
+    "name": "Tiger Mastery",
+    "minimumLevel": 28,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      185,
+      186
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=187"
+  },
+  "1176": {
+    "questId": 1176,
+    "name": "Load Lightening",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=1176"
+  },
+  "1178": {
+    "questId": 1178,
+    "name": "Goblin Sponsorship",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1178"
+  },
+  "1180": {
+    "questId": 1180,
+    "name": "Goblin Sponsorship",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1180"
+  },
+  "1181": {
+    "questId": 1181,
+    "name": "Goblin Sponsorship",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178,
+      1180
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1181"
+  },
+  "1182": {
+    "questId": 1182,
+    "name": "Goblin Sponsorship",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178,
+      1180,
+      1181
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1182"
+  },
+  "1183": {
+    "questId": 1183,
+    "name": "Goblin Sponsorship",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178,
+      1180,
+      1181,
+      1182
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1183"
+  },
+  "1186": {
+    "questId": 1186,
+    "name": "The Eighteenth Pilot",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178,
+      1180,
+      1181,
+      1182,
+      1183
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1186"
+  },
+  "1187": {
+    "questId": 1187,
+    "name": "Razzeric's Tweaking",
+    "minimumLevel": 29,
+    "factionCode": 3,
+    "itemChoices": [],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [
+      1176,
+      1178,
+      1180,
+      1181,
+      1182,
+      1183,
+      1186
+    ],
+    "questUrl": "https://www.wowhead.com/forever/quest=1187"
+  },
+  "1142": {
+    "questId": 1142,
+    "name": "Mortality Wanes",
+    "minimumLevel": 25,
+    "factionCode": 1,
+    "itemChoices": [
+      [
+        6751,
+        1
+      ],
+      [
+        6752,
+        1
+      ]
+    ],
+    "itemRewards": [],
+    "publishedPrerequisiteQuestIds": [],
+    "questUrl": "https://www.wowhead.com/forever/quest=1142"
   }
 }

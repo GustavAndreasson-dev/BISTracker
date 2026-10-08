@@ -1,0 +1,38 @@
+[
+  {
+    "class": "Mage",
+    "spec": "frost",
+    "itemId": 273298,
+    "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview",
+    "guideLevelCap": 20,
+    "section": "Best Level 20 Dungeon Drops for Frost Mages in Forever",
+    "observedRecommendation": "The Deadmines \r\n   - Rhahk'Zor  (technically Healing) \r\n  - Sneed's Shredder\r\n  - Gilnid\r\n  - Captain Greenskin\r\n  - Cookie\r\n  - Cookie\r\n  - Edwin VanCleef  (technically Healing)"
+  },
+  {
+    "class": "Warlock",
+    "spec": "affliction",
+    "itemId": 273298,
+    "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview",
+    "guideLevelCap": 20,
+    "section": "Best Level 20 Dungeon Drops for Affliction Warlocks in Forever",
+    "observedRecommendation": "The Deadmines \r\n   - Rhahk'Zor  (technically Healing) \r\n  - Sneed's Shredder\r\n  - Gilnid\r\n  - Captain Greenskin\r\n  - Cookie\r\n  - Cookie\r\n  - Edwin VanCleef  (technically Healing)"
+  },
+  {
+    "class": "Warlock",
+    "spec": "demonology",
+    "itemId": 273298,
+    "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview",
+    "guideLevelCap": 20,
+    "section": "Best Level 20 Dungeon Drops for Demonology Warlocks in Forever",
+    "observedRecommendation": "The Deadmines \r\n   - Rhahk'Zor  (technically Healing) \r\n  - Sneed's Shredder\r\n  - Gilnid\r\n  - Captain Greenskin\r\n  - Cookie\r\n  - Cookie\r\n  - Edwin VanCleef  (technically Healing)"
+  },
+  {
+    "class": "Warlock",
+    "spec": "destruction",
+    "itemId": 273298,
+    "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview",
+    "guideLevelCap": 20,
+    "section": "Best Level 20 Dungeon Drops for Destruction Warlocks in Forever",
+    "observedRecommendation": "The Deadmines \r\n   - Rhahk'Zor  (technically Healing) \r\n  - Sneed's Shredder\r\n  - Gilnid\r\n  - Captain Greenskin\r\n  - Cookie\r\n  - Cookie\r\n  - Edwin VanCleef  (technically Healing)"
+  }
+]

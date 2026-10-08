@@ -43,5 +43,18 @@
     "itemId": 21072,
     "name": "Smoked Sagefish",
     "reason": "Consumable or recipe; not equipment."
+  },
+  {
+    "itemId": 7027,
+    "name": "Boots of Darkness",
+    "reason": "Forever created-by-spell references spell8778 but publishes no learnedat skill; no independently verified level-30 recipe availability. Excluded rather than inferring Classic recipe rules.",
+    "sourceUrl": "https://www.wowhead.com/forever/item=7027/boots-of-darkness"
+  },
+  {
+    "itemId": 271767,
+    "name": "Healer's Staff",
+    "reason": "Horde beta-fix report does not independently verify Alliance acquisition; excluded from active product data until both claimed faction routes are verified.",
+    "sourceUrl": "https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-30-dps-overview",
+    "researchEvidenceFile": "excluded-research.json"
   }
 ]

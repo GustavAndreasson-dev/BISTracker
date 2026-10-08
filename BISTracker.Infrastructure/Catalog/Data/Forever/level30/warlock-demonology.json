@@ -10,8 +10,10 @@
   "patch": "1.60.1",
   "sourceUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
   "reviewedOn": "2026-10-08",
-  "supplementarySourceUrls": [],
-  "selectionMethod": "Named equipment alternatives in the original Wowhead level-30 Forever guide. No independent ranking; consumables, unverified bonus variants and unavailable profession requirements excluded.",
+  "supplementarySourceUrls": [
+    "https://wowtbc.gg/warcraftforever/bis-list/demonology-warlock/"
+  ],
+  "selectionMethod": "Named equipment alternatives in the original Wowhead level-30 Forever guide. No independent ranking; consumables, unverified bonus variants and unavailable profession requirements excluded. Additional missing-slot alternatives are independently sourced from each original Forever spec guide/list; no ranking or equal-strength groups inferred.",
   "status": "Reviewed",
   "items": [
     {
@@ -166,7 +168,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Targorr the Dread, The Stockade",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_15.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273806/dark-horde-band",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -182,7 +184,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Targorr the Dread, The Stockade",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_15.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=273806/dark-horde-band",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -390,7 +392,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Charlga Razorflank, Razorfen Kraul",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bone_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6693/agamaggans-clutch",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -406,7 +408,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Dungeon",
       "source": "Charlga Razorflank, Razorfen Kraul",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bone_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6693/agamaggans-clutch",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -556,7 +558,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-finger1-281635",
@@ -566,13 +572,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Greater Friend of the Library",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_14.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=281635/philanthropists-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-finger2-281635",
@@ -582,13 +592,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Greater Friend of the Library",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_14.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=281635/philanthropists-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-neck-281265",
@@ -597,14 +611,17 @@
       "name": "Roadwatcher's Confidence",
       "requiredSuffix": null,
       "acquisitionType": "Quest",
-      "source": "Watching the Roads",
+      "source": "Watching the Roads (Horde)",
       "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_necklace_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=281265/roadwatchers-confidence",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-shoulder-11884",
@@ -620,7 +637,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-back-2953",
@@ -636,7 +656,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-hands-3759",
@@ -652,7 +675,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-chest-3461",
@@ -668,7 +694,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-waist-16975",
@@ -684,7 +713,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-back-15468",
@@ -700,7 +732,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-hands-10654",
@@ -716,7 +751,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-shoulder-3324",
@@ -732,7 +770,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-hands-270030",
@@ -748,7 +789,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-hands-270029",
@@ -764,7 +808,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-mainhand-1317",
@@ -780,7 +827,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-mainhand-15109",
@@ -796,7 +846,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "TwoHanded",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-offhand-6898",
@@ -812,7 +866,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "OffHand",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-ranged-7001",
@@ -828,7 +886,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-shoulder-17695",
@@ -844,7 +906,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-finger1-6743",
@@ -854,13 +919,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Knowledge in the Deeps (Alliance), Blackfathom Deeps",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_08.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6743/sustaining-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-finger2-6743",
@@ -870,13 +938,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Knowledge in the Deeps (Alliance), Blackfathom Deeps",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_08.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=6743/sustaining-ring",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-back-7004",
@@ -892,7 +963,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-feet-6998",
@@ -908,23 +982,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
-    },
-    {
-      "id": "forever-beta-level30-warlock-demonology-mainhand-271767",
-      "slot": "MainHand",
-      "itemId": 271767,
-      "name": "Healer's Staff",
-      "requiredSuffix": null,
-      "acquisitionType": "Quest",
-      "source": "Prehistoric Prism / Earthen Echo, Excavation Site: Wetlands",
-      "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
-      "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
-      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
-      "weaponKind": "TwoHanded",
-      "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-wrist-271740",
@@ -940,7 +1001,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-finger1-271670",
@@ -950,13 +1014,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Horrors in the Highland (Alliance), Excavation Site: Wetlands",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271670/curl-of-life",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-finger2-271670",
@@ -966,13 +1033,16 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Horrors in the Highland (Alliance), Excavation Site: Wetlands",
-      "note": "Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Unique-equipped: one equipped copy.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_12.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=271670/curl-of-life",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-trinket1-280766",
@@ -982,13 +1052,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Heartwoven / Changing Tastes, Excavation Site: Wetlands",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bag_08.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=280766/satchel-of-potions",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-trinket2-280766",
@@ -998,13 +1072,17 @@
       "requiredSuffix": null,
       "acquisitionType": "Quest",
       "source": "Heartwoven / Changing Tastes, Excavation Site: Wetlands",
-      "note": "Alternative slot placement; not a recommendation for two copies.",
+      "note": "",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bag_08.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=280766/satchel-of-potions",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-shoulder-4197",
@@ -1020,7 +1098,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-chest-17043",
@@ -1036,7 +1118,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-shoulder-9536",
@@ -1052,7 +1137,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-hands-9609",
@@ -1068,7 +1157,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-chest-9623",
@@ -1084,7 +1176,11 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance",
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-back-9605",
@@ -1100,7 +1196,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-shoulder-7750",
@@ -1116,7 +1215,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-back-279835",
@@ -1132,7 +1234,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-waist-251962",
@@ -1148,7 +1253,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 0
+      "requiredLevel": 0,
+      "availableFactions": [
+        "Alliance"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-ranged-279847",
@@ -1164,7 +1272,10 @@
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
-      "requiredLevel": 1
+      "requiredLevel": 1,
+      "availableFactions": [
+        "Horde"
+      ]
     },
     {
       "id": "forever-beta-level30-warlock-demonology-head-253981",
@@ -1174,7 +1285,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Recipe requires Merchant's Favor. Bind on pickup; crafted for personal use.",
+      "note": "Recipe requires Merchant's Favor. Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_crown_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253981/filigreed-shadow-circlet",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1190,7 +1301,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 100.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_crown_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253955/shadow-circlet",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1206,7 +1317,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 170.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_27.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4323/shadow-hood",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1222,7 +1333,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 165.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_31.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4322/enchanters-cowl",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1238,7 +1349,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Recipe requires Merchant's Favor. Bind on pickup; crafted for personal use.",
+      "note": "Recipe requires Merchant's Favor. Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 110.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_cloth_48.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253967/shadow-gown",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1254,7 +1365,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 165.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_cloth_06.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=7065/green-silk-armor",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1270,7 +1381,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 145.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_22.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=7047/hands-of-darkness",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1286,7 +1397,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Recipe requires Merchant's Favor. Bind on pickup; crafted for personal use.",
+      "note": "Recipe requires Merchant's Favor. Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 75.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_27.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253919/shadow-gloves",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1302,7 +1413,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 85.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_43.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253931/shadow-sash",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1318,7 +1429,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_04.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=7055/crimson-silk-belt",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1334,7 +1445,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_11.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253993/shadow-leggings",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1350,7 +1461,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "(pattern drops from Skum in Wailing Caverns) Bind on pickup; crafted for personal use.",
+      "note": "(pattern drops from Skum in Wailing Caverns) Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 100.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_11.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253943/filigreed-shadow-leggings",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1366,7 +1477,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "(taught by the trainer at 140) Bind on pickup; crafted for personal use.",
+      "note": "(taught by the trainer at 140) Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_cloth_21.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=254007/black-slippers",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1382,29 +1493,13 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "(hard to obtain mats for)",
+      "note": "(hard to obtain mats for) Crafting recipe: Tailoring 125.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4320/spidersilk-boots",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": false,
       "requiredLevel": 20
-    },
-    {
-      "id": "forever-beta-level30-warlock-demonology-feet-7027",
-      "slot": "Feet",
-      "itemId": 7027,
-      "name": "Boots of Darkness",
-      "requiredSuffix": null,
-      "acquisitionType": "Crafting",
-      "source": "Tailoring crafting",
-      "note": "",
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_05.jpg",
-      "itemUrl": "https://www.wowhead.com/forever/item=7027/boots-of-darkness",
-      "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
-      "weaponKind": "None",
-      "uniqueEquipped": false,
-      "requiredLevel": 23
     },
     {
       "id": "forever-beta-level30-warlock-demonology-feet-4325",
@@ -1414,7 +1509,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_05.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4325/boots-of-the-enchanter",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1430,7 +1525,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4321/spider-silk-slippers",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1446,7 +1541,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 50.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_43a.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253885/novice-arcanists-sash",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1462,7 +1557,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "Bind on pickup; crafted for personal use.",
+      "note": "Bind on pickup; crafted for personal use. Crafting recipe: Tailoring 75.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_cloth_48.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=253907/filigreed-shadow-gown",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1478,7 +1573,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_02.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=215365/invokers-mantle",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1494,7 +1589,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Tailoring crafting",
-      "note": "",
+      "note": "Crafting recipe: Tailoring 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_03.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=215366/invokers-cord",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1510,7 +1605,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Enchanting crafting",
-      "note": "(crafter only) Bind on pickup; crafted for personal use.",
+      "note": "(crafter only) Bind on pickup; crafted for personal use. Crafting recipe: Enchanting 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_19.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249392/glimmering-staff",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1526,7 +1621,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Enchanting crafting",
-      "note": "(crafter only) Bind on pickup; crafted for personal use.",
+      "note": "(crafter only) Bind on pickup; crafted for personal use. Crafting recipe: Enchanting 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_31.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249393/soulstaff",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1542,7 +1637,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Enchanting crafting",
-      "note": "(crafter only) Bind on pickup; crafted for personal use.",
+      "note": "(crafter only) Bind on pickup; crafted for personal use. Crafting recipe: Enchanting 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_blue.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=249394/orb-of-mystic-insight",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1558,7 +1653,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 100.",
+      "note": "Requires Engineering 100. Crafting recipe: Engineering 100.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_47.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4368/flying-tiger-goggles",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1574,7 +1669,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 120.",
+      "note": "Requires Engineering 120. Crafting recipe: Engineering 120.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_47.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4373/shadow-goggles",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1590,7 +1685,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 150.",
+      "note": "Requires Engineering 150. Crafting recipe: Engineering 150.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_47.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4385/green-tinted-goggles",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1606,7 +1701,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 175.",
+      "note": "Requires Engineering 175. Crafting recipe: Engineering 175.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_47.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=10499/bright-eye-goggles",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1622,7 +1717,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Crafting recipe: Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381/minor-recombobulator",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1638,7 +1733,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 140. Unique-equipped: one equipped copy. Crafting recipe: Engineering 140.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4381/minor-recombobulator",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1654,7 +1749,7 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Crafting recipe: Engineering 200.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4396/mechanical-dragonling",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
@@ -1670,13 +1765,45 @@
       "requiredSuffix": null,
       "acquisitionType": "Crafting",
       "source": "Engineering crafting",
-      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Alternative slot placement; not a recommendation for two copies.",
+      "note": "Requires Engineering 200. Unique-equipped: one equipped copy. Crafting recipe: Engineering 200.",
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
       "itemUrl": "https://www.wowhead.com/forever/item=4396/mechanical-dragonling",
       "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
       "weaponKind": "None",
       "uniqueEquipped": true,
       "requiredLevel": 30
+    },
+    {
+      "id": "forever-beta-level30-warlock-demonology-trinket1-273643",
+      "slot": "Trinket1",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Commander Springvale, Shadowfang Keep",
+      "note": "Unique-equipped: one equipped copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643/worgenbane-talisman",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/demonology-warlock/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 21
+    },
+    {
+      "id": "forever-beta-level30-warlock-demonology-trinket2-273643",
+      "slot": "Trinket2",
+      "itemId": 273643,
+      "name": "Worgenbane Talisman",
+      "requiredSuffix": null,
+      "acquisitionType": "Dungeon",
+      "source": "Commander Springvale, Shadowfang Keep",
+      "note": "Unique-equipped: one equipped copy.",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+      "itemUrl": "https://www.wowhead.com/forever/item=273643/worgenbane-talisman",
+      "recommendationUrl": "https://wowtbc.gg/warcraftforever/bis-list/demonology-warlock/",
+      "weaponKind": "None",
+      "uniqueEquipped": true,
+      "requiredLevel": 21
     }
   ]
 }

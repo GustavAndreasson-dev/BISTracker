@@ -7,6 +7,10 @@ HERE = ROOT / "docs/data/forever-casters"
 CATALOGS = ROOT / "BISTracker.Infrastructure/Catalog/Data/Forever/level30"
 metadata = json.loads((HERE / "item-metadata.json").read_text(encoding="utf-8"))
 quests = json.loads((HERE / "quest-metadata.json").read_text(encoding="utf-8"))
+recipes = json.loads((HERE / "crafting-metadata.json").read_text(encoding="utf-8"))
+audit = json.loads((HERE / "slot-audit.json").read_text(encoding="utf-8"))
+audits = {row["catalogId"]: row for row in audit["catalogs"]}
+unresolved_items = {row["itemId"] for row in json.loads((HERE / "excluded-research.json").read_text(encoding="utf-8"))["items"]}
 icons = {entry["url"]: entry["status"] for entry in json.loads((HERE / "icon-status.json").read_text(encoding="utf-8-sig"))}
 specs = {"Mage": ["arcane", "fire", "frost"], "Priest": ["discipline", "holy", "shadow"],
          "Warlock": ["affliction", "demonology", "destruction"]}
@@ -20,9 +24,17 @@ for cls, names in specs.items():
         assert catalog["characterClass"] == cls and catalog["specializationId"] == spec
         assert catalog["gameVersion"] == "Forever" and catalog["levelCap"] == 30
         assert catalog["releaseStage"] == "Beta" and catalog["patch"] == "1.60.1"
+        slot_audit = audits[catalog["catalogId"]]
+        assert slot_audit["fullSetValidated"] and not slot_audit["missingSlots"] and not slot_audit["unresolvedQuestProof"], path
+        for faction in slot_audit["factions"]:
+            assert faction["fullSetValidated"] and len(faction["legalSetWitness"]) == 17
+            assert len({row["itemId"] for row in faction["legalSetWitness"]}) == 17
+            assert not faction["incompatibleProfessionRequirements"]
         selected = [row for row in catalog["items"] if row["acquisitionType"] in ("Dungeon", "Quest")]
         assert len({row["slot"] for row in selected}) == 17, path
         for row in catalog["items"]:
+            assert row["itemId"] not in unresolved_items, row
+            assert not any(phrase in row["note"] for phrase in ("Named ", "metadata verified", "unrank", "equivalence", "Recommended in the original", "Alternative slot placement")), row
             identity = row["id"]
             assert identity not in identities, identity
             identities.add(identity)
@@ -32,8 +44,14 @@ for cls, names in specs.items():
             assert row["requiredLevel"] == evidence["requiredLevel"] <= 30
             assert row["uniqueEquipped"] == evidence["uniqueEquipped"]
             assert row["iconUrl"] == evidence["iconUrl"] and icons[row["iconUrl"]] == 200
-            assert row["recommendationUrl"].startswith(("https://www.wowhead.com/forever/guide/", "https://mobalytics.gg/wow-forever/classes/"))
+            assert row["recommendationUrl"].startswith(("https://www.wowhead.com/forever/guide/", "https://mobalytics.gg/wow-forever/classes/",
+                "https://www.icy-veins.com/wow-forever/", "https://wowtbc.gg/warcraftforever/bis-list/"))
             assert row["requiredSuffix"] is None
+            if row["acquisitionType"] == "Quest":
+                assert row["availableFactions"] and set(row["availableFactions"]) <= {"Alliance", "Horde"}, row
+            if row["acquisitionType"] == "Crafting":
+                assert recipes[str(row["itemId"])]["recipeWithinLevel30ExpertCap"], row
+                assert not any(requirement["skill"] > 225 for requirement in evidence["professionRequirements"]), row
             if evidence["slotId"] == 17:
                 assert row["slot"] == "MainHand" and row["weaponKind"] == "TwoHanded"
             if evidence["slotId"] == 11:
@@ -46,6 +64,8 @@ for cls, names in specs.items():
 for quest in quests.values():
     assert quest["minimumLevel"] is not None and quest["minimumLevel"] <= 30, quest
 result = {"reviewedOn": "2026-10-08", "catalogs": report, "placementRows": rows,
-    "checkedItemPages": len(metadata), "checkedQuestPages": len(quests), "http200Icons": len(icons), "result": "PASS"}
+    "checkedItemPages": len(metadata), "checkedQuestPages": len(quests), "http200Icons": len(icons),
+    "completeFactionSets": 18, "checkedCraftingRecipes": len({row["itemId"] for cls in specs for name in specs[cls]
+        for row in json.loads((CATALOGS / f"{cls.lower()}-{name}.json").read_text(encoding="utf-8"))["items"] if row["acquisitionType"] == "Crafting"}), "result": "PASS"}
 (HERE / "validation-report.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(json.dumps(result, ensure_ascii=False))

@@ -1,0 +1,306 @@
+{
+  "reviewedOn": "2026-10-08",
+  "status": "Excluded from active product data",
+  "items": [
+    {
+      "itemId": 271767,
+      "reason": "Horde beta-fix report does not independently verify Alliance acquisition; excluded from active product data until both claimed faction routes are verified.",
+      "itemMetadata": {
+        "itemId": 271767,
+        "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+        "name": "Healer's Staff",
+        "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+        "uniqueEquipped": false,
+        "bindsWhenPickedUp": true,
+        "requiredLevel": 0,
+        "slotId": 17,
+        "professionRequirements": [],
+        "uniqueProof": null
+      },
+      "affectedCatalogs": [
+        "forever-beta-level30-mage-arcane",
+        "forever-beta-level30-mage-fire",
+        "forever-beta-level30-mage-frost",
+        "forever-beta-level30-priest-discipline",
+        "forever-beta-level30-priest-holy",
+        "forever-beta-level30-priest-shadow",
+        "forever-beta-level30-warlock-affliction",
+        "forever-beta-level30-warlock-demonology",
+        "forever-beta-level30-warlock-destruction"
+      ],
+      "excludedRecommendations": [
+        {
+          "id": "forever-beta-level30-mage-arcane-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism / Earthen Echo, Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/mage/arcane/level-30-dps-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-mage-fire-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism / Earthen Echo, Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/mage/fire/level-30-dps-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-mage-frost-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism / Earthen Echo, Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/mage/frost/level-30-dps-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-priest-discipline-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism (Alliance), Excavation Site: Wetlands / Earthen Echo (Horde), Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-priest-holy-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism (Alliance), Excavation Site: Wetlands / Earthen Echo (Horde), Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-priest-shadow-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism (Alliance), Excavation Site: Wetlands Quests: / Earthen Echo (Horde), Excavation Site: Wetlands Quests:",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-warlock-affliction-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism / Earthen Echo, Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-30-dps-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-warlock-demonology-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism / Earthen Echo, Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-30-dps-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-warlock-destruction-mainhand-271767",
+          "slot": "MainHand",
+          "itemId": 271767,
+          "name": "Healer's Staff",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "Prehistoric Prism / Earthen Echo, Excavation Site: Wetlands",
+          "note": "Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_10.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=271767/healers-staff",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-30-dps-overview",
+          "weaponKind": "TwoHanded",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance",
+            "Horde"
+          ]
+        }
+      ],
+      "questEvidenceUrls": [
+        "https://www.wowhead.com/forever/quest=98823/earthen-echo",
+        "https://www.wowhead.com/forever/quest=95681/prehistoric-prism"
+      ]
+    },
+    {
+      "itemId": 270036,
+      "reason": "Original guide and item reward-from-quest table conflict with The Fury Runs Deep's current reward IDs; excluded until the quest reward identity is resolved.",
+      "itemMetadata": {
+        "itemId": 270036,
+        "itemUrl": "https://www.wowhead.com/forever/item=270036/magistrates-pantaloons",
+        "name": "Magistrate's Pantaloons",
+        "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_14.jpg",
+        "uniqueEquipped": false,
+        "bindsWhenPickedUp": true,
+        "requiredLevel": 0,
+        "slotId": 7,
+        "professionRequirements": [],
+        "uniqueProof": null,
+        "observedRewardQuestIds": [
+          378
+        ],
+        "rewardSourceProof": "Observed reward-from-q table on this individual Forever item page."
+      },
+      "affectedCatalogs": [
+        "forever-beta-level30-priest-discipline",
+        "forever-beta-level30-priest-holy",
+        "forever-beta-level30-priest-shadow"
+      ],
+      "excludedRecommendations": [
+        {
+          "id": "forever-beta-level30-priest-discipline-legs-270036",
+          "slot": "Legs",
+          "itemId": 270036,
+          "name": "Magistrate's Pantaloons",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "The Fury Runs Deep (Alliance), The Stockades",
+          "note": " The original Forever guide and individual item's reward-from-quest table link this reward to The Fury Runs Deep; the quest reward table still lists older item IDs.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_14.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=270036/magistrates-pantaloons",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/discipline/level-30-healer-overview",
+          "weaponKind": "None",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-priest-holy-legs-270036",
+          "slot": "Legs",
+          "itemId": 270036,
+          "name": "Magistrate's Pantaloons",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "The Fury Runs Deep (Alliance), The Stockades",
+          "note": " The original Forever guide and individual item's reward-from-quest table link this reward to The Fury Runs Deep; the quest reward table still lists older item IDs.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_14.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=270036/magistrates-pantaloons",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/holy/level-30-healer-overview",
+          "weaponKind": "None",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance"
+          ]
+        },
+        {
+          "id": "forever-beta-level30-priest-shadow-legs-270036",
+          "slot": "Legs",
+          "itemId": 270036,
+          "name": "Magistrate's Pantaloons",
+          "requiredSuffix": null,
+          "acquisitionType": "Quest",
+          "source": "The Fury Runs Deep (Alliance), The Stockade Quests:",
+          "note": " The original Forever guide and individual item's reward-from-quest table link this reward to The Fury Runs Deep; the quest reward table still lists older item IDs.",
+          "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_14.jpg",
+          "itemUrl": "https://www.wowhead.com/forever/item=270036/magistrates-pantaloons",
+          "recommendationUrl": "https://www.wowhead.com/forever/guide/classes/priest/shadow/level-30-dps-overview",
+          "weaponKind": "None",
+          "uniqueEquipped": false,
+          "requiredLevel": 0,
+          "availableFactions": [
+            "Alliance"
+          ]
+        }
+      ],
+      "questEvidenceUrls": [
+        "https://www.wowhead.com/forever/quest=378/the-fury-runs-deep"
+      ]
+    }
+  ]
+}

@@ -16,11 +16,19 @@ def produce(path, metadata):
         if row["class"] == cls and row["spec"] == spec]
     collected = {}
     excluded = []
+    unresolved = {row["itemId"]: row for row in json.loads((HERE / "excluded-research.json").read_text(encoding="utf-8"))["items"]}
+    recipe_metadata = json.loads((HERE / "crafting-metadata.json").read_text(encoding="utf-8"))
     for row in observed["rows"] + supplementary:
+        if row["itemId"] in unresolved:
+            excluded.append({"itemId": row["itemId"], "name": row["name"], "reason": unresolved[row["itemId"]]["reason"], "researchEvidenceFile": "excluded-research.json"})
+            continue
         if not row["slot"]:
             excluded.append({"itemId": row["itemId"], "name": row["name"], "reason": "Consumable or recipe; not equipment."})
             continue
         data = metadata[str(row["itemId"])]
+        if row["acquisitionType"] == "Crafting" and not recipe_metadata.get(str(row["itemId"]), {}).get("recipeWithinLevel30ExpertCap", False):
+            excluded.append({"itemId": row["itemId"], "name": row["name"], "reason": "No independently verified Forever recipe skill within the level-30 Expert cap."})
+            continue
         if data["requiredLevel"] > 30:
             excluded.append({"itemId": row["itemId"], "name": row["name"], "reason": "Required level above 30."})
             continue
@@ -44,7 +52,7 @@ def produce(path, metadata):
         else:
             source += " crafting"
         notes = []
-        if row["note"] and row["note"] not in ("(requires )", "(requires Merchant's Favor)"):
+        if row["note"] and not row["note"].startswith(("Named ", "Recommended in ")) and row["note"] not in ("(requires )", "(requires Merchant's Favor)"):
             notes.append(row["note"])
         if "(requires " in row["note"]:
             notes.append("Recipe requires Merchant's Favor.")
@@ -54,8 +62,6 @@ def produce(path, metadata):
             notes.append(f"Requires {profession} {skill}.")
         if data["uniqueEquipped"]:
             notes.append("Unique-equipped: one equipped copy.")
-        if row["itemId"] == 271767:
-            notes.append("Earlier quest bug; Horde quest fix reported on 2026-10-04. Beta availability may change.")
         key = (row["itemId"], row["slot"])
         if key in collected:
             old = collected[key]
@@ -80,24 +86,22 @@ def produce(path, metadata):
             result = dict(item)
             result["slot"] = slot
             result["id"] = f"forever-beta-level30-{cls.lower()}-{spec}-{slot.lower()}-{item['itemId']}"
-            if len(placements) == 2:
-                result["note"] += " Alternative slot placement; not a recommendation for two copies."
-                result["note"] = result["note"].strip()
             items.append(result)
     catalogue = {"schemaVersion": 1,
         "catalogId": f"forever-beta-level30-{cls.lower()}-{spec}",
         "gameVersion": "Forever", "characterClass": cls,
         "specializationId": spec, "levelCap": 30, "releaseStage": "Beta",
         "phase": "Level 30 beta", "patch": "1.60.1", "sourceUrl": guide, "reviewedOn": "2026-10-08",
-        "supplementarySourceUrls": [row["recommendationUrl"] for row in supplementary],
+        "supplementarySourceUrls": sorted({row["recommendationUrl"] for row in supplementary}),
         "selectionMethod": "Named equipment alternatives in the original Wowhead level-30 Forever guide. "
-            + ("Priest wand recommendation separately sourced from the original Mobalytics level-30 beta spec guide. " if supplementary else "")
+            + ("Missing-slot alternatives independently sourced from original level-30 beta guides for the same spec; see each recommendationUrl. " if supplementary else "")
             + "No independent ranking; consumables, unverified bonus variants and unavailable profession requirements excluded.",
         "status": "Reviewed", "items": items}
     TARGET.mkdir(parents=True, exist_ok=True)
     (TARGET / f"{cls.lower()}-{spec}.json").write_text(json.dumps(catalogue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (HERE / f"{cls.lower()}-{spec}-excluded.json").write_text(json.dumps(excluded, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(cls, spec, len(collected), "distinct items,", len(items), "placement rows", "types:", sorted({item['acquisitionType'] for item in items}))
+    print("Run audit-slots.py --annotate-reviewed-factions before validation/publication; regenerated rows require current faction and recipe annotations.")
 
 if __name__ == "__main__":
     if "--regenerate-reviewed-catalogs" not in sys.argv and any(

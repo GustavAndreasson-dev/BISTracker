@@ -369,7 +369,11 @@
     "requiredLevel": 0,
     "slotId": 11,
     "professionRequirements": [],
-    "uniqueProof": null
+    "uniqueProof": null,
+    "observedRewardQuestIds": [
+      79536
+    ],
+    "rewardSourceProof": "Observed reward-from-q table on this individual Forever item page."
   },
   "281265": {
     "itemId": 281265,
@@ -381,7 +385,11 @@
     "requiredLevel": 0,
     "slotId": 2,
     "professionRequirements": [],
-    "uniqueProof": null
+    "uniqueProof": null,
+    "observedRewardQuestIds": [
+      95981
+    ],
+    "rewardSourceProof": "Observed reward-from-q table on this individual Forever item page."
   },
   "11884": {
     "itemId": 11884,
@@ -429,7 +437,11 @@
     "requiredLevel": 0,
     "slotId": 20,
     "professionRequirements": [],
-    "uniqueProof": null
+    "uniqueProof": null,
+    "observedRewardQuestIds": [
+      442
+    ],
+    "rewardSourceProof": "Observed reward-from-q table on this individual Forever item page."
   },
   "16975": {
     "itemId": 16975,
@@ -645,7 +657,11 @@
     "requiredLevel": 0,
     "slotId": 9,
     "professionRequirements": [],
-    "uniqueProof": null
+    "uniqueProof": null,
+    "observedRewardQuestIds": [
+      95682
+    ],
+    "rewardSourceProof": "Observed reward-from-q table on this individual Forever item page."
   },
   "271670": {
     "itemId": 271670,
@@ -1599,7 +1615,11 @@
     "requiredLevel": 0,
     "slotId": 7,
     "professionRequirements": [],
-    "uniqueProof": null
+    "uniqueProof": null,
+    "observedRewardQuestIds": [
+      378
+    ],
+    "rewardSourceProof": "Observed reward-from-q table on this individual Forever item page."
   },
   "9538": {
     "itemId": 9538,
@@ -1982,5 +2002,41 @@
     "slotId": 26,
     "professionRequirements": [],
     "uniqueProof": null
+  },
+  "273298": {
+    "itemId": 273298,
+    "itemUrl": "https://www.wowhead.com/forever/item=273298/lookies-spyglass",
+    "name": "Lookie's Spyglass",
+    "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_spyglass_01.jpg",
+    "uniqueEquipped": true,
+    "bindsWhenPickedUp": true,
+    "requiredLevel": 18,
+    "slotId": 12,
+    "professionRequirements": [],
+    "uniqueProof": "Unique-Equipped"
+  },
+  "273643": {
+    "itemId": 273643,
+    "itemUrl": "https://www.wowhead.com/forever/item=273643/worgenbane-talisman",
+    "name": "Worgenbane Talisman",
+    "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_06.jpg",
+    "uniqueEquipped": true,
+    "bindsWhenPickedUp": true,
+    "requiredLevel": 21,
+    "slotId": 12,
+    "professionRequirements": [],
+    "uniqueProof": "Unique-Equipped"
+  },
+  "3456": {
+    "itemId": 3456,
+    "itemUrl": "https://www.wowhead.com/forever/item=3456/dog-whistle",
+    "name": "Dog Whistle",
+    "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_beastcall.jpg",
+    "uniqueEquipped": true,
+    "bindsWhenPickedUp": true,
+    "requiredLevel": 25,
+    "slotId": 12,
+    "professionRequirements": [],
+    "uniqueProof": "Unique-Equipped"
   }
 }
