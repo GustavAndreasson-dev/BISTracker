@@ -8,8 +8,9 @@ Aktuell kvalitetsgranskning enligt REQ-010: tidigare rekommendationsrader
 räknades felaktigt som mål. Gruppering per slot, giltiga kombinationer och
 fraktionsspecifik fullständighet är verifierade för alla 27 specs och 54 set.
 Crafting är godkänt för Forever enligt DEC-012; Classic förblir dungeons/quests.
-Ingen delningsversion markeras klar innan [releasekontrollen](slot-catalog-correctness.md)
-och återstående distributionstest är godkända.
+[Releasekontrollen](slot-catalog-correctness.md) och det lokala
+[distributionstestet](distribution.md) är godkända. Ett portabelt version
+1.0.0-paket finns för vänners testning; prov på ren mottagardator återstår.
 
 - Bekräftat scope: Vanilla Classic, fas 1, Holy Priest och pre-raid BiS från endast dungeons och quests.
 - DDD, SOLID och Markdown-dokumentation är beslutade.
@@ -28,6 +29,7 @@ och återstående distributionstest är godkända.
 | 3. BiS-underlag | Källjämförelse och förslag på datametod. | Rapport med spårbara källor och kvarstående val finns. | Klar som research i data-research.md. |
 | 4. Verifierad katalog | Riktiga items och anskaffning för vald kontext. | Fas, tillåtna källor och rekommendationsgrund är dokumenterade; katalogen är integrerad och verifierad. | Klar för det fasta 17-item-urvalet: katalog-/lagringskontroller och renderad UI-verifiering godkända. Full questrevision och alternativa trackingmål är senare fördjupning. |
 | 5. Förfinad produkt | Karaktärer, tre listor, fler kataloger och nivåimport. | Överenskomna acceptanskriterier är verifierade med riktig data. | Karaktärs-/specval, 27 Forever beta nivå30-kataloger, tvåhands-/unique-regler och nivå60-import verifierade. Verklig nivå60-data och fullare källurval för vissa specs återstår. |
+| 6. Portabel delningsversion | Windows x64-ZIP med medföljande runtimes och distributionsprov. | Committad kod, ZIP-integritet, kataloggranskning och faktisk sparning/omstart från extraherad app passerar. | Lokalt klar: version 1.0.0, 49 kontroller, 27 kataloger och verkligt UI-prov godkända. Ren dator och äldre Windows återstår. |
 
 ## Nästa beställda scope och lokal arbetsplats
 
@@ -40,7 +42,7 @@ Chefen har beställt utredning av Forever, därefter stöd för alla klasser/spe
 om Forever är genomförbart, samt tre speclistor per karaktär (REQ-005–007).
 [Genomförbarhetsutredningen](forever-feasibility.md) är klar. Version/klass/spec,
 karaktärshantering och tre sparade listor är implementerade. Med nivå30-leveransen
-passerar nu 46 beteendekontroller och isolerad WinUI-kontroll.
+passerar nu 49 beteendekontroller, isolerad WinUI-kontroll och portabelt distributionsprov.
 Se [listmodellen](characters-and-loadouts.md).
 
 Chefens nästa beställning, REQ-008/009, är levererad: alla 27 specs har separata

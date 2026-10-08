@@ -1,8 +1,28 @@
 # Portabel Windows-distribution
 
-Status 2026-10-08: publiceringskedjan och ett extraherat portabelt Windows
-x64-paket är lokalt verifierade. Slutpaketets checksumma och källcommit
-redovisas efter publicering från committad kod. Ren mottagardator är inte provad.
+Status 2026-10-08: version 1.0.0 är paketerad och lokalt verifierad på
+Windows 11 x64. Ren mottagardator är inte provad. Paketet kan delas för
+vänners testning med denna begränsning; generell Windows-kompatibilitet
+är ännu inte verifierad.
+
+| Slutpaket | Värde |
+| --- | --- |
+| Fil | `BISTracker-1.0.0-win-x64.zip` |
+| Storlek | 90 273 350 byte, cirka 86,1 MiB |
+| Innehåll | 517 filer; .NET och Windows App SDK inkluderade |
+| Källcommit | `e25c1345c84dd4c975c208adb35c83ee68b1b88c` från ren arbetskatalog |
+| Rapport | [Verifieringsresultat](data/portable-release-verification.json) |
+| Lokal leveransmapp | `artifacts/distribution-b6f8906d7a114fed8462afb3ee2bc582` |
+
+ZIP-filens SHA-256:
+
+```text
+81c6bb0bfc145ee313737d362c930af9c9fe4960f6146ad7613b1e886314c51f
+```
+
+Leveransmappen är ignorerad av Git och ligger kvar lokalt. Dela endast ZIP-filen;
+checkhost och rapportmappar behövs inte för att köra appen. Checksumma finns
+även i en separat `.zip.sha256`-fil bredvid arkivet.
 
 ## Leveransformat
 
@@ -74,14 +94,13 @@ skriver samma datamapp samtidigt; sådan samordning ingår inte i appen.
 
 ## Distributionskontroller
 
-Huvudtråden fyller i resultat, miljö och rapportlänkar efter varje faktisk
-kontroll. Tester från utvecklingsbuilden redovisas separat i
+Resultat nedan gäller det angivna ZIP-paketet från committad kod. Tester från utvecklingsbuilden redovisas separat i
 [verification.md](verification.md).
 
 | Kontroll | Resultat för ZIP-leveransen |
 | --- | --- |
 | Release-publicering Windows x64 med båda runtimes inkluderade | Godkänd; utan trimning, preview eller buildvarningar |
-| Paketets fullständiga filer, storlek och SHA-256 | Manifest och extraktion godkända; slutmetadata redovisas efter committad publicering |
+| Paketets fullständiga filer, storlek och SHA-256 | Godkända; 517 filer och slutmetadata enligt tabellen ovan |
 | ZIP-extraktion till ny mapp och kontroll av filinnehåll | Godkänd; SHA-256 för varje fil, sökväg med blanksteg |
 | Start av extraherad normal app utanför byggmappen | Godkänd; verklig WinUI-checkbox, ingen PreviewRepository |
 | Isolerade UI-/katalogkontroller från publicerat innehåll | 49 beteendekontroller och 27 slotkataloger godkända; tre verkliga Rogue-specs med diskpersistens |

@@ -30,6 +30,15 @@ och kan importeras när granskad data finns.
 
 Dokumenten skiljer mellan beslut, förslag och verifierad implementation.
 
+## Portabel version 1.0.0
+
+Ett Windows x64-ZIP-paket är lokalt verifierat med 49 beteendekontroller,
+27 Forever-kataloger och faktisk UI-sparning/omstart. Extrahera hela ZIP-filen
+och kör `BISTracker.Presentation.exe`. Paketet inkluderar båda runtimes.
+Se [leveransrapporten](docs/distribution.md) för filnamn, checksumma och
+instruktioner. Paketet kan delas för vänners testning; ren mottagardator
+och äldre Windows är ännu inte provade.
+
 ## Nuläge
 
 Första utkastet har en WinUI-vy med sökning, filter och tracking av erhållna
