@@ -34,7 +34,17 @@ och [releasegranskning](slot-catalog-correctness.md). **Implementerat och verifi
 Rogue visar 17 mål; två alternativ i samma slot ger ett fyllt mål. Unique,
 fysisk variantkapacitet, fraktion och handplan förhindrar falsk fullständighet.
 Chefens godkännande omfattar crafting i Forever; Classic bevarar sitt urval.
-Distributionstest återstår före en delningsversion.
+Lokalt distributionstest för portabel Windows x64 är godkänt; prov på ren
+mottagardator återstår enligt [distributionsrapporten](distribution.md).
+
+REQ-011, beställt 2026-10-08: paketera version 1 och kör distributionsprov.
+[Publiceringsverktyget](../tools/distribution/Publish-PortableRelease.ps1)
+levererar en komplett portabel Windows x64-programkatalog med båda runtimes.
+[Distributionsprovet](../tools/distribution/Test-PortableRelease.ps1) verifierar
+ZIP-manifest, samma lager-DLL:er i checkhostet, 49 beteendekontroller,
+27 kataloger och verklig UI-sparning/omstart i isolerad profil.
+Lokal verifiering är genomförd. Ren dator, äldre Windows och signering är
+inte verifierade; slutpaketets metadata redovisas i distributionsrapporten.
 
 | ID | Krav eller riktning | Implementation | Verifiering |
 | --- | --- | --- | --- |

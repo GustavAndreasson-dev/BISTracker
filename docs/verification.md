@@ -10,9 +10,17 @@ Aktuell leverans: 2026-10-08, Forever-beta nivå 30 och importstöd inför nivå
   Den isolerade UI-kontrollen och PNG-renderingen har körts på den översatta vyn.
 
 - Hela solutionen byggd i Release för x64 utan varningar eller fel. WinUI-utkastet och isolerad verifieringsvariant är också byggda utan varningar eller fel.
-- Alla **46 konsolkontroller** godkända: 17 äldre katalog-/domän-/tracking-/
+- Alla **49 konsolkontroller** godkända: 17 äldre katalog-/domän-/tracking-/
   lagringsscenarier, nio `CharacterScenarios`, sex `CatalogContextScenarios`
-  och sju `ForeverCatalogScenarios`, samt sju `EquipmentPlanScenarios`.
+  och sju `ForeverCatalogScenarios`, sju `EquipmentPlanScenarios` samt tre
+  [DistributionScenarios](../BISTracker.Checks/Scenarios/DistributionScenarios.cs).
+- Portabel Windows x64-publicering inkluderar båda runtimes, utan trimning
+  eller DraftPreview-kod. Den extraherade normala appens checkbox, diskfil,
+  omstart och byte av programmapp har testats på Windows 11 Pro 10.0.26200.
+  Ordinarie spelarprofil är oförändrad. Det separata publicerade checkhostet
+  använder samma Domain/Application/Infrastructure-DLL-hashar och verifierar
+  Classic samt alla tre Rogue-specs över nivå 30/60 med verklig JSON-lagring.
+  Nivå 60-fixtures är fortfarande enbart testdata. Se [distribution](distribution.md).
 - Karaktärsscenarierna verifierar 54 versions-/klass-/specval, tre olika listor
   efter omstart, delat ägande med separata rekommendations-ID:n och suffix,
   karaktärs-/versionsisolering, migration, aktivt val, sparfel, avbrott och låst

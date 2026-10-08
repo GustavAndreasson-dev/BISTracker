@@ -13,7 +13,8 @@ BISTracker/
 │   ├── data/                          Kandidatmanifest och hämtad itemmetadata (forskningsdata)
 │   └── previews/                      Verifierad UI-bild och resultat
 ├── tools/
-│   └── data/                          Metadatahämtning; forever-casters/hybrids/physical för research/import
+│   ├── data/                          Metadatahämtning; forever-casters/hybrids/physical för research/import
+│   └── distribution/                  Portabel publicering, PE-inventering och isolerade distributionsprov
 ├── BISTracker.Domain/
 │   ├── Equipment/                     EquipmentSlot, EquipmentPlan, Recommendation och ItemDetails
 │   ├── Game/                          GameContext, CatalogSet, CharacterDefinition, version/klass/spec
@@ -49,6 +50,7 @@ BISTracker/
 - Presentation grupperas efter funktion; gemensam UI-infrastruktur ligger i Common.
 - Appens skal kan ligga i projektroten. Nya funktioners vyer ska placeras under respektive Features-område när de införs.
 - Scenarier grupperas efter det beteende de verifierar. Testverktyg ska inte bli produktkod.
+- DistributionScenarios provar produktkataloger och riktig JSON-lagring. Distributionsverktygen publicerar till ignorerade artifacts-mappar och provar extraherad normal app med separat datamapp.
 - Importverktyg ligger i tools/data och forskningsdata i docs/data. Dessa ska inte refereras av Domain eller läsas som en godkänd produktkatalog utan uttrycklig integration i Infrastructure/Catalog.
 - Mappar är inte i sig DDD: kodens ansvar, invariants och beroenden måste också vara korrekta.
 - Namespace kan behållas som lagrets publika namespace i utkastets kontrakt. Mappindelningen förändrar inte kontraktet mellan trådarna.

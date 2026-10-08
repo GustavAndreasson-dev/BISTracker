@@ -12,6 +12,7 @@ try
     await CatalogContextScenarios.RunAsync(checks);
     await ForeverCatalogScenarios.RunAsync(checks);
     await EquipmentPlanScenarios.RunAsync(checks);
+    await DistributionScenarios.RunAsync(checks);
     Console.WriteLine(checks.Failures == 0
         ? "Alla kontroller godkända."
         : $"{checks.Failures} kontroll(er) misslyckades.");

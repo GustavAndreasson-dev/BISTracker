@@ -32,9 +32,8 @@ namespace BISTracker.Presentation
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
-            var progressDirectory = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "BISTracker");
+            var progressDirectory = ProgressFilePaths.DataDirectory(
+                Environment.GetEnvironmentVariable("BISTRACKER_DATA_DIRECTORY"));
             var progressPath = ProgressFilePaths.ClassicPhaseOne(progressDirectory);
             var hasDraftProgress = File.Exists(ProgressFilePaths.Draft(progressDirectory)) && !File.Exists(progressPath);
             var catalogDirectory = Path.Combine(progressDirectory, "Catalogs");

@@ -26,6 +26,7 @@ och kan importeras när granskad data finns.
 - [Katalognivåer och säkert byte](docs/catalog-contexts.md)
 - [Forever nivå 30: alla 27 kataloger och källgranskning](docs/forever-level30-catalogs.md)
 - [Slotmål och kontroll före delning](docs/slot-catalog-correctness.md)
+- [Portabel Windows-distribution](docs/distribution.md)
 
 Dokumenten skiljer mellan beslut, förslag och verifierad implementation.
 
