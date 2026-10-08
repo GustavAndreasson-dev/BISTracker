@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Catalog\Data\holy-priest-classic-phase1.json" />
+    <EmbeddedResource Include="Catalog\Data\Classic\**\*.json" />
     <EmbeddedResource Include="Catalog\Data\Forever\**\*.json" />
     <ProjectReference Include="..\BISTracker.Application\BISTracker.Application.csproj" />
     <ProjectReference Include="..\BISTracker.Domain\BISTracker.Domain.csproj" />

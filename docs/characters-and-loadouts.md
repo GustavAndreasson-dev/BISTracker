@@ -83,7 +83,7 @@ rekommendationer presenteras inte som slutliga nivå 60-rankningar.
   lyckad lagring. `ICharacterTrackerService` är UI-kontraktet;
   `IWorkspaceRepository` är lagringsgränsen.
 - Infrastructure/Catalog: `CharacterCatalog` laddar inbyggda och importerade
-  paket; `ForeverCatalogReader` validerar kontext, metadata och källpolicy.
+  paket; `ReviewedCatalogReader` validerar kontext, metadata och källpolicy för Classic och Forever.
   Infrastructure/Persistence: `JsonWorkspaceRepository` hanterar schema,
   filåtkomst och atomisk ersättning.
 - Presentation: tracking-ViewModel, karaktär/spec/set-val och import i skalet,

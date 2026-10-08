@@ -20,14 +20,14 @@ klassgruppens rapport innan du ändrar något:
 Endast din klassgrupps rad i tabellen ovan, dess nio produktkataloger i
 `BISTracker.Infrastructure/Catalog/Data/Forever/level30/` (eller nya pack för
 en beslutad kontext) och berörda rader i `docs/forever-level30-catalogs.md`.
-Classic-data (`holy-priest-classic-phase1.json`, `docs/phase1-items.md`)
+Classic-data (`Catalog/Data/Classic/phase1/`, `docs/classic-phase1-catalogs.md`)
 ändras bara på uttryckligt uppdrag.
 
 ## Datapolicy
 
 - Hitta aldrig på items, ID:n, suffix, rankingar, fraktioner eller spelregler.
   Varje rad behöver källa, spelversion, patch/fas, nivåtak och anskaffning.
-- Forever: Dungeon/Quest/Crafting. Classic: endast Dungeon/Quest.
+- Forever och Classic fas 1: Dungeon/Quest/Crafting (DEC-016).
   Fyll inte Forever-luckor med Vanilla-, SoD- eller Classic-data.
 - Bevara dokumenterade uteslutningar (bland annat Healer's Staff 271767,
   Magistrate's Pantaloons 270036, Boots of Darkness 7027) tills källluckan är löst.

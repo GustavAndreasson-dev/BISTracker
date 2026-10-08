@@ -83,9 +83,10 @@ domänen; lagringskontrakt verifieras mot den valda implementationen.
 
 ## Riktig katalog och variantidentitet
 
-ClassicPhaseOneBisCatalog läser den granskade produktkatalogen som inbyggd
-resurs i Infrastructure. CharacterCatalog läser dessutom de 27 inbyggda
-Forever-katalogerna och importerade pack genom ForeverCatalogReader.
+CharacterCatalog läser inbyggda Classic fas 1-paket (`Catalog/Data/Classic/phase1`),
+de 27 inbyggda Forever-katalogerna och importerade Forever-pack genom
+ReviewedCatalogReader. ClassicPhaseOneBisCatalog är en äldre enkellistvy av
+Holy Priest-paketets 17 mål från 1.0.0, för den gamla framstegsfilen.
 JSON-format, källmetadata och kontextvalidering stannar i Infrastructure.
 ItemDetails i Domain beskriver item-ID, suffix, anskaffningstyp, vapenhand,
 unique-villkor och referenslänkar. Kataloger och användningsfall kräver ingen
@@ -98,7 +99,7 @@ med fallback. Separata framstegsfiler skyddar övergången från fiktiva items.
 Se [integrationen](catalog-integration.md) för filansvar och begränsningar.
 
 Forever beta nivå 30 visar Dungeon/Quest/Crafting enligt DEC-012;
-Classic behåller Dungeon/Quest. Antal alternativ, slotgrupper och giltiga
+Classic fas 1 använder samma policy enligt DEC-016. Antal alternativ, slotgrupper och giltiga
 fraktionsset redovisas av [releasegranskningen](data/forever-slot-release-audit.json).
 Katalogerna innehåller källbelagda guidealternativ, inte en
 beräknad optimal ranking av ett helt utrustningsset. En ring på två platser har
@@ -106,8 +107,9 @@ två rekommendations-ID:n och samma fysiska itemidentitet; detta innebär inte
 automatiskt en rekommendation av två exemplar. Källor och luckor redovisas i
 [Forever-katalograpporten](forever-level30-catalogs.md).
 
-ForeverCatalogReader prefixar varje rå rekommendations-ID med katalogens
-version/stadium/nivå/klass/spec-identitet. Därmed kan samma rå-ID återkomma i
+ReviewedCatalogReader prefixar varje rått Forever-rekommendations-ID med katalogens
+version/stadium/nivå/klass/spec-identitet. Classic-radernas ID:n innehåller redan
+katalog-ID:t och används oförändrade; Holy Priest behåller sina 1.0.0-ID:n via `recommendationId`. Därmed kan samma rå-ID återkomma i
 andra katalogset utan att utrustningsval blandas ihop. Gemensamt ägande använder
 basitem-ID plus uttryckligt suffix inom karaktären; unique-regeln använder
 basitem-ID utan suffix.
@@ -116,8 +118,8 @@ basitem-ID utan suffix.
 
 [CatalogPackImporter](../BISTracker.Infrastructure/Catalog/CatalogPackImporter.cs)
 implementerar ICatalogPackImporter. Den läser JSON-filer i en vald mapp och
-undermappar och låter [ForeverCatalogReader](../BISTracker.Infrastructure/Catalog/ForeverCatalogReader.cs)
-validera hela batchen före publicering. Läsaren kontrollerar schema, Forever-kontext,
+undermappar och låter [ReviewedCatalogReader](../BISTracker.Infrastructure/Catalog/ReviewedCatalogReader.cs)
+validera hela batchen före publicering. Classic-pack avvisas vid import. Läsaren kontrollerar schema, Forever-kontext,
 giltig klass/spec, nivå 30 eller 60, Beta eller Launch, granskningsdatum,
 urvalsmetod, HTTPS-källänkar och itemmetadata. Ett angivet itemnivåkrav får inte
 överstiga katalogens nivågräns; vapenhand måste stämma med slot. Datainsamlingens

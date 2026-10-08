@@ -13,8 +13,11 @@ Windows 10 och verklig nivå 60-data är inte verifierade.
 
 ## Data och ansvar
 
-ClassicPhaseOneBisCatalog under Infrastructure/Catalog läser en inbyggd,
-versionshanterad JSON-katalog från Catalog/Data/holy-priest-classic-phase1.json.
+Sedan beta 2 (REQ-013) ligger Holy Priest-katalogen i
+Catalog/Data/Classic/phase1/priest-holy.json och läses av ReviewedCatalogReader
+via CharacterCatalog. ClassicPhaseOneBisCatalog är kvar som äldre enkellistvy
+över paketets 17 rader med 1.0.0-ID:n; den har ingen egen datafil.
+Ursprungligen (1.0.0) låg den i Catalog/Data/holy-priest-classic-phase1.json.
 Den innehåller 17 huvudval från phase1-items.md med engelska namn, anskaffning,
 villkor, ikon-URL och separata länkar till item och rekommendationsguide.
 Ingen HTTP-hämtning krävs för att läsa katalogen.

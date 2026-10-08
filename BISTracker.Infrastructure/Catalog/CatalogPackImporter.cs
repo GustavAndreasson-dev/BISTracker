@@ -1,4 +1,5 @@
 using BISTracker.Application;
+using BISTracker.Domain;
 
 namespace BISTracker.Infrastructure;
 
@@ -23,7 +24,9 @@ public sealed class CatalogPackImporter : ICatalogPackImporter
                 cancellationToken.ThrowIfCancellationRequested();
                 var bytes = await File.ReadAllBytesAsync(source, cancellationToken).ConfigureAwait(false);
                 using var stream = new MemoryStream(bytes, writable: false);
-                var pack = ForeverCatalogReader.Read(stream, includeOtherSources: true);
+                var pack = ReviewedCatalogReader.Read(stream, includeOtherSources: true);
+                if (pack.Set.Version != GameVersion.Forever)
+                    throw new InvalidDataException("Only Forever catalogs can be imported. Classic catalogs are built in.");
                 if (existingIds.Contains(pack.CatalogId) || !batch.TryAdd(pack.CatalogId, bytes))
                     throw new InvalidDataException("A catalog with this ID already exists. The existing catalog has been preserved.");
             }

@@ -23,19 +23,19 @@ internal static class CatalogScenarios
                 "Fel spelkontext.");
         });
 
-        await checks.RunAsync("Riktig fas 1-katalog: alla slots, källor, ikonlänkar och rätt anskaffning", async () =>
+        await checks.RunAsync("Riktig fas 1-katalog: 1.0.0-målen täcker alla slots med källor, ikonlänkar och rätt anskaffning", async () =>
         {
             var catalog = await new ClassicPhaseOneBisCatalog().LoadAsync();
             Assert(!catalog.IsSample && catalog.Items.Count == 17, "Den riktiga katalogen ska vara aktiv med 17 mål.");
             Assert(catalog.Items.Select(item => item.Slot).Order().SequenceEqual(Enum.GetValues<EquipmentSlot>()),
                 "Samtliga utrustningsplatser ska täckas exakt en gång.");
-            Assert(catalog.Context.Phase == "Phase 1 · dungeons and quests", "Fel fastillgänglighet.");
+            Assert(catalog.Context.Phase == ReviewedCatalogReader.ClassicPhase && catalog.Set == CatalogSet.ClassicPhaseOne, "Fel fastillgänglighet.");
             Assert(catalog.Items.All(item => item.Details is { ClassicItemId: > 0 } details &&
                 Enum.IsDefined(details.AcquisitionType) && details.IconUrl.StartsWith("https://") &&
                 details.ItemUrl.Contains($"item={details.ClassicItemId}") && details.RecommendationUrl.StartsWith("https://") &&
                 !string.IsNullOrWhiteSpace(item.Source)), "Itemfakta, anskaffning och källänkar måste bevaras.");
             Assert(!catalog.Items.Any(item => item.Details!.ClassicItemId is 13102 or 14154),
-                "World-drop och crafting från originalguiden ska vara bortfiltrerade.");
+                "De 17 målen från 1.0.0 innehåller inte originalguidens world drop eller crafting.");
             Assert(catalog.Items.Single(item => item.Slot == EquipmentSlot.Waist).Note.Contains("10 players") &&
                 catalog.Items.Single(item => item.Slot == EquipmentSlot.Ranged).Note.Contains("Raid quest"),
                 "UBRS- och questvillkor får inte döljas.");

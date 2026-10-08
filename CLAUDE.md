@@ -19,7 +19,7 @@ Denna fil ersätter tidigare `AGENTS.md` (omdöpt 2026-10-08 när arbetet gick
 
 - Projektägaren ska benämnas Chefen eller Bossen, inte "Användaren". Använd "spelaren" när dokumentationen beskriver appens slutanvändare.
 - Chefen beslutar om produktens riktning och krav. Huvudagenten samordnar planering, arkitektur, uppgifter, integration och granskning.
-- Classic-urvalet gäller Holy Priest i vanliga WoW Classic (Vanilla), fas 1, endast pre-raid BiS från dungeons och quests. Crafting och köpta/world-drop BoE-items ingår inte i Classic-listan.
+- Classic-urvalet gäller vanliga WoW Classic (Vanilla), fas 1, pre-raid BiS för nio klasser och 27 specs från dungeons, quests och crafting (DEC-016). Raid, world drops/BoE, vendor, PvP och reputation ingår inte.
 - Forever är beslutat scope: nivå 30-beta/patch 1.60.1 för nio klasser och 27 specs. Dungeon/Quest/Crafting är godkänt där. Nivå 60-import är implementerad men verklig data saknas; blanda inte spelversionernas källpolicy.
 - Appens användarsynliga texter ska vara på engelska. Samtalet och projektdokumentationen kan vara på svenska.
 - Fler expansioner ska kunna stödjas senare. Implementera deras funktioner först när de ingår i ett beslutat scope.

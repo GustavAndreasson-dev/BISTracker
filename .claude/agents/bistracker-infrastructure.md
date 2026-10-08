@@ -1,6 +1,6 @@
 ---
 name: bistracker-infrastructure
-description: Lagring, katalogläsning, packimport och beteendekontroller – BISTracker.Infrastructure (C#-koden) och BISTracker.Checks. Använd för JSON-persistens, ForeverCatalogReader, CatalogPackImporter, CharacterCatalog och nya eller ändrade scenarier.
+description: Lagring, katalogläsning, packimport och beteendekontroller – BISTracker.Infrastructure (C#-koden) och BISTracker.Checks. Använd för JSON-persistens, ReviewedCatalogReader, CatalogPackImporter, CharacterCatalog och nya eller ändrade scenarier.
 tools: Read, Grep, Glob, Edit, Write, Bash
 ---
 

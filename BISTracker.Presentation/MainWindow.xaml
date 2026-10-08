@@ -98,7 +98,7 @@
             </Grid>
             <StackPanel Grid.Row="2" Spacing="8">
                 <InfoBar IsOpen="{Binding HasCatalogGaps}" IsClosable="False" Severity="Warning" Title="Catalog incomplete" Message="{Binding CatalogStatus}" />
-                <InfoBar IsOpen="{Binding ShowClassicContext}" IsClosable="False" Severity="Informational" Title="Dungeon &amp; quest BiS" Message="Phase 1, including UBRS (10 players). Random-suffix goals require of Healing. Sources and conditions are listed below." />
+                <InfoBar IsOpen="{Binding ShowClassicContext}" IsClosable="False" Severity="Informational" Title="Phase 1 pre-raid BiS" Message="Dungeons, including UBRS (10 players), quests and crafting. Sources and conditions are listed below." />
                 <InfoBar IsOpen="{Binding HasDraftProgress}" IsClosable="False" Severity="Informational" Title="Your draft progress is preserved" Message="The real list starts with a separate collection. Marks on fictional draft items have not been transferred." />
                 <InfoBar IsOpen="{Binding HasError}" IsClosable="False" Severity="Error" Title="Could not update progress" Message="{Binding ErrorMessage}" />
             </StackPanel>

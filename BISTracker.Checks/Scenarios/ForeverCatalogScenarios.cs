@@ -10,7 +10,7 @@ internal static class ForeverCatalogScenarios
 {
     public static async Task RunAsync(CheckRun checks)
     {
-        await checks.RunAsync("27 Forever-kataloger följer godkänd dungeon/quest/crafting-policy; Classic bevarar sitt urval", async () =>
+        await checks.RunAsync("27 Forever-kataloger följer godkänd dungeon/quest/crafting-policy och hålls skilda från Classic", async () =>
         {
             var provider = new CharacterCatalog();
             var allSources = new CharacterCatalog(includeOtherSources: true);
@@ -46,10 +46,12 @@ internal static class ForeverCatalogScenarios
                     }
                     count++;
                 }
-            Assert(count == 27 && provider.CatalogIds().Count == 27, "Alla nio klasser och 27 specs laddades.");
+            Assert(count == 27 && provider.CatalogIds().Count(id => id.StartsWith("forever-", StringComparison.Ordinal)) == 27, "Alla nio klasser och 27 specs laddades.");
+            // DEC-016: Classic phase 1 now uses the same Dungeon/Quest/Crafting policy, from its own built-in packs.
             var classic = await provider.LoadAsync(GameVersion.Classic, CharacterClass.Priest, "holy");
-            Assert(classic.Items.Count == 17 && classic.Items.All(item => item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest),
-                "Classic får inte ärva Forevers nya crafting-policy.");
+            Assert(classic.Set == CatalogSet.ClassicPhaseOne && classic.Items.Count >= 17 && classic.Items.All(item => !item.Id.StartsWith("forever-", StringComparison.Ordinal) &&
+                item.Details!.AcquisitionType is AcquisitionType.Dungeon or AcquisitionType.Quest or AcquisitionType.Crafting),
+                "Classic använder egna paket och den beslutade dungeon/quest/crafting-policyn.");
         });
 
         await checks.RunAsync("Katalogläsaren bevarar fullständigt suffixnamn, alternativa källänkar och källfiltrering", () =>
@@ -235,7 +237,7 @@ internal static class ForeverCatalogScenarios
     private static ReviewedCatalogPack Read(JsonObject document, bool otherSources = false)
     {
         using var stream = new MemoryStream(Encoding.UTF8.GetBytes(document.ToJsonString()), writable: false);
-        return ForeverCatalogReader.Read(stream, otherSources);
+        return ReviewedCatalogReader.Read(stream, otherSources);
     }
 
     private static async Task WriteFixtureAsync(string directory, string name, JsonObject document)

@@ -29,8 +29,10 @@ BISTracker/
 │   ├── Characters/                    CharacterTrackerService, workspace och kontrakt
 │   └── Tracking/                      Legacy TrackerService samt snapshot/entries för aktuell tjänst
 ├── BISTracker.Infrastructure/
-│   ├── Catalog/                       CharacterCatalog, ForeverCatalogReader, CatalogPackImporter samt Classic/Sample
-│   │   └── Data/                      Classic fas 1 och Forever/level30 med 27 inbyggda kataloger
+│   ├── Catalog/                       CharacterCatalog, ReviewedCatalogReader, CatalogPackImporter samt äldre Classic-vy/Sample
+│   │   └── Data/
+│   │       ├── Classic/phase1/        Inbyggda Classic fas 1-paket, <klass>-<spec>.json (endast inbyggda, ej import)
+│   │       └── Forever/level30/       27 inbyggda Forever-kataloger
 │   └── Persistence/                   JsonWorkspaceRepository, legacy JSON och ProgressFilePaths
 ├── BISTracker.Presentation/
 │   ├── App.xaml + MainWindow.xaml     Start, composition root och appens skal
@@ -44,7 +46,7 @@ BISTracker/
 │   └── Properties/                    Startkonfiguration
 └── BISTracker.Checks/
     ├── Program.cs                     Startar konsolkontroller
-    └── Scenarios/                     49 beteendekontroller, releaseaudit och tre distributionsscenarier
+    └── Scenarios/                     54 beteendekontroller (bl.a. ClassicCatalogScenarios), releaseaudit och tre distributionsscenarier
 ```
 
 ## Regler

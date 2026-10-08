@@ -51,14 +51,14 @@ finally { $ErrorActionPreference = $previousPreference }
 $checksOutput | Set-Content -LiteralPath (Join-Path $reports 'behavior-checks.txt') -Encoding UTF8
 if ($checksExitCode -ne 0) { throw 'Published behavior checks failed; see behavior-checks.txt.' }
 $passed = @($checksOutput | Where-Object { $_ -match '^PASS:' }).Count
-if ($passed -ne 49 -or @($checksOutput | Where-Object { $_ -match '^PASS: Distribution:' }).Count -ne 3) {
-    throw 'Expected all 49 behavior checks, including the three distribution scenarios.'
+if ($passed -ne 54 -or @($checksOutput | Where-Object { $_ -match '^PASS: Distribution:' }).Count -ne 3) {
+    throw 'Expected all 54 behavior checks, including the three distribution scenarios.'
 }
 & (Join-Path $checkHost 'BISTracker.Checks.exe') --catalog-release-audit (Join-Path $reports 'catalog-release-audit.json')
 if ($LASTEXITCODE -ne 0) { throw 'Published catalog audit failed.' }
 $catalogAudit = Get-Content -LiteralPath (Join-Path $reports 'catalog-release-audit.json') -Raw | ConvertFrom-Json
-if (!$catalogAudit.releaseReady -or $catalogAudit.checkedCatalogs -ne 27 -or $catalogAudit.blockedCatalogs -ne 0) {
-    throw 'Expected 27 complete Forever catalogs.'
+if (!$catalogAudit.releaseReady -or $catalogAudit.checkedCatalogs -ne 54 -or $catalogAudit.blockedCatalogs -ne 0) {
+    throw 'Expected 54 complete catalogs (27 Classic, 27 Forever).'
 }
 
 function Wait-Until([scriptblock]$Condition, [string]$Message) {

@@ -37,7 +37,7 @@ internal static class DraftPreview
         try
         {
             Require(model.TotalCount == 17 && model.OwnedCount == 0, "Initial state");
-            Require(model.CatalogContext == "Phase 1 · dungeons and quests", "Real catalog context");
+            Require(model.CatalogContext == "Phase 1 · pre-raid", "Real catalog context");
             Require(((ComboBox)root.FindName("CharacterPicker")).SelectedItem is CharacterOption &&
                 ((ComboBox)root.FindName("SpecializationPicker")).SelectedItem is Specialization { Id: "holy" }, "Initial picker selection");
             var hat = model.VisibleItems.Single(item => item.Name == "Crimson Felt Hat");

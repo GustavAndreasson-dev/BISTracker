@@ -34,13 +34,14 @@ internal static class DistributionScenarios
             var startup = await service.LoadAsync();
             Assert(startup.Selection!.ActiveCharacter.Version == GameVersion.Classic &&
                 startup.Selection.ActiveCharacter.Class == CharacterClass.Priest &&
-                startup.Selection.ActiveSpecialization.Id == "holy" && startup.Entries.Count == 17,
+                startup.Selection.ActiveSpecialization.Id == "holy" && startup.Entries.Count >= 17,
                 "Den levererade Classic-katalogen ska användas vid första start.");
             Assert(!startup.Catalog.IsSample && startup.Entries.All(entry => !entry.IsOwned && !entry.IsEquipped),
                 "En ny isolerad arbetsyta ska visa verkliga, tomma Classic-framsteg.");
             var originalCharacter = startup.Selection.ActiveCharacter.Id;
-            var head = startup.Entries.Single(entry => entry.Item.Slot == EquipmentSlot.Head).Item;
-            var chest = startup.Entries.Single(entry => entry.Item.Slot == EquipmentSlot.Chest).Item;
+            // 1.0.0 Holy Priest targets keep their IDs even when reviewed alternatives are added to the slot.
+            var head = startup.Entries.Single(entry => entry.Item.Id == "classic-p1-item-18727").Item;
+            var chest = startup.Entries.Single(entry => entry.Item.Id == "classic-p1-item-13346").Item;
             await service.SetEquippedAsync(head.Id, true);
             var created = await service.CreateAsync("Distribution Classic", GameVersion.Classic, CharacterClass.Priest);
             var createdId = created.Selection!.ActiveCharacter.Id;

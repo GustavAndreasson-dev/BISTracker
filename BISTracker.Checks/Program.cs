@@ -2,7 +2,10 @@ using BISTracker.Checks.Scenarios;
 
 try
 {
-    if (args.Length == 2 && args[0] == "--catalog-release-audit") return await CatalogReleaseAudit.RunAsync(args[1]);
+    if (args is ["--catalog-release-audit", var auditPath]) return await CatalogReleaseAudit.RunAsync(auditPath);
+    if (args is ["--catalog-release-audit", var versionAuditPath, var version] && Enum.TryParse<BISTracker.Domain.GameVersion>(version, false, out var gameVersion) &&
+        Enum.IsDefined(gameVersion) && !int.TryParse(version, out _))
+        return await CatalogReleaseAudit.RunAsync(versionAuditPath, gameVersion);
     using var checks = new CheckRun();
     await CatalogScenarios.RunAsync(checks);
     await DomainScenarios.RunAsync(checks);
@@ -11,6 +14,7 @@ try
     await CharacterScenarios.RunAsync(checks);
     await CatalogContextScenarios.RunAsync(checks);
     await ForeverCatalogScenarios.RunAsync(checks);
+    await ClassicCatalogScenarios.RunAsync(checks);
     await EquipmentPlanScenarios.RunAsync(checks);
     await DistributionScenarios.RunAsync(checks);
     Console.WriteLine(checks.Failures == 0

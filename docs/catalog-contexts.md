@@ -52,7 +52,10 @@ innan hela batchen publiceras genom en katalogflytt. Originalfiler, äldre
 pack och spelarframsteg bevaras. Ett ogiltigt pack avvisar hela batchen.
 
 `ICatalogPackImporter` är applikationskontraktet; `CatalogPackImporter` sköter
-filer och `ForeverCatalogReader` översätter JSON till domänens rekommendationer.
+filer och `ReviewedCatalogReader` översätter JSON till domänens rekommendationer.
+Endast Forever-pack kan importeras. Ett giltigt Classic-pack avvisas av importen,
+och ett Classic-pack som ligger i importmappen gör katalogladdningen ogiltig;
+Classic fas 1-paket är alltid inbyggda.
 `CharacterCatalog` upptäcker importen i samma appinstans. Även en redan vald,
 tidigare tom nivå 60-lista uppdateras. Underlaget ska först granskas enligt
 projektreglerna och hämtas separat före import.
@@ -69,6 +72,10 @@ nivå 60-import. Import av reviderad data med samma kontext/ID ingår inte i
 detta flöde och behöver en separat versions- och migrationslösning.
 
 ## JSON-kontrakt, schema 1
+
+Samma läsare (`ReviewedCatalogReader`) och schema gäller Forever och de inbyggda
+Classic fas 1-paketen. Classic-specifika värden och ID-regler finns i
+[Classic fas 1-kataloger](classic-phase1-catalogs.md); tabellen nedan beskriver Forever.
 
 Varje klass/spec har ett pack. Obligatoriska rotfält:
 
@@ -108,8 +115,8 @@ Ett uttryckligt handkrav behöver HTTPS-källan `weaponSetupSourceUrl`.
 - `slotExemptions`: lista av `slot`, `reason`, `sourceUrl` för en styrkt
   oanvändbar plats. Undantaget får inte motsäga katalogens itemrader.
 
-Läsaren validerar alla råa rader före Dungeon/Quest/Crafting-filtret för
-Forever. Classic behåller sin Dungeon/Quest-policy. Den verifierar
+Läsaren validerar alla råa rader före Dungeon/Quest/Crafting-filtret, som
+sedan DEC-016 gäller både Forever och Classic fas 1. Den verifierar
 format och metadatarelationer, inte att en extern guide faktiskt stöder
 rekommendationen. Källgranskningen är därför en nödvändig del före import.
 Antal exemplar modelleras inte. Samtidiga importer från flera appinstanser
@@ -117,13 +124,18 @@ Antal exemplar modelleras inte. Samtidiga importer från flera appinstanser
 
 ## Verifiering
 
-Release-build godkänd utan varningar/fel; samtliga **49** konsolkontroller passerar.
+Release-build godkänd utan varningar/fel; samtliga **54** konsolkontroller passerar
+(49 i 1.0.0 plus fem `ClassicCatalogScenarios` för beta 2, se nedan).
 Sex `CatalogContextScenarios` verifierar nivåisolering, äldre JSON, delat ägande,
 arkiverade markeringar, tvåhands-/unique-regler och oförändrat tillstånd efter
 sparfel. Sju `ForeverCatalogScenarios` verifierar alla 27 produktpack, filtrering,
 uppdatering av samma katalogprovider, dubbletter, ogiltiga/blandade pack och avbrott utan
 filförändringar. Isolerad WinUI-kontroll verifierar riktiga nivåval och import;
 dess fiktiva nivå 60-prov levereras aldrig som produktdata.
+Fem `ClassicCatalogScenarios` verifierar Classic-läsarens kontext och källpolicy,
+`recommendationId`-reglerna, att Classic-pack inte kan importeras, Holy Priests
+17 rad-ID:n från 1.0.0 samt att en schema 1-sparfil från 1.0.0 med Holy Priest-
+ägande och utrustning laddas oförändrad.
 Se [katalograpport](forever-level30-catalogs.md) och [verifiering](verification.md).
 
 De tre distributionskontrollerna omfattar faktisk diskpersistens och Rogue
